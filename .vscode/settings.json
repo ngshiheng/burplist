@@ -1,0 +1,18 @@
+{
+    "python.pythonPath": "/Users/shihengng/.local/share/virtualenvs/burplist-QbqGrV75/bin/python",
+    "python.languageServer": "Pylance",
+    "python.formatting.autopep8Args": [
+        "--ignore",
+        "E501",
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Args": [
+        "--ignore",
+        "E501",
+        "--verbose"
+    ],
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "python.analysis.typeCheckingMode": "basic"
+}
