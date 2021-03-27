@@ -6,7 +6,7 @@ from scrapy.loader import ItemLoader
 class CraftbeersgSpider(scrapy.Spider):
     name = 'craftbeersg'
     allowed_domains = ['craftbeersg.com']
-    start_urls = ['https://craftbeersg.com/product-category/beer/']
+    start_urls = ['https://craftbeersg.com/product-category/beer']
 
     def parse(self, response):
         products = response.xpath('//div[@class="product-inner"]')

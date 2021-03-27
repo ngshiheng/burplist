@@ -13,6 +13,7 @@ The goal here is to aggregate all the available beer (preferably craft beer) dat
 
 ```sh
 scrapy crawl craftbeersg
+scrapy crawl coldstorage
 ```
 
 ## Database Schema
