@@ -3,7 +3,7 @@ from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
 
 
-class ColdstorageSpider(scrapy.Spider):
+class ColdStorageSpider(scrapy.Spider):
     name = 'coldstorage'
     allowed_domains = ['coldstorage.com']
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']

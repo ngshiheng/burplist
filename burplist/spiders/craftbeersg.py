@@ -3,7 +3,7 @@ from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
 
 
-class CraftbeersgSpider(scrapy.Spider):
+class CraftBeerSGSpider(scrapy.Spider):
     name = 'craftbeersg'
     allowed_domains = ['craftbeersg.com']
     start_urls = ['https://craftbeersg.com/product-category/beer']

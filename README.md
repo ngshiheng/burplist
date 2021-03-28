@@ -9,11 +9,11 @@ The goal here is to aggregate all the available beer (preferably craft beer) dat
 -   https://www.thirsty.com.sg/
 -   https://www.alcoholdelivery.com.sg/
 
-## Start crawling using a spider.
+## Start Crawling
 
 ```sh
-scrapy crawl craftbeersg
-scrapy crawl coldstorage
+pipenv run scrapy crawl craftbeersg
+pipenv run scrapy crawl coldstorage
 ```
 
 ## Database Schema
@@ -26,3 +26,11 @@ https://dbdiagram.io/d/605d3ad2ecb54e10c33d5165
 
 -   https://dev.to/masihurmaruf/locator-strategy-xpath-54p7
 -   https://docs.scrapy.org/en/xpath-tutorial/topics/xpath-tutorial.html
+
+# Selecting Dynamically-loaded Content
+
+https://docs.scrapy.org/en/latest/topics/dynamic-content.html
+
+```sh
+docker run -d -p 8050:8050 scrapinghub/splash
+```
