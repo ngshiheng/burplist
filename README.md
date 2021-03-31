@@ -14,6 +14,7 @@ The goal here is to aggregate all the available beer (preferably craft beer) dat
 ```sh
 pipenv run scrapy crawl craftbeersg
 pipenv run scrapy crawl coldstorage
+pipenv run scrapy crawl fairprice
 ```
 
 ## Database Schema
@@ -29,8 +30,22 @@ https://dbdiagram.io/d/605d3ad2ecb54e10c33d5165
 
 # Selecting Dynamically-loaded Content
 
-https://docs.scrapy.org/en/latest/topics/dynamic-content.html
+-   https://docs.scrapy.org/en/latest/topics/dynamic-content.html
+-   https://www.zyte.com/blog/handling-javascript-in-scrapy-with-splash/
 
 ```sh
 docker run -d -p 8050:8050 scrapinghub/splash
+```
+
+## Using `scrapy-splash` with `scrapy` shell
+
+```sh
+# Example
+pipenv run scrapy shell 'http://localhost:8050/render.html?url=https://www.alcoholdelivery.com.sg/beer-cider/craft-beer'
+```
+
+## To see what scrapy sees
+
+```sh
+scrapy view https://coldstorage.com.sg/beers-wines-spirits/beer-cidercraft-beers
 ```
