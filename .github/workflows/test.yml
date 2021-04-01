@@ -1,0 +1,29 @@
+name: test
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+    test-job:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: [3.9]
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Set up Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v2
+              with:
+                  python-version: ${{ matrix.python-version }}
+
+            - uses: dschep/install-pipenv-action@v1
+            - name: Install pipenv
+              run: |
+                  pip install pipenv
+            - name: Install dependencies
+              run: |
+                  pipenv install --dev
+            - name: Run checks
+              run: |
+                  pipenv run flake8 --ignore E501 --statistics --show-source
+                  pipenv run scrapy check
