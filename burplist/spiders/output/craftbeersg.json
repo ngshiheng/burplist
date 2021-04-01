@@ -859,10 +859,6 @@
         "url": "https://craftbeersg.com/product/redpoint-disco-macaw/"
     },
     {
-        "name": "Feral War Hog  ~ P300",
-        "url": "https://craftbeersg.com/product/feral-war-hog/"
-    },
-    {
         "name": "Rocky Ridge. Choc Coconut Porter  ~ P75",
         "url": "https://craftbeersg.com/product/rocky-ridge-choc-coconut-porter/"
     },
@@ -1466,6 +1462,11 @@
         "url": "https://craftbeersg.com/product/offshoot-relax-its-just-a-hazy-ipa/"
     },
     {
+        "name": "Moon Dog No Save Point ~ P198",
+        "price": "12.20",
+        "url": "https://craftbeersg.com/product/moon-dog-no-save-point/"
+    },
+    {
         "name": "Darling Brew Warlord Imperial IPA ~ P68",
         "price": "12.40",
         "url": "https://craftbeersg.com/product/darling-brew-warlord/"
@@ -1688,11 +1689,6 @@
         "url": "https://craftbeersg.com/product/off-day-canvas-mosaic-galaxy/"
     },
     {
-        "name": "Lion City Meadery. Longan & Red Dates Mead (Liang Teh Series 2 of 4)",
-        "price": "15.80",
-        "url": "https://craftbeersg.com/product/lion-city-chrysanthemum-mead-copy/"
-    },
-    {
         "name": "Behemoth. Delayed Package ~ P446",
         "price": "15.80",
         "url": "https://craftbeersg.com/product/behemoth-delayed-package/"
@@ -1782,10 +1778,6 @@
         "name": "Founders KBS. Kentucky Breakfast Stout ~ P214",
         "price": "17.20",
         "url": "https://craftbeersg.com/product/founders-kbs-kentucky-breakfast-stout/"
-    },
-    {
-        "name": "Gamma Guap ~ P40",
-        "url": "https://craftbeersg.com/product/gamma-guap/"
     },
     {
         "name": "Deeds Pavlova ~ P299",
@@ -2298,6 +2290,11 @@
         "url": "https://craftbeersg.com/product/garage-project-golden-path/"
     },
     {
+        "name": "Feral War Hog  ~ P300",
+        "price": "9.50",
+        "url": "https://craftbeersg.com/product/feral-war-hog/"
+    },
+    {
         "name": "Delirium Nocturnum ~ P476",
         "price": "9.50",
         "url": "https://craftbeersg.com/product/delirium-nocturnum/"
@@ -2423,11 +2420,6 @@
         "url": "https://craftbeersg.com/product/moon-dog-jimmy-lawsons/"
     },
     {
-        "name": "Moon Dog No Save Point ~ P198",
-        "price": "12.20",
-        "url": "https://craftbeersg.com/product/moon-dog-no-save-point/"
-    },
-    {
         "name": "Vocation Brewery. Breakfast Club",
         "price": "13.00",
         "url": "https://craftbeersg.com/product/vocation-brewery-breakfast-club/"
@@ -2503,6 +2495,11 @@
         "url": "https://craftbeersg.com/product/behemoth-reeferendum/"
     },
     {
+        "name": "Lion City Meadery. Longan & Red Dates Mead (Liang Teh Series 2 of 4)",
+        "price": "15.80",
+        "url": "https://craftbeersg.com/product/lion-city-chrysanthemum-mead-copy/"
+    },
+    {
         "name": "Deeds Intergalactic Love Child Sour Hazy DIPA",
         "price": "16.00",
         "url": "https://craftbeersg.com/product/deeds-intergalactic-love-child-sour-hazy-dipa/"
@@ -2516,6 +2513,11 @@
         "name": "Dry & Bitter Do You Think This Is A Fucking Game?",
         "price": "17.50",
         "url": "https://craftbeersg.com/product/dry-bitter-do-you-think-this-is-a-fucking-game/"
+    },
+    {
+        "name": "Gamma Guap ~ P40",
+        "price": "18.00",
+        "url": "https://craftbeersg.com/product/gamma-guap/"
     },
     {
         "name": "Dry & Bitter The Glow Below ~ P512",
