@@ -20,6 +20,7 @@ class FairPriceSpider(scrapy.Spider):
         'url': 'premium',
     }
 
+    # NOTE: This spider would work without these headers anyway. Adding these in as a safety measure
     headers = {
         'Accept': 'application/json',
         'Accept-Encoding': 'gzip, deflate, br',
@@ -63,7 +64,7 @@ class FairPriceSpider(scrapy.Spider):
             yield loader.load_item()
 
         has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
-        if has_next_page:
+        if has_next_page is not None:
             self.params['page'] += 1
             next_page = self.BASE_URL + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)

@@ -5,7 +5,6 @@ from scrapy.loader import ItemLoader
 
 class CraftBeerSGSpider(scrapy.Spider):
     name = 'craftbeersg'
-    allowed_domains = ['craftbeersg.com']
     start_urls = ['https://craftbeersg.com/product-category/beer']
 
     def parse(self, response):

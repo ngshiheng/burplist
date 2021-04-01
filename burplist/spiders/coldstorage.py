@@ -5,7 +5,6 @@ from scrapy.loader import ItemLoader
 
 class ColdStorageSpider(scrapy.Spider):
     name = 'coldstorage'
-    allowed_domains = ['coldstorage.com']
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
 
     def parse(self, response):
@@ -18,4 +17,4 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_value('url', response.urljoin(product.xpath('./a/@href').get()))
             yield loader.load_item()
 
-        # Coldstorage uses infinite scrolling pagination
+        # TODO: Currently `coldstorage` only has a single page data. As `coldstorage` uses infinite scrolling, we need to implement that eventually

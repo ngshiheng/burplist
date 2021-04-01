@@ -1,0 +1,1147 @@
+[
+    {
+        "name": "Pabst Blue Ribbon American Lager",
+        "price": "$3.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/pb001"
+    },
+    {
+        "name": "Kona Big Wave Hawaiian Golden Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ko002"
+    },
+    {
+        "name": "Lost Coast Peanut Butter Chocolate Milk Stout",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc022"
+    },
+    {
+        "name": "4 Pines Australian Pacific Ale",
+        "price": "$4.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/4p002"
+    },
+    {
+        "name": "Kona Longboard Hawaiian Lager",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ko008"
+    },
+    {
+        "name": "Nail MVP \"Most Valuable Player\" Session Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/na001"
+    },
+    {
+        "name": "Little Creatures Australian Pale Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/dm004"
+    },
+    {
+        "name": "Lost Coast 8 Ball Stout with Oatmeal & Coffee Beans",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc004"
+    },
+    {
+        "name": "Samuel Adams Boston Lager",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sm001"
+    },
+    {
+        "name": "Coronado Leisure Lagoon Hazy Pale Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/co025"
+    },
+    {
+        "name": "Lost Coast Revenant IPA (For Indica's Fans)",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc011"
+    },
+    {
+        "name": "Little Creatures Australian IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/dm005"
+    },
+    {
+        "name": "Modern Times Black House Espresso Coffee Stout",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mt003"
+    },
+    {
+        "name": "Holgate Australian Session Ale",
+        "price": "$4.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg006"
+    },
+    {
+        "name": "Lost Coast Hazy IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc033"
+    },
+    {
+        "name": "Green Flash Soul Style IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gf004"
+    },
+    {
+        "name": "Kona Hanalei Hawaiian Session IPA with Passion Fruit, Orange & Guava",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ko005"
+    },
+    {
+        "name": "Modern Times Ice Pilsner",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mt007"
+    },
+    {
+        "name": "New Belgium Voodoo Ranger Juicy Haze IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/nb002"
+    },
+    {
+        "name": "Blue Moon Belgian-style Wheat Ale with Valencia Orange Peel",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bm002"
+    },
+    {
+        "name": "Colonial Australian IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cb001"
+    },
+    {
+        "name": "Little Creatures Dog Days Australian Session IPA",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/dm003"
+    },
+    {
+        "name": "Coronado Weekend Vibes IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/co034"
+    },
+    {
+        "name": "Modern Times Fruitlands Sour Ale with Passion Fruit & Guava",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mtb005"
+    },
+    {
+        "name": "Lost Coast Sharkinator Session Wheat IPA",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc013"
+    },
+    {
+        "name": "Eagle Bay Australian Lager",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/au007"
+    },
+    {
+        "name": "New Belgium Fat Tire Amber Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/nb001"
+    },
+    {
+        "name": "Colonial Australian Pale Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cb004"
+    },
+    {
+        "name": "Green Flash Saturhaze Session Hazy IPA",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gf019"
+    },
+    {
+        "name": "Kona Gold Cliff Hawaiian IPA with Lanai Pineapple",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ko011"
+    },
+    {
+        "name": "Nail VPA Very Pale Ale (IMO: Best Australian IPA Ever)",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/na003"
+    },
+    {
+        "name": "New Belgium Voodoo Ranger IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/nb007"
+    },
+    {
+        "name": "Holgate Draught German-style Lager",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg001"
+    },
+    {
+        "name": "Kaiju! Krush Tropical Pineapple Pale Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ka003"
+    },
+    {
+        "name": "Coronado Pineapple Farm Hazy IPA with Nordic Farmhouse Kveik",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/co031"
+    },
+    {
+        "name": "Holgate Mt. Macedon Australian Session Pale Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg002"
+    },
+    {
+        "name": "Kaiju! Mutation Series: Main Squeeze Passion Guava Fruit Bomb Session Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ka002"
+    },
+    {
+        "name": "Eagle Bay Australian K\u00f6lsch Golden Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/au006"
+    },
+    {
+        "name": "Lost Coast Tangerine Wheat Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc016"
+    },
+    {
+        "name": "Eagle Bay Australian Pale Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/au008"
+    },
+    {
+        "name": "Alpine Duet IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/al007"
+    },
+    {
+        "name": "Colonial Draught Australian K\u00f6lsch Golden Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cb003"
+    },
+    {
+        "name": "Alpine Hoppy Birthday Pale Ale (a.k.a The World's Most Celebrated Beer!)",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/al009"
+    },
+    {
+        "name": "Lost Coast Watermelon Wheat Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc018"
+    },
+    {
+        "name": "Coronado Islander IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/co006"
+    },
+    {
+        "name": "Alpine HFS \"Holy Fucking Shit\" IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/al005"
+    },
+    {
+        "name": "Colonial Australian Small Session Ale",
+        "price": "$4.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cb005"
+    },
+    {
+        "name": "Green Flash Tropical DNA Hazy IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gf008"
+    },
+    {
+        "name": "Alpine Nelson Hazy Rye IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/al017"
+    },
+    {
+        "name": "Wychwood Hobgoblin Gold English Golden Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/uk021"
+    },
+    {
+        "name": "Coronado Never Better Double IPA",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/co019"
+    },
+    {
+        "name": "Eagle Bay Australian Session Amber Ale",
+        "price": "$4.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/au005"
+    },
+    {
+        "name": "Green Flash West Coast IPA (The OG of West Coast IPA)",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gf009"
+    },
+    {
+        "name": "Eagle Bay Australian India Pale Lager (IPA + Lager Hybrid)",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/au009"
+    },
+    {
+        "name": "Sierra Nevada Pale Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/si013"
+    },
+    {
+        "name": "Bell's Two Hearted IPA (Crowned \"Best Beer in America\" for 3 Consecutive Years)",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/by001"
+    },
+    {
+        "name": "Lost Coast Great White Shark Wheat Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lc007"
+    },
+    {
+        "name": "Kaiju! Metamorphosis \"Hop Beast\" IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ka005"
+    },
+    {
+        "name": "Holgate Temptress Chocolate Porter with Dutch Cocoa & Vanilla",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg005"
+    },
+    {
+        "name": "Colonial Australian Southwest Sour Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cb006"
+    },
+    {
+        "name": "Avery Pacer Lo-Cal Low-Carb Hazy IPA",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av012"
+    },
+    {
+        "name": "Nail N.B.T Pale Ale (Random & Different Beer Batch Series in Every Pack)",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/na002"
+    },
+    {
+        "name": "Kaiju! Paradise Bohemian-style Pilsner",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ka004"
+    },
+    {
+        "name": "Lindemans Pecheresse Belgian Peach Lambic",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl014"
+    },
+    {
+        "name": "Nail British-style Oatmeal Stout (Most Awarded Stout in Australia)",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/na005"
+    },
+    {
+        "name": "Holgate Alpha Crucis \"Galaxy\" XPA Extra Pale Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg007"
+    },
+    {
+        "name": "Sierra Nevada Hazy Little Thing IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/si009"
+    },
+    {
+        "name": "Rochefort Trappistes 10 Belgian Quadrupel",
+        "price": "$13.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl011"
+    },
+    {
+        "name": "Holgate Blush Wild Berry Australian Sour Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg008"
+    },
+    {
+        "name": "Deschutes Fresh Squeezed IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/de006"
+    },
+    {
+        "name": "Alpine Windows Up IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/al006"
+    },
+    {
+        "name": "Great Divide Titan Spartan-style IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd003"
+    },
+    {
+        "name": "Nail Red Hoppy Amber Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/na004"
+    },
+    {
+        "name": "Founders Breakfast Imperial Stout with Double Chocolate, Coffee & Oatmeal",
+        "price": "$9.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fo006"
+    },
+    {
+        "name": "Great Divide Car Camper Hazy Pale Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd019"
+    },
+    {
+        "name": "Dogfish Head 90 Minute Imperial IPA",
+        "price": "$10.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/dh002"
+    },
+    {
+        "name": "Kona Island Pina Colada Hawaiian Cream Ale with Pineapple & Coconut",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ko020"
+    },
+    {
+        "name": "Lagunitas IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/la015"
+    },
+    {
+        "name": "Dogfish Head 60 Minute IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/dh001"
+    },
+    {
+        "name": "La Chouffe Belgian Strong Golden Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl017"
+    },
+    {
+        "name": "Lagunitas Daytime Low-Cal Low-Carb Session IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/la012"
+    },
+    {
+        "name": "4 Pines Australian Pale Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/4p005"
+    },
+    {
+        "name": "Rochefort Trappistes 8 Belgian Strong Dark Ale",
+        "price": "$10.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl010"
+    },
+    {
+        "name": "Great Divide Yeti Imperial Stout (a.k.a The Abominable Snowman's Beer)",
+        "price": "$9.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd007"
+    },
+    {
+        "name": "Chimay Blue Belgian Trappist Strong Dark Ale",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl006"
+    },
+    {
+        "name": "Great Divide Artist Series: Denver Pale Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd009"
+    },
+    {
+        "name": "Wychwood Hobgoblin Ruby English Amber Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/uk015"
+    },
+    {
+        "name": "Duvel Tripel Hop Belgian IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl002"
+    },
+    {
+        "name": "St. Bernardus Abt 12 Belgian Quadrupel",
+        "price": "$9.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl019"
+    },
+    {
+        "name": "Avery IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av011"
+    },
+    {
+        "name": "Rochefort Trappistes 6 Belgian Dubbel",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl009"
+    },
+    {
+        "name": "Golden Road Balboa Blonde Ale with Pomegranate & Strawberry",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr014"
+    },
+    {
+        "name": "Tripel Karmeliet Belgian Tripel",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl016"
+    },
+    {
+        "name": "Cigar City Jai Alai IPA (Warning: Aggressive Beer!)",
+        "price": "$9.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cc004"
+    },
+    {
+        "name": "Rogue Dead Guy Bock Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ro003"
+    },
+    {
+        "name": "Founders All Day Session IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fo005"
+    },
+    {
+        "name": "Holgate Road Trip American-style IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg009"
+    },
+    {
+        "name": "Golden Road Melon Cart Wheat Ale with Watermelon, Honeydew & Cantaloupe",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr006"
+    },
+    {
+        "name": "Firestone Walker Union Jack IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fi004"
+    },
+    {
+        "name": "Cigar City Margarita Gose Sour Ale with Orange & Lime",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cc009"
+    },
+    {
+        "name": "Golden Road Mango Cart Wheat Ale with Mango",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr005"
+    },
+    {
+        "name": "Delirium Tremens Belgian Tripel",
+        "price": "$9.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl003"
+    },
+    {
+        "name": "Pauwel Kwak Belgian Strong Pale Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl007"
+    },
+    {
+        "name": "Rogue Hazelnut Brown Nectar Brown Ale",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ro005"
+    },
+    {
+        "name": "Orval Belgian Trappist Strong Pale Ale",
+        "price": "$9.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl008"
+    },
+    {
+        "name": "Duvel Belgian Strong Golden Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl001"
+    },
+    {
+        "name": "Stone IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/so004"
+    },
+    {
+        "name": "Delirium Nocturnum Belgian Strong Dark Ale",
+        "price": "$9.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl004"
+    },
+    {
+        "name": "Oskar Blues Dale's Pale Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ob002"
+    },
+    {
+        "name": "Deschutes Fresh Haze Citrus Hazy IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/de005"
+    },
+    {
+        "name": "Golden Road Point the Way Los Angeles IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr008"
+    },
+    {
+        "name": "Cigar City Maduro Brown Ale (a.k.a Liquid Cigar)",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cc003"
+    },
+    {
+        "name": "Great Divide Hercules God-style Double IPA",
+        "price": "$9.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd001"
+    },
+    {
+        "name": "Leffe Blond Belgian Strong Golden Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl036"
+    },
+    {
+        "name": "Golden Road Hazy Los Angeles IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr011"
+    },
+    {
+        "name": "Shiner Bock Dark Lager",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sb001"
+    },
+    {
+        "name": "Founders Unraveled Juicy IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fo009"
+    },
+    {
+        "name": "Golden Road Pineapple Cart Wheat Ale with Pineapple, Blood Orange & Strawberry",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr007"
+    },
+    {
+        "name": "Firestone Walker Mind Haze Hazy IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fi007"
+    },
+    {
+        "name": "Rodenbach Grand Cru Oak-Aged Belgian Sour Flemish Ale",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl045"
+    },
+    {
+        "name": "Rogue Batsquatch Urban Legend Hazy IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ro007"
+    },
+    {
+        "name": "Saison Dupont Belgian Farmhouse Ale (Belgium's Most Renowned Saison Ale)",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl046"
+    },
+    {
+        "name": "Avery El Gose Mexican-style Sour Ale with Lime & Sea Salt",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av001"
+    },
+    {
+        "name": "21st Amendment Brew Free! or Die IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/21002"
+    },
+    {
+        "name": "Leffe Brown Belgian Dubbel",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl037"
+    },
+    {
+        "name": "Epic RiNo Bright & Juicy Pale Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ep004"
+    },
+    {
+        "name": "Lindemans Cassis Belgian Blackcurrant Lambic",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl012"
+    },
+    {
+        "name": "Holgate Apple Berry Australian Fruit Beer",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hg003"
+    },
+    {
+        "name": "Stone Tangerine Express Hazy IPA with Sh*t Load of Hops & Tangerine Puree",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/so010"
+    },
+    {
+        "name": "Maui Coconut Hiwa Hawaiian Porter",
+        "price": "$10.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mb006"
+    },
+    {
+        "name": "Great Divide Colette Belgian-style Saison Farmhouse Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd002"
+    },
+    {
+        "name": "Avery Maharaja King's Imperial IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av009"
+    },
+    {
+        "name": "Westmalle Belgian Trappist Tripel",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl039"
+    },
+    {
+        "name": "Lindemans Framboise Belgian Raspberry Lambic",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl013"
+    },
+    {
+        "name": "Great Divide Claymore Scottish-style Heavy Scotch Ale",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gd010"
+    },
+    {
+        "name": "Deschutes Lil' Squeezy Gluten-Reduced Juicy Pale Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/de009"
+    },
+    {
+        "name": "Sierra Nevada Torpedo IPA",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/si015"
+    },
+    {
+        "name": "Founders Centennial IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fo010"
+    },
+    {
+        "name": "Rodenbach Classic Belgian Sour Flemish Ale (Belgium's Most Revered Sour Ale)",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl044"
+    },
+    {
+        "name": "Stone Delicious Gluten-Reduced IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/so001"
+    },
+    {
+        "name": "Bear Republic Racer 5 IPA",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/be008"
+    },
+    {
+        "name": "Lindemans Kriek Belgian Cherry Lambic",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl015"
+    },
+    {
+        "name": "Mother Earth Cali Creamin' Vanilla Cream Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/me002"
+    },
+    {
+        "name": "Chimay White Belgian Trappist Tripel",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl005"
+    },
+    {
+        "name": "Mike Hess Hop Cloud Hazy IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mi002"
+    },
+    {
+        "name": "Epic Son of a Baptist Imperial Coffee Stout with Cacao Nibs",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ep003"
+    },
+    {
+        "name": "Mother Earth Boo Koo \"Hop Air Strike\" IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/me001"
+    },
+    {
+        "name": "Epic Tart n Juicy Extreme Sour Ale (If Warheads Made Beer, This Would Be It)",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ep001"
+    },
+    {
+        "name": "Deschutes HandUp IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/de010"
+    },
+    {
+        "name": "Cigar City Guayabera Latin-style Pale Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/cc002"
+    },
+    {
+        "name": "Fremont Lush Organic IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fr002"
+    },
+    {
+        "name": "Avery White Rascal Belgian-style Wheat Ale with Curacao Orange Peel",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av010"
+    },
+    {
+        "name": "Westmalle Belgian Trappist Dubbel",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl038"
+    },
+    {
+        "name": "Firestone Walker Flyjack Lo-Cal Low-Carb Hazy IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fi006"
+    },
+    {
+        "name": "Golden Road Ride On Surfer's IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/gr017"
+    },
+    {
+        "name": "La Trappe Dutch Trappist Quadrupel",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl043"
+    },
+    {
+        "name": "Lagunitas Hazy Wonder Hazy IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/la014"
+    },
+    {
+        "name": "Pizza Port Ponto Session IPA",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/pp004"
+    },
+    {
+        "name": "Monk's Stout Dupont Belgian Stout",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl047"
+    },
+    {
+        "name": "Epic Lunar Transit Juicy & Hazy IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ep005"
+    },
+    {
+        "name": "Lagunitas Sumpin' Easy Pale Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/la016"
+    },
+    {
+        "name": "Epic Lemon Bomb Tart n Juicy Sour Ale (a.k.a Lemonade for Adults)",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ep007"
+    },
+    {
+        "name": "Hop Valley Bubble Stash IPA with Rare Secret Cryo Hops",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/hv002"
+    },
+    {
+        "name": "Epic Tropical Tart n Juicy Hawaiian-style Sour Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ep006"
+    },
+    {
+        "name": "Bell's Official Hazy Wheat IPA",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/by005"
+    },
+    {
+        "name": "Ska The Modus Hoperandi IPA (Multi-award Winning Flagship Beer!)",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sk009"
+    },
+    {
+        "name": "Maui Big Swell Hawaiian IPA",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mb005"
+    },
+    {
+        "name": "Lagunitas A Little Sumpin' Sumpin' Hoppy Wheat Ale",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/la013"
+    },
+    {
+        "name": "Sierra Nevada Hop Bullet Double IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/si012"
+    },
+    {
+        "name": "Rodenbach Fruitage Belgian Cherry & Elderberry Fruit Beer",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl048"
+    },
+    {
+        "name": "Ska The Hazy Tropical IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sk012"
+    },
+    {
+        "name": "La Trappe Dutch Trappist Blonde Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl040"
+    },
+    {
+        "name": "Mike Hess Habitus Double IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mi001"
+    },
+    {
+        "name": "La Trappe Dutch Trappist Tripel",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl042"
+    },
+    {
+        "name": "Avery Ellie's Brown Ale with Chocolate & Brown Sugar",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av006"
+    },
+    {
+        "name": "La Trappe Dutch Trappist Dubbel",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl041"
+    },
+    {
+        "name": "Sierra Nevada Wild Little Thing Slightly Sour Ale with Guava, Hibiscus & Strawberry",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/si017"
+    },
+    {
+        "name": "St. Bernardus Belgian Tripel",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl021"
+    },
+    {
+        "name": "21st Amendment Brew Free! Blood Orange IPA",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/21006"
+    },
+    {
+        "name": "Mc Chouffe Belgian Strong Dark Ale",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl018"
+    },
+    {
+        "name": "Chouffe Blanche Belgian Wheat Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl052"
+    },
+    {
+        "name": "Stone Buenaveza Salt & Lime Lager",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/so011"
+    },
+    {
+        "name": "Houblon Chouffe Belgian IPA",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl050"
+    },
+    {
+        "name": "Mike Hess Solis Dynamic IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mi004"
+    },
+    {
+        "name": "Bacchus Frambozenbier Belgian Raspberry Fruit Beer",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl061"
+    },
+    {
+        "name": "Three Weavers Expatriate IPA",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/tw002"
+    },
+    {
+        "name": "Vedett Extra White Belgian Wheat Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl067"
+    },
+    {
+        "name": "Ska The True Blonde Golden Ale with Durango Honey",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sk001"
+    },
+    {
+        "name": "Three Weavers Day Job Pale Ale",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/tw001"
+    },
+    {
+        "name": "Ska The Modus Mandarina IPA with Orange Peel & Biscuit Malts",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sk010"
+    },
+    {
+        "name": "Bacchus Kriekenbier Belgian Cherry Fruit Beer",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl060"
+    },
+    {
+        "name": "Kasteel Rouge Belgian Cherry Quadrupel",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl063"
+    },
+    {
+        "name": "Bacchus Vlaams Oud Bruin Belgian Sour Flemish Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl059"
+    },
+    {
+        "name": "Affligem Blond Belgian Strong Golden Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl056"
+    },
+    {
+        "name": "Vedett Extra Ordinary Belgian IPA",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl066"
+    },
+    {
+        "name": "Vedett Extra Pilsner Belgian Lager",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl065"
+    },
+    {
+        "name": "Mort Subite Kriek Belgian Cherry Lambic",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl053"
+    },
+    {
+        "name": "Oskar Blues Can-O-Bliss Citrus IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ob011"
+    },
+    {
+        "name": "Chouffe Soleil Belgian Strong Golden Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl051"
+    },
+    {
+        "name": "Cherry Chouffe Belgian Cherry Fruit Beer",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl049"
+    },
+    {
+        "name": "Affligem Tripel Belgian Tripel",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl058"
+    },
+    {
+        "name": "St. Bernardus Prior 8 Belgian Dubbel",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl020"
+    },
+    {
+        "name": "Three Weavers Knotty Double IPA",
+        "price": "$9.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/tw003"
+    },
+    {
+        "name": "Kasteel Donker Belgian Quadrupel",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl064"
+    },
+    {
+        "name": "Sierra Nevada Fantastic Haze Hazy Imperial IPA",
+        "price": "$8.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/si016"
+    },
+    {
+        "name": "Ska The Pink Vapor Stew Sour Ale with Beetroot, Carrots, Ginger & Apples",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/sk011"
+    },
+    {
+        "name": "Kasteel Blond Belgian Strong Golden Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl062"
+    },
+    {
+        "name": "Stone FML /// Fear. Movie. Lions. Hazy Double IPA",
+        "price": "$10.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/so012"
+    },
+    {
+        "name": "Deschutes Inversion IPA",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/de011"
+    },
+    {
+        "name": "Maui Pineapple Mana Hawaiian Wheat Ale",
+        "price": "$8.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mb003"
+    },
+    {
+        "name": "Avery Hazyish Hazy IPA",
+        "price": "$7.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av005"
+    },
+    {
+        "name": "Three Weavers Seafarer K\u00f6lsch Golden Ale",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/tw004"
+    },
+    {
+        "name": "Maui Bikini Blonde Hawaiian Lager",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/mb004"
+    },
+    {
+        "name": "Avery Liliko'I Kepolo Hawaiian-style Wheat Ale with Passionfruit & Spices",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/av002"
+    },
+    {
+        "name": "St. Bernardus Pater 6 Belgian Dubbel",
+        "price": "$6.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl022"
+    },
+    {
+        "name": "Affligem Double Belgian Dubbel",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bl057"
+    },
+    {
+        "name": "Founders KBS Bourbon Barrel-Aged Imperial Stout with Chocolate & Coffee",
+        "price": "$16.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fo007"
+    },
+    {
+        "name": "Founders CBS Bourbon Barrel-Aged Imperial Stout with Chocolate, Coffee & Maple Syrup",
+        "price": "$16.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/fo011"
+    },
+    {
+        "name": "Hawkers Rover Henty St. Session Pale Ale",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha007"
+    },
+    {
+        "name": "Hawkers Rover Gilbert Rd. Lager",
+        "price": "$4.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha008"
+    },
+    {
+        "name": "Hawkers Australian West Coast IPA (Titled \"Australia's No. 1 IPA\")",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha004"
+    },
+    {
+        "name": "Hawkers Australian Stout",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha005"
+    },
+    {
+        "name": "Hawkers Australian Pilsner",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha002"
+    },
+    {
+        "name": "Hawkers Australian Pale Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha001"
+    },
+    {
+        "name": "Hawkers Australian IPA",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha003"
+    },
+    {
+        "name": "Hawkers 'Into the Forest, I Go' Raspberry, Blueberry & Blackberry Sour Ale",
+        "price": "$5.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha009"
+    },
+    {
+        "name": "Hawkers Australian Hazy Pale Ale",
+        "price": "$5.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha006"
+    },
+    {
+        "name": "Hawkers 'Beneath the Trees, We Gather' Yuzu & Plum Sour Ale",
+        "price": "$6.00",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/ha010"
+    },
+    {
+        "name": "Levante x Team Secret A.F.K. Gamer's Hazy IPA (World's 1st eSports Beer)",
+        "price": "$7.50",
+        "url": "https://www.thirsty.com.sg/collections/beer/products/lb001"
+    }
+]
