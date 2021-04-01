@@ -1,6 +1,6 @@
 # Burplist
 
-The goal here is to aggregate all the available beer (preferably craft beer) data in Singapore into a single location.
+The goal here is to aggregate all the available beer (preferably craft beer) data in Singapore into a single location
 
 ## Start Crawling
 
@@ -10,6 +10,7 @@ The goal here is to aggregate all the available beer (preferably craft beer) dat
 pipenv run scrapy crawl craftbeersg -o craftbeersg.json
 pipenv run scrapy crawl coldstorage -o coldstorage.json
 pipenv run scrapy crawl fairprice -o fairprice.json
+pipenv run scrapy crawl beerforce -o beerforce.json
 pipenv run scrapy crawl thirsty -o thristy.json --set=ROBOTSTXT_OBEY='False'
 ```
 
