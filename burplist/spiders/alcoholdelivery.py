@@ -1,7 +1,7 @@
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem, Unit
+from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
 
 
@@ -9,6 +9,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
     """
     Parse data from site's API
     Site has 'Age Verification' modal
+    Expect all of the product listed here are either in 'Single' or 'Keg'
     """
     name = 'alcoholdelivery'
     BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
@@ -61,7 +62,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
 
                 loader.add_value('name', product['name'])
                 loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
-                loader.add_value('unit', Unit.SINGLE.value)  # NOTE: All scrapped item from this site are 'Single' unit
+                loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
                 loader.add_value('url', f'https://www.alcoholdelivery.com.sg/product/{slug}')
                 yield loader.load_item()
 

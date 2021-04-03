@@ -1,5 +1,5 @@
 import scrapy
-from burplist.items import ProductItem, Unit
+from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
 
 
@@ -7,6 +7,7 @@ class BeerForceSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Starting URL is from a base URL which contains different styles of beer
+    Expect all of the product listed here are either in 'Single' quantity
     """
     name = 'beerforce'
     start_urls = ['https://beerforce.sg/pages/all-styles']
@@ -30,7 +31,7 @@ class BeerForceSpider(scrapy.Spider):
 
             loader.add_value('name', f'{vendor} {name}')
             loader.add_xpath('price', './/span[@class="money"]/text()')
-            loader.add_value('unit', Unit.SINGLE.value)  # NOTE: All scrapped item from this site are 'Single' unit
+            loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
             loader.add_value('url', response.urljoin(media.xpath('./a/@href').get()))
             yield loader.load_item()
 

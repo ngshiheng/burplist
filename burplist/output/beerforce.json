@@ -2,2709 +2,2709 @@
     {
         "name": "Rocky Ridge Brewing Co. Barley Wine Is Life",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/barleywine/products/barleywineislife"
     },
     {
         "name": "Sierra Nevada Brewing Co. Bigfoot",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/barleywine/products/bigfoot"
     },
     {
         "name": "Behemoth Brewing Company Go Hard. Go Early.",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/barleywine/products/gohardgoearly"
     },
     {
         "name": "Heretic Brewing Co. Monster Cookie",
         "price": "29.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/barleywine/products/monstercookie"
     },
     {
         "name": "Mikkeller Nasty, Brutish and Malt",
         "price": "49.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/barleywine/products/nastybrutishandmalt"
     },
     {
         "name": "Brothers Craft Brewing Softly Spoken",
         "price": "28.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/barleywine/products/brotherscraftsoftlyspoken"
     },
     {
         "name": "North Coast Brewing Co. Blue Star",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/northcoastbluestarwheat"
     },
     {
         "name": "Paulaner Brewing Company Hefe-Wei\u00dfbier Non-Alcoholic",
         "price": "4.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/weissbieralcoholfree"
     },
     {
         "name": "Drake's Brewing Co. Hefeweizen",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/drakeshefeweizen"
     },
     {
         "name": "Sierra Nevada Brewing Co. Kellerweis",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/kellerweis"
     },
     {
         "name": "Pasteur Street Brewing Co. Passionfruit Wheat",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/8936104339024"
     },
     {
         "name": "Blasta Brewing Co. Tangerine Dreams",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/tangerinedreams"
     },
     {
         "name": "Specific Gravity Beverage Company Wheat Beer",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/wheatbeer"
     },
     {
         "name": "Hitachino Nest White Ale",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/wheat-beer/products/ect0008"
     },
     {
         "name": "Stone Brewing Co. Arrogant Bastard Ale (355ml)",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/strong-ale/products/arrogantbastardalebottle"
     },
     {
         "name": "Otherside Brewing Company Big Loaf",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/strong-ale/products/bigloaf"
     },
     {
         "name": "Drake's Brewing Co. Headzo (2018)",
         "price": "36.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/strong-ale/products/headzo2018"
     },
     {
         "name": "Deschutes Brewery Super Jubel (2020)",
         "price": "19.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/strong-ale/products/superjubel2020"
     },
     {
         "name": "Garage Project Wolfman",
         "price": "20.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/strong-ale/products/garageprojectwolfman"
     },
     {
         "name": "The Bruery Bakery: Coconut Macaroons",
         "price": "23.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/bakerycoconutmacaroons"
     },
     {
         "name": "Anderson Valley Brewing Co. Barney Flats Oatmeal Stout",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/bee0001"
     },
     {
         "name": "North Coast Brewing Co. Barrel-Aged Old Rasputin XX",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/northcoastbarrel-agedoldrasputin"
     },
     {
         "name": "Founders Brewing Co. Big Luscious",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/bigluscious"
     },
     {
         "name": "Anderson Valley Brewing Co. Bourbon Barrel Stout",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/bourbonbarrelstout"
     },
     {
         "name": "Founders Brewing Co. Breakfast Stout",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/foundersbreakfaststout"
     },
     {
         "name": "Heretic Brewing Co. Caramel Moo-chiato",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/caramelmoo-chiato"
     },
     {
         "name": "Brewlander Cherry Sundae Pastry Stout",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/cherrysundaepastrystout"
     },
     {
         "name": "Barossa Valley Brewing Chocolate Coffee Stout",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/borodaichocolatecoffee"
     },
     {
         "name": "Rogue Ales Chocolate Stout Nitro",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/chocolatestoutnitro"
     },
     {
         "name": "Pasteur Street Brewing Co. Cyclo Imperial Chocolate Stout",
         "price": "55.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/8936104330007"
     },
     {
         "name": "Dainton Brewery Darklord",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/darklord"
     },
     {
         "name": "Hitachino Nest Espresso Stout",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/ect0011"
     },
     {
         "name": "Mikkeller George BA",
         "price": "45.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/georgeba"
     },
     {
         "name": "Young Master Brewery Hak Mo Sheung Double Chocolate Imperial Stout",
         "price": "23.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/youngmasterhakmosheungdoublechocolateandvanilla"
     },
     {
         "name": "Young Master Brewery Hak Mo Sheung Stout Imperial Con Ancho Y Panca",
         "price": "23.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/youngmasterhakmosheungchill"
     },
     {
         "name": "The Bruery Hold the Spoon: Black Chocolate Cake",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/holdthespoonblackchocolatecake"
     },
     {
         "name": "Anderson Valley Brewing Co. Huge Arker",
         "price": "16.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/hugearkercans"
     },
     {
         "name": "Lion Brewery Jolly Good Stout",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/jollygoodstout"
     },
     {
         "name": "Founders Brewing Co. KBS",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/kbs"
     },
     {
         "name": "Founders Brewing Co. KBS Maple Mackinac Fudge",
         "price": "20.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/kbsmaplemackinacfudge"
     },
     {
         "name": "Fourpure Brewing Co. Last Train",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/lasttrainoatmealstout"
     },
     {
         "name": "BrewDog Layer Cake",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/layercake"
     },
     {
         "name": "Beerfarm Milk Stout",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/milkstout"
     },
     {
         "name": "Pirate Life Brewing Acai & Passionfruit Sour",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/acaiandpassionfruitsour"
     },
     {
         "name": "Brewlander Acid Hop",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/acidhop"
     },
     {
         "name": "Deep Creek Brewing Company Aloha",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/aloha"
     },
     {
         "name": "Pirate Life Brewing Apple & Guava Sour",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/appleguavasour"
     },
     {
         "name": "Beerfarm Asam Boi Gose",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/beerfarmasamboi"
     },
     {
         "name": "Mikkeller Baghaven: Havnes\u00e6son - Blend 2",
         "price": "45.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/baghavenhavnesson-blend2"
     },
     {
         "name": "Mikkeller Baghaven: Rubus of Rose Vanilje - Blend 1",
         "price": "69.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/baghavenrubusofrosevanilje-blend1"
     },
     {
         "name": "Anderson Valley Brewing Co. Blood Orange Gose",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/bee0092"
     },
     {
         "name": "Otherside Brewing Company Blueberry Slurpee Sour",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/blueberryslurpeesour"
     },
     {
         "name": "Pirate Life Brewing Blueberry Sour",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/blueberrysour"
     },
     {
         "name": "Pirate Life Brewing Boysenberry Dark Sour",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/boysenberrydarksour"
     },
     {
         "name": "BrewDog Braindead Biscotti",
         "price": "27.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/brewdogoverworksbraindeadbiscotti"
     },
     {
         "name": "Anderson Valley Brewing Co. Briney Melon Gose",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/andersonvalleybrineymelongose"
     },
     {
         "name": "Young Master Brewery Cha Chaan Teng Gose",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/youngmasterchachaantenggose"
     },
     {
         "name": "Garage Project Chance, Luck & Magic",
         "price": "23.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/chanceluckmagic"
     },
     {
         "name": "Brouwerij Verhaeghe Duchesse Cherry",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/verhaegheduchessecherry"
     },
     {
         "name": "Brouwerij Verhaeghe Duchesse Chocolate Cherry",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/duchessechocolatecherry"
     },
     {
         "name": "Brouwerij Verhaeghe Duchesse De Bourgogne",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/verhaegheduchessedebourgogne"
     },
     {
         "name": "Garage Project Electric Dry Hop Acid Test",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/garageprojectelectricdryhopacidtest"
     },
     {
         "name": "Rocky Ridge Brewing Co. Feijoa Sour",
         "price": "36.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/feijoasour"
     },
     {
         "name": "Brouwerij Boon Framboise Boon",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/framboiseboon"
     },
     {
         "name": "Anderson Valley Brewing Co. Framboise Rose Gose",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/andersonvalleyframboiserosegose"
     },
     {
         "name": "Brouwerij 3 Fonteinen Framboos Oogst 2018",
         "price": "66.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/framboosoogst2018"
     },
     {
         "name": "Brouwerij Rodenbach Fruitage",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/rodenbachfruitage"
     },
     {
         "name": "Barossa Valley Brewing I Can't Believe It's Not Bacon",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/smoked-beer/products/icantbelieveitsnotbacon"
     },
     {
         "name": "Sunly Seltzer Blood Orange & Grapefruit",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/bloodorangegrapefruit"
     },
     {
         "name": "BrewDog Clean & Press: Crushed Black Cherry",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/cleanpresscrushedblackcherry"
     },
     {
         "name": "BrewDog Clean & Press: Smashed Cactus & Lime",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/cleanpresssmashedcactuslime"
     },
     {
         "name": "BrewDog Clean & Press: White Peach & Mango",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/cleanpresswhitepeachmango"
     },
     {
         "name": "Sunly Seltzer Davidson Plum & Berry",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/davidsonplumberry"
     },
     {
         "name": "Moon Dog Brewery Fizzer: Coco Mango",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/fizzercocomango"
     },
     {
         "name": "Moon Dog Brewery Fizzer: Piney Limey",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/fizzerpineylimey"
     },
     {
         "name": "Moon Dog Brewery Fizzer: Strawbs & Cream",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/fizzerstrawbscream"
     },
     {
         "name": "Sunly Seltzer Ginger & Lemon",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/gingerlemon"
     },
     {
         "name": "SweetWater Brewing Co. Hydroponics Seltzer",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/hydroponics"
     },
     {
         "name": "Heretic Brewing Co. Raspberry Hard Seltzer",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/seltzer/products/raspberryhardseltzer"
     },
     {
         "name": "Founders Brewing Co. Dirty Bastard",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/scotch-ale/products/foundersdirtybastard"
     },
     {
         "name": "BrewDog Black Jacques",
         "price": "34.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/saison/products/blackjacques"
     },
     {
         "name": "Rocky Ridge Brewing Co. Devine Goodtimes 2019",
         "price": "40.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/saison/products/rockyridgedevinegoodtimessaison"
     },
     {
         "name": "Jester King Brewery Saison Americaine",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/saison/products/jesterkingsaisonamericaine"
     },
     {
         "name": "Brasserie Dupont Saison Dupont",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/saison/products/saison-dupont"
     },
     {
         "name": "Far Yeast Brewing Company Tokyo White",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/saison/products/tokyowhite"
     },
     {
         "name": "Hitachino Nest Red Rice Ale",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/rice-beer/products/ect0010"
     },
     {
         "name": "Deschutes Brewery Black Butte Porter",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/de002"
     },
     {
         "name": "Rocky Ridge Brewing Co. Choc Coconut Porter",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/choccoconutporter"
     },
     {
         "name": "Heretic Brewing Co. Chocolate Hazelnut Porter",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/hereticchocolatehazelnutporter"
     },
     {
         "name": "Heart of Darkness Director's Cacao Nib",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/8938511702088"
     },
     {
         "name": "Collective Arts Brewing Imperial Porter",
         "price": "30.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/imperialporter"
     },
     {
         "name": "Founders Brewing Co. Porter",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/foundersporter"
     },
     {
         "name": "Lion City Meadery Spice Boys",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/spiceboys"
     },
     {
         "name": "Collective Arts Brewing Stranger Than Fiction",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/strangerthanfiction"
     },
     {
         "name": "Collective Arts Brewing Stranger Than: Chocolate & Coconut",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/strangerthanchocolatecoconut"
     },
     {
         "name": "YO-HO Brewing Company Tokyo Black Porter",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/tokyoblackporter"
     },
     {
         "name": "Jester King Brewery Twilight Oblivion",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/porter/products/jesterkingtwilightoblivion"
     },
     {
         "name": "Drake's Brewing Co. 1500",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/drakes1500palealebeerstyle"
     },
     {
         "name": "SweetWater Brewing Co. 420 Extra Pale Ale",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/sweetwater420extrapaleale"
     },
     {
         "name": "Rocky Ridge Brewing Co. Ace Pale Ale",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/rockyridgeacepaleale"
     },
     {
         "name": "Young Master Brewery Another One",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/youngmasteranotheronehoppysessionale"
     },
     {
         "name": "BrewDog BrewDog Pale Ale",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/brewdogpaleale"
     },
     {
         "name": "Beerfarm Calm Ya Farm",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/calmyafarm"
     },
     {
         "name": "Behemoth Brewing Company Chur!",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/behemothchurpaleale"
     },
     {
         "name": "Young Master Brewery Classic Pale Ale",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/youngmasterclassicpaleale"
     },
     {
         "name": "BrewDog Dead Pony Club",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/ec0003"
     },
     {
         "name": "Redpoint Brewing Co. Disco Macaw",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/redpointdiscomacawjuicypaleale"
     },
     {
         "name": "Heart of Darkness Dream Alone",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/8938511702057"
     },
     {
         "name": "Parrotdog Falcon",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/parrotdogfalcon"
     },
     {
         "name": "Behemoth Brewing Company Feijoa Freedom",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/feijoafreedom"
     },
     {
         "name": "Heart of Darkness First Sunset",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/firstsunset"
     },
     {
         "name": "Behemoth Brewing Company Freedom APA",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/behemothfreedom"
     },
     {
         "name": "Blasta Brewing Co. Grimster Rocks",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/grimsterrocksapa"
     },
     {
         "name": "Garage Project Hapi Daze",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/garageprojecthapidaze"
     },
     {
         "name": "Otherside Brewing Company Indie",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/indiexpa"
     },
     {
         "name": "Omnipollo Levon",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/levon"
     },
     {
         "name": "Deschutes Brewery Lil' Squeezy",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/deschuteslilsqueezyjuice"
     },
     {
         "name": "Omnipollo Maz",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/maz"
     },
     {
         "name": "Deschutes Brewery Mirror Pond",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/bee0107"
     },
     {
         "name": "Mismatch Brewing Co. Mismatch Pale Ale",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/mismatchpaleale"
     },
     {
         "name": "Mornington Peninsula Brewery Mornington Pale",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/morningtonpaleale"
     },
     {
         "name": "Gosnells of London Citra Sea Mead",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/gosnellscitraseamead"
     },
     {
         "name": "Lion City Meadery Classic Mead",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/classicmead"
     },
     {
         "name": "Gosnells of London Elderflower Mead",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/gosnellselderflowermead"
     },
     {
         "name": "Gosnells of London Gooseberry Mead",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/gosnellsgooseberrymead"
     },
     {
         "name": "Lion City Meadery Hibiscus Blueberry",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/hibiscusblueberrymead"
     },
     {
         "name": "Gosnells of London Hibiscus Mead",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/5060492600060"
     },
     {
         "name": "Gosnells of London Hopped Mead",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/5060492600008"
     },
     {
         "name": "Gosnells of London London Mead",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/gosnellslondonmead"
     },
     {
         "name": "Lion City Meadery Longan Red Date",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/longanreddate"
     },
     {
         "name": "Lone Bee Mead Sparkling Mead",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/lonebeesparklingmead"
     },
     {
         "name": "Lion City Meadery Spiced Mead",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/mead/products/spicedmead"
     },
     {
         "name": "Brouwerij Boon Framboise Boon",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/framboiseboon"
     },
     {
         "name": "Brouwerij 3 Fonteinen Framboos Oogst 2018",
         "price": "66.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/framboosoogst2018"
     },
     {
         "name": "Brouwerij Rodenbach Fruitage",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/rodenbachfruitage"
     },
     {
         "name": "Brouwerij Boon Geuze Mariage Parfait",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/boonguezemarriotparfait"
     },
     {
         "name": "Brouwerij 3 Fonteinen Hommage Bio Frambozen",
         "price": "61.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/hommagebioframbozen"
     },
     {
         "name": "Brouwerij Boon Kriek Boon",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/boonkriek"
     },
     {
         "name": "Lindemans Lindemans Apple",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/lindemansappledrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Cassis",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/lindemanscassisdrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Framboise",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/lindemansframboisedrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Kriek",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/lindemanskriekdrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Pecheresse",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/lindemanspechedrinkingpartners"
     },
     {
         "name": "Brouwerij Boon Oude Geuze Boon",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/boongueze"
     },
     {
         "name": "Brouwerij Boon Oude Geuze Boon VAT 108bis",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/oudegeuzeboonvat108"
     },
     {
         "name": "Brouwerij 3 Fonteinen Oude Geuze Cuv\u00e9e Armand & Gaston",
         "price": "36.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/3fonteinencuveearmandgaston"
     },
     {
         "name": "Brouwerij 3 Fonteinen Oude Gueze",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/3fonteinenoudegueze"
     },
     {
         "name": "Brouwerij 3 Fonteinen Oude Kriek",
         "price": "36.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/3fonteinenoudekriek"
     },
     {
         "name": "Brouwerij Boon Oude Kriek Boon",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/oudekriekboon"
     },
     {
         "name": "Brouwerij Boon Oude Schaarbeekse Kriek Boon 2019",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lambic/products/oudeschaarbeeksekriekboon2019"
     },
     {
         "name": "Alpirsbacher Brewing Company Alcohol-Free Lager",
         "price": "4.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/lageralcoholfree"
     },
     {
         "name": "Fourpure Brewing Co. Basecamp",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/basecamp"
     },
     {
         "name": "Garage Project BEER",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/garageprojectbeer"
     },
     {
         "name": "Moon Dog Brewery Beer Can",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/beercan"
     },
     {
         "name": "Garage Project Bliss",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/garageprojectbliss"
     },
     {
         "name": "Stone Brewing Co. Buenaveza",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/buenaveza"
     },
     {
         "name": "Garage Project Can Lah",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/garageprojectcanlah"
     },
     {
         "name": "Lion Brewery Cologne K\u00f6lsh",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/cologneklsh"
     },
     {
         "name": "Heart of Darkness Conquistador\u2019s Mexican Pilsner",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/conquistadorsmexicanpilsner"
     },
     {
         "name": "Young Master Brewery Contemporary Pilsner",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/youngmastercontemporarypilsner"
     },
     {
         "name": "Specific Gravity Beverage Company Craft Lager",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/craftlager"
     },
     {
         "name": "Heart of Darkness Futile Purpose",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/heartofdarknessfutilepurposecucumberpilsner"
     },
     {
         "name": "Pasteur Street Brewing Co. God Water",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/godwater"
     },
     {
         "name": "Blasta Brewing Co. Hop Hype Eclipse",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/hophypeeclipse"
     },
     {
         "name": "Beerfarm India Pale Lager",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/indiapalelager"
     },
     {
         "name": "SweetWater Brewing Co. Insane OG",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/insaneog"
     },
     {
         "name": "Rocky Ridge Brewing Co. IPL (Gluten Reduced)",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/mid-strengthipl"
     },
     {
         "name": "Lion Brewery Island Lager",
         "price": "5.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/lionislandlager"
     },
     {
         "name": "BrewDog Lost Lager",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/brewdoglostlager"
     },
     {
         "name": "Mismatch Brewing Co. Mismatch Lager",
         "price": "6.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/lager"
     },
     {
         "name": "Rocky Ridge Brewing Co. Oaktoberfest",
         "price": "22.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/oaktoberfest"
     },
     {
         "name": "Deschutes Brewery Pacific Wonderland Lager",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/pacificwonderlandlager"
     },
     {
         "name": "Behemoth Brewing Company Pils In The Coconut",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/pilsinthecoconut"
     },
     {
         "name": "Rogue Ales Rogue Dead Guy Ale",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/ro002"
     },
     {
         "name": "Young Master Brewery 1842 Island",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/youngmaster1842islandipa"
     },
     {
         "name": "Behemoth Brewing Company 6 Foot 5 IPA",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/behemoth6foot5ipa"
     },
     {
         "name": "Deeds Brewing A Quiet Deed",
         "price": "25.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/aquietdeed"
     },
     {
         "name": "Gamma Brewing Co. Algorithm Juice",
         "price": "23.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/algorithmjuice"
     },
     {
         "name": "Founders Brewing Co. All Day IPA (568ml)",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/alldaylarge"
     },
     {
         "name": "Omnipollo Andreas",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/andreas"
     },
     {
         "name": "Salt Beer Factory Angora",
         "price": "15.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/angora"
     },
     {
         "name": "Behemoth Brewing Company Arcahnard the Churly Arachnid",
         "price": "17.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/arcahnardthechurlyarachnid"
     },
     {
         "name": "Rocky Ridge Brewing Co. Baby Peach",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/rockyridgebabypeachcube"
     },
     {
         "name": "Drake's Brewing Co. Best Coast IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/drakesbestcoastipabeerstyle"
     },
     {
         "name": "Parrotdog Bitterbitch",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/parrotdogbitterbitch"
     },
     {
         "name": "Behemoth Brewing Company Brain Smiles",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/behemothbrainsmiles"
     },
     {
         "name": "Brewlander Brewlander Courage",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/brewlandercouragenew"
     },
     {
         "name": "Heretic Brewing Co. California Dry Hopped IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/californiadryhoppedipa"
     },
     {
         "name": "Off Day Beer Company Canvas Jan'21",
         "price": "15.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/canvasjan21"
     },
     {
         "name": "Rocky Ridge Brewing Co. Captain Paddocks",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/captainpaddocks"
     },
     {
         "name": "Sierra Nevada Brewing Co. Celebration 2020",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/celebration2020"
     },
     {
         "name": "Founders Brewing Co. Centennial IPA",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/fo001"
     },
     {
         "name": "Blasta Brewing Co. Chainbreaker",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/chainbreaker"
     },
     {
         "name": "Salt Beer Factory Citra NEIPA Jnr",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/citraneipajnr"
     },
     {
         "name": "Specific Gravity Beverage Company Classic IPA",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/classicipa"
     },
     {
         "name": "BrewDog Clockwork Tangerine",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/clockworkorange"
     },
     {
         "name": "Sierra Nevada Brewing Co. Dankful",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/dankful"
     },
     {
         "name": "Rocky Ridge Brewing Co. Day Man",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/dayman"
     },
     {
         "name": "Beerfarm Asam Boi Gose",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/beerfarmasamboi"
     },
     {
         "name": "Anderson Valley Brewing Co. Blood Orange Gose",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/bee0092"
     },
     {
         "name": "Anderson Valley Brewing Co. Briney Melon Gose",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/andersonvalleybrineymelongose"
     },
     {
         "name": "Young Master Brewery Cha Chaan Teng Gose",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/youngmasterchachaantenggose"
     },
     {
         "name": "Anderson Valley Brewing Co. Framboise Rose Gose",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/andersonvalleyframboiserosegose"
     },
     {
         "name": "The Bruery Goses are Red",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/gosesarered"
     },
     {
         "name": "Collective Arts Brewing Guava Gose",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/gose/products/guavagose"
     },
     {
         "name": "Garage Project Hop Haus Alt",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/golden-ale/products/hophausalt"
     },
     {
         "name": "Far Yeast Brewing Company Tokyo Blonde",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/golden-ale/products/tokyoblonde"
     },
     {
         "name": "Zeffer Cider Co. Alcoholic Ginger Beer",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ginger-beer/products/9421901965686"
     },
     {
         "name": "Royal Jamaican Royal Jamaican Alcoholic Ginger Beer",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ginger-beer/products/626990091882"
     },
     {
         "name": "Zeffer Cider Co. Apple Crumble Infused Cider",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/9421901965846"
     },
     {
         "name": "Zeffer Cider Co. Crisp Apple Cider",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/9421901965013"
     },
     {
         "name": "La Chouette French Cider",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/lachouettecider"
     },
     {
         "name": "Thatchers Cider Green Goblin",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/greengoblin"
     },
     {
         "name": "Thatchers Cider Katy",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/katy"
     },
     {
         "name": "Thatchers Cider Rascal",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/oldrascal"
     },
     {
         "name": "Zeffer Cider Co. Red Apple Cider",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/9421901965310"
     },
     {
         "name": "La Chouette Ros\u00e9 Cider",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/lachouetterosecider"
     },
     {
         "name": "Thatchers Cider Thatchers Zero",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/cider/products/thatcherszero"
     },
     {
         "name": "Garage Project Mutiny on the Bounty",
         "price": "56.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/mutinyonthebounty"
     },
     {
         "name": "The Bruery Nana's Famous Pain Perdu Stout",
         "price": "31.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/nanasfamouspainperdustout"
     },
     {
         "name": "Sierra Nevada Brewing Co. Narwhal 2020",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/narwhal2020"
     },
     {
         "name": "Behemoth Brewing Company North Border Brunch",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/behemothnorthborderbrunch"
     },
     {
         "name": "Anderson Valley Brewing Co. Old Fashioned",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/wildturkeyoldfashioned"
     },
     {
         "name": "North Coast Brewing Co. Old No. 38",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/northcoastoldno38"
     },
     {
         "name": "North Coast Brewing Co. Old Rasputin",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/northcoastoldrasputin"
     },
     {
         "name": "BrewDog Paradox Compass Box",
         "price": "34.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/paradoxcompassbox"
     },
     {
         "name": "Barossa Valley Brewing Peanut Butter Chocolate Milkshake (375ml)",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/peanutbutterchocolatemilkshakelarger"
     },
     {
         "name": "Boatrocker Brewery Ramjet",
         "price": "34.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/ramjet"
     },
     {
         "name": "Gamma Brewing Co. Slick Film",
         "price": "30.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/slickfilm"
     },
     {
         "name": "The Bruery So Happens It's Tuesday",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/sohappensitstuesday"
     },
     {
         "name": "Garage Project Surrender to the Void Vol. 2",
         "price": "24.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/surrendertothevoidvol2"
     },
     {
         "name": "The Bruery Sweet Liberty",
         "price": "30.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/sweetliberty"
     },
     {
         "name": "Deschutes Brewery The Abyss (2020)",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/theabyss2020"
     },
     {
         "name": "Barossa Valley Brewing Triple Barrel Aged Stout",
         "price": "28.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/triplebarrelagedstout"
     },
     {
         "name": "The Bruery Vermont Sticky Maple (2020)",
         "price": "28.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/vermontstickymaple2020"
     },
     {
         "name": "Garage Project Whittaker's Dark Chocolate Beer",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/whittakersdarkchocolatebeer"
     },
     {
         "name": "Garage Project Whittaker's White Chocolate Beer",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/stout/products/whittakerswhitechocolatebeer"
     },
     {
         "name": "Brouwerij Boon Geuze Mariage Parfait",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/boonguezemarriotparfait"
     },
     {
         "name": "The Bruery Goses are Red",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/gosesarered"
     },
     {
         "name": "Collective Arts Brewing Guava Gose",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/guavagose"
     },
     {
         "name": "Brouwerij 3 Fonteinen Hommage Bio Frambozen",
         "price": "61.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/hommagebioframbozen"
     },
     {
         "name": "Rocky Ridge Brewing Co. Imperial Cherry Berliner",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/imperialcherryberliner"
     },
     {
         "name": "Collective Arts Brewing Jam Up The Mash",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/jamupthemash"
     },
     {
         "name": "Boatrocker Brewery K is for Kingsley",
         "price": "38.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/kriekkisforkingsley"
     },
     {
         "name": "Brouwerij Boon Kriek Boon",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/boonkriek"
     },
     {
         "name": "Deep Creek Brewing Company Lagerita",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/lagerita"
     },
     {
         "name": "Lindemans Lindemans Apple",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/lindemansappledrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Cassis",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/lindemanscassisdrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Framboise",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/lindemansframboisedrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Kriek",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/lindemanskriekdrinkingpartners"
     },
     {
         "name": "Lindemans Lindemans Pecheresse",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/lindemanspechedrinkingpartners"
     },
     {
         "name": "Deeds Brewing Milk Bar Series: Blueberry & Raspberry",
         "price": "18.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/milkbarseriesblueberryraspberry"
     },
     {
         "name": "Deeds Brewing Milk Bar Series: Tropicana",
         "price": "17.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/milkbarseriestropicana"
     },
     {
         "name": "Off Day Beer Company Off Day Melon",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/offdaymelon"
     },
     {
         "name": "Behemoth Brewing Company Oh Goodie",
         "price": "15.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/ohgoodie"
     },
     {
         "name": "Mikkeller Oregon Fruit Series - Spontan Blueberry",
         "price": "35.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/oregonfruitseries-spontanblueberry"
     },
     {
         "name": "Mikkeller Oregon Fruit Series - Spontan Plum",
         "price": "35.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/oregonfruitseries-spontanplum"
     },
     {
         "name": "Brouwerij Boon Oude Geuze Boon",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/boongueze"
     },
     {
         "name": "Brouwerij Boon Oude Geuze Boon VAT 108bis",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/oudegeuzeboonvat108"
     },
     {
         "name": "Brouwerij 3 Fonteinen Oude Geuze Cuv\u00e9e Armand & Gaston",
         "price": "36.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/3fonteinencuveearmandgaston"
     },
     {
         "name": "Brouwerij 3 Fonteinen Oude Gueze",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/3fonteinenoudegueze"
     },
     {
         "name": "Rogue Ales Rogue Hazelnut Brown Nectar",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/brown-ale/products/ro001"
     },
     {
         "name": "Otherside Brewing Company Woody Barrelson",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/brown-ale/products/woodybarrelson"
     },
     {
         "name": "Collective Arts Brewing Saint of Circumstance",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/blonde-ale/products/saintofcircumstance"
     },
     {
         "name": "Mismatch Brewing Co. Mandarin Berliner Weisse",
         "price": "6.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/berliner-weisse/products/mandarinberlinerweisse"
     },
     {
         "name": "Mismatch Brewing Co. Strawberry Berliner Weisse",
         "price": "6.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/berliner-weisse/products/strawberryberlinerweisse"
     },
     {
         "name": "St. Bernardus St. Bernardus Tokyo",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-white-ale/products/stbernardustokyo"
     },
     {
         "name": "YO-HO Brewing Company Yoho Wednesdays Cat",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-white-ale/products/yohowednesdayscat"
     },
     {
         "name": "Chimay Trappist Monastery Chimay Blue",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/bl006"
     },
     {
         "name": "Chimay Trappist Monastery Chimay Red",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/chimayred"
     },
     {
         "name": "Chimay Trappist Monastery Chimay Triple",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/bl005"
     },
     {
         "name": "Brouwerij Huyghe Delirium Nocturnum",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/deliriumnocturnum"
     },
     {
         "name": "Brouwerij Huyghe Delirium Tremens",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/bl003"
     },
     {
         "name": "The Bruery Mischief",
         "price": "13.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/mischief"
     },
     {
         "name": "Rochefort Brewery Rochefort 10",
         "price": "16.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/rochefort10drinkingpartner"
     },
     {
         "name": "Rochefort Brewery Rochefort 6",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/rochefort6drinkingpartner"
     },
     {
         "name": "Rochefort Brewery Rochefort 8",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/rochefort8drinkingpartners"
     },
     {
         "name": "St. Bernardus St. Bernardus Abt 12",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/st-bernardus-abt-12"
     },
     {
         "name": "St. Bernardus St. Bernardus Prior 8",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/st-bernardus-prior-8"
     },
     {
         "name": "St. Bernardus St. Bernardus Tripel",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/st-bernardus-tripel"
     },
     {
         "name": "Westmalle Westmalle Dubbel",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/5412343152332"
     },
     {
         "name": "Westmalle Westmalle Tripel",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/belgian-ale/products/westmalletripel"
     },
     {
         "name": "Behemoth Brewing Company Murica",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/behemothmuricapaleale"
     },
     {
         "name": "BrewDog Nanny State",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/brewdognannystatecan"
     },
     {
         "name": "Off Day Beer Company Off Day Pale",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/offdaypale"
     },
     {
         "name": "Beerfarm Pale",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/beerfarmpaleale"
     },
     {
         "name": "Pasteur Street Brewing Co. Pasteur Street Pale Ale",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/pasteurstreetpaleale"
     },
     {
         "name": "Deschutes Brewery Red Chair NWPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/deschutesredchairnwpa"
     },
     {
         "name": "Sierra Nevada Brewing Co. Sierra Nevada Pale Ale",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/sierranevadapalealemad"
     },
     {
         "name": "Omnipollo Stains",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/stains"
     },
     {
         "name": "Lion Brewery Straits Pale Ale",
         "price": "6.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/lionstraitspaleale"
     },
     {
         "name": "Deschutes Brewery Teensy Micro Hazy Ale",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/teensymicrohazyale"
     },
     {
         "name": "Blasta Brewing Co. The Cat's Whiskers",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/thecatswhiskers"
     },
     {
         "name": "Heart of Darkness The Tropics",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/thetropics"
     },
     {
         "name": "Behemoth Brewing Company Tropical Chur",
         "price": "15.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/tropicalchur"
     },
     {
         "name": "Pirate Life Brewing Tropical Pale",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/tropicalpale"
     },
     {
         "name": "BrewDog Vagabond",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/brewdogvagabondpaleale"
     },
     {
         "name": "Rocky Ridge Brewing Co. Watermelon Ace",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/watermelonace"
     },
     {
         "name": "Deschutes Brewery Wowza",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/wowza"
     },
     {
         "name": "YO-HO Brewing Company Yona Yona Ale",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/pale-ale/products/47478619"
     },
     {
         "name": "North Coast Brewing Co. Scrimshaw",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/northcoastscrimshawpilsner"
     },
     {
         "name": "Stone Brewing Co. Stone X Metallica Enter Night Pilsner",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/stonexmetallicaenternightpilsner"
     },
     {
         "name": "Garage Project Talk To The Hand Vol. 2",
         "price": "15.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/talktothehandvol2"
     },
     {
         "name": "Heart of Darkness The Sunshine",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/lager/products/thesunshine"
     },
     {
         "name": "Otherside Brewing Company DDH MBC Oat Cream",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/ddhmbcoatcream"
     },
     {
         "name": "Otherside Brewing Company DDH Sabro Oat Cream",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/ddhsabrooatcream"
     },
     {
         "name": "Deeds Brewing Deeds Hummingbird",
         "price": "16.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/deedshummingbird"
     },
     {
         "name": "Behemoth Brewing Company Delayed Package",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/delayedpackage"
     },
     {
         "name": "Stone Brewing Co. Delicious IPA",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/bee0025"
     },
     {
         "name": "Drake's Brewing Co. Denogginizer",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/drakesdenogginizerdoubleipa"
     },
     {
         "name": "Garage Project DFA",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/garageprojectdfa"
     },
     {
         "name": "Deeds Brewing Dkat Amarillo",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/dkatamarillo"
     },
     {
         "name": "Brothers Craft Brewing Drift",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/brotherscraftdriftipa"
     },
     {
         "name": "BrewDog Elvis Juice",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/5060154917741"
     },
     {
         "name": "Garage Project Excessive Machine",
         "price": "23.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/excessivemachine"
     },
     {
         "name": "Sierra Nevada Brewing Co. Fantastic Haze",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/fantastichaze"
     },
     {
         "name": "Rocky Ridge Brewing Co. Fast Car",
         "price": "18.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/fastcar"
     },
     {
         "name": "Stone Brewing Co. Fear. Movie. Lions",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/stonefml"
     },
     {
         "name": "Stone Brewing Co. Features + Benefits IPA",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/featuresbenefitsipa"
     },
     {
         "name": "Deeds Brewing Fortune & Glory",
         "price": "16.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/fortuneglory"
     },
     {
         "name": "Gamma Brewing Co. Freak Wave",
         "price": "20.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/freakwave"
     },
     {
         "name": "Deschutes Brewery Fresh Haze (568ml)",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/freshhazelarge"
     },
     {
         "name": "Deschutes Brewery Fresh Haze IPA",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/deschutesfreshhazeipa"
     },
     {
         "name": "Deschutes Brewery Fresh Squeezed (568ml)",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/freshsqueezedlarge"
     },
     {
         "name": "Deschutes Brewery Fresh Squeezed IPA",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/de001"
     },
     {
         "name": "Garage Project Garagista",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/9421903026613"
     },
     {
         "name": "Gamma Brewing Co. Guap",
         "price": "21.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/guap"
     },
     {
         "name": "Behemoth Brewing Company Guava Ground Hog",
         "price": "16.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/guavagroundhog"
     },
     {
         "name": "Brouwerij 3 Fonteinen Oude Kriek",
         "price": "36.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/3fonteinenoudekriek"
     },
     {
         "name": "Brouwerij Boon Oude Kriek Boon",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/oudekriekboon"
     },
     {
         "name": "Brouwerij Boon Oude Schaarbeekse Kriek Boon 2019",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/oudeschaarbeeksekriekboon2019"
     },
     {
         "name": "Brouwerij De Brabandere Petrus Aged Red",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/petrusagedred"
     },
     {
         "name": "Garage Project Pilgrim's Blend",
         "price": "24.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/pilgrimsblend"
     },
     {
         "name": "Collective Arts Brewing Pomegranate & Grapefruit Sour",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/pomegranategrapefruitsour"
     },
     {
         "name": "Jester King Brewery Provenance Lemon & Lime",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/jesterkingprovenancelemonlime"
     },
     {
         "name": "Lion City Meadery Pucker Up",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/puckerup"
     },
     {
         "name": "BrewDog Quench Quake",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/brewdogquenchquakesour"
     },
     {
         "name": "Collective Arts Brewing Raspberry Dry Hopped Sour",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/raspberrydryhoppedsour"
     },
     {
         "name": "Behemoth Brewing Company Slushy Fund No. 2",
         "price": "15.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/slushyfundno2"
     },
     {
         "name": "Mikkeller Spontan Blueberry",
         "price": "33.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontanblueberry"
     },
     {
         "name": "Mikkeller Spontan Lychee",
         "price": "33.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontanlychee"
     },
     {
         "name": "Mikkeller Spontan Peach",
         "price": "33.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontanpeach"
     },
     {
         "name": "Mikkeller Spontan Triple Raspberry",
         "price": "45.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontantripleraspberry"
     },
     {
         "name": "Mikkeller Spontan TripleBlueberry",
         "price": "50.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontantripleblueberry"
     },
     {
         "name": "Mikkeller SpontanDryHop Centennial",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontandryhopcentennial"
     },
     {
         "name": "Mikkeller SpontanDryHop Citra",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontandryhopcitra"
     },
     {
         "name": "Mikkeller SpontanDryHop Mosaic",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/spontandryhopmosaic"
     },
     {
         "name": "Blasta Brewing Co. The Rampant Raspberry",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/therampantraspberry"
     },
     {
         "name": "Anderson Valley Brewing Co. Tropical Hazy Sour Ale",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/tropicalhazysourale"
     },
     {
         "name": "Jester King Brewery Vague Recollection",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/jesterkingvaguerecollection"
     },
     {
         "name": "Jester King Brewery Viking Metal",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/jesterkingvikingmetal"
     },
     {
         "name": "Deep Creek Brewing Company Wai Kiki",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/waikiki"
     },
     {
         "name": "Salt Beer Factory Guji",
         "price": "15.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/guji"
     },
     {
         "name": "Garage Project H\u0101pi Sessions: Just Cause You Feel It",
         "price": "21.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hpisessionsjustcauseyoufeelit"
     },
     {
         "name": "BrewDog Hazy AF",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hazyaf"
     },
     {
         "name": "Behemoth Brewing Company Hazy Hop Buddies #8 Lenny and Carl",
         "price": "15.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hazyhopbuddies8lennyandcarl"
     },
     {
         "name": "BrewDog Hazy Jane",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hazyjanebottle"
     },
     {
         "name": "Sierra Nevada Brewing Co. Hazy Little Thing",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sierranevadahazylittlethingipamad"
     },
     {
         "name": "Collective Arts Brewing Hazy State",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hazystate"
     },
     {
         "name": "Otherside Brewing Company Headliner",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/headliner"
     },
     {
         "name": "Fourpure Brewing Co. Hemisphere",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hemispheresessionipa"
     },
     {
         "name": "Behemoth Brewing Company Here's Churly",
         "price": "16.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hereschurly"
     },
     {
         "name": "Heretic Brewing Co. Heretic Evil Twin",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hereticeviltwinredipa"
     },
     {
         "name": "Sierra Nevada Brewing Co. Hop Bullet",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sierranevadahopbullet"
     },
     {
         "name": "SweetWater Brewing Co. Hop Hash",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sweetwaterhophasheasyipa"
     },
     {
         "name": "Barossa Valley Brewing Hop Heaven Easy IPA",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hopheaveneasyipa"
     },
     {
         "name": "Drake's Brewing Co. Hopocalypse Hazy",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hopocalypsehazy"
     },
     {
         "name": "BrewDog Hoppy Christmas",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hoppychristmas"
     },
     {
         "name": "Redpoint Brewing Co. Hoppy Hibiscus",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hoppyhibiscus"
     },
     {
         "name": "Behemoth Brewing Company Hops on Rye",
         "price": "15.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hopsonrye"
     },
     {
         "name": "Sierra Nevada Brewing Co. Hoptimum",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hoptimum"
     },
     {
         "name": "Omnipollo Hypertropikal",
         "price": "19.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hypertropikal"
     },
     {
         "name": "Mikkeller I Wish Gluten Free",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/iwish"
     },
     {
         "name": "Pirate Life Brewing IIPA",
         "price": "17.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/piratelifeiipa"
     },
     {
         "name": "Dry & Bitter Brewing Company Illuminations",
         "price": "22.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/illuminations"
     },
     {
         "name": "YO-HO Brewing Company Indo no Aooni IPA",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/4535659001185"
     },
     {
         "name": "Garage Project White Mischief",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/9421030800568"
     },
     {
         "name": "Dry & Bitter Brewing Company Zpritz",
         "price": "19.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/sour-ale/products/zpritz"
     },
     {
         "name": "Dry & Bitter Brewing Company Interstratal Abyss",
         "price": "20.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/interstratalabyss"
     },
     {
         "name": "Deschutes Brewery Inversion IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/bee0105"
     },
     {
         "name": "Pirate Life Brewing IPA",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/piratelifeipa"
     },
     {
         "name": "Collective Arts Brewing IPA No.14",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/ipano14"
     },
     {
         "name": "Collective Arts Brewing IPA No.15",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/ipano15"
     },
     {
         "name": "Gamma Brewing Co. It Slaps",
         "price": "24.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/itslaps"
     },
     {
         "name": "BrewDog Jack Hammer (440ml)",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/jackhammerlarge"
     },
     {
         "name": "Pasteur Street Brewing Co. Jasmine IPA",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/8936104339086"
     },
     {
         "name": "Moon Dog Brewery Jimmy & Lawson's DDH NEIPA",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/jimmylawsonsddhneipa"
     },
     {
         "name": "Deeds Brewing Juice Train",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/juicetrain"
     },
     {
         "name": "Fourpure Brewing Co. Juicebox",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/fourpurejuicebox355ml"
     },
     {
         "name": "Heretic Brewing Co. Juicier than Thou",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hereticjuicierthanthou"
     },
     {
         "name": "Dainton Brewery Jungle Juice",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/junglejuice"
     },
     {
         "name": "Salt Beer Factory Jute",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/jute"
     },
     {
         "name": "Rocky Ridge Brewing Co. Karl Requires Assistance",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/karlrequiresassistance"
     },
     {
         "name": "Drake's Brewing Co. Kick Back IPA",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/drakeskickbackipa"
     },
     {
         "name": "Collective Arts Brewing Life In The Clouds",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/lifeintheclouds"
     },
     {
         "name": "Parrotdog Lindsay",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/parrotlindsay"
     },
     {
         "name": "Heart of Darkness Loose Rivet",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/8938511702040"
     },
     {
         "name": "Heretic Brewing Co. Make America Juicy Again",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hereticmakeamericajuicyagain"
     },
     {
         "name": "Founders Brewing Co. Moon Rambler IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/moonrambleripa"
     },
     {
         "name": "Pirate Life Brewing Mosaic",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/piratelifemosaicipa355ml"
     },
     {
         "name": "Blasta Brewing Co. Myway",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/myway"
     },
     {
         "name": "Stone Brewing Co. Neverending Haze",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/neverendinghaze"
     },
     {
         "name": "Lion Brewery New England Session IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/newenglandsessionipa"
     },
     {
         "name": "Deeds Brewing No Ticket",
         "price": "17.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/noticket"
     },
     {
         "name": "Garage Project Noon Juice",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/noonjuice"
     },
     {
         "name": "BrewDog O-G Hazy",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/o-ghazy"
     },
     {
         "name": "Rocky Ridge Brewing Co. Oaked Cream",
         "price": "18.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/oakedcream"
     },
     {
         "name": "Dry & Bitter Brewing Company Oculus Orbus",
         "price": "22.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/oculusorbus"
     },
     {
         "name": "Off Day Beer Company Off Day Beer",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offdaybeer"
     },
     {
         "name": "Off Day Beer Company Off Day Double",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offdaydouble"
     },
     {
         "name": "Off Day Beer Company Off Day Haze",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offdayhaze"
     },
     {
         "name": "Off Day Beer Company Off Day Sunglow",
         "price": "10.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offdaysunglow"
     },
     {
         "name": "The Bruery Offshoot Escape (It's Your Everyday West Coast IPA)",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offshootescapeitsyoureverydaywestcoastipa"
     },
     {
         "name": "The Bruery Offshoot Relax (It's Just A Hazy IPA)",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offshootrelaxitsjustahazyipa"
     },
     {
         "name": "The Bruery Offshoot Retreat (This Is A Hazy Double IPA)",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/offshootretreatthisisahazydoubleipa"
     },
     {
         "name": "Mikkeller Organic Hazy IPA",
         "price": "14.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/organichazyipa"
     },
     {
         "name": "Deeds Brewing Pavlova",
         "price": "18.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/pavlova"
     },
     {
         "name": "Garage Project Pernicious Weed",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/9421903026682"
     },
     {
         "name": "Dry & Bitter Brewing Company Phase Curve",
         "price": "16.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/phasecurve"
     },
     {
         "name": "Rocky Ridge Brewing Co. Pine On You Crazy Diamond",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/pineonyoucrazydiamond"
     },
     {
         "name": "Pasteur Street Brewing Co. Pomelo IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/pomeloipa"
     },
     {
         "name": "Brewlander Psychedelic NEIPA",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/psychedelicneipa"
     },
     {
         "name": "BrewDog Punk AF",
         "price": "7.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/punkaf"
     },
     {
         "name": "BrewDog Punk IPA",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/ec0001"
     },
     {
         "name": "Collective Arts Brewing Radio The Mothership",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/radiothemothership"
     },
     {
         "name": "Collective Arts Brewing Ransack The Universe",
         "price": "12.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/ransacktheuniverse"
     },
     {
         "name": "Mikkeller Resting Brew Face",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/restingbrewface"
     },
     {
         "name": "Rocky Ridge Brewing Co. Rock Juice",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/rockjuice"
     },
     {
         "name": "Parrotdog Rodney",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/rodney"
     },
     {
         "name": "Rogue Ales Rogue Batsquatch",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/roguebatsquatchhazyipa"
     },
     {
         "name": "Deschutes Brewery Royal Fresh",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/royalfresh"
     },
     {
         "name": "Beerfarm Royal Haze",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/royalhaze"
     },
     {
         "name": "Stone Brewing Co. Ruination 2.0 Sans Filtre Double IPA",
         "price": "11.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/stoneruination20sansfilter"
     },
     {
         "name": "Rocky Ridge Brewing Co. Sean's Sour",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/seanssour"
     },
     {
         "name": "Fourpure Brewing Co. Shapeshifter",
         "price": "8.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/shapeshifterwestcoastipa"
     },
     {
         "name": "Omnipollo Soluzen",
         "price": "18.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/soluzen"
     },
     {
         "name": "Behemoth Brewing Company Something Hoppy IPA",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/behemothsomethinghoppyipa"
     },
     {
         "name": "Behemoth Brewing Company Something Spikey",
         "price": "15.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/somethingspikey"
     },
     {
         "name": "Blasta Brewing Co. Son of a Beast",
         "price": "12.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sonofabeast"
     },
     {
         "name": "Dry & Bitter Brewing Company Space Capsule",
         "price": "20.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/spacecapsule"
     },
     {
         "name": "Moon Dog Brewery Splice of Heaven",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/spliceofheaven"
     },
     {
         "name": "Fixation Brewing Co. Squish",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/fixationsquish"
     },
     {
         "name": "Mikkeller Stick In The Ear",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/stickintheear"
     },
     {
         "name": "Stone Brewing Co. Stone IPA",
         "price": "8.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/stoneipacan"
     },
     {
         "name": "Gamma Brewing Co. Strangelet",
         "price": "18.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/strangelet"
     },
     {
         "name": "Behemoth Brewing Company Straya",
         "price": "16.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/straya"
     },
     {
         "name": "Stone Brewing Co. Sublimely Self-Righteous",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sublimelyself-righteous"
     },
     {
         "name": "Garage Project Super Fresh Vol. 5",
         "price": "22.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/superfreshvol5"
     },
     {
         "name": "SweetWater Brewing Co. SweetWater IPA",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sweetwateripa"
     },
     {
         "name": "Stone Brewing Co. Tangerine Express",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/stonetangerineexpressipacan"
     },
     {
         "name": "Dry & Bitter Brewing Company The Glow Below",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/theglowbelow"
     },
     {
         "name": "Pirate Life Brewing Throwback IPA",
         "price": "7.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/throwbackipa"
     },
     {
         "name": "Far Yeast Brewing Company Tokyo IPA",
         "price": "9.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/tokyoipa"
     },
     {
         "name": "Sierra Nevada Brewing Co. Torpedo IPA",
         "price": "9.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/sierranevadatorpedoipamad"
     },
     {
         "name": "SweetWater Brewing Co. Trainwreck",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/trainwreck"
     },
     {
         "name": "Garage Project Transit of Venus",
         "price": "10.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/transitofvenus"
     },
     {
         "name": "Dry & Bitter Brewing Company Traverse the Polyverse",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/traversethepolyverse"
     },
     {
         "name": "Pirate Life Brewing Tropical IIPA",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/tropicalipa"
     },
     {
         "name": "Blasta Brewing Co. Unleash the Beast",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/unleashthebeast"
     },
     {
         "name": "Dry & Bitter Brewing Company UW",
         "price": "19.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/uw"
     },
     {
         "name": "Salt Beer Factory Vic Secret Vermont Session IPA",
         "price": "14.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/vicsecretvermontsessionipa"
     },
     {
         "name": "Heart of Darkness When You Open This Bottle Real Raspberries Will Fly Out",
         "price": "11.50",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/whenyouopenthisbottlerealraspberrieswillflyout"
     },
     {
         "name": "Stone Brewing Co. Wizards & Gargoyles",
         "price": "15.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/wizardsgargoyles"
     },
     {
         "name": "Blasta Brewing Co. Wrong Turn",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/wrongturn"
     },
     {
         "name": "Heretic Brewing Co. You Can't Handle The Juice",
         "price": "13.00",
-        "unit": "Single",
+        "quantity": 1,
         "url": "https://beerforce.sg/collections/ipa/products/hereticyoucanthandlethejuice"
     }
 ]

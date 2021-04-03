@@ -7,6 +7,7 @@ class ColdStorageSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Currently `coldstorage` only has a single page data. As `coldstorage` uses infinite scrolling, we need to implement that eventually
+    FIXME: Scrape data from different page, handle case where the unit are 4s, 6s etc.
     """
     name = 'coldstorage'
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']

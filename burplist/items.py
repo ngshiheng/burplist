@@ -6,12 +6,6 @@ from itemloaders.processors import MapCompose, TakeFirst
 from burplist.utils.proxy import parse_price
 
 
-class Unit(enum.Enum):
-    SINGLE = 'Single'
-    SIXPACK = 'Six Pack'
-    CARTON = 'Carton'
-
-
 class ProductItem(scrapy.Item):
     name = scrapy.Field(
         input_processor=MapCompose(str.strip),
@@ -23,7 +17,7 @@ class ProductItem(scrapy.Item):
         output_processor=TakeFirst(),
     )
 
-    unit = scrapy.Field(
+    quantity = scrapy.Field(
         output_processor=TakeFirst(),
     )
 
