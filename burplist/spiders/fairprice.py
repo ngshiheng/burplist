@@ -6,6 +6,9 @@ from scrapy.loader import ItemLoader
 
 
 class FairPriceSpider(scrapy.Spider):
+    """
+    Parse data from site's API
+    """
     name = 'fairprice'
     BASE_URL = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
 
@@ -13,7 +16,7 @@ class FairPriceSpider(scrapy.Spider):
         'category': 'premium',
         'experiments': 'recHome-A,pastPurchaseCategory-A,searchVariant-B,UnappliedPromoVariant-B,substitutionVariant-B,substitutionVariant-B',
         'includeTagDetails': 'true',
-        'page': 1,
+        'page': 1,  # Starting page
         'pageType': 'category',
         'slug': 'premium',
         'storeId': '165',

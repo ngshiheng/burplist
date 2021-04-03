@@ -6,13 +6,16 @@ from scrapy.loader import ItemLoader
 
 
 class ColdStorageSpider(scrapy.Spider):
+    """
+    Parse data from site's API
+    """
     name = 'thirsty'
     BASE_URL = 'https://www.thirsty.com.sg/collections/beer?'
 
     params = {
         'view': 'json',
         'sort_by': 'manual',
-        'page': 1,
+        'page': 1,  # Startin page
     }
 
     def start_requests(self):

@@ -60,10 +60,12 @@
     },
     {
         "name": "Brewdog. Clockwork Tangerine ~ P258",
+        "price": "6.40",
         "url": "https://craftbeersg.com/product/brewdog-clockwork-tangerine/"
     },
     {
         "name": "White Rabbit White Ale ~ P2",
+        "price": "6.50",
         "url": "https://craftbeersg.com/product/white-rabbit-white-ale/"
     },
     {
@@ -88,6 +90,7 @@
     },
     {
         "name": "Little Creatures Dog Days ~ P309",
+        "price": "6.80",
         "url": "https://craftbeersg.com/product/little-creatures-dog-days/"
     },
     {
@@ -96,10 +99,12 @@
     },
     {
         "name": "Brewdog. Hazy Jane ~ P109",
+        "price": "6.90",
         "url": "https://craftbeersg.com/product/brewdog-hazy-jane/"
     },
     {
         "name": "Gweilo. Pale Ale ~ P181",
+        "price": "6.90",
         "url": "https://craftbeersg.com/product/gweilo-pale-ale/"
     },
     {
@@ -122,6 +127,7 @@
     },
     {
         "name": "Brewdog. Pale Ale ~ P163",
+        "price": "7.00",
         "url": "https://craftbeersg.com/product/brewdog-pale-ale/"
     },
     {
@@ -146,6 +152,7 @@
     },
     {
         "name": "Brewlander Joy (Session IPA) ~ P58",
+        "price": "7.00",
         "url": "https://craftbeersg.com/product/brewlander-joy-session-ipa/"
     },
     {
@@ -184,6 +191,7 @@
     },
     {
         "name": "Sierra Nevada Torpedo Extra IPA ~ P8",
+        "price": "7.00",
         "url": "https://craftbeersg.com/product/sierra-nevada-torpedo-extra-ipa/"
     },
     {
@@ -212,6 +220,7 @@
     },
     {
         "name": "Coopers. Best Extra Stout ~ P143",
+        "price": "7.40",
         "url": "https://craftbeersg.com/product/coopers-best-extra-stout/"
     },
     {
@@ -226,6 +235,7 @@
     },
     {
         "name": "Yoho Brewing Wednesday\u2019s Cat ~ P166",
+        "price": "7.50",
         "url": "https://craftbeersg.com/product/yoho-brewing-wednesday-cat/"
     },
     {
@@ -234,6 +244,7 @@
     },
     {
         "name": "Rogue Dead Guy Ale ~ P7",
+        "price": "7.50",
         "url": "https://craftbeersg.com/product/rogue-dead-guy-ale/"
     },
     {
@@ -308,6 +319,7 @@
     },
     {
         "name": "Brewdog Elvis Juice ~ P147",
+        "price": "7.80",
         "url": "https://craftbeersg.com/product/brewdog-elvis-juice/"
     },
     {
@@ -327,18 +339,22 @@
     },
     {
         "name": "Feral Smoked Porter ~ P504",
+        "price": "7.90",
         "url": "https://craftbeersg.com/product/feral-smoked-porter/"
     },
     {
         "name": "Garage Project Hapi Daze ~ P277",
+        "price": "7.90",
         "url": "https://craftbeersg.com/product/garage-project-hapi-daze/"
     },
     {
         "name": "Yoho Brewing Tokyo Black Porter ~ P274",
+        "price": "7.90",
         "url": "https://craftbeersg.com/product/yoho-brewing-tokyo-black-porter/"
     },
     {
         "name": "Rocky Ridge. Socks & Sandals ~ P259.1",
+        "price": "10.90",
         "url": "https://craftbeersg.com/product/rocky-ridge-socks-and-sandals/"
     },
     {
@@ -358,10 +374,12 @@
     },
     {
         "name": "ParrotDog Hawkeye Session IPA ~ P49",
+        "price": "8.00",
         "url": "https://craftbeersg.com/product/parrotdog-hawkeye-session-ipa/"
     },
     {
         "name": "St. Bernardus Tripel ~ P183.2",
+        "price": "8.00",
         "url": "https://craftbeersg.com/product/st-bernardus-tripel/"
     },
     {
@@ -401,6 +419,7 @@
     },
     {
         "name": "Pirate Life Acai & Passionfruit Sour ~ P523",
+        "price": "8.00",
         "url": "https://craftbeersg.com/product/pirate-life-acai-passionfruit-sour/"
     },
     {
@@ -435,6 +454,7 @@
     },
     {
         "name": "Garage Project BEER ~ P245",
+        "price": "8.00",
         "url": "https://craftbeersg.com/product/garage-project-beer/"
     },
     {
@@ -444,6 +464,7 @@
     },
     {
         "name": "Pirate Life Pale Ale  ~ P468",
+        "price": "8.20",
         "url": "https://craftbeersg.com/product/pirate-life-pale-ale/"
     },
     {
@@ -558,6 +579,7 @@
     },
     {
         "name": "North Taiwan Smoked Plum Beer ~ P61.3",
+        "price": "8.50",
         "url": "https://craftbeersg.com/product/north-taiwan-smoked-plum-beer/"
     },
     {
@@ -577,6 +599,7 @@
     },
     {
         "name": "ParrotDog Bitterbitch IPA ~ P20",
+        "price": "8.50",
         "url": "https://craftbeersg.com/product/parrotdog-bitterbitch-ipa/"
     },
     {
@@ -616,6 +639,7 @@
     },
     {
         "name": "Rocky Ridge. Baby Peach ~ P42",
+        "price": "8.50",
         "url": "https://craftbeersg.com/product/rocky-ridge-experimental-ipa-copy/"
     },
     {
@@ -678,6 +702,7 @@
     },
     {
         "name": "ParrotDog Falcon APA ~ P115",
+        "price": "8.70",
         "url": "https://craftbeersg.com/product/parrotdog-falcon-apa/"
     },
     {
@@ -692,6 +717,7 @@
     },
     {
         "name": "Wychwood Hobgoblin Ruby Beer ~ P216",
+        "price": "8.80",
         "url": "https://craftbeersg.com/product/wychwood-hobgoblin-ruby-beer/"
     },
     {
@@ -706,6 +732,7 @@
     },
     {
         "name": "Pirate Life Tropical Pale  ~ P77",
+        "price": "8.90",
         "url": "https://craftbeersg.com/product/pirate-life-tropical-pale/"
     },
     {
@@ -745,6 +772,7 @@
     },
     {
         "name": "Pirate Life Dilmah Tea & Biccies Brown Ale ~ P317",
+        "price": "9.00",
         "url": "https://craftbeersg.com/product/pirate-life-dilmah-tea-biccies-brown-ale/"
     },
     {
@@ -759,6 +787,7 @@
     },
     {
         "name": "Vocation Brewery. Pride & Joy ~ P32",
+        "price": "9.00",
         "url": "https://craftbeersg.com/product/vocation-pride-joy/"
     },
     {
@@ -798,6 +827,7 @@
     },
     {
         "name": "Saison Dupont Cuvee Dry Hopping ~ P67",
+        "price": "8.20",
         "url": "https://craftbeersg.com/product/saison-dupont-cuvee-dry-hopping/"
     },
     {
@@ -842,10 +872,12 @@
     },
     {
         "name": "Otherside Brewing. Indie XPA ~ P292",
+        "price": "9.50",
         "url": "https://craftbeersg.com/product/otherside-brewing-indie-xpa/"
     },
     {
         "name": "Behemoth. Chur ~ P269",
+        "price": "9.50",
         "url": "https://craftbeersg.com/product/behemoth-chur/"
     },
     {
@@ -860,6 +892,7 @@
     },
     {
         "name": "Rocky Ridge. Choc Coconut Porter  ~ P75",
+        "price": "9.50",
         "url": "https://craftbeersg.com/product/rocky-ridge-choc-coconut-porter/"
     },
     {
@@ -923,6 +956,7 @@
     },
     {
         "name": "Pirate Life IPA ~ P76",
+        "price": "9.60",
         "url": "https://craftbeersg.com/product/pirate-life-ipa/"
     },
     {
@@ -937,6 +971,7 @@
     },
     {
         "name": "Saison Dupont ~ P117",
+        "price": "8.80",
         "url": "https://craftbeersg.com/product/saison-dupont/"
     },
     {
@@ -961,6 +996,7 @@
     },
     {
         "name": "The 1925 Brewing Company. Sour Plum ~ P60.1",
+        "price": "9.80",
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-sour-plum/"
     },
     {
@@ -970,6 +1006,7 @@
     },
     {
         "name": "The 1925 Brewing Company. Liang Teh ~ P108",
+        "price": "9.80",
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-liang-teh/"
     },
     {
@@ -999,10 +1036,12 @@
     },
     {
         "name": "Young Master. 1842 Island IPA ~ P60",
+        "price": "9.80",
         "url": "https://craftbeersg.com/product/young-master-1842-island-ipa/"
     },
     {
         "name": "Pirate Life Mosaic IPA ~ P438",
+        "price": "9.80",
         "url": "https://craftbeersg.com/product/pirate-life-mosaic-ipa/"
     },
     {
@@ -1042,6 +1081,7 @@
     },
     {
         "name": "Dainton. Blood Orange ~ P199",
+        "price": "10.00",
         "url": "https://craftbeersg.com/product/dainton-blood-orange/"
     },
     {
@@ -1056,6 +1096,7 @@
     },
     {
         "name": "Rocky Ridge. Imperial Ace Pale Ale  ~ P200",
+        "price": "13.00",
         "url": "https://craftbeersg.com/product/rocky-ridge-imperial-ace-pale-ale/"
     },
     {
@@ -1210,6 +1251,7 @@
     },
     {
         "name": "Gweilo. Clear as DIPA  ~ P194.2",
+        "price": "10.70",
         "url": "https://craftbeersg.com/product/gweilo-clear-as-dipa/"
     },
     {
@@ -1307,6 +1349,7 @@
     },
     {
         "name": "Rocky Ridge. All Together ~ P431",
+        "price": "11.10",
         "url": "https://craftbeersg.com/product/rocky-ridge-karls-thickshake-copy/"
     },
     {
@@ -1346,6 +1389,7 @@
     },
     {
         "name": "Brewlander The Fringe Project DDH IPA ~ P86",
+        "price": "11.50",
         "url": "https://craftbeersg.com/product/brewlander-the-fringe-project-ddh-ipa/"
     },
     {
@@ -1360,6 +1404,7 @@
     },
     {
         "name": "North Brewing . Green Curve \u2013 North X Stillwater IPA ~ P500",
+        "price": "11.50",
         "url": "https://craftbeersg.com/product/north-brewing-green-curve-north-stillwater-ipa/"
     },
     {
@@ -1508,6 +1553,7 @@
     },
     {
         "name": "Blasta Brewing. Wrong Turn ~ P253",
+        "price": "12.50",
         "url": "https://craftbeersg.com/product/blasta-brewing-wrong-turn/"
     },
     {
@@ -1537,10 +1583,12 @@
     },
     {
         "name": "ParrotDog Lloyd Hazy IPA ~ P162",
+        "price": "13.30",
         "url": "https://craftbeersg.com/product/parrotdog-lloyd-hazy-ipa/"
     },
     {
         "name": "ParrotDog Lindsay West Coast IPA ~ P487",
+        "price": "13.30",
         "url": "https://craftbeersg.com/product/parrotdog-lindsay-west-coast-ipa/"
     },
     {
@@ -1600,6 +1648,7 @@
     },
     {
         "name": "Behemoth Feijoa Freedom ~ P47",
+        "price": "14.20",
         "url": "https://craftbeersg.com/product/behemoth-feijoa-freedom/"
     },
     {
@@ -1609,6 +1658,7 @@
     },
     {
         "name": "Behemoth Guava Ground Hog  ~ P27",
+        "price": "14.20",
         "url": "https://craftbeersg.com/product/behemoth-guava-ground-hog/"
     },
     {
@@ -1658,6 +1708,7 @@
     },
     {
         "name": "Amager Walter the Baby Bat ~ P225",
+        "price": "15.00",
         "url": "https://craftbeersg.com/product/amager-walter-the-baby-bat/"
     },
     {
@@ -1682,6 +1733,7 @@
     },
     {
         "name": "Garage Project Boss Level ~ P164",
+        "price": "15.80",
         "url": "https://craftbeersg.com/product/garage-project-boss-level/"
     },
     {
@@ -1729,10 +1781,12 @@
     },
     {
         "name": "Dry & Bitter Rocket Juice ~ P30",
+        "price": "17.00",
         "url": "https://craftbeersg.com/product/dry-bitter-rocket-jiuce/"
     },
     {
         "name": "Pirate Life IIPA ~ P301",
+        "price": "17.00",
         "url": "https://craftbeersg.com/product/pirate-life-iipa/"
     },
     {
@@ -1772,6 +1826,7 @@
     },
     {
         "name": "Dry & Bitter Double Dippy Doo ~ P475",
+        "price": "17.50",
         "url": "https://craftbeersg.com/product/dry-bitter-double-dippy-doo/"
     },
     {
@@ -1796,6 +1851,7 @@
     },
     {
         "name": "Gamma Tis The Season Finale ~ P83",
+        "price": "18.50",
         "url": "https://craftbeersg.com/product/gamma-tis-the-season-finale/"
     },
     {
@@ -1814,14 +1870,17 @@
     },
     {
         "name": "Gamma It Slaps ~ P441",
+        "price": "19.50",
         "url": "https://craftbeersg.com/product/gamma-it-slaps/"
     },
     {
         "name": "Garage Project Jekyll ~ P445",
+        "price": "19.50",
         "url": "https://craftbeersg.com/product/garage-project-jekyll/"
     },
     {
         "name": "Garage Project Just \u2018Cause You Feel It ~ P454.1",
+        "price": "19.50",
         "url": "https://craftbeersg.com/product/garage-project-just-cause-you-feel-it/"
     },
     {
@@ -2000,6 +2059,7 @@
     },
     {
         "name": "ParrotDog Falcon APA (Pack of 6) ~ P115",
+        "price": "51.87",
         "url": "https://craftbeersg.com/product/parrotdog-falcon-apa-2/"
     },
     {
@@ -2029,6 +2089,7 @@
     },
     {
         "name": "Rocky Ridge. Session (Case of 24)",
+        "price": "182.40",
         "url": "https://craftbeersg.com/product/rocky-ridge-session-2/"
     },
     {
@@ -2037,6 +2098,7 @@
     },
     {
         "name": "Rocky Ridge. Black Forest Lager  Pack of 16",
+        "price": "150.00",
         "url": "https://craftbeersg.com/product/rocky-ridge-black-forest-lager-pack-of-16/"
     },
     {

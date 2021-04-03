@@ -3,7 +3,11 @@ from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
 
 
-class ColdStorageSpider(scrapy.Spider):
+class BeerForceSpider(scrapy.Spider):
+    """
+    Extract data from raw HTML
+    Starting URL is from a base URL which contains different styles of beer
+    """
     name = 'beerforce'
     start_urls = ['https://beerforce.sg/pages/all-styles']
 
@@ -24,3 +28,9 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_xpath('price', './/span[@class="money"]/text()')
             loader.add_value('url', response.urljoin(media.xpath('./a/@href').get()))
             yield loader.load_item()
+
+        # Recursively follow the link to the next page, extracting data from it
+        has_next_page = response.xpath('//span[@class="next"]/a/@href').get()
+        if has_next_page is not None:
+            next_page = response.urljoin(response.xpath('//span[@class="next"]/a/@href').get())
+            yield response.follow(next_page, callback=self.parse)

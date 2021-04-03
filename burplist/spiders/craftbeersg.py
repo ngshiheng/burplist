@@ -5,6 +5,9 @@ from scrapy.loader import ItemLoader
 
 
 class CraftBeerSGSpider(scrapy.Spider):
+    """
+    Extract data from raw HTML
+    """
     name = 'craftbeersg'
     start_urls = [get_proxy_url('https://craftbeersg.com/product-category/beer')]
 
