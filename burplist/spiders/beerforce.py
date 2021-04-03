@@ -1,5 +1,5 @@
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductItem, Unit
 from scrapy.loader import ItemLoader
 
 
@@ -24,8 +24,13 @@ class BeerForceSpider(scrapy.Spider):
 
         for product, media in zip(product_details, product_media):
             loader = ItemLoader(item=ProductItem(), selector=product)
-            loader.add_xpath('name', './/h3[@class="product__title h4"]/text()')
+
+            name = product.xpath('.//h3[@class="product__title h4"]/text()').get().strip()
+            vendor = product.xpath('.//h4[@class="product__vendor h6"]/text()').get().strip()
+
+            loader.add_value('name', f'{vendor} {name}')
             loader.add_xpath('price', './/span[@class="money"]/text()')
+            loader.add_value('unit', Unit.SINGLE.value)  # NOTE: All scrapped item from this site are 'Single' unit
             loader.add_value('url', response.urljoin(media.xpath('./a/@href').get()))
             yield loader.load_item()
 
@@ -33,4 +38,4 @@ class BeerForceSpider(scrapy.Spider):
         has_next_page = response.xpath('//span[@class="next"]/a/@href').get()
         if has_next_page is not None:
             next_page = response.urljoin(response.xpath('//span[@class="next"]/a/@href').get())
-            yield response.follow(next_page, callback=self.parse)
+            yield response.follow(next_page, callback=self.parse_collection)
