@@ -3,7 +3,6 @@ from typing import Tuple
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.proxy import get_proxy_url
 from scrapy.loader import ItemLoader
 
 

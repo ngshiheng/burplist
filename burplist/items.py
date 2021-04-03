@@ -1,5 +1,3 @@
-import enum
-
 import scrapy
 from itemloaders.processors import MapCompose, TakeFirst
 
