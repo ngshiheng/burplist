@@ -13,3 +13,10 @@ def get_proxy_url(url: str) -> str:
 
     param = {'api_key': SCRAPER_API_KEY, 'url': url}
     return 'http://api.scraperapi.com/?' + urlencode(param)
+
+
+def remove_dollar_sign(price: str) -> str:
+    """
+    Remove dollar sign from a string
+    """
+    return price.replace('$', '')
