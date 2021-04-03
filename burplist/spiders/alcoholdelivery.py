@@ -1,7 +1,7 @@
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductItem, Unit
 from scrapy.loader import ItemLoader
 
 
@@ -61,6 +61,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
 
                 loader.add_value('name', product['name'])
                 loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
+                loader.add_value('unit', Unit.SINGLE.value)  # NOTE: All scrapped item from this site are 'Single' unit
                 loader.add_value('url', f'https://www.alcoholdelivery.com.sg/product/{slug}')
                 yield loader.load_item()
 

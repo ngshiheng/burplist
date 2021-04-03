@@ -1,4 +1,6 @@
 import os
+import re
+from decimal import Decimal
 from urllib.parse import urlencode
 
 
@@ -15,8 +17,8 @@ def get_proxy_url(url: str) -> str:
     return 'http://api.scraperapi.com/?' + urlencode(param)
 
 
-def remove_dollar_sign(price: str) -> str:
+def parse_price(price: str) -> Decimal:
     """
-    Remove dollar sign from a string
+    Get price of a product from a given string
     """
-    return price.replace('$', '')
+    return Decimal(re.sub(r'[^\d.]', '', price))
