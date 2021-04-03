@@ -22,8 +22,10 @@ docker run -d -p 8050:8050 scrapinghub/splash
 pipenv run scrapy shell 'http://localhost:8050/render.html?url=https://www.alcoholdelivery.com.sg/beer-cider/craft-beer'
 ```
 
-## To see what scrapy sees
+## To Check If Content Loads Correctly
 
 ```sh
 pipenv run scrapy view https://coldstorage.com.sg/beers-wines-spirits/beer-cidercraft-beers
 ```
+
+Or you can inspect your browser and `Cmd + Shift + P` to `> Disable JavaScript` to check if the page loads using JavaScript

@@ -1,2567 +1,3158 @@
 [
     {
-        "name": "Lindemans Kriek ~ P90",
+        "name": "Lindemans Kriek",
         "price": "5.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lindemans-kriek/"
     },
     {
-        "name": "Leffe Brune ~ P25",
+        "name": "Leffe Brune",
         "price": "5.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/leffe-brune/"
     },
     {
-        "name": "Lindemans Pecheresse ~ P186",
+        "name": "Lindemans Pecheresse",
         "price": "5.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lindemans-pecheresse/"
     },
     {
-        "name": "Lindemans Apple ~ P182",
+        "name": "Lindemans Apple",
         "price": "5.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lindemans-apple/"
     },
     {
-        "name": "Big Drop Paradiso Citra IPA ~ P224",
+        "name": "Big Drop Paradiso Citra IPA",
         "price": "5.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/big-drop-paradiso-citra-ipa/"
     },
     {
-        "name": "Brewlander Freedom (Lager) ~ P17",
+        "name": "Brewlander Freedom Lager",
         "price": "5.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-freedom-lager/"
     },
     {
-        "name": "Fourpure Easy Peeler ~ P312",
+        "name": "Fourpure Easy Peeler",
         "price": "5.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-easy-peeler/"
     },
     {
-        "name": "Fourpure Hemisphere Session IPA ~ P29",
+        "name": "Fourpure Hemisphere Session IPA",
         "price": "5.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-hemisphere-session-ipa/"
     },
     {
-        "name": "Franziskaner Weissbier ~ P480",
+        "name": "Franziskaner Weissbier",
         "price": "6.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/franziskaner-weissbier/"
     },
     {
-        "name": "Thornbridge Green Mountain ~ P270.1",
+        "name": "Thornbridge Green Mountain",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-green-mountain/"
     },
     {
-        "name": "Brewdog. Lost Lager ~ P140",
+        "name": "Brewdog. Lost Lager",
         "price": "6.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-lost-lager/"
     },
     {
-        "name": "Brewdog. Vagabond Pale Ale ~ P123",
+        "name": "Brewdog. Vagabond Pale Ale",
         "price": "6.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-vagabond-pale-ale/"
     },
     {
-        "name": "Brewdog. Clockwork Tangerine ~ P258",
+        "name": "Brewdog. Clockwork Tangerine",
+        "price": "6.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-clockwork-tangerine/"
     },
     {
-        "name": "White Rabbit White Ale ~ P2",
+        "name": "White Rabbit White Ale",
+        "price": "6.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/white-rabbit-white-ale/"
     },
     {
-        "name": "Little Creatures IPA ~ P124",
+        "name": "Little Creatures IPA",
         "price": "6.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/little-creatures-ipa/"
     },
     {
-        "name": "Hitachino Nest. White Ale ~ P114",
+        "name": "Hitachino Nest. White Ale",
         "price": "6.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-white-ale/"
     },
     {
-        "name": "Founders All Day IPA ~ P113",
+        "name": "Founders All Day IPA",
         "price": "6.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-all-day-ipa/"
     },
     {
-        "name": "Magic Hat Brewing Co. Magic Hat #9 ~ P70",
+        "name": "Magic Hat Brewing Co. Magic Hat #9",
         "price": "6.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-hat-brewing-pale-ale/"
     },
     {
-        "name": "Little Creatures Dog Days ~ P309",
+        "name": "Little Creatures Dog Days",
+        "price": "6.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/little-creatures-dog-days/"
     },
     {
-        "name": "Gweilo Hoppy Wheat ~ P56",
+        "name": "Gweilo Hoppy Wheat",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-hoppy-wheat/"
     },
     {
-        "name": "Brewdog. Hazy Jane ~ P109",
+        "name": "Brewdog. Hazy Jane",
+        "price": "6.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-hazy-jane/"
     },
     {
-        "name": "Gweilo. Pale Ale ~ P181",
+        "name": "Gweilo. Pale Ale",
+        "price": "6.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-pale-ale/"
     },
     {
-        "name": "Deschutes Brewery Wowza! ~ P239",
+        "name": "Deschutes Brewery Wowza!",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/descutes-brewery-wowza/"
     },
     {
-        "name": "Brewlander Love (Wild IPA) ~ P25.1",
+        "name": "Brewlander Love Wild IPA",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-love-wild-ipa-copy/"
     },
     {
-        "name": "Wilde Gluten-Free Pale Ale ~ P146",
+        "name": "Wilde Gluten-Free Pale Ale",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/wilde-gluten-free-pale-ale/"
     },
     {
-        "name": "Crabbie\u2019s Original Alcoholic Ginger Beer ~ 128",
+        "name": "Crabbie\u2019s Original Alcoholic Ginger Beer",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/crabbies-original-alcoholic-ginger-beer/"
     },
     {
-        "name": "Brewdog. Pale Ale ~ P163",
+        "name": "Brewdog. Pale Ale",
+        "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-pale-ale/"
     },
     {
-        "name": "Young Master. Cha Chaan Teng Gose ~ P54",
+        "name": "Young Master. Cha Chaan Teng Gose",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-cha-chaan-teng-gose/"
     },
     {
-        "name": "St. Bernardus Wit  ~ P151",
+        "name": "St. Bernardus Wit",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-wit/"
     },
     {
-        "name": "Sierra Nevada Pale Ale ~ P307",
+        "name": "Sierra Nevada Pale Ale",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-pale-ale/"
     },
     {
-        "name": "Brewlander Peace (N.E.W Ale) ~ P142",
+        "name": "Brewlander Peace N.E.W Ale",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-peace-new-ale/"
     },
     {
-        "name": "Brewlander Joy (Session IPA) ~ P58",
+        "name": "Brewlander Joy Session IPA",
+        "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-joy-session-ipa/"
     },
     {
-        "name": "Stockade Splicer XPA  ~ P278",
+        "name": "Stockade Splicer XPA",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-spicer-xpa/"
     },
     {
-        "name": "Brewlander Respect (Porter) ~ P192",
+        "name": "Brewlander Respect Porter",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-respect-porter/"
     },
     {
-        "name": "Stockade Refreshing Ale ~ P235",
+        "name": "Stockade Refreshing Ale",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-refreshing-ale/"
     },
     {
-        "name": "Moon Dog Beer Can ~ P46",
+        "name": "Moon Dog Beer Can",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-beer-can/"
     },
     {
-        "name": "Coopers. Original Pale Ale ~ P85",
+        "name": "Coopers. Original Pale Ale",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/coopers-original-pale-ale/"
     },
     {
-        "name": "Sierra Nevada Wild Little Thing ~ P293",
+        "name": "Sierra Nevada Wild Little Thing",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-wild-little-thing/"
     },
     {
-        "name": "Brothers Strawberry & Lime \u2013 English Cider ~ P230",
+        "name": "Brothers Strawberry & Lime \u2013 English Cider",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brothers-strawberry-lime-english-cider/"
     },
     {
-        "name": "Sierra Nevada Torpedo Extra IPA ~ P8",
+        "name": "Sierra Nevada Torpedo Extra IPA",
+        "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-torpedo-extra-ipa/"
     },
     {
-        "name": "Sierra Nevada Hop Bullet ~ P73",
+        "name": "Sierra Nevada Hop Bullet",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-hop-bullet/"
     },
     {
-        "name": "Gweilo. American IPA ~ P3",
+        "name": "Gweilo. American IPA",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-american-ipa/"
     },
     {
-        "name": "Dragon Fiery Ginger Beer ~ P135",
+        "name": "Dragon Fiery Ginger Beer",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dragon-fiery-ginger-beer/"
     },
     {
-        "name": "James Squire One Fifty Lashes Pale Ale ~ P91",
+        "name": "James Squire One Fifty Lashes Pale Ale",
         "price": "7.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/james-squire-one-fifty-lashes-pale-ale/"
     },
     {
-        "name": "Hitachino Nest. Dai Dai IPA ~ P12",
+        "name": "Hitachino Nest. Dai Dai IPA",
         "price": "7.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-dai-dai/"
     },
     {
-        "name": "Coopers. Best Extra Stout ~ P143",
+        "name": "Coopers. Best Extra Stout",
+        "price": "7.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/coopers-best-extra-stout/"
     },
     {
-        "name": "Stockade Flight Path ~ P281",
+        "name": "Stockade Flight Path",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-flight-path/"
     },
     {
-        "name": "Thornbridge Lukas ~ P453",
+        "name": "Thornbridge Lukas",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-lukas/"
     },
     {
-        "name": "Yoho Brewing Wednesday\u2019s Cat ~ P166",
+        "name": "Yoho Brewing Wednesday\u2019s Cat",
+        "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/yoho-brewing-wednesday-cat/"
     },
     {
-        "name": "Deschutes Pacific Wonderland Lager ~ P11",
+        "name": "Deschutes Pacific Wonderland Lager",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-pacific-wonderland-lager/"
     },
     {
-        "name": "Rogue Dead Guy Ale ~ P7",
+        "name": "Rogue Dead Guy Ale",
+        "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-dead-guy-ale/"
     },
     {
-        "name": "Brewdog. Dead Pony Club  ~ P9",
+        "name": "Brewdog. Dead Pony Club",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-dead-pony-club/"
     },
     {
-        "name": "Chimay Red ~ 6",
+        "name": "Chimay Red",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/chimay-red/"
     },
     {
-        "name": "Chimay Triple ~ P5",
+        "name": "Chimay Triple",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/chimay-triple/"
     },
     {
-        "name": "Sierra Nevada. Hazy Little Thing IPA ~ P285",
+        "name": "Sierra Nevada. Hazy Little Thing IPA",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hazy-little-thing-ipa/"
     },
     {
-        "name": "Young Master. Another One ~ P310",
+        "name": "Young Master. Another One",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-another-one-copy/"
     },
     {
-        "name": "Monk\u2019s Stout Dupont ~ P139",
+        "name": "Monk\u2019s Stout Dupont",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/monks-stout-dupont/"
     },
     {
-        "name": "Deschutes Teensy Petite IPA ~ P489",
+        "name": "Deschutes Teensy Petite IPA",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-teensy-petite-ipa/"
     },
     {
-        "name": "Magic Rock Brewing. Common Grounds ~ P503",
+        "name": "Magic Rock Brewing. Common Grounds",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-common-grounds/"
     },
     {
-        "name": "Stone India Pale Ale ~ P44",
+        "name": "Stone India Pale Ale",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-ipa-india-pale-ale/"
     },
     {
-        "name": "Rogue Batsquatch Hazy IPA ~ P276",
+        "name": "Rogue Batsquatch Hazy IPA",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-batsquatch-hazy-ipa/"
     },
     {
-        "name": "Sweetwater 420 Extra Pale Ale ~ P120",
+        "name": "Sweetwater 420 Extra Pale Ale",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-420-extra-pale-ale/"
     },
     {
-        "name": "Young Master. Classic Pale Ale ~ P183.1",
+        "name": "Young Master. Classic Pale Ale",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-classic-pale-ale/"
     },
     {
-        "name": "Hawkes Dead & Berried ~ P251",
+        "name": "Hawkes Dead & Berried",
         "price": "7.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hawkes-dead-berried/"
     },
     {
-        "name": "Hawkes Urban Orchard Cider ~ P94",
+        "name": "Hawkes Urban Orchard Cider",
         "price": "7.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hawkes-urban-orchard-cider/"
     },
     {
-        "name": "Brewdog Elvis Juice ~ P147",
+        "name": "Brewdog Elvis Juice",
+        "price": "7.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-elvis-juice/"
     },
     {
-        "name": "St. Bernardus Extra 4  ~ P150",
+        "name": "St. Bernardus Extra 4",
         "price": "7.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-extra-4/"
     },
     {
-        "name": "Garage Project White Mischief ~ P171",
+        "name": "Garage Project White Mischief",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-white-mischief/"
     },
     {
-        "name": "Sweetwater Hop Hash Easy IPA ~ P296",
+        "name": "Sweetwater Hop Hash Easy IPA",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-hop-hash-easy-ipa/"
     },
     {
-        "name": "Feral Smoked Porter ~ P504",
+        "name": "Feral Smoked Porter",
+        "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-smoked-porter/"
     },
     {
-        "name": "Garage Project Hapi Daze ~ P277",
+        "name": "Garage Project Hapi Daze",
+        "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-hapi-daze/"
     },
     {
-        "name": "Yoho Brewing Tokyo Black Porter ~ P274",
+        "name": "Yoho Brewing Tokyo Black Porter",
+        "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/yoho-brewing-tokyo-black-porter/"
     },
     {
-        "name": "Rocky Ridge. Socks & Sandals ~ P259.1",
+        "name": "Rocky Ridge. Socks & Sandals",
+        "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-socks-and-sandals/"
     },
     {
-        "name": "Zeffer Alcoholic Ginger Beer ~ P112",
+        "name": "Zeffer Alcoholic Ginger Beer",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-alcoholic-ginger-beer/"
     },
     {
-        "name": "Anderson Valley Brewing Framboise Rose Gose ~ P284",
+        "name": "Anderson Valley Brewing Framboise Rose Gose",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-framboise-rose-gose/"
     },
     {
-        "name": "Deschutes Mirror Pond Pale Ale  ~ P133",
+        "name": "Deschutes Mirror Pond Pale Ale",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-mirror-pond-pale-ale/"
     },
     {
-        "name": "ParrotDog Hawkeye Session IPA ~ P49",
+        "name": "ParrotDog Hawkeye Session IPA",
+        "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-hawkeye-session-ipa/"
     },
     {
-        "name": "St. Bernardus Tripel ~ P183.2",
+        "name": "St. Bernardus Tripel",
+        "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-tripel/"
     },
     {
-        "name": "St. Bernardus Prior 8 ~ P87",
+        "name": "St. Bernardus Prior 8",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-prior-8/"
     },
     {
-        "name": "Heart of Darkness The Sunshine Watermelon Lime Pilsner ~ P229",
+        "name": "Heart of Darkness The Sunshine Watermelon Lime Pilsner",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-watermelon-lime-pilsner/"
     },
     {
-        "name": "Stone Tangerine Express IPA ~ P262",
+        "name": "Stone Tangerine Express IPA",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-tangerine-express-ipa/"
     },
     {
-        "name": "Rye & Pint Sunday\u2019s Brew ~ P52",
+        "name": "Rye & Pint Sunday\u2019s Brew",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-sundays-brew/"
     },
     {
-        "name": "Anderson Valley Brewing Briney Melon Gose ~ P79",
+        "name": "Anderson Valley Brewing Briney Melon Gose",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-briney-melon-gose/"
     },
     {
-        "name": "Anderson Valley Brewing Blood Orange Gose ~ P320",
+        "name": "Anderson Valley Brewing Blood Orange Gose",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-blood-orange-gose/"
     },
     {
-        "name": "Stone Brewing Buenaveza Salt & Lime Lager  ~ P194.5",
+        "name": "Stone Brewing Buenaveza Salt & Lime Lager",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-brewing-buenaveza-salt-lime-lager/"
     },
     {
-        "name": "Pirate Life Acai & Passionfruit Sour ~ P523",
+        "name": "Pirate Life Acai & Passionfruit Sour",
+        "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-acai-passionfruit-sour/"
     },
     {
-        "name": "Rye & Pint. Star Gazin ~ P104",
+        "name": "Rye & Pint. Star Gazin",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-star-gazin/"
     },
     {
-        "name": "Trappist Westmalle Dubbel ~ P149",
+        "name": "Trappist Westmalle Dubbel",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/trappist-westmalle-dubbel/"
     },
     {
-        "name": "Founders Porter ~ P134",
+        "name": "Founders Porter",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-porter/"
     },
     {
-        "name": "Heart of Darkness Dream Alone Pale Ale ~ P84",
+        "name": "Heart of Darkness Dream Alone Pale Ale",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-dream-alone-pale-ale/"
     },
     {
-        "name": "Heart of Darkness Futile Purpose Cucumber Pilsner ~ P190",
+        "name": "Heart of Darkness Futile Purpose Cucumber Pilsner",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-futile-purpose-cucumber-pilsner/"
     },
     {
-        "name": "North Coast Steller IPA ~ P144",
+        "name": "North Coast Steller IPA",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-coast-steller-ipa/"
     },
     {
-        "name": "Garage Project BEER ~ P245",
+        "name": "Garage Project BEER",
+        "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-beer/"
     },
     {
-        "name": "Stone & Wood Pacific Ale ~ P195",
+        "name": "Stone & Wood Pacific Ale",
         "price": "8.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-wood-pacific-ale-copy/"
     },
     {
-        "name": "Pirate Life Pale Ale  ~ P468",
+        "name": "Pirate Life Pale Ale",
+        "price": "8.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-pale-ale/"
     },
     {
-        "name": "Zeffer Red Apple Cider ~ P160",
+        "name": "Zeffer Red Apple Cider",
         "price": "8.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-apple-cider/"
     },
     {
-        "name": "Fourpure Shape Shifter IPA ~ P291",
+        "name": "Fourpure Shape Shifter IPA",
         "price": "8.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-shape-shifter-ipa/"
     },
     {
-        "name": "Zeffer Apple Crumble Infused Cider ~P18",
+        "name": "Zeffer Apple Crumble Infused Cider",
         "price": "8.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-apple-crumble-infused-cider/"
     },
     {
-        "name": "Zeffer Crisp Apple Cider ~ P71",
+        "name": "Zeffer Crisp Apple Cider",
         "price": "8.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-crisp-apple-cider/"
     },
     {
-        "name": "Stockade 8 Bit IPA ~ P268",
+        "name": "Stockade 8 Bit IPA",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-8-bit-ipa/"
     },
     {
-        "name": "Stone Brewing F&B (Features and Benefits) ~ P234",
+        "name": "Stone Brewing F&B Features and Benefits",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-brewing-feature-and-benefits/"
     },
     {
-        "name": "Anderson Valley Brewing Barney\u2019s Flats Oatmeal Stout ~ P118",
+        "name": "Anderson Valley Brewing Barney\u2019s Flats Oatmeal Stout",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-barneys-flats-oatmeal-stout/"
     },
     {
-        "name": "Heretic Make America Juicy Again ~ P308",
+        "name": "Heretic Make America Juicy Again",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-make-america-juicy-again/"
     },
     {
-        "name": "Anderson Valley Brewing Tropical Hazy Sour Ale ~ P194.3",
+        "name": "Anderson Valley Brewing Tropical Hazy Sour Ale",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-tropical-hazy-sour-ale/"
     },
     {
-        "name": "Deschutes Brewery Lil\u2019 Squeezy Juicy Ale ~ P256",
+        "name": "Deschutes Brewery Lil\u2019 Squeezy Juicy Ale",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/descutes-brewery-lil-squeezy-juicy-ale/"
     },
     {
-        "name": "Little Creatures Pipsqueak Best Cider ~ P180",
+        "name": "Little Creatures Pipsqueak Best Cider",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/little-creatures-pipsqueak-cider/"
     },
     {
-        "name": "Drakes Kickback IPA ~ P442",
+        "name": "Drakes Kickback IPA",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-kickback-ipa/"
     },
     {
-        "name": "Liberty Yakima Monster ~ P272",
+        "name": "Liberty Yakima Monster",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-yakima-monster/"
     },
     {
-        "name": "Drakes Best Coast IPA ~ P61.1",
+        "name": "Drakes Best Coast IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-best-coast-ipa/"
     },
     {
-        "name": "Rocky Ridge. Ace Pale Ale ~ P302",
+        "name": "Rocky Ridge. Ace Pale Ale",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-ace-pale-ale/"
     },
     {
-        "name": "Garage Project Noon Juice ~ P485",
+        "name": "Garage Project Noon Juice",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-noon-juice/"
     },
     {
-        "name": "Heart of Darkness Marlow\u2019s Mellow Pomelo IPA ~ P130",
+        "name": "Heart of Darkness Marlow\u2019s Mellow Pomelo IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-marlows-mellow-pomelo-ipa/"
     },
     {
-        "name": "Heart of Darkness First Sunset Kumquat Pale Ale ~ P206",
+        "name": "Heart of Darkness First Sunset Kumquat Pale Ale",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-first-sunset-kumquat-pale-ale/"
     },
     {
-        "name": "Deschutes Black Butte Porter ~ P1",
+        "name": "Deschutes Black Butte Porter",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-black-butte-porter/"
     },
     {
-        "name": "Fourpure Juicebox Citrus IPA ~ P286",
+        "name": "Fourpure Juicebox Citrus IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-juicebox-citrus-ipa/"
     },
     {
-        "name": "The Hills Cider Company Pear Cider ~ P121",
+        "name": "The Hills Cider Company Pear Cider",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-hills-cider-company-pear-cider/"
     },
     {
-        "name": "Rochefort Trappistes 6 ~ P14",
+        "name": "Rochefort Trappistes 6",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rochefort-6/"
     },
     {
-        "name": "North Taiwan Smoked Plum Beer ~ P61.3",
+        "name": "North Taiwan Smoked Plum Beer",
+        "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-taiwan-smoked-plum-beer/"
     },
     {
-        "name": "Heretic California Dry Hopped IPA  ~ P165",
+        "name": "Heretic California Dry Hopped IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-california-dry-hopped-ipa/"
     },
     {
-        "name": "North Coast Old No. 38 Stout  ~ P13",
+        "name": "North Coast Old No. 38 Stout",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-coast-old-no-38-stout/"
     },
     {
-        "name": "Stone Delicious IPA ~ P141",
+        "name": "Stone Delicious IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-delicious-ipa/"
     },
     {
-        "name": "ParrotDog Bitterbitch IPA ~ P20",
+        "name": "ParrotDog Bitterbitch IPA",
+        "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-bitterbitch-ipa/"
     },
     {
-        "name": "Founders Centennial IPA ~ P297",
+        "name": "Founders Centennial IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-centennial-ipa/"
     },
     {
-        "name": "Rye & Pint Punchin Rye ~ P98",
+        "name": "Rye & Pint Punchin Rye",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-punchin-rye/"
     },
     {
-        "name": "Brewdog. Punk IPA ~ P125",
+        "name": "Brewdog. Punk IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-punk-ipa/"
     },
     {
-        "name": "Deschutes Fresh Haze IPA (355ml) ~ P31",
+        "name": "Deschutes Fresh Haze IPA 355ml",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-fresh-haze-ipa-3/"
     },
     {
-        "name": "Sierra Nevada Celebration IPA ~ P23",
+        "name": "Sierra Nevada Celebration IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-celebration-ipa/"
     },
     {
-        "name": "Rye & Pint Trippin Wheat ~ P64",
+        "name": "Rye & Pint Trippin Wheat",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-trippin-wheat/"
     },
     {
         "name": "Aspall Draught",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/aspall-draught/"
     },
     {
-        "name": "Rocky Ridge. Baby Peach ~ P42",
+        "name": "Rocky Ridge. Baby Peach",
+        "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-experimental-ipa-copy/"
     },
     {
-        "name": "Chimay Blue ~ P474.1",
+        "name": "Chimay Blue",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/chimay-blue/"
     },
     {
-        "name": "Garage Project Bliss ~ P197",
+        "name": "Garage Project Bliss",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-bliss/"
     },
     {
-        "name": "Founders Mosaic Promise ~ P313",
+        "name": "Founders Mosaic Promise",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-mosaic-promise/"
     },
     {
-        "name": "Rye & Pint Poppin Haze ~ P105",
+        "name": "Rye & Pint Poppin Haze",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-poppin-haze/"
     },
     {
-        "name": "Fixation Obsession ~ P255",
+        "name": "Fixation Obsession",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fixation-obsession/"
     },
     {
-        "name": "Deschutes Fresh Squeezed IPA  ~ P116",
+        "name": "Deschutes Fresh Squeezed IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-fresh-squeezed-ipa/"
     },
     {
-        "name": "Sweetwater IPA  ~ P111",
+        "name": "Sweetwater IPA",
         "price": "8.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-ipa/"
     },
     {
-        "name": "Heretic Evil Twin ~ P259",
+        "name": "Heretic Evil Twin",
         "price": "8.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-evil-twin/"
     },
     {
-        "name": "Collective Arts Guava Gose ~ P521",
+        "name": "Collective Arts Guava Gose",
         "price": "8.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-guava-gose/"
     },
     {
-        "name": "Heretic Evil Cousin ~ P264",
+        "name": "Heretic Evil Cousin",
         "price": "8.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-evil-cousin/"
     },
     {
-        "name": "Stone & Wood Cloud Catcher ~ P219",
+        "name": "Stone & Wood Cloud Catcher",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-wood-cloud-catcher/"
     },
     {
-        "name": "The Hills Cider Company Apple Cider ~ P319",
+        "name": "The Hills Cider Company Apple Cider",
         "price": "8.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-hills-cider-company-apple-cider/"
     },
     {
-        "name": "ParrotDog Falcon APA ~ P115",
+        "name": "ParrotDog Falcon APA",
+        "price": "8.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-falcon-apa/"
     },
     {
-        "name": "Behemoth Brain Smiles ~ P261",
+        "name": "Behemoth Brain Smiles",
         "price": "8.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-brain-smiles/"
     },
     {
-        "name": "Stone & Wood The Gatherer ~ P246.1",
+        "name": "Stone & Wood The Gatherer",
         "price": "8.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-wood-the-gatherer/"
     },
     {
-        "name": "Wychwood Hobgoblin Ruby Beer ~ P216",
+        "name": "Wychwood Hobgoblin Ruby Beer",
+        "price": "8.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/wychwood-hobgoblin-ruby-beer/"
     },
     {
-        "name": "Pirate Life Throwback IPA ~ P167",
+        "name": "Pirate Life Throwback IPA",
         "price": "8.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-throwback-ipa/"
     },
     {
-        "name": "Liberty Knife Party ~ P247",
+        "name": "Liberty Knife Party",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-knife-party/"
     },
     {
-        "name": "Pirate Life Tropical Pale  ~ P77",
+        "name": "Pirate Life Tropical Pale",
+        "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-tropical-pale/"
     },
     {
-        "name": "Deschutes Red Chair ~ P122",
+        "name": "Deschutes Red Chair",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-red-chair/"
     },
     {
-        "name": "Pasteur Street Jasmine IPA ~ P172",
+        "name": "Pasteur Street Jasmine IPA",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pasteur-street-jasmine-ipa/"
     },
     {
-        "name": "Moon Dog Splice of Heaven ~ P33",
+        "name": "Moon Dog Splice of Heaven",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-splice-of-heaven/"
     },
     {
-        "name": "Moon Dog Groundhog ~ P318",
+        "name": "Moon Dog Groundhog",
         "price": "9.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-dog-groundhog/"
     },
     {
-        "name": "The 1925 Brewing Company. Yellow Van ~ P161",
+        "name": "The 1925 Brewing Company. Yellow Van",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-yellow-van/"
     },
     {
-        "name": "Sierra Nevada Dankful ~ P287",
+        "name": "Sierra Nevada Dankful",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-dankful/"
     },
     {
-        "name": "Heart of Darkness The Tropics Pina Colada Hazy ~ P176",
+        "name": "Heart of Darkness The Tropics Pina Colada Hazy",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-pina-colada-hazy/"
     },
     {
-        "name": "Pirate Life Dilmah Tea & Biccies Brown Ale ~ P317",
+        "name": "Pirate Life Dilmah Tea & Biccies Brown Ale",
+        "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-dilmah-tea-biccies-brown-ale/"
     },
     {
-        "name": "Sweetwater Jack Herer ~ P136",
+        "name": "Sweetwater Jack Herer",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-jack-herer/"
     },
     {
-        "name": "Founders Moon Rambler ~ P282",
+        "name": "Founders Moon Rambler",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-moon-rambler/"
     },
     {
-        "name": "Vocation Brewery. Pride & Joy ~ P32",
+        "name": "Vocation Brewery. Pride & Joy",
+        "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-pride-joy/"
     },
     {
-        "name": "Dainton. Jungle Juice ~ P257",
+        "name": "Dainton. Jungle Juice",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dainton-jungle-juice/"
     },
     {
-        "name": "Gosnells Hopped Mead ~ P315",
+        "name": "Gosnells Hopped Mead",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-hopped-mead/"
     },
     {
-        "name": "Off Day Haze ~ P106",
+        "name": "Off Day Haze",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-haze/"
     },
     {
-        "name": "Heart of Darkness Kurtz\u2019s Insane IPA ~ P51",
+        "name": "Heart of Darkness Kurtz\u2019s Insane IPA",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-kurtz-insane-ipa/"
     },
     {
-        "name": "Sierra Nevada Fantastic Haze ~ P72",
+        "name": "Sierra Nevada Fantastic Haze",
         "price": "9.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-fantastic-haze/"
     },
     {
-        "name": "Sailor\u2019s Grave Lemon Meringue Cream Sour ~ P314",
+        "name": "Sailor\u2019s Grave Lemon Meringue Cream Sour",
         "price": "9.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-lemon-meringue-cream-sour/"
     },
     {
-        "name": "Woodstock Brewery Californicator IPA ~ P435.2",
+        "name": "Woodstock Brewery Californicator IPA",
         "price": "9.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dwoodstock-brewery-californicator-ipa/"
     },
     {
-        "name": "Saison Dupont Cuvee Dry Hopping ~ P67",
+        "name": "Saison Dupont Cuvee Dry Hopping",
+        "price": "8.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/saison-dupont-cuvee-dry-hopping/"
     },
     {
-        "name": "Rogue Hazel Nut Brown Nectar ~ P145",
+        "name": "Rogue Hazel Nut Brown Nectar",
         "price": "9.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-hazel-nut-brown-nectar/"
     },
     {
-        "name": "Behemoth Murica ~ P237",
+        "name": "Behemoth Murica",
         "price": "9.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-murica/"
     },
     {
-        "name": "Redpoint Hazy Platypus ~ P157",
+        "name": "Redpoint Hazy Platypus",
         "price": "9.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-hazy-platypus/"
     },
     {
-        "name": "Redpoint Hoppy Hibiscus IPA ~ P88",
+        "name": "Redpoint Hoppy Hibiscus IPA",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-hoppy-hibiscus-ipa/"
     },
     {
-        "name": "Trappist Orval ~ P131",
+        "name": "Trappist Orval",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/trappist-orval/"
     },
     {
-        "name": "Blasta Brewing. Hop Hype Eclipse ~ P305",
+        "name": "Blasta Brewing. Hop Hype Eclipse",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-hop-hype-eclipse/"
     },
     {
-        "name": "Blasta Brewing. The Cat\u2019s Whiskers Cream Ale  ~ P254",
+        "name": "Blasta Brewing. The Cat\u2019s Whiskers Cream Ale",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-the-cats-whiskers/"
     },
     {
-        "name": "Bodriggy Here If You Need ~ P506",
+        "name": "Bodriggy Here If You Need",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-here-if-you-need/"
     },
     {
-        "name": "Otherside Brewing. Indie XPA ~ P292",
+        "name": "Otherside Brewing. Indie XPA",
+        "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-indie-xpa/"
     },
     {
-        "name": "Behemoth. Chur ~ P269",
+        "name": "Behemoth. Chur",
+        "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-chur/"
     },
     {
-        "name": "Stone Arrogant Bastard Ale ~ P244",
+        "name": "Stone Arrogant Bastard Ale",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-arrogant-bastard-ale/"
     },
     {
-        "name": "Redpoint Disco Macaw ~ P63",
+        "name": "Redpoint Disco Macaw",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-disco-macaw/"
     },
     {
-        "name": "Rocky Ridge. Choc Coconut Porter  ~ P75",
+        "name": "Rocky Ridge. Choc Coconut Porter",
+        "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-choc-coconut-porter/"
     },
     {
-        "name": "Aspall Organic ~ P222",
+        "name": "Aspall Organic",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/aspall-organic/"
     },
     {
-        "name": "Garage Project Red Zeppelin ~ P194",
+        "name": "Garage Project Red Zeppelin",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-red-zeppelin/"
     },
     {
-        "name": "Co-conspirators The Wheelman ~ P510",
+        "name": "Co-conspirators The Wheelman",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-wheelman/"
     },
     {
-        "name": "Garage Project Hop Haus Alt ~ P241",
+        "name": "Garage Project Hop Haus Alt",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-hop-haus-alt/"
     },
     {
-        "name": "Delirium Tremens ~ P60.3",
+        "name": "Delirium Tremens",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/delirium-tremens/"
     },
     {
-        "name": "Co-conspirators The Architect ~ P507",
+        "name": "Co-conspirators The Architect",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-architect/"
     },
     {
-        "name": "Behemoth 6 Foot 5 American IPA ~ P267",
+        "name": "Behemoth 6 Foot 5 American IPA",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-6-foot-5-american-ipa/"
     },
     {
-        "name": "Magic Rock Brewing. Cannonball ~ P505",
+        "name": "Magic Rock Brewing. Cannonball",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-cannonball/"
     },
     {
-        "name": "Thornbridge Jaipur ~ P162.1",
+        "name": "Thornbridge Jaipur",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-jaipur/"
     },
     {
-        "name": "Garage Project Transit Of Venus ~ P236",
+        "name": "Garage Project Transit Of Venus",
         "price": "9.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-transit-of-venus/"
     },
     {
-        "name": "Behemoth Couch Beer ~ P265",
+        "name": "Behemoth Couch Beer",
         "price": "9.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-couch-beer/"
     },
     {
-        "name": "The Taunton Vintage Cider ~ P228",
+        "name": "The Taunton Vintage Cider",
         "price": "9.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-taunton-vintage-cider/"
     },
     {
-        "name": "Pirate Life IPA ~ P76",
+        "name": "Pirate Life IPA",
+        "price": "9.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-ipa/"
     },
     {
-        "name": "Wychwood Hobgoblin IPA ~ P4",
+        "name": "Wychwood Hobgoblin IPA",
         "price": "9.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/wychwood-hobgoblin-ipa/"
     },
     {
-        "name": "Young Master. Nice  ~ P449",
+        "name": "Young Master. Nice",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-naughty-copy/"
     },
     {
-        "name": "Saison Dupont ~ P117",
+        "name": "Saison Dupont",
+        "price": "8.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/saison-dupont/"
     },
     {
-        "name": "The 1925 Brewing Company. Blk 622 ~ P138",
+        "name": "The 1925 Brewing Company. Blk 622",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-blk-622/"
     },
     {
-        "name": "The 1925 Brewing Company. Small Monster Coffee IPA ~ P93",
+        "name": "The 1925 Brewing Company. Small Monster Coffee IPA",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-small-monster-coffee-ipa/"
     },
     {
-        "name": "Thatchers Gold ~ P203",
+        "name": "Thatchers Gold",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-gold/"
     },
     {
-        "name": "The 1925 Brewing Company. Mango Tango Ale ~ P191",
+        "name": "The 1925 Brewing Company. Mango Tango Ale",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-mango-tango-ale/"
     },
     {
-        "name": "The 1925 Brewing Company. Sour Plum ~ P60.1",
+        "name": "The 1925 Brewing Company. Sour Plum",
+        "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-sour-plum/"
     },
     {
         "name": "The 1925 Brewing Company. Small Monster IPA",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-small-monster-ipa/"
     },
     {
-        "name": "The 1925 Brewing Company. Liang Teh ~ P108",
+        "name": "The 1925 Brewing Company. Liang Teh",
+        "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-liang-teh/"
     },
     {
-        "name": "The 1925 Brewing Company. Yuzu Lager ~ P119",
+        "name": "The 1925 Brewing Company. Yuzu Lager",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-yuzu-lager/"
     },
     {
-        "name": "The 1925 Brewing Company. Lychee  ~ P110",
+        "name": "The 1925 Brewing Company. Lychee",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-lychee/"
     },
     {
-        "name": "The 1925 Brewing Company. Tiramisu Stout ~ P174",
+        "name": "The 1925 Brewing Company. Tiramisu Stout",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-tiramisu-stout/"
     },
     {
-        "name": "The 1925 Brewing Company. Good Riddance 2020 ~ P21",
+        "name": "The 1925 Brewing Company. Good Riddance 2020",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-good-riddance-2020/"
     },
     {
-        "name": "Gosnells Hibiscus Mead ~ P248",
+        "name": "Gosnells Hibiscus Mead",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-hibiscus-mead/"
     },
     {
-        "name": "Young Master. 1842 Island IPA ~ P60",
+        "name": "Young Master. 1842 Island IPA",
+        "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-1842-island-ipa/"
     },
     {
-        "name": "Pirate Life Mosaic IPA ~ P438",
+        "name": "Pirate Life Mosaic IPA",
+        "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-mosaic-ipa/"
     },
     {
-        "name": "Thatchers Green Goblin ~ P209",
+        "name": "Thatchers Green Goblin",
         "price": "9.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-green-goblin/"
     },
     {
-        "name": "Omnipollo Levon ~ P53",
+        "name": "Omnipollo Levon",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/omnipollo-levon/"
     },
     {
-        "name": "Gweilo. That\u2019s Not A Beer  ~ P194.1",
+        "name": "Gweilo. That\u2019s Not A Beer",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-thats-not-a-beer/"
     },
     {
-        "name": "Bodriggy Cosmic Microwave ~ P450",
+        "name": "Bodriggy Cosmic Microwave",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-cosmic-microwave/"
     },
     {
-        "name": "Co-conspirators The Matriarch ~ P509",
+        "name": "Co-conspirators The Matriarch",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-matriarch/"
     },
     {
-        "name": "Co-conspirators The Enforcer ~ P511",
+        "name": "Co-conspirators The Enforcer",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-enforcer/"
     },
     {
-        "name": "Bodriggy Cloudtown ~ P508",
+        "name": "Bodriggy Cloudtown",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-cloudtown/"
     },
     {
-        "name": "Dainton. Blood Orange ~ P199",
+        "name": "Dainton. Blood Orange",
+        "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dainton-blood-orange/"
     },
     {
-        "name": "Hop Nation. Seven Clouds ~ P279",
+        "name": "Hop Nation. Seven Clouds",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hop-nation-seven-clouds/"
     },
     {
-        "name": "Gosnells Sour Mead ~ P240",
+        "name": "Gosnells Sour Mead",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-sour-mead/"
     },
     {
-        "name": "Rocky Ridge. Imperial Ace Pale Ale  ~ P200",
+        "name": "Rocky Ridge. Imperial Ace Pale Ale",
+        "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-imperial-ace-pale-ale/"
     },
     {
-        "name": "Blasta Brewing. Tangerine Dreams ~ P37.1",
+        "name": "Blasta Brewing. Tangerine Dreams",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-grimster-rocks-mosaic-pale-ale-copy/"
     },
     {
-        "name": "Trappist Westmalle Tripel ~ P127",
+        "name": "Trappist Westmalle Tripel",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/trappist-westmalle-tripel/"
     },
     {
-        "name": "Founders Breakfast Stout  ~ P137",
+        "name": "Founders Breakfast Stout",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-breakfast-stout/"
     },
     {
-        "name": "Magic Rock Brewing. Clairvoyance ~ P270",
+        "name": "Magic Rock Brewing. Clairvoyance",
         "price": "10.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-clairvoyance/"
     },
     {
-        "name": "Gosnells Gooseberry Mead ~ P295",
+        "name": "Gosnells Gooseberry Mead",
         "price": "10.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-gooseberry-mead/"
     },
     {
-        "name": "Pirate Life Strata Amarillo ~ P298",
+        "name": "Pirate Life Strata Amarillo",
         "price": "10.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-strata-amarillo/"
     },
     {
-        "name": "Stone Ruination Double IPA ~ P233",
+        "name": "Stone Ruination Double IPA",
         "price": "10.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-ruination-double-ipa/"
     },
     {
-        "name": "Collective Arts Hazy State ~ P518",
+        "name": "Collective Arts Hazy State",
         "price": "10.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-hazy-state/"
     },
     {
-        "name": "Heretic Juicier Than Thou ~ P294",
+        "name": "Heretic Juicier Than Thou",
         "price": "10.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-juicier-than-thou/"
     },
     {
-        "name": "Verhaeghe Duchesse Cherry ~ P175",
+        "name": "Verhaeghe Duchesse Cherry",
         "price": "10.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/verhaeghe-duchesse-cherry/"
     },
     {
-        "name": "Collective Arts Radio the Mothership ~ P520",
+        "name": "Collective Arts Radio the Mothership",
         "price": "10.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-radio-the-mothership/"
     },
     {
-        "name": "Lion Brewery. Sabro XPA ~ P440.1",
+        "name": "Lion Brewery. Sabro XPA",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-brewery-sabro-xpa/"
     },
     {
-        "name": "Fraser\u2019s Folly x Stellenbosch Red IPA ~ P271",
+        "name": "Fraser\u2019s Folly x Stellenbosch Red IPA",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/frasers-folly-x-stellenbosch-red-ipa/"
     },
     {
-        "name": "Root Sellers. Himmel & Erde Carrot Apple Ale ~ P238",
+        "name": "Root Sellers. Himmel & Erde Carrot Apple Ale",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/root-sellers-himmel-erde-carrot-apple-ale/"
     },
     {
-        "name": "Rocky Ridge. Black Forest Lager  ~ P306",
+        "name": "Rocky Ridge. Black Forest Lager",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-black-forest-lager/"
     },
     {
-        "name": "Heart of Darkness Loose Rivet New England IPA ~ P211",
+        "name": "Heart of Darkness Loose Rivet New England IPA",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-loose-rivet-new-england-ipa/"
     },
     {
-        "name": "Sailor\u2019s Grave Uni \u2013 Sea Urchin & Lemon Myrtle Gose ~ P273",
+        "name": "Sailor\u2019s Grave Uni \u2013 Sea Urchin & Lemon Myrtle Gose",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-uni-sea-urchin-lemon-myrtle-gose/"
     },
     {
-        "name": "Rocky Ridge. Watermelon Ace ~ P477",
+        "name": "Rocky Ridge. Watermelon Ace",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-watermelon-ace/"
     },
     {
         "name": "Brewdog Jack Hammer",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-jack-hammer/"
     },
     {
-        "name": "Thornbridge Cocoa Wonderland ~ P231",
+        "name": "Thornbridge Cocoa Wonderland",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-cocoa-wonderland/"
     },
     {
-        "name": "Rochefort Trappistes 8 ~ P16",
+        "name": "Rochefort Trappistes 8",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rochefort-8/"
     },
     {
-        "name": "Pirate Life Apple And Guava Sour ~ P37",
+        "name": "Pirate Life Apple And Guava Sour",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-apple-and-guava-sour/"
     },
     {
-        "name": "Redpoint Behemoth The Pomellinator ~ P213",
+        "name": "Redpoint Behemoth The Pomellinator",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-behemoth-the-pomellinator/"
     },
     {
-        "name": "St. Bernardus Abt 12 ~ P152",
+        "name": "St. Bernardus Abt 12",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-abt-12/"
     },
     {
-        "name": "Root Sellers. Row Hard Root Beer ~P290",
+        "name": "Root Sellers. Row Hard Root Beer",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/root-sellers-row-hard-root-beer/"
     },
     {
-        "name": "Thatchers Somerset Haze ~ P61",
+        "name": "Thatchers Somerset Haze",
         "price": "10.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-somerset-haze/"
     },
     {
-        "name": "Gweilo. Hazy as DIPA   ~ P194.4",
+        "name": "Gweilo. Hazy as DIPA",
         "price": "10.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-hazy-as-dipa/"
     },
     {
-        "name": "Deschutes Royal Fresh Imperial IPA ~ P227",
+        "name": "Deschutes Royal Fresh Imperial IPA",
         "price": "10.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-royal-fresh-imperial-ipa/"
     },
     {
-        "name": "3 Ravens Juicy IPA  ~ P434",
+        "name": "3 Ravens Juicy IPA",
         "price": "10.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-ravens-juicy-ipa/"
     },
     {
-        "name": "Drakes Hopocalypse Hazy Double IPA ~ P250",
+        "name": "Drakes Hopocalypse Hazy Double IPA",
         "price": "10.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-hopocalypse-hazy-double-ipa/"
     },
     {
-        "name": "Gweilo. Clear as DIPA  ~ P194.2",
+        "name": "Gweilo. Clear as DIPA",
+        "price": "10.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-clear-as-dipa/"
     },
     {
-        "name": "Drakes Denogginizer Double IPA ~ P100",
+        "name": "Drakes Denogginizer Double IPA",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-denogginizer-double-ipa/"
     },
     {
-        "name": "Heretic Chocolate Hazelnut Porter  ~ P80",
+        "name": "Heretic Chocolate Hazelnut Porter",
         "price": "10.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-chocolate-hazelnut-porter/"
     },
     {
-        "name": "Sailor\u2019s Grave Rhubarb Harvest ~ P443",
+        "name": "Sailor\u2019s Grave Rhubarb Harvest",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-rhubarb-harvest/"
     },
     {
-        "name": "Brewlander Acid Hop Pineapple Sour IPA ~ P304",
+        "name": "Brewlander Acid Hop Pineapple Sour IPA",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-acid-hop-pineapple-sour-ipa/"
     },
     {
-        "name": "North Coast Old Rasputin ~ P10",
+        "name": "North Coast Old Rasputin",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-coast-old-rasputin/"
     },
     {
-        "name": "Thatchers Katy  ~ P210",
+        "name": "Thatchers Katy",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-katy/"
     },
     {
-        "name": "Blasta Brewing. Chainbreaker IPA ~ P78",
+        "name": "Blasta Brewing. Chainbreaker IPA",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-chainbreaker-ipa-copy/"
     },
     {
-        "name": "Anderson Valley Bourbon Barrel Stout ~ P243",
+        "name": "Anderson Valley Bourbon Barrel Stout",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-bourbon-barrel-stout/"
     },
     {
-        "name": "Bodriggy Lifestyle You Deserve ~ P452",
+        "name": "Bodriggy Lifestyle You Deserve",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-lifestyle-you-deserve/"
     },
     {
-        "name": "Collective Arts Stranger Than Fiction ~ P516",
+        "name": "Collective Arts Stranger Than Fiction",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-stranger-than-fiction/"
     },
     {
-        "name": "Stone Sublimely Self-Righteous Black IPA ~ P102",
+        "name": "Stone Sublimely Self-Righteous Black IPA",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-sublimely-self-righteous-black-ipa/"
     },
     {
-        "name": "Soul Barrel Fresh Nectar  ~ P97",
+        "name": "Soul Barrel Fresh Nectar",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/soul-barrel-fresh-nectar/"
     },
     {
-        "name": "Vocation Brewery. Life & Death ~ P454",
+        "name": "Vocation Brewery. Life & Death",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-life-death/"
     },
     {
-        "name": "Soul Barrel Cape Cone  ~ P99",
+        "name": "Soul Barrel Cape Cone",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/soul-barrel-cape-cone/"
     },
     {
-        "name": "Garage Project. Pernicious Weed ~ P242",
+        "name": "Garage Project. Pernicious Weed",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pernicious-weed/"
     },
     {
-        "name": "Sierra Nevada Bigfoot ~ P19",
+        "name": "Sierra Nevada Bigfoot",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-big-foot/"
     },
     {
-        "name": "Feral Imperial Biggie ~ P289",
+        "name": "Feral Imperial Biggie",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-imperial-biggie/"
     },
     {
-        "name": "Rogue Chocolate Stout Nitro ~ P170",
+        "name": "Rogue Chocolate Stout Nitro",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-chocolate-stout-nitro/"
     },
     {
-        "name": "Stone FML (Fear.Movie.Lions) ~ P283",
+        "name": "Stone FML Fear.Movie.Lions",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-fml-fear-movie-lions/"
     },
     {
-        "name": "Rocky Ridge. All Together ~ P431",
+        "name": "Rocky Ridge. All Together",
+        "price": "11.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-karls-thickshake-copy/"
     },
     {
-        "name": "Dainton. Overdrive ~ P196",
+        "name": "Dainton. Overdrive",
         "price": "11.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dainton-overdrive/"
     },
     {
-        "name": "Off Day All Together ~ P220",
+        "name": "Off Day All Together",
         "price": "11.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-all-together/"
     },
     {
-        "name": "Sailor\u2019s Grave Summer Pudding Cream Sour ~ P435",
+        "name": "Sailor\u2019s Grave Summer Pudding Cream Sour",
         "price": "11.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-summer-pudding-cream-sour/"
     },
     {
-        "name": "Darling Brew Arrow Head ~ P183",
+        "name": "Darling Brew Arrow Head",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/darling-brew-arrow-head/"
     },
     {
-        "name": "ParrotDog Rodney West Coast IPA ~ P488",
+        "name": "ParrotDog Rodney West Coast IPA",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-rodney-west-coast-ipa/"
     },
     {
-        "name": "The Bruery Goses Are Red ~ P491",
+        "name": "The Bruery Goses Are Red",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-goses-are-red/"
     },
     {
-        "name": "Heretic Caramel Moo-chiato ~ P316",
+        "name": "Heretic Caramel Moo-chiato",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-caramel-moo-chiato/"
     },
     {
-        "name": "Brewlander The Fringe Project DDH IPA ~ P86",
+        "name": "Brewlander The Fringe Project DDH IPA",
+        "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-the-fringe-project-ddh-ipa/"
     },
     {
-        "name": "Brewlander Cherry Sundae Pastry Stout ~ P486",
+        "name": "Brewlander Cherry Sundae Pastry Stout",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-cherry-sundae-pastry-stout/"
     },
     {
-        "name": "Brewlander Courage ~ P288",
+        "name": "Brewlander Courage",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-courage/"
     },
     {
-        "name": "North Brewing . Green Curve \u2013 North X Stillwater IPA ~ P500",
+        "name": "North Brewing . Green Curve \u2013 North X Stillwater IPA",
+        "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-green-curve-north-stillwater-ipa/"
     },
     {
-        "name": "Hop Nation. J Juice ~ P471",
+        "name": "Hop Nation. J Juice",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hop-nation-j-juice/"
     },
     {
-        "name": "Omnipollo Nebuchadnezzar ~ P58",
+        "name": "Omnipollo Nebuchadnezzar",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/omnipollo-nebuchadnezzar/"
     },
     {
-        "name": "Garage Project x Whittaker\u2019s Dark Chocolate ~ P269.1",
+        "name": "Garage Project x Whittaker\u2019s Dark Chocolate",
         "price": "11.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-whittakers-dark-chocolate/"
     },
     {
-        "name": "Garage Project x Whittaker\u2019s White Chocolate ~ P249",
+        "name": "Garage Project x Whittaker\u2019s White Chocolate",
         "price": "11.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-whittakers-white-chocolate/"
     },
     {
-        "name": "Blasta Brewing. Exploratory OatCream Beast ~ P311",
+        "name": "Blasta Brewing. Exploratory OatCream Beast",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-exploratory-oatcream-beast/"
     },
     {
-        "name": "Collective Arts Pomegranate & Grapefruit ~ P513",
+        "name": "Collective Arts Pomegranate & Grapefruit",
         "price": "11.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-pomegranate-grapefruit/"
     },
     {
-        "name": "Founders Dirty Bastard ~ P55",
+        "name": "Founders Dirty Bastard",
         "price": "11.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-dirty-bastard/"
     },
     {
-        "name": "Hop Nation. Bearded Seal ~ P48",
+        "name": "Hop Nation. Bearded Seal",
         "price": "11.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hop-nation-bearded-seal/"
     },
     {
-        "name": "Blasta Brewing. Unleash the Beast NEIPA  ~ P247.1",
+        "name": "Blasta Brewing. Unleash the Beast NEIPA",
         "price": "11.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-unleash-the-beast-neipa/"
     },
     {
-        "name": "Off Day Double ~ P107",
+        "name": "Off Day Double",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-double/"
     },
     {
-        "name": "Lion City Meadery.  Spiced Mead ~ P177",
+        "name": "Lion City Meadery.  Spiced Mead",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-spiced/"
     },
     {
-        "name": "Heretic Germ Juice ~ P467",
+        "name": "Heretic Germ Juice",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-germ-juice/"
     },
     {
-        "name": "Soul Barrel Tropical Parade- ~ P101",
+        "name": "Soul Barrel Tropical Parade-",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/soul-barrel-tropical-parade/"
     },
     {
-        "name": "Boon. Kriek. Lambic ~ P188",
+        "name": "Boon. Kriek. Lambic",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-kriek-lambic/"
     },
     {
-        "name": "Heretic You Can\u2019t Handle The Juice ~ P252",
+        "name": "Heretic You Can\u2019t Handle The Juice",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-you-cant-handle-the-juice/"
     },
     {
-        "name": "Lion City Meadery. Hibiscus Mead ~ P60.2",
+        "name": "Lion City Meadery. Hibiscus Mead",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-hibiscus/"
     },
     {
-        "name": "Lion City Meadery. Classic Mead ~ P62",
+        "name": "Lion City Meadery. Classic Mead",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-classic/"
     },
     {
-        "name": "Offshoot Escape [it\u2019s your everyday West Coast IPA] ~ P496",
+        "name": "Offshoot Escape [it\u2019s your everyday West Coast IPA]",
         "price": "12.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/offshoot-escape-its-your-everyday-west-coast-ipa/"
     },
     {
-        "name": "Collective Arts Ransack The Universe ~ P515",
+        "name": "Collective Arts Ransack The Universe",
         "price": "12.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-ransack-the-universe/"
     },
     {
-        "name": "Offshoot Relax [it\u2019s just a hazy IPA] ~ P495",
+        "name": "Offshoot Relax [it\u2019s just a hazy IPA]",
         "price": "12.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/offshoot-relax-its-just-a-hazy-ipa/"
     },
     {
-        "name": "Moon Dog No Save Point ~ P198",
+        "name": "Moon Dog No Save Point",
         "price": "12.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-no-save-point/"
     },
     {
-        "name": "Darling Brew Warlord Imperial IPA ~ P68",
+        "name": "Darling Brew Warlord Imperial IPA",
         "price": "12.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/darling-brew-warlord/"
     },
     {
-        "name": "Otherside Brewing x Garage Project. Bubbles ~ P440",
+        "name": "Otherside Brewing x Garage Project. Bubbles",
         "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-x-garage-project-bubbles/"
     },
     {
-        "name": "Rocky Ridge. Dank Side of the Moon ~ P36",
+        "name": "Rocky Ridge. Dank Side of the Moon",
         "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-dank-side-of-the-moon/"
     },
     {
-        "name": "Rogue Combat Wombat ~ P82",
+        "name": "Rogue Combat Wombat",
         "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-combat-wombat/"
     },
     {
-        "name": "Rocky Ridge. Pine on You Crazy Diamond ~ P72.1",
+        "name": "Rocky Ridge. Pine on You Crazy Diamond",
         "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-pine-on-you-crazy-diamond/"
     },
     {
-        "name": "Otherside Brewing. DDH M.B.C Oat Cream  ~ P38",
+        "name": "Otherside Brewing. DDH M.B.C Oat Cream",
         "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-ddh-mbc-oat-cream/"
     },
     {
-        "name": "Otherside Brewing. Blueberry Slurpee Sour ~ P194.6",
+        "name": "Otherside Brewing. Blueberry Slurpee Sour",
         "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-blueberry-slurpee-sour/"
     },
     {
-        "name": "North Brewing . Into the Merzbau NEIPA ~ P498",
+        "name": "North Brewing . Into the Merzbau NEIPA",
         "price": "6.25",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-into-the-merzbau-neipa/"
     },
     {
-        "name": "Blasta Brewing. Wrong Turn ~ P253",
+        "name": "Blasta Brewing. Wrong Turn",
+        "price": "12.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-wrong-turn/"
     },
     {
-        "name": "The Bruery Mischief ~ P492",
+        "name": "The Bruery Mischief",
         "price": "12.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-mischief/"
     },
     {
-        "name": "Rocky Ridge. Day Man  ~ P472",
+        "name": "Rocky Ridge. Day Man",
         "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-day-man/"
     },
     {
-        "name": "Collective Arts IPA 14 ~ P517",
+        "name": "Collective Arts IPA 14",
         "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-ipa-14/"
     },
     {
-        "name": "Amager Wookie IPA ~ P69",
+        "name": "Amager Wookie IPA",
         "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-wookie-ipa/"
     },
     {
-        "name": "Rocky Ridge. Captain Paddocks ~ P439",
+        "name": "Rocky Ridge. Captain Paddocks",
         "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-captain-paddocks/"
     },
     {
-        "name": "ParrotDog Lloyd Hazy IPA ~ P162",
+        "name": "ParrotDog Lloyd Hazy IPA",
+        "price": "13.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-lloyd-hazy-ipa/"
     },
     {
-        "name": "ParrotDog Lindsay West Coast IPA ~ P487",
+        "name": "ParrotDog Lindsay West Coast IPA",
+        "price": "13.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-lindsay-west-coast-ipa/"
     },
     {
-        "name": "ParrotDog Terry Coco-Cacao Stout  ~ P460",
+        "name": "ParrotDog Terry Coco-Cacao Stout",
         "price": "13.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-terry-coco-cacao-stout/"
     },
     {
-        "name": "Otherside Brewing. 2020 Russian Imperial Stout ~ P45",
+        "name": "Otherside Brewing. 2020 Russian Imperial Stout",
         "price": "13.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-2020-russian-imperial-stout/"
     },
     {
-        "name": "Rochefort Trappistes 10 ~ P103",
+        "name": "Rochefort Trappistes 10",
         "price": "13.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rochefort-10/"
     },
     {
-        "name": "Boon Oude Geuze. Lambic ~ P92",
+        "name": "Boon Oude Geuze. Lambic",
         "price": "13.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-oude-geuze-lambic/"
     },
     {
-        "name": "Rocky Ridge. Karl Requires Assistance ~ P435.1",
+        "name": "Rocky Ridge. Karl Requires Assistance",
         "price": "13.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-karl-requires-assistance/"
     },
     {
-        "name": "Collective Arts IPA 15 ~ P514",
+        "name": "Collective Arts IPA 15",
         "price": "13.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-ipa-15/"
     },
     {
-        "name": "Amager Sigterboard ~ P65",
+        "name": "Amager Sigterboard",
         "price": "13.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-sigterboard/"
     },
     {
-        "name": "Founders Big Luscious ~ P61.2",
+        "name": "Founders Big Luscious",
         "price": "13.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-big-luscious/"
     },
     {
-        "name": "Behemoth Half time ~ P41",
+        "name": "Behemoth Half time",
         "price": "13.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-half-time/"
     },
     {
-        "name": "Lion City Meadery. Pucker up Honey & Cherry Sour Ale  ~ P89",
+        "name": "Lion City Meadery. Pucker up Honey & Cherry Sour Ale",
         "price": "13.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-pucker-up-honey-cherry-sour-ale/"
     },
     {
-        "name": "Off Day Canvas Citra El Dorado ~ P81",
+        "name": "Off Day Canvas Citra El Dorado",
         "price": "14.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-canvas-citra-el-dorado/"
     },
     {
-        "name": "Behemoth Feijoa Freedom ~ P47",
+        "name": "Behemoth Feijoa Freedom",
+        "price": "14.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-feijoa-freedom/"
     },
     {
-        "name": "Rogue Pineapple Party Punch ~ P313.1",
+        "name": "Rogue Pineapple Party Punch",
         "price": "14.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-pineapple-party-punch/"
     },
     {
-        "name": "Behemoth Guava Ground Hog  ~ P27",
+        "name": "Behemoth Guava Ground Hog",
+        "price": "14.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-guava-ground-hog/"
     },
     {
-        "name": "Moon Dog To Ol Collab Dream Cake  ~ P172.1",
+        "name": "Moon Dog To Ol Collab Dream Cake",
         "price": "14.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-to-ol-collab-dream-cake/"
     },
     {
-        "name": "Magic Rock Brewing. Ripe Time ~ P479",
+        "name": "Magic Rock Brewing. Ripe Time",
         "price": "14.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-ripe-time/"
     },
     {
-        "name": "Behemoth Slushy Fund #2 ~ P522",
+        "name": "Behemoth Slushy Fund #2",
         "price": "14.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-slushy-fund-2/"
     },
     {
-        "name": "Vocation Brewery. Double Attitude ~ P448",
+        "name": "Vocation Brewery. Double Attitude",
         "price": "14.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-double-attitude/"
     },
     {
-        "name": "Vocation Brewery. Smash & Grab  ~ P469",
+        "name": "Vocation Brewery. Smash & Grab",
         "price": "14.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-brewery-smash-grab/"
     },
     {
-        "name": "Behemoth Something Spikey ~ P43",
+        "name": "Behemoth Something Spikey",
         "price": "14.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-something-spikey/"
     },
     {
-        "name": "Boon Geuze Mariage Parfait ~ P185",
+        "name": "Boon Geuze Mariage Parfait",
         "price": "14.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-geuze-mariage-parfait/"
     },
     {
-        "name": "3 Ravens Odins Brew Milkshake Stout ~ P34",
+        "name": "3 Ravens Odins Brew Milkshake Stout",
         "price": "14.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-ravens-odins-brew-milkshake-stout/"
     },
     {
-        "name": "Offshoot Retreat [This is a Hazy Double IPA] ~ P494",
+        "name": "Offshoot Retreat [This is a Hazy Double IPA]",
         "price": "15.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/offshoot-retreat-this-is-hazy-double-ipa/"
     },
     {
-        "name": "Amager Walter the Baby Bat ~ P225",
+        "name": "Amager Walter the Baby Bat",
+        "price": "15.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-walter-the-baby-bat/"
     },
     {
-        "name": "Behemoth Now For Individual Sale ~ P39",
+        "name": "Behemoth Now For Individual Sale",
         "price": "15.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-now-for-individual-sale/"
     },
     {
-        "name": "Vocation Brewery.  Single Hop Series Simcoe ~ P246",
+        "name": "Vocation Brewery.  Single Hop Series Simcoe",
         "price": "15.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-single-hop-series-simcoe/"
     },
     {
-        "name": "Behemoth Laid Back  ~ P28",
+        "name": "Behemoth Laid Back",
         "price": "15.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-laid-back/"
     },
     {
-        "name": "Behemoth Straya! ~ P260",
+        "name": "Behemoth Straya!",
         "price": "15.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-straya/"
     },
     {
-        "name": "Garage Project Boss Level ~ P164",
+        "name": "Garage Project Boss Level",
+        "price": "15.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-boss-level/"
     },
     {
-        "name": "Off Day Canvas Mosaic / Galaxy ~ P519",
+        "name": "Off Day Canvas Mosaic / Galaxy",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-canvas-mosaic-galaxy/"
     },
     {
-        "name": "Behemoth. Delayed Package ~ P446",
+        "name": "Behemoth. Delayed Package",
         "price": "15.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-delayed-package/"
     },
     {
-        "name": "Behemoth Here\u2019s Churly ~ P263",
+        "name": "Behemoth Here\u2019s Churly",
         "price": "15.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-heres-churly/"
     },
     {
-        "name": "Deeds Party At the Boarder ~ P479.1",
+        "name": "Deeds Party At the Boarder",
         "price": "16.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-party-at-the-boarder/"
     },
     {
-        "name": "To \u00d8l Stereo Mono Citra ~ P473",
+        "name": "To \u00d8l Stereo Mono Citra",
         "price": "16.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/to-ol-stereo-mono-citra/"
     },
     {
-        "name": "Liberty Hoptical Illusion ~ P428.1",
+        "name": "Liberty Hoptical Illusion",
         "price": "16.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-hoptical-illusion/"
     },
     {
-        "name": "Omnipollo Andreas ~ P15",
+        "name": "Omnipollo Andreas",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/omnipollo-andreas/"
     },
     {
-        "name": "Liberty Citra ~ P436",
+        "name": "Liberty Citra",
         "price": "16.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-citra-double-ipa/"
     },
     {
-        "name": "Deeds Hold The Cream ~ P460.1",
+        "name": "Deeds Hold The Cream",
         "price": "16.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-hold-the-cream/"
     },
     {
-        "name": "Dry & Bitter Rocket Juice ~ P30",
+        "name": "Dry & Bitter Rocket Juice",
+        "price": "17.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-rocket-jiuce/"
     },
     {
-        "name": "Pirate Life IIPA ~ P301",
+        "name": "Pirate Life IIPA",
+        "price": "17.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-iipa/"
     },
     {
-        "name": "Boon Schaarbeekse Oude Kriek ~ P466.1",
+        "name": "Boon Schaarbeekse Oude Kriek",
         "price": "17.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-schaarbeekse-oude-kriek/"
     },
     {
-        "name": "Behemoth Tiny Hands, Uge Hops ~ P266",
+        "name": "Behemoth Tiny Hands, Uge Hops",
         "price": "17.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-tiny-hands-uge-hops/"
     },
     {
-        "name": "Deeds Milkbar Series: Blueberry & Raspberry ~ P459",
+        "name": "Deeds Milkbar Series: Blueberry & Raspberry",
         "price": "17.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-series-blueberry-raspberry/"
     },
     {
-        "name": "Deeds Milkbar Series: Tropicana ~ P512",
+        "name": "Deeds Milkbar Series: Tropicana",
         "price": "17.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-series-tropicana/"
     },
     {
-        "name": "Deeds No Ticket ~ P501",
+        "name": "Deeds No Ticket",
         "price": "17.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-no-ticket/"
     },
     {
-        "name": "Deeds Dkat Amarillo ~ P499",
+        "name": "Deeds Dkat Amarillo",
         "price": "17.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-dkat-amarillo/"
     },
     {
-        "name": "Deeds Fortune and Glory ~ P502",
+        "name": "Deeds Fortune and Glory",
         "price": "16.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-fortune-and-glory/"
     },
     {
-        "name": "Dry & Bitter Double Dippy Doo ~ P475",
+        "name": "Dry & Bitter Double Dippy Doo",
+        "price": "17.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-double-dippy-doo/"
     },
     {
-        "name": "Founders KBS. Kentucky Breakfast Stout ~ P214",
+        "name": "Founders KBS. Kentucky Breakfast Stout",
         "price": "17.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-kbs-kentucky-breakfast-stout/"
     },
     {
-        "name": "Deeds Pavlova ~ P299",
+        "name": "Deeds Pavlova",
         "price": "18.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-pavlova/"
     },
     {
-        "name": "Rocky Ridge. Fast Car ~ P35",
+        "name": "Rocky Ridge. Fast Car",
         "price": "18.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-fast-car/"
     },
     {
-        "name": "Magic Rock Brewing. What Are The Odds? ~ P168",
+        "name": "Magic Rock Brewing. What Are The Odds?",
         "price": "18.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-what-are-the-odds/"
     },
     {
-        "name": "Gamma Tis The Season Finale ~ P83",
+        "name": "Gamma Tis The Season Finale",
+        "price": "18.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-tis-the-season-finale/"
     },
     {
-        "name": "Behemoth Good Morning Vietnam  ~ P470",
+        "name": "Behemoth Good Morning Vietnam",
         "price": "18.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-good-morning-vietnam/"
     },
     {
-        "name": "Deschutes The Abyss ~ P132",
+        "name": "Deschutes The Abyss",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-the-abyss/"
     },
     {
-        "name": "Devil\u2019s Peak Black Beauty No. 1 ~ P207",
+        "name": "Devil\u2019s Peak Black Beauty No. 1",
         "price": "19.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-black-beauty-no-1/"
     },
     {
-        "name": "Gamma It Slaps ~ P441",
+        "name": "Gamma It Slaps",
+        "price": "19.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-it-slaps/"
     },
     {
-        "name": "Garage Project Jekyll ~ P445",
+        "name": "Garage Project Jekyll",
+        "price": "19.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-jekyll/"
     },
     {
-        "name": "Garage Project Just \u2018Cause You Feel It ~ P454.1",
+        "name": "Garage Project Just \u2018Cause You Feel It",
+        "price": "19.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-just-cause-you-feel-it/"
     },
     {
-        "name": "Founders KBS Maple Fudge ~ P126",
+        "name": "Founders KBS Maple Fudge",
         "price": "19.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-kbs-maple-fudge/"
     },
     {
-        "name": "Founders KBS Espresso ~ P474",
+        "name": "Founders KBS Espresso",
         "price": "20.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-kbs-espresso/"
     },
     {
-        "name": "The Bruery Hold The Spoon: Black Chocolate Cake ~ P493",
+        "name": "The Bruery Hold The Spoon: Black Chocolate Cake",
         "price": "20.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-hold-the-spoon-black-chocolate-cake/"
     },
     {
-        "name": "Rocky Ridge. New Currency ~ P26",
+        "name": "Rocky Ridge. New Currency",
         "price": "21.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-new-currency-mango-milkshake-dipa/"
     },
     {
-        "name": "Garage Project Wildflower: Blackberry  ~ P153",
+        "name": "Garage Project Wildflower: Blackberry",
         "price": "21.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-wildflower-blackberry/"
     },
     {
-        "name": "The Bruery Bakery: Coconut Macaroons ~ P490",
+        "name": "The Bruery Bakery: Coconut Macaroons",
         "price": "22.10",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-bakery-coconut-macaroons/"
     },
     {
-        "name": "Garage Project Chance, Luck & Magic ~ P158",
+        "name": "Garage Project Chance, Luck & Magic",
         "price": "22.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-chance-luck-magic/"
     },
     {
-        "name": "Garage Project Excessive Machine ~ P49.1",
+        "name": "Garage Project Excessive Machine",
         "price": "22.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-excessive-machine/"
     },
     {
-        "name": "Garage Project Pilgrim\u2019s Blend ~ P74",
+        "name": "Garage Project Pilgrim\u2019s Blend",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-pilgrims-blend/"
     },
     {
-        "name": "To \u00d8l Extreme Measures ~ P497",
+        "name": "To \u00d8l Extreme Measures",
         "price": "23.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/to-ol-extreme-measures/"
     },
     {
-        "name": "Garage Project. Single Fruit Apricot  ~ P173",
+        "name": "Garage Project. Single Fruit Apricot",
         "price": "24.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-single-fruit-apricot/"
     },
     {
-        "name": "3 Fonteinen Oude Geuze ~ P204",
+        "name": "3 Fonteinen Oude Geuze",
         "price": "24.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-oude-geuze/"
     },
     {
-        "name": "Woodstock Brewery Sugarman ~ P212",
+        "name": "Woodstock Brewery Sugarman",
         "price": "24.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dwoodstock-brewery-sugarman/"
     },
     {
-        "name": "Devil\u2019s Peak Water Get No Enemy BA Stout ~ P205",
+        "name": "Devil\u2019s Peak Water Get No Enemy BA Stout",
         "price": "25.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-water-get-no-enemy/"
     },
     {
-        "name": "Behemoth Southern Snow Mexican ~ P50",
+        "name": "Behemoth Southern Snow Mexican",
         "price": "26.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-southern-snow-mexican/"
     },
     {
-        "name": "Behemoth Bogan\u2019s Breakfast ~ P179",
+        "name": "Behemoth Bogan\u2019s Breakfast",
         "price": "26.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-bogans-breakfast/"
     },
     {
-        "name": "Heretic Monster Cookie ~ P478",
+        "name": "Heretic Monster Cookie",
         "price": "27.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-monster-cookie/"
     },
     {
-        "name": "Drifter Brewing Sunrise On The Vine ~ P187",
+        "name": "Drifter Brewing Sunrise On The Vine",
         "price": "28.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/drifter-brewing-sunrise-on-the-vine/"
     },
     {
-        "name": "Amager Black Rainbows ~ P169",
+        "name": "Amager Black Rainbows",
         "price": "31.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-black-rainbows/"
     },
     {
-        "name": "Fraser\u2019s Folly Brandy Cask Finished Ale ~ P66",
+        "name": "Fraser\u2019s Folly Brandy Cask Finished Ale",
         "price": "33.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/frasers-folly-brandy-cask-finished-ale/"
     },
     {
-        "name": "3 Fonteinen Oude Kriek ~ P466",
+        "name": "3 Fonteinen Oude Kriek",
         "price": "33.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-oude-kriek/"
     },
     {
-        "name": "3 Fonteinen Cuvee Armand & Gaston ~ P202",
+        "name": "3 Fonteinen Cuvee Armand & Gaston",
         "price": "33.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-cuvee-armand-gaston/"
     },
     {
-        "name": "Lion Brewery. Straits Pale Ale (Pack of 6) ~ P24",
+        "name": "Lion Brewery. Straits Pale Ale",
         "price": "34.20",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/lion-brewery-straits-pale-ale-2/"
     },
     {
-        "name": "Young Master. Another One (Pack of 6) ~ P310",
+        "name": "Young Master. Another One",
         "price": "39.00",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/young-master-another-one/"
     },
     {
-        "name": "3 Fonteinen Hommage Bio Framboos ~ P218",
+        "name": "3 Fonteinen Hommage Bio Framboos",
         "price": "41.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-hommage-bio-framboos/"
     },
     {
-        "name": "Sweetwater 420 Extra Pale Ale (Pack of 6)",
+        "name": "Sweetwater 420 Extra Pale Ale",
         "price": "42.75",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/sweetwater-420-extra-pale-ale-2/"
     },
     {
-        "name": "Mikkeller Spontan Triple blueberry ~ P184.2",
+        "name": "Mikkeller Spontan Triple blueberry",
         "price": "45.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/mikkeller-spontan-triple-blueberry/"
     },
     {
-        "name": "3 Fonteinen Framboos Oogst ~ P226",
+        "name": "3 Fonteinen Framboos Oogst",
         "price": "45.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-framboos-oogst/"
     },
     {
-        "name": "Sweetwater Hop Hash Easy IPA (Pack of 6)",
+        "name": "Sweetwater Hop Hash Easy IPA",
         "price": "45.03",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/sweetwater-hop-hash-easy-ipa-2/"
     },
     {
-        "name": "Founders All Day IPA (Pack of 6) ~ P113",
+        "name": "Founders All Day IPA",
         "price": "45.60",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/founders-all-day-ipa-copy/"
     },
     {
-        "name": "Stone & Wood Pacific Ale (Pack of 6)",
+        "name": "Stone & Wood Pacific Ale",
         "price": "46.15",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/stone-wood-pacific-ale/"
     },
     {
-        "name": "Heretic Make America Juicy Again (Pack of 6)",
+        "name": "Heretic Make America Juicy Again",
         "price": "47.31",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/heretic-make-america-juicy-again-2/"
     },
     {
-        "name": "Deschutes Fresh Haze IPA \u2013 355ml (Pack of 6) ~ P31",
+        "name": "Deschutes Fresh Haze IPA \u2013 355ml",
         "price": "48.45",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/deschutes-fresh-haze-ipa-2/"
     },
     {
-        "name": "Deschutes Fresh Squeezed IPA (Pack of 6) ~ P116",
+        "name": "Deschutes Fresh Squeezed IPA",
         "price": "48.45",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/deschutes-fresh-squeezed-ipa-pack-of-6/"
     },
     {
-        "name": "Founders Centennial IPA (Pack of 6) ~ P297",
+        "name": "Founders Centennial IPA",
         "price": "48.45",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/founders-centennial-ipa-2/"
     },
     {
-        "name": "ParrotDog Falcon APA (Pack of 6) ~ P115",
+        "name": "ParrotDog Falcon APA",
+        "price": "51.87",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/parrotdog-falcon-apa-2/"
     },
     {
-        "name": "Garage Project Mutiny On The Bounty ~ P223",
+        "name": "Garage Project Mutiny On The Bounty",
         "price": "53.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-mutiny-on-the-bounty/"
     },
     {
-        "name": "Pasteur Street Cyclo Stout ~ P221",
+        "name": "Pasteur Street Cyclo Stout",
         "price": "54.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pasteur-street-cyclo-stout/"
     },
     {
-        "name": "The 1925 Brewing Company. Liang Teh (Pack of 6) ~ P108",
+        "name": "The 1925 Brewing Company. Liang Teh",
         "price": "55.86",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-liang-teh-2/"
     },
     {
-        "name": "Heretic Juicier Than Thou (Pack of 6) ~ P294",
+        "name": "Heretic Juicier Than Thou",
         "price": "58.71",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/heretic-juicier-than-thou-2/"
     },
     {
-        "name": "Behemoth Laid Back (Pack of 6)  ~ P28",
+        "name": "Behemoth Laid Back",
         "price": "88.35",
+        "quantity": 6,
         "url": "https://craftbeersg.com/product/behemoth-laid-back-2/"
     },
     {
-        "name": "Rocky Ridge. Session (Case of 24)",
+        "name": "Rocky Ridge. Session",
+        "price": "182.40",
+        "quantity": 24,
         "url": "https://craftbeersg.com/product/rocky-ridge-session-2/"
     },
     {
-        "name": "Otherside Brewing. Lo-Fi (Case of 18)",
+        "name": "Otherside Brewing. Lo-Fi",
+        "quantity": 18,
         "url": "https://craftbeersg.com/product/otherside-brewing-lo-fi-2/"
     },
     {
-        "name": "Rocky Ridge. Black Forest Lager  Pack of 16",
+        "name": "Rocky Ridge. Black Forest Lager",
+        "price": "150.00",
+        "quantity": 16,
         "url": "https://craftbeersg.com/product/rocky-ridge-black-forest-lager-pack-of-16/"
     },
     {
-        "name": "Blasta Brewing. Chainbreaker IPA (Case of 16)",
+        "name": "Blasta Brewing. Chainbreaker IPA",
         "price": "157.00",
+        "quantity": 16,
         "url": "https://craftbeersg.com/product/blasta-brewing-chainbreaker-ipa/"
     },
     {
-        "name": "Rocky Ridge. Baby Peach (Case of 24)",
+        "name": "Rocky Ridge. Baby Peach",
         "price": "159.00",
+        "quantity": 24,
         "url": "https://craftbeersg.com/product/rocky-ridge-experimental-ipa/"
     },
     {
-        "name": "Pirate Life Throwback IPA (Pack of 24) ~ P167",
+        "name": "Pirate Life Throwback IPA",
         "price": "168.00",
+        "quantity": 24,
         "url": "https://craftbeersg.com/product/pirate-life-throwback-ipa-2/"
     },
     {
-        "name": "Fourpure Last Train Oatmeal Stout ~ P303",
+        "name": "Fourpure Last Train Oatmeal Stout",
         "price": "6.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-last-train-oatmeal-stout/"
     },
     {
         "name": "\u00c4lska Peach & Raspberry Cider",
         "price": "4.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/alska-peach-raspberry-cider/"
     },
     {
         "name": "St. Austell Tribute Ale",
         "price": "5.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-austell-tribute-ale/"
     },
     {
         "name": "Brewdog. Indie",
         "price": "5.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-indie/"
     },
     {
         "name": "Brewdog. Quench Quake",
         "price": "6.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-quench-quake/"
     },
     {
         "name": "Brewdog. Zombie Cake",
         "price": "6.40",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-zombie-cake/"
     },
     {
         "name": "Thornbridge Salted Caramel Lucaria",
         "price": "6.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-salted-carame-lucaria/"
     },
     {
         "name": "\u00c4lska Strawberry & Lime Cider",
         "price": "6.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/alska-strawberry-lime-cider/"
     },
     {
         "name": "Hitachino Nest. Craft Lager",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-craft-lager/"
     },
     {
-        "name": "Brewlander Hope (Summer Ale)",
+        "name": "Brewlander Hope Summer Ale",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-hope-summer-ale/"
     },
     {
-        "name": "Tribe. Buckethead Session Ale ~ P280",
+        "name": "Tribe. Buckethead Session Ale",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/tribe-buckethead-session-ale/"
     },
     {
         "name": "Feral Sly Fox",
         "price": "7.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-sly-fox/"
     },
     {
         "name": "Hitachino Nest. Espresso Stout",
         "price": "7.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-espresso-stout/"
     },
     {
-        "name": "Feral Hop Hog ~ P502",
+        "name": "Feral Hop Hog",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/feral_hop_hog/"
     },
     {
         "name": "Royal Jamaican Ginger Beer",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/royal-jamaican-ginger-beer/"
     },
     {
         "name": "Thornbridge Florida Weisse",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-florida-weisse/"
     },
     {
         "name": "Sierra Nevada Tropical Torpedo",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-tropical-torpedo/"
     },
     {
         "name": "Anderson Valley Brewing Cherry Gose",
         "price": "7.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-cherry-gose/"
     },
     {
         "name": "Stockade Mr Fruju NEIPA",
         "price": "7.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-mr-fruju-neipa/"
     },
     {
         "name": "\u00c4lska Lemon & Ginger Cider",
         "price": "7.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/alska-lemon-ginger-cider/"
     },
     {
         "name": "Yoho Brewing Indo No Aooni IPA",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/yoho-brewing-indo-no-aooni-ipa/"
     },
     {
         "name": "Thornbridge Bliss Point",
         "price": "7.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-bliss-point/"
     },
     {
         "name": "Thornbridge Tupelo",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-tupelo/"
     },
     {
         "name": "Mornington Peninsula Draught Lager",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/mornington-peninsula-draught-lager/"
     },
     {
         "name": "Rogue Just A Pinch",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-just-a-pinch/"
     },
     {
         "name": "Innis & Gunn. Original",
         "price": "8.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/innis-gunn-original/"
     },
     {
-        "name": "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198",
+        "name": "Magic Rock Brewing. Fantasma Gluten Free IPA",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-fantasma-gluten-free-ipa/"
     },
     {
         "name": "Moon Dog Old Mate",
         "price": "8.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-old-mate/"
     },
     {
         "name": "Vocation Brewery. Divide & Conquer",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-divide-conquer/"
     },
     {
-        "name": "Otherside Brewing. Festive ~ P433",
+        "name": "Otherside Brewing. Festive",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-festive/"
     },
     {
         "name": "Feral Biggie Juice",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-biggie-juice/"
     },
     {
-        "name": "Off Day Beer ~ P96",
+        "name": "Off Day Beer",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-beer/"
     },
     {
         "name": "Off Day Pale",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-pale/"
     },
     {
         "name": "ParrotDog Birdseye Hazy IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-birdseye-hazy-ipa/"
     },
     {
-        "name": "Thornbridge Jamestown ~ P448.1",
+        "name": "Thornbridge Jamestown",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-jamestown/"
     },
     {
         "name": "Pasteur Street Pomelo IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pasteur-street-pomelo-ipa/"
     },
     {
         "name": "Mornington Peninsula Pale Ale",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/mornington-peninsula-pale-ale/"
     },
     {
         "name": "Lion Brewery. New England Session IPA",
         "price": "8.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-brewery-new-england-session-ipa/"
     },
     {
         "name": "Sweetwater Goin\u2019 Coastal IPA",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-goin-coastal-ipa/"
     },
     {
         "name": "Fixation IPA",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/fixation-ipa/"
     },
     {
         "name": "St. Austell Proper Job IPA",
         "price": "8.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-austell-proper-job-ipa/"
     },
     {
         "name": "Garage Project. Fuzzbox",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-fuzzbox/"
     },
     {
-        "name": "Behemoth Freedom ~ P232",
+        "name": "Behemoth Freedom",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-freedom/"
     },
     {
         "name": "Heart of Darkness When You Open This Bottle Real Raspberries Will Fly Out IPA",
         "price": "9.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-when-you-open-this-bottle-real-raspberries-will-fly-out/"
     },
     {
         "name": "Magic Rock Brewing. High Wire Grapefruit",
         "price": "9.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-high-wire-graprefruit/"
     },
     {
-        "name": "Garage Project Garagista ~ P275",
+        "name": "Garage Project Garagista",
         "price": "9.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-garagista/"
     },
     {
         "name": "Garage Project Golden Path",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-golden-path/"
     },
     {
-        "name": "Feral War Hog  ~ P300",
+        "name": "Feral War Hog",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-war-hog/"
     },
     {
-        "name": "Delirium Nocturnum ~ P476",
+        "name": "Delirium Nocturnum",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/delirium-nocturnum/"
     },
     {
         "name": "Stone x Metallica Enter Night Pilsner",
         "price": "9.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-x-metallica-enter-night-pilsner/"
     },
     {
         "name": "Fraser\u2019s Folly Mint Choc Stout",
         "price": "9.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/frasers-folly-mint-choc-stout/"
     },
     {
         "name": "Pirate Life Unfazed By The Haze",
         "price": "9.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-unfazed-by-the-haze/"
     },
     {
-        "name": "Otherside Brewing. Anthem IPA ~ P318",
+        "name": "Otherside Brewing. Anthem IPA",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-anthem-ipa/"
     },
     {
-        "name": "Pirate Life Ruby Jujube Porter ~ P429",
+        "name": "Pirate Life Ruby Jujube Porter",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-ruby-jujube-porter/"
     },
     {
         "name": "The 1925 Brewing Company. Kaya Toast",
         "price": "9.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-sour-plum-copy/"
     },
     {
         "name": "Gosnells London Mead",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-london-mead/"
     },
     {
-        "name": "Behemoth. Hopportunity ~ P437",
+        "name": "Behemoth. Hopportunity",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-hopportunity/"
     },
     {
-        "name": "Duchesse de Bourgogne  ~ P154",
+        "name": "Duchesse de Bourgogne",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/duchesse-de-bourgogne/"
     },
     {
         "name": "Moon Dog Cake Hole Black Forest Stout",
         "price": "10.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-cake-hole-black-forest-stout/"
     },
     {
         "name": "Devil\u2019s Peak Lucy in the Tropics NEIPA",
         "price": "10.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-lucy-in-the-tropics-neipa/"
     },
     {
         "name": "Devil\u2019s Peak Juicy Lucy NEIPA",
         "price": "10.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-juicy-lucy-neipa/"
     },
     {
         "name": "Pirate Life Cashmere IPA",
         "price": "10.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-cashmere/"
     },
     {
         "name": "Root Sellers. Pedal Hard Ginger Beer",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/root-sellers-pedal-hard-ginger-beer/"
     },
     {
         "name": "Kagua Yuzu Blanc",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/kagua-yuzu-blanc/"
     },
     {
         "name": "Stonehead Hazelnut & Chocolate Stout",
         "price": "10.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/stonehead-hazelnut-chocolate-stout/"
     },
     {
         "name": "Garage Project DFA",
         "price": "10.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-dfa/"
     },
     {
         "name": "Pirate Life Tropical IIPA",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-tropical-iipa/"
     },
     {
-        "name": "Wychwood King Goblin ~ P215",
+        "name": "Wychwood King Goblin",
         "price": "10.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/wychwood-king-goblin/"
     },
     {
-        "name": "Sierra Nevada Narwhal  ~ P129",
+        "name": "Sierra Nevada Narwhal",
         "price": "11.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-narwhal/"
     },
     {
         "name": "Otherside Brewing. Sabbath Stout",
         "price": "11.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-sabbath-stout/"
     },
     {
-        "name": "North Brewing . Modular American IPA ~ P499",
+        "name": "North Brewing . Modular American IPA",
         "price": "11.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-modular-american-ipa/"
     },
     {
         "name": "Magic Rock Brewing. Murk From Home",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-murk-from-home/"
     },
     {
         "name": "Moon Dog Jimmy & Lawson\u2019s",
         "price": "12.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-jimmy-lawsons/"
     },
     {
         "name": "Vocation Brewery. Breakfast Club",
         "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-brewery-breakfast-club/"
     },
     {
-        "name": "North Brewing . Lines of Symmetry ~ P501",
+        "name": "North Brewing . Lines of Symmetry",
         "price": "13.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-lines-of-symmetry/"
     },
     {
         "name": "ParrotDog Adrian Hazy IPA",
         "price": "13.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-adrain-hazy-ipa/"
     },
     {
         "name": "ParrotDog Keith Hazy IPA",
         "price": "13.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-keith-hazy-ipa/"
     },
     {
-        "name": "Blasta Brewing. Unbridled Unicorn DIPA ~ P447",
+        "name": "Blasta Brewing. Unbridled Unicorn DIPA",
         "price": "13.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-unbridled-unicorn-dipa/"
     },
     {
         "name": "Delirium Argentum",
         "price": "13.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/delirium-argentum/"
     },
     {
         "name": "Rocky Ridge. Imperial Custard Tart Stout",
         "price": "14.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-imperial-custard-tart-stout/"
     },
     {
-        "name": "Rocky Ridge. Chunky Dates ~ P444",
+        "name": "Rocky Ridge. Chunky Dates",
         "price": "14.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-chunky-dates/"
     },
     {
         "name": "Behemoth Music City",
         "price": "14.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-music-city/"
     },
     {
         "name": "St. Bernardus Christmas Ale",
         "price": "14.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-christmas-ale/"
     },
     {
         "name": "Pirate Life Zappa IPA",
         "price": "15.20",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-zappa-ipa/"
     },
     {
         "name": "Vocation Brewery. Sweet Temptation",
         "price": "15.30",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-brewery-sweet-temptation/"
     },
     {
         "name": "Vocation Brewery.  Single Hop Series Citra",
         "price": "15.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-single-hop-series-citra/"
     },
     {
         "name": "Behemoth Lid Ripper",
         "price": "15.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-lid-ripper/"
     },
     {
         "name": "Behemoth Reeferendum",
         "price": "15.70",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-reeferendum/"
     },
     {
-        "name": "Lion City Meadery. Longan & Red Dates Mead (Liang Teh Series 2 of 4)",
+        "name": "Lion City Meadery. Longan & Red Dates Mead Liang Teh Series 2 of 4",
         "price": "15.80",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-chrysanthemum-mead-copy/"
     },
     {
         "name": "Deeds Intergalactic Love Child Sour Hazy DIPA",
         "price": "16.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-intergalactic-love-child-sour-hazy-dipa/"
     },
     {
         "name": "Deeds Milkbar Series: Peaches & Cream",
         "price": "16.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-series-peaches-cream/"
     },
     {
         "name": "Dry & Bitter Do You Think This Is A Fucking Game?",
         "price": "17.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-do-you-think-this-is-a-fucking-game/"
     },
     {
-        "name": "Gamma Guap ~ P40",
+        "name": "Gamma Guap",
         "price": "18.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-guap/"
     },
     {
-        "name": "Dry & Bitter The Glow Below ~ P512",
+        "name": "Dry & Bitter The Glow Below",
         "price": "18.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-the-glow-below/"
     },
     {
         "name": "Dry & Bitter Don\u2019t Bring Me Down",
         "price": "18.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-dont-bring-me-down/"
     },
     {
-        "name": "Gamma Big Doink ~ P432",
+        "name": "Gamma Big Doink",
         "price": "19.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-big-doink/"
     },
     {
         "name": "Gamma Algorithm Juice",
         "price": "19.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-algorithm-juice/"
     },
     {
         "name": "Garage Project New New Normal Normal",
         "price": "19.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-new-new-normal-normal/"
     },
     {
         "name": "Garage Project Surrender to the Void Vol. 2",
         "price": "22.60",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-surrender-to-the-void-vol-2/"
     },
     {
         "name": "Young Master. La Ni\u00f1a Fresa",
         "price": "28.90",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-la-nina-fresa/"
     },
     {
-        "name": "Young Master. Days of Brewing Wild-Flanders ~ P184.1",
+        "name": "Young Master. Days of Brewing Wild-Flanders",
         "price": "30.00",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-days-of-brewing-wild-flanders/"
     },
     {
         "name": "Boon Oude Geuze. Vat 108",
         "price": "31.50",
+        "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-oude-geuze-vat-108/"
     }
 ]
