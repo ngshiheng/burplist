@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 scrapy = "*"
 scrapy-splash = "*"
+scrapy-sentry = "*"
+price-parser = "*"
 
 [dev-packages]
 autopep8 = "*"

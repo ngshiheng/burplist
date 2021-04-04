@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d66c83096fa01c3daaacb2e81b030f093ba59efe9b577b4e82033c5751c332e9"
+            "sha256": "c8271434482ea3c5b132295a0c608fb4d53d5a0d6563bc8e661791e82decae39"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -201,6 +201,14 @@
             ],
             "version": "==1.6.0"
         },
+        "price-parser": {
+            "hashes": [
+                "sha256:8a286caa40fe28912f5e596bf09d72e085f80c4b2acaf5dd22aab8298e6ba731",
+                "sha256:99c89bd5b3e40ae0826dd1bec8392a82edab49d05b5add80d545c82fc8bd1633"
+            ],
+            "index": "pypi",
+            "version": "==0.3.4"
+        },
         "protego": {
             "hashes": [
                 "sha256:a682771bc7b51b2ff41466460896c1a5a653f9a1e71639ef365a72e66d8734b4"
@@ -274,6 +282,13 @@
             ],
             "version": "==1.5.0"
         },
+        "raven": {
+            "hashes": [
+                "sha256:3fa6de6efa2493a7c827472e984ce9b020797d0da16f1db67197bcc23c8fae54",
+                "sha256:44a13f87670836e153951af9a3c80405d36b43097db869a36e92809673692ce4"
+            ],
+            "version": "==6.10.0"
+        },
         "scrapy": {
             "hashes": [
                 "sha256:27621ab491706ec8cc41168cdbdff07e7fe8c344c8640e9e9faebd7cf84008e2",
@@ -281,6 +296,13 @@
             ],
             "index": "pypi",
             "version": "==2.4.1"
+        },
+        "scrapy-sentry": {
+            "hashes": [
+                "sha256:4c78e0fb5a5940639f11ae2a1fb28d4ea1a41180d88289efc6d8e39e1e14227f"
+            ],
+            "index": "pypi",
+            "version": "==0.9.0"
         },
         "scrapy-splash": {
             "hashes": [
