@@ -1,6 +1,4 @@
 import os
-import re
-from decimal import Decimal
 from urllib.parse import urlencode
 
 
@@ -15,10 +13,3 @@ def get_proxy_url(url: str) -> str:
 
     param = {'api_key': SCRAPER_API_KEY, 'url': url}
     return 'http://api.scraperapi.com/?' + urlencode(param)
-
-
-def parse_price(price: str) -> Decimal:
-    """
-    Get price of a product from a given string
-    """
-    return Decimal(re.sub(r'[^\d.]', '', price))
