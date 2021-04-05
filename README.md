@@ -25,3 +25,7 @@ pipenv run scrapy crawl craftbeersg -o craftbeersg.json --set=ROBOTSTXT_OBEY='Fa
 ## Database Schema
 
 https://dbdiagram.io/d/605d3ad2ecb54e10c33d5165
+
+## Scrapy Tools and Libraries
+
+https://github.com/croqaz/awesome-scrapy

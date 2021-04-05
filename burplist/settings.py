@@ -14,6 +14,9 @@ BOT_NAME = 'burplist'
 SPIDER_MODULES = ['burplist.spiders']
 NEWSPIDER_MODULE = 'burplist.spiders'
 
+# Scraper API
+SCRAPER_API_KEY = os.environ.get('SCRAPER_API_KEY')
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'burplist (+http://www.yourdomain.com)'
@@ -23,13 +26,13 @@ ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # Currently `CONCURRENT_REQUESTS` is set to 5 as we are using Scaper API free tier (https://www.scraperapi.com/pricing)
-CONCURRENT_REQUESTS = 5 if os.environ.get('SCRAPER_API_KEY') else 16
-RETRY_TIMES = 5 if os.environ.get('SCRAPER_API_KEY') else 0
+CONCURRENT_REQUESTS = 5 if SCRAPER_API_KEY is not None else 16
+RETRY_TIMES = 5 if SCRAPER_API_KEY is not None else 0
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 0 if os.environ.get('SCRAPER_API_KEY') else 2
+DOWNLOAD_DELAY = 0 if SCRAPER_API_KEY is not None else 2
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
@@ -107,3 +110,13 @@ SENTRY_DSN = 'https://fa2a66ed7b8e4702b9c405f29a8b5df8@o545253.ingest.sentry.io/
 EXTENSIONS = {
     "scrapy_sentry.extensions.Errors": 10,
 }
+
+# PostgreSQL
+CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}?charset=utf8'.format(
+    drivername='',
+    user='',
+    password='',
+    host='',
+    port='',
+    db_name='',
+)
