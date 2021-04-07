@@ -74,9 +74,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'burplist.pipelines.BurplistPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'burplist.pipelines.BurplistPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -112,7 +112,7 @@ EXTENSIONS = {
 }
 
 # PostgreSQL
-CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}?charset=utf8'.format(
+DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}?charset=utf8'.format(
     drivername='',
     user='',
     password='',

@@ -29,6 +29,7 @@ class BeerForceSpider(scrapy.Spider):
             name = product.xpath('.//h3[@class="product__title h4"]/text()').get().strip()
             vendor = product.xpath('.//h4[@class="product__vendor h6"]/text()').get().strip()
 
+            loader.add_value('vendor', self.name)
             loader.add_value('name', f'{vendor} {name}')
             loader.add_xpath('price', './/span[@class="money"]/text()')
             loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1

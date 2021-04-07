@@ -36,6 +36,7 @@ class CraftBeerSGSpider(scrapy.Spider):
             raw_name = product.xpath('./a[@class="product-loop-title"]/h3/text()').get()
             name, quantity = self._get_product_name_quantity(raw_name)
 
+            loader.add_value('vendor', self.name)
             loader.add_value('name', name)
             loader.add_xpath('price', './span[@class="price"]/span/text()')
             loader.add_value('quantity', quantity)
