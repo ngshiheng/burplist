@@ -75,7 +75,8 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'burplist.pipelines.BurplistPipeline': 300,
+    'burplist.pipelines.DuplicatePricePipeline': 300,
+    'burplist.pipelines.NewProductPricePipeline': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -106,17 +107,15 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Sentry
+# https://stackoverflow.com/questions/25262765/handle-all-exception-in-scrapy-with-sentry
 SENTRY_DSN = 'https://fa2a66ed7b8e4702b9c405f29a8b5df8@o545253.ingest.sentry.io/5704972'
-EXTENSIONS = {
-    "scrapy_sentry.extensions.Errors": 10,
-}
 
 # PostgreSQL
-DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}?charset=utf8'.format(
-    drivername='',
-    user='',
-    password='',
-    host='',
-    port='',
-    db_name='',
+DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}'.format(
+    drivername='postgresql',
+    user=os.environ.get('PG_USERNAME', 'postgres'),
+    password=os.environ.get('PG_PASSWORD'),
+    host=os.environ.get('PG_HOST', 'localhost'),
+    port=os.environ.get('PG_PORT', '5432'),
+    db_name='burplist',
 )

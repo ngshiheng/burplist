@@ -6,9 +6,9 @@ name = "pypi"
 [packages]
 scrapy = "*"
 scrapy-splash = "*"
-scrapy-sentry = "*"
 price-parser = "*"
 sqlalchemy = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 autopep8 = "*"

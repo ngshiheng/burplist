@@ -1,11 +1,22 @@
+
+import logging
+
 from itemadapter import ItemAdapter
+from scrapy import Spider
 from scrapy.exceptions import DropItem
 from sqlalchemy.orm import sessionmaker
 
+from burplist.items import ProductItem
 from burplist.models import Price, Product, create_table, db_connect
 
+logger = logging.getLogger(__name__)
 
-class BurplistPipeline:
+
+class NewProductPricePipeline:
+    """
+    Main pipeline that save new products and their prices into database
+    """
+
     def __init__(self):
         """
         Initializes database connection and sessionmaker
@@ -14,25 +25,31 @@ class BurplistPipeline:
         create_table(engine)
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item, spider):
+    def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         """
         This method is called for every item pipeline component
         """
         session = self.Session()
-        product = Product()
-        price = Price()
-
-        product.name = item['name']
-        product.quantity = item['quantity']
-        product.vendor = item['vendor']
-        product.url = item['url']
-        price.price = item['price']
 
         try:
+            product = Product(
+                name=item['name'],
+                vendor=item['vendor'],
+                quantity=item['quantity'],
+                url=item['url'],
+            )
             session.add(product)
+
+            price = Price(
+                price=item['price'].amount,
+                product=product
+            )
+            session.add(price)
+
             session.commit()
 
-        except Exception:
+        except Exception as error:
+            logger.exception(error, extra=dict(item=item, spider=spider))
             session.rollback()
             raise
 
@@ -42,14 +59,59 @@ class BurplistPipeline:
         return item
 
 
-class DuplicatesPipeline:
-    def __init__(self):
-        self.product_seen = set()
+class DuplicatePricePipeline:
+    """
+    Check if a product already exist in pipeline and determine if it has price changes
 
-    def process_item(self, item, spider):
+    `url` and `quantity` is used to define the uniqueness of a product
+    Using `url` alone isn't enough because the same URL (product) can have type of different `quantity`
+    E.g.: "Pabst Blue Ribbon American Lager" can be of 'Single', '6 Packs' or 'Case of 24'
+
+    Do not use `name` because name can change on a website
+    Remove the product from the pipeline if it does not have any price changes
+    """
+
+    def __init__(self):
+        engine = db_connect()
+        create_table(engine)
+        self.Session = sessionmaker(bind=engine)
+
+    def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         adapter = ItemAdapter(item)
-        if adapter['name'] in self.product_seen:
-            raise DropItem(f'Duplicate item found: {item!r}')
+        session = self.Session()
+
+        url = adapter.get('url')
+        quantity = adapter.get('quantity')
+        price = adapter.get('price')
+        if price is not None:
+            current_price = float(price.amount)  # `.amount` is type of `<class 'decimal.Decimal'>`
         else:
-            self.product_seen.add(adapter['name'])
-            return item
+            raise DropItem(f'Dropping item because item <{url}> still does not have a price.')
+
+        existing_product = session.query(Product).filter_by(url=url, quantity=quantity).first()
+
+        if existing_product is not None:
+            last_price = session.query(Price).filter_by(product=existing_product).order_by(Price.id.desc()).first()
+
+            if last_price.price == current_price:
+                raise DropItem(f'Dropping item because item <{url}> still remains at the same price since {last_price.updated_on}.')
+
+            else:
+                price = Price(
+                    price=current_price,
+                    product=existing_product,
+                )
+
+                try:
+                    session.add(price)
+                    session.commit()
+
+                except Exception as error:
+                    logger.exception(error, extra=dict(item=item, spider=spider))
+                    session.rollback()
+                    raise
+
+                finally:
+                    session.close()
+
+        return item

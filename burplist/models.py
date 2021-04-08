@@ -3,6 +3,7 @@ import datetime
 from scrapy.utils.project import get_project_settings
 from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
@@ -28,11 +29,19 @@ class Product(Base):
     quantity = Column('quantity', Integer())
     url = Column('url', String())
 
+    def __repr__(self) -> str:
+        return f'Product(vendor={self.vendor})'
+
 
 class Price(Base):
     __tablename__ = 'price'
 
     id = Column(Integer, primary_key=True)
-    product_id = Column(Integer, ForeignKey('product.id'))
+    product_id = Column(Integer, ForeignKey('product.id'), nullable=False)
+    product = relationship('Product', backref='prices', cascade='delete')
+
     price = Column('price', Float)
-    timestamp = Column(DateTime, default=datetime.datetime.utcnow)
+    updated_on = Column(DateTime, default=datetime.datetime.utcnow)
+
+    def __repr__(self) -> str:
+        return f'Price(product={self.product})'
