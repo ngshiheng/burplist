@@ -1,10 +1,14 @@
 import scrapy
 from itemloaders.processors import MapCompose, TakeFirst
-
-from burplist.utils.proxy import parse_price
+from price_parser.parser import parse_price
 
 
 class ProductItem(scrapy.Item):
+    vendor = scrapy.Field(
+        input_processor=MapCompose(str.strip),
+        output_processor=TakeFirst(),
+    )
+
     name = scrapy.Field(
         input_processor=MapCompose(str.strip),
         output_processor=TakeFirst(),

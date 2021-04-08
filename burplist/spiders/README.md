@@ -1,5 +1,14 @@
 # Debugging and Development
 
+## Database Set Up
+```sh
+# To spin up a PostgreSQL Docker container
+docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
+
+# To run `psql` in the Docker container
+docker exec -it dpostgres psql -U postgres
+```
+
 ## XPath Quick Guide
 
 > “XPath is a language for addressing parts of an XML document”
