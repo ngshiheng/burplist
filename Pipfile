@@ -9,6 +9,7 @@ scrapy-splash = "*"
 price-parser = "*"
 sqlalchemy = "*"
 psycopg2-binary = "*"
+colorlog = "*"
 
 [dev-packages]
 autopep8 = "*"
