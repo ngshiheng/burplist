@@ -1,15 +1,17 @@
 [
     {
+        "vendor": "fairprice",
         "name": "Kronenbourg 1664 Can Beer - Blanc",
         "price": {
-            "amount": "12.9",
+            "amount": "11.8",
             "currency": null,
-            "amount_text": "12.9"
+            "amount_text": "11.8"
         },
         "quantity": 4,
         "url": "https://www.fairprice.com.sg/product/13130634"
     },
     {
+        "vendor": "fairprice",
         "name": "Erdinger Weissbrau Bottle Beer - Weissbier",
         "price": {
             "amount": "6.95",
@@ -20,7 +22,8 @@
         "url": "https://www.fairprice.com.sg/product/erdinger-weissbier-wheat-beer-with-fine-yeast-500ml-10829736"
     },
     {
-        "name": "Erdinger Weissbrau Bottle Beer - Dunkel (Dark)",
+        "vendor": "fairprice",
+        "name": "Erdinger Weissbrau Bottle Beer - Dunkel",
         "price": {
             "amount": "6.95",
             "currency": null,
@@ -30,7 +33,8 @@
         "url": "https://www.fairprice.com.sg/product/erdinger-weissbier-dunkel-dark-beer-500ml-10829728"
     },
     {
-        "name": "Carlsberg Danish Can Beer - Pilsner (Alcohol Free)",
+        "vendor": "fairprice",
+        "name": "Carlsberg Danish Can Beer - Pilsner",
         "price": {
             "amount": "7.9",
             "currency": null,
@@ -40,6 +44,7 @@
         "url": "https://www.fairprice.com.sg/product/carslberg-danish-can-beer-pilsner-alcohol-free-4-x-330ml-13165326"
     },
     {
+        "vendor": "fairprice",
         "name": "Kronenbourg 1664 Can Beer - Original",
         "price": {
             "amount": "11.9",
@@ -50,7 +55,8 @@
         "url": "https://www.fairprice.com.sg/product/13143740"
     },
     {
-        "name": "Carlsberg Danish Can Beer - Wheat (Alcohol Free)",
+        "vendor": "fairprice",
+        "name": "Carlsberg Danish Can Beer - Wheat",
         "price": {
             "amount": "7.9",
             "currency": null,
@@ -60,6 +66,7 @@
         "url": "https://www.fairprice.com.sg/product/carslberg-danish-can-beer-wheat-alcohol-free-4-x-330ml-13165325"
     },
     {
+        "vendor": "fairprice",
         "name": "Godfather High Power Can Beer - Super Strong",
         "price": {
             "amount": "3.35",
@@ -70,6 +77,7 @@
         "url": "https://www.fairprice.com.sg/product/13030399"
     },
     {
+        "vendor": "fairprice",
         "name": "Dester Premium Lager Can Beer - Original Brew",
         "price": {
             "amount": "11.799999999999999",
@@ -80,6 +88,7 @@
         "url": "https://www.fairprice.com.sg/product/dester-premium-lager-beer-6s-x-330ml-12374501"
     },
     {
+        "vendor": "fairprice",
         "name": "Lotte Chilsung Kloud Clear Zero Non-Alcoholic Beer",
         "price": {
             "amount": "11.92",
@@ -90,6 +99,7 @@
         "url": "https://www.fairprice.com.sg/product/lotte-chilsung-kloud-clear-zero-non-alcoholic-beer-6-x-350ml-90041986"
     },
     {
+        "vendor": "fairprice",
         "name": "Lotte Chilsung Kloud Clear Zero Non-Alcoholic Beer",
         "price": {
             "amount": "2.2399999999999998",
@@ -100,6 +110,7 @@
         "url": "https://www.fairprice.com.sg/product/lotte-chilsung-kloud-clear-zero-non-alcoholic-beer-350-ml-90041985"
     },
     {
+        "vendor": "fairprice",
         "name": "Bira 91 White Beer 4.7% - Pack",
         "price": {
             "amount": "20.9",
@@ -110,6 +121,7 @@
         "url": "https://www.fairprice.com.sg/product/bira-91-white-beer-4-7-pack-6-x-330ml-90024646"
     },
     {
+        "vendor": "fairprice",
         "name": "Bira 91 Summer Blonde 4.5% - Pack",
         "price": {
             "amount": "20.9",
@@ -120,6 +132,7 @@
         "url": "https://www.fairprice.com.sg/product/bira-91-summer-blonde-4-5-pack-6-x-330ml-90024644"
     },
     {
+        "vendor": "fairprice",
         "name": "Bira 91 Pomelo IPA 4.5% - Pack",
         "price": {
             "amount": "25.5",
@@ -130,6 +143,7 @@
         "url": "https://www.fairprice.com.sg/product/bira-91-pomelo-ipa-4-5-pack-6-x-330ml-90024645"
     },
     {
+        "vendor": "fairprice",
         "name": "Lotte Chilsung Kloud Clear Zero Non-Alcoholic Beer",
         "price": {
             "amount": "47.2",
@@ -140,6 +154,7 @@
         "url": "https://www.fairprice.com.sg/product/lotte-chilsung-kloud-clear-zero-non-alcoholic-beer-24-x-350ml-90041987"
     },
     {
+        "vendor": "fairprice",
         "name": "Liese Hair Spray - Super Hard",
         "price": {
             "amount": "9.9",
@@ -150,6 +165,18 @@
         "url": "https://www.fairprice.com.sg/product/liese-hair-spray-super-hard-180g-13181243"
     },
     {
+        "vendor": "fairprice",
+        "name": "Sapporo Premium Can Beer",
+        "price": {
+            "amount": "95.60000000000001",
+            "currency": null,
+            "amount_text": "95.60000000000001"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/12709025"
+    },
+    {
+        "vendor": "fairprice",
         "name": "Kooksoondang Traditional Rice Beer - Ssal Makkoli",
         "price": {
             "amount": "8.9",
@@ -160,6 +187,7 @@
         "url": "https://www.fairprice.com.sg/product/kooksoondang-makkoli-rice-beer-750ml-13020901"
     },
     {
+        "vendor": "fairprice",
         "name": "Heineken Premium Lager Bottle Beer",
         "price": {
             "amount": "6.95",
@@ -170,26 +198,7 @@
         "url": "https://www.fairprice.com.sg/product/heineken-premium-lager-bottle-beer-633ml-10170935"
     },
     {
-        "name": "Little Creatures IPA 330ml",
-        "price": {
-            "amount": "23.9",
-            "currency": null,
-            "amount_text": "23.9"
-        },
-        "quantity": 4,
-        "url": "https://www.fairprice.com.sg/product/little-creatures-ipa-330ml-4-x-330ml-90025028"
-    },
-    {
-        "name": "Tsingtao India Pale Ale - IPA",
-        "price": {
-            "amount": "4.9",
-            "currency": null,
-            "amount_text": "4.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/tsingtao-india-pale-ale-ipa-330-ml-90059914"
-    },
-    {
+        "vendor": "fairprice",
         "name": "Singha Beer Can Singha Beer Can",
         "price": {
             "amount": "62",
@@ -200,16 +209,18 @@
         "url": "https://www.fairprice.com.sg/product/singha-beer-can-singha-beer-can-24-x-320ml-90038954"
     },
     {
-        "name": "Schneider Weisse Tap 3 Non Alcoholic",
+        "vendor": "fairprice",
+        "name": "Little Creatures IPA",
         "price": {
-            "amount": "3.9",
+            "amount": "23.9",
             "currency": null,
-            "amount_text": "3.9"
+            "amount_text": "23.9"
         },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-3-non-alcoholic-500ml-90014478"
+        "quantity": 4,
+        "url": "https://www.fairprice.com.sg/product/little-creatures-ipa-330ml-4-x-330ml-90025028"
     },
     {
+        "vendor": "fairprice",
         "name": "Clausthaler Original Hopped Dry Non-Alcoholic Beer",
         "price": {
             "amount": "3.3",
@@ -220,16 +231,18 @@
         "url": "https://www.fairprice.com.sg/product/clausthaler-original-hopped-dry-non-alcoholic-beer-330ml-90014444"
     },
     {
-        "name": "Suntory Premium Malts Beer",
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 3 Non Alcoholic",
         "price": {
-            "amount": "6.99",
+            "amount": "3.9",
             "currency": null,
-            "amount_text": "6.99"
+            "amount_text": "3.9"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/suntory-premium-malts-beer-1-x-334ml-90039168"
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-3-non-alcoholic-500ml-90014478"
     },
     {
+        "vendor": "fairprice",
         "name": "Veltins Non Alcoholic Beer",
         "price": {
             "amount": "3.3",
@@ -240,27 +253,19 @@
         "url": "https://www.fairprice.com.sg/product/veltins-non-alcoholic-beer-330ml-90014476"
     },
     {
-        "name": "Kronenbourg 1664 Can Beer - Blanc",
+        "vendor": "fairprice",
+        "name": "Suntory Premium Malts Beer",
         "price": {
-            "amount": "27.9",
+            "amount": "6.99",
             "currency": null,
-            "amount_text": "27.9"
-        },
-        "quantity": 2,
-        "url": "https://www.fairprice.com.sg/product/kronenbourg-1664-can-beer-blanc-2-x-4-per-pack-13167714"
-    },
-    {
-        "name": "Tsingtao Wheat Beer",
-        "price": {
-            "amount": "4.9",
-            "currency": null,
-            "amount_text": "4.9"
+            "amount_text": "6.99"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/tsingtao-wheat-beer-330-ml-90059916"
+        "url": "https://www.fairprice.com.sg/product/suntory-premium-malts-beer-1-x-334ml-90039168"
     },
     {
-        "name": "Little Creatures Dog Days Cans 355ml",
+        "vendor": "fairprice",
+        "name": "Little Creatures Dog Days Cans",
         "price": {
             "amount": "29.5",
             "currency": null,
@@ -270,16 +275,7 @@
         "url": "https://www.fairprice.com.sg/product/little-creatures-dog-days-cans-355ml-6-x-355ml-90025033"
     },
     {
-        "name": "Hoegaarden White Cans 500ml",
-        "price": {
-            "amount": "5.5",
-            "currency": null,
-            "amount_text": "5.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/hoegaarden-white-cans-500ml-500ml-90025026"
-    },
-    {
+        "vendor": "fairprice",
         "name": "Schneider Weisse TAP 7 Mein Original",
         "price": {
             "amount": "8.95",
@@ -290,146 +286,7 @@
         "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-7-mein-original-1-x-500ml-90019108"
     },
     {
-        "name": "Erdinger Weissbrau Bottle Beer - Weissbier",
-        "price": {
-            "amount": "83.4",
-            "currency": null,
-            "amount_text": "83.4"
-        },
-        "quantity": 12,
-        "url": "https://www.fairprice.com.sg/product/12708894"
-    },
-    {
-        "name": "Schneider Weisse Tap 5 Meine Hopfenweisse",
-        "price": {
-            "amount": "11.9",
-            "currency": null,
-            "amount_text": "11.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-5-meine-hopfenweisse-500ml-90014479"
-    },
-    {
-        "name": "Jever Pilsener",
-        "price": {
-            "amount": "28.2",
-            "currency": null,
-            "amount_text": "28.2"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/jever-pilsener-6-x-330ml-90014468"
-    },
-    {
-        "name": "Kingfisher Premium Bottle Beer - Extra Strong",
-        "price": {
-            "amount": "5.15",
-            "currency": null,
-            "amount_text": "5.15"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/10831297"
-    },
-    {
-        "name": "Wilde Gluten Free Pale Ale",
-        "price": {
-            "amount": "33",
-            "currency": null,
-            "amount_text": "33"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/wilde-gluten-free-pale-ale-6-x-330ml-90065328"
-    },
-    {
-        "name": "Stockade Flight Path Pale Ale",
-        "price": {
-            "amount": "6.5",
-            "currency": null,
-            "amount_text": "6.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/stockade-flight-path-pale-ale-375-ml-90065318"
-    },
-    {
-        "name": "HARBIN EXTRA FRESH 610ML 3.6% ALC",
-        "price": {
-            "amount": "3.8",
-            "currency": null,
-            "amount_text": "3.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/harbin-extra-fresh-610ml-3-6-alc-610-ml-90062518"
-    },
-    {
-        "name": "Tsingtao Pilsner",
-        "price": {
-            "amount": "4.9",
-            "currency": null,
-            "amount_text": "4.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/tsingtao-pilsner-330-ml-90059915"
-    },
-    {
-        "name": "Drake's Brewing Best Coast IPA",
-        "price": {
-            "amount": "8.8",
-            "currency": null,
-            "amount_text": "8.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/drake-s-brewing-best-coast-ipa-1-x-355ml-90051787"
-    },
-    {
-        "name": "Stone And Wood Pacific Ale",
-        "price": {
-            "amount": "8.1",
-            "currency": null,
-            "amount_text": "8.1"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/stone-and-wood-pacific-ale-1-x-330ml-90051733"
-    },
-    {
-        "name": "Rogue Chocolate Stout Nitro",
-        "price": {
-            "amount": "11.95",
-            "currency": null,
-            "amount_text": "11.95"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/rogue-chocolate-stout-nitro-1-x-403ml-90048616"
-    },
-    {
-        "name": "Deschutes Fresh Haze IPA",
-        "price": {
-            "amount": "9.7",
-            "currency": null,
-            "amount_text": "9.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-haze-ipa-1-x-568ml-90048611"
-    },
-    {
-        "name": "Heretic Make America Juicy Again Hazy IPA",
-        "price": {
-            "amount": "8.3",
-            "currency": null,
-            "amount_text": "8.3"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/heretic-make-america-juicy-again-hazy-ipa-1-x-355ml-90048613"
-    },
-    {
-        "name": "Deschutes Mirror Pond Pale Ale",
-        "price": {
-            "amount": "7.9",
-            "currency": null,
-            "amount_text": "7.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-mirror-pond-pale-ale-1-x-355ml-90047341"
-    },
-    {
+        "vendor": "fairprice",
         "name": "Budweiser Lager Beer",
         "price": {
             "amount": "5.2",
@@ -440,186 +297,84 @@
         "url": "https://www.fairprice.com.sg/product/budweiser-lager-beer-1-x-500ml-90039456"
     },
     {
-        "name": "Estrella Damn Inedit Beer",
+        "vendor": "fairprice",
+        "name": "Hoegaarden White Cans",
         "price": {
-            "amount": "18",
+            "amount": "5.5",
             "currency": null,
-            "amount_text": "18"
+            "amount_text": "5.5"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/estrella-damn-inedit-beer-1-x-750ml-90039180"
+        "url": "https://www.fairprice.com.sg/product/hoegaarden-white-cans-500ml-500ml-90025026"
     },
     {
-        "name": "Steinlager Pure Bottle 330ml",
-        "price": {
-            "amount": "23.5",
-            "currency": null,
-            "amount_text": "23.5"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/steinlager-pure-bottle-330ml-6-x-330ml-90025045"
-    },
-    {
-        "name": "Schneider Weisse Aventinus Eisbock",
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 5 Meine Hopfenweisse",
         "price": {
             "amount": "11.9",
             "currency": null,
             "amount_text": "11.9"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-aventinus-eisbock-330ml-90014464"
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-5-meine-hopfenweisse-500ml-90014479"
     },
     {
-        "name": "Radeberger Pilsener",
+        "vendor": "fairprice",
+        "name": "Erdinger Weissbrau Bottle Beer - Weissbier",
         "price": {
-            "amount": "29.4",
+            "amount": "83.4",
             "currency": null,
-            "amount_text": "29.4"
+            "amount_text": "83.4"
         },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/radeberger-pilsener-6-x-330ml-90014456"
+        "quantity": 12,
+        "url": "https://www.fairprice.com.sg/product/12708894"
     },
     {
+        "vendor": "fairprice",
         "name": "Wilde Gluten Free Pale Ale",
         "price": {
-            "amount": "6",
+            "amount": "33",
             "currency": null,
-            "amount_text": "6"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/wilde-gluten-free-pale-ale-330-ml-90065327"
-    },
-    {
-        "name": "Stockade Refreshing Ale",
-        "price": {
-            "amount": "38",
-            "currency": null,
-            "amount_text": "38"
+            "amount_text": "33"
         },
         "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/stockade-refreshing-ale-6-x-375ml-90065322"
+        "url": "https://www.fairprice.com.sg/product/wilde-gluten-free-pale-ale-6-x-330ml-90065328"
     },
     {
-        "name": "Stockade 8-Bit IPA",
+        "vendor": "fairprice",
+        "name": "Stockade Flight Path Pale Ale",
         "price": {
-            "amount": "27.5",
+            "amount": "6.5",
             "currency": null,
-            "amount_text": "27.5"
-        },
-        "quantity": 4,
-        "url": "https://www.fairprice.com.sg/product/stockade-8-bit-ipa-4-x-375ml-90065316"
-    },
-    {
-        "name": "HOLLANDIA PREMIUM BEER 650ML 4.7% ALC",
-        "price": {
-            "amount": "6.8",
-            "currency": null,
-            "amount_text": "6.8"
+            "amount_text": "6.5"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/hollandia-premium-beer-650ml-4-7-alc-650-ml-90062515"
+        "url": "https://www.fairprice.com.sg/product/stockade-flight-path-pale-ale-375-ml-90065318"
     },
     {
-        "name": "LAOSHAN PREMIUM BEER 600ML 4.7% ALC",
+        "vendor": "fairprice",
+        "name": "Drake's Brewing Best Coast IPA",
         "price": {
-            "amount": "4.5",
+            "amount": "8.8",
             "currency": null,
-            "amount_text": "4.5"
+            "amount_text": "8.8"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/laoshan-premium-beer-600ml-4-7-alc-600-ml-90062517"
+        "url": "https://www.fairprice.com.sg/product/drake-s-brewing-best-coast-ipa-1-x-355ml-90051787"
     },
     {
-        "name": "Founders All Day IPA Big Can",
-        "price": {
-            "amount": "10.9",
-            "currency": null,
-            "amount_text": "10.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/founders-all-day-ipa-big-can-1-x-563ml-90060108"
-    },
-    {
-        "name": "Founders All Day IPA",
+        "vendor": "fairprice",
+        "name": "Stone And Wood Pacific Ale",
         "price": {
             "amount": "8.1",
             "currency": null,
             "amount_text": "8.1"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/founders-all-day-ipa-1-x-355ml-90060107"
+        "url": "https://www.fairprice.com.sg/product/stone-and-wood-pacific-ale-1-x-330ml-90051733"
     },
     {
-        "name": "Rogue Batsquatch Hazy IPA",
-        "price": {
-            "amount": "8.8",
-            "currency": null,
-            "amount_text": "8.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/rogue-batsquatch-hazy-ipa-1-x-355ml-90060111"
-    },
-    {
-        "name": "North Coast Brewing ACME IPA",
-        "price": {
-            "amount": "8.6",
-            "currency": null,
-            "amount_text": "8.6"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/north-coast-brewing-acme-ipa-1-x-355ml-90060106"
-    },
-    {
-        "name": "Founders Centennial IPA Bottle",
-        "price": {
-            "amount": "8.8",
-            "currency": null,
-            "amount_text": "8.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/founders-centennial-ipa-bottle-1-x-355ml-90060109"
-    },
-    {
-        "name": "Orval Trappist Ale",
-        "price": {
-            "amount": "11.1",
-            "currency": null,
-            "amount_text": "11.1"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/orval-trappist-ale-1-x-330ml-90051732"
-    },
-    {
-        "name": "Gosnells Elderflower Sparkling Mead",
-        "price": {
-            "amount": "10.2",
-            "currency": null,
-            "amount_text": "10.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/gosnells-elderflower-sparkling-mead-1-x-330ml-90049720"
-    },
-    {
-        "name": "Arrogant Bastard Ale",
-        "price": {
-            "amount": "10.6",
-            "currency": null,
-            "amount_text": "10.6"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/arrogant-bastard-ale-1-x-473ml-90049751"
-    },
-    {
-        "name": "Gosnells Gooseberry Sparkling Mead",
-        "price": {
-            "amount": "10.2",
-            "currency": null,
-            "amount_text": "10.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/gosnells-gooseberry-sparkling-mead-1-x-330ml-90049716"
-    },
-    {
+        "vendor": "fairprice",
         "name": "Kasteel Barista Chocolate Quad",
         "price": {
             "amount": "13.8",
@@ -630,526 +385,7 @@
         "url": "https://www.fairprice.com.sg/product/kasteel-barista-chocolate-quad-1-x-330ml-90049160"
     },
     {
-        "name": "Heart of Darkness Loose Rivet New England IPA",
-        "price": {
-            "amount": "9.95",
-            "currency": null,
-            "amount_text": "9.95"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/heart-of-darkness-loose-rivet-new-england-ipa-1-x-330ml-90049208"
-    },
-    {
-        "name": "Fruli Strawberry Beer",
-        "price": {
-            "amount": "6.9",
-            "currency": null,
-            "amount_text": "6.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/fruli-strawberry-beer-1-x-330ml-90049162"
-    },
-    {
-        "name": "Chimay Trappist Blue",
-        "price": {
-            "amount": "12.7",
-            "currency": null,
-            "amount_text": "12.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/chimay-trappist-blue-1-x-330ml-90048838"
-    },
-    {
-        "name": "Westmalle Trappist Dubbel",
-        "price": {
-            "amount": "10.9",
-            "currency": null,
-            "amount_text": "10.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/westmalle-trappist-dubbel-1-x-330ml-90048845"
-    },
-    {
-        "name": "Delirium Nocturnum",
-        "price": {
-            "amount": "14.4",
-            "currency": null,
-            "amount_text": "14.4"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/delirium-nocturnum-1-x-330ml-90048735"
-    },
-    {
-        "name": "Rogue Hazelnut Brown Nectar",
-        "price": {
-            "amount": "9.2",
-            "currency": null,
-            "amount_text": "9.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/rogue-hazelnut-brown-nectar-1-x-355ml-90048618"
-    },
-    {
-        "name": "Deschutes Pacific Wonderland Lager",
-        "price": {
-            "amount": "7.9",
-            "currency": null,
-            "amount_text": "7.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-pacific-wonderland-lager-1-x-355ml-90047342"
-    },
-    {
-        "name": "Deschutes Fresh Squeezed IPA",
-        "price": {
-            "amount": "9.7",
-            "currency": null,
-            "amount_text": "9.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-squeezed-ipa-1-x-355ml-90047340"
-    },
-    {
-        "name": "Deschutes Fresh Haze IPA",
-        "price": {
-            "amount": "9.7",
-            "currency": null,
-            "amount_text": "9.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-haze-ipa-1-x-355ml-90047346"
-    },
-    {
-        "name": "Estrella Damn Inedit Beer",
-        "price": {
-            "amount": "216",
-            "currency": null,
-            "amount_text": "216"
-        },
-        "quantity": 12,
-        "url": "https://www.fairprice.com.sg/product/estrella-damn-inedit-beer-12-x-750ml-90041889"
-    },
-    {
-        "name": "Estrella Damn Beer",
-        "price": {
-            "amount": "38.5",
-            "currency": null,
-            "amount_text": "38.5"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/estrella-damn-beer-6-x-330ml-90038950"
-    },
-    {
-        "name": "Leffe Brun Bottle 330ml",
-        "price": {
-            "amount": "5",
-            "currency": null,
-            "amount_text": "5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/leffe-brun-bottle-330ml-330ml-90025065"
-    },
-    {
-        "name": "Steinlager Pure Bottle 330ml",
-        "price": {
-            "amount": "94",
-            "currency": null,
-            "amount_text": "94"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/steinlager-pure-bottle-330ml-24-x-330ml-90025046"
-    },
-    {
-        "name": "Hoegaarden White Cans 500ml",
-        "price": {
-            "amount": "118.9",
-            "currency": null,
-            "amount_text": "118.9"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/hoegaarden-white-cans-500ml-24-x-500ml-90025027"
-    },
-    {
-        "name": "Jever Pilsener",
-        "price": {
-            "amount": "4.7",
-            "currency": null,
-            "amount_text": "4.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/jever-pilsener-330ml-90014469"
-    },
-    {
-        "name": "Schfferhofer Hefeweizen",
-        "price": {
-            "amount": "28.2",
-            "currency": null,
-            "amount_text": "28.2"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/schfferhofer-hefeweizen-6-x-330ml-90014461"
-    },
-    {
-        "name": "Sapporo Premium Can Beer",
-        "price": {
-            "amount": "110.4",
-            "currency": null,
-            "amount_text": "110.4"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/12709025"
-    },
-    {
-        "name": "Stockade Refreshing Ale",
-        "price": {
-            "amount": "140",
-            "currency": null,
-            "amount_text": "140"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/stockade-refreshing-ale-24-x-375ml-90065323"
-    },
-    {
-        "name": "Wilde Gluten Free Pale Ale",
-        "price": {
-            "amount": "125",
-            "currency": null,
-            "amount_text": "125"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/wilde-gluten-free-pale-ale-24-x-330ml-90065329"
-    },
-    {
-        "name": "Stockade Splicer XPA",
-        "price": {
-            "amount": "6.5",
-            "currency": null,
-            "amount_text": "6.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/stockade-splicer-xpa-375-ml-90065324"
-    },
-    {
-        "name": "Stockade Flight Path Pale Ale",
-        "price": {
-            "amount": "38",
-            "currency": null,
-            "amount_text": "38"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/stockade-flight-path-pale-ale-6-x-375ml-90065319"
-    },
-    {
-        "name": "Stockade 8-Bit IPA",
-        "price": {
-            "amount": "140",
-            "currency": null,
-            "amount_text": "140"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/stockade-8-bit-ipa-24-x-375ml-90065317"
-    },
-    {
-        "name": "Stockade Splicer XPA",
-        "price": {
-            "amount": "140",
-            "currency": null,
-            "amount_text": "140"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/stockade-splicer-xpa-24-x-375ml-90065326"
-    },
-    {
-        "name": "Stockade Refreshing Ale",
-        "price": {
-            "amount": "6.5",
-            "currency": null,
-            "amount_text": "6.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/stockade-refreshing-ale-375-ml-90065321"
-    },
-    {
-        "name": "Stockade Splicer XPA",
-        "price": {
-            "amount": "38",
-            "currency": null,
-            "amount_text": "38"
-        },
-        "quantity": 6,
-        "url": "https://www.fairprice.com.sg/product/stockade-splicer-xpa-6-x-375ml-90065325"
-    },
-    {
-        "name": "Stockade Flight Path Pale Ale",
-        "price": {
-            "amount": "140",
-            "currency": null,
-            "amount_text": "140"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/stockade-flight-path-pale-ale-24-x-375ml-90065320"
-    },
-    {
-        "name": "Stockade 8-Bit IPA",
-        "price": {
-            "amount": "7",
-            "currency": null,
-            "amount_text": "7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/stockade-8-bit-ipa-375-ml-90065315"
-    },
-    {
-        "name": "LAOSHAN PREMIUM BEER 6 X 330ML 4.7% ALC",
-        "price": {
-            "amount": "11.8",
-            "currency": null,
-            "amount_text": "11.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/laoshan-premium-beer-6-x-330ml-4-7-alc-330-ml-90062516"
-    },
-    {
-        "name": "Playground Brewery Monk IPA",
-        "price": {
-            "amount": "13.3",
-            "currency": null,
-            "amount_text": "13.3"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/playground-brewery-monk-ipa-1-x-500ml-90060113"
-    },
-    {
-        "name": "Founders Breakfast Stout",
-        "price": {
-            "amount": "11.5",
-            "currency": null,
-            "amount_text": "11.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/founders-breakfast-stout-1-x-355ml-90060110"
-    },
-    {
-        "name": "North Coast Brewing Old Rasputin Russian Imperial Stout",
-        "price": {
-            "amount": "11.7",
-            "currency": null,
-            "amount_text": "11.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/north-coast-brewing-old-rasputin-russian-imperial-stout-1-x-355ml-90060105"
-    },
-    {
-        "name": "Off Day Double IPA",
-        "price": {
-            "amount": "12.9",
-            "currency": null,
-            "amount_text": "12.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/off-day-double-ipa-1-x-330ml-90051731"
-    },
-    {
-        "name": "Drake's Brewing Denogginizer Double IPA",
-        "price": {
-            "amount": "11.5",
-            "currency": null,
-            "amount_text": "11.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/drake-s-brewing-denogginizer-double-ipa-1-x-355ml-90051788"
-    },
-    {
-        "name": "Drake's Brewing Hopocalypse Hazy Double IPA",
-        "price": {
-            "amount": "11.5",
-            "currency": null,
-            "amount_text": "11.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/drake-s-brewing-hopocalypse-hazy-double-ipa-1-x-355ml-90051789"
-    },
-    {
-        "name": "Lone Bee Sparkling Mead",
-        "price": {
-            "amount": "10.7",
-            "currency": null,
-            "amount_text": "10.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/lone-bee-sparkling-mead-1-x-330ml-90049744"
-    },
-    {
-        "name": "Gosnells Sour Sparkling Mead",
-        "price": {
-            "amount": "10.2",
-            "currency": null,
-            "amount_text": "10.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/gosnells-sour-sparkling-mead-1-x-330ml-90049718"
-    },
-    {
-        "name": "Stone IPA",
-        "price": {
-            "amount": "8.8",
-            "currency": null,
-            "amount_text": "8.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/stone-ipa-1-x-355ml-90049745"
-    },
-    {
-        "name": "Gosnells Sparkling Mead",
-        "price": {
-            "amount": "10.2",
-            "currency": null,
-            "amount_text": "10.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/gosnells-sparkling-mead-1-x-330ml-90049655"
-    },
-    {
-        "name": "Gosnells Hopped Sparkling Mead",
-        "price": {
-            "amount": "10.2",
-            "currency": null,
-            "amount_text": "10.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/gosnells-hopped-sparkling-mead-1-x-330ml-90049721"
-    },
-    {
-        "name": "Gosnells Citra Sea Sparkling Mead",
-        "price": {
-            "amount": "10.2",
-            "currency": null,
-            "amount_text": "10.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/gosnells-citra-sea-sparkling-mead-1-x-330ml-90049717"
-    },
-    {
-        "name": "Behemoth Brewing Brain Smiles Hazy Pale Ale",
-        "price": {
-            "amount": "9.8",
-            "currency": null,
-            "amount_text": "9.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/behemoth-brewing-brain-smiles-hazy-pale-ale-1-x-330ml-90049356"
-    },
-    {
-        "name": "Redpoint Brewing Hoppy Hibiscus IPA",
-        "price": {
-            "amount": "9.7",
-            "currency": null,
-            "amount_text": "9.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/redpoint-brewing-hoppy-hibiscus-ipa-1-x-330ml-90049205"
-    },
-    {
-        "name": "Soul Barrel Cape Cone Hazy IPA",
-        "price": {
-            "amount": "11.5",
-            "currency": null,
-            "amount_text": "11.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/soul-barrel-cape-cone-hazy-ipa-1-x-340ml-90049165"
-    },
-    {
-        "name": "Verhaeghe Duchesse Cherry",
-        "price": {
-            "amount": "10.4",
-            "currency": null,
-            "amount_text": "10.4"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/verhaeghe-duchesse-cherry-1-x-330ml-90049157"
-    },
-    {
-        "name": "Heart of Darkness Kurtz's Insane IPA",
-        "price": {
-            "amount": "9.3",
-            "currency": null,
-            "amount_text": "9.3"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/heart-of-darkness-kurtz-s-insane-ipa-1-x-330ml-90049206"
-    },
-    {
-        "name": "Soul Barrel Tropical Parade IPA",
-        "price": {
-            "amount": "12.5",
-            "currency": null,
-            "amount_text": "12.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/soul-barrel-tropical-parade-ipa-1-x-340ml-90049166"
-    },
-    {
-        "name": "Rodenbach Grand Cru",
-        "price": {
-            "amount": "10.95",
-            "currency": null,
-            "amount_text": "10.95"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/rodenbach-grand-cru-1-x-330ml-90049161"
-    },
-    {
-        "name": "Verhaeghe Duchesse de Bourgogne",
-        "price": {
-            "amount": "10.4",
-            "currency": null,
-            "amount_text": "10.4"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/verhaeghe-duchesse-de-bourgogne-1-x-330ml-90049156"
-    },
-    {
-        "name": "St Bernardus Abt 12",
-        "price": {
-            "amount": "13.2",
-            "currency": null,
-            "amount_text": "13.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/st-bernardus-abt-12-1-x-330ml-90048920"
-    },
-    {
-        "name": "St Bernardus Wit",
-        "price": {
-            "amount": "8.3",
-            "currency": null,
-            "amount_text": "8.3"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/st-bernardus-wit-1-x-330ml-90048916"
-    },
-    {
-        "name": "St Bernardus Prior 8",
-        "price": {
-            "amount": "10.75",
-            "currency": null,
-            "amount_text": "10.75"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/st-bernardus-prior-8-1-x-330ml-90048919"
-    },
-    {
-        "name": "St Bernardus Tripel",
-        "price": {
-            "amount": "10.75",
-            "currency": null,
-            "amount_text": "10.75"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/st-bernardus-tripel-1-x-330ml-90048917"
-    },
-    {
+        "vendor": "fairprice",
         "name": "Kapuziner Hefe Dunkel Weissbier",
         "price": {
             "amount": "9.5",
@@ -1160,366 +396,227 @@
         "url": "https://www.fairprice.com.sg/product/kapuziner-hefe-dunkel-weissbier-1-x-500ml-90048738"
     },
     {
-        "name": "Delirium Tremens",
+        "vendor": "fairprice",
+        "name": "Delirium Nocturnum",
         "price": {
             "amount": "14.4",
             "currency": null,
             "amount_text": "14.4"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/delirium-tremens-1-x-330ml-90048733"
+        "url": "https://www.fairprice.com.sg/product/delirium-nocturnum-1-x-330ml-90048735"
     },
     {
-        "name": "La Trappe Trappist Quadrupel",
+        "vendor": "fairprice",
+        "name": "Rogue Chocolate Stout Nitro",
         "price": {
-            "amount": "9.5",
+            "amount": "11.95",
             "currency": null,
-            "amount_text": "9.5"
+            "amount_text": "11.95"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/la-trappe-trappist-quadrupel-1-x-330ml-90048713"
+        "url": "https://www.fairprice.com.sg/product/rogue-chocolate-stout-nitro-1-x-403ml-90048616"
     },
     {
-        "name": "St Bernardus Extra 4",
+        "vendor": "fairprice",
+        "name": "Deschutes Fresh Haze IPA",
+        "price": {
+            "amount": "9.7",
+            "currency": null,
+            "amount_text": "9.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-haze-ipa-1-x-568ml-90048611"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Heretic Make America Juicy Again Hazy IPA",
         "price": {
             "amount": "8.3",
             "currency": null,
             "amount_text": "8.3"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/st-bernardus-extra-4-1-x-330ml-90048918"
+        "url": "https://www.fairprice.com.sg/product/heretic-make-america-juicy-again-hazy-ipa-1-x-355ml-90048613"
     },
     {
-        "name": "Dupont Tourpes Saison Dupont Cuvee Dry Hopping",
-        "price": {
-            "amount": "9.2",
-            "currency": null,
-            "amount_text": "9.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/dupont-tourpes-saison-dupont-cuvee-dry-hopping-1-x-330ml-90048740"
-    },
-    {
-        "name": "Dupont Tourpes Saison Dupont",
-        "price": {
-            "amount": "8.8",
-            "currency": null,
-            "amount_text": "8.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/dupont-tourpes-saison-dupont-1-x-330ml-90048739"
-    },
-    {
-        "name": "Bosteels Kwak",
-        "price": {
-            "amount": "12.9",
-            "currency": null,
-            "amount_text": "12.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/bosteels-kwak-1-x-330ml-90048846"
-    },
-    {
-        "name": "Trappistes Rochefort 6",
-        "price": {
-            "amount": "11.3",
-            "currency": null,
-            "amount_text": "11.3"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/trappistes-rochefort-6-1-x-330ml-90048841"
-    },
-    {
-        "name": "Delirium Red",
-        "price": {
-            "amount": "13.95",
-            "currency": null,
-            "amount_text": "13.95"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/delirium-red-1-x-330ml-90048736"
-    },
-    {
-        "name": "Bosteels Tripel Karmeliet",
-        "price": {
-            "amount": "12.7",
-            "currency": null,
-            "amount_text": "12.7"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/bosteels-tripel-karmeliet-1-x-330ml-90048847"
-    },
-    {
-        "name": "Trappistes Rochefort 8",
-        "price": {
-            "amount": "13.6",
-            "currency": null,
-            "amount_text": "13.6"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/trappistes-rochefort-8-1-x-330ml-90048842"
-    },
-    {
-        "name": "Kapuziner Hefe Weissbier",
-        "price": {
-            "amount": "9.5",
-            "currency": null,
-            "amount_text": "9.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/kapuziner-hefe-weissbier-1-x-500ml-90048737"
-    },
-    {
-        "name": "La Trappe Trappist Dubbel",
+        "vendor": "fairprice",
+        "name": "Deschutes Mirror Pond Pale Ale",
         "price": {
             "amount": "7.9",
             "currency": null,
             "amount_text": "7.9"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/la-trappe-trappist-dubbel-1-x-330ml-90048712"
+        "url": "https://www.fairprice.com.sg/product/deschutes-mirror-pond-pale-ale-1-x-355ml-90047341"
     },
     {
-        "name": "Founders Centennial IPA",
+        "vendor": "fairprice",
+        "name": "Steinlager Pure Bottle",
         "price": {
-            "amount": "8.8",
+            "amount": "23.5",
             "currency": null,
-            "amount_text": "8.8"
+            "amount_text": "23.5"
         },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/founders-centennial-ipa-1-x-355ml-90048612"
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/steinlager-pure-bottle-330ml-6-x-330ml-90025045"
     },
     {
-        "name": "Heretic Chocolate Hazelnut Porter",
+        "vendor": "fairprice",
+        "name": "Hoegaarden White Cans",
         "price": {
-            "amount": "11.1",
+            "amount": "118.9",
             "currency": null,
-            "amount_text": "11.1"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/heretic-chocolate-hazelnut-porter-1-x-473ml-90048615"
-    },
-    {
-        "name": "Deschutes Fresh Squeezed IPA",
-        "price": {
-            "amount": "12.9",
-            "currency": null,
-            "amount_text": "12.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-squeezed-ipa-1-x-568ml-90048610"
-    },
-    {
-        "name": "Pirate Life Mosaic IPA",
-        "price": {
-            "amount": "10.1",
-            "currency": null,
-            "amount_text": "10.1"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/pirate-life-mosaic-ipa-1-x-355ml-90047385"
-    },
-    {
-        "name": "Deschutes Royal Fresh Imperial IPA",
-        "price": {
-            "amount": "11.5",
-            "currency": null,
-            "amount_text": "11.5"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-royal-fresh-imperial-ipa-1-x-355ml-90047344"
-    },
-    {
-        "name": "Garage Project Pernicious Weed Double IPA",
-        "price": {
-            "amount": "11.8",
-            "currency": null,
-            "amount_text": "11.8"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/garage-project-pernicious-weed-double-ipa-1-x-330ml-90047352"
-    },
-    {
-        "name": "Garage Project Beer",
-        "price": {
-            "amount": "8.2",
-            "currency": null,
-            "amount_text": "8.2"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/garage-project-beer-1-x-330ml-90047348"
-    },
-    {
-        "name": "Deschutes Lil' Squeezy Juicy Ale",
-        "price": {
-            "amount": "8.3",
-            "currency": null,
-            "amount_text": "8.3"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-lil-squeezy-juicy-ale-1-x-355ml-90047347"
-    },
-    {
-        "name": "Deschutes Wowza! Hazy Pale Ale",
-        "price": {
-            "amount": "7.9",
-            "currency": null,
-            "amount_text": "7.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/deschutes-wowza-hazy-pale-ale-1-x-355ml-90047345"
-    },
-    {
-        "name": "Bia Saigon Special Beer",
-        "price": {
-            "amount": "59",
-            "currency": null,
-            "amount_text": "59"
+            "amount_text": "118.9"
         },
         "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/bia-saigon-special-beer-24-x-330ml-90039172"
+        "url": "https://www.fairprice.com.sg/product/hoegaarden-white-cans-500ml-24-x-500ml-90025027"
     },
     {
-        "name": "Estrella Damn Beer",
-        "price": {
-            "amount": "154",
-            "currency": null,
-            "amount_text": "154"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/estrella-damn-beer-24-x-330ml-90038949"
-    },
-    {
-        "name": "Little Creatures IPA 330ml",
-        "price": {
-            "amount": "143.4",
-            "currency": null,
-            "amount_text": "143.4"
-        },
-        "quantity": 24,
-        "url": "https://www.fairprice.com.sg/product/little-creatures-ipa-330ml-24-x-330ml-90025029"
-    },
-    {
-        "name": "Veltins Pilsener",
-        "price": {
-            "amount": "58",
-            "currency": null,
-            "amount_text": "58"
-        },
-        "quantity": 12,
-        "url": "https://www.fairprice.com.sg/product/veltins-pilsener-12-x-330ml-90014484"
-    },
-    {
-        "name": "Schneider Weisse Tap 6 Mein Aventinus",
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Aventinus Eisbock",
         "price": {
             "amount": "11.9",
             "currency": null,
             "amount_text": "11.9"
         },
         "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-6-mein-aventinus-500ml-90014481"
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-aventinus-eisbock-330ml-90014464"
     },
     {
-        "name": "Schneider Weisse Tap 3 Non Alcoholic",
-        "price": {
-            "amount": "78",
-            "currency": null,
-            "amount_text": "78"
-        },
-        "quantity": 20,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-3-non-alcoholic-20-x-500ml-90014480"
-    },
-    {
-        "name": "Schneider Weisse Tap 2 Mein Kristall",
-        "price": {
-            "amount": "179",
-            "currency": null,
-            "amount_text": "179"
-        },
-        "quantity": 20,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-2-mein-kristall-20-x-500ml-90014477"
-    },
-    {
-        "name": "Schneider Weisse Tap 2 Mein Kristall",
-        "price": {
-            "amount": "8.9",
-            "currency": null,
-            "amount_text": "8.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-2-mein-kristall-500ml-90014475"
-    },
-    {
-        "name": "Schneider Weisse Tap 1 Meine Helle Weisse",
-        "price": {
-            "amount": "8.9",
-            "currency": null,
-            "amount_text": "8.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-1-meine-helle-weisse-500ml-90014474"
-    },
-    {
-        "name": "Radeberger Pilsener",
-        "price": {
-            "amount": "4.9",
-            "currency": null,
-            "amount_text": "4.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/radeberger-pilsener-330ml-90014471"
-    },
-    {
-        "name": "Schneider Weisse Nelson Sauvin",
-        "price": {
-            "amount": "24.9",
-            "currency": null,
-            "amount_text": "24.9"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-nelson-sauvin-750ml-90014470"
-    },
-    {
-        "name": "Schneider Weisse Cuvee Barrique",
-        "price": {
-            "amount": "32",
-            "currency": null,
-            "amount_text": "32"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-cuvee-barrique-750ml-90014467"
-    },
-    {
-        "name": "Schneider Weisse Tap 6 Mein Aventinus",
-        "price": {
-            "amount": "238",
-            "currency": null,
-            "amount_text": "238"
-        },
-        "quantity": 20,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-6-mein-aventinus-20-x-500ml-90014463"
-    },
-    {
-        "name": "Schneider Weisse Cuvee Barrique",
-        "price": {
-            "amount": "17",
-            "currency": null,
-            "amount_text": "17"
-        },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schneider-weisse-cuvee-barrique-375ml-90014462"
-    },
-    {
+        "vendor": "fairprice",
         "name": "Schfferhofer Hefeweizen",
         "price": {
-            "amount": "4.7",
+            "amount": "28.2",
             "currency": null,
-            "amount_text": "4.7"
+            "amount_text": "28.2"
         },
-        "quantity": 1,
-        "url": "https://www.fairprice.com.sg/product/schfferhofer-hefeweizen-330ml-90014453"
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/schfferhofer-hefeweizen-6-x-330ml-90014461"
     },
     {
+        "vendor": "fairprice",
+        "name": "Kingfisher Premium Bottle Beer - Extra Strong",
+        "price": {
+            "amount": "5.15",
+            "currency": null,
+            "amount_text": "5.15"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/10831297"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Wilde Gluten Free Pale Ale",
+        "price": {
+            "amount": "6",
+            "currency": null,
+            "amount_text": "6"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/wilde-gluten-free-pale-ale-330-ml-90065327"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Refreshing Ale",
+        "price": {
+            "amount": "38",
+            "currency": null,
+            "amount_text": "38"
+        },
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/stockade-refreshing-ale-6-x-375ml-90065322"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade 8-Bit IPA",
+        "price": {
+            "amount": "27.5",
+            "currency": null,
+            "amount_text": "27.5"
+        },
+        "quantity": 4,
+        "url": "https://www.fairprice.com.sg/product/stockade-8-bit-ipa-4-x-375ml-90065316"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Founders All Day IPA Big Can",
+        "price": {
+            "amount": "10.9",
+            "currency": null,
+            "amount_text": "10.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/founders-all-day-ipa-big-can-1-x-563ml-90060108"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Playground Brewery Hop Splash Hazy IPA",
+        "price": {
+            "amount": "16.9",
+            "currency": null,
+            "amount_text": "16.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/playground-brewery-hop-splash-hazy-ipa-1-x-500ml-90060112"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Founders All Day IPA",
+        "price": {
+            "amount": "8.1",
+            "currency": null,
+            "amount_text": "8.1"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/founders-all-day-ipa-1-x-355ml-90060107"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Rogue Batsquatch Hazy IPA",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/rogue-batsquatch-hazy-ipa-1-x-355ml-90060111"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "North Coast Brewing ACME IPA",
+        "price": {
+            "amount": "8.6",
+            "currency": null,
+            "amount_text": "8.6"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/north-coast-brewing-acme-ipa-1-x-355ml-90060106"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Founders Centennial IPA Bottle",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/founders-centennial-ipa-bottle-1-x-355ml-90060109"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Orval Trappist Ale",
+        "price": {
+            "amount": "11.1",
+            "currency": null,
+            "amount_text": "11.1"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/orval-trappist-ale-1-x-330ml-90051732"
+    },
+    {
+        "vendor": "fairprice",
         "name": "Stone Fear Movie Lions Double IPA",
         "price": {
             "amount": "12.1",
@@ -1530,7 +627,1174 @@
         "url": "https://www.fairprice.com.sg/product/stone-fear-movie-lions-double-ipa-1-x-473ml-90049748"
     },
     {
-        "name": "Grevensteiner Original 4x500ml",
+        "vendor": "fairprice",
+        "name": "Gosnells Elderflower Sparkling Mead",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/gosnells-elderflower-sparkling-mead-1-x-330ml-90049720"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stone IPA",
+        "price": {
+            "amount": "8.3",
+            "currency": null,
+            "amount_text": "8.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/stone-ipa-1-x-355ml-90049746"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Gosnells Gooseberry Sparkling Mead",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/gosnells-gooseberry-sparkling-mead-1-x-330ml-90049716"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Heart of Darkness Loose Rivet New England IPA",
+        "price": {
+            "amount": "9.95",
+            "currency": null,
+            "amount_text": "9.95"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/heart-of-darkness-loose-rivet-new-england-ipa-1-x-330ml-90049208"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Fruli Strawberry Beer",
+        "price": {
+            "amount": "6.9",
+            "currency": null,
+            "amount_text": "6.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/fruli-strawberry-beer-1-x-330ml-90049162"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Chimay Trappist Blue",
+        "price": {
+            "amount": "12.7",
+            "currency": null,
+            "amount_text": "12.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/chimay-trappist-blue-1-x-330ml-90048838"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Westmalle Trappist Dubbel",
+        "price": {
+            "amount": "10.9",
+            "currency": null,
+            "amount_text": "10.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/westmalle-trappist-dubbel-1-x-330ml-90048845"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Kapuziner Hefe Weissbier",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/kapuziner-hefe-weissbier-1-x-500ml-90048737"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Rogue Dead Guy Ale",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/rogue-dead-guy-ale-1-x-355ml-90048617"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Pacific Wonderland Lager",
+        "price": {
+            "amount": "7.9",
+            "currency": null,
+            "amount_text": "7.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-pacific-wonderland-lager-1-x-355ml-90047342"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Fresh Squeezed IPA",
+        "price": {
+            "amount": "9.7",
+            "currency": null,
+            "amount_text": "9.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-squeezed-ipa-1-x-355ml-90047340"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Fresh Haze IPA",
+        "price": {
+            "amount": "9.7",
+            "currency": null,
+            "amount_text": "9.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-haze-ipa-1-x-355ml-90047346"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Estrella Damn Inedit Beer",
+        "price": {
+            "amount": "18",
+            "currency": null,
+            "amount_text": "18"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/estrella-damn-inedit-beer-1-x-750ml-90039180"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Estrella Damn Beer",
+        "price": {
+            "amount": "38.5",
+            "currency": null,
+            "amount_text": "38.5"
+        },
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/estrella-damn-beer-6-x-330ml-90038950"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Leffe Brun Bottle",
+        "price": {
+            "amount": "5",
+            "currency": null,
+            "amount_text": "5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/leffe-brun-bottle-330ml-330ml-90025065"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Steinlager Pure Bottle",
+        "price": {
+            "amount": "94",
+            "currency": null,
+            "amount_text": "94"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/steinlager-pure-bottle-330ml-24-x-330ml-90025046"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 6 Mein Aventinus",
+        "price": {
+            "amount": "11.9",
+            "currency": null,
+            "amount_text": "11.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-6-mein-aventinus-500ml-90014481"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Jever Pilsener",
+        "price": {
+            "amount": "4.7",
+            "currency": null,
+            "amount_text": "4.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/jever-pilsener-330ml-90014469"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Jever Pilsener",
+        "price": {
+            "amount": "28.2",
+            "currency": null,
+            "amount_text": "28.2"
+        },
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/jever-pilsener-6-x-330ml-90014468"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Refreshing Ale",
+        "price": {
+            "amount": "140",
+            "currency": null,
+            "amount_text": "140"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/stockade-refreshing-ale-24-x-375ml-90065323"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Wilde Gluten Free Pale Ale",
+        "price": {
+            "amount": "125",
+            "currency": null,
+            "amount_text": "125"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/wilde-gluten-free-pale-ale-24-x-330ml-90065329"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Splicer XPA",
+        "price": {
+            "amount": "6.5",
+            "currency": null,
+            "amount_text": "6.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/stockade-splicer-xpa-375-ml-90065324"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Flight Path Pale Ale",
+        "price": {
+            "amount": "38",
+            "currency": null,
+            "amount_text": "38"
+        },
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/stockade-flight-path-pale-ale-6-x-375ml-90065319"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade 8-Bit IPA",
+        "price": {
+            "amount": "140",
+            "currency": null,
+            "amount_text": "140"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/stockade-8-bit-ipa-24-x-375ml-90065317"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Splicer XPA",
+        "price": {
+            "amount": "140",
+            "currency": null,
+            "amount_text": "140"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/stockade-splicer-xpa-24-x-375ml-90065326"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Refreshing Ale",
+        "price": {
+            "amount": "6.5",
+            "currency": null,
+            "amount_text": "6.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/stockade-refreshing-ale-375-ml-90065321"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Splicer XPA",
+        "price": {
+            "amount": "38",
+            "currency": null,
+            "amount_text": "38"
+        },
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/stockade-splicer-xpa-6-x-375ml-90065325"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade Flight Path Pale Ale",
+        "price": {
+            "amount": "140",
+            "currency": null,
+            "amount_text": "140"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/stockade-flight-path-pale-ale-24-x-375ml-90065320"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stockade 8-Bit IPA",
+        "price": {
+            "amount": "7",
+            "currency": null,
+            "amount_text": "7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/stockade-8-bit-ipa-375-ml-90065315"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Founders Breakfast Stout",
+        "price": {
+            "amount": "11.5",
+            "currency": null,
+            "amount_text": "11.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/founders-breakfast-stout-1-x-355ml-90060110"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "North Coast Brewing Old Rasputin Russian Imperial Stout",
+        "price": {
+            "amount": "11.7",
+            "currency": null,
+            "amount_text": "11.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/north-coast-brewing-old-rasputin-russian-imperial-stout-1-x-355ml-90060105"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Off Day Double IPA",
+        "price": {
+            "amount": "12.9",
+            "currency": null,
+            "amount_text": "12.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/off-day-double-ipa-1-x-330ml-90051731"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Off Day Haze Hazy Session IPA",
+        "price": {
+            "amount": "9.2",
+            "currency": null,
+            "amount_text": "9.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/off-day-haze-hazy-session-ipa-1-x-330ml-90051730"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Drake's Brewing Denogginizer Double IPA",
+        "price": {
+            "amount": "11.5",
+            "currency": null,
+            "amount_text": "11.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/drake-s-brewing-denogginizer-double-ipa-1-x-355ml-90051788"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Drake's Brewing Hopocalypse Hazy Double IPA",
+        "price": {
+            "amount": "11.5",
+            "currency": null,
+            "amount_text": "11.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/drake-s-brewing-hopocalypse-hazy-double-ipa-1-x-355ml-90051789"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Heretic You Can't Handle The Juice Hazy Double IPA",
+        "price": {
+            "amount": "12.5",
+            "currency": null,
+            "amount_text": "12.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/heretic-you-can-t-handle-the-juice-hazy-double-ipa-1-x-473ml-90051729"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Lone Bee Sparkling Mead",
+        "price": {
+            "amount": "10.7",
+            "currency": null,
+            "amount_text": "10.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/lone-bee-sparkling-mead-1-x-330ml-90049744"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Gosnells Sour Sparkling Mead",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/gosnells-sour-sparkling-mead-1-x-330ml-90049718"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Stone IPA",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/stone-ipa-1-x-355ml-90049745"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Gosnells Sparkling Mead",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/gosnells-sparkling-mead-1-x-330ml-90049655"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Arrogant Bastard Ale",
+        "price": {
+            "amount": "10.6",
+            "currency": null,
+            "amount_text": "10.6"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/arrogant-bastard-ale-1-x-473ml-90049751"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Gosnells Hopped Sparkling Mead",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/gosnells-hopped-sparkling-mead-1-x-330ml-90049721"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Gosnells Citra Sea Sparkling Mead",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/gosnells-citra-sea-sparkling-mead-1-x-330ml-90049717"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Behemoth Brewing Brain Smiles Hazy Pale Ale",
+        "price": {
+            "amount": "9.8",
+            "currency": null,
+            "amount_text": "9.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/behemoth-brewing-brain-smiles-hazy-pale-ale-1-x-330ml-90049356"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Redpoint Brewing Hoppy Hibiscus IPA",
+        "price": {
+            "amount": "9.7",
+            "currency": null,
+            "amount_text": "9.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/redpoint-brewing-hoppy-hibiscus-ipa-1-x-330ml-90049205"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Soul Barrel Cape Cone Hazy IPA",
+        "price": {
+            "amount": "11.5",
+            "currency": null,
+            "amount_text": "11.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/soul-barrel-cape-cone-hazy-ipa-1-x-340ml-90049165"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Verhaeghe Duchesse Cherry",
+        "price": {
+            "amount": "10.4",
+            "currency": null,
+            "amount_text": "10.4"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/verhaeghe-duchesse-cherry-1-x-330ml-90049157"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Heart of Darkness Kurtz's Insane IPA",
+        "price": {
+            "amount": "9.3",
+            "currency": null,
+            "amount_text": "9.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/heart-of-darkness-kurtz-s-insane-ipa-1-x-330ml-90049206"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Soul Barrel Tropical Parade IPA",
+        "price": {
+            "amount": "12.5",
+            "currency": null,
+            "amount_text": "12.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/soul-barrel-tropical-parade-ipa-1-x-340ml-90049166"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Verhaeghe Duchesse de Bourgogne",
+        "price": {
+            "amount": "10.4",
+            "currency": null,
+            "amount_text": "10.4"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/verhaeghe-duchesse-de-bourgogne-1-x-330ml-90049156"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "St Bernardus Abt 12",
+        "price": {
+            "amount": "13.2",
+            "currency": null,
+            "amount_text": "13.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/st-bernardus-abt-12-1-x-330ml-90048920"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "St Bernardus Prior 8",
+        "price": {
+            "amount": "10.75",
+            "currency": null,
+            "amount_text": "10.75"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/st-bernardus-prior-8-1-x-330ml-90048919"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "St Bernardus Tripel",
+        "price": {
+            "amount": "10.75",
+            "currency": null,
+            "amount_text": "10.75"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/st-bernardus-tripel-1-x-330ml-90048917"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "St Bernardus Extra 4",
+        "price": {
+            "amount": "8.3",
+            "currency": null,
+            "amount_text": "8.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/st-bernardus-extra-4-1-x-330ml-90048918"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Delirium Tremens",
+        "price": {
+            "amount": "14.4",
+            "currency": null,
+            "amount_text": "14.4"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/delirium-tremens-1-x-330ml-90048733"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Dupont Tourpes Saison Dupont Cuvee Dry Hopping",
+        "price": {
+            "amount": "9.2",
+            "currency": null,
+            "amount_text": "9.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/dupont-tourpes-saison-dupont-cuvee-dry-hopping-1-x-330ml-90048740"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Delirium Red",
+        "price": {
+            "amount": "13.95",
+            "currency": null,
+            "amount_text": "13.95"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/delirium-red-1-x-330ml-90048736"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Dupont Tourpes Saison Dupont",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/dupont-tourpes-saison-dupont-1-x-330ml-90048739"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Trappistes Rochefort 6",
+        "price": {
+            "amount": "11.3",
+            "currency": null,
+            "amount_text": "11.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/trappistes-rochefort-6-1-x-330ml-90048841"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Bosteels Tripel Karmeliet",
+        "price": {
+            "amount": "12.7",
+            "currency": null,
+            "amount_text": "12.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/bosteels-tripel-karmeliet-1-x-330ml-90048847"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "La Trappe Trappist Dubbel",
+        "price": {
+            "amount": "7.9",
+            "currency": null,
+            "amount_text": "7.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/la-trappe-trappist-dubbel-1-x-330ml-90048712"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Founders Centennial IPA",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/founders-centennial-ipa-1-x-355ml-90048612"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Heretic Chocolate Hazelnut Porter",
+        "price": {
+            "amount": "11.1",
+            "currency": null,
+            "amount_text": "11.1"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/heretic-chocolate-hazelnut-porter-1-x-473ml-90048615"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Fresh Squeezed IPA",
+        "price": {
+            "amount": "12.9",
+            "currency": null,
+            "amount_text": "12.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-fresh-squeezed-ipa-1-x-568ml-90048610"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Rogue Hazelnut Brown Nectar",
+        "price": {
+            "amount": "9.2",
+            "currency": null,
+            "amount_text": "9.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/rogue-hazelnut-brown-nectar-1-x-355ml-90048618"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Pirate Life Mosaic IPA",
+        "price": {
+            "amount": "10.1",
+            "currency": null,
+            "amount_text": "10.1"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/pirate-life-mosaic-ipa-1-x-355ml-90047385"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Royal Fresh Imperial IPA",
+        "price": {
+            "amount": "11.5",
+            "currency": null,
+            "amount_text": "11.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-royal-fresh-imperial-ipa-1-x-355ml-90047344"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Garage Project Beer",
+        "price": {
+            "amount": "8.2",
+            "currency": null,
+            "amount_text": "8.2"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/garage-project-beer-1-x-330ml-90047348"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Lil' Squeezy Juicy Ale",
+        "price": {
+            "amount": "8.3",
+            "currency": null,
+            "amount_text": "8.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-lil-squeezy-juicy-ale-1-x-355ml-90047347"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Deschutes Wowza! Hazy Pale Ale",
+        "price": {
+            "amount": "7.9",
+            "currency": null,
+            "amount_text": "7.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/deschutes-wowza-hazy-pale-ale-1-x-355ml-90047345"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Estrella Damn Inedit Beer",
+        "price": {
+            "amount": "216",
+            "currency": null,
+            "amount_text": "216"
+        },
+        "quantity": 12,
+        "url": "https://www.fairprice.com.sg/product/estrella-damn-inedit-beer-12-x-750ml-90041889"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Bia Saigon Special Beer",
+        "price": {
+            "amount": "59",
+            "currency": null,
+            "amount_text": "59"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/bia-saigon-special-beer-24-x-330ml-90039172"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Estrella Damn Beer",
+        "price": {
+            "amount": "154",
+            "currency": null,
+            "amount_text": "154"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/estrella-damn-beer-24-x-330ml-90038949"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Little Creatures IPA",
+        "price": {
+            "amount": "143.4",
+            "currency": null,
+            "amount_text": "143.4"
+        },
+        "quantity": 24,
+        "url": "https://www.fairprice.com.sg/product/little-creatures-ipa-330ml-24-x-330ml-90025029"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Veltins Pilsener",
+        "price": {
+            "amount": "58",
+            "currency": null,
+            "amount_text": "58"
+        },
+        "quantity": 12,
+        "url": "https://www.fairprice.com.sg/product/veltins-pilsener-12-x-330ml-90014484"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 3 Non Alcoholic",
+        "price": {
+            "amount": "78",
+            "currency": null,
+            "amount_text": "78"
+        },
+        "quantity": 20,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-3-non-alcoholic-20-x-500ml-90014480"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 2 Mein Kristall",
+        "price": {
+            "amount": "179",
+            "currency": null,
+            "amount_text": "179"
+        },
+        "quantity": 20,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-2-mein-kristall-20-x-500ml-90014477"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 2 Mein Kristall",
+        "price": {
+            "amount": "8.9",
+            "currency": null,
+            "amount_text": "8.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-2-mein-kristall-500ml-90014475"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 1 Meine Helle Weisse",
+        "price": {
+            "amount": "8.9",
+            "currency": null,
+            "amount_text": "8.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-1-meine-helle-weisse-500ml-90014474"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Radeberger Pilsener",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/radeberger-pilsener-330ml-90014471"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Nelson Sauvin",
+        "price": {
+            "amount": "24.9",
+            "currency": null,
+            "amount_text": "24.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-nelson-sauvin-750ml-90014470"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Cuvee Barrique",
+        "price": {
+            "amount": "32",
+            "currency": null,
+            "amount_text": "32"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-cuvee-barrique-750ml-90014467"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Tap 6 Mein Aventinus",
+        "price": {
+            "amount": "238",
+            "currency": null,
+            "amount_text": "238"
+        },
+        "quantity": 20,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-6-mein-aventinus-20-x-500ml-90014463"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schneider Weisse Cuvee Barrique",
+        "price": {
+            "amount": "17",
+            "currency": null,
+            "amount_text": "17"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schneider-weisse-cuvee-barrique-375ml-90014462"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Schfferhofer Hefeweizen",
+        "price": {
+            "amount": "4.7",
+            "currency": null,
+            "amount_text": "4.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/schfferhofer-hefeweizen-330ml-90014453"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Tsingtao India Pale Ale - IPA",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/tsingtao-india-pale-ale-ipa-330-ml-90059914"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Tsingtao Pilsner",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/tsingtao-pilsner-330-ml-90059915"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Tsingtao Wheat Beer",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/tsingtao-wheat-beer-330-ml-90059916"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "HOLLANDIA PREMIUM BEER  4.7% ALC",
+        "price": {
+            "amount": "6.8",
+            "currency": null,
+            "amount_text": "6.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/hollandia-premium-beer-650ml-4-7-alc-650-ml-90062515"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "HARBIN EXTRA FRESH  3.6% ALC",
+        "price": {
+            "amount": "3.8",
+            "currency": null,
+            "amount_text": "3.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/harbin-extra-fresh-610ml-3-6-alc-610-ml-90062518"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "LAOSHAN PREMIUM BEER  4.7% ALC",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/laoshan-premium-beer-600ml-4-7-alc-600-ml-90062517"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Radeberger Pilsener",
+        "price": {
+            "amount": "29.4",
+            "currency": null,
+            "amount_text": "29.4"
+        },
+        "quantity": 6,
+        "url": "https://www.fairprice.com.sg/product/radeberger-pilsener-6-x-330ml-90014456"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Brewlander Respect",
+        "price": {
+            "amount": "7",
+            "currency": null,
+            "amount_text": "7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/brewlander-respect-1-x-330ml-90067788"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Brewlander Hope",
+        "price": {
+            "amount": "7",
+            "currency": null,
+            "amount_text": "7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/brewlander-hope-1-x-330ml-90067791"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Brewlander XPA",
+        "price": {
+            "amount": "7",
+            "currency": null,
+            "amount_text": "7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/brewlander-xpa-1-x-330ml-90067787"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Brewlander Joy",
+        "price": {
+            "amount": "7",
+            "currency": null,
+            "amount_text": "7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/brewlander-joy-1-x-330ml-90067790"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Brewlander Love",
+        "price": {
+            "amount": "7.7",
+            "currency": null,
+            "amount_text": "7.7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/brewlander-love-1-x-330ml-90067789"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Brewlander Peace",
+        "price": {
+            "amount": "7",
+            "currency": null,
+            "amount_text": "7"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/brewlander-peace-1-x-330ml-90067784"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "LAOSHAN PREMIUM BEER 6 X  4.7% ALC",
+        "price": {
+            "amount": "11.8",
+            "currency": null,
+            "amount_text": "11.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/laoshan-premium-beer-6-x-330ml-4-7-alc-330-ml-90062516"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Playground Brewery Monk IPA",
+        "price": {
+            "amount": "13.3",
+            "currency": null,
+            "amount_text": "13.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/playground-brewery-monk-ipa-1-x-500ml-90060113"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Rodenbach Grand Cru",
+        "price": {
+            "amount": "10.95",
+            "currency": null,
+            "amount_text": "10.95"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/rodenbach-grand-cru-1-x-330ml-90049161"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "St Bernardus Wit",
+        "price": {
+            "amount": "8.3",
+            "currency": null,
+            "amount_text": "8.3"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/st-bernardus-wit-1-x-330ml-90048916"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "La Trappe Trappist Quadrupel",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/la-trappe-trappist-quadrupel-1-x-330ml-90048713"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Bosteels Kwak",
+        "price": {
+            "amount": "12.9",
+            "currency": null,
+            "amount_text": "12.9"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/bosteels-kwak-1-x-330ml-90048846"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Trappistes Rochefort 8",
+        "price": {
+            "amount": "13.6",
+            "currency": null,
+            "amount_text": "13.6"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/trappistes-rochefort-8-1-x-330ml-90048842"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Garage Project Pernicious Weed Double IPA",
+        "price": {
+            "amount": "11.8",
+            "currency": null,
+            "amount_text": "11.8"
+        },
+        "quantity": 1,
+        "url": "https://www.fairprice.com.sg/product/garage-project-pernicious-weed-double-ipa-1-x-330ml-90047352"
+    },
+    {
+        "vendor": "fairprice",
+        "name": "Grevensteiner Original",
         "price": {
             "amount": "29.6",
             "currency": null,
@@ -1540,7 +1804,8 @@
         "url": "https://www.fairprice.com.sg/product/grevensteiner-original-4x500ml-4-x-500ml-90014487"
     },
     {
-        "name": "Grevensteiner Original 8x500ml",
+        "vendor": "fairprice",
+        "name": "Grevensteiner Original",
         "price": {
             "amount": "58.9",
             "currency": null,
@@ -1550,7 +1815,8 @@
         "url": "https://www.fairprice.com.sg/product/grevensteiner-original-8x500ml-8-x-500ml-90014486"
     },
     {
-        "name": "Grevensteiner Original 1x500ml",
+        "vendor": "fairprice",
+        "name": "Grevensteiner Original",
         "price": {
             "amount": "7.4",
             "currency": null,
@@ -1560,6 +1826,7 @@
         "url": "https://www.fairprice.com.sg/product/grevensteiner-original-1x500ml-500ml-90014483"
     },
     {
+        "vendor": "fairprice",
         "name": "Schneider Weisse Tap 1 Meine Helle Weisse",
         "price": {
             "amount": "179",
@@ -1570,6 +1837,7 @@
         "url": "https://www.fairprice.com.sg/product/schneider-weisse-tap-1-meine-helle-weisse-20-x-500ml-90014473"
     },
     {
+        "vendor": "fairprice",
         "name": "Premium Yebisu PREMIUM BLACK Beer Japan Can",
         "price": {
             "amount": "6.9",

@@ -7,11 +7,11 @@ The goal here is to aggregate all the available beer (preferably craft beer) dat
 ### Without Proxy (For Development)
 
 ```sh
-pipenv run scrapy crawl craftbeersg -o craftbeersg.json
-pipenv run scrapy crawl coldstorage -o coldstorage.json
-pipenv run scrapy crawl fairprice -o fairprice.json
-pipenv run scrapy crawl beerforce -o beerforce.json
 pipenv run scrapy crawl alcoholdelivery -o alcoholdelivery.json
+pipenv run scrapy crawl beerforce -o beerforce.json
+pipenv run scrapy crawl coldstorage -o coldstorage.json
+pipenv run scrapy crawl craftbeersg -o craftbeersg.json
+pipenv run scrapy crawl fairprice -o fairprice.json
 pipenv run scrapy crawl thirsty -o thristy.json --set=ROBOTSTXT_OBEY='False'
 ```
 
@@ -33,3 +33,11 @@ https://github.com/croqaz/awesome-scrapy
 ## Item Loader
 
 https://towardsdatascience.com/demystifying-scrapy-item-loaders-ffbc119d592a
+
+## Unit Testing
+
+https://stackoverflow.com/questions/6456304/scrapy-unit-testing
+
+```sh
+pipenv run python3 -m unittest
+```

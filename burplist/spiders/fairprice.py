@@ -53,7 +53,7 @@ class FairPriceSpider(scrapy.Spider):
     def _get_product_quantity(self, product: dict) -> int:
         metadata = product.get('metaData')
         display_unit = metadata['DisplayUnit']
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # Example: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
 
         return int(quantity[0]) if len(quantity) != 1 else 1
 
@@ -77,7 +77,7 @@ class FairPriceSpider(scrapy.Spider):
             yield loader.load_item()
 
         has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
-        if has_next_page is not None:
+        if has_next_page is True:
             self.params['page'] += 1
             next_page = self.BASE_URL + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)

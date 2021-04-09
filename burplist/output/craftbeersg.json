@@ -1,3157 +1,5611 @@
 [
     {
+        "vendor": "craftbeersg",
         "name": "Lindemans Kriek",
-        "price": "5.00",
+        "price": {
+            "amount": "5.00",
+            "currency": null,
+            "amount_text": "5.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lindemans-kriek/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Leffe Brune",
-        "price": "5.00",
+        "price": {
+            "amount": "5.00",
+            "currency": null,
+            "amount_text": "5.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/leffe-brune/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lindemans Pecheresse",
-        "price": "5.00",
+        "price": {
+            "amount": "5.00",
+            "currency": null,
+            "amount_text": "5.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lindemans-pecheresse/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lindemans Apple",
-        "price": "5.00",
+        "price": {
+            "amount": "5.00",
+            "currency": null,
+            "amount_text": "5.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lindemans-apple/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Big Drop Paradiso Citra IPA",
-        "price": "5.50",
+        "price": {
+            "amount": "5.50",
+            "currency": null,
+            "amount_text": "5.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/big-drop-paradiso-citra-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Freedom Lager",
-        "price": "5.80",
+        "price": {
+            "amount": "5.80",
+            "currency": null,
+            "amount_text": "5.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-freedom-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fourpure Easy Peeler",
-        "price": "5.90",
+        "price": {
+            "amount": "5.90",
+            "currency": null,
+            "amount_text": "5.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-easy-peeler/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fourpure Hemisphere Session IPA",
-        "price": "5.90",
+        "price": {
+            "amount": "5.90",
+            "currency": null,
+            "amount_text": "5.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-hemisphere-session-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Franziskaner Weissbier",
-        "price": "6.00",
+        "price": {
+            "amount": "6.00",
+            "currency": null,
+            "amount_text": "6.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/franziskaner-weissbier/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Green Mountain",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-green-mountain/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Lost Lager",
-        "price": "6.40",
+        "price": {
+            "amount": "6.40",
+            "currency": null,
+            "amount_text": "6.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-lost-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Vagabond Pale Ale",
-        "price": "6.40",
+        "price": {
+            "amount": "6.40",
+            "currency": null,
+            "amount_text": "6.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-vagabond-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Clockwork Tangerine",
-        "price": "6.40",
+        "price": {
+            "amount": "6.40",
+            "currency": null,
+            "amount_text": "6.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-clockwork-tangerine/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "White Rabbit White Ale",
-        "price": "6.50",
+        "price": {
+            "amount": "6.50",
+            "currency": null,
+            "amount_text": "6.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/white-rabbit-white-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Little Creatures IPA",
-        "price": "6.50",
+        "price": {
+            "amount": "6.50",
+            "currency": null,
+            "amount_text": "6.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/little-creatures-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hitachino Nest. White Ale",
-        "price": "6.50",
+        "price": {
+            "amount": "6.50",
+            "currency": null,
+            "amount_text": "6.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-white-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders All Day IPA",
-        "price": "6.50",
+        "price": {
+            "amount": "6.50",
+            "currency": null,
+            "amount_text": "6.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-all-day-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Hat Brewing Co. Magic Hat #9",
-        "price": "6.50",
+        "price": {
+            "amount": "6.50",
+            "currency": null,
+            "amount_text": "6.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-hat-brewing-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Little Creatures Dog Days",
-        "price": "6.80",
+        "price": {
+            "amount": "6.80",
+            "currency": null,
+            "amount_text": "6.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/little-creatures-dog-days/"
     },
     {
-        "name": "Gweilo Hoppy Wheat",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/gweilo-hoppy-wheat/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Hazy Jane",
-        "price": "6.90",
+        "price": {
+            "amount": "6.90",
+            "currency": null,
+            "amount_text": "6.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-hazy-jane/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gweilo. Pale Ale",
-        "price": "6.90",
+        "price": {
+            "amount": "6.90",
+            "currency": null,
+            "amount_text": "6.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-pale-ale/"
     },
     {
-        "name": "Deschutes Brewery Wowza!",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/descutes-brewery-wowza/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Brewlander Love Wild IPA",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-love-wild-ipa-copy/"
     },
     {
-        "name": "Wilde Gluten-Free Pale Ale",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/wilde-gluten-free-pale-ale/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Crabbie\u2019s Original Alcoholic Ginger Beer",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/crabbies-original-alcoholic-ginger-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Pale Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. Cha Chaan Teng Gose",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-cha-chaan-teng-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Bernardus Wit",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-wit/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Pale Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Peace N.E.W Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-peace-new-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Joy Session IPA",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-joy-session-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stockade Splicer XPA",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-spicer-xpa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Respect Porter",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-respect-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stockade Refreshing Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-refreshing-ale/"
     },
     {
-        "name": "Moon Dog Beer Can",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/moon-dog-beer-can/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Coopers. Original Pale Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/coopers-original-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Wild Little Thing",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-wild-little-thing/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brothers Strawberry & Lime \u2013 English Cider",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brothers-strawberry-lime-english-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Torpedo Extra IPA",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-torpedo-extra-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Hop Bullet",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-hop-bullet/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gweilo. American IPA",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-american-ipa/"
     },
     {
-        "name": "Dragon Fiery Ginger Beer",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/dragon-fiery-ginger-beer/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "James Squire One Fifty Lashes Pale Ale",
-        "price": "7.30",
+        "price": {
+            "amount": "7.30",
+            "currency": null,
+            "amount_text": "7.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/james-squire-one-fifty-lashes-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hitachino Nest. Dai Dai IPA",
-        "price": "7.30",
+        "price": {
+            "amount": "7.30",
+            "currency": null,
+            "amount_text": "7.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-dai-dai/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Coopers. Best Extra Stout",
-        "price": "7.40",
+        "price": {
+            "amount": "7.40",
+            "currency": null,
+            "amount_text": "7.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/coopers-best-extra-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stockade Flight Path",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-flight-path/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Lukas",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-lukas/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Yoho Brewing Wednesday\u2019s Cat",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/yoho-brewing-wednesday-cat/"
     },
     {
-        "name": "Deschutes Pacific Wonderland Lager",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/deschutes-pacific-wonderland-lager/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Rogue Dead Guy Ale",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-dead-guy-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Dead Pony Club",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-dead-pony-club/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Chimay Red",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/chimay-red/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Chimay Triple",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/chimay-triple/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada. Hazy Little Thing IPA",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hazy-little-thing-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. Another One",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-another-one-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Monk\u2019s Stout Dupont",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/monks-stout-dupont/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Teensy Petite IPA",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-teensy-petite-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. Common Grounds",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-common-grounds/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone India Pale Ale",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-ipa-india-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rogue Batsquatch Hazy IPA",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-batsquatch-hazy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater 420 Extra Pale Ale",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-420-extra-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. Classic Pale Ale",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-classic-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hawkes Dead & Berried",
-        "price": "7.80",
+        "price": {
+            "amount": "7.80",
+            "currency": null,
+            "amount_text": "7.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hawkes-dead-berried/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hawkes Urban Orchard Cider",
-        "price": "7.80",
+        "price": {
+            "amount": "7.80",
+            "currency": null,
+            "amount_text": "7.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hawkes-urban-orchard-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog Elvis Juice",
-        "price": "7.80",
+        "price": {
+            "amount": "7.80",
+            "currency": null,
+            "amount_text": "7.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-elvis-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Bernardus Extra 4",
-        "price": "7.80",
+        "price": {
+            "amount": "7.80",
+            "currency": null,
+            "amount_text": "7.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-extra-4/"
     },
     {
+        "vendor": "craftbeersg",
+        "name": "Brothers Toffee Apple Cider",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
+        "quantity": 1,
+        "url": "https://craftbeersg.com/product/brothers-toffee-apple-cider/"
+    },
+    {
+        "vendor": "craftbeersg",
         "name": "Garage Project White Mischief",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-white-mischief/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater Hop Hash Easy IPA",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-hop-hash-easy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Feral Smoked Porter",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-smoked-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Hapi Daze",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-hapi-daze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Yoho Brewing Tokyo Black Porter",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/yoho-brewing-tokyo-black-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Socks & Sandals",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-socks-and-sandals/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Zeffer Alcoholic Ginger Beer",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-alcoholic-ginger-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Brewing Framboise Rose Gose",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-framboise-rose-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Mirror Pond Pale Ale",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-mirror-pond-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Hawkeye Session IPA",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-hawkeye-session-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Bernardus Tripel",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-tripel/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Bernardus Prior 8",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-prior-8/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness The Sunshine Watermelon Lime Pilsner",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-watermelon-lime-pilsner/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Tangerine Express IPA",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-tangerine-express-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rye & Pint Sunday\u2019s Brew",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-sundays-brew/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Brewing Briney Melon Gose",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-briney-melon-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Brewing Blood Orange Gose",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-blood-orange-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Brewing Buenaveza Salt & Lime Lager",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-brewing-buenaveza-salt-lime-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Acai & Passionfruit Sour",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-acai-passionfruit-sour/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rye & Pint. Star Gazin",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-star-gazin/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Trappist Westmalle Dubbel",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/trappist-westmalle-dubbel/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Porter",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness Dream Alone Pale Ale",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-dream-alone-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness Futile Purpose Cucumber Pilsner",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-futile-purpose-cucumber-pilsner/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Coast Steller IPA",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-coast-steller-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project BEER",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone & Wood Pacific Ale",
-        "price": "8.10",
+        "price": {
+            "amount": "8.10",
+            "currency": null,
+            "amount_text": "8.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-wood-pacific-ale-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Pale Ale",
-        "price": "8.20",
+        "price": {
+            "amount": "8.20",
+            "currency": null,
+            "amount_text": "8.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Zeffer Red Apple Cider",
-        "price": "8.20",
+        "price": {
+            "amount": "8.20",
+            "currency": null,
+            "amount_text": "8.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-apple-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fourpure Shape Shifter IPA",
-        "price": "8.20",
+        "price": {
+            "amount": "8.20",
+            "currency": null,
+            "amount_text": "8.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-shape-shifter-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Zeffer Apple Crumble Infused Cider",
-        "price": "8.20",
+        "price": {
+            "amount": "8.20",
+            "currency": null,
+            "amount_text": "8.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-apple-crumble-infused-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Zeffer Crisp Apple Cider",
-        "price": "8.20",
+        "price": {
+            "amount": "8.20",
+            "currency": null,
+            "amount_text": "8.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/zeffer-crisp-apple-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stockade 8 Bit IPA",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-8-bit-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Brewing F&B Features and Benefits",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-brewing-feature-and-benefits/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Brewing Barney\u2019s Flats Oatmeal Stout",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-barneys-flats-oatmeal-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Make America Juicy Again",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-make-america-juicy-again/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Brewing Tropical Hazy Sour Ale",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-tropical-hazy-sour-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Brewery Lil\u2019 Squeezy Juicy Ale",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/descutes-brewery-lil-squeezy-juicy-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Little Creatures Pipsqueak Best Cider",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/little-creatures-pipsqueak-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Drakes Kickback IPA",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-kickback-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Liberty Yakima Monster",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-yakima-monster/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Drakes Best Coast IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-best-coast-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Ace Pale Ale",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-ace-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Noon Juice",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-noon-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness Marlow\u2019s Mellow Pomelo IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-marlows-mellow-pomelo-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness First Sunset Kumquat Pale Ale",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-first-sunset-kumquat-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Black Butte Porter",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-black-butte-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fourpure Juicebox Citrus IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-juicebox-citrus-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The Hills Cider Company Pear Cider",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-hills-cider-company-pear-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rochefort Trappistes 6",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rochefort-6/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Taiwan Smoked Plum Beer",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-taiwan-smoked-plum-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic California Dry Hopped IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-california-dry-hopped-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Coast Old No. 38 Stout",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-coast-old-no-38-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Delicious IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-delicious-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Bitterbitch IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-bitterbitch-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Centennial IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-centennial-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rye & Pint Punchin Rye",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-punchin-rye/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Punk IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-punk-ipa/"
     },
     {
-        "name": "Deschutes Fresh Haze IPA 355ml",
-        "price": "8.50",
+        "vendor": "craftbeersg",
+        "name": "Deschutes Fresh Haze IPA",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-fresh-haze-ipa-3/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Celebration IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-celebration-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rye & Pint Trippin Wheat",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-trippin-wheat/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Aspall Draught",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/aspall-draught/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Baby Peach",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-experimental-ipa-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Chimay Blue",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/chimay-blue/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Bliss",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-bliss/"
     },
     {
-        "name": "Founders Mosaic Promise",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/founders-mosaic-promise/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Rye & Pint Poppin Haze",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rye-pint-poppin-haze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fixation Obsession",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fixation-obsession/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Fresh Squeezed IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-fresh-squeezed-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater IPA",
-        "price": "8.60",
+        "price": {
+            "amount": "8.60",
+            "currency": null,
+            "amount_text": "8.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Evil Twin",
-        "price": "8.70",
+        "price": {
+            "amount": "8.70",
+            "currency": null,
+            "amount_text": "8.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-evil-twin/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts Guava Gose",
-        "price": "8.70",
+        "price": {
+            "amount": "8.70",
+            "currency": null,
+            "amount_text": "8.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-guava-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Evil Cousin",
-        "price": "8.70",
+        "price": {
+            "amount": "8.70",
+            "currency": null,
+            "amount_text": "8.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-evil-cousin/"
     },
     {
-        "name": "Stone & Wood Cloud Catcher",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/stone-wood-cloud-catcher/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "The Hills Cider Company Apple Cider",
-        "price": "8.70",
+        "price": {
+            "amount": "8.70",
+            "currency": null,
+            "amount_text": "8.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-hills-cider-company-apple-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Falcon APA",
-        "price": "8.70",
+        "price": {
+            "amount": "8.70",
+            "currency": null,
+            "amount_text": "8.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-falcon-apa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Brain Smiles",
-        "price": "8.80",
+        "price": {
+            "amount": "8.80",
+            "currency": null,
+            "amount_text": "8.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-brain-smiles/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone & Wood The Gatherer",
-        "price": "8.80",
+        "price": {
+            "amount": "8.80",
+            "currency": null,
+            "amount_text": "8.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-wood-the-gatherer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Wychwood Hobgoblin Ruby Beer",
-        "price": "8.80",
+        "price": {
+            "amount": "8.80",
+            "currency": null,
+            "amount_text": "8.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/wychwood-hobgoblin-ruby-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Throwback IPA",
-        "price": "8.80",
+        "price": {
+            "amount": "8.80",
+            "currency": null,
+            "amount_text": "8.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-throwback-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Liberty Knife Party",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-knife-party/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Tropical Pale",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-tropical-pale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Red Chair",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-red-chair/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pasteur Street Jasmine IPA",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pasteur-street-jasmine-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog Splice of Heaven",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-splice-of-heaven/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog Groundhog",
-        "price": "9.30",
+        "price": {
+            "amount": "9.30",
+            "currency": null,
+            "amount_text": "9.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-dog-groundhog/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Yellow Van",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-yellow-van/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Dankful",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-dankful/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness The Tropics Pina Colada Hazy",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-pina-colada-hazy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Dilmah Tea & Biccies Brown Ale",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-dilmah-tea-biccies-brown-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater Jack Herer",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-jack-herer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Moon Rambler",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-moon-rambler/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Pride & Joy",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-pride-joy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dainton. Jungle Juice",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dainton-jungle-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gosnells Hopped Mead",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-hopped-mead/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Off Day Haze",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-haze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness Kurtz\u2019s Insane IPA",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-kurtz-insane-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Fantastic Haze",
-        "price": "9.20",
+        "price": {
+            "amount": "9.20",
+            "currency": null,
+            "amount_text": "9.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-fantastic-haze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sailor\u2019s Grave Lemon Meringue Cream Sour",
-        "price": "9.20",
+        "price": {
+            "amount": "9.20",
+            "currency": null,
+            "amount_text": "9.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-lemon-meringue-cream-sour/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Woodstock Brewery Californicator IPA",
-        "price": "9.20",
+        "price": {
+            "amount": "9.20",
+            "currency": null,
+            "amount_text": "9.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dwoodstock-brewery-californicator-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Saison Dupont Cuvee Dry Hopping",
-        "price": "8.20",
+        "price": {
+            "amount": "8.20",
+            "currency": null,
+            "amount_text": "8.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/saison-dupont-cuvee-dry-hopping/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rogue Hazel Nut Brown Nectar",
-        "price": "9.20",
+        "price": {
+            "amount": "9.20",
+            "currency": null,
+            "amount_text": "9.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-hazel-nut-brown-nectar/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Murica",
-        "price": "9.40",
+        "price": {
+            "amount": "9.40",
+            "currency": null,
+            "amount_text": "9.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-murica/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Redpoint Hazy Platypus",
-        "price": "9.40",
+        "price": {
+            "amount": "9.40",
+            "currency": null,
+            "amount_text": "9.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-hazy-platypus/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Redpoint Hoppy Hibiscus IPA",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-hoppy-hibiscus-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Trappist Orval",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/trappist-orval/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Hop Hype Eclipse",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-hop-hype-eclipse/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. The Cat\u2019s Whiskers Cream Ale",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-the-cats-whiskers/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Bodriggy Here If You Need",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-here-if-you-need/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing. Indie XPA",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-indie-xpa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth. Chur",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-chur/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Arrogant Bastard Ale",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-arrogant-bastard-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Redpoint Disco Macaw",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-disco-macaw/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Choc Coconut Porter",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-choc-coconut-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Aspall Organic",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/aspall-organic/"
     },
     {
-        "name": "Garage Project Red Zeppelin",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/garage-project-red-zeppelin/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Co-conspirators The Wheelman",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-wheelman/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Hop Haus Alt",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-hop-haus-alt/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Delirium Tremens",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/delirium-tremens/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Co-conspirators The Architect",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-architect/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth 6 Foot 5 American IPA",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-6-foot-5-american-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. Cannonball",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-cannonball/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Jaipur",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-jaipur/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Transit Of Venus",
-        "price": "9.60",
+        "price": {
+            "amount": "9.60",
+            "currency": null,
+            "amount_text": "9.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-transit-of-venus/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Couch Beer",
-        "price": "9.60",
+        "price": {
+            "amount": "9.60",
+            "currency": null,
+            "amount_text": "9.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-couch-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The Taunton Vintage Cider",
-        "price": "9.60",
+        "price": {
+            "amount": "9.60",
+            "currency": null,
+            "amount_text": "9.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-taunton-vintage-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life IPA",
-        "price": "9.60",
+        "price": {
+            "amount": "9.60",
+            "currency": null,
+            "amount_text": "9.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Wychwood Hobgoblin IPA",
-        "price": "9.70",
+        "price": {
+            "amount": "9.70",
+            "currency": null,
+            "amount_text": "9.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/wychwood-hobgoblin-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. Nice",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-naughty-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Saison Dupont",
-        "price": "8.80",
+        "price": {
+            "amount": "8.80",
+            "currency": null,
+            "amount_text": "8.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/saison-dupont/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Blk 622",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-blk-622/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Small Monster Coffee IPA",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-small-monster-coffee-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thatchers Gold",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-gold/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Mango Tango Ale",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-mango-tango-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Sour Plum",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-sour-plum/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Small Monster IPA",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-small-monster-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Liang Teh",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-liang-teh/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Yuzu Lager",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-yuzu-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Lychee",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-lychee/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Tiramisu Stout",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-tiramisu-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Good Riddance 2020",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-good-riddance-2020/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gosnells Hibiscus Mead",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-hibiscus-mead/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. 1842 Island IPA",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-1842-island-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Mosaic IPA",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-mosaic-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thatchers Green Goblin",
-        "price": "9.90",
+        "price": {
+            "amount": "9.90",
+            "currency": null,
+            "amount_text": "9.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-green-goblin/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Omnipollo Levon",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/omnipollo-levon/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gweilo. That\u2019s Not A Beer",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-thats-not-a-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Bodriggy Cosmic Microwave",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-cosmic-microwave/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Co-conspirators The Matriarch",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-matriarch/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Co-conspirators The Enforcer",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/co-conspirators-the-enforcer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Bodriggy Cloudtown",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-cloudtown/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dainton. Blood Orange",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dainton-blood-orange/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hop Nation. Seven Clouds",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hop-nation-seven-clouds/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gosnells Sour Mead",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-sour-mead/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Imperial Ace Pale Ale",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-imperial-ace-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Tangerine Dreams",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-grimster-rocks-mosaic-pale-ale-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Trappist Westmalle Tripel",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/trappist-westmalle-tripel/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Breakfast Stout",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-breakfast-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. Clairvoyance",
-        "price": "10.10",
+        "price": {
+            "amount": "10.10",
+            "currency": null,
+            "amount_text": "10.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-clairvoyance/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gosnells Gooseberry Mead",
-        "price": "10.20",
+        "price": {
+            "amount": "10.20",
+            "currency": null,
+            "amount_text": "10.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-gooseberry-mead/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Strata Amarillo",
-        "price": "10.20",
+        "price": {
+            "amount": "10.20",
+            "currency": null,
+            "amount_text": "10.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-strata-amarillo/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Ruination Double IPA",
-        "price": "10.30",
+        "price": {
+            "amount": "10.30",
+            "currency": null,
+            "amount_text": "10.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-ruination-double-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts Hazy State",
-        "price": "10.30",
+        "price": {
+            "amount": "10.30",
+            "currency": null,
+            "amount_text": "10.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-hazy-state/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Juicier Than Thou",
-        "price": "10.30",
+        "price": {
+            "amount": "10.30",
+            "currency": null,
+            "amount_text": "10.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-juicier-than-thou/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Verhaeghe Duchesse Cherry",
-        "price": "10.40",
+        "price": {
+            "amount": "10.40",
+            "currency": null,
+            "amount_text": "10.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/verhaeghe-duchesse-cherry/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts Radio the Mothership",
-        "price": "10.40",
+        "price": {
+            "amount": "10.40",
+            "currency": null,
+            "amount_text": "10.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-radio-the-mothership/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion Brewery. Sabro XPA",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-brewery-sabro-xpa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fraser\u2019s Folly x Stellenbosch Red IPA",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/frasers-folly-x-stellenbosch-red-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Root Sellers. Himmel & Erde Carrot Apple Ale",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/root-sellers-himmel-erde-carrot-apple-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Black Forest Lager",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-black-forest-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness Loose Rivet New England IPA",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-loose-rivet-new-england-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sailor\u2019s Grave Uni \u2013 Sea Urchin & Lemon Myrtle Gose",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-uni-sea-urchin-lemon-myrtle-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Watermelon Ace",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-watermelon-ace/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog Jack Hammer",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-jack-hammer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Cocoa Wonderland",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-cocoa-wonderland/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rochefort Trappistes 8",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rochefort-8/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Apple And Guava Sour",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-apple-and-guava-sour/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Redpoint Behemoth The Pomellinator",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/redpoint-behemoth-the-pomellinator/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Bernardus Abt 12",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-abt-12/"
     },
     {
-        "name": "Root Sellers. Row Hard Root Beer",
-        "price": "10.50",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/root-sellers-row-hard-root-beer/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Thatchers Somerset Haze",
-        "price": "10.60",
+        "price": {
+            "amount": "10.60",
+            "currency": null,
+            "amount_text": "10.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-somerset-haze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gweilo. Hazy as DIPA",
-        "price": "10.70",
+        "price": {
+            "amount": "10.70",
+            "currency": null,
+            "amount_text": "10.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-hazy-as-dipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Royal Fresh Imperial IPA",
-        "price": "10.70",
+        "price": {
+            "amount": "10.70",
+            "currency": null,
+            "amount_text": "10.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deschutes-royal-fresh-imperial-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "3 Ravens Juicy IPA",
-        "price": "10.70",
+        "price": {
+            "amount": "10.70",
+            "currency": null,
+            "amount_text": "10.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/3-ravens-juicy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Drakes Hopocalypse Hazy Double IPA",
-        "price": "10.70",
+        "price": {
+            "amount": "10.70",
+            "currency": null,
+            "amount_text": "10.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/drakes-hopocalypse-hazy-double-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gweilo. Clear as DIPA",
-        "price": "10.70",
+        "price": {
+            "amount": "10.70",
+            "currency": null,
+            "amount_text": "10.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gweilo-clear-as-dipa/"
     },
     {
-        "name": "Drakes Denogginizer Double IPA",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/drakes-denogginizer-double-ipa/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Heretic Chocolate Hazelnut Porter",
-        "price": "10.80",
+        "price": {
+            "amount": "10.80",
+            "currency": null,
+            "amount_text": "10.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-chocolate-hazelnut-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sailor\u2019s Grave Rhubarb Harvest",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-rhubarb-harvest/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Acid Hop Pineapple Sour IPA",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-acid-hop-pineapple-sour-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Coast Old Rasputin",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-coast-old-rasputin/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thatchers Katy",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thatchers-katy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Chainbreaker IPA",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-chainbreaker-ipa-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Bourbon Barrel Stout",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-bourbon-barrel-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Bodriggy Lifestyle You Deserve",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/bodriggy-lifestyle-you-deserve/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts Stranger Than Fiction",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-stranger-than-fiction/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone Sublimely Self-Righteous Black IPA",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-sublimely-self-righteous-black-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Soul Barrel Fresh Nectar",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/soul-barrel-fresh-nectar/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Life & Death",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-life-death/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Soul Barrel Cape Cone",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/soul-barrel-cape-cone/"
     },
     {
-        "name": "Garage Project. Pernicious Weed",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/pernicious-weed/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Bigfoot",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-big-foot/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Feral Imperial Biggie",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-imperial-biggie/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rogue Chocolate Stout Nitro",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-chocolate-stout-nitro/"
     },
     {
-        "name": "Stone FML Fear.Movie.Lions",
-        "price": "11.00",
+        "vendor": "craftbeersg",
+        "name": "Stone  Fear.Movie.Lions",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-fml-fear-movie-lions/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. All Together",
-        "price": "11.10",
+        "price": {
+            "amount": "11.10",
+            "currency": null,
+            "amount_text": "11.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-karls-thickshake-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dainton. Overdrive",
-        "price": "11.20",
+        "price": {
+            "amount": "11.20",
+            "currency": null,
+            "amount_text": "11.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dainton-overdrive/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Off Day All Together",
-        "price": "11.30",
+        "price": {
+            "amount": "11.30",
+            "currency": null,
+            "amount_text": "11.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-all-together/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sailor\u2019s Grave Summer Pudding Cream Sour",
-        "price": "11.30",
+        "price": {
+            "amount": "11.30",
+            "currency": null,
+            "amount_text": "11.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sailors-grave-summer-pudding-cream-sour/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Darling Brew Arrow Head",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/darling-brew-arrow-head/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Rodney West Coast IPA",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-rodney-west-coast-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The Bruery Goses Are Red",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-goses-are-red/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Caramel Moo-chiato",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-caramel-moo-chiato/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander The Fringe Project DDH IPA",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-the-fringe-project-ddh-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Cherry Sundae Pastry Stout",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-cherry-sundae-pastry-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Courage",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-courage/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Brewing . Green Curve \u2013 North X Stillwater IPA",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-green-curve-north-stillwater-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hop Nation. J Juice",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hop-nation-j-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Omnipollo Nebuchadnezzar",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/omnipollo-nebuchadnezzar/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project x Whittaker\u2019s Dark Chocolate",
-        "price": "11.60",
+        "price": {
+            "amount": "11.60",
+            "currency": null,
+            "amount_text": "11.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-whittakers-dark-chocolate/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project x Whittaker\u2019s White Chocolate",
-        "price": "11.60",
+        "price": {
+            "amount": "11.60",
+            "currency": null,
+            "amount_text": "11.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-whittakers-white-chocolate/"
     },
     {
-        "name": "Blasta Brewing. Exploratory OatCream Beast",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/blasta-brewing-exploratory-oatcream-beast/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Collective Arts Pomegranate & Grapefruit",
-        "price": "11.80",
+        "price": {
+            "amount": "11.80",
+            "currency": null,
+            "amount_text": "11.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-pomegranate-grapefruit/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Dirty Bastard",
-        "price": "11.80",
+        "price": {
+            "amount": "11.80",
+            "currency": null,
+            "amount_text": "11.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-dirty-bastard/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hop Nation. Bearded Seal",
-        "price": "11.80",
+        "price": {
+            "amount": "11.80",
+            "currency": null,
+            "amount_text": "11.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hop-nation-bearded-seal/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Unleash the Beast NEIPA",
-        "price": "11.90",
+        "price": {
+            "amount": "11.90",
+            "currency": null,
+            "amount_text": "11.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-unleash-the-beast-neipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Off Day Double",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-double/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion City Meadery.  Spiced Mead",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-spiced/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Germ Juice",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-germ-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Soul Barrel Tropical Parade-",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/soul-barrel-tropical-parade/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Boon. Kriek. Lambic",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-kriek-lambic/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic You Can\u2019t Handle The Juice",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-you-cant-handle-the-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion City Meadery. Hibiscus Mead",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-hibiscus/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion City Meadery. Classic Mead",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-classic/"
     },
     {
-        "name": "Offshoot Escape [it\u2019s your everyday West Coast IPA]",
-        "price": "12.10",
+        "vendor": "craftbeersg",
+        "name": "Offshoot Escape",
+        "price": {
+            "amount": "12.10",
+            "currency": null,
+            "amount_text": "12.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/offshoot-escape-its-your-everyday-west-coast-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts Ransack The Universe",
-        "price": "12.10",
+        "price": {
+            "amount": "12.10",
+            "currency": null,
+            "amount_text": "12.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-ransack-the-universe/"
     },
     {
-        "name": "Offshoot Relax [it\u2019s just a hazy IPA]",
-        "price": "12.10",
+        "vendor": "craftbeersg",
+        "name": "Offshoot Relax",
+        "price": {
+            "amount": "12.10",
+            "currency": null,
+            "amount_text": "12.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/offshoot-relax-its-just-a-hazy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog No Save Point",
-        "price": "12.20",
+        "price": {
+            "amount": "12.20",
+            "currency": null,
+            "amount_text": "12.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-no-save-point/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Darling Brew Warlord Imperial IPA",
-        "price": "12.40",
+        "price": {
+            "amount": "12.40",
+            "currency": null,
+            "amount_text": "12.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/darling-brew-warlord/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing x Garage Project. Bubbles",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-x-garage-project-bubbles/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Dank Side of the Moon",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-dank-side-of-the-moon/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rogue Combat Wombat",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-combat-wombat/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Pine on You Crazy Diamond",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-pine-on-you-crazy-diamond/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing. DDH M.B.C Oat Cream",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-ddh-mbc-oat-cream/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing. Blueberry Slurpee Sour",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-blueberry-slurpee-sour/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Brewing . Into the Merzbau NEIPA",
-        "price": "6.25",
+        "price": {
+            "amount": "6.25",
+            "currency": null,
+            "amount_text": "6.25"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-into-the-merzbau-neipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Wrong Turn",
-        "price": "12.50",
+        "price": {
+            "amount": "12.50",
+            "currency": null,
+            "amount_text": "12.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-wrong-turn/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The Bruery Mischief",
-        "price": "12.80",
+        "price": {
+            "amount": "12.80",
+            "currency": null,
+            "amount_text": "12.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-mischief/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Day Man",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-day-man/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts IPA 14",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-ipa-14/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Amager Wookie IPA",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-wookie-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Captain Paddocks",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-captain-paddocks/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Lloyd Hazy IPA",
-        "price": "13.30",
+        "price": {
+            "amount": "13.30",
+            "currency": null,
+            "amount_text": "13.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-lloyd-hazy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Lindsay West Coast IPA",
-        "price": "13.30",
+        "price": {
+            "amount": "13.30",
+            "currency": null,
+            "amount_text": "13.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-lindsay-west-coast-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Terry Coco-Cacao Stout",
-        "price": "13.30",
+        "price": {
+            "amount": "13.30",
+            "currency": null,
+            "amount_text": "13.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-terry-coco-cacao-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing. 2020 Russian Imperial Stout",
-        "price": "13.40",
+        "price": {
+            "amount": "13.40",
+            "currency": null,
+            "amount_text": "13.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-2020-russian-imperial-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rochefort Trappistes 10",
-        "price": "13.50",
+        "price": {
+            "amount": "13.50",
+            "currency": null,
+            "amount_text": "13.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rochefort-10/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Boon Oude Geuze. Lambic",
-        "price": "13.50",
+        "price": {
+            "amount": "13.50",
+            "currency": null,
+            "amount_text": "13.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-oude-geuze-lambic/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Karl Requires Assistance",
-        "price": "13.50",
+        "price": {
+            "amount": "13.50",
+            "currency": null,
+            "amount_text": "13.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-karl-requires-assistance/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Collective Arts IPA 15",
-        "price": "13.70",
+        "price": {
+            "amount": "13.70",
+            "currency": null,
+            "amount_text": "13.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/collective-arts-ipa-15/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Amager Sigterboard",
-        "price": "13.70",
+        "price": {
+            "amount": "13.70",
+            "currency": null,
+            "amount_text": "13.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-sigterboard/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Big Luscious",
-        "price": "13.80",
+        "price": {
+            "amount": "13.80",
+            "currency": null,
+            "amount_text": "13.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-big-luscious/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Half time",
-        "price": "13.80",
+        "price": {
+            "amount": "13.80",
+            "currency": null,
+            "amount_text": "13.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-half-time/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion City Meadery. Pucker up Honey & Cherry Sour Ale",
-        "price": "13.90",
+        "price": {
+            "amount": "13.90",
+            "currency": null,
+            "amount_text": "13.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-meadery-pucker-up-honey-cherry-sour-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Off Day Canvas Citra El Dorado",
-        "price": "14.00",
+        "price": {
+            "amount": "14.00",
+            "currency": null,
+            "amount_text": "14.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-canvas-citra-el-dorado/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Feijoa Freedom",
-        "price": "14.20",
+        "price": {
+            "amount": "14.20",
+            "currency": null,
+            "amount_text": "14.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-feijoa-freedom/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rogue Pineapple Party Punch",
-        "price": "14.20",
+        "price": {
+            "amount": "14.20",
+            "currency": null,
+            "amount_text": "14.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-pineapple-party-punch/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Guava Ground Hog",
-        "price": "14.20",
+        "price": {
+            "amount": "14.20",
+            "currency": null,
+            "amount_text": "14.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-guava-ground-hog/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog To Ol Collab Dream Cake",
-        "price": "14.20",
+        "price": {
+            "amount": "14.20",
+            "currency": null,
+            "amount_text": "14.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-to-ol-collab-dream-cake/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. Ripe Time",
-        "price": "14.50",
+        "price": {
+            "amount": "14.50",
+            "currency": null,
+            "amount_text": "14.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-ripe-time/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Slushy Fund #2",
-        "price": "14.50",
+        "price": {
+            "amount": "14.50",
+            "currency": null,
+            "amount_text": "14.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-slushy-fund-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Double Attitude",
-        "price": "14.50",
+        "price": {
+            "amount": "14.50",
+            "currency": null,
+            "amount_text": "14.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-double-attitude/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Smash & Grab",
-        "price": "14.50",
+        "price": {
+            "amount": "14.50",
+            "currency": null,
+            "amount_text": "14.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-brewery-smash-grab/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Something Spikey",
-        "price": "14.70",
+        "price": {
+            "amount": "14.70",
+            "currency": null,
+            "amount_text": "14.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-something-spikey/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Boon Geuze Mariage Parfait",
-        "price": "14.80",
+        "price": {
+            "amount": "14.80",
+            "currency": null,
+            "amount_text": "14.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-geuze-mariage-parfait/"
     },
     {
-        "name": "3 Ravens Odins Brew Milkshake Stout",
-        "price": "14.90",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/3-ravens-odins-brew-milkshake-stout/"
-    },
-    {
-        "name": "Offshoot Retreat [This is a Hazy Double IPA]",
-        "price": "15.00",
+        "vendor": "craftbeersg",
+        "name": "Offshoot Retreat",
+        "price": {
+            "amount": "15.00",
+            "currency": null,
+            "amount_text": "15.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/offshoot-retreat-this-is-hazy-double-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Amager Walter the Baby Bat",
-        "price": "15.00",
+        "price": {
+            "amount": "15.00",
+            "currency": null,
+            "amount_text": "15.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-walter-the-baby-bat/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Now For Individual Sale",
-        "price": "15.00",
+        "price": {
+            "amount": "15.00",
+            "currency": null,
+            "amount_text": "15.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-now-for-individual-sale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery.  Single Hop Series Simcoe",
-        "price": "15.50",
+        "price": {
+            "amount": "15.50",
+            "currency": null,
+            "amount_text": "15.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-single-hop-series-simcoe/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Laid Back",
-        "price": "15.50",
+        "price": {
+            "amount": "15.50",
+            "currency": null,
+            "amount_text": "15.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-laid-back/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Straya!",
-        "price": "15.70",
+        "price": {
+            "amount": "15.70",
+            "currency": null,
+            "amount_text": "15.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-straya/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Boss Level",
-        "price": "15.80",
+        "price": {
+            "amount": "15.80",
+            "currency": null,
+            "amount_text": "15.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-boss-level/"
     },
     {
-        "name": "Off Day Canvas Mosaic / Galaxy",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/off-day-canvas-mosaic-galaxy/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Behemoth. Delayed Package",
-        "price": "15.80",
+        "price": {
+            "amount": "15.80",
+            "currency": null,
+            "amount_text": "15.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-delayed-package/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Here\u2019s Churly",
-        "price": "15.90",
+        "price": {
+            "amount": "15.90",
+            "currency": null,
+            "amount_text": "15.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-heres-churly/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Party At the Boarder",
-        "price": "16.00",
+        "price": {
+            "amount": "16.00",
+            "currency": null,
+            "amount_text": "16.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-party-at-the-boarder/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "To \u00d8l Stereo Mono Citra",
-        "price": "16.00",
+        "price": {
+            "amount": "16.00",
+            "currency": null,
+            "amount_text": "16.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/to-ol-stereo-mono-citra/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Liberty Hoptical Illusion",
-        "price": "16.20",
+        "price": {
+            "amount": "16.20",
+            "currency": null,
+            "amount_text": "16.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-hoptical-illusion/"
     },
     {
-        "name": "Omnipollo Andreas",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/omnipollo-andreas/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Liberty Citra",
-        "price": "16.60",
+        "price": {
+            "amount": "16.60",
+            "currency": null,
+            "amount_text": "16.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/liberty-citra-double-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Hold The Cream",
-        "price": "16.70",
+        "price": {
+            "amount": "16.70",
+            "currency": null,
+            "amount_text": "16.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-hold-the-cream/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dry & Bitter Rocket Juice",
-        "price": "17.00",
+        "price": {
+            "amount": "17.00",
+            "currency": null,
+            "amount_text": "17.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-rocket-jiuce/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life IIPA",
-        "price": "17.00",
+        "price": {
+            "amount": "17.00",
+            "currency": null,
+            "amount_text": "17.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-iipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Boon Schaarbeekse Oude Kriek",
-        "price": "17.00",
+        "price": {
+            "amount": "17.00",
+            "currency": null,
+            "amount_text": "17.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-schaarbeekse-oude-kriek/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Tiny Hands, Uge Hops",
-        "price": "17.10",
+        "price": {
+            "amount": "17.10",
+            "currency": null,
+            "amount_text": "17.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-tiny-hands-uge-hops/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Milkbar Series: Blueberry & Raspberry",
-        "price": "17.40",
+        "price": {
+            "amount": "17.40",
+            "currency": null,
+            "amount_text": "17.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-series-blueberry-raspberry/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Milkbar Series: Tropicana",
-        "price": "17.20",
+        "price": {
+            "amount": "17.20",
+            "currency": null,
+            "amount_text": "17.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-series-tropicana/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds No Ticket",
-        "price": "17.20",
+        "price": {
+            "amount": "17.20",
+            "currency": null,
+            "amount_text": "17.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-no-ticket/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Dkat Amarillo",
-        "price": "17.20",
+        "price": {
+            "amount": "17.20",
+            "currency": null,
+            "amount_text": "17.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-dkat-amarillo/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Fortune and Glory",
-        "price": "16.00",
+        "price": {
+            "amount": "16.00",
+            "currency": null,
+            "amount_text": "16.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-fortune-and-glory/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dry & Bitter Double Dippy Doo",
-        "price": "17.50",
+        "price": {
+            "amount": "17.50",
+            "currency": null,
+            "amount_text": "17.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-double-dippy-doo/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders KBS. Kentucky Breakfast Stout",
-        "price": "17.20",
+        "price": {
+            "amount": "17.20",
+            "currency": null,
+            "amount_text": "17.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-kbs-kentucky-breakfast-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Pavlova",
-        "price": "18.00",
+        "price": {
+            "amount": "18.00",
+            "currency": null,
+            "amount_text": "18.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-pavlova/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Fast Car",
-        "price": "18.40",
+        "price": {
+            "amount": "18.40",
+            "currency": null,
+            "amount_text": "18.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-fast-car/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. What Are The Odds?",
-        "price": "18.50",
+        "price": {
+            "amount": "18.50",
+            "currency": null,
+            "amount_text": "18.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-what-are-the-odds/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gamma Tis The Season Finale",
-        "price": "18.50",
+        "price": {
+            "amount": "18.50",
+            "currency": null,
+            "amount_text": "18.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-tis-the-season-finale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Good Morning Vietnam",
-        "price": "18.50",
+        "price": {
+            "amount": "18.50",
+            "currency": null,
+            "amount_text": "18.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-good-morning-vietnam/"
     },
     {
-        "name": "Deschutes The Abyss",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/deschutes-the-abyss/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Devil\u2019s Peak Black Beauty No. 1",
-        "price": "19.40",
+        "price": {
+            "amount": "19.40",
+            "currency": null,
+            "amount_text": "19.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-black-beauty-no-1/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gamma It Slaps",
-        "price": "19.50",
+        "price": {
+            "amount": "19.50",
+            "currency": null,
+            "amount_text": "19.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-it-slaps/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Jekyll",
-        "price": "19.50",
+        "price": {
+            "amount": "19.50",
+            "currency": null,
+            "amount_text": "19.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-jekyll/"
     },
     {
-        "name": "Garage Project Just \u2018Cause You Feel It",
-        "price": "19.50",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/garage-project-just-cause-you-feel-it/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Founders KBS Maple Fudge",
-        "price": "19.60",
+        "price": {
+            "amount": "19.60",
+            "currency": null,
+            "amount_text": "19.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-kbs-maple-fudge/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders KBS Espresso",
-        "price": "20.40",
+        "price": {
+            "amount": "20.40",
+            "currency": null,
+            "amount_text": "20.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/founders-kbs-espresso/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The Bruery Hold The Spoon: Black Chocolate Cake",
-        "price": "20.70",
+        "price": {
+            "amount": "20.70",
+            "currency": null,
+            "amount_text": "20.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-hold-the-spoon-black-chocolate-cake/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. New Currency",
-        "price": "21.50",
+        "price": {
+            "amount": "21.50",
+            "currency": null,
+            "amount_text": "21.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-new-currency-mango-milkshake-dipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Wildflower: Blackberry",
-        "price": "21.70",
+        "price": {
+            "amount": "21.70",
+            "currency": null,
+            "amount_text": "21.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-wildflower-blackberry/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The Bruery Bakery: Coconut Macaroons",
-        "price": "22.10",
+        "price": {
+            "amount": "22.10",
+            "currency": null,
+            "amount_text": "22.10"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-bruery-bakery-coconut-macaroons/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Chance, Luck & Magic",
-        "price": "22.30",
+        "price": {
+            "amount": "22.30",
+            "currency": null,
+            "amount_text": "22.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-chance-luck-magic/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Excessive Machine",
-        "price": "22.40",
+        "price": {
+            "amount": "22.40",
+            "currency": null,
+            "amount_text": "22.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-excessive-machine/"
     },
     {
-        "name": "Garage Project Pilgrim\u2019s Blend",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/garage-project-pilgrims-blend/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "To \u00d8l Extreme Measures",
-        "price": "23.00",
+        "price": {
+            "amount": "23.00",
+            "currency": null,
+            "amount_text": "23.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/to-ol-extreme-measures/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project. Single Fruit Apricot",
-        "price": "24.00",
+        "price": {
+            "amount": "24.00",
+            "currency": null,
+            "amount_text": "24.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-single-fruit-apricot/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "3 Fonteinen Oude Geuze",
-        "price": "24.50",
+        "price": {
+            "amount": "24.50",
+            "currency": null,
+            "amount_text": "24.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-oude-geuze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Woodstock Brewery Sugarman",
-        "price": "24.60",
+        "price": {
+            "amount": "24.60",
+            "currency": null,
+            "amount_text": "24.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dwoodstock-brewery-sugarman/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Devil\u2019s Peak Water Get No Enemy BA Stout",
-        "price": "25.80",
+        "price": {
+            "amount": "25.80",
+            "currency": null,
+            "amount_text": "25.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-water-get-no-enemy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Southern Snow Mexican",
-        "price": "26.30",
+        "price": {
+            "amount": "26.30",
+            "currency": null,
+            "amount_text": "26.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-southern-snow-mexican/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Bogan\u2019s Breakfast",
-        "price": "26.30",
+        "price": {
+            "amount": "26.30",
+            "currency": null,
+            "amount_text": "26.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-bogans-breakfast/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Monster Cookie",
-        "price": "27.90",
+        "price": {
+            "amount": "27.90",
+            "currency": null,
+            "amount_text": "27.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heretic-monster-cookie/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Drifter Brewing Sunrise On The Vine",
-        "price": "28.00",
+        "price": {
+            "amount": "28.00",
+            "currency": null,
+            "amount_text": "28.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/drifter-brewing-sunrise-on-the-vine/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Amager Black Rainbows",
-        "price": "31.50",
+        "price": {
+            "amount": "31.50",
+            "currency": null,
+            "amount_text": "31.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/amager-black-rainbows/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fraser\u2019s Folly Brandy Cask Finished Ale",
-        "price": "33.00",
+        "price": {
+            "amount": "33.00",
+            "currency": null,
+            "amount_text": "33.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/frasers-folly-brandy-cask-finished-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "3 Fonteinen Oude Kriek",
-        "price": "33.50",
+        "price": {
+            "amount": "33.50",
+            "currency": null,
+            "amount_text": "33.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-oude-kriek/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "3 Fonteinen Cuvee Armand & Gaston",
-        "price": "33.50",
+        "price": {
+            "amount": "33.50",
+            "currency": null,
+            "amount_text": "33.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-cuvee-armand-gaston/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion Brewery. Straits Pale Ale",
-        "price": "34.20",
+        "price": {
+            "amount": "34.20",
+            "currency": null,
+            "amount_text": "34.20"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/lion-brewery-straits-pale-ale-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. Another One",
-        "price": "39.00",
+        "price": {
+            "amount": "39.00",
+            "currency": null,
+            "amount_text": "39.00"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/young-master-another-one/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "3 Fonteinen Hommage Bio Framboos",
-        "price": "41.50",
+        "price": {
+            "amount": "41.50",
+            "currency": null,
+            "amount_text": "41.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-hommage-bio-framboos/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater 420 Extra Pale Ale",
-        "price": "42.75",
+        "price": {
+            "amount": "42.75",
+            "currency": null,
+            "amount_text": "42.75"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/sweetwater-420-extra-pale-ale-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Mikkeller Spontan Triple blueberry",
-        "price": "45.00",
+        "price": {
+            "amount": "45.00",
+            "currency": null,
+            "amount_text": "45.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/mikkeller-spontan-triple-blueberry/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "3 Fonteinen Framboos Oogst",
-        "price": "45.00",
+        "price": {
+            "amount": "45.00",
+            "currency": null,
+            "amount_text": "45.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/3-fonteinen-framboos-oogst/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater Hop Hash Easy IPA",
-        "price": "45.03",
+        "price": {
+            "amount": "45.03",
+            "currency": null,
+            "amount_text": "45.03"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/sweetwater-hop-hash-easy-ipa-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders All Day IPA",
-        "price": "45.60",
+        "price": {
+            "amount": "45.60",
+            "currency": null,
+            "amount_text": "45.60"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/founders-all-day-ipa-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone & Wood Pacific Ale",
-        "price": "46.15",
+        "price": {
+            "amount": "46.15",
+            "currency": null,
+            "amount_text": "46.15"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/stone-wood-pacific-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Make America Juicy Again",
-        "price": "47.31",
+        "price": {
+            "amount": "47.31",
+            "currency": null,
+            "amount_text": "47.31"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/heretic-make-america-juicy-again-2/"
     },
     {
-        "name": "Deschutes Fresh Haze IPA \u2013 355ml",
-        "price": "48.45",
+        "vendor": "craftbeersg",
+        "name": "Deschutes Fresh Haze IPA \u2013",
+        "price": {
+            "amount": "48.45",
+            "currency": null,
+            "amount_text": "48.45"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/deschutes-fresh-haze-ipa-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deschutes Fresh Squeezed IPA",
-        "price": "48.45",
+        "price": {
+            "amount": "48.45",
+            "currency": null,
+            "amount_text": "48.45"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/deschutes-fresh-squeezed-ipa-pack-of-6/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Founders Centennial IPA",
-        "price": "48.45",
+        "price": {
+            "amount": "48.45",
+            "currency": null,
+            "amount_text": "48.45"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/founders-centennial-ipa-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Falcon APA",
-        "price": "51.87",
+        "price": {
+            "amount": "51.87",
+            "currency": null,
+            "amount_text": "51.87"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/parrotdog-falcon-apa-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Mutiny On The Bounty",
-        "price": "53.80",
+        "price": {
+            "amount": "53.80",
+            "currency": null,
+            "amount_text": "53.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-mutiny-on-the-bounty/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pasteur Street Cyclo Stout",
-        "price": "54.60",
+        "price": {
+            "amount": "54.60",
+            "currency": null,
+            "amount_text": "54.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pasteur-street-cyclo-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Liang Teh",
-        "price": "55.86",
+        "price": {
+            "amount": "55.86",
+            "currency": null,
+            "amount_text": "55.86"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-liang-teh-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heretic Juicier Than Thou",
-        "price": "58.71",
+        "price": {
+            "amount": "58.71",
+            "currency": null,
+            "amount_text": "58.71"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/heretic-juicier-than-thou-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Laid Back",
-        "price": "88.35",
+        "price": {
+            "amount": "88.35",
+            "currency": null,
+            "amount_text": "88.35"
+        },
         "quantity": 6,
         "url": "https://craftbeersg.com/product/behemoth-laid-back-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Session",
-        "price": "182.40",
+        "price": {
+            "amount": "182.40",
+            "currency": null,
+            "amount_text": "182.40"
+        },
         "quantity": 24,
         "url": "https://craftbeersg.com/product/rocky-ridge-session-2/"
     },
     {
-        "name": "Otherside Brewing. Lo-Fi",
-        "quantity": 18,
-        "url": "https://craftbeersg.com/product/otherside-brewing-lo-fi-2/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Black Forest Lager",
-        "price": "150.00",
+        "price": {
+            "amount": "150.00",
+            "currency": null,
+            "amount_text": "150.00"
+        },
         "quantity": 16,
         "url": "https://craftbeersg.com/product/rocky-ridge-black-forest-lager-pack-of-16/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Chainbreaker IPA",
-        "price": "157.00",
+        "price": {
+            "amount": "157.00",
+            "currency": null,
+            "amount_text": "157.00"
+        },
         "quantity": 16,
         "url": "https://craftbeersg.com/product/blasta-brewing-chainbreaker-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Baby Peach",
-        "price": "159.00",
+        "price": {
+            "amount": "159.00",
+            "currency": null,
+            "amount_text": "159.00"
+        },
         "quantity": 24,
         "url": "https://craftbeersg.com/product/rocky-ridge-experimental-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Throwback IPA",
-        "price": "168.00",
+        "price": {
+            "amount": "168.00",
+            "currency": null,
+            "amount_text": "168.00"
+        },
         "quantity": 24,
         "url": "https://craftbeersg.com/product/pirate-life-throwback-ipa-2/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fourpure Last Train Oatmeal Stout",
-        "price": "6.40",
+        "price": {
+            "amount": "6.40",
+            "currency": null,
+            "amount_text": "6.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fourpure-last-train-oatmeal-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "\u00c4lska Peach & Raspberry Cider",
-        "price": "4.00",
+        "price": {
+            "amount": "4.00",
+            "currency": null,
+            "amount_text": "4.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/alska-peach-raspberry-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Austell Tribute Ale",
-        "price": "5.60",
+        "price": {
+            "amount": "5.60",
+            "currency": null,
+            "amount_text": "5.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-austell-tribute-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Indie",
-        "price": "5.90",
+        "price": {
+            "amount": "5.90",
+            "currency": null,
+            "amount_text": "5.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-indie/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Quench Quake",
-        "price": "6.40",
+        "price": {
+            "amount": "6.40",
+            "currency": null,
+            "amount_text": "6.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-quench-quake/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewdog. Zombie Cake",
-        "price": "6.40",
+        "price": {
+            "amount": "6.40",
+            "currency": null,
+            "amount_text": "6.40"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewdog-zombie-cake/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Salted Caramel Lucaria",
-        "price": "6.50",
+        "price": {
+            "amount": "6.50",
+            "currency": null,
+            "amount_text": "6.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-salted-carame-lucaria/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "\u00c4lska Strawberry & Lime Cider",
-        "price": "6.70",
+        "price": {
+            "amount": "6.70",
+            "currency": null,
+            "amount_text": "6.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/alska-strawberry-lime-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hitachino Nest. Craft Lager",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-craft-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Brewlander Hope Summer Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/brewlander-hope-summer-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Tribe. Buckethead Session Ale",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/tribe-buckethead-session-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Feral Sly Fox",
-        "price": "7.00",
+        "price": {
+            "amount": "7.00",
+            "currency": null,
+            "amount_text": "7.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-sly-fox/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Hitachino Nest. Espresso Stout",
-        "price": "7.30",
+        "price": {
+            "amount": "7.30",
+            "currency": null,
+            "amount_text": "7.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/hitachino-nest-espresso-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Feral Hop Hog",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/feral_hop_hog/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Royal Jamaican Ginger Beer",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/royal-jamaican-ginger-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Florida Weisse",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-florida-weisse/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Tropical Torpedo",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-tropical-torpedo/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Anderson Valley Brewing Cherry Gose",
-        "price": "7.50",
+        "price": {
+            "amount": "7.50",
+            "currency": null,
+            "amount_text": "7.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/anderson-valley-brewing-cherry-gose/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stockade Mr Fruju NEIPA",
-        "price": "7.80",
+        "price": {
+            "amount": "7.80",
+            "currency": null,
+            "amount_text": "7.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stockade-mr-fruju-neipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "\u00c4lska Lemon & Ginger Cider",
-        "price": "7.80",
+        "price": {
+            "amount": "7.80",
+            "currency": null,
+            "amount_text": "7.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/alska-lemon-ginger-cider/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Yoho Brewing Indo No Aooni IPA",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/yoho-brewing-indo-no-aooni-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Bliss Point",
-        "price": "7.90",
+        "price": {
+            "amount": "7.90",
+            "currency": null,
+            "amount_text": "7.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-bliss-point/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Tupelo",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-tupelo/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Mornington Peninsula Draught Lager",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/mornington-peninsula-draught-lager/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rogue Just A Pinch",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rogue-just-a-pinch/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Innis & Gunn. Original",
-        "price": "8.00",
+        "price": {
+            "amount": "8.00",
+            "currency": null,
+            "amount_text": "8.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/innis-gunn-original/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. Fantasma Gluten Free IPA",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-fantasma-gluten-free-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog Old Mate",
-        "price": "8.30",
+        "price": {
+            "amount": "8.30",
+            "currency": null,
+            "amount_text": "8.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-old-mate/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Divide & Conquer",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-divide-conquer/"
     },
     {
-        "name": "Otherside Brewing. Festive",
-        "price": "8.50",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/otherside-brewing-festive/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Feral Biggie Juice",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-biggie-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Off Day Beer",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Off Day Pale",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/off-day-pale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Birdseye Hazy IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-birdseye-hazy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Thornbridge Jamestown",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/thornbridge-jamestown/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pasteur Street Pomelo IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pasteur-street-pomelo-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Mornington Peninsula Pale Ale",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/mornington-peninsula-pale-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion Brewery. New England Session IPA",
-        "price": "8.50",
+        "price": {
+            "amount": "8.50",
+            "currency": null,
+            "amount_text": "8.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-brewery-new-england-session-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sweetwater Goin\u2019 Coastal IPA",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sweetwater-goin-coastal-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fixation IPA",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/fixation-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Austell Proper Job IPA",
-        "price": "8.90",
+        "price": {
+            "amount": "8.90",
+            "currency": null,
+            "amount_text": "8.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-austell-proper-job-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project. Fuzzbox",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-fuzzbox/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Freedom",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-freedom/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Heart of Darkness When You Open This Bottle Real Raspberries Will Fly Out IPA",
-        "price": "9.00",
+        "price": {
+            "amount": "9.00",
+            "currency": null,
+            "amount_text": "9.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/heart-of-darkness-when-you-open-this-bottle-real-raspberries-will-fly-out/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. High Wire Grapefruit",
-        "price": "9.30",
+        "price": {
+            "amount": "9.30",
+            "currency": null,
+            "amount_text": "9.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-high-wire-graprefruit/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Garagista",
-        "price": "9.30",
+        "price": {
+            "amount": "9.30",
+            "currency": null,
+            "amount_text": "9.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-garagista/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Golden Path",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-golden-path/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Feral War Hog",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/feral-war-hog/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Delirium Nocturnum",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/delirium-nocturnum/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stone x Metallica Enter Night Pilsner",
-        "price": "9.50",
+        "price": {
+            "amount": "9.50",
+            "currency": null,
+            "amount_text": "9.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stone-x-metallica-enter-night-pilsner/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Fraser\u2019s Folly Mint Choc Stout",
-        "price": "9.60",
+        "price": {
+            "amount": "9.60",
+            "currency": null,
+            "amount_text": "9.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/frasers-folly-mint-choc-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Unfazed By The Haze",
-        "price": "9.60",
+        "price": {
+            "amount": "9.60",
+            "currency": null,
+            "amount_text": "9.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-unfazed-by-the-haze/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing. Anthem IPA",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-anthem-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Ruby Jujube Porter",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-ruby-jujube-porter/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "The 1925 Brewing Company. Kaya Toast",
-        "price": "9.80",
+        "price": {
+            "amount": "9.80",
+            "currency": null,
+            "amount_text": "9.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/the-1925-brewing-company-sour-plum-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gosnells London Mead",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gosnells-london-mead/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth. Hopportunity",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-hopportunity/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Duchesse de Bourgogne",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/duchesse-de-bourgogne/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog Cake Hole Black Forest Stout",
-        "price": "10.00",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-cake-hole-black-forest-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Devil\u2019s Peak Lucy in the Tropics NEIPA",
-        "price": "10.20",
+        "price": {
+            "amount": "10.20",
+            "currency": null,
+            "amount_text": "10.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/devils-peak-lucy-in-the-tropics-neipa/"
     },
     {
-        "name": "Devil\u2019s Peak Juicy Lucy NEIPA",
-        "price": "10.20",
-        "quantity": 1,
-        "url": "https://craftbeersg.com/product/devils-peak-juicy-lucy-neipa/"
-    },
-    {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Cashmere IPA",
-        "price": "10.30",
+        "price": {
+            "amount": "10.30",
+            "currency": null,
+            "amount_text": "10.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-cashmere/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Root Sellers. Pedal Hard Ginger Beer",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/root-sellers-pedal-hard-ginger-beer/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Kagua Yuzu Blanc",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/kagua-yuzu-blanc/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Stonehead Hazelnut & Chocolate Stout",
-        "price": "10.50",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/stonehead-hazelnut-chocolate-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project DFA",
-        "price": "10.60",
+        "price": {
+            "amount": "10.60",
+            "currency": null,
+            "amount_text": "10.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-dfa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Tropical IIPA",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-tropical-iipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Wychwood King Goblin",
-        "price": "10.90",
+        "price": {
+            "amount": "10.90",
+            "currency": null,
+            "amount_text": "10.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/wychwood-king-goblin/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Sierra Nevada Narwhal",
-        "price": "11.00",
+        "price": {
+            "amount": "11.00",
+            "currency": null,
+            "amount_text": "11.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/sierra-nevada-narwhal/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Otherside Brewing. Sabbath Stout",
-        "price": "11.30",
+        "price": {
+            "amount": "11.30",
+            "currency": null,
+            "amount_text": "11.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/otherside-brewing-sabbath-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Brewing . Modular American IPA",
-        "price": "11.50",
+        "price": {
+            "amount": "11.50",
+            "currency": null,
+            "amount_text": "11.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-modular-american-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Magic Rock Brewing. Murk From Home",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/magic-rock-brewing-murk-from-home/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Moon Dog Jimmy & Lawson\u2019s",
-        "price": "12.00",
+        "price": {
+            "amount": "12.00",
+            "currency": null,
+            "amount_text": "12.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/moon-dog-jimmy-lawsons/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Breakfast Club",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-brewery-breakfast-club/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "North Brewing . Lines of Symmetry",
-        "price": "13.00",
+        "price": {
+            "amount": "13.00",
+            "currency": null,
+            "amount_text": "13.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/north-brewing-lines-of-symmetry/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Adrian Hazy IPA",
-        "price": "13.30",
+        "price": {
+            "amount": "13.30",
+            "currency": null,
+            "amount_text": "13.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-adrain-hazy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "ParrotDog Keith Hazy IPA",
-        "price": "13.30",
+        "price": {
+            "amount": "13.30",
+            "currency": null,
+            "amount_text": "13.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/parrotdog-keith-hazy-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Blasta Brewing. Unbridled Unicorn DIPA",
-        "price": "13.50",
+        "price": {
+            "amount": "13.50",
+            "currency": null,
+            "amount_text": "13.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/blasta-brewing-unbridled-unicorn-dipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Delirium Argentum",
-        "price": "13.50",
+        "price": {
+            "amount": "13.50",
+            "currency": null,
+            "amount_text": "13.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/delirium-argentum/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Imperial Custard Tart Stout",
-        "price": "14.20",
+        "price": {
+            "amount": "14.20",
+            "currency": null,
+            "amount_text": "14.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-imperial-custard-tart-stout/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Rocky Ridge. Chunky Dates",
-        "price": "14.20",
+        "price": {
+            "amount": "14.20",
+            "currency": null,
+            "amount_text": "14.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/rocky-ridge-chunky-dates/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Music City",
-        "price": "14.80",
+        "price": {
+            "amount": "14.80",
+            "currency": null,
+            "amount_text": "14.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-music-city/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "St. Bernardus Christmas Ale",
-        "price": "14.80",
+        "price": {
+            "amount": "14.80",
+            "currency": null,
+            "amount_text": "14.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/st-bernardus-christmas-ale/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Pirate Life Zappa IPA",
-        "price": "15.20",
+        "price": {
+            "amount": "15.20",
+            "currency": null,
+            "amount_text": "15.20"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/pirate-life-zappa-ipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery. Sweet Temptation",
-        "price": "15.30",
+        "price": {
+            "amount": "15.30",
+            "currency": null,
+            "amount_text": "15.30"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-brewery-sweet-temptation/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Vocation Brewery.  Single Hop Series Citra",
-        "price": "15.50",
+        "price": {
+            "amount": "15.50",
+            "currency": null,
+            "amount_text": "15.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/vocation-single-hop-series-citra/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Lid Ripper",
-        "price": "15.50",
+        "price": {
+            "amount": "15.50",
+            "currency": null,
+            "amount_text": "15.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-lid-ripper/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Behemoth Reeferendum",
-        "price": "15.70",
+        "price": {
+            "amount": "15.70",
+            "currency": null,
+            "amount_text": "15.70"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/behemoth-reeferendum/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Lion City Meadery. Longan & Red Dates Mead Liang Teh Series 2 of 4",
-        "price": "15.80",
+        "price": {
+            "amount": "15.80",
+            "currency": null,
+            "amount_text": "15.80"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/lion-city-chrysanthemum-mead-copy/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Intergalactic Love Child Sour Hazy DIPA",
-        "price": "16.00",
+        "price": {
+            "amount": "16.00",
+            "currency": null,
+            "amount_text": "16.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-intergalactic-love-child-sour-hazy-dipa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Deeds Milkbar Series: Peaches & Cream",
-        "price": "16.50",
+        "price": {
+            "amount": "16.50",
+            "currency": null,
+            "amount_text": "16.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/deeds-milkbar-series-peaches-cream/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dry & Bitter Do You Think This Is A Fucking Game?",
-        "price": "17.50",
+        "price": {
+            "amount": "17.50",
+            "currency": null,
+            "amount_text": "17.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-do-you-think-this-is-a-fucking-game/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gamma Guap",
-        "price": "18.00",
+        "price": {
+            "amount": "18.00",
+            "currency": null,
+            "amount_text": "18.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-guap/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dry & Bitter The Glow Below",
-        "price": "18.50",
+        "price": {
+            "amount": "18.50",
+            "currency": null,
+            "amount_text": "18.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-the-glow-below/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Dry & Bitter Don\u2019t Bring Me Down",
-        "price": "18.50",
+        "price": {
+            "amount": "18.50",
+            "currency": null,
+            "amount_text": "18.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/dry-bitter-dont-bring-me-down/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gamma Big Doink",
-        "price": "19.50",
+        "price": {
+            "amount": "19.50",
+            "currency": null,
+            "amount_text": "19.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-big-doink/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Gamma Algorithm Juice",
-        "price": "19.50",
+        "price": {
+            "amount": "19.50",
+            "currency": null,
+            "amount_text": "19.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/gamma-algorithm-juice/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project New New Normal Normal",
-        "price": "19.90",
+        "price": {
+            "amount": "19.90",
+            "currency": null,
+            "amount_text": "19.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-new-new-normal-normal/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Garage Project Surrender to the Void Vol. 2",
-        "price": "22.60",
+        "price": {
+            "amount": "22.60",
+            "currency": null,
+            "amount_text": "22.60"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/garage-project-surrender-to-the-void-vol-2/"
     },
     {
+        "vendor": "craftbeersg",
+        "name": "Garage Project Super Fresh Vol. 5",
+        "price": {
+            "amount": "21.60",
+            "currency": null,
+            "amount_text": "21.60"
+        },
+        "quantity": 1,
+        "url": "https://craftbeersg.com/product/garage-project-superfresh-vol-5/"
+    },
+    {
+        "vendor": "craftbeersg",
+        "name": "Garage Project Wolfman",
+        "price": {
+            "amount": "18.90",
+            "currency": null,
+            "amount_text": "18.90"
+        },
+        "quantity": 1,
+        "url": "https://craftbeersg.com/product/garage-project-wolfman/"
+    },
+    {
+        "vendor": "craftbeersg",
         "name": "Young Master. La Ni\u00f1a Fresa",
-        "price": "28.90",
+        "price": {
+            "amount": "28.90",
+            "currency": null,
+            "amount_text": "28.90"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-la-nina-fresa/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Young Master. Days of Brewing Wild-Flanders",
-        "price": "30.00",
+        "price": {
+            "amount": "30.00",
+            "currency": null,
+            "amount_text": "30.00"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/young-master-days-of-brewing-wild-flanders/"
     },
     {
+        "vendor": "craftbeersg",
         "name": "Boon Oude Geuze. Vat 108",
-        "price": "31.50",
+        "price": {
+            "amount": "31.50",
+            "currency": null,
+            "amount_text": "31.50"
+        },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-oude-geuze-vat-108/"
     }

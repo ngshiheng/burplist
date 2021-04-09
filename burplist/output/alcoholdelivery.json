@@ -1,745 +1,1376 @@
 [
     {
-        "name": "Budweiser Pint 355ml",
-        "price": "5.6",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Watermelon Cider",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
+        "quantity": 1,
+        "url": "https://www.alcoholdelivery.com.sg/product/somersby-watermelon-cider-330ml"
+    },
+    {
+        "vendor": "alcoholdelivery",
+        "name": "Budweiser Pint",
+        "price": {
+            "amount": "5.6",
+            "currency": null,
+            "amount_text": "5.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/budweiser-pint-355ml"
     },
     {
-        "name": "Saigon Beer Can 330ml",
-        "price": "2.9",
+        "vendor": "alcoholdelivery",
+        "name": "Saigon Beer Can",
+        "price": {
+            "amount": "2.9",
+            "currency": null,
+            "amount_text": "2.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/saigon-beer-can-330ml"
     },
     {
-        "name": "Snow Beer \u96ea\u82b1\u5564\u9152 580ml",
-        "price": "3.8",
+        "vendor": "alcoholdelivery",
+        "name": "Snow Beer \u96ea\u82b1\u5564\u9152",
+        "price": {
+            "amount": "3.8",
+            "currency": null,
+            "amount_text": "3.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/snow-beer-580ml"
     },
     {
-        "name": "Somersby Apple Cider [CANS] 330ml",
-        "price": "4.5",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Apple Cider",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-apple-cider-cans-330ml"
     },
     {
-        "name": "Somersby Blackberry Cider [CANS] 330ml",
-        "price": "4.5",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Blackberry Cider",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-blackberry-cider-cans-330ml"
     },
     {
-        "name": "Somersby Pear Cider [CANS] 330ml",
-        "price": "4.5",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Pear Cider",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-pear-cider-cans-330ml"
     },
     {
-        "name": "Erdinger Non-Alcoholic Beer 500ml",
-        "price": "3.8",
+        "vendor": "alcoholdelivery",
+        "name": "Erdinger Non-Alcoholic Beer",
+        "price": {
+            "amount": "3.8",
+            "currency": null,
+            "amount_text": "3.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/erdinger-non-alcoholic-beer-500ml"
     },
     {
-        "name": "BrewDog Pale Ale 330ml",
-        "price": "6.6",
+        "vendor": "alcoholdelivery",
+        "name": "BrewDog Pale Ale",
+        "price": {
+            "amount": "6.6",
+            "currency": null,
+            "amount_text": "6.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/brewdog-pale-ale-330ml"
     },
     {
-        "name": "La Chouffe 330ml",
-        "price": "8.2",
+        "vendor": "alcoholdelivery",
+        "name": "La Chouffe",
+        "price": {
+            "amount": "8.2",
+            "currency": null,
+            "amount_text": "8.2"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/la-chouffe-330ml"
     },
     {
-        "name": "Bavaria Non-Alcoholic Beer Apple 330ml",
-        "price": "2.5",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Non-Alcoholic Beer Apple",
+        "price": {
+            "amount": "2.5",
+            "currency": null,
+            "amount_text": "2.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-non-alcoholic-beer-apple-330ml"
     },
     {
-        "name": "Bavaria Non-Alcoholic Beer Strawberry 330ml",
-        "price": "2.5",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Non-Alcoholic Beer Strawberry",
+        "price": {
+            "amount": "2.5",
+            "currency": null,
+            "amount_text": "2.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-non-alcoholic-beer-strawberry-330ml"
     },
     {
-        "name": "Bavaria Non-Alcoholic Beer Pomegranate 330ml",
-        "price": "2.5",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Non-Alcoholic Beer Pomegranate",
+        "price": {
+            "amount": "2.5",
+            "currency": null,
+            "amount_text": "2.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-non-alcoholic-beer-pomegranate-330ml"
     },
     {
-        "name": "Bavaria Non-Alcoholic Beer Lemon 330ml",
-        "price": "2.5",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Non-Alcoholic Beer Lemon",
+        "price": {
+            "amount": "2.5",
+            "currency": null,
+            "amount_text": "2.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-non-alcoholic-beer-lemon-330ml"
     },
     {
-        "name": "Bavaria Non-Alcoholic Beer Peach 330ml",
-        "price": "2.5",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Non-Alcoholic Beer Peach",
+        "price": {
+            "amount": "2.5",
+            "currency": null,
+            "amount_text": "2.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-non-alcoholic-beer-peach-330ml"
     },
     {
-        "name": "Kingfisher Lager Beer Quart 650ml",
-        "price": "9.6",
+        "vendor": "alcoholdelivery",
+        "name": "Kingfisher Lager Beer Quart",
+        "price": {
+            "amount": "9.6",
+            "currency": null,
+            "amount_text": "9.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kingfisher-lager-beer-quart-650ml"
     },
     {
-        "name": "HITE Beer Can 355ml",
-        "price": "3.4000000000000004",
+        "vendor": "alcoholdelivery",
+        "name": "HITE Beer Can",
+        "price": {
+            "amount": "3.4000000000000004",
+            "currency": null,
+            "amount_text": "3.4000000000000004"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hite-beer-can-355ml"
     },
     {
-        "name": "Heineken 500ml",
-        "price": "5.3",
+        "vendor": "alcoholdelivery",
+        "name": "Heineken",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/heineken-500ml"
     },
     {
-        "name": "Kingfisher Premium Extra Strong Quart 650ml",
-        "price": "10.2",
+        "vendor": "alcoholdelivery",
+        "name": "Kingfisher Premium Extra Strong Quart",
+        "price": {
+            "amount": "10.2",
+            "currency": null,
+            "amount_text": "10.2"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kingfisher-premium-extra-strong-quart-650ml"
     },
     {
-        "name": "Singha Beer Pint 320ml",
-        "price": "4.5",
+        "vendor": "alcoholdelivery",
+        "name": "Singha Beer Pint",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/singha-beer-pint-320ml"
     },
     {
-        "name": "Asahi Super Dry Mini 135ml",
-        "price": "2.8",
+        "vendor": "alcoholdelivery",
+        "name": "Asahi Super Dry Mini",
+        "price": {
+            "amount": "2.8",
+            "currency": null,
+            "amount_text": "2.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/asahi-super-dry-mini-135ml"
     },
     {
-        "name": "Fourpure Jet Lager 330ml",
-        "price": "8.498999999999999",
+        "vendor": "alcoholdelivery",
+        "name": "Fourpure Jet Lager",
+        "price": {
+            "amount": "8.498999999999999",
+            "currency": null,
+            "amount_text": "8.498999999999999"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/fourpure-jet-lager-330ml"
     },
     {
-        "name": "Brewdog Dead Pony Club 330ml",
-        "price": "6.6",
+        "vendor": "alcoholdelivery",
+        "name": "Brewdog Dead Pony Club",
+        "price": {
+            "amount": "6.6",
+            "currency": null,
+            "amount_text": "6.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/brewdog-dead-pony-club-330ml"
     },
     {
-        "name": "Albens Apple & Lychee Cider 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Albens Apple & Lychee Cider",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/albens-apple-lychee-cider-330ml"
     },
     {
-        "name": "Albens Apple & Strawberry Cider 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Albens Apple & Strawberry Cider",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/albens-apple-strawberry-cider-330ml"
     },
     {
-        "name": "Albens Apple & Mango Cider 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Albens Apple & Mango Cider",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/albens-apple-mango-cider-330ml"
     },
     {
-        "name": "Albens Original Apple Cider 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Albens Original Apple Cider",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/albens-original-apple-cider-330ml"
     },
     {
-        "name": "Fourpure Shape Shifter West Coast IPA 330ml",
-        "price": "7.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Fourpure Shape Shifter West Coast IPA",
+        "price": {
+            "amount": "7.800000000000001",
+            "currency": null,
+            "amount_text": "7.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/fourpure-shape-shifter-west-coast-ipa-330ml"
     },
     {
-        "name": "Fourpure Juice Box 330ml",
-        "price": "8.5",
+        "vendor": "alcoholdelivery",
+        "name": "Fourpure Juice Box",
+        "price": {
+            "amount": "8.5",
+            "currency": null,
+            "amount_text": "8.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/fourpure-juice-box-330ml"
     },
     {
-        "name": "Fourpure Session IPA 330ml",
-        "price": "6.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Fourpure Session IPA",
+        "price": {
+            "amount": "6.800000000000001",
+            "currency": null,
+            "amount_text": "6.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/fourpure-session-ipa-330ml"
     },
     {
-        "name": "Fourpure Easy Peeler 330ml",
-        "price": "6.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Fourpure Easy Peeler",
+        "price": {
+            "amount": "6.800000000000001",
+            "currency": null,
+            "amount_text": "6.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/fourpure-easy-peeler-330ml"
     },
     {
-        "name": "Gweilo Citrus Crusher 330ml",
-        "price": "6.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Gweilo Citrus Crusher",
+        "price": {
+            "amount": "6.800000000000001",
+            "currency": null,
+            "amount_text": "6.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/gweilo-citrus-crusher-330ml"
     },
     {
-        "name": "Gweilo American IPA 330ml",
-        "price": "8.5",
+        "vendor": "alcoholdelivery",
+        "name": "Gweilo American IPA",
+        "price": {
+            "amount": "8.5",
+            "currency": null,
+            "amount_text": "8.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/gweilo-american-ipa-330ml"
     },
     {
-        "name": "Gweilo Pale Ale 330ml",
-        "price": "7.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Gweilo Pale Ale",
+        "price": {
+            "amount": "7.800000000000001",
+            "currency": null,
+            "amount_text": "7.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/gweilo-pale-ale-330ml"
     },
     {
-        "name": "Gweilo Pilsner 330ml",
-        "price": "6.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Gweilo Pilsner",
+        "price": {
+            "amount": "6.800000000000001",
+            "currency": null,
+            "amount_text": "6.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/gweilo-pilsner-330ml"
     },
     {
-        "name": "Somersby Elderflower Lime Cider 330ml",
-        "price": "5.3",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Elderflower Lime Cider",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-elderflower-lime-cider-330ml"
     },
     {
-        "name": "Somersby Sparkling Ros\u00e9 Cider 330ml",
-        "price": "5.3",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Sparkling Ros\u00e9 Cider",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-sparkling-rose-cider-330ml"
     },
     {
-        "name": "Hitachino Nest Weizen 330ml",
-        "price": "9.5",
+        "vendor": "alcoholdelivery",
+        "name": "Hitachino Nest Weizen",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hitachino-nest-weizen-330ml"
     },
     {
-        "name": "BrewDog Indie Pale Ale 330ml",
-        "price": "6.2",
+        "vendor": "alcoholdelivery",
+        "name": "BrewDog Indie Pale Ale",
+        "price": {
+            "amount": "6.2",
+            "currency": null,
+            "amount_text": "6.2"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/brewdog-indie-pale-ale-330ml"
     },
     {
-        "name": "BrewDog Lost Lager 330ml",
-        "price": "6.6",
+        "vendor": "alcoholdelivery",
+        "name": "BrewDog Lost Lager",
+        "price": {
+            "amount": "6.6",
+            "currency": null,
+            "amount_text": "6.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/brewdog-lost-lager-330ml"
     },
     {
-        "name": "BrewDog Punk IPA 330ml",
-        "price": "8.5",
+        "vendor": "alcoholdelivery",
+        "name": "BrewDog Punk IPA",
+        "price": {
+            "amount": "8.5",
+            "currency": null,
+            "amount_text": "8.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/brewdog-punk-ipa-330ml"
     },
     {
-        "name": "San Miguel Steinie Beer 320ml",
-        "price": "4.8",
+        "vendor": "alcoholdelivery",
+        "name": "San Miguel Steinie Beer",
+        "price": {
+            "amount": "4.8",
+            "currency": null,
+            "amount_text": "4.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/san-miguel-steinie-beer-320ml"
     },
     {
-        "name": "Little Creatures Bright Ale 330ml",
-        "price": "6.199999999999999",
+        "vendor": "alcoholdelivery",
+        "name": "Little Creatures Bright Ale",
+        "price": {
+            "amount": "6.199999999999999",
+            "currency": null,
+            "amount_text": "6.199999999999999"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/little-creatures-bright-ale-330ml"
     },
     {
-        "name": "Little Creatures IPA 330ml",
-        "price": "7.2",
+        "vendor": "alcoholdelivery",
+        "name": "Little Creatures IPA",
+        "price": {
+            "amount": "7.2",
+            "currency": null,
+            "amount_text": "7.2"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/little-creatures-ipa-330ml"
     },
     {
-        "name": "Leffe Brune Dark Beer 330ml",
-        "price": "6.199999999999999",
+        "vendor": "alcoholdelivery",
+        "name": "Leffe Brune Dark Beer",
+        "price": {
+            "amount": "6.199999999999999",
+            "currency": null,
+            "amount_text": "6.199999999999999"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/leffe-brune-dark-beer-330ml"
     },
     {
-        "name": "Leffe Blonde Beer 330ml",
-        "price": "5.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Leffe Blonde Beer",
+        "price": {
+            "amount": "5.800000000000001",
+            "currency": null,
+            "amount_text": "5.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/leffe-blonde-beer-330ml"
     },
     {
-        "name": "Fuller's London Pride 330ml",
-        "price": "6.8",
+        "vendor": "alcoholdelivery",
+        "name": "Fuller's London Pride",
+        "price": {
+            "amount": "6.8",
+            "currency": null,
+            "amount_text": "6.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/fullers-london-pride-330ml"
     },
     {
-        "name": "James Squire 150 Lashes Pale Ale 345ml",
-        "price": "6.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "James Squire 150 Lashes Pale Ale",
+        "price": {
+            "amount": "6.800000000000001",
+            "currency": null,
+            "amount_text": "6.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/james-squire-150-lashes-pale-ale-345ml"
     },
     {
-        "name": "Thirsty Asia Singapore Golden Ale 330ml",
-        "price": "5.5",
+        "vendor": "alcoholdelivery",
+        "name": "Thirsty Asia Singapore Golden Ale",
+        "price": {
+            "amount": "5.5",
+            "currency": null,
+            "amount_text": "5.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/thirsty-asia-singapore-golden-ale-330ml"
     },
     {
-        "name": "Thirsty Asia Tavern\u2019s Cask English Ale 330ml",
-        "price": "5.5",
+        "vendor": "alcoholdelivery",
+        "name": "Thirsty Asia Tavern\u2019s Cask English Ale",
+        "price": {
+            "amount": "5.5",
+            "currency": null,
+            "amount_text": "5.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/thirsty-asia-taverns-cask-english-ale-330ml"
     },
     {
-        "name": "Chimay Red 330ml",
-        "price": "10.1",
+        "vendor": "alcoholdelivery",
+        "name": "Chimay Red",
+        "price": {
+            "amount": "10.1",
+            "currency": null,
+            "amount_text": "10.1"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/chimay-red-330ml"
     },
     {
-        "name": "Grolsch Swing Top 450ml",
-        "price": "8.8",
+        "vendor": "alcoholdelivery",
+        "name": "Grolsch Swing Top",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/grolsch-swing-top-450ml"
     },
     {
-        "name": "Tooheys New Beer 375ml",
-        "price": "5.300000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Tooheys New Beer",
+        "price": {
+            "amount": "5.300000000000001",
+            "currency": null,
+            "amount_text": "5.300000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/tooheys-new-beer-375ml"
     },
     {
-        "name": "Blue Moon Belgian White Beer 330ml",
-        "price": "6.5",
+        "vendor": "alcoholdelivery",
+        "name": "Blue Moon Belgian White Beer",
+        "price": {
+            "amount": "6.5",
+            "currency": null,
+            "amount_text": "6.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/blue-moon-belgian-white-beer-330ml"
     },
     {
-        "name": "Hahn Super Dry 330ml",
-        "price": "5.300000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Hahn Super Dry",
+        "price": {
+            "amount": "5.300000000000001",
+            "currency": null,
+            "amount_text": "5.300000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hahn-super-dry-330ml"
     },
     {
-        "name": "XXXX Gold Lager Beer 375ml",
-        "price": "5.2",
+        "vendor": "alcoholdelivery",
+        "name": "XXXX Gold Lager Beer",
+        "price": {
+            "amount": "5.2",
+            "currency": null,
+            "amount_text": "5.2"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/xxxx-gold-lager-beer-375ml"
     },
     {
-        "name": "Adam & Eve's Vertu 23 Carat Gold Luxury Beer 330ml",
-        "price": "15.9",
+        "vendor": "alcoholdelivery",
+        "name": "Adam & Eve's Vertu 23 Carat Gold Luxury Beer",
+        "price": {
+            "amount": "15.9",
+            "currency": null,
+            "amount_text": "15.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/adam-eves-vertu-23-carat-gold-luxury-beer-330ml"
     },
     {
-        "name": "Adam & Eve P\u00e9ch\u00e9 23 Carat Gold Luxury Beer 330ml",
-        "price": "15.9",
+        "vendor": "alcoholdelivery",
+        "name": "Adam & Eve P\u00e9ch\u00e9 23 Carat Gold Luxury Beer",
+        "price": {
+            "amount": "15.9",
+            "currency": null,
+            "amount_text": "15.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/adam-eve-peche-23-carat-gold-luxury-beer-330ml"
     },
     {
-        "name": "Bavaria Non-Alcoholic Beer 330ml",
-        "price": "2.2000003333",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Non-Alcoholic Beer",
+        "price": {
+            "amount": "2.2000003333",
+            "currency": null,
+            "amount_text": "2.2000003333"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-non-alcoholic-beer-330ml"
     },
     {
-        "name": "Bavaria Radler Lemon Beer Pint 330ml",
-        "price": "2.95",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Radler Lemon Beer Pint",
+        "price": {
+            "amount": "2.95",
+            "currency": null,
+            "amount_text": "2.95"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-radler-lemon-beer-pint-330ml"
     },
     {
-        "name": "Bavaria Premium Beer 330ml",
-        "price": "3.2",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Premium Beer",
+        "price": {
+            "amount": "3.2",
+            "currency": null,
+            "amount_text": "3.2"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-premium-beer-330ml"
     },
     {
-        "name": "Bavaria Premium Beer Pint 330ml",
-        "price": "3.9000000000000004",
+        "vendor": "alcoholdelivery",
+        "name": "Bavaria Premium Beer Pint",
+        "price": {
+            "amount": "3.9000000000000004",
+            "currency": null,
+            "amount_text": "3.9000000000000004"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/bavaria-premium-beer-pint-330ml"
     },
     {
-        "name": "Kirin Ichiban Beer 330ml",
-        "price": "5.95",
+        "vendor": "alcoholdelivery",
+        "name": "Kirin Ichiban Beer",
+        "price": {
+            "amount": "5.95",
+            "currency": null,
+            "amount_text": "5.95"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kirin-ichiban-beer-330ml"
     },
     {
-        "name": "Kingfisher Lager Beer 330ml",
-        "price": "5.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Kingfisher Lager Beer",
+        "price": {
+            "amount": "5.800000000000001",
+            "currency": null,
+            "amount_text": "5.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kingfisher-lager-beer-330ml"
     },
     {
-        "name": "Kingfisher Premium Extra Strong 500ml",
-        "price": "7.8",
+        "vendor": "alcoholdelivery",
+        "name": "Kingfisher Premium Extra Strong",
+        "price": {
+            "amount": "7.8",
+            "currency": null,
+            "amount_text": "7.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kingfisher-premium-extra-strong-500ml"
     },
     {
-        "name": "Tsingtao Beer 330ml",
-        "price": "4.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Tsingtao Beer",
+        "price": {
+            "amount": "4.800000000000001",
+            "currency": null,
+            "amount_text": "4.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/tsingtao-beer-330ml"
     },
     {
-        "name": "Sapporo Pint Beer 330ml",
-        "price": "4.7",
+        "vendor": "alcoholdelivery",
+        "name": "Sapporo Pint Beer",
+        "price": {
+            "amount": "4.7",
+            "currency": null,
+            "amount_text": "4.7"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/sapporo-pint-beer-330ml"
     },
     {
-        "name": "Paulaner Hefe Weissbier Non-Alcoholic 500ml",
-        "price": "4.1",
+        "vendor": "alcoholdelivery",
+        "name": "Paulaner Hefe Weissbier Non-Alcoholic",
+        "price": {
+            "amount": "4.1",
+            "currency": null,
+            "amount_text": "4.1"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/paulaner-hefe-weissbier-non-alcoholic-500ml"
     },
     {
-        "name": "Paulaner Hefe Weissbier Dunkel 500ml",
-        "price": "7.9",
+        "vendor": "alcoholdelivery",
+        "name": "Paulaner Hefe Weissbier Dunkel",
+        "price": {
+            "amount": "7.9",
+            "currency": null,
+            "amount_text": "7.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/paulaner-hefe-weissbier-dunkel-500ml"
     },
     {
-        "name": "Paulaner Hefe Weissbier Bottle 500ml",
-        "price": "7.9",
+        "vendor": "alcoholdelivery",
+        "name": "Paulaner Hefe Weissbier Bottle",
+        "price": {
+            "amount": "7.9",
+            "currency": null,
+            "amount_text": "7.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/paulaner-hefe-weissbier-bottle-500ml"
     },
     {
-        "name": "San Miguel Light 330ml",
-        "price": "4.9",
+        "vendor": "alcoholdelivery",
+        "name": "San Miguel Light",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/san-miguel-light-330ml"
     },
     {
-        "name": "Tiger Beer Pint 323ml",
-        "price": "5.5",
+        "vendor": "alcoholdelivery",
+        "name": "Tiger Beer Pint",
+        "price": {
+            "amount": "5.5",
+            "currency": null,
+            "amount_text": "5.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/tiger-beer-pint-323ml"
     },
     {
-        "name": "Pilsner Urquell 330ml",
-        "price": "5.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Pilsner Urquell",
+        "price": {
+            "amount": "5.800000000000001",
+            "currency": null,
+            "amount_text": "5.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/pilsner-urquell-330ml"
     },
     {
-        "name": "James Boag's Premium Lager 375ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "James Boag's Premium Lager",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/james-boags-premium-lager-375ml"
     },
     {
-        "name": "Victoria Bitter 375ml",
-        "price": "5.5",
+        "vendor": "alcoholdelivery",
+        "name": "Victoria Bitter",
+        "price": {
+            "amount": "5.5",
+            "currency": null,
+            "amount_text": "5.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/victoria-bitter-375ml"
     },
     {
-        "name": "O'Hara's Irish Stout 330ml",
-        "price": "5.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "O'Hara's Irish Stout",
+        "price": {
+            "amount": "5.800000000000001",
+            "currency": null,
+            "amount_text": "5.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/oharas-irish-stout-330ml"
     },
     {
-        "name": "Mac's Hop Rocker 330ml",
-        "price": "5.5",
+        "vendor": "alcoholdelivery",
+        "name": "Mac's Hop Rocker",
+        "price": {
+            "amount": "5.5",
+            "currency": null,
+            "amount_text": "5.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/macs-hop-rocker-330ml"
     },
     {
-        "name": "Mac's 3 Wolves 330ml",
-        "price": "5.5",
+        "vendor": "alcoholdelivery",
+        "name": "Mac's 3 Wolves",
+        "price": {
+            "amount": "5.5",
+            "currency": null,
+            "amount_text": "5.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/macs-3-wolves-330ml"
     },
     {
-        "name": "Heineken Quart 640ml",
-        "price": "8.8",
+        "vendor": "alcoholdelivery",
+        "name": "Heineken Quart",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/heineken-quart-640ml"
     },
     {
-        "name": "Falling Apple Cider 500ml",
-        "price": "9.3",
+        "vendor": "alcoholdelivery",
+        "name": "Falling Apple Cider",
+        "price": {
+            "amount": "9.3",
+            "currency": null,
+            "amount_text": "9.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/falling-apple-cider-500ml"
     },
     {
-        "name": "Peroni Nastro Azzuro 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Peroni Nastro Azzuro",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/peroni-nastro-azzuro-330ml"
     },
     {
-        "name": "Pure Blonde Ultra Low Carb Beer 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Pure Blonde Ultra Low Carb Beer",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/pure-blonde-ultra-low-carb-beer-330ml"
     },
     {
-        "name": "Miller Genuine Draft 355ml",
-        "price": "5.449999999999999",
+        "vendor": "alcoholdelivery",
+        "name": "Miller Genuine Draft",
+        "price": {
+            "amount": "5.449999999999999",
+            "currency": null,
+            "amount_text": "5.449999999999999"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/miller-genuine-draft-355ml"
     },
     {
-        "name": "Crown Lager 330ml",
-        "price": "5.9",
+        "vendor": "alcoholdelivery",
+        "name": "Crown Lager",
+        "price": {
+            "amount": "5.9",
+            "currency": null,
+            "amount_text": "5.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/crown-lager-330ml"
     },
     {
-        "name": "Steinlager Pure 355ml",
-        "price": "5.300000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Steinlager Pure",
+        "price": {
+            "amount": "5.300000000000001",
+            "currency": null,
+            "amount_text": "5.300000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/steinlager-pure-355ml"
     },
     {
-        "name": "Strongbow Gold Apple Cider 320ml",
-        "price": "4.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Strongbow Gold Apple Cider",
+        "price": {
+            "amount": "4.800000000000001",
+            "currency": null,
+            "amount_text": "4.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/strongbow-gold-apple-cider-320ml"
     },
     {
-        "name": "Guinness Draught Beer 440ml",
-        "price": "7.449999999999999",
+        "vendor": "alcoholdelivery",
+        "name": "Guinness Draught Beer",
+        "price": {
+            "amount": "7.449999999999999",
+            "currency": null,
+            "amount_text": "7.449999999999999"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/guinness-draught-beer-440ml"
     },
     {
-        "name": "Tiger Radler 323ml",
-        "price": "3.1",
+        "vendor": "alcoholdelivery",
+        "name": "Tiger Radler",
+        "price": {
+            "amount": "3.1",
+            "currency": null,
+            "amount_text": "3.1"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/tiger-radler-323ml"
     },
     {
-        "name": "Suntory Premium Malt Beer 334ml",
-        "price": "7.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Suntory Premium Malt Beer",
+        "price": {
+            "amount": "7.800000000000001",
+            "currency": null,
+            "amount_text": "7.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/suntory-premium-malt-beer-334ml"
     },
     {
-        "name": "Heineken Pint Bottle 330ml",
-        "price": "4.8",
+        "vendor": "alcoholdelivery",
+        "name": "Heineken Pint Bottle",
+        "price": {
+            "amount": "4.8",
+            "currency": null,
+            "amount_text": "4.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/heineken-pint-bottle-330ml"
     },
     {
-        "name": "Somersby Blackberry Cider 330ml",
-        "price": "5.3",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Blackberry Cider",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-blackberry-cider-330ml"
     },
     {
-        "name": "Somersby Pear Cider 330ml",
-        "price": "5.3",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Pear Cider",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-pear-cider-330ml"
     },
     {
-        "name": "Somersby Apple Cider 330ml",
-        "price": "5.3",
+        "vendor": "alcoholdelivery",
+        "name": "Somersby Apple Cider",
+        "price": {
+            "amount": "5.3",
+            "currency": null,
+            "amount_text": "5.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/somersby-apple-cider-330ml"
     },
     {
-        "name": "HITE Beer Bottle 330ml",
-        "price": "3.9000000000000004",
+        "vendor": "alcoholdelivery",
+        "name": "HITE Beer Bottle",
+        "price": {
+            "amount": "3.9000000000000004",
+            "currency": null,
+            "amount_text": "3.9000000000000004"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hite-beer-bottle-330ml"
     },
     {
-        "name": "Indo no Aooni 350ml",
-        "price": "6.9",
+        "vendor": "alcoholdelivery",
+        "name": "Indo no Aooni",
+        "price": {
+            "amount": "6.9",
+            "currency": null,
+            "amount_text": "6.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/indo-no-aooni-350ml"
     },
     {
-        "name": "Wednesday's Cat 350ml",
-        "price": "6.9",
+        "vendor": "alcoholdelivery",
+        "name": "Wednesday's Cat",
+        "price": {
+            "amount": "6.9",
+            "currency": null,
+            "amount_text": "6.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/wednesdays-cat-350ml"
     },
     {
-        "name": "Yona Yona Ale 350ml",
-        "price": "6.9",
+        "vendor": "alcoholdelivery",
+        "name": "Yona Yona Ale",
+        "price": {
+            "amount": "6.9",
+            "currency": null,
+            "amount_text": "6.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/yona-yona-ale-350ml"
     },
     {
-        "name": "Hitachino Nest Espresso Stout 330ml",
-        "price": "9.5",
+        "vendor": "alcoholdelivery",
+        "name": "Hitachino Nest Espresso Stout",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hitachino-nest-espresso-stout-330ml"
     },
     {
-        "name": "Hitachino Nest Japanese Classic Ale 330ml",
-        "price": "9.5",
+        "vendor": "alcoholdelivery",
+        "name": "Hitachino Nest Japanese Classic Ale",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hitachino-nest-japanese-classic-ale-330ml"
     },
     {
-        "name": "Kilkenny Irish Ale 440ml",
-        "price": "7.4",
+        "vendor": "alcoholdelivery",
+        "name": "Kilkenny Irish Ale",
+        "price": {
+            "amount": "7.4",
+            "currency": null,
+            "amount_text": "7.4"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kilkenny-irish-ale-440ml"
     },
     {
-        "name": "Taiwan Fruit Beer Sweet Touch White Grape 330ml",
-        "price": "4.5",
+        "vendor": "alcoholdelivery",
+        "name": "Taiwan Fruit Beer Sweet Touch White Grape",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/taiwan-fruit-beer-sweet-touch-white-grape-330ml"
     },
     {
-        "name": "Hitachino Nest Red Rice Ale 330ml",
-        "price": "9.5",
+        "vendor": "alcoholdelivery",
+        "name": "Hitachino Nest Red Rice Ale",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hitachino-nest-red-rice-ale-330ml"
     },
     {
-        "name": "Taiwan Fruit Beer Sweet Touch Lychee 330ml",
-        "price": "4.5",
+        "vendor": "alcoholdelivery",
+        "name": "Taiwan Fruit Beer Sweet Touch Lychee",
+        "price": {
+            "amount": "4.5",
+            "currency": null,
+            "amount_text": "4.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/taiwan-fruit-beer-sweet-touch-lychee-330ml"
     },
     {
-        "name": "Hitachino Nest Dai Mandarin IPA 330ml",
-        "price": "9.5",
+        "vendor": "alcoholdelivery",
+        "name": "Hitachino Nest Dai Mandarin IPA",
+        "price": {
+            "amount": "9.5",
+            "currency": null,
+            "amount_text": "9.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hitachino-nest-dai-mandarin-ipa-330ml"
     },
     {
-        "name": "Kronenbourg 1664 330ml",
-        "price": "4.9",
+        "vendor": "alcoholdelivery",
+        "name": "Kronenbourg 1664",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kronenbourg-1664-330ml"
     },
     {
-        "name": "Kronenbourg 1664 Blanc 330ml",
-        "price": "5.85",
+        "vendor": "alcoholdelivery",
+        "name": "Kronenbourg 1664 Blanc",
+        "price": {
+            "amount": "5.85",
+            "currency": null,
+            "amount_text": "5.85"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/kronenbourg-1664-blanc-330ml"
     },
     {
-        "name": "Hitachino Nest White Ale 330ml",
-        "price": "8.8",
+        "vendor": "alcoholdelivery",
+        "name": "Hitachino Nest White Ale",
+        "price": {
+            "amount": "8.8",
+            "currency": null,
+            "amount_text": "8.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hitachino-nest-white-ale-330ml"
     },
     {
-        "name": "Warsteiner Premium Verum 330ml",
-        "price": "5.8",
+        "vendor": "alcoholdelivery",
+        "name": "Warsteiner Premium Verum",
+        "price": {
+            "amount": "5.8",
+            "currency": null,
+            "amount_text": "5.8"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/warsteiner-premium-verum-330ml"
     },
     {
-        "name": "Guinness Stout 320ml",
-        "price": "4.9",
+        "vendor": "alcoholdelivery",
+        "name": "Guinness Stout",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/guinness-stout-320ml"
     },
     {
-        "name": "Duvel Belgium 330ml",
-        "price": "8.5",
+        "vendor": "alcoholdelivery",
+        "name": "Duvel Belgium",
+        "price": {
+            "amount": "8.5",
+            "currency": null,
+            "amount_text": "8.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/duvel-belgium-330ml"
     },
     {
-        "name": "Chimay Tripel 330ml",
-        "price": "10.7",
+        "vendor": "alcoholdelivery",
+        "name": "Chimay Tripel",
+        "price": {
+            "amount": "10.7",
+            "currency": null,
+            "amount_text": "10.7"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/chimay-tripel-330ml"
     },
     {
-        "name": "Stella Artois 330ml",
-        "price": "4.6",
+        "vendor": "alcoholdelivery",
+        "name": "Stella Artois",
+        "price": {
+            "amount": "4.6",
+            "currency": null,
+            "amount_text": "4.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/stella-artois-330ml"
     },
     {
-        "name": "Chimay Blue 330ml",
-        "price": "11.9",
+        "vendor": "alcoholdelivery",
+        "name": "Chimay Blue",
+        "price": {
+            "amount": "11.9",
+            "currency": null,
+            "amount_text": "11.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/chimay-blue-330ml"
     },
     {
-        "name": "Little Creatures Pale Ale 330ml",
-        "price": "6.85",
+        "vendor": "alcoholdelivery",
+        "name": "Little Creatures Pale Ale",
+        "price": {
+            "amount": "6.85",
+            "currency": null,
+            "amount_text": "6.85"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/little-creatures-pale-ale-330ml"
     },
     {
-        "name": "Budweiser 355ml",
-        "price": "4.6",
+        "vendor": "alcoholdelivery",
+        "name": "Budweiser",
+        "price": {
+            "amount": "4.6",
+            "currency": null,
+            "amount_text": "4.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/budweiser-355ml"
     },
     {
-        "name": "Corona Extra 355ml",
-        "price": "4.3",
+        "vendor": "alcoholdelivery",
+        "name": "Corona Extra",
+        "price": {
+            "amount": "4.3",
+            "currency": null,
+            "amount_text": "4.3"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/corona-extra-355ml"
     },
     {
-        "name": "Erdinger Dunkel 500ml",
-        "price": "7.6",
+        "vendor": "alcoholdelivery",
+        "name": "Erdinger Dunkel",
+        "price": {
+            "amount": "7.6",
+            "currency": null,
+            "amount_text": "7.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/erdinger-dunkel-500ml"
     },
     {
-        "name": "Erdinger Weissbier 500ml",
-        "price": "7.6",
+        "vendor": "alcoholdelivery",
+        "name": "Erdinger Weissbier",
+        "price": {
+            "amount": "7.6",
+            "currency": null,
+            "amount_text": "7.6"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/erdinger-weissbier-500ml"
     },
     {
-        "name": "Hoegaarden Rosee 250ml",
-        "price": "3.85",
+        "vendor": "alcoholdelivery",
+        "name": "Hoegaarden Rosee",
+        "price": {
+            "amount": "3.85",
+            "currency": null,
+            "amount_text": "3.85"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hoegaarden-rosee-250ml"
     },
     {
-        "name": "Hoegaarden White Beer 330ml",
-        "price": "4.1",
+        "vendor": "alcoholdelivery",
+        "name": "Hoegaarden White Beer",
+        "price": {
+            "amount": "4.1",
+            "currency": null,
+            "amount_text": "4.1"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/hoegaarden-white-beer-330ml"
     },
     {
-        "name": "Asahi Dry Black 334ml",
-        "price": "5.800000000000001",
+        "vendor": "alcoholdelivery",
+        "name": "Asahi Dry Black",
+        "price": {
+            "amount": "5.800000000000001",
+            "currency": null,
+            "amount_text": "5.800000000000001"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/asahi-dry-black-334ml"
     },
     {
-        "name": "Asahi Super Dry 334ml",
-        "price": "4.9",
+        "vendor": "alcoholdelivery",
+        "name": "Asahi Super Dry",
+        "price": {
+            "amount": "4.9",
+            "currency": null,
+            "amount_text": "4.9"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/asahi-super-dry-334ml"
     },
     {
-        "name": "Heineken 330ml",
-        "price": "3.7",
+        "vendor": "alcoholdelivery",
+        "name": "Heineken",
+        "price": {
+            "amount": "3.7",
+            "currency": null,
+            "amount_text": "3.7"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/heineken-330ml"
     },
     {
-        "name": "Tiger Beer 323ml",
-        "price": "3.5",
+        "vendor": "alcoholdelivery",
+        "name": "Tiger Beer",
+        "price": {
+            "amount": "3.5",
+            "currency": null,
+            "amount_text": "3.5"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/tiger-beer-323ml"
     },
     {
-        "name": "Carlsberg 323ml",
-        "price": "3.4",
+        "vendor": "alcoholdelivery",
+        "name": "Carlsberg",
+        "price": {
+            "amount": "3.4",
+            "currency": null,
+            "amount_text": "3.4"
+        },
         "quantity": 1,
         "url": "https://www.alcoholdelivery.com.sg/product/carlsberg-323ml"
     }
