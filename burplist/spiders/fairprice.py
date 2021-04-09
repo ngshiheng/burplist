@@ -77,7 +77,7 @@ class FairPriceSpider(scrapy.Spider):
             yield loader.load_item()
 
         has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
-        if has_next_page is not None:
+        if has_next_page is True:
             self.params['page'] += 1
             next_page = self.BASE_URL + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)
