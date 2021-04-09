@@ -27,3 +27,4 @@ jobs:
               run: |
                   pipenv run flake8 --ignore E501 --statistics --show-source
                   pipenv run scrapy check
+                  pipenv run python3 -m unittest

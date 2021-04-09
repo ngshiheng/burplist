@@ -33,3 +33,11 @@ https://github.com/croqaz/awesome-scrapy
 ## Item Loader
 
 https://towardsdatascience.com/demystifying-scrapy-item-loaders-ffbc119d592a
+
+## Unit Testing
+
+https://stackoverflow.com/questions/6456304/scrapy-unit-testing
+
+```sh
+pipenv run python3 -m unittest
+```
