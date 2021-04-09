@@ -20,8 +20,9 @@ class BurplistTest(unittest.TestCase):
         self.assertEqual(self.spider._get_product_quantity('Somersby Seltzer Mango & Passionfruit Can 3s X 330ml'), 3)
 
     def test_parse_name(self):
-        self.assertEqual(parse_name('Red Racer North West Pale Ale 320ml'), 'Red Racer North West Pale Ale')
-        self.assertEqual(parse_name('Founders Brewing Co. All Day IPA (568ml)'), 'Founders Brewing Co. All Day IPA')
         self.assertEqual(parse_name('Tiger Beer 24sX320ML'), 'Tiger Beer')
         self.assertEqual(parse_name('Bira 91 White Bottle 6sX330ml'), 'Bira 91 White Bottle')
+        self.assertEqual(parse_name('Red Racer North West Pale Ale 320ml'), 'Red Racer North West Pale Ale')
         self.assertEqual(parse_name('Somersby Blackberry Cider [CANS] 330ml'), 'Somersby Blackberry Cider')
+        self.assertEqual(parse_name('Founders Brewing Co. All Day IPA (568ml)'), 'Founders Brewing Co. All Day IPA')
+        self.assertEqual(parse_name('Carlsberg Danish Can Beer - Wheat (Alcohol Free)'), 'Carlsberg Danish Can Beer - Wheat')

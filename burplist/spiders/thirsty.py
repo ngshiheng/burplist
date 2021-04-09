@@ -6,7 +6,7 @@ from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
 
 
-class ColdStorageSpider(scrapy.Spider):
+class ThirstySpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Do note that this site uses infinite scrolling
@@ -21,7 +21,7 @@ class ColdStorageSpider(scrapy.Spider):
     }
 
     def _get_product_quantity(self, display_unit: str) -> int:
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # Example: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
         return int(quantity[0]) if len(quantity) != 1 else 1
 
     def start_requests(self):

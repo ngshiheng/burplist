@@ -86,7 +86,7 @@ class DuplicatePricePipeline:
         if price is not None:
             current_price = float(price.amount)  # `.amount` is type of `<class 'decimal.Decimal'>`
         else:
-            raise DropItem(f'Dropping item because item <{url}> still does not have a price.')
+            raise DropItem(f'Dropping item because item <{url}> does not have a price.')
 
         existing_product = session.query(Product).filter_by(url=url, quantity=quantity).first()
 
@@ -94,7 +94,7 @@ class DuplicatePricePipeline:
             last_price = session.query(Price).filter_by(product=existing_product).order_by(Price.id.desc()).first()
 
             if last_price.price == current_price:
-                raise DropItem(f'Dropping item because item <{url}> still remains at the same price since {last_price.updated_on}.')
+                raise DropItem(f'Dropping item because item <{url}> remains at the same price since {last_price.updated_on}.')
 
             else:
                 price = Price(

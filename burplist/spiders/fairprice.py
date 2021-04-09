@@ -53,7 +53,7 @@ class FairPriceSpider(scrapy.Spider):
     def _get_product_quantity(self, product: dict) -> int:
         metadata = product.get('metaData')
         display_unit = metadata['DisplayUnit']
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # Example: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
 
         return int(quantity[0]) if len(quantity) != 1 else 1
 
