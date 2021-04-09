@@ -13,10 +13,10 @@ class ColdStorageSpider(scrapy.Spider):
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider']
 
     def _get_product_quantity(self, raw_name: str) -> int:
-        if 'sX' in raw_name:
-            raw_quantity_with_name = re.split('sX', raw_name, flags=re.IGNORECASE)[0]  # Example: "Super Dry Draft 6sX350ml"
-            quantity = raw_quantity_with_name.split(' ')[-1]
-            return int(quantity)
+        raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)
+        if raw_quantity_with_name:
+            raw_quantity = raw_quantity_with_name.group().split(' ')
+            return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
         else:
             return 1
 
