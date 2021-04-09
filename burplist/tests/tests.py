@@ -26,3 +26,4 @@ class BurplistTest(unittest.TestCase):
         self.assertEqual(parse_name('Somersby Blackberry Cider [CANS] 330ml'), 'Somersby Blackberry Cider')
         self.assertEqual(parse_name('Founders Brewing Co. All Day IPA (568ml)'), 'Founders Brewing Co. All Day IPA')
         self.assertEqual(parse_name('Carlsberg Danish Can Beer - Wheat (Alcohol Free)'), 'Carlsberg Danish Can Beer - Wheat')
+        # self.assertEqual(parse_name('Somersby Seltzer Mango & Passionfruit Can 3s X 330ml'), 'Somersby Seltzer Mango & Passionfruit Can') # BUG: Fix this

@@ -10,8 +10,6 @@ class CraftBeerSGSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Product quantity might come in a Pack of 6, Pack of 16, Pack of 24 and etc. https://craftbeersg.com/product-category/beer/page/36/
-
-    BUG: Discounted item price are dropped.
     """
     name = 'craftbeersg'
     start_urls = ['https://craftbeersg.com/product-category/beer']
@@ -40,7 +38,7 @@ class CraftBeerSGSpider(scrapy.Spider):
 
             loader.add_value('vendor', self.name)
             loader.add_value('name', name)
-            loader.add_xpath('price', './span[@class="price"]/span/text()')
+            loader.add_xpath('price', './/span[@class="woocommerce-Price-amount amount"]/text()')
             loader.add_value('quantity', quantity)
             loader.add_xpath('url', './a[@class="product-loop-title"]/@href')
             yield loader.load_item()

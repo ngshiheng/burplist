@@ -8,8 +8,6 @@ from scrapy.loader import ItemLoader
 class ColdStorageSpider(scrapy.Spider):
     """
     Extract data from raw HTML
-
-    BUG: "Somersby Seltzer Mango & Passionfruit Can 3s X"
     """
     name = 'coldstorage'
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider']
