@@ -10,9 +10,7 @@ Collect all the available beers (preferably craft beers) data in Singapore into 
 scrapy list|xargs -n 1 scrapy crawl
 ```
 
-## Run all spiders, in parallel
-
-_NOTE: Not tested, yet_
+### Run all spiders, in parallel
 
 ```sh
 scrapy list|xargs -n 1 -P 0 scrapy crawl
