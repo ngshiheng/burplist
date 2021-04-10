@@ -3,7 +3,8 @@ import datetime
 from scrapy.utils.project import get_project_settings
 from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import column_property, relationship
+from sqlalchemy.sql.expression import select
 
 Base = declarative_base()
 
@@ -20,6 +21,20 @@ def create_table(engine):
     Base.metadata.create_all(engine)
 
 
+class Price(Base):
+    __tablename__ = 'price'
+
+    id = Column(Integer, primary_key=True)
+    product_id = Column(Integer, ForeignKey('product.id'), nullable=False, index=True)
+    product = relationship('Product', backref='prices', cascade='delete')
+
+    price = Column('price', Float)
+    updated_on = Column(DateTime, default=datetime.datetime.utcnow)
+
+    def __repr__(self) -> str:
+        return f'Price(price={self.price}, product={self.product.name})'
+
+
 class Product(Base):
     __tablename__ = 'product'
 
@@ -29,19 +44,12 @@ class Product(Base):
     quantity = Column('quantity', Integer())
     url = Column('url', String())
 
-    def __repr__(self) -> str:
-        return f'Product(vendor={self.vendor})'
-
-
-class Price(Base):
-    __tablename__ = 'price'
-
-    id = Column(Integer, primary_key=True)
-    product_id = Column(Integer, ForeignKey('product.id'), nullable=False)
-    product = relationship('Product', backref='prices', cascade='delete')
-
-    price = Column('price', Float)
-    updated_on = Column(DateTime, default=datetime.datetime.utcnow)
+    last_price = column_property(
+        select([Price.price]).
+        where(Price.product_id == id).
+        order_by(Price.id.desc()).
+        as_scalar()
+    )
 
     def __repr__(self) -> str:
-        return f'Price(product={self.product})'
+        return f'Product({self.name}, vendor={self.vendor})'

@@ -91,10 +91,8 @@ class DuplicatePricePipeline:
         existing_product = session.query(Product).filter_by(url=url, quantity=quantity).first()
 
         if existing_product is not None:
-            last_price = session.query(Price).filter_by(product=existing_product).order_by(Price.id.desc()).first()
-
-            if last_price.price == current_price:
-                raise DropItem(f'Dropping item because item <{url}> remains at the same price since {last_price.updated_on}.')
+            if existing_product.last_price == current_price:
+                raise DropItem(f'Dropping item because item <{url}> has no price change.')
 
             else:
                 price = Price(

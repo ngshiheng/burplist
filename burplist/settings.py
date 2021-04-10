@@ -35,6 +35,7 @@ scrapy.utils.log._get_handler = _get_handler_custom
 
 # Burplist
 BOT_NAME = 'burplist'
+ENVIRONMENT = os.environ.get('ENVIRONMENT', 'development')
 
 SPIDER_MODULES = ['burplist.spiders']
 NEWSPIDER_MODULE = 'burplist.spiders'
