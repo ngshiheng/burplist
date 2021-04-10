@@ -24,39 +24,52 @@ class NewProductPricePipeline:
         engine = db_connect()
         create_table(engine)
         self.Session = sessionmaker(bind=engine)
+        self.products = []
+        self.prices = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         """
         This method is called for every item pipeline component
+        We save the Product object in self.products in a list so that it later be used for bulk saving
+        """
+        product = Product(
+            name=item['name'],
+            vendor=item['vendor'],
+            quantity=item['quantity'],
+            url=item['url'],
+        )
+        self.products.append(product)
+        self.prices.append(item['price'].amount)
+
+        return item
+
+    def close_spider(self, spider):
+        """
+        Saving all the scraped products and prices in bulk on spider close event
+
+        Sadly we currently have to use `return_defaults=True` while bulk saving Product objects which greatly reduces the performance gains of the bulk operation
+        Though prices do get inserted to the DB in bulk
+
+        Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
         """
         session = self.Session()
 
         try:
-            product = Product(
-                name=item['name'],
-                vendor=item['vendor'],
-                quantity=item['quantity'],
-                url=item['url'],
-            )
-            session.add(product)
+            logger.info('Saving products in bulk operation to the database.')
+            session.bulk_save_objects(self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 
-            price = Price(
-                price=item['price'].amount,
-                product=product
-            )
-            session.add(price)
-
+            logger.info('Saving prices in bulk operation to the database.')
+            prices = [Price(price=price, product_id=product.id) for product, price in zip(self.products, self.prices)]
+            session.bulk_save_objects(prices)
             session.commit()
 
         except Exception as error:
-            logger.exception(error, extra=dict(item=item, spider=spider))
+            logger.exception(error, extra=dict(spider=spider))
             session.rollback()
             raise
 
         finally:
             session.close()
-
-        return item
 
 
 class DuplicatePricePipeline:
@@ -72,6 +85,9 @@ class DuplicatePricePipeline:
     """
 
     def __init__(self):
+        """
+        Initializes database connection and sessionmaker
+        """
         engine = db_connect()
         create_table(engine)
         self.Session = sessionmaker(bind=engine)
@@ -91,10 +107,8 @@ class DuplicatePricePipeline:
         existing_product = session.query(Product).filter_by(url=url, quantity=quantity).first()
 
         if existing_product is not None:
-            last_price = session.query(Price).filter_by(product=existing_product).order_by(Price.id.desc()).first()
-
-            if last_price.price == current_price:
-                raise DropItem(f'Dropping item because item <{url}> remains at the same price since {last_price.updated_on}.')
+            if existing_product.last_price == current_price:
+                raise DropItem(f'Dropping item because item <{url}> has no price change.')
 
             else:
                 price = Price(
@@ -103,7 +117,7 @@ class DuplicatePricePipeline:
                 )
 
                 try:
-                    session.add(price)
+                    session.add(price)  # TODO: Use `bulk_update_mappings`
                     session.commit()
 
                 except Exception as error:
@@ -114,4 +128,5 @@ class DuplicatePricePipeline:
                 finally:
                     session.close()
 
+        session.close()
         return item

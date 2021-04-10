@@ -1,5 +1,6 @@
 import sentry_sdk
 from scrapy.exceptions import NotConfigured
+from scrapy.utils.project import get_project_settings
 
 
 class SentryLogging(object):
@@ -13,6 +14,9 @@ class SentryLogging(object):
             raise NotConfigured('Sentry DSN is missing.')
 
         extension = cls()
-        sentry_sdk.init(sentry_dsn)
+        sentry_sdk.init(
+            dsn=sentry_dsn,
+            environment=get_project_settings().get('ENVIRONMENT'),
+        )
 
         return extension

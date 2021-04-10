@@ -7,6 +7,7 @@ The goal here is to aggregate all the available beer (preferably craft beer) dat
 ### Without Proxy (For Development)
 
 ```sh
+# Omit `-o filename.json` if you do not want to generate the output in json
 pipenv run scrapy crawl alcoholdelivery -o alcoholdelivery.json
 pipenv run scrapy crawl beerforce -o beerforce.json
 pipenv run scrapy crawl coldstorage -o coldstorage.json
@@ -41,3 +42,9 @@ https://stackoverflow.com/questions/6456304/scrapy-unit-testing
 ```sh
 pipenv run python3 -m unittest
 ```
+
+## Bulk Insert in SQLAlchemy
+
+[I’m inserting 400,000 rows with the ORM and it’s really slow!](https://docs.sqlalchemy.org/en/13/faq/performance.html#i-m-inserting-400-000-rows-with-the-orm-and-it-s-really-slow)
+
+https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation

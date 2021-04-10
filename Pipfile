@@ -11,6 +11,7 @@ sqlalchemy = "*"
 psycopg2-binary = "*"
 colorlog = "*"
 sentry-sdk = "*"
+ipython = "*"
 
 [dev-packages]
 autopep8 = "*"

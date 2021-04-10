@@ -5608,5 +5608,27 @@
         },
         "quantity": 1,
         "url": "https://craftbeersg.com/product/boon-oude-geuze-vat-108/"
+    },
+    {
+        "vendor": "craftbeersg",
+        "name": "Root Sellers. Row Hard Root Beer",
+        "price": {
+            "amount": "10.50",
+            "currency": null,
+            "amount_text": "10.50"
+        },
+        "quantity": 1,
+        "url": "https://craftbeersg.com/product/root-sellers-row-hard-root-beer/"
+    },
+    {
+        "vendor": "craftbeersg",
+        "name": "Heretic Hard Seltzer Raspberry",
+        "price": {
+            "amount": "10.00",
+            "currency": null,
+            "amount_text": "10.00"
+        },
+        "quantity": 1,
+        "url": "https://craftbeersg.com/product/heretic-hard-seltzer-raspberry/"
     }
 ]
