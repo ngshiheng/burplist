@@ -112,4 +112,5 @@ class DuplicatePricePipeline:
                 finally:
                     session.close()
 
+        session.close()
         return item

@@ -7203,5 +7203,71 @@
         },
         "quantity": 1,
         "url": "https://www.thirsty.com.sg/collections/beer/products/gb023"
+    },
+    {
+        "vendor": "thirsty",
+        "name": "21st Amendment El Sully Mexican Cerveza Lager",
+        "price": {
+            "amount": "7.00",
+            "currency": "$",
+            "amount_text": "7.00"
+        },
+        "quantity": 1,
+        "url": "https://www.thirsty.com.sg/collections/beer/products/21005"
+    },
+    {
+        "vendor": "thirsty",
+        "name": "21st Amendment El Sully Mexican Cerveza Lager",
+        "price": {
+            "amount": "39.00",
+            "currency": "$",
+            "amount_text": "39.00"
+        },
+        "quantity": 6,
+        "url": "https://www.thirsty.com.sg/collections/beer/products/21005"
+    },
+    {
+        "vendor": "thirsty",
+        "name": "21st Amendment El Sully Mexican Cerveza Lager",
+        "price": {
+            "amount": "135.00",
+            "currency": "$",
+            "amount_text": "135.00"
+        },
+        "quantity": 24,
+        "url": "https://www.thirsty.com.sg/collections/beer/products/21005"
+    },
+    {
+        "vendor": "thirsty",
+        "name": "Brooklyn Vienna-style Amber Lager",
+        "price": {
+            "amount": "4.50",
+            "currency": "$",
+            "amount_text": "4.50"
+        },
+        "quantity": 1,
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bn001"
+    },
+    {
+        "vendor": "thirsty",
+        "name": "Brooklyn Vienna-style Amber Lager",
+        "price": {
+            "amount": "25.00",
+            "currency": "$",
+            "amount_text": "25.00"
+        },
+        "quantity": 6,
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bn001"
+    },
+    {
+        "vendor": "thirsty",
+        "name": "Brooklyn Vienna-style Amber Lager",
+        "price": {
+            "amount": "89.00",
+            "currency": "$",
+            "amount_text": "89.00"
+        },
+        "quantity": 24,
+        "url": "https://www.thirsty.com.sg/collections/beer/products/bn001"
     }
 ]
