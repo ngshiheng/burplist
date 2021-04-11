@@ -1,6 +1,9 @@
 import sentry_sdk
 from scrapy.exceptions import NotConfigured
 from scrapy.utils.project import get_project_settings
+from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
+
+settings = get_project_settings()
 
 
 class SentryLogging(object):
@@ -16,7 +19,9 @@ class SentryLogging(object):
         extension = cls()
         sentry_sdk.init(
             dsn=sentry_dsn,
-            environment=get_project_settings().get('ENVIRONMENT'),
+            traces_sample_rate=1.0,
+            environment=settings.get('ENVIRONMENT'),
+            integrations=[SqlalchemyIntegration()],
         )
 
         return extension
