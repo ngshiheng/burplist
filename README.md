@@ -22,6 +22,7 @@ scrapy list|xargs -n 1 -P 0 scrapy crawl
 # Omit `-o filename.json` if you do not want to generate the output in json
 pipenv run scrapy crawl alcoholdelivery -o alcoholdelivery.json
 pipenv run scrapy crawl beerforce -o beerforce.json
+pipenv run scrapy crawl brewerkz -o beerforce.json
 pipenv run scrapy crawl coldstorage -o coldstorage.json
 pipenv run scrapy crawl craftbeersg -o craftbeersg.json
 pipenv run scrapy crawl fairprice -o fairprice.json

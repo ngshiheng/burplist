@@ -6,6 +6,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import column_property, relationship
 from sqlalchemy.sql.expression import select
 
+settings = get_project_settings()
+
 Base = declarative_base()
 
 
@@ -14,7 +16,7 @@ def db_connect():
     Performs database connection using database settings from settings.py.
     Returns sqlalchemy engine instance
     """
-    return create_engine(get_project_settings().get('DATABASE_CONNECTION_STRING'))
+    return create_engine(settings.get('DATABASE_CONNECTION_STRING'))
 
 
 def create_table(engine):

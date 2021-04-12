@@ -9,10 +9,12 @@ def parse_name(name: str) -> str:
     """
     Remove units from the product name
     """
-    removed_units = re.sub(r'\w+ml', '', name, flags=re.IGNORECASE)  # E.g.: "320ml"
-    removed_brackets = re.sub(r'[\(\[].*?[\]\)]', '', removed_units)  # E.g.: "[CANS]"
+    remove_dashes = re.sub(r'-[\s?]', '', name)
+    remove_units = re.sub(r'\d*\sx?\s?\w+ml', '', remove_dashes, flags=re.IGNORECASE)  # E.g.: "Red Racer North West Pale Ale 320ml"
+    remove_brackets = re.sub(r'[\(\[].*?[\]\)]', '', remove_units)  # E.g.: "Somersby Blackberry Cider [CANS] 330ml"
+    remove_trailing_s = re.sub(r'\d+s$', '', remove_brackets, flags=re.IGNORECASE)  # FIXME: Figure out a better regex
 
-    return removed_brackets.strip()
+    return remove_trailing_s.strip()
 
 
 class ProductItem(scrapy.Item):
