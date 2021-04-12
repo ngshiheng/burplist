@@ -12,7 +12,7 @@ def parse_name(name: str) -> str:
     remove_dashes = re.sub(r'-[\s?]', '', name)
     remove_units = re.sub(r'\d*\sx?\s?\w+ml', '', remove_dashes, flags=re.IGNORECASE)  # E.g.: "Red Racer North West Pale Ale 320ml"
     remove_brackets = re.sub(r'[\(\[].*?[\]\)]', '', remove_units)  # E.g.: "Somersby Blackberry Cider [CANS] 330ml"
-    remove_trailing_s = re.sub(r'\d+s', '', remove_brackets, flags=re.IGNORECASE)  # FIXME: Figure out a better regex
+    remove_trailing_s = re.sub(r'\d+s$', '', remove_brackets, flags=re.IGNORECASE)  # FIXME: Figure out a better regex
 
     return remove_trailing_s.strip()
 

@@ -22,6 +22,9 @@ class BurplistTest(unittest.TestCase):
         self.assertEqual(parse_name('Circuit Breaker (New England IPA)- 6 x 330ml'), 'Circuit Breaker')
         self.assertEqual(parse_name('Green Gunpowder Double IPA Series: Resin Bomb - 24 x 330ml'), 'Green Gunpowder Double IPA Series: Resin Bomb')
 
+        # thirsty
+        self.assertEqual(parse_name('21ST AMENDMENT BREW FREE! OR DIE IPA'), '21ST AMENDMENT BREW FREE! OR DIE IPA')
+
 
 class ColdStorageSpiderTest(unittest.TestCase):
     def setUp(self):
