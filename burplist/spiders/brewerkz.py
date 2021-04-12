@@ -29,7 +29,7 @@ class BrewerkzSpider(scrapy.Spider):
             name = product.xpath('.//h4[@class="card-title"]/a/text()').get()
 
             loader.add_value('vendor', self.name)
-            loader.add_value('name', name)
+            loader.add_value('name', f'Brewerkz {name}')
             loader.add_xpath('price', './/span[@class="price price--withTax price--main"]')
             loader.add_value('quantity', self._get_product_quantity(name))
             loader.add_xpath('url', './/h4[@class="card-title"]/a/@href')
