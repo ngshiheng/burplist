@@ -14,10 +14,10 @@ logger = logging.getLogger(__name__)
 
 class NewProductPricePipeline:
     """
-    Main pipeline that save new products and their prices into database
+    Main pipeline that saves new products and their prices into database
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Initializes database connection and sessionmaker
         """
@@ -30,9 +30,9 @@ class NewProductPricePipeline:
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         """
         This method is called for every item pipeline component
-        We save the Product object in self.products in a list so that it later be used for bulk saving
+        We save each product as a dict in `self.products` list so that it later be used for bulk saving
         """
-        product = Product(
+        product = dict(
             name=item['name'],
             vendor=item['vendor'],
             quantity=item['quantity'],
@@ -43,7 +43,7 @@ class NewProductPricePipeline:
 
         return item
 
-    def close_spider(self, spider):
+    def close_spider(self, spider: Spider) -> None:
         """
         Saving all the scraped products and prices in bulk on spider close event
 
@@ -51,16 +51,18 @@ class NewProductPricePipeline:
         Though prices do get inserted to the DB in bulk
 
         Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
+
+        We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster.
         """
         session = self.Session()
 
         try:
             logger.info('Saving products in bulk operation to the database.')
-            session.bulk_save_objects(self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
+            session.bulk_insert_mappings(Product, self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 
             logger.info('Saving prices in bulk operation to the database.')
-            prices = [Price(price=price, product_id=product.id) for product, price in zip(self.products, self.prices)]
-            session.bulk_save_objects(prices)
+            prices = [dict(price=price, product_id=product['id']) for product, price in zip(self.products, self.prices)]
+            session.bulk_insert_mappings(Price, prices)
             session.commit()
 
         except Exception as error:
@@ -84,7 +86,7 @@ class DuplicatePricePipeline:
     Remove the product from the pipeline if it does not have any price changes
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Initializes database connection and sessionmaker
         """
