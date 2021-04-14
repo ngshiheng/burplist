@@ -144,5 +144,5 @@ DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db
     password=os.environ.get('PG_PASSWORD'),
     host=os.environ.get('PG_HOST', 'localhost'),
     port=os.environ.get('PG_PORT', '5432'),
-    db_name='burplist',
+    db_name=os.environ.get('PG_DATABASE', 'burplist'),
 )
