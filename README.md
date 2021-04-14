@@ -1,10 +1,11 @@
-# Burplist
+<h1 align="center"><strong>Burplist</strong></h1>
 
+<p align="center">
+  <img width="300" height="300" src="https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif">
+</p>
 <br />
 
-<div align="center"> <img src="https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif" width="200" height="200"/> </div>
-
-> Collect all the available beers (preferably craft beers) data in Singapore into a single location so that users can easy compare prices across different vendors and shops.
+> Collect all the available beers (preferably craft beers 🍻) data in Singapore into a single place so that users can easy compare prices across different vendors and shops.
 
 ## Start Crawling
 
