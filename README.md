@@ -1,6 +1,10 @@
 # Burplist
 
-Collect all the available beers (preferably craft beers) data in Singapore into a single location so that users can easy compare prices across different vendors and shops.
+<br />
+
+<div align="center"> <img src="https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif" width="200" height="200"/> </div>
+
+> Collect all the available beers (preferably craft beers) data in Singapore into a single location so that users can easy compare prices across different vendors and shops.
 
 ## Start Crawling
 
