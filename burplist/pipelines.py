@@ -12,68 +12,6 @@ from burplist.models import Price, Product, create_table, db_connect
 logger = logging.getLogger(__name__)
 
 
-class NewProductPricePipeline:
-    """
-    Main pipeline that saves new products and their prices into database
-    """
-
-    def __init__(self) -> None:
-        """
-        Initializes database connection and sessionmaker
-        """
-        engine = db_connect()
-        create_table(engine)
-        self.Session = sessionmaker(bind=engine)
-        self.products = []
-        self.prices = []
-
-    def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
-        """
-        This method is called for every item pipeline component
-        We save each product as a dict in `self.products` list so that it later be used for bulk saving
-        """
-        product = dict(
-            name=item['name'],
-            vendor=item['vendor'],
-            quantity=item['quantity'],
-            url=item['url'],
-        )
-        self.products.append(product)
-        self.prices.append(item['price'].amount)
-
-        return item
-
-    def close_spider(self, spider: Spider) -> None:
-        """
-        Saving all the scraped products and prices in bulk on spider close event
-
-        Sadly we currently have to use `return_defaults=True` while bulk saving Product objects which greatly reduces the performance gains of the bulk operation
-        Though prices do get inserted to the DB in bulk
-
-        Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
-
-        We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster.
-        """
-        session = self.Session()
-
-        try:
-            logger.info('Saving products in bulk operation to the database.')
-            session.bulk_insert_mappings(Product, self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
-
-            logger.info('Saving prices in bulk operation to the database.')
-            prices = [dict(price=price, product_id=product['id']) for product, price in zip(self.products, self.prices)]
-            session.bulk_insert_mappings(Price, prices)
-            session.commit()
-
-        except Exception as error:
-            logger.exception(error, extra=dict(spider=spider))
-            session.rollback()
-            raise
-
-        finally:
-            session.close()
-
-
 class DuplicatePricePipeline:
     """
     Check if a product already exist in pipeline and determine if it has price changes
@@ -94,43 +32,119 @@ class DuplicatePricePipeline:
         create_table(engine)
         self.Session = sessionmaker(bind=engine)
 
+        self.prices = []
+
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         adapter = ItemAdapter(item)
-        session = self.Session()
 
         url = adapter.get('url')
         quantity = adapter.get('quantity')
         price = adapter.get('price')
+
         if price is not None:
             current_price = float(price.amount)  # `.amount` is type of `<class 'decimal.Decimal'>`
         else:
-            session.close()  # Not sure if this helps
+            logger.warning(f'Item with <{url}> does not have a price.', extra=dict(url=url, quantity=quantity))
             raise DropItem(f'Dropping item because item <{url}> does not have a price.')
 
+        session = self.Session()
         existing_product = session.query(Product).filter_by(url=url, quantity=quantity).first()
+        session.close()
 
         if existing_product is not None:
             if existing_product.last_price == current_price:
-                session.close()  # Not sure if this helps
                 raise DropItem(f'Dropping item because item <{url}> has no price change.')
 
             else:
-                price = Price(
+                price = dict(
                     price=current_price,
-                    product=existing_product,
+                    product_id=existing_product.id,
                 )
+                self.prices.append(price)
+                raise DropItem(f'Dropping item <{url}> here after price update. We do not want duplicated products to be created in the following pipeline.')
 
-                try:
-                    session.add(price)  # TODO: Use `bulk_update_mappings`
-                    session.commit()
-
-                except Exception as error:
-                    logger.exception(error, extra=dict(item=item, spider=spider))
-                    session.rollback()
-                    raise
-
-                finally:
-                    session.close()
-
-        session.close()
         return item
+
+    def close_spider(self, spider: Spider) -> None:
+        """
+        Saving all the scraped products and prices in bulk on spider close event
+        We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster.
+        """
+        session = self.Session()
+
+        try:
+            session.bulk_insert_mappings(Price, self.prices)
+            session.commit()
+            logger.info(f'Saved {len(self.prices)} new prices for existing products to the database.')
+
+        except Exception as error:
+            logger.exception(error, extra=dict(spider=spider))
+            session.rollback()
+            raise
+
+        finally:
+            session.close()
+
+
+class NewProductPricePipeline:
+    """
+    Main pipeline that saves new products and their prices into database
+    """
+
+    def __init__(self) -> None:
+        """
+        Initializes database connection and sessionmaker
+        """
+        engine = db_connect()
+        create_table(engine)
+        self.Session = sessionmaker(bind=engine)
+
+        self.products = []
+        self.prices = []
+
+    def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
+        """
+        This method is called for every item pipeline component
+        We save each product as a dict in `self.products` list so that it later be used for bulk saving
+        """
+        adapter = ItemAdapter(item)
+
+        product = dict(
+            name=adapter['name'],
+            vendor=adapter['vendor'],
+            quantity=adapter['quantity'],
+            url=adapter['url'],
+        )
+        self.products.append(product)
+        self.prices.append(adapter['price'].amount)
+
+        return item
+
+    def close_spider(self, spider: Spider) -> None:
+        """
+        Saving all the scraped products and prices in bulk on spider close event
+
+        Sadly we currently have to use `return_defaults=True` while bulk saving Product objects which greatly reduces the performance gains of the bulk operation
+        Though prices do get inserted to the DB in bulk
+
+        Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
+        """
+        session = self.Session()
+
+        try:
+            session.bulk_insert_mappings(Product, self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
+            prices = [dict(price=price, product_id=product['id']) for product, price in zip(self.products, self.prices)]
+
+            session.bulk_insert_mappings(Price, prices)
+            session.commit()
+
+            logger.info(f'Saved {len(self.products)} new products in bulk operation to the database.')
+            logger.info(f'Saved {len(self.prices)} new prices in bulk operation to the database.')
+
+        except Exception as error:
+            logger.exception(error, extra=dict(spider=spider))
+            session.rollback()
+            raise
+
+        finally:
+            session.close()
