@@ -21,7 +21,7 @@ class BrewerkzSpider(scrapy.Spider):
             return 1
 
     def parse(self, response):
-        products = response.xpath('//li[@class="product"]')
+        products = response.xpath('//ul[@class="productGrid productGrid--maxCol3"]//li[@class="product"]')
 
         for product in products:
             loader = ItemLoader(item=ProductItem(), selector=product)

@@ -48,7 +48,7 @@ SCRAPER_API_KEY = os.environ.get('SCRAPER_API_KEY')
 # USER_AGENT = 'burplist (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = os.environ.get('ROBOTSTXT_OBEY', True)
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # Currently `CONCURRENT_REQUESTS` is set to 5 as we are using Scaper API free tier (https://www.scraperapi.com/pricing)
@@ -122,7 +122,7 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 HTTPCACHE_ENABLED = True
-# HTTPCACHE_EXPIRATION_SECS = 0
+HTTPCACHE_EXPIRATION_SECS = os.environ.get('HTTPCACHE_EXPIRATION_SECS', 0)
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
