@@ -5,6 +5,7 @@ from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, cre
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import column_property, relationship
 from sqlalchemy.sql.expression import select
+from sqlalchemy.sql.schema import UniqueConstraint
 
 settings = get_project_settings()
 
@@ -39,12 +40,14 @@ class Price(Base):
 
 class Product(Base):
     __tablename__ = 'product'
+    __table_args__ = (UniqueConstraint('quantity', 'url'),)
 
     id = Column(Integer, primary_key=True)
     vendor = Column('vendor', String())
     name = Column('name', String())
     quantity = Column('quantity', Integer())
     url = Column('url', String())
+    created_on = Column(DateTime, default=datetime.datetime.utcnow)
 
     last_price = column_property(
         select([Price.price]).
