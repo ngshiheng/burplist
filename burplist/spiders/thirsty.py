@@ -12,6 +12,8 @@ class ThirstySpider(scrapy.Spider):
     Do note that this site uses infinite scrolling
     """
     name = 'thirsty'
+    custom_settings = {'ROBOTSTXT_OBEY': False}
+
     BASE_URL = 'https://www.thirsty.com.sg/collections/beer?'
 
     params = {

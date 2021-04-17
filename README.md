@@ -12,8 +12,12 @@
 ### Run all spiders
 
 ```sh
-scrapy list|xargs -n 1 scrapy crawl
+pipenv run scrapy list|xargs -n 1 pipenv run scrapy crawl
+
+# Run on Heroku
+heroku run scrapy list|xargs -n 1 heroku run scrapy crawl
 ```
+
 
 ### Run all spiders, in parallel
 
@@ -31,7 +35,7 @@ pipenv run scrapy crawl brewerkz -o beerforce.json
 pipenv run scrapy crawl coldstorage -o coldstorage.json
 pipenv run scrapy crawl craftbeersg -o craftbeersg.json
 pipenv run scrapy crawl fairprice -o fairprice.json
-pipenv run scrapy crawl thirsty -o thristy.json --set=ROBOTSTXT_OBEY='False'
+pipenv run scrapy crawl thirsty -o thristy.json
 ```
 
 ### Using Proxy (For Production)
