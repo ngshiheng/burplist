@@ -9,26 +9,11 @@
 
 ## Start Crawling
 
-### Run all spiders
+## Run single spider
+
+Omit `-o filename.json` if you do **not** want to generate the output in json
 
 ```sh
-pipenv run scrapy list|xargs -n 1 pipenv run scrapy crawl
-
-# Run on Heroku
-heroku run scrapy list|xargs -n 1 heroku run scrapy crawl
-```
-
-
-### Run all spiders, in parallel
-
-```sh
-scrapy list|xargs -n 1 -P 0 scrapy crawl
-```
-
-### Without Proxy (For Development)
-
-```sh
-# Omit `-o filename.json` if you do not want to generate the output in json
 pipenv run scrapy crawl alcoholdelivery -o alcoholdelivery.json
 pipenv run scrapy crawl beerforce -o beerforce.json
 pipenv run scrapy crawl brewerkz -o beerforce.json
@@ -38,11 +23,25 @@ pipenv run scrapy crawl fairprice -o fairprice.json
 pipenv run scrapy crawl thirsty -o thristy.json
 ```
 
-### Using Proxy (For Production)
+### Run all spiders
+
+```sh
+pipenv run scrapy list | xargs -n 1 pipenv run scrapy crawl
+
+# Run on Heroku
+heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
+```
+
+### Run all spiders, in parallel
+
+```sh
+scrapy list | xargs -n 1 -P 0 scrapy crawl
+```
+
+## Using Proxy (For Production)
 
 ```sh
 export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
-pipenv run scrapy crawl coldstorage
 ```
 
 ## Database Schema
