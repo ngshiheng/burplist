@@ -1,5 +1,6 @@
 
 import logging
+from typing import Any, Dict, List
 
 from itemadapter import ItemAdapter
 from scrapy import Spider
@@ -99,8 +100,7 @@ class NewProductPricePipeline:
         create_table(engine)
         self.Session = sessionmaker(bind=engine)
 
-        self.products = []
-        self.prices = []
+        self.products: List[Dict[str, Any]] = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         """
@@ -114,9 +114,10 @@ class NewProductPricePipeline:
             vendor=adapter['vendor'],
             quantity=adapter['quantity'],
             url=adapter['url'],
+            price=adapter['price'].amount
         )
+
         self.products.append(product)
-        self.prices.append(adapter['price'].amount)
 
         return item
 
@@ -132,14 +133,16 @@ class NewProductPricePipeline:
         session = self.Session()
 
         try:
-            session.bulk_insert_mappings(Product, self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
-            prices = [dict(price=price, product_id=product['id']) for product, price in zip(self.products, self.prices)]
 
+            products = {frozenset(item.items()): item for item in self.products}.values()  # Remove duplicated dict in a list. Reference: https://www.geeksforgeek.org/python-removing-duplicate-dicts-in-list/
+            session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
+
+            prices = [dict(price=product['price'], product_id=product['id']) for product in products]
             session.bulk_insert_mappings(Price, prices)
             session.commit()
 
-            logger.info(f'Saved {len(self.products)} new products in bulk operation to the database.')
-            logger.info(f'Saved {len(self.prices)} new prices in bulk operation to the database.')
+            logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
+            logger.info(f'Saved {len(prices)} new prices in bulk operation to the database.')
 
         except Exception as error:
             logger.exception(error, extra=dict(spider=spider))
