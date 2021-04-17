@@ -15,12 +15,12 @@ if [[ "$1" == "weekly" ]]; then
     echo "Frequency: <Weekly> | Day of the week: <$2>"
     if [ "$(date +%u)" = "$2" ]; then
         echo "Starting 🕷 to get 🍻 data from the 🕸..."
-        # scrapy list | xargs -n 1 scrapy crawl
+        scrapy list | xargs -n 1 scrapy crawl
         echo "Finished running all 🕷."
     fi
 else
     echo "Frequency: <Now>"
     echo "Starting 🕷 to get 🍻 data from the 🕸..."
-    # scrapy list | xargs -n 1 scrapy crawl
+    scrapy list | xargs -n 1 scrapy crawl
     echo "Finished running all 🕷."
 fi
