@@ -96,6 +96,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 EXTENSIONS = {
     'burplist.extensions.SentryLogging': -1,
+    'scrapy.extensions.statsmailer.StatsMailer': 500,
     # 'scrapy.extensions.telnet.TelnetConsole': None,
 }
 
@@ -146,3 +147,14 @@ DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db
     port=os.environ.get('PG_PORT', '5432'),
     db_name=os.environ.get('PG_DATABASE', 'burplist'),
 )
+
+# Email Settings
+MAIL_FROM = os.environ.get('MAIL_FROM')
+MAIL_HOST = os.environ.get('MAIL_HOST')
+MAIL_PORT = os.environ.get('MAIL_PORT')
+MAIL_USER = os.environ.get('MAIL_USER')
+MAIL_PASS = os.environ.get('MAIL_PASS')
+MAIL_TLS = os.environ.get('MAIL_TLS', True)
+MAIL_SSL = os.environ.get('MAIL_SSL', True)
+
+STATSMAILER_RCPTS = [os.environ.get('STATSMAILER_RCPTS')]  # TODO: Get a list from environment variable
