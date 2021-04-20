@@ -96,9 +96,11 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 EXTENSIONS = {
     'burplist.extensions.SentryLogging': -1,
-    'scrapy.extensions.statsmailer.StatsMailer': 500,
     # 'scrapy.extensions.telnet.TelnetConsole': None,
 }
+if ENVIRONMENT == 'production':
+    EXTENSIONS['scrapy.extensions.statsmailer.StatsMailer'] = 500
+
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html

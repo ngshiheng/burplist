@@ -63,3 +63,44 @@ pipenv run python3 -m unittest
 [I’m inserting 400,000 rows with the ORM and it’s really slow!](https://docs.sqlalchemy.org/en/13/faq/performance.html#i-m-inserting-400-000-rows-with-the-orm-and-it-s-really-slow)
 
 https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
+
+## Useful SQL Queries
+
+To get the price list of all available products
+
+```sql
+SELECT
+	vendor AS "Vendor",
+	name AS "Product Name",
+	round(price::numeric, 2) AS "Price ($SGD)",
+	quantity AS "Quantity (Unit)",
+	round((price / quantity)::numeric, 2) AS "Price/Quantity ($SGD)",
+	url AS "Product Link",
+	TO_CHAR(price.updated_on::TIMESTAMP AT TIME ZONE 'SGT', 'dd/mm/yyyy') AS "Updated On (SGT)"
+FROM
+	product
+	INNER JOIN price ON price.product_id = product.id
+```
+
+## Querying Item With Scrapy Shell
+
+```python
+from sqlalchemy import and_
+from sqlalchemy.orm import sessionmaker
+from burplist.models import Price, Product, create_table, db_connect
+
+
+engine = db_connect()
+Session = sessionmaker(bind=engine)
+session = Session()
+
+url = 'https://coldstorage.com.sg/green-label-24s-5022003'
+quantity = 24
+
+try:
+    existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
+except Exception as e:
+    print(e)
+finally:
+    session.close()
+```
