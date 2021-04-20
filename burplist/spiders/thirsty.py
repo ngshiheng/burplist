@@ -1,9 +1,13 @@
+import logging
 import re
 from urllib.parse import urlencode
 
 import scrapy
+import sentry_sdk
 from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
+
+logger = logging.getLogger(__name__)
 
 
 class ThirstySpider(scrapy.Spider):
@@ -36,8 +40,20 @@ class ThirstySpider(scrapy.Spider):
         # NOTE: Because we don't have a way to determine if this request has next page, we would just stop following when `products` is not found
         if products:
             for product in products:
+                url = response.urljoin(product.xpath('.//a[@class="link-3 color-header"]/@href').get())
+
                 raw_prices = product.xpath('.//span[@class="color-header body-s"]/text()').getall()
                 display_units = product.xpath('.//p[@class="product-option-title body-xxs ml-5"]/text()').getall()
+
+                if len(raw_prices) != len(display_units):
+                    logger.warning('Mismatch length of `raw_prices` and `display_units`.')
+
+                    with sentry_sdk.push_scope() as scope:
+                        scope.set_extra('url', url)
+                        scope.set_extra('raw_prices', raw_prices)
+                        scope.set_extra('display_units', display_units)
+                        sentry_sdk.capture_message('Mismatch length of `raw_prices` and `display_units`.', 'warning')
+                    continue
 
                 for price, display_unit in zip(raw_prices, display_units):
                     loader = ItemLoader(item=ProductItem(), selector=product)
@@ -46,7 +62,7 @@ class ThirstySpider(scrapy.Spider):
                     loader.add_xpath('name', './/a[@class="link-3 color-header"]/text()')
                     loader.add_value('price', price)
                     loader.add_value('quantity', self._get_product_quantity(display_unit))
-                    loader.add_value('url', response.urljoin(product.xpath('.//a[@class="link-3 color-header"]/@href').get()))
+                    loader.add_value('url', url)
                     yield loader.load_item()
 
             self.params['page'] += 1
