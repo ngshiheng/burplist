@@ -1,4 +1,3 @@
-
 import logging
 from typing import Any, Dict, List
 
@@ -49,8 +48,15 @@ class DuplicatePricePipeline:
             raise DropItem(f'Dropping item because item <{url}> does not have a price.')
 
         session = self.Session()
-        existing_product = session.query(Product).filter_by(url=url, quantity=quantity).first()
-        session.close()
+        try:
+            existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
+
+        except Exception as exception:
+            logger.exception('An unexpected error has occurred.', extra=dict(exception=exception, url=url, quantity=quantity))
+            raise DropItem(f'Dropping item because item <{url}> because of an unexpected error.')
+
+        finally:
+            session.close()
 
         if existing_product is not None:
             if existing_product.last_price == current_price:
