@@ -10,9 +10,10 @@ def parse_name(name: str) -> str:
     Remove units from the product name
     """
     remove_dashes = re.sub(r'-[\s?]', '', name)
-    remove_units = re.sub(r'\d*\sx?\s?\w+ml', '', remove_dashes, flags=re.IGNORECASE)  # E.g.: "Red Racer North West Pale Ale 320ml"
-    remove_brackets = re.sub(r'[\(\[].*?[\]\)]', '', remove_units)  # E.g.: "Somersby Blackberry Cider [CANS] 330ml"
-    remove_trailing_s = re.sub(r'\d+s$', '', remove_brackets, flags=re.IGNORECASE)  # FIXME: Figure out a better regex
+    remove_brackets = re.sub(r'[\(\[].*?[\]\)]', '', remove_dashes)  # E.g.: "Somersby Blackberry Cider [CANS] 330ml"
+    remove_units = re.sub(r' \d*?s?\s?x?\s?\S+(ml)', '', remove_brackets, flags=re.IGNORECASE)  # E.g.: "Red Racer North West Pale Ale 320ml"
+    remove_abv = re.sub(r'ABV\s\d+.?\d*%', '', remove_units, flags=re.IGNORECASE)  # E.g.: Stone Sublimely Self Righteous Black IPA ABV 8.7%
+    remove_trailing_s = re.sub(r'\d+s$', '', remove_abv, flags=re.IGNORECASE)  # FIXME: Figure out a better regex
 
     return remove_trailing_s.strip()
 

@@ -25,6 +25,13 @@ class BurplistTest(unittest.TestCase):
         # thirsty
         self.assertEqual(parse_name('21ST AMENDMENT BREW FREE! OR DIE IPA'), '21ST AMENDMENT BREW FREE! OR DIE IPA')
 
+        # hopshop
+        self.assertEqual(parse_name('Moon Dog The Duke Of Chifley BA Barley Wine ABV 12.2%'), 'Moon Dog The Duke Of Chifley BA Barley Wine')
+        self.assertEqual(parse_name('Epic Alien Invasion Double IPA ABV 8%'), 'Epic Alien Invasion Double IPA')
+        self.assertEqual(parse_name('Mikkeller George Bourbon Barrel Aged Imperial Stout ABV 13.8%'), 'Mikkeller George Bourbon Barrel Aged Imperial Stout')
+        self.assertEqual(parse_name('Rocky Ridge Pine On You Crazy Diamond Imperial IPA ABV 8.85%'), 'Rocky Ridge Pine On You Crazy Diamond Imperial IPA')
+        self.assertEqual(parse_name('Rocky Ridge Raspberry Imperial Berliner Recipe v2.1 375mL ABV 6.5%	'), 'Rocky Ridge Raspberry Imperial Berliner Recipe v2.1')
+
 
 class ColdStorageSpiderTest(unittest.TestCase):
     def setUp(self):
