@@ -9,18 +9,17 @@
 
 ## Start Crawling
 
-## Run single spider
-
-Omit `-o filename.json` if you do **not** want to generate the output in json
+### Run single spider
 
 ```sh
-pipenv run scrapy crawl alcoholdelivery -o alcoholdelivery.json
-pipenv run scrapy crawl beerforce -o beerforce.json
-pipenv run scrapy crawl brewerkz -o beerforce.json
-pipenv run scrapy crawl coldstorage -o coldstorage.json
-pipenv run scrapy crawl craftbeersg -o craftbeersg.json
+# To list all spiders
+pipenv run scrapy crawl list
+
+# To run a single spider
 pipenv run scrapy crawl fairprice -o fairprice.json
-pipenv run scrapy crawl thirsty -o thristy.json
+
+# To run single spider with json output
+pipenv run scrapy crawl coldstorage -o coldstorage.json
 ```
 
 ### Run all spiders
