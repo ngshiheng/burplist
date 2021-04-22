@@ -70,6 +70,7 @@ To get the price list of all available products
 
 ```sql
 SELECT
+	product_id,
 	vendor AS "Vendor",
 	name AS "Product Name",
 	round(price::numeric, 2) AS "Price ($SGD)",
@@ -80,6 +81,8 @@ SELECT
 FROM
 	product
 	INNER JOIN price ON price.product_id = product.id
+ORDER BY
+	price / quantity ASC
 ```
 
 ## Querying Item With Scrapy Shell

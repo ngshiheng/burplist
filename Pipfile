@@ -16,6 +16,7 @@ ipython = "*"
 [dev-packages]
 autopep8 = "*"
 flake8 = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.9"

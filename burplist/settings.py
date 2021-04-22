@@ -98,8 +98,8 @@ EXTENSIONS = {
     'burplist.extensions.SentryLogging': -1,
     # 'scrapy.extensions.telnet.TelnetConsole': None,
 }
-if ENVIRONMENT == 'production':
-    EXTENSIONS['scrapy.extensions.statsmailer.StatsMailer'] = 500
+# if ENVIRONMENT == 'production':
+#     EXTENSIONS['scrapy.extensions.statsmailer.StatsMailer'] = 500
 
 
 # Configure item pipelines

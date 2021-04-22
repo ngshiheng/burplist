@@ -10,9 +10,9 @@ def get_proxy_url(url: str) -> str:
     We send all our requests to https://www.scraperapi.com/ API endpoint in order use their proxy servers
     This function converts regular URL to Scaper API's proxy URL
     """
-    SCRAPER_API_KEY = settings.get('SCRAPER_API_KEY')
-    if not SCRAPER_API_KEY:
+    scraper_api_key = settings.get('SCRAPER_API_KEY')
+    if not scraper_api_key:
         return url
 
-    param = {'api_key': SCRAPER_API_KEY, 'url': url}
+    param = {'api_key': scraper_api_key, 'url': url}
     return 'http://api.scraperapi.com/?' + urlencode(param)
