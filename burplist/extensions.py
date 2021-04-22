@@ -8,7 +8,7 @@ settings = get_project_settings()
 
 class SentryLogging(object):
     """
-    Send exceptions and errors to Sentry.
+    Send exceptions and errors to Sentry
     """
     @classmethod
     def from_crawler(cls, crawler):

@@ -16,7 +16,7 @@
 pipenv run scrapy crawl list
 
 # To run a single spider
-pipenv run scrapy crawl fairprice -o fairprice.json
+pipenv run scrapy crawl fairprice
 
 # To run single spider with json output
 pipenv run scrapy crawl coldstorage -o coldstorage.json

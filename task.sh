@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This bash script is written to be used along with Heroku Scheduler to run the spiders.
+# This bash script is written to be used along with Heroku Scheduler to run the spiders
 
 # Currently Heroku Scheduler only supports scheduling at every 10min/hour/day interval
 # Reference: https://dashboard.heroku.com/apps/burplist/scheduler

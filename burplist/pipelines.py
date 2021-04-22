@@ -75,7 +75,7 @@ class DuplicatePricePipeline:
     def close_spider(self, spider: Spider) -> None:
         """
         Saving all the scraped products and prices in bulk on spider close event
-        We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster.
+        We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster
         """
         session = self.Session()
 
