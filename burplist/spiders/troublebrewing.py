@@ -29,14 +29,13 @@ class TroubleBrewingSpider(scrapy.Spider):
 
         if sku.endswith('24B'):
             return 24
-        elif sku.endswith('12B'):
+        if sku.endswith('12B'):
             return 12
-        elif sku.endswith('6B'):
+        if sku.endswith('6B'):
             return 6
-        elif sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
+        if sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
             return 24
-        else:
-            return 1
+        return 1
 
     def parse(self, response):
         collections = response.xpath('//a[@class="product-link js-product-link"]/@href')

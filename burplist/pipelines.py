@@ -30,11 +30,12 @@ class DuplicatePricePipeline:
         """
         engine = db_connect()
         create_table(engine)
-        self.Session = sessionmaker(bind=engine)
+        self.session = sessionmaker(bind=engine)
 
         self.prices = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
+        assert spider
         adapter = ItemAdapter(item)
 
         url = adapter.get('url')
@@ -47,13 +48,13 @@ class DuplicatePricePipeline:
             logger.warning(f'Item with <{url}> does not have a price.', extra=dict(url=url, quantity=quantity))
             raise DropItem(f'Dropping item because item <{url}> does not have a price.')
 
-        session = self.Session()
+        session = self.session()
         try:
             existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
 
         except Exception as exception:
             logger.exception('An unexpected error has occurred.', extra=dict(exception=exception, url=url, quantity=quantity))
-            raise DropItem(f'Dropping item because item <{url}> because of an unexpected error.')
+            raise DropItem(f'Dropping item because item <{url}> because of an unexpected error.') from exception
 
         finally:
             session.close()
@@ -62,13 +63,12 @@ class DuplicatePricePipeline:
             if existing_product.last_price == current_price:
                 raise DropItem(f'Dropping item because item <{url}> has no price change.')
 
-            else:
-                price = dict(
-                    price=current_price,
-                    product_id=existing_product.id,
-                )
-                self.prices.append(price)
-                raise DropItem(f'Dropping item <{url}> here after price update. We do not want duplicated products to be created in the following pipeline.')
+            price = dict(
+                price=current_price,
+                product_id=existing_product.id,
+            )
+            self.prices.append(price)
+            raise DropItem(f'Dropping item <{url}> here after price update. We do not want duplicated products to be created in the following pipeline.')
 
         return item
 
@@ -77,7 +77,7 @@ class DuplicatePricePipeline:
         Saving all the scraped products and prices in bulk on spider close event
         We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster
         """
-        session = self.Session()
+        session = self.session()
 
         try:
             session.bulk_insert_mappings(Price, self.prices)
@@ -104,7 +104,7 @@ class NewProductPricePipeline:
         """
         engine = db_connect()
         create_table(engine)
-        self.Session = sessionmaker(bind=engine)
+        self.session = sessionmaker(bind=engine)
 
         self.products: List[Dict[str, Any]] = []
 
@@ -113,6 +113,7 @@ class NewProductPricePipeline:
         This method is called for every item pipeline component
         We save each product as a dict in `self.products` list so that it later be used for bulk saving
         """
+        assert spider
         adapter = ItemAdapter(item)
 
         product = dict(
@@ -136,7 +137,7 @@ class NewProductPricePipeline:
 
         Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
         """
-        session = self.Session()
+        session = self.session()
 
         try:
 

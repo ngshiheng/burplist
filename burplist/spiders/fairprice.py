@@ -47,8 +47,8 @@ class FairPriceSpider(scrapy.Spider):
 
         if offer and offer[0]['price'] is not None:
             return str(offer[0]['price'])
-        else:
-            return product['storeSpecificData'][0]['mrp']
+
+        return product['storeSpecificData'][0]['mrp']
 
     def _get_product_quantity(self, product: dict) -> int:
         metadata = product.get('metaData')

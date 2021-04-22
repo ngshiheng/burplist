@@ -17,8 +17,7 @@ class BrewerkzSpider(scrapy.Spider):
         if raw_quantity_with_name:
             raw_quantity = re.split(r'x', raw_quantity_with_name.group(), flags=re.IGNORECASE)
             return int(raw_quantity[0])
-        else:
-            return 1
+        return 1
 
     def parse(self, response):
         products = response.xpath('//ul[@class="productGrid productGrid--maxCol3"]//li[@class="product"]')

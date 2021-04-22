@@ -17,8 +17,7 @@ class ColdStorageSpider(scrapy.Spider):
         if raw_quantity_with_name:
             raw_quantity = raw_quantity_with_name.group().split(' ')
             return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
-        else:
-            return 1
+        return 1
 
     def parse(self, response):
         products = response.xpath('//div[@class="product_box"]')

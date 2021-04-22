@@ -6,7 +6,7 @@ from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 settings = get_project_settings()
 
 
-class SentryLogging(object):
+class SentryLogging:
     """
     Send exceptions and errors to Sentry
     """
