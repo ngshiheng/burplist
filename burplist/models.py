@@ -44,7 +44,7 @@ class Product(Base):
 
     id = Column(Integer, primary_key=True)
     vendor = Column('vendor', String())
-    name = Column('name', String())
+    name = Column('name', String(), index=True)
     quantity = Column('quantity', Integer())
     url = Column('url', String())
     created_on = Column(DateTime, default=datetime.datetime.utcnow)
