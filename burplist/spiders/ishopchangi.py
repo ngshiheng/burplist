@@ -56,7 +56,7 @@ class IShopChangiSpider(scrapy.Spider):
         is_multiply = re.search(r'\d{3}ml[*]\d+', raw_name, flags=re.IGNORECASE)
         if is_multiply:
             quantity = int(re.split(r'[*]', is_multiply.group())[-1])
-            name = re.sub(is_multiply.group(), '', raw_name)
+            name = re.sub(r'[{0}]'.format(is_multiply.group()), '', raw_name, flags=re.IGNORECASE)
             return name, quantity
 
         # Lion City Meadery Hibiscus Blueberry Mead 330ml x 6
