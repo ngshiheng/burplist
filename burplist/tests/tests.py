@@ -3,6 +3,7 @@ import unittest
 from burplist.items import parse_name
 from burplist.spiders.brewerkz import BrewerkzSpider
 from burplist.spiders.coldstorage import ColdStorageSpider
+from burplist.spiders.ishopchangi import IShopChangiSpider
 
 
 class BurplistTest(unittest.TestCase):
@@ -32,6 +33,10 @@ class BurplistTest(unittest.TestCase):
         self.assertEqual(parse_name('Rocky Ridge Pine On You Crazy Diamond Imperial IPA ABV 8.85%'), 'Rocky Ridge Pine On You Crazy Diamond Imperial IPA')
         self.assertEqual(parse_name('Rocky Ridge Raspberry Imperial Berliner Recipe v2.1 375mL ABV 6.5%	'), 'Rocky Ridge Raspberry Imperial Berliner Recipe v2.1')
 
+        # ishopchangi
+        self.assertEqual(parse_name('6 Bottles Pack'), '6 Bottles Pack')
+        self.assertEqual(parse_name('La Chouffe Belgian Strong Golden Ale,'), 'La Chouffe Belgian Strong Golden Ale')
+
 
 class ColdStorageSpiderTest(unittest.TestCase):
     def setUp(self):
@@ -60,3 +65,15 @@ class BrewerkzSpiderTest(unittest.TestCase):
         self.assertEqual(self.spider._get_product_quantity('Afterburner Pacific Pale Ale - 6 x 330ml'), 6)
         self.assertEqual(self.spider._get_product_quantity('Circuit Breaker (New England IPA)- 6 x 330ml'), 6)
         self.assertEqual(self.spider._get_product_quantity('Green Gunpowder Double IPA Series: Resin Bomb - 24 x 330ml'), 24)
+
+
+class IShopChangiSpiderTest(unittest.TestCase):
+    def setUp(self):
+        self.spider = IShopChangiSpider()
+
+    def test_get_product_quantity(self):
+        self.assertEqual(self.spider._get_product_name_quantity('Ba Xian Tea Lager 3 Bottles Pack')[1], 3)
+        self.assertEqual(self.spider._get_product_name_quantity('6 Bottles Pack')[1], 6)
+        self.assertEqual(self.spider._get_product_name_quantity('La Chouffe Belgian Strong Golden Ale, 4x330ml')[1], 4)
+        self.assertEqual(self.spider._get_product_name_quantity('LA TRAPPE TRIPEL BOTTLE 330ML*3')[1], 3)
+        self.assertEqual(self.spider._get_product_name_quantity('Lion City Meadery Hibiscus Blueberry Mead 330ml x 6')[1], 6)

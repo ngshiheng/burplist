@@ -9,6 +9,7 @@ def parse_name(name: str) -> str:
     """
     Remove units from the product name
     """
+    name = re.sub(r'[,]$', '', name.strip())  # Remove trailing comma
     remove_dashes = re.sub(r'-[\s?]', '', name)
     remove_brackets = re.sub(r'[\(\[].*?[\]\)]', '', remove_dashes)  # E.g.: "Somersby Blackberry Cider [CANS] 330ml"
     remove_units = re.sub(r' \d*?s?\s?x?\s?\S+(ml)', '', remove_brackets, flags=re.IGNORECASE)  # E.g.: "Red Racer North West Pale Ale 320ml"
