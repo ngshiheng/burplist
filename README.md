@@ -50,3 +50,41 @@ https://dbdiagram.io/d/605d3ad2ecb54e10c33d5165
 ## Useful Scrapy Tools and Libraries
 
 https://github.com/croqaz/awesome-scrapy
+
+## Useful SQL Queries
+
+To get the price list of all available products
+
+```sql
+SELECT
+	product_id,
+	vendor AS "Vendor",
+	name AS "Product Name",
+	round(price::numeric, 2) AS "Price ($SGD)",
+	quantity AS "Quantity (Unit)",
+	round((price / quantity)::numeric, 2) AS "Price/Quantity ($SGD)",
+	url AS "Product Link",
+	TO_CHAR(price.updated_on::TIMESTAMP AT TIME ZONE 'SGT', 'dd/mm/yyyy') AS "Updated On (SGT)"
+FROM
+	product
+	INNER JOIN price ON price.product_id = product.id
+ORDER BY
+	price / quantity ASC
+```
+
+To get the number of prices of all available products
+
+```sql
+SELECT
+	product.id,
+	product.vendor AS "Vendor",
+	name AS "Product Name",
+	quantity AS "Quantity (Unit)",
+	url AS "Product Link",
+	count(price.product_id) AS "Number of Prices"
+FROM
+	product
+	LEFT JOIN price ON (product.id = price.product_id)
+GROUP BY
+	product.id
+```
