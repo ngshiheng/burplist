@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 class IShopChangiSpider(scrapy.Spider):
     """
     Parse data from site's API
+    Requires us to pass in specific `referer` in the request header
     """
     name = 'ishopchangi'
     custom_settings = {'ROBOTSTXT_OBEY': False}
