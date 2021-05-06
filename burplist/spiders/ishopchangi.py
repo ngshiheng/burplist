@@ -28,7 +28,7 @@ class IShopChangiSpider(scrapy.Spider):
     }
 
     headers = {
-        'referer': 'https://www.ishopchangi.com/en/category/wine-and-spirits/beers?' + urlencode({'cagCategory': {"/wine-and-spirits/beers/craft-beer": []}}),
+        'referer': 'https://www.ishopchangi.com/en/category/wine-and-spirits/beers?' + urlencode({'cagCategory': {'/wine-and-spirits/beers/craft-beer': []}}),
     }
 
     def _get_product_name_quantity(self, raw_name: str) -> Tuple[str, int]:
