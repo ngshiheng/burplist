@@ -140,7 +140,6 @@ class NewProductPricePipeline:
         session = self.session()
 
         try:
-
             products = {frozenset(item.items()): item for item in self.products}.values()  # Remove duplicated dict in a list. Reference: https://www.geeksforgeek.org/python-removing-duplicate-dicts-in-list/
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 

@@ -19,5 +19,5 @@ def get_proxy_url(url: str) -> str:
         return url
 
     proxied_url = 'http://api.scraperapi.com/?' + urlencode({'api_key': scraper_api_key, 'url': url})
-    logger.info(f'Scraping using Scraper API proxied URL <{proxied_url}>.')
+    logger.info(f'Scraping using Scraper API. URL <{url}>.')
     return proxied_url
