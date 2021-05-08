@@ -8,6 +8,12 @@ class BeerForceSpider(scrapy.Spider):
     Extract data from raw HTML
     Starting URL is from a base URL which contains different styles of beer
     Expect all of the product listed here are either in 'Single' quantity
+
+    Additional product information:
+    - Stock Availability
+    - Style (inside)
+    - Volume (inside)
+    - ABV (inside)
     """
     name = 'beerforce'
     start_urls = ['https://beerforce.sg/pages/all-styles']

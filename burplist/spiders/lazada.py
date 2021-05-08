@@ -22,6 +22,12 @@ class LazadaSpider(scrapy.Spider):
     The API structure is similar to Red Mart except that it does not have 'packageInfo'
 
     Set 'ROBOTSTXT_OBEY': False if you want to use Scrapy API proxy
+
+    Additional product information:
+    - Stock Availability
+    - Style (name)
+    - Volume (name)
+    - ABV (name)
     """
     name = 'lazada'
     custom_settings = {

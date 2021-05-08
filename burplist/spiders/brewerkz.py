@@ -8,6 +8,12 @@ from scrapy.loader import ItemLoader
 class BrewerkzSpider(scrapy.Spider):
     """
     Extract data from raw HTML
+
+    Additional product information:
+    - Stock Availability (inside)
+    - Style (name)
+    - Volume (name)
+    - ABV (inside)
     """
     name = 'brewerkz'
     start_urls = ['http://store.brewerkz.com/330ml-beer-can']

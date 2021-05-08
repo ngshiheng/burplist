@@ -10,6 +10,12 @@ class AlcoholDeliverySpider(scrapy.Spider):
     Parse data from site's API
     Site has 'Age Verification' modal
     Expect all of the product listed here are either in 'Single' or 'Keg'
+
+    Additional product information:
+    - Stock Availability
+    - Style (name)
+    - Volume (name)
+    - ABV (name)
     """
     name = 'alcoholdelivery'
     BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'

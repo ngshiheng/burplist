@@ -14,6 +14,12 @@ class IShopChangiSpider(scrapy.Spider):
     """
     Parse data from site's API
     Requires us to pass in specific `referer` in the request header
+
+    Additional product information:
+    - Stock Availability (?)
+    - Style (name)
+    - Volume (name)
+    - ABV (?)
     """
     name = 'ishopchangi'
     custom_settings = {'ROBOTSTXT_OBEY': False}

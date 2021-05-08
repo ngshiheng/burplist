@@ -7,6 +7,12 @@ class HopShopSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Page number based pagination
+
+    Additional product information:
+    - Stock Availability (inside, exact amount)
+    - Style (name)
+    - Volume (name)
+    - ABV (name)
     """
     name = 'hopshop'
     start_urls = ['https://www.hopshop.com.sg/beer/']

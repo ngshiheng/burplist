@@ -10,6 +10,12 @@ class CraftBeerSGSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Product quantity might come in a Pack of 6, Pack of 16, Pack of 24 and etc. https://craftbeersg.com/product-category/beer/page/36/
+
+    Additional product information:
+    - Stock Availability (inside)
+    - Style (inside)
+    - Volume (inside)
+    - ABV (inside)
     """
     name = 'craftbeersg'
     start_urls = ['https://craftbeersg.com/product-category/beer']

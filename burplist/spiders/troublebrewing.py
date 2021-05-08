@@ -18,6 +18,12 @@ class TroubleBrewingSpider(scrapy.Spider):
     var meta = {"product":{"id":4468579795059,"gid":"gid://shopify/Product/4468579795059","vendor":"Trouble Brewing Store","type":"Beer","variants":[{"id":31829208989811,"price":7700,"name":"Middle Child Wheat Beer - 24 pack","public_title":"24 pack","sku":"TCWB24B"},{"id":32061886857331,"price":4200,"name":"Middle Child Wheat Beer - 12 pack","public_title":"12 pack","sku":"TCWB12B"},{"id":31829224194163,"price":2200,"name":"Middle Child Wheat Beer - 6 pack","public_title":"6 pack","sku":"TCWB6B"}]},"page":{"pageType":"product","resourceType":"product","resourceId":4468579795059},"page_view_event_id":"9e681da76f7007fc67a3a5a2fee2501bba0089fc71f880ef6fe820cce2fce5ee","cart_event_id":"34099f8e9fac4792e8758a189e2bda70923c0d854dc4067398d5a7b104e4a719"};
     ...
     </script>
+
+    Additional product information:
+    - Stock Availability (inside)
+    - Style (name)
+    - Volume (inside)
+    - ABV (inside)
     """
     name = 'troublebrewing'
     start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']

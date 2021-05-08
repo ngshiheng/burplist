@@ -9,6 +9,12 @@ from scrapy.loader import ItemLoader
 class FairPriceSpider(scrapy.Spider):
     """
     Parse data from site's API
+
+    Additional product information:
+    - Stock Availability
+    - Style (name)
+    - Volume (name)
+    - ABV (inside, but could be missing)
     """
     name = 'fairprice'
     BASE_URL = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'

@@ -24,6 +24,12 @@ class RedMartSpider(scrapy.Spider):
     NOTE:
     - Whenever HTTPCACHE_ENABLED is True, retry requests doesn't seem to work well
     - I have a feeling that is because referer is being set with cached which Lazada endpoints don't seem to like it
+
+    Additional product information:
+    - Stock Availability
+    - Style (name)
+    - Volume (name)
+    - ABV (name)
     """
     name = 'redmart'
     custom_settings = {

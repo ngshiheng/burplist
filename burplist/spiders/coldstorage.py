@@ -9,6 +9,12 @@ class ColdStorageSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     API returns HTML
+
+    Additional product information:
+    - Stock Availability
+    - Style (name)
+    - Volume (name)
+    - ABV (inside, but could be missing)
     """
     name = 'coldstorage'
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider']
