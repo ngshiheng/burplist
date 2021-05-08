@@ -73,5 +73,5 @@ class RedMartSpider(scrapy.Spider):
                 loader.add_value('name', product['name'])
                 loader.add_value('price', product['price'])
                 loader.add_value('quantity', self._get_product_quantity(product['packageInfo']))
-                loader.add_value('url', product['productUrl'].replace('//', ''))
+                loader.add_value('url', 'https:' + product['productUrl'])
                 yield loader.load_item()

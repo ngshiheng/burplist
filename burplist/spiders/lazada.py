@@ -69,7 +69,7 @@ class LazadaSpider(scrapy.Spider):
                 loader.add_value('name', name)
                 loader.add_value('price', product['price'])
                 loader.add_value('quantity', quantity)
-                loader.add_value('url', product['productUrl'].replace('//', ''))
+                loader.add_value('url', 'https:' + product['productUrl'])
                 yield loader.load_item()
 
             self.params['page'] += 1
