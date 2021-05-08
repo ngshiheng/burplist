@@ -20,6 +20,8 @@ class LazadaSpider(scrapy.Spider):
     Parse data from site's API
     We need to use rotating proxy to scrape from Lazada
     The API structure is similar to Red Mart except that it does not have 'packageInfo'
+
+    Set 'ROBOTSTXT_OBEY': False if you want to use Scrapy API proxy
     """
     name = 'lazada'
     custom_settings = {
@@ -39,16 +41,9 @@ class LazadaSpider(scrapy.Spider):
         'page': 1,
     }
 
-    headers = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9',
-        'referer': f'{BASE_URL}page=' + str(params['page']),
-    }
-
     def start_requests(self):
         url = self.BASE_URL + urlencode(self.params)
-        yield scrapy.Request(url=get_proxy_url(url), callback=self.parse, headers=self.headers)
+        yield scrapy.Request(url=get_proxy_url(url), callback=self.parse)
 
     def parse(self, response):
         logger.info(response.request.headers)
@@ -80,4 +75,4 @@ class LazadaSpider(scrapy.Spider):
             self.params['page'] += 1
             if int(data['mainInfo']['page']) < 5:  # We only scrape up to 5 pages for Lazada. Anything beyond that are mostly trash
                 next_page = self.BASE_URL + urlencode(self.params)
-                yield response.follow(get_proxy_url(next_page), callback=self.parse, headers=self.headers)
+                yield response.follow(get_proxy_url(next_page), callback=self.parse)
