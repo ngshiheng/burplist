@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 class IShopChangiSpider(scrapy.Spider):
     """
     Parse data from site's API
+    Requires us to pass in specific `referer` in the request header
     """
     name = 'ishopchangi'
     custom_settings = {'ROBOTSTXT_OBEY': False}
@@ -27,7 +28,7 @@ class IShopChangiSpider(scrapy.Spider):
     }
 
     headers = {
-        'referer': 'https://www.ishopchangi.com/en/category/wine-and-spirits/beers?' + urlencode({'cagCategory': {"/wine-and-spirits/beers/craft-beer": []}}),
+        'referer': 'https://www.ishopchangi.com/en/category/wine-and-spirits/beers?' + urlencode({'cagCategory': {'/wine-and-spirits/beers/craft-beer': []}}),
     }
 
     def _get_product_name_quantity(self, raw_name: str) -> Tuple[str, int]:

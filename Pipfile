@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 colorlog = "*"
 sentry-sdk = "*"
 ipython = "*"
+scrapy-fake-useragent = "*"
 
 [dev-packages]
 autopep8 = "*"

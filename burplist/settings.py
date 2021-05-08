@@ -12,7 +12,7 @@ color_formatter = ColoredFormatter(
         '%(white)s %(name)s %(funcName)s %(bold_purple)s:%(lineno)d%(reset)s '
         '%(log_color)s%(message)s%(reset)s'
     ),
-    datefmt='%y-%m-%d %H:%M:%S',
+    datefmt='%d-%B-%y %H:%M:%S',
     log_colors={
         'DEBUG': 'blue',
         'INFO': 'bold_cyan',
@@ -53,7 +53,7 @@ ROBOTSTXT_OBEY = os.environ.get('ROBOTSTXT_OBEY', True)
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # Currently `CONCURRENT_REQUESTS` is set to 5 as we are using Scaper API free tier (https://www.scraperapi.com/pricing)
 CONCURRENT_REQUESTS = 5 if SCRAPER_API_KEY is not None else 16
-RETRY_TIMES = 5 if SCRAPER_API_KEY is not None else 0
+RETRY_TIMES = os.environ.get('RETRY_TIMES', 10)
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -79,17 +79,31 @@ DOWNLOAD_DELAY = 0 if SCRAPER_API_KEY is not None else 2
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
     # 'burplist.middlewares.BurplistSpiderMiddleware': 543,
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+    # 'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
 }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     # 'burplist.middlewares.BurplistDownloaderMiddleware': 543,
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
+    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
+    'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware': 401,
+    # 'scrapy_splash.SplashCookiesMiddleware': 723,
+    # 'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
+
+# scrapy-fake-useragent
+# https://github.com/alecxe/scrapy-fake-useragent
+FAKEUSERAGENT_PROVIDERS = [
+    'scrapy_fake_useragent.providers.FakeUserAgentProvider',  # This is the first provider we'll try
+    'scrapy_fake_useragent.providers.FakerProvider',  # If FakeUserAgentProvider fails, we'll use faker to generate a user-agent string for us
+    'scrapy_fake_useragent.providers.FixedUserAgentProvider',  # Fall back to USER_AGENT value
+]
+
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
 
 
 # Enable or disable extensions
@@ -132,9 +146,9 @@ HTTPCACHE_EXPIRATION_SECS = os.environ.get('HTTPCACHE_EXPIRATION_SECS', 0)
 
 
 # Splash
-SPLASH_URL = 'http://localhost:8050'
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+# SPLASH_URL = 'http://localhost:8050'
+# DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+# HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Sentry
 # https://stackoverflow.com/questions/25262765/handle-all-exception-in-scrapy-with-sentry
