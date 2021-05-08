@@ -55,7 +55,6 @@ class LazadaSpider(scrapy.Spider):
         data = response.json()
         if 'rgv587_flag' in data:
             error = f'Rate limited by Lazada. URL <{response.request.url}>.'
-            logger.warning(error)
 
             retry_request = get_retry_request(response.request, reason=error, spider=self)
             if retry_request:

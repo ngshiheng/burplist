@@ -20,14 +20,19 @@ class RedMartSpider(scrapy.Spider):
 
     - https://redmart.lazada.sg/shop-beer/?from=rm_nav_cate&m=redmart&rating=4
     - https://redmart.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?from=rm_nav_cate&m=redmart&rating=4
+
+    NOTE:
+    - Whenever HTTPCACHE_ENABLED is True, retry requests doesn't seem to work well
+    - I have a feeling that is because referer is being set with cached which Lazada endpoints don't seem to like it
     """
     name = 'redmart'
     custom_settings = {
-        'DOWNLOAD_DELAY': os.environ.get('REDMART_DOWNLOAD_DELAY', 60),
+        'DOWNLOAD_DELAY': os.environ.get('REDMART_DOWNLOAD_DELAY', 30),
         'DOWNLOADER_MIDDLEWARES': {
             **settings.get('DOWNLOADER_MIDDLEWARES'),
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
         },
+        'HTTPCACHE_ENABLED': False,
     }
 
     start_urls = [
@@ -51,7 +56,6 @@ class RedMartSpider(scrapy.Spider):
         data = response.json()
         if 'rgv587_flag' in data:
             error = f'Rate limited by Red Mart. URL <{response.request.url}>.'
-            logger.warning(error)
 
             retry_request = get_retry_request(response.request, reason=error, spider=self)
             if retry_request:

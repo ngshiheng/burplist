@@ -12,7 +12,7 @@ color_formatter = ColoredFormatter(
         '%(white)s %(name)s %(funcName)s %(bold_purple)s:%(lineno)d%(reset)s '
         '%(log_color)s%(message)s%(reset)s'
     ),
-    datefmt='%y-%m-%d %H:%M:%S',
+    datefmt='%d-%B-%y %H:%M:%S',
     log_colors={
         'DEBUG': 'blue',
         'INFO': 'bold_cyan',
