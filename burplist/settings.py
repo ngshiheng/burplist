@@ -53,7 +53,7 @@ ROBOTSTXT_OBEY = os.environ.get('ROBOTSTXT_OBEY', True)
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # Currently `CONCURRENT_REQUESTS` is set to 5 as we are using Scaper API free tier (https://www.scraperapi.com/pricing)
 CONCURRENT_REQUESTS = 5 if SCRAPER_API_KEY is not None else 16
-RETRY_TIMES = 5 if SCRAPER_API_KEY is not None else 0
+RETRY_TIMES = os.environ.get('RETRY_TIMES', 10)
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay

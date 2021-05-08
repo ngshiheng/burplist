@@ -6,6 +6,7 @@ import scrapy
 from burplist.items import ProductItem
 from burplist.utils.extractor import get_product_name_quantity
 from burplist.utils.proxy import get_proxy_url
+from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.loader import ItemLoader
 
 logger = logging.getLogger(__name__)
@@ -41,7 +42,13 @@ class LazadaSpider(scrapy.Spider):
     def parse(self, response):
         data = response.json()
         if 'rgv587_flag' in data:
-            raise ValueError(f'Rate limited by Lazada. URL <{response.request.url}>.')
+            error = f'Rate limited by Lazada. URL <{response.request.url}>.'
+            logger.warning(error)
+
+            retry_request = get_retry_request(response.request, reason=error, spider=self)
+            if retry_request:
+                yield retry_request
+            return
 
         products = data['mods']['listItems']
 
