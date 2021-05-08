@@ -6,8 +6,11 @@ import scrapy
 from burplist.items import ProductItem
 from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.loader import ItemLoader
+from scrapy.utils.project import get_project_settings
 
 logger = logging.getLogger(__name__)
+
+settings = get_project_settings()
 
 
 class RedMartSpider(scrapy.Spider):
@@ -21,7 +24,10 @@ class RedMartSpider(scrapy.Spider):
     name = 'redmart'
     custom_settings = {
         'DOWNLOAD_DELAY': os.environ.get('REDMART_DOWNLOAD_DELAY', 60),
-        'DOWNLOADER_MIDDLEWARES': {'burplist.middlewares.DelayedRequestsMiddleware': 100},
+        'DOWNLOADER_MIDDLEWARES': {
+            **settings.get('DOWNLOADER_MIDDLEWARES'),
+            'burplist.middlewares.DelayedRequestsMiddleware': 100,
+        },
     }
 
     start_urls = [
@@ -41,6 +47,7 @@ class RedMartSpider(scrapy.Spider):
         return 1
 
     def parse(self, response):
+        logger.info(response.request.headers)
         data = response.json()
         if 'rgv587_flag' in data:
             error = f'Rate limited by Red Mart. URL <{response.request.url}>.'

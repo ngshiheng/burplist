@@ -8,8 +8,11 @@ from burplist.utils.extractor import get_product_name_quantity
 from burplist.utils.proxy import get_proxy_url
 from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.loader import ItemLoader
+from scrapy.utils.project import get_project_settings
 
 logger = logging.getLogger(__name__)
+
+settings = get_project_settings()
 
 
 class LazadaSpider(scrapy.Spider):
@@ -22,7 +25,10 @@ class LazadaSpider(scrapy.Spider):
     custom_settings = {
         'ROBOTSTXT_OBEY': False,
         'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 60),
-        'DOWNLOADER_MIDDLEWARES': {'burplist.middlewares.DelayedRequestsMiddleware': 100},
+        'DOWNLOADER_MIDDLEWARES': {
+            **settings.get('DOWNLOADER_MIDDLEWARES'),
+            'burplist.middlewares.DelayedRequestsMiddleware': 100,
+        },
     }
 
     BASE_URL = 'https://www.lazada.sg/shop-beer/?'
@@ -45,6 +51,7 @@ class LazadaSpider(scrapy.Spider):
         yield scrapy.Request(url=get_proxy_url(url), callback=self.parse, headers=self.headers)
 
     def parse(self, response):
+        logger.info(response.request.headers)
         data = response.json()
         if 'rgv587_flag' in data:
             error = f'Rate limited by Lazada. URL <{response.request.url}>.'

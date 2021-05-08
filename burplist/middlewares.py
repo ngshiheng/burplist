@@ -114,7 +114,7 @@ class DelayedRequestsMiddleware(object):
     """
 
     def process_request(self, request, spider):
-        delay_s = request.meta.get('delay_request_by', 10)
+        delay_s = request.meta.get('delay_request_by', 5)
         spider.logger.info(f'Retrying request after {delay_s} seconds...')
 
         deferred = Deferred()
