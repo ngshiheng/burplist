@@ -1,8 +1,9 @@
 import logging
+import os
+import re
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.extractor import get_product_name_quantity
 from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.loader import ItemLoader
 
@@ -18,7 +19,10 @@ class RedMartSpider(scrapy.Spider):
     - https://redmart.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?from=rm_nav_cate&m=redmart&rating=4
     """
     name = 'redmart'
-    custom_settings = {'DOWNLOAD_DELAY': 20}
+    custom_settings = {
+        'DOWNLOAD_DELAY': os.environ.get('REDMART_DOWNLOAD_DELAY', 60),
+        'DOWNLOADER_MIDDLEWARES': {'burplist.middlewares.DelayedRequestsMiddleware': 100},
+    }
 
     start_urls = [
         f'https://redmart.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&from=rm_nav_cate&m=redmart&page={n}&rating=4'
@@ -27,6 +31,14 @@ class RedMartSpider(scrapy.Spider):
         f'https://redmart.lazada.sg/shop-beer/?ajax=true&from=rm_nav_cate&m=redmart&page={n}&rating=4'
         for n in range(1, 6)
     ]
+
+    def _get_product_quantity(self, package_info: str) -> int:
+        raw_quantity = re.split('×', package_info)  # E.g.: "40 × 320 ml", "330 ml"
+
+        if len(raw_quantity) > 1:
+            return int(raw_quantity[0])
+
+        return 1
 
     def parse(self, response):
         data = response.json()
@@ -46,11 +58,9 @@ class RedMartSpider(scrapy.Spider):
             for product in products:
                 loader = ItemLoader(item=ProductItem(), selector=product)
 
-                name, quantity = get_product_name_quantity(product['name'])
-
                 loader.add_value('vendor', self.name)
-                loader.add_value('name', name)
+                loader.add_value('name', product['name'])
                 loader.add_value('price', product['price'])
-                loader.add_value('quantity', quantity)
+                loader.add_value('quantity', self._get_product_quantity(product['packageInfo']))
                 loader.add_value('url', product['productUrl'].replace('//', ''))
                 yield loader.load_item()
