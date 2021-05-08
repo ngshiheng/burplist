@@ -16,10 +16,15 @@ class LazadaSpider(scrapy.Spider):
     """
     Parse data from site's API
     We need to use rotating proxy to scrape from Lazada
-    The API structure is similar to Red Mart
+    The API structure is similar to Red Mart except that it does not have 'packageInfo'
     """
     name = 'lazada'
-    custom_settings = {'ROBOTSTXT_OBEY': False, 'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 60)}
+    custom_settings = {
+        'ROBOTSTXT_OBEY': False,
+        'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 60),
+        'DOWNLOADER_MIDDLEWARES': {'burplist.middlewares.DelayedRequestsMiddleware': 100},
+    }
+
     BASE_URL = 'https://www.lazada.sg/shop-beer/?'
 
     params = {
