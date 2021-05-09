@@ -46,30 +46,30 @@ class IShopChangiSpider(scrapy.Spider):
             return raw_name, quantity
 
         # 6 Bottles Pack
-        is_pack = re.search(r'\d+ Pack', raw_name)
+        is_pack = re.search(r'(\d+) Pack', raw_name)
         if is_pack:
-            quantity = int(is_pack.group().split()[0])
+            quantity = int(is_pack.group(1))
             name = re.sub(is_pack.group(), '', raw_name)
             return name, quantity
 
         # La Chouffe Belgian Strong Golden Ale, 4x330ml
-        is_ml = re.search(r'\d+x\d{3}ml', raw_name, flags=re.IGNORECASE)
+        is_ml = re.search(r'(\d+)x\d{3}ml', raw_name, flags=re.IGNORECASE)
         if is_ml:
-            quantity = int(re.split('x', is_ml.group())[0])
+            quantity = int(is_ml.group(1))
             name = re.sub(is_ml.group(), '', raw_name)
             return name, quantity
 
         # LA TRAPPE TRIPEL BOTTLE 330ML*3
-        is_multiply = re.search(r'\d{3}ml[*]\d+', raw_name, flags=re.IGNORECASE)
+        is_multiply = re.search(r'\d{3}ml[*](\d+)', raw_name, flags=re.IGNORECASE)
         if is_multiply:
-            quantity = int(re.split(r'[*]', is_multiply.group())[-1])
+            quantity = int(is_multiply.group(1))
             name = re.sub(r'[{0}]'.format(is_multiply.group()), '', raw_name, flags=re.IGNORECASE)
             return name, quantity
 
         # Lion City Meadery Hibiscus Blueberry Mead 330ml x 6
-        is_ml_reverse = re.search(r'\d{3}ml x \d+', raw_name, flags=re.IGNORECASE)
+        is_ml_reverse = re.search(r'\d{3}ml x (\d+)', raw_name, flags=re.IGNORECASE)
         if is_ml_reverse:
-            quantity = int(re.split('x', is_ml_reverse.group())[-1])
+            quantity = int(is_ml_reverse.group(1))
             name = re.sub(is_ml_reverse.group(), '', raw_name)
             return name, quantity
 
