@@ -1,7 +1,6 @@
-import re
-
 import scrapy
 from burplist.items import ProductItem
+from burplist.utils.extractor import get_product_name_quantity
 from scrapy.loader import ItemLoader
 
 
@@ -18,13 +17,6 @@ class BrewerkzSpider(scrapy.Spider):
     name = 'brewerkz'
     start_urls = ['http://store.brewerkz.com/330ml-beer-can']
 
-    def _get_product_quantity(self, raw_name: str) -> int:
-        raw_quantity_with_name = re.search(r'\d+ x \d+ml', raw_name, flags=re.IGNORECASE)
-        if raw_quantity_with_name:
-            raw_quantity = re.split(r'x', raw_quantity_with_name.group(), flags=re.IGNORECASE)
-            return int(raw_quantity[0])
-        return 1
-
     def parse(self, response):
         products = response.xpath('//ul[@class="productGrid productGrid--maxCol3"]//li[@class="product"]')
 
@@ -36,7 +28,7 @@ class BrewerkzSpider(scrapy.Spider):
             loader.add_value('vendor', self.name)
             loader.add_value('name', f'Brewerkz {name}')
             loader.add_xpath('price', './/span[@class="price price--withTax price--main"]')
-            loader.add_value('quantity', self._get_product_quantity(name))
+            loader.add_value('quantity', get_product_name_quantity(name)[1])
             loader.add_xpath('url', './/h4[@class="card-title"]/a/@href')
             yield loader.load_item()
 

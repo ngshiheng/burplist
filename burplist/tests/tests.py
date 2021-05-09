@@ -4,6 +4,7 @@ from burplist.items import parse_name
 from burplist.spiders.brewerkz import BrewerkzSpider
 from burplist.spiders.coldstorage import ColdStorageSpider
 from burplist.spiders.ishopchangi import IShopChangiSpider
+from burplist.utils.extractor import get_product_name_quantity
 
 
 class BurplistTest(unittest.TestCase):
@@ -59,12 +60,12 @@ class BrewerkzSpiderTest(unittest.TestCase):
         self.spider = BrewerkzSpider()
 
     def test_get_product_quantity(self):
-        self.assertEqual(self.spider._get_product_quantity('India Pale Ale - 4 x 330ml'), 4)
-        self.assertEqual(self.spider._get_product_quantity('Islander Brew: Bukit Manis (6 x 330ml)'), 6)
-        self.assertEqual(self.spider._get_product_quantity('Islander Brew: Mixed 4pack (4 x 330ml)'), 4)
-        self.assertEqual(self.spider._get_product_quantity('Afterburner Pacific Pale Ale - 6 x 330ml'), 6)
-        self.assertEqual(self.spider._get_product_quantity('Circuit Breaker (New England IPA)- 6 x 330ml'), 6)
-        self.assertEqual(self.spider._get_product_quantity('Green Gunpowder Double IPA Series: Resin Bomb - 24 x 330ml'), 24)
+        self.assertEqual(get_product_name_quantity('India Pale Ale - 4 x 330ml')[1], 4)
+        self.assertEqual(get_product_name_quantity('Islander Brew: Bukit Manis (6 x 330ml)')[1], 6)
+        self.assertEqual(get_product_name_quantity('Islander Brew: Mixed 4pack (4 x 330ml)')[1], 4)
+        self.assertEqual(get_product_name_quantity('Afterburner Pacific Pale Ale - 6 x 330ml')[1], 6)
+        self.assertEqual(get_product_name_quantity('Circuit Breaker (New England IPA)- 6 x 330ml')[1], 6)
+        self.assertEqual(get_product_name_quantity('Green Gunpowder Double IPA Series: Resin Bomb - 24 x 330ml')[1], 24)
 
 
 class IShopChangiSpiderTest(unittest.TestCase):
