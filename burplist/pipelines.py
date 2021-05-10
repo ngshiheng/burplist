@@ -80,7 +80,7 @@ class DuplicatePricePipeline:
         session = self.session()
 
         try:
-            prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Reference: https://www.geeksforgeek.org/python-removing-duplicate-dicts-in-list/
+            prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Reference: https://www.geeksforgeeks.org/python-removing-duplicate-dicts-in-list/
             session.bulk_insert_mappings(Price, prices)
             session.commit()
             logger.info(f'Saved {len(self.prices)} new prices for existing products to the database.')
