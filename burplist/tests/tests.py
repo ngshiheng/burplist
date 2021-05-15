@@ -15,17 +15,17 @@ class BurplistTest(unittest.TestCase):
         self.assertEqual(parse_name('Somersby Blackberry Cider [CANS] 330ml'), 'Somersby Blackberry Cider')
         self.assertEqual(parse_name('Founders Brewing Co. All Day IPA (568ml)'), 'Founders Brewing Co. All Day IPA')
         self.assertEqual(parse_name('Carlsberg Danish Can Beer - Wheat (Alcohol Free)'), 'Carlsberg Danish Can Beer Wheat')
-        self.assertEqual(parse_name('Somersby Seltzer Mango & Passionfruit Can 3s X 330ml'), 'Somersby Seltzer Mango & Passionfruit Can')
+        self.assertEqual(parse_name('Somersby Seltzer Mango & Passionfruit Can 3s X 330ml'), 'Somersby Seltzer Mango Passionfruit Can')
         self.assertEqual(parse_name('Fleet Clouds Can 1s 330ml'), 'Fleet Clouds Can')
 
         # brewerkz
         self.assertEqual(parse_name('India Pale Ale - 4 x 330ml'), 'India Pale Ale')
         self.assertEqual(parse_name('Afterburner Pacific Pale Ale - 6 x 330ml'), 'Afterburner Pacific Pale Ale')
         self.assertEqual(parse_name('Circuit Breaker (New England IPA)- 6 x 330ml'), 'Circuit Breaker')
-        self.assertEqual(parse_name('Green Gunpowder Double IPA Series: Resin Bomb - 24 x 330ml'), 'Green Gunpowder Double IPA Series: Resin Bomb')
+        self.assertEqual(parse_name('Green Gunpowder Double IPA Series: Resin Bomb - 24 x 330ml'), 'Green Gunpowder Double IPA Series Resin Bomb')
 
         # thirsty
-        self.assertEqual(parse_name('21ST AMENDMENT BREW FREE! OR DIE IPA'), '21ST AMENDMENT BREW FREE! OR DIE IPA')
+        self.assertEqual(parse_name('21ST AMENDMENT BREW FREE! OR DIE IPA'), '21ST AMENDMENT BREW FREE OR DIE IPA')
 
         # hopshop
         self.assertEqual(parse_name('Moon Dog The Duke Of Chifley BA Barley Wine ABV 12.2%'), 'Moon Dog The Duke Of Chifley BA Barley Wine')

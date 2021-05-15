@@ -12,6 +12,13 @@ def get_product_name_quantity(raw_name: str) -> Tuple[str, int]:
     if 'carton' in raw_name.lower():
         return raw_name, 24
 
+    # [Bundle of 24] Sapporo Premium Can Beer 330ml x 24cans (Expiry Jan 22)
+    is_pack = re.search(r'Bundle of (\d+)', raw_name, flags=re.IGNORECASE)
+    if is_pack:
+        quantity = int(is_pack.group(1))
+        name = re.sub(is_pack.group(), '', raw_name)
+        return name, quantity
+
     # Carlsberg Danish Pilsner Beer Can 490ml (Pack of 24) Green Tab
     is_pack = re.search(r'Pack of (\d+)', raw_name, flags=re.IGNORECASE)
     if is_pack:
@@ -34,7 +41,7 @@ def get_product_name_quantity(raw_name: str) -> Tuple[str, int]:
         return name, quantity
 
     # Blue Moon Belgian White Wheat Ale 355ml x 24 Bottles
-    is_pack = re.search(r'(\d+)(?:[A-Za-z\s]|\s)+Bottles', raw_name, flags=re.IGNORECASE)
+    is_pack = re.search(r'(\d+)(?:[A-Za-z\s]|\s)+Bottle(s?)', raw_name, flags=re.IGNORECASE)
     if is_pack:
         quantity = int(is_pack.group(1))
         name = re.sub(is_pack.group(), '', raw_name)
