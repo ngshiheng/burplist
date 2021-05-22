@@ -10,12 +10,6 @@ class AlcoholDeliverySpider(scrapy.Spider):
     Parse data from site's API
     Site has 'Age Verification' modal
     Expect all of the product listed here are either in 'Single' or 'Keg'
-
-    Additional product information:
-    - Stock Availability
-    - Style (name)
-    - Volume (name)
-    - ABV (name)
     """
     name = 'alcoholdelivery'
     BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
@@ -41,19 +35,31 @@ class AlcoholDeliverySpider(scrapy.Spider):
         # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
-
                 # Filter out product with 'Keg' inside the name
                 if any(word in product['name'].lower() for word in ['keg', 'litre']):
                     continue
 
-                loader = ItemLoader(item=ProductItem(), selector=product)
-                slug = product['slug']
+                loader = ItemLoader(item=ProductItem())
 
                 loader.add_value('platform', self.name)
-                loader.add_value('name', product['name'])
-                loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
-                loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
+
+                name = product['name']
+                slug = product['slug']
+                loader.add_value('name', name)
                 loader.add_value('url', f'https://www.alcoholdelivery.com.sg/product/{slug}')
+
+                short_description = product['shortDescription']
+                origin, style, abv = short_description.split(',')
+
+                loader.add_value('brand', None)
+                loader.add_value('origin', origin)
+                loader.add_value('style', style)
+
+                loader.add_value('abv', abv)
+                loader.add_value('volume', name)
+                loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
+
+                loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
                 yield loader.load_item()
 
             self.params['skip'] += 10
