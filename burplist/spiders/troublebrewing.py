@@ -58,7 +58,7 @@ class TroubleBrewingSpider(scrapy.Spider):
         for product in products:
             loader = ItemLoader(item=ProductItem())
             loader.add_value('name', product['name'].split('-', maxsplit=2)[0])
-            loader.add_value('vendor', self.name)
+            loader.add_value('platform', self.name)
             loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
             loader.add_value('quantity', self._get_product_quantity(product['sku'], product['public_title']))
             loader.add_value('url', response.request.url)

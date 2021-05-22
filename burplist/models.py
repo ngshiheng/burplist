@@ -43,11 +43,15 @@ class Product(Base):
     __table_args__ = (UniqueConstraint('quantity', 'url'),)
 
     id = Column(Integer, primary_key=True)
-    vendor = Column('vendor', String())
+    platform = Column('platform', String())
+
     name = Column('name', String(), index=True)
+    brand = Column(String(), nullable=True, default=None)
     quantity = Column('quantity', Integer())
     url = Column('url', String())
+
     created_on = Column(DateTime, default=datetime.datetime.utcnow)
+    updated_on = Column(DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
 
     last_price = column_property(
         select([Price.price]).
@@ -58,4 +62,4 @@ class Product(Base):
     )
 
     def __repr__(self) -> str:
-        return f'Product({self.name}, vendor={self.vendor})'
+        return f'Product({self.name}, platform={self.platform})'

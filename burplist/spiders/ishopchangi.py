@@ -88,7 +88,7 @@ class IShopChangiSpider(scrapy.Spider):
 
             name, quantity = self._get_product_name_quantity(product['name'])
 
-            loader.add_value('vendor', self.name)
+            loader.add_value('platform', self.name)
             loader.add_value('name', name)
             loader.add_value('price', product['price']['value'])
             loader.add_value('quantity', quantity)

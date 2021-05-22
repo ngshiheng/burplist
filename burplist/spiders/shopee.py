@@ -45,7 +45,7 @@ class ShopeeSpider(scrapy.Spider):
 
                 price = str(product['price'] / 100000)  # Shopee price example: 4349000 = $43.49
 
-                loader.add_value('vendor', self.name)
+                loader.add_value('platform', self.name)
                 loader.add_value('name', name)
                 loader.add_value('price', price)
                 loader.add_value('quantity', quantity)

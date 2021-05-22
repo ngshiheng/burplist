@@ -49,7 +49,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 loader = ItemLoader(item=ProductItem(), selector=product)
                 slug = product['slug']
 
-                loader.add_value('vendor', self.name)
+                loader.add_value('platform', self.name)
                 loader.add_value('name', product['name'])
                 loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
                 loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1

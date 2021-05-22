@@ -119,7 +119,7 @@ class NewProductPricePipeline:
 
         product = dict(
             name=adapter['name'],
-            vendor=adapter['vendor'],
+            vendor=adapter['platform'],
             quantity=adapter['quantity'],
             url=adapter['url'],
             price=adapter['price'].amount

@@ -75,7 +75,7 @@ class RedMartSpider(scrapy.Spider):
             for product in products:
                 loader = ItemLoader(item=ProductItem(), selector=product)
 
-                loader.add_value('vendor', self.name)
+                loader.add_value('platform', self.name)
                 loader.add_value('name', product['name'])
                 loader.add_value('price', product['price'])
                 loader.add_value('quantity', self._get_product_quantity(product['packageInfo']))

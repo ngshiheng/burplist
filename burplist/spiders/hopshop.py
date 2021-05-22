@@ -23,7 +23,7 @@ class HopShopSpider(scrapy.Spider):
         for product in products:
             loader = ItemLoader(item=ProductItem(), selector=product)
 
-            loader.add_value('vendor', self.name)
+            loader.add_value('platform', self.name)
             loader.add_xpath('name', './/article/@data-name')
             loader.add_xpath('price', './/article/@data-product-price')
             loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1

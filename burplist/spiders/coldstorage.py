@@ -35,7 +35,7 @@ class ColdStorageSpider(scrapy.Spider):
             name = product.xpath('.//div[@class="product_name "]/text()').get().strip()
             vendor = product.xpath('.//div[@class="category-name"]/b/text()').get().strip().title()
 
-            loader.add_value('vendor', self.name)
+            loader.add_value('platform', self.name)
             loader.add_value('name', f'{vendor} {name}')
             loader.add_xpath('price', './/div[@data-price]/text()')
             loader.add_value('quantity', self._get_product_quantity(name))
