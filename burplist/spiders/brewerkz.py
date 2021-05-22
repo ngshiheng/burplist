@@ -15,7 +15,7 @@ class BrewerkzSpider(scrapy.Spider):
     - ABV (inside)
     """
     name = 'brewerkz'
-    start_urls = ['http://store.brewerkz.com/330ml-beer-can']
+    start_urls = ['https://sale.brewerkz.com/collections/330ml-beer-can']
 
     def parse(self, response):
         products = response.xpath('//ul[@class="productGrid productGrid--maxCol3"]//li[@class="product"]')

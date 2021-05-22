@@ -17,7 +17,7 @@ class ColdStorageSpider(scrapy.Spider):
     - ABV (inside, but could be missing)
     """
     name = 'coldstorage'
-    start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider']
+    start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
 
     def _get_product_quantity(self, raw_name: str) -> int:
         raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)

@@ -27,7 +27,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
         'parent': 'beer-cider',
         'productList': 1,
         'skip': 0,  # Starting page
-        'subParent': '',  # set as 'craft-beer' to only get craft beer data
+        'subParent': 'craft-beer',  # set as 'craft-beer' to only get craft beer data
         'type': 0,
     }
 
