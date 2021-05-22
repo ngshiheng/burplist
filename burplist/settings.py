@@ -119,7 +119,7 @@ EXTENSIONS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'burplist.pipelines.DuplicatePricePipeline': 300,
+    'burplist.pipelines.ExistingProductPricePipeline': 300,
     'burplist.pipelines.NewProductPricePipeline': 400,
 }
 

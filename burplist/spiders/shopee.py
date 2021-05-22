@@ -3,7 +3,7 @@ import os
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.extractor import get_product_name_quantity
+from burplist.utils.parsers import get_product_name_quantity
 from scrapy.loader import ItemLoader
 from scrapy.utils.project import get_project_settings
 

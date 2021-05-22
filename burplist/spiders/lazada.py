@@ -4,7 +4,7 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.extractor import get_product_name_quantity
+from burplist.utils.parsers import get_product_name_quantity
 from burplist.utils.proxy import get_proxy_url
 from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.loader import ItemLoader

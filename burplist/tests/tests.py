@@ -4,7 +4,7 @@ from burplist.items import parse_name
 from burplist.spiders.brewerkz import BrewerkzSpider
 from burplist.spiders.coldstorage import ColdStorageSpider
 from burplist.spiders.ishopchangi import IShopChangiSpider
-from burplist.utils.extractor import get_product_name_quantity
+from burplist.utils.parsers import get_product_name_quantity
 
 
 class BurplistTest(unittest.TestCase):

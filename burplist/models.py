@@ -50,7 +50,7 @@ class Product(Base):
 
     brand = Column(String(), nullable=True, default=None)
     style = Column(String(), nullable=True, default=None)
-    country = Column(String(), nullable=True, default=None)
+    origin = Column(String(), nullable=True, default=None)
 
     abv = Column(Float(), nullable=True, default=None)
     volume = Column(Integer(), nullable=True, default=None)
