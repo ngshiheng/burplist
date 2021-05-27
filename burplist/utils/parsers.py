@@ -6,9 +6,15 @@ logger = logging.getLogger(__name__)
 
 
 def parse_abv(raw_abv: str) -> Optional[float]:
-    has_abv = re.search(r'(\d+\.\d+)', raw_abv)
-    if has_abv:
-        return float(has_abv.group(1))
+    has_float_abv = re.search(r'(\d+\.\d+)', raw_abv)
+    if has_float_abv:
+        return float(has_float_abv.group(1))
+
+    has_int_abv = re.search(r'(\d+)', raw_abv)
+    if has_int_abv:
+        return float(has_int_abv.group(1))
+
+    return 0
 
 
 def parse_name(raw_name: str) -> str:
