@@ -65,10 +65,20 @@ class ThirstySpider(scrapy.Spider):
                     loader = ItemLoader(item=ProductItem(), selector=product)
 
                     loader.add_value('platform', self.name)
+
                     loader.add_xpath('name', './/a[@class="link-3 color-header"]/text()')
-                    loader.add_value('price', price)
-                    loader.add_value('quantity', self._get_product_quantity(display_unit))
                     loader.add_value('url', url)
+
+                    loader.add_xpath('brand', '//div[@class="text-left pr-0 col-8 col-tablet-12 tablet-pl-0 tablet-pr-0 col-desktop-12 desktop-pl-0 desktop-pr-0 cf"]/a/text()')
+                    loader.add_xpath('origin', None)
+                    loader.add_xpath('style', '')
+
+                    loader.add_xpath('abv', '//span[@class="alcohol color-text body-xs mr-5"]/text()')
+                    loader.add_xpath('volume', '//span[@class="volume color-text body-xs tablet-mr-5"]/text()')
+                    loader.add_value('quantity', self._get_product_quantity(display_unit))
+
+                    loader.add_value('price', price)
+
                     yield loader.load_item()
 
             self.params['page'] += 1
