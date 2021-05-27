@@ -43,10 +43,10 @@ class Product(Base):
     __table_args__ = (UniqueConstraint('quantity', 'url'),)
 
     id = Column(Integer, primary_key=True)
-    platform = Column(String())
+    platform = Column(String(), nullable=False)
 
-    name = Column(String(), index=True)
-    url = Column(String())
+    name = Column(String(), index=True, nullable=False)
+    url = Column(String(), nullable=False)
 
     brand = Column(String(), nullable=True, default=None)
     style = Column(String(), nullable=True, default=None)
@@ -54,7 +54,7 @@ class Product(Base):
 
     abv = Column(Float(), nullable=True, default=None)
     volume = Column(Integer(), nullable=True, default=None)
-    quantity = Column(Integer())
+    quantity = Column(Integer(), nullable=False)
 
     created_on = Column(DateTime, default=datetime.utcnow)
     updated_on = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
