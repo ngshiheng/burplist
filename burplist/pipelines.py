@@ -39,9 +39,7 @@ class ExistingProductPricePipeline:
         assert spider
         adapter = ItemAdapter(item)
 
-        name = adapter['name']
         url = adapter['url']
-
         quantity = adapter['quantity']
         price = adapter['price']
 
@@ -62,7 +60,10 @@ class ExistingProductPricePipeline:
             # Always update information for existing products
             product_to_update = dict(
                 id=existing_product.id,
-                name=name,
+                brand=adapter.get('brand'),
+                style=adapter.get('style'),
+                origin=adapter.get('origin'),
+                abv=adapter.get('abv'),
                 volume=adapter.get('volume'),
             )
             self.products_update.append(product_to_update)
