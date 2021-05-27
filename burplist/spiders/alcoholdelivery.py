@@ -1,8 +1,11 @@
+import logging
 from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
 from scrapy.loader import ItemLoader
+
+logger = logging.getLogger(__name__)
 
 
 class AlcoholDeliverySpider(scrapy.Spider):

@@ -21,12 +21,15 @@ class ProductItem(scrapy.Item):
     )
 
     brand = scrapy.Field(
+        input_processor=MapCompose(str.strip),
         output_processor=TakeFirst(),
     )
     style = scrapy.Field(
+        input_processor=MapCompose(str.strip),
         output_processor=TakeFirst(),
     )
     origin = scrapy.Field(
+        input_processor=MapCompose(str.strip),
         output_processor=TakeFirst(),
     )
 
