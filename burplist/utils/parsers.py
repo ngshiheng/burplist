@@ -21,8 +21,7 @@ def parse_name(raw_name: str) -> str:
 
 
 def parse_style(raw_style: str) -> Optional[str]:
-    raw_style = raw_style.strip()
-    return next((style for style in styles if raw_style == style), None)
+    return next((style for style in styles if style.lower() in raw_style.lower()), None)
 
 
 def parse_origin(raw_origin: str) -> Optional[str]:
@@ -43,6 +42,6 @@ def parse_volume(raw_name: str) -> Optional[int]:
     """
     Get product volume from name
     """
-    has_volume = re.search(r'(\d+) ?ml', raw_name, re.IGNORECASE)
+    has_volume = re.search(r'(\d{3}) ?ml', raw_name, flags=re.IGNORECASE)
     if has_volume:
         return int(has_volume.group(1))

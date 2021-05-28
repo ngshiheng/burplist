@@ -4,6 +4,7 @@ from typing import Optional
 
 import scrapy
 from burplist.items import ProductItem
+from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
 
 
@@ -44,11 +45,8 @@ class TroubleBrewingSpider(scrapy.Spider):
         return 1
 
     def parse(self, response):
-        collections = response.xpath('//a[@class="product-link js-product-link"]/@href')
-
-        for collection in collections:
-            url = response.urljoin(collection.get())
-            yield scrapy.Request(url=url, callback=self.parse_collection)
+        collections = response.xpath('//a[@class="product-link js-product-link"]')
+        yield from response.follow_all(collections, callback=self.parse_collection)
 
     def parse_collection(self, response):
         script_tag = response.xpath('//script[contains(.,"var meta")]/text()').get()
@@ -57,9 +55,19 @@ class TroubleBrewingSpider(scrapy.Spider):
 
         for product in products:
             loader = ItemLoader(item=ProductItem())
-            loader.add_value('name', product['name'].split('-', maxsplit=2)[0])
             loader.add_value('platform', self.name)
-            loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
-            loader.add_value('quantity', self._get_product_quantity(product['sku'], product['public_title']))
+
+            name = product['name'].split('-', maxsplit=2)[0]
+            loader.add_value('name', name)
             loader.add_value('url', response.request.url)
+
+            loader.add_value('brand', 'Trouble Brewing')
+            loader.add_value('origin', 'Singapore')
+            loader.add_value('style', parse_style(name))
+
+            loader.add_value('abv', None)
+            loader.add_value('volume', '330ml')
+            loader.add_value('quantity', self._get_product_quantity(product['sku'], product['public_title']))
+
+            loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
             yield loader.load_item()
