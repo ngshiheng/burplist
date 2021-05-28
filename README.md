@@ -58,8 +58,11 @@ To get the price list of all available products
 ```sql
 SELECT
 	product_id,
-	vendor AS "Vendor",
+	platform AS "Platform",
 	name AS "Product Name",
+	style AS "Style",
+	abv AS "ABV",
+	volume AS "Volume (mL)",
 	round(price::numeric, 2) AS "Price ($SGD)",
 	quantity AS "Quantity (Unit)",
 	round((price / quantity)::numeric, 2) AS "Price/Quantity ($SGD)",
