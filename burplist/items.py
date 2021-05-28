@@ -2,7 +2,7 @@ import scrapy
 from itemloaders.processors import MapCompose, TakeFirst
 from price_parser.parser import parse_price
 
-from burplist.utils.parsers import parse_abv, parse_name, parse_volume
+from burplist.utils.parsers import parse_abv, parse_name, parse_style, parse_volume
 
 
 class ProductItem(scrapy.Item):
@@ -25,7 +25,7 @@ class ProductItem(scrapy.Item):
         output_processor=TakeFirst(),
     )
     style = scrapy.Field(
-        input_processor=MapCompose(str.strip),
+        input_processor=MapCompose(parse_style),
         output_processor=TakeFirst(),
     )
     origin = scrapy.Field(
