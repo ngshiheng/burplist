@@ -2,29 +2,25 @@ import re
 
 import scrapy
 from burplist.items import ProductItem
+from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
+
+
+def _get_product_quantity(raw_name: str) -> int:
+    raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)
+    if raw_quantity_with_name:
+        raw_quantity = raw_quantity_with_name.group().split(' ')
+        return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
+    return 1
 
 
 class ColdStorageSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     API returns HTML
-
-    Additional product information:
-    - Stock Availability
-    - Style (name)
-    - Volume (name)
-    - ABV (inside, but could be missing)
     """
     name = 'coldstorage'
-    start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider']
-
-    def _get_product_quantity(self, raw_name: str) -> int:
-        raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)
-        if raw_quantity_with_name:
-            raw_quantity = raw_quantity_with_name.group().split(' ')
-            return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
-        return 1
+    start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
 
     def parse(self, response):
         products = response.xpath('//div[@class="product_box"]')
@@ -35,11 +31,19 @@ class ColdStorageSpider(scrapy.Spider):
             name = product.xpath('.//div[@class="product_name "]/text()').get().strip()
             vendor = product.xpath('.//div[@class="category-name"]/b/text()').get().strip().title()
 
-            loader.add_value('vendor', self.name)
-            loader.add_value('name', f'{vendor} {name}')
-            loader.add_xpath('price', './/div[@data-price]/text()')
-            loader.add_value('quantity', self._get_product_quantity(name))
+            loader.add_value('platform', self.name)
+            loader.add_value('name', name)
             loader.add_value('url', response.urljoin(product.xpath('./a/@href').get()))
+
+            loader.add_value('brand', vendor)
+            loader.add_value('origin', None)
+            loader.add_value('style', parse_style(name))
+
+            loader.add_value('abv', None)
+            loader.add_value('volume', name)
+            loader.add_value('quantity', _get_product_quantity(name))
+
+            loader.add_xpath('price', './/div[@data-price]/text()')
             yield loader.load_item()
 
         next_page = response.xpath('//li[@class="next"]/a/@href').get()

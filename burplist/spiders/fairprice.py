@@ -3,18 +3,14 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
+from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
 
 
 class FairPriceSpider(scrapy.Spider):
     """
     Parse data from site's API
-
-    Additional product information:
-    - Stock Availability
-    - Style (name)
-    - Volume (name)
-    - ABV (inside, but could be missing)
+    # TODO: Extract partially missing `style` information
     """
     name = 'fairprice'
     BASE_URL = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
@@ -74,11 +70,21 @@ class FairPriceSpider(scrapy.Spider):
             loader = ItemLoader(item=ProductItem(), selector=product)
             slug = product['slug']
 
-            loader.add_value('vendor', self.name)
+            loader.add_value('platform', self.name)
+
             loader.add_value('name', product['name'])
-            loader.add_value('price', self._get_product_price(product))
-            loader.add_value('quantity', self._get_product_quantity(product))
             loader.add_value('url', f'https://www.fairprice.com.sg/product/{slug}')
+
+            loader.add_value('brand', product['brand']['name'])
+            loader.add_value('origin', product['metaData']['Country of Origin'])
+            loader.add_value('style', parse_style(product['metaData'].get('Key Information', '')))
+
+            loader.add_value('abv', product['name'])
+            loader.add_value('volume', product['metaData']['DisplayUnit'])
+            loader.add_value('quantity', self._get_product_quantity(product))
+
+            loader.add_value('price', self._get_product_price(product))
+
             yield loader.load_item()
 
         has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
