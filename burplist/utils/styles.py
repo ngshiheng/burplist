@@ -9,6 +9,7 @@ styles = [
     "West Coast Pale Ale",
     "West Coast IPA",
     "West Coast DIPA",
+    "Weissbier",
     "Watermelon Mint Sour",
     "Unfiltered IPA",
     "Unfiltered Double IPA",
