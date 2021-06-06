@@ -10,6 +10,8 @@ class CraftBeerSGSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Product quantity might come in a Pack of 6, Pack of 16, Pack of 24 and etc. https://craftbeersg.com/product-category/beer/page/36/
+
+    # TODO: Extract `origin` information
     """
     name = 'craftbeersg'
     start_urls = ['https://craftbeersg.com/product-category/beer/by-brewery/']

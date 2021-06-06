@@ -8,6 +8,8 @@ class HopShopSpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Page number based pagination
+
+    # TODO: Extract `origin` and partially missing `style` information
     """
     name = 'hopshop'
     start_urls = ['https://www.hopshop.com.sg/beer/']

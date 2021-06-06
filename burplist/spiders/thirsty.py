@@ -13,6 +13,8 @@ class ThirstySpider(scrapy.Spider):
     """
     Extract data from raw HTML
     Do note that this site uses infinite scrolling
+
+    # TODO: Extract `origin` information
     """
     name = 'thirsty'
     custom_settings = {'ROBOTSTXT_OBEY': False}

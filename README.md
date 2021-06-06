@@ -60,6 +60,7 @@ SELECT
 	product_id,
 	platform AS "Platform",
 	name AS "Product Name",
+	brand AS "Brand",
 	style AS "Style",
 	abv AS "ABV",
 	volume AS "Volume (mL)",
@@ -80,7 +81,8 @@ To get the number of prices of all available products
 ```sql
 SELECT
 	product.id,
-	product.vendor AS "Vendor",
+	platform AS "Platform",
+	brand AS "Brand",
 	name AS "Product Name",
 	quantity AS "Quantity (Unit)",
 	url AS "Product Link",

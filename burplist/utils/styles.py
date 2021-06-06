@@ -1,6 +1,7 @@
 styles = [
     "Zero Alcohol Cider",
     "Wit Beer",
+    "Witbier",
     "Wild Ale",
     "White Ale",
     "Wheat Beer",

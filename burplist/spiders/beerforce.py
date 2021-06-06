@@ -12,6 +12,10 @@ class BeerForceSpider(scrapy.Spider):
     Extract data from raw HTML
     Starting URL is from a base URL which contains different styles of beer
     Expect all of the product listed here are of 'Single' quantity
+
+    # NOTE: This spider passes ProductItem into nested request, which is kind of cool!
+
+    # TODO: Extract `origin` information
     """
     name = 'beerforce'
     start_urls = ['https://beerforce.sg/pages/all-styles']

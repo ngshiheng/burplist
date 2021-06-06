@@ -13,6 +13,8 @@ class AlcoholDeliverySpider(scrapy.Spider):
     Parse data from site's API
     Site has 'Age Verification' modal
     Expect all of the product listed here are either in 'Single' or 'Keg'
+
+    # TODO: Extract `brand` information
     """
     name = 'alcoholdelivery'
     BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
