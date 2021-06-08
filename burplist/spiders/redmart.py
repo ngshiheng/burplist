@@ -12,6 +12,8 @@ logger = logging.getLogger(__name__)
 
 settings = get_project_settings()
 
+mainstream_beer_brands = ['tiger', 'asahi', 'carlsberg', 'guinness', 'heineken', 'kronenbourg', 'somersby']
+
 
 class RedMartSpider(scrapy.Spider):
     """
@@ -70,7 +72,7 @@ class RedMartSpider(scrapy.Spider):
             for product in products:
                 loader = ItemLoader(item=ProductItem())
 
-                if int(product.get('review', 0)) < 5:
+                if int(product.get('review', 0)) < 5 or product['brandName'].lower() in mainstream_beer_brands:
                     continue
 
                 item_id = product['itemId']
