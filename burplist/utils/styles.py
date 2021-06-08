@@ -163,7 +163,6 @@ styles = [
     "Danish Wild Ale",
     "Cucumber and Mint Sour Ale",
     "Cream Ale",
-    "Craft Beer",
     "Cocktail",
     "Citrus Session IPA",
     "Citrus IPA",
