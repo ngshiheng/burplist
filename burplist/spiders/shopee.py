@@ -12,6 +12,8 @@ logger = logging.getLogger(__name__)
 class ShopeeSpider(scrapy.Spider):
     """
     Extract data from API
+
+    # TODO: Extract `origin` and `abv` information
     """
     name = 'shopee'
     custom_settings = {

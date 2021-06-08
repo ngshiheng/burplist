@@ -10,6 +10,7 @@ from scrapy.loader import ItemLoader
 class FairPriceSpider(scrapy.Spider):
     """
     Parse data from site's API
+
     # TODO: Extract partially missing `style` information
     """
     name = 'fairprice'
