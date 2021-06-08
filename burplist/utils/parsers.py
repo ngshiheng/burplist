@@ -54,31 +54,15 @@ def parse_quantity(raw_name: Union[str, int]) -> int:
     if isinstance(raw_name, int):
         return raw_name
 
-    is_btls = re.search(r'(\d{1,2}) ?Btls', raw_name, flags=re.IGNORECASE)
-    if is_btls:
-        quantity = int(is_btls.group(1))
-        return quantity
-
-    # Blue Moon Belgian White Wheat Ale 355ml x 24 Bottles
-    is_bottle = re.search(r'(\d{1,2}) ?Bottle', raw_name, flags=re.IGNORECASE)
-    if is_bottle:
-        quantity = int(is_bottle.group(1))
-        return quantity
-
     # Carlsberg 490ml x 24 Cans (BBD: Oct 2021)
-    is_can = re.search(r'(\d{1,2}) ?Can', raw_name, flags=re.IGNORECASE)
-    if is_can:
-        return int(is_can.group(1))
+    is_can_pack_bottle = re.search(r'(\d{1,2}) ?(?:Can|Pack|Bottle|Btl)', raw_name, flags=re.IGNORECASE)
+    if is_can_pack_bottle:
+        return int(is_can_pack_bottle.group(1))
 
-    # Carlsberg Danish Pilsner Beer Can 490ml (Pack of 24) Green Tab
-    is_pack = re.search(r'Pack of (\d+)', raw_name, flags=re.IGNORECASE)
-    if is_pack:
-        return int(is_pack.group(1))
-
-    # Carlsberg Smooth Draught Beer Can, 320ml [Bundle of 24]
-    is_bundle = re.search(r'Bundle of (\d+)', raw_name, flags=re.IGNORECASE)
-    if is_bundle:
-        return int(is_bundle.group(1))
+    # Carlsberg Danish Pilsner Beer Can 490ml (Pack of 24) Green , Carlsberg Smooth Draught Beer Can, 320ml [Bundle of 24]
+    is_pack_bundle_of = re.search(r'(?:Pack|Packs|Bundle|Bundles) of (\d{1,2})', raw_name, flags=re.IGNORECASE)
+    if is_pack_bundle_of:
+        return int(is_pack_bundle_of.group(1))
 
     # Tiger Lager Beer Can 40x320ml, Guinness Foreign Extra Stout 24 x 500ml
     is_ml = re.search(r'(\d{1,2}) ?[x] ?', raw_name, flags=re.IGNORECASE)
