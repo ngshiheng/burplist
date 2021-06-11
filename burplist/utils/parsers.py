@@ -55,14 +55,14 @@ def parse_quantity(raw_name: Union[str, int]) -> int:
         return raw_name
 
     # Carlsberg 490ml x 24 Cans (BBD: Oct 2021)
-    is_can_pack_bottle = re.search(r'(\d{1,2}) ?(?:Can|Pack|Bottle|Btl)', raw_name, flags=re.IGNORECASE)
-    if is_can_pack_bottle:
-        return int(is_can_pack_bottle.group(1))
+    is_n_package = re.search(r'(\d{1,2}) ?(?:Bottle|Btl|Can|Case|Pack|Pint)', raw_name, flags=re.IGNORECASE)
+    if is_n_package:
+        return int(is_n_package.group(1))
 
     # Carlsberg Danish Pilsner Beer Can 490ml (Pack of 24) Green , Carlsberg Smooth Draught Beer Can, 320ml [Bundle of 24]
-    is_pack_bundle_of = re.search(r'(?:Pack|Packs|Bundle|Bundles) of (\d{1,2})', raw_name, flags=re.IGNORECASE)
-    if is_pack_bundle_of:
-        return int(is_pack_bundle_of.group(1))
+    is_package_of = re.search(r'(?:Bundle|Case|Pack|Package|Pint) of (\d{1,2})', raw_name, flags=re.IGNORECASE)
+    if is_package_of:
+        return int(is_package_of.group(1))
 
     # Tiger Lager Beer Can 40x320ml, Guinness Foreign Extra Stout 24 x 500ml
     is_ml = re.search(r'(\d{1,2}) ?[x] ?', raw_name, flags=re.IGNORECASE)
@@ -73,10 +73,5 @@ def parse_quantity(raw_name: Union[str, int]) -> int:
     is_ml_reverse = re.search(r' ?[x] ?(\d{1,2}) ?', raw_name, flags=re.IGNORECASE)
     if is_ml_reverse:
         return int(is_ml_reverse.group(1))
-
-    # Carlsberg 490ml x 24 Cans (BBD: Oct 2021)
-    is_case = re.search(r'(\d{1,2}) ?Case', raw_name, flags=re.IGNORECASE)
-    if is_case:
-        return int(is_case.group(1))
 
     return 1
