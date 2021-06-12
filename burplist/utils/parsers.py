@@ -2,7 +2,7 @@ import logging
 import re
 from typing import Optional, Union
 
-from burplist.utils.styles import styles
+from burplist.utils.constants import POPULAR_BRANDS, POPULAR_STYLES
 
 logger = logging.getLogger(__name__)
 
@@ -21,11 +21,11 @@ def parse_name(raw_name: str) -> str:
 
 
 def parse_style(raw_style: str) -> Optional[str]:
-    return next((style for style in styles if style.lower() in raw_style.lower()), None)
+    return next((style for style in POPULAR_STYLES if style.lower() in raw_style.lower()), None)
 
 
-def parse_origin(raw_origin: str) -> Optional[str]:
-    pass
+def parse_brand(raw_brand: str) -> Optional[str]:
+    return next((brand for brand in POPULAR_BRANDS if brand.lower() in raw_brand.lower()), None)
 
 
 def parse_abv(raw_abv: str) -> Optional[float]:

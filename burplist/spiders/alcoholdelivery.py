@@ -3,6 +3,7 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
+from burplist.utils.parsers import parse_brand
 from scrapy.loader import ItemLoader
 
 logger = logging.getLogger(__name__)
@@ -13,8 +14,6 @@ class AlcoholDeliverySpider(scrapy.Spider):
     Parse data from site's API
     Site has 'Age Verification' modal
     Expect all of the product listed here are either in 'Single' or 'Keg'
-
-    # TODO: Extract `brand` information
     """
     name = 'alcoholdelivery'
     BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
@@ -60,7 +59,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 short_description = product['shortDescription']
                 origin, style, abv = short_description.split(',')
 
-                loader.add_value('brand', None)
+                loader.add_value('brand', parse_brand(product['name']))
                 loader.add_value('origin', origin)
                 loader.add_value('style', style)
 

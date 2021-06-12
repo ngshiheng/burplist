@@ -2,15 +2,13 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.parsers import parse_quantity
+from burplist.utils.parsers import parse_brand, parse_quantity
 from scrapy.loader import ItemLoader
 
 
 class AlcohaulSpider(scrapy.Spider):
     """
     Parse data from site's API
-
-    # TODO: Extract missing `brand` information
     """
     name = 'alcohaul'
     BASE_URL = 'https://alcohaul.sg/api/productlist?'
@@ -45,7 +43,7 @@ class AlcohaulSpider(scrapy.Spider):
                 loader.add_value('name', product['name'])
                 loader.add_value('url', f'https://alcohaul.sg/products/{slug}')
 
-                loader.add_value('brand', None)
+                loader.add_value('brand', parse_brand(product['name']))
                 loader.add_value('origin', product.get('country'))
                 loader.add_value('style', product.get('type'))
 
