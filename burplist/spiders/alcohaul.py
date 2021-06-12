@@ -2,7 +2,7 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.parsers import parse_quantity, parse_volume
+from burplist.utils.parsers import parse_quantity
 from scrapy.loader import ItemLoader
 
 
@@ -49,7 +49,7 @@ class AlcohaulSpider(scrapy.Spider):
             loader.add_value('style', product.get('type'))
 
             loader.add_value('abv', product.get('alcohol'))
-            loader.add_value('volume', parse_volume(product['name']))
+            loader.add_value('volume', product['name'])
             loader.add_value('quantity', parse_quantity(product['name']))
 
             loader.add_value('price', str(product['smartPrice']))
