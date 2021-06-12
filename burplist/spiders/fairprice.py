@@ -68,7 +68,7 @@ class FairPriceSpider(scrapy.Spider):
         products = data['product']
 
         for product in products:
-            loader = ItemLoader(item=ProductItem(), selector=product)
+            loader = ItemLoader(item=ProductItem())
             slug = product['slug']
 
             loader.add_value('platform', self.name)
