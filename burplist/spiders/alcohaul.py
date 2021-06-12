@@ -17,7 +17,7 @@ class AlcohaulSpider(scrapy.Spider):
 
     params = {
         'skip': 0,
-        'limit': 100,
+        'limit': 50,
         'parent': '5f7edae59ae56e6d7b8b456d',
         'filter': 'a-z',
         'child': '5f7edb459ae56e6d7b8b45df',
@@ -31,27 +31,32 @@ class AlcohaulSpider(scrapy.Spider):
         data = response.json()
         products = data['items']
 
-        for product in products:
-            if product['quantity'] < 1:
-                # Skipping products which are out of stock
-                continue
+        if products:
+            for product in products:
+                if product['quantity'] < 1:
+                    # Skipping products which are out of stock
+                    continue
 
-            loader = ItemLoader(item=ProductItem())
-            slug = product['slug']
+                loader = ItemLoader(item=ProductItem())
+                slug = product['slug']
 
-            loader.add_value('platform', self.name)
+                loader.add_value('platform', self.name)
 
-            loader.add_value('name', product['name'])
-            loader.add_value('url', f'https://alcohaul.sg/products/{slug}')
+                loader.add_value('name', product['name'])
+                loader.add_value('url', f'https://alcohaul.sg/products/{slug}')
 
-            loader.add_value('brand', None)
-            loader.add_value('origin', product.get('country'))
-            loader.add_value('style', product.get('type'))
+                loader.add_value('brand', None)
+                loader.add_value('origin', product.get('country'))
+                loader.add_value('style', product.get('type'))
 
-            loader.add_value('abv', product.get('alcohol'))
-            loader.add_value('volume', product['name'])
-            loader.add_value('quantity', parse_quantity(product['name']))
+                loader.add_value('abv', product.get('alcohol'))
+                loader.add_value('volume', product['name'])
+                loader.add_value('quantity', parse_quantity(product['name']))
 
-            loader.add_value('price', str(product['smartPrice']))
+                loader.add_value('price', str(product['smartPrice']))
 
-            yield loader.load_item()
+                yield loader.load_item()
+
+            self.params['skip'] += 50
+            next_page = self.BASE_URL + urlencode(self.params)
+            yield response.follow(next_page, callback=self.parse)
