@@ -48,7 +48,7 @@ class ShopeeSpider(scrapy.Spider):
                 loader.add_value('name', product.get('name'))
                 loader.add_value('url', f'https://shopee.sg/--i.{shop_id}.{item_id}')
 
-                brand = product.get('brand').strip()
+                brand = product.get('brand')
                 if brand is None or brand == 'None' or brand == '' or brand == '0':
                     brand = parse_brand(product.get('name'))
 

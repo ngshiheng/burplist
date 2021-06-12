@@ -23,7 +23,10 @@ class TroubleBrewingSpider(scrapy.Spider):
     name = 'troublebrewing'
     start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']
 
-    def _get_product_quantity(self, sku: str, public_title: Optional[str] = None) -> int:
+    def _get_product_quantity(self, sku: Optional[str], public_title: Optional[str] = None) -> int:
+        if sku is None:
+            return 24
+
         # Special case for "Trouble Brewing x @FEEDBENG Chinese New Year Gift Set"
         if public_title and 'Gift Set' in public_title:
             return 2
