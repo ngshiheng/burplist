@@ -3,7 +3,7 @@ import os
 
 import scrapy
 from burplist.items import ProductItem
-from burplist.utils.parsers import parse_quantity, parse_style
+from burplist.utils.parsers import parse_brand, parse_quantity, parse_style
 from scrapy.loader import ItemLoader
 
 logger = logging.getLogger(__name__)
@@ -48,7 +48,11 @@ class ShopeeSpider(scrapy.Spider):
                 loader.add_value('name', product.get('name'))
                 loader.add_value('url', f'https://shopee.sg/--i.{shop_id}.{item_id}')
 
-                loader.add_value('brand', product.get('brand') if product.get('brand') != 'None' else None)  # NOTE: Shopee's API product['brand'] does not guarantee that brand is always correct. They could be None, "None" at times
+                brand = product.get('brand').strip()
+                if brand is None or brand == 'None' or brand == '' or brand == '0':
+                    brand = parse_brand(product.get('name'))
+
+                loader.add_value('brand', brand)  # NOTE: Shopee's API product['brand'] does not guarantee that brand is always correct. They could be None, "None" at times
                 loader.add_value('origin', None)
                 loader.add_value('style', parse_style(product.get('name')))
 
