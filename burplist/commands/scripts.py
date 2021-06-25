@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime, timedelta
 
-from burplist.models import Price, Product, db_connect
+from burplist.database.models import Price, Product, db_connect
 from sqlalchemy.orm import sessionmaker
 
 logger = logging.getLogger(__name__)

@@ -6,8 +6,8 @@ from scrapy import Spider
 from scrapy.exceptions import DropItem
 from sqlalchemy.orm import sessionmaker
 
+from burplist.database.models import Price, Product, create_table, db_connect
 from burplist.items import ProductItem
-from burplist.models import Price, Product, create_table, db_connect
 
 logger = logging.getLogger(__name__)
 
