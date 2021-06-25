@@ -49,6 +49,10 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
 
             name = product.xpath('.//p[@class="grid-link__title"]/text()').get()
 
+            # Filter out merchandise
+            if any(word in name.lower() for word in ['cap', 'tee', 'glass']):
+                continue
+
             loader.add_value('name', name)
             loader.add_value('url', response.urljoin(product.xpath('.//a[@class="grid-link text-center"]/@href').get()))
 
