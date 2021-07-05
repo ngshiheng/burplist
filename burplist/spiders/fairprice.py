@@ -1,10 +1,28 @@
 import re
+from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductItem
 from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
+
+
+def _get_product_price(product: dict[str, Any]) -> str:
+    offer = product.get('offers')
+
+    if offer and offer[0]['price'] is not None:
+        return str(offer[0]['price'])
+
+    return product['storeSpecificData'][0]['mrp']
+
+
+def _get_product_quantity(product: dict[str, Any]) -> int:
+    metadata = product['metaData']
+    display_unit = metadata['DisplayUnit']
+    quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+
+    return int(quantity[0]) if len(quantity) != 1 else 1
 
 
 class FairPriceSpider(scrapy.Spider):
@@ -44,21 +62,6 @@ class FairPriceSpider(scrapy.Spider):
         'Sec-Fetch-Site': 'same-site',
     }
 
-    def _get_product_price(self, product: dict) -> str:
-        offer = product.get('offers')
-
-        if offer and offer[0]['price'] is not None:
-            return str(offer[0]['price'])
-
-        return product['storeSpecificData'][0]['mrp']
-
-    def _get_product_quantity(self, product: dict) -> int:
-        metadata = product.get('metaData')
-        display_unit = metadata['DisplayUnit']
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
-
-        return int(quantity[0]) if len(quantity) != 1 else 1
-
     def start_requests(self):
         url = self.BASE_URL + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse, headers=self.headers)
@@ -82,9 +85,9 @@ class FairPriceSpider(scrapy.Spider):
 
             loader.add_value('abv', product['name'])
             loader.add_value('volume', product['metaData']['DisplayUnit'])
-            loader.add_value('quantity', self._get_product_quantity(product))
+            loader.add_value('quantity', _get_product_quantity(product))
 
-            loader.add_value('price', self._get_product_price(product))
+            loader.add_value('price', _get_product_price(product))
 
             yield loader.load_item()
 

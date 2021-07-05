@@ -15,7 +15,8 @@ def _get_product_quantity(raw_name: str) -> int:
 
     # Ba Xian Tea Lager 3 Bottles Pack
     if 'Bottles Pack' in raw_name:
-        return int(re.search(r'(\d+) ', raw_name).group(1))
+        is_bottles_pack = re.search(r'(\d+) ', raw_name)
+        return int(is_bottles_pack.group(1)) if is_bottles_pack is not None else 1
 
     # 6 Bottles Pack
     is_pack = re.search(r'(\d+) Pack', raw_name)

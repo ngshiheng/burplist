@@ -9,6 +9,11 @@ from scrapy.loader import ItemLoader
 logger = logging.getLogger(__name__)
 
 
+def _get_product_quantity(display_unit: str) -> int:
+    quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+    return int(quantity[0]) if len(quantity) != 1 else 1
+
+
 class ThirstySpider(scrapy.Spider):
     """
     Extract data from raw HTML
@@ -19,10 +24,6 @@ class ThirstySpider(scrapy.Spider):
     name = 'thirsty'
     custom_settings = {'ROBOTSTXT_OBEY': False}
     start_urls = ['https://www.thirsty.com.sg/pages/shop-by-style']
-
-    def _get_product_quantity(self, display_unit: str) -> int:
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
-        return int(quantity[0]) if len(quantity) != 1 else 1
 
     def parse(self, response):
         collections = response.xpath('///a[@class="link-3 color-header"]')
@@ -69,7 +70,7 @@ class ThirstySpider(scrapy.Spider):
 
                     loader.add_xpath('abv', './/span[@class="alcohol color-text body-xs mr-5"]/text()')
                     loader.add_xpath('volume', './/span[@class="volume color-text body-xs tablet-mr-5"]/text()')
-                    loader.add_value('quantity', self._get_product_quantity(display_unit))
+                    loader.add_value('quantity', _get_product_quantity(display_unit))
 
                     loader.add_value('price', price)
 

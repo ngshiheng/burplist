@@ -8,6 +8,25 @@ from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
 
 
+def _get_product_quantity(sku: Optional[str], public_title: Optional[str] = None) -> int:
+    if sku is None:
+        return 24
+
+    # Special case for "Trouble Brewing x @FEEDBENG Chinese New Year Gift Set"
+    if public_title and 'Gift Set' in public_title:
+        return 2
+
+    if sku.endswith('24B'):
+        return 24
+    if sku.endswith('12B'):
+        return 12
+    if sku.endswith('6B'):
+        return 6
+    if sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
+        return 24
+    return 1
+
+
 class TroubleBrewingSpider(scrapy.Spider):
     """
     Extract data from raw HTML
@@ -23,32 +42,18 @@ class TroubleBrewingSpider(scrapy.Spider):
     name = 'troublebrewing'
     start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']
 
-    def _get_product_quantity(self, sku: Optional[str], public_title: Optional[str] = None) -> int:
-        if sku is None:
-            return 24
-
-        # Special case for "Trouble Brewing x @FEEDBENG Chinese New Year Gift Set"
-        if public_title and 'Gift Set' in public_title:
-            return 2
-
-        if sku.endswith('24B'):
-            return 24
-        if sku.endswith('12B'):
-            return 12
-        if sku.endswith('6B'):
-            return 6
-        if sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
-            return 24
-        return 1
-
     def parse(self, response):
         collections = response.xpath('//a[@class="product-link js-product-link"]')
         yield from response.follow_all(collections, callback=self.parse_collection)
 
     def parse_collection(self, response):
         script_tag = response.xpath('//script[contains(.,"var meta")]/text()').get()
-        data = re.search(r'\[\{(.*?)\]', script_tag).group()
-        products = json.loads(data)
+
+        data_regex = re.search(r'\[\{(.*?)\]', script_tag)
+        if not data_regex:
+            return None
+
+        products = json.loads(data_regex.group())
 
         for product in products:
             loader = ItemLoader(item=ProductItem())
@@ -64,7 +69,7 @@ class TroubleBrewingSpider(scrapy.Spider):
 
             loader.add_value('abv', None)
             loader.add_value('volume', '330ml')
-            loader.add_value('quantity', self._get_product_quantity(product['sku'], product['public_title']))
+            loader.add_value('quantity', _get_product_quantity(product['sku'], product['public_title']))
 
             loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
             yield loader.load_item()

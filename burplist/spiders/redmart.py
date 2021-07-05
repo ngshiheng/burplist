@@ -70,13 +70,13 @@ class RedMartSpider(scrapy.Spider):
         # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
-                loader = ItemLoader(item=ProductItem())
-
                 if int(product.get('review', 0)) < 5 or product['brandName'].lower() in mainstream_beer_brands:
                     continue
 
                 item_id = product['itemId']
                 shop_id = product['sellerId']
+
+                loader = ItemLoader(item=ProductItem())
 
                 loader.add_value('platform', self.name)
 
