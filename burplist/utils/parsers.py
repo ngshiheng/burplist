@@ -2,7 +2,7 @@ import logging
 import re
 from typing import Optional, Union
 
-from burplist.utils.constants import POPULAR_BRANDS, POPULAR_STYLES
+from burplist.utils.misc import get_popular_brands, get_popular_styles
 
 logger = logging.getLogger(__name__)
 
@@ -21,14 +21,17 @@ def parse_name(raw_name: str) -> str:
 
 
 def parse_style(raw_style: str) -> Optional[str]:
-    return next((style for style in POPULAR_STYLES if style.lower() in raw_style.lower()), None)
+    return raw_style if raw_style.lower() in get_popular_styles() else None
 
 
 def parse_brand(raw_brand: str) -> Optional[str]:
-    return next((brand for brand in POPULAR_BRANDS if brand.lower() in raw_brand.lower()), None)
+    return raw_brand if raw_brand.lower() in get_popular_brands() else None
 
 
 def parse_abv(raw_abv: str) -> Optional[float]:
+    """
+    Get product abv from name
+    """
     has_float_abv = re.search(r'(\d{1,2}\.\d{1,2})%', raw_abv)
     if has_float_abv:
         return float(has_float_abv.group(1))
