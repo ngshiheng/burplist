@@ -1,2 +1,4 @@
-from .default_middleware import *  # noqa
-from .delayed_requests_middleware import *  # noqa
+from .default import BurplistDownloaderMiddleware, BurplistSpiderMiddleware
+from .delayed_requests import DelayedRequestsMiddleware
+
+__all__ = ['BurplistDownloaderMiddleware', 'BurplistSpiderMiddleware', 'DelayedRequestsMiddleware']

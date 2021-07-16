@@ -43,6 +43,9 @@ NEWSPIDER_MODULE = 'burplist.spiders'
 # Scraper API
 SCRAPER_API_KEY = os.environ.get('SCRAPER_API_KEY')
 
+# Management Commands
+COMMANDS_MODULE = 'burplist.commands'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'burplist (+http://www.yourdomain.com)'

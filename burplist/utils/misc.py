@@ -9,9 +9,9 @@ logger = logging.getLogger(__name__)
 
 def remove_stale_products_prices(stale_days: int = 7):
     """
-    Remove stale products and prices for the last `stale_days`
+    Remove stale products and prices which are not updated for N number of days
     """
-    assert stale_days > 0, '⛔️ You are prohibited to delete everything using this script.'
+    assert stale_days > 0, 'You are prohibited to delete everything using this script.'
 
     engine = db_connect()
     session = sessionmaker(bind=engine)()
@@ -22,7 +22,7 @@ def remove_stale_products_prices(stale_days: int = 7):
         logger.info(f'Found {stale_products_count} stale products.')
 
         if stale_products_count < 1:
-            logger.info('No stale products to delete. Bye. 👋')
+            logger.info('No stale products to delete. Bye.')
             return
 
         product_ids = [product.id for product in stale_products.all()]
@@ -32,7 +32,7 @@ def remove_stale_products_prices(stale_days: int = 7):
         stale_prices.delete()
         stale_products.delete()
         session.commit()
-        logger.info(f'{stale_products_count} stale products deleted successfully. 👋')
+        logger.info(f'{stale_products_count} stale products deleted successfully.')
 
     except Exception as exception:
         logger.exception(f'An unexpected error has occurred while running {__name__}.', extra=dict(exception=exception))
