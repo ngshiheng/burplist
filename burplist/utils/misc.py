@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 logger = logging.getLogger(__name__)
 
 
-def remove_stale_products_prices(stale_days: int = 7):
+def remove_stale_products_prices(stale_days: int = 7) -> None:
     """
     Remove stale products and prices which are not updated for N number of days
     """
@@ -37,6 +37,7 @@ def remove_stale_products_prices(stale_days: int = 7):
 
     except Exception as exception:
         logger.exception(f'An unexpected error has occurred while running {__name__}.', extra=dict(exception=exception))
+        raise
 
     finally:
         session.close()
