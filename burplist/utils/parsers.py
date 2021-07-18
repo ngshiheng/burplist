@@ -21,11 +21,11 @@ def parse_name(raw_name: str) -> str:
 
 
 def parse_style(raw_style: str) -> Optional[str]:
-    return raw_style if raw_style.lower() in get_popular_styles() else None
+    return next((style for style in get_popular_styles() if style.lower() in raw_style.lower()), None)
 
 
 def parse_brand(raw_brand: str) -> Optional[str]:
-    return raw_brand if raw_brand.lower() in get_popular_brands() else None
+    return next((brand for brand in get_popular_brands() if brand.lower() in raw_brand.lower()), None)
 
 
 def parse_abv(raw_abv: str) -> Optional[float]:

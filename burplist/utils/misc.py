@@ -44,7 +44,7 @@ def get_popular_styles() -> set[str]:
     session = sessionmaker(bind=engine)()
 
     try:
-        return {style[0].lower() for style in session.query(Product.style).distinct() if style[0]}
+        return {style[0] for style in session.query(Product.style).distinct() if style[0]}
 
     except Exception as exception:
         logger.exception(f'An unexpected error has occurred while running {__name__}.', extra=dict(exception=exception))
@@ -62,7 +62,7 @@ def get_popular_brands() -> set[str]:
     session = sessionmaker(bind=engine)()
 
     try:
-        return {brand[0].lower() for brand in session.query(Product.brand).distinct() if brand[0]}
+        return {brand[0] for brand in session.query(Product.brand).distinct() if brand[0]}
 
     except Exception as exception:
         logger.exception(f'An unexpected error has occurred while running {__name__}.', extra=dict(exception=exception))
