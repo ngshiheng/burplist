@@ -18,7 +18,7 @@ class ExistingProductPricePipeline:
     Update existing products information
     Create a new price for existing products if the new price differs from the existing price
 
-    `brand`, `url` and `quantity` is used to define the uniqueness of a product
+    `url` and `quantity` is used to define the uniqueness of a product
     Using `url` alone isn't enough because the same URL (product) can have type of different `quantity`
     E.g.: "Pabst Blue Ribbon American Lager" can be of 'Single', '6 Packs' or 'Case of 24'
 
@@ -91,13 +91,12 @@ class ExistingProductPricePipeline:
         """
         Session = sessionmaker(bind=self.engine)
 
-        with Session() as session:
+        with Session.begin() as session:
             session.bulk_update_mappings(Product, self.products_update)
             logger.info(f'Updated {len(self.products_update)} existing products information in bulk.')
 
             prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Only works if all values in dict are hashable. Reference: https://www.geeksforgeeks.org/python-removing-duplicate-dicts-in-list/
             session.bulk_insert_mappings(Price, prices)
-            session.commit()
             logger.info(f'Created {len(self.prices)} new prices in bulk for existing products to the database.')
 
 
@@ -154,13 +153,12 @@ class NewProductPricePipeline:
         """
         Session = sessionmaker(bind=self.engine)
 
-        with Session() as session:
+        with Session.begin() as session:
             products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list.
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 
             prices = [dict(price=product['price'], product_id=product['id']) for product in products]
             session.bulk_insert_mappings(Price, prices)
-            session.commit()
 
             logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
             logger.info(f'Saved {len(prices)} new prices in bulk operation to the database.')
