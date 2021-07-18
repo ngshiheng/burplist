@@ -29,9 +29,9 @@ class ExistingProductPricePipeline:
         """
         Initializes database connection and sessionmaker
         """
-        engine = db_connect()
-        create_table(engine)
-        self.session = sessionmaker(bind=engine)
+        self.engine = db_connect()
+        create_table(self.engine)
+        self.session = sessionmaker(bind=self.engine)
 
         self.prices = []
         self.products_update = []
@@ -89,9 +89,9 @@ class ExistingProductPricePipeline:
         Saving all the scraped products and prices in bulk on spider close event
         We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster
         """
-        session = self.session()
+        Session = sessionmaker(bind=self.engine)
 
-        try:
+        with Session() as session:
             session.bulk_update_mappings(Product, self.products_update)
             logger.info(f'Updated {len(self.products_update)} existing products information in bulk.')
 
@@ -99,14 +99,6 @@ class ExistingProductPricePipeline:
             session.bulk_insert_mappings(Price, prices)
             session.commit()
             logger.info(f'Created {len(self.prices)} new prices in bulk for existing products to the database.')
-
-        except Exception as exception:
-            logger.exception(exception, extra=dict(spider=spider))
-            session.rollback()
-            raise
-
-        finally:
-            session.close()
 
 
 class NewProductPricePipeline:
@@ -118,10 +110,8 @@ class NewProductPricePipeline:
         """
         Initializes database connection and sessionmaker
         """
-        engine = db_connect()
-        create_table(engine)
-        self.session = sessionmaker(bind=engine)
-
+        self.engine = db_connect()
+        create_table(self.engine)
         self.products: List[Dict[str, Any]] = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
@@ -162,9 +152,9 @@ class NewProductPricePipeline:
 
         Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
         """
-        session = self.session()
+        Session = sessionmaker(bind=self.engine)
 
-        try:
+        with Session() as session:
             products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list.
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 
@@ -174,11 +164,3 @@ class NewProductPricePipeline:
 
             logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
             logger.info(f'Saved {len(prices)} new prices in bulk operation to the database.')
-
-        except Exception as exception:
-            logger.exception(exception, extra=dict(spider=spider))
-            session.rollback()
-            raise
-
-        finally:
-            session.close()
