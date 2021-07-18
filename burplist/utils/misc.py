@@ -2,7 +2,8 @@ import logging
 from datetime import datetime, timedelta
 from functools import lru_cache
 
-from burplist.database.models import Price, Product, db_connect
+from burplist.database.models import Price, Product
+from burplist.database.utils import db_connect
 from sqlalchemy.orm import sessionmaker
 
 logger = logging.getLogger(__name__)

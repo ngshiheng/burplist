@@ -1,27 +1,12 @@
 from datetime import datetime
 
-from scrapy.utils.project import get_project_settings
-from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, create_engine
+from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import column_property, relationship
 from sqlalchemy.sql.expression import select
 from sqlalchemy.sql.schema import UniqueConstraint
 
-settings = get_project_settings()
-
 Base = declarative_base()
-
-
-def db_connect():
-    """
-    Performs database connection using database settings from settings.py.
-    Returns sqlalchemy engine instance
-    """
-    return create_engine(settings.get('DATABASE_CONNECTION_STRING'))
-
-
-def create_table(engine):
-    Base.metadata.create_all(engine)
 
 
 class Price(Base):
