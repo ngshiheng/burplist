@@ -100,8 +100,8 @@ class ExistingProductPricePipeline:
             session.commit()
             logger.info(f'Created {len(self.prices)} new prices in bulk for existing products to the database.')
 
-        except Exception as error:
-            logger.exception(error, extra=dict(spider=spider))
+        except Exception as exception:
+            logger.exception(exception, extra=dict(spider=spider))
             session.rollback()
             raise
 
@@ -175,8 +175,8 @@ class NewProductPricePipeline:
             logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
             logger.info(f'Saved {len(prices)} new prices in bulk operation to the database.')
 
-        except Exception as error:
-            logger.exception(error, extra=dict(spider=spider))
+        except Exception as exception:
+            logger.exception(exception, extra=dict(spider=spider))
             session.rollback()
             raise
 
