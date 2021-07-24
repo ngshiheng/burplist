@@ -31,7 +31,7 @@ class AlcohaulSpider(scrapy.Spider):
 
         if products:
             for product in products:
-                if product['quantity'] < 1:
+                if int(product['quantity']) < 1:  # NOTE: `quantity` could be returned as `int` or `str` by the API
                     # Skipping products which are out of stock
                     continue
 
