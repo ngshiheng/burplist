@@ -43,7 +43,7 @@ class RedMartSpider(scrapy.Spider):
                 yield retry_request
             return
 
-        styles = data['mods']['filter']['filterItems'][6]['options']
+        styles = data['mods']['filter']['filterItems'][6]['options']  # Contains beer styles
 
         for style in styles:
             params = {
@@ -65,7 +65,7 @@ class RedMartSpider(scrapy.Spider):
                 yield retry_request
             return
 
-        products = data['mods']['listItems']
+        products = data['mods'].get('listItems')
 
         # Stop sending requests when the REST API returns an empty array
         if products:
