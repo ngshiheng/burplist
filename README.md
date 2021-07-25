@@ -7,6 +7,23 @@
 
 > Collect all the available beers (preferably craft beers 🍻) data in Singapore into a single place so that users can easy compare prices across different vendors and shops.
 
+## Installation
+
+```sh
+pipenv sync --dev
+```
+
+## Setup Pre-commit Hooks
+
+Before you begin your development work, make sure you have installed [pre-commit hooks](https://pre-commit.com/index.html#installation).
+
+Some example useful invocations:
+
+-   `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
+-   `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments
+
+---
+
 ## Start Crawling
 
 ### Run single spider
@@ -42,6 +59,8 @@ scrapy list | xargs -n 1 -P 0 scrapy crawl
 ```sh
 export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
 ```
+
+---
 
 ## Database Schema
 

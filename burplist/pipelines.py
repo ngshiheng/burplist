@@ -135,7 +135,7 @@ class NewProductPricePipeline:
             volume=adapter.get('volume'),
             quantity=adapter.get('quantity'),
 
-            price=adapter['price'].amount
+            price=adapter['price'].amount,
         )
 
         self.products.append(product)
