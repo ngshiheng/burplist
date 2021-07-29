@@ -31,3 +31,12 @@ repos:
       rev: "v2.1.0"
       hooks:
           - id: add-trailing-comma
+
+    - repo: local
+      hooks:
+          - id: scrapy-check
+            name: scrapy-check
+            entry: pipenv run scrapy check
+            always_run: true
+            pass_filenames: false
+            language: system

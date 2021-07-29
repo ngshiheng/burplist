@@ -26,6 +26,12 @@ class AlcohaulSpider(scrapy.Spider):
         yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
+        """
+        @url https://alcohaul.sg/api/productlist?skip=0&limit=50&parent=5f7edae59ae56e6d7b8b456d&filter=a-z&child=5f7edb459ae56e6d7b8b45df
+        @returns items 1 50
+        @returns requests 1
+        @scrapes platform name url volume quantity price
+        """
         data = response.json()
         products = data['items']
 
