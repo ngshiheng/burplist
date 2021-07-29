@@ -34,6 +34,12 @@ class AlcoholDeliverySpider(scrapy.Spider):
         yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
+        """
+        @url https://www.alcoholdelivery.com.sg/api/fetchProducts?filter=all&keyword=&limit=10&parent=beer-cider&productList=1&skip=0&subParent=craft-beer&type=0
+        @returns items 1 10
+        @returns requests 1
+        @scrapes platform name url origin style abv volume quantity price
+        """
         products = response.json()
 
         # Stop sending requests when the REST API returns an empty array

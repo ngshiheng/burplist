@@ -30,6 +30,9 @@ class CraftBeerSGSpider(scrapy.Spider):
         return name, int(quantity)
 
     def parse(self, response):
+        """
+        @url https://craftbeersg.com/product-category/beer/by-brewery/
+        """
         collections = response.xpath('//li[@class="cat-item cat-item-145 current-cat cat-parent"]//li/a')
         for collection in collections:
             brand = collection.xpath('./text()').get()

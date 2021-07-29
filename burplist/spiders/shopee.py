@@ -26,6 +26,12 @@ class ShopeeSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
+        """
+        @url https://shopee.sg/api/v4/search/search_items?by=sales&categoryids=14260&keyword=craft%20beer&limit=50&match_id=14255&newest=0&official_mall=1&order=desc&page_type=search&rating_filter=4&scenario=PAGE_SUB_CATEGORY_SEARCH&skip_autocorrect=1&version=2
+        @returns items 1 50
+        @returns requests 0
+        @scrapes platform name url quantity price
+        """
         data = response.json()
         items = data['items']
 

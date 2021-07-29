@@ -21,6 +21,10 @@ class BeerForceSpider(scrapy.Spider):
     start_urls = ['https://beerforce.sg/pages/all-styles']
 
     def parse(self, response):
+        """
+        @url https://beerforce.sg/pages/all-styles
+        @cb_kwargs {"callback": "/collections/amber-ale"}
+        """
         collections = response.xpath('//div[@class="o-layout__item u-1/2@tab u-1/4@desk"]//@href')
         yield from response.follow_all(collections, callback=self.parse_collection)
 
@@ -51,7 +55,7 @@ class BeerForceSpider(scrapy.Spider):
                 response.urljoin(media.xpath('./a/@href').get()),
                 callback=self.parse_product_detail,
                 meta={'item': loader.load_item()},
-                dont_filter=False
+                dont_filter=False,
             )
 
         # Recursively follow the link to the next page, extracting data from it

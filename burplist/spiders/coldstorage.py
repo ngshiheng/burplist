@@ -23,6 +23,12 @@ class ColdStorageSpider(scrapy.Spider):
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
 
     def parse(self, response):
+        """
+        @url https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers
+        @returns items 1 25
+        @returns requests 1
+        @scrapes platform name url brand volume quantity price
+        """
         products = response.xpath('//div[@class="product_box"]')
 
         for product in products:
