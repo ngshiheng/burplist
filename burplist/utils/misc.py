@@ -16,9 +16,9 @@ def remove_stale_products_prices(stale_days: int = 7) -> None:
     assert stale_days > 0, 'You are prohibited to delete everything using this script.'
 
     engine = db_connect()
-    Session = sessionmaker(bind=engine)
+    db_session = sessionmaker(bind=engine)
 
-    with Session.begin() as session:
+    with db_session.begin() as session:
         stale_products = session.query(Product).filter(Product.updated_on <= datetime.utcnow() - timedelta(days=stale_days))
         stale_products_count = stale_products.count()
         logger.info(f'Found {stale_products_count} stale products.')

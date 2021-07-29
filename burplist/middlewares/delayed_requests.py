@@ -3,7 +3,7 @@ from twisted.internet import reactor
 from twisted.internet.defer import Deferred
 
 
-class DelayedRequestsMiddleware(object):
+class DelayedRequestsMiddleware:
     """
     Usage e.g.:
     yield scrapy.Request(url='http://example.com/page/1/', meta={ 'delay_request_by': 5 })

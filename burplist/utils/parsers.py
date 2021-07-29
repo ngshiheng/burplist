@@ -40,6 +40,8 @@ def parse_abv(raw_abv: str) -> Optional[float]:
     if has_int_abv:
         return float(has_int_abv.group(1))
 
+    return None
+
 
 def parse_volume(raw_name: str) -> Optional[int]:
     """
@@ -48,6 +50,8 @@ def parse_volume(raw_name: str) -> Optional[int]:
     has_volume = re.search(r'(\d{3}) ?ml', raw_name, flags=re.IGNORECASE)
     if has_volume:
         return int(has_volume.group(1))
+
+    return None
 
 
 def parse_quantity(raw_name: Union[str, int]) -> int:

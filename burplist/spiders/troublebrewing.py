@@ -61,7 +61,7 @@ class TroubleBrewingSpider(scrapy.Spider):
 
         data_regex = re.search(r'\[\{(.*?)\]', script_tag)
         if not data_regex:
-            return None
+            yield
 
         products = json.loads(data_regex.group())
 

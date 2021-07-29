@@ -89,9 +89,10 @@ class ExistingProductPricePipeline:
         Saving all the scraped products and prices in bulk on spider close event
         We use `bulk_insert_mappings` instead of `bulk_save_objects` here as it accepts lists of plain Python dictionaries which results in less amount of overhead associated with instantiating mapped objects and assigning state to them, they are faster
         """
-        Session = sessionmaker(bind=self.engine)
+        assert spider
 
-        with Session.begin() as session:
+        db_session = sessionmaker(bind=self.engine)
+        with db_session.begin() as session:
             session.bulk_update_mappings(Product, self.products_update)
             logger.info(f'Updated {len(self.products_update)} existing products information in bulk.')
 
@@ -151,9 +152,10 @@ class NewProductPricePipeline:
 
         Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
         """
-        Session = sessionmaker(bind=self.engine)
+        assert spider
 
-        with Session.begin() as session:
+        db_session = sessionmaker(bind=self.engine)
+        with db_session.begin() as session:
             products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list.
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 
