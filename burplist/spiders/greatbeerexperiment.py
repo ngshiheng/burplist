@@ -25,6 +25,8 @@ def _get_product_quantity(raw_name: str) -> int:
 class TheGreatBeerExperimentSpider(scrapy.Spider):
     """
     Extract data from raw HTML
+
+    # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
     """
     name = 'greatbeerexperiment'
     start_urls = ['https://greatbeerexperiment.com/collections']
@@ -32,7 +34,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://greatbeerexperiment.com/collections
-        @cb_kwargs {"callback": "https://greatbeerexperiment.com/collections/3-fonteinen-belgium"}
+        @returns requests 1
         """
         collections = response.xpath('//li[@class="site-nav--has-dropdown site-nav--active"]//li/a')
         for collection in collections:

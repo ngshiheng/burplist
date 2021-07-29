@@ -69,7 +69,7 @@ class FairPriceSpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://website-api.omni.fairprice.com.sg/api/product/v2?category=premium&experiments=recHome-A%2CpastPurchaseCategory-A%2CsearchVariant-B%2CUnappliedPromoVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B&includeTagDetails=true&page=1&pageType=category&slug=premium&storeId=165&url=premium
-        @returns items 20
+        @returns items 1
         @returns requests 1
         @scrapes platform name url brand origin volume quantity price
         """

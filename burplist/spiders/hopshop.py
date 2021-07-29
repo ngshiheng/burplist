@@ -17,8 +17,8 @@ class HopShopSpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://www.hopshop.com.sg/beer/
-        @returns items 1 50
-        @returns requests 1
+        @returns items 1
+        @returns requests 1 1
         @scrapes platform name url brand abv volume quantity price
         """
         products = response.xpath('//li[@class="product"]')

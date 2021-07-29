@@ -21,6 +21,7 @@ class RedMartSpider(scrapy.Spider):
     I have a feeling that is because referer is being set with cached which Lazada endpoints don't seem to like it
 
     # TODO: Extract `abv` and `origin` data
+    # TODO: Add contracts to `parse`. Need to handle passing of `custom_settings`. Currently it keeps getting blocked by anti-scrape system
     """
     name = 'redmart'
     custom_settings = {

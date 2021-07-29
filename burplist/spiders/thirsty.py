@@ -19,7 +19,7 @@ class ThirstySpider(scrapy.Spider):
     Extract data from raw HTML
     Do note that this site uses infinite scrolling
 
-    # TODO: Extract `origin` information
+    # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
     """
     name = 'thirsty'
     custom_settings = {'ROBOTSTXT_OBEY': False}
@@ -28,10 +28,9 @@ class ThirstySpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://www.thirsty.com.sg/pages/shop-by-style
-        @returns requests 1 20
-        @cb_kwargs {"callback": "ipa"}
+        @returns requests 1
         """
-        collections = response.xpath('///a[@class="link-3 color-header"]')
+        collections = response.xpath('//a[@class="link-3 color-header"]')
 
         for collection in collections:
             style = collection.xpath('text()').get()

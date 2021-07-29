@@ -16,6 +16,7 @@ class BeerForceSpider(scrapy.Spider):
     # NOTE: This spider passes ProductItem into nested request, which is kind of cool!
 
     # TODO: Extract `origin` information
+    # TODO: Add contracts to `parse_product_detail`. Need to handle passing of `meta`
     """
     name = 'beerforce'
     start_urls = ['https://beerforce.sg/pages/all-styles']
@@ -23,12 +24,16 @@ class BeerForceSpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://beerforce.sg/pages/all-styles
-        @cb_kwargs {"callback": "/collections/amber-ale"}
+        @returns requests 1
         """
         collections = response.xpath('//div[@class="o-layout__item u-1/2@tab u-1/4@desk"]//@href')
         yield from response.follow_all(collections, callback=self.parse_collection)
 
     def parse_collection(self, response):
+        """
+        @url https://beerforce.sg/collections/ipa
+        @returns requests 1
+        """
         product_details = response.xpath('//div[@class="product__details"]')
         product_media = response.xpath('//div[@class="product-top"]')
 

@@ -71,8 +71,8 @@ class IShopChangiSpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://www.ishopchangi.com/bin/cagcommerce/webservices/v2/cag/products/search.json?currentPage=1&query=%3A%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fstout%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fcider%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fcraft-beer%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fnon-craft-beer%3AcagCollectionPoint%3AHOMEDELIVERYNONTRAVELLER%3AcagCollectionPoint%3ALANDSIDE&categoryCodes=travel-electronics-chargers%2Cbeauty%2Cfood%2CWomens-fashion&lang=en
-        @returns items 1 48
-        @returns requests 1
+        @returns items 1
+        @returns requests 1 1
         @scrapes platform name url brand quantity price
         """
         data = response.json()

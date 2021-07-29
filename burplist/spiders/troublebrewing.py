@@ -43,10 +43,20 @@ class TroubleBrewingSpider(scrapy.Spider):
     start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']
 
     def parse(self, response):
+        """
+        @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer
+        @returns requests 1
+        """
         collections = response.xpath('//a[@class="product-link js-product-link"]')
         yield from response.follow_all(collections, callback=self.parse_collection)
 
     def parse_collection(self, response):
+        """
+        @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer/products/road-hog
+        @returns items 1 3
+        @returns requests 0 0
+        @scrapes platform name url brand origin style volume quantity price
+        """
         script_tag = response.xpath('//script[contains(.,"var meta")]/text()').get()
 
         data_regex = re.search(r'\[\{(.*?)\]', script_tag)

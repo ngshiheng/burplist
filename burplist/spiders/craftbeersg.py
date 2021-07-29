@@ -12,6 +12,7 @@ class CraftBeerSGSpider(scrapy.Spider):
     Product quantity might come in a Pack of 6, Pack of 16, Pack of 24 and etc. https://craftbeersg.com/product-category/beer/page/36/
 
     # TODO: Extract `origin` information
+    # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
     """
     name = 'craftbeersg'
     start_urls = ['https://craftbeersg.com/product-category/beer/by-brewery/']
@@ -32,6 +33,7 @@ class CraftBeerSGSpider(scrapy.Spider):
     def parse(self, response):
         """
         @url https://craftbeersg.com/product-category/beer/by-brewery/
+        @returns requests 1
         """
         collections = response.xpath('//li[@class="cat-item cat-item-145 current-cat cat-parent"]//li/a')
         for collection in collections:
