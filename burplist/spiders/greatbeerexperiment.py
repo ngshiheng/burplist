@@ -30,6 +30,10 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
     start_urls = ['https://greatbeerexperiment.com/collections']
 
     def parse(self, response):
+        """
+        @url https://greatbeerexperiment.com/collections
+        @cb_kwargs {"callback": "https://greatbeerexperiment.com/collections/3-fonteinen-belgium"}
+        """
         collections = response.xpath('//li[@class="site-nav--has-dropdown site-nav--active"]//li/a')
         for collection in collections:
             collection_name = collection.xpath('.//text()').get().strip()

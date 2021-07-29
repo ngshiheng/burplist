@@ -26,6 +26,11 @@ class ThirstySpider(scrapy.Spider):
     start_urls = ['https://www.thirsty.com.sg/pages/shop-by-style']
 
     def parse(self, response):
+        """
+        @url https://www.thirsty.com.sg/pages/shop-by-style
+        @returns requests 1 20
+        @cb_kwargs {"callback": "ipa"}
+        """
         collections = response.xpath('///a[@class="link-3 color-header"]')
 
         for collection in collections:
