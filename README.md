@@ -9,8 +9,10 @@
 
 ## Installation
 
+Make sure you have [poetry](https://python-poetry.org/docs/#installation) installed on your machine.
+
 ```sh
-pipenv sync --dev
+poetry install
 ```
 
 ## Setup Pre-commit Hooks
@@ -30,19 +32,19 @@ Some example useful invocations:
 
 ```sh
 # To list all spiders
-pipenv run scrapy crawl list
+poetry run scrapy crawl list
 
 # To run a single spider
-pipenv run scrapy crawl fairprice
+poetry run scrapy crawl fairprice
 
 # To run single spider with json output
-pipenv run scrapy crawl coldstorage -o coldstorage.json
+poetry run scrapy crawl coldstorage -o coldstorage.json
 ```
 
 ### Run all spiders
 
 ```sh
-pipenv run scrapy list | xargs -n 1 pipenv run scrapy crawl
+poetry run scrapy list | xargs -n 1 poetry run scrapy crawl
 
 # Run on Heroku
 heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
