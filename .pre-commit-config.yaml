@@ -36,7 +36,7 @@ repos:
       hooks:
           - id: scrapy-check
             name: Scrapy check
-            entry: pipenv run scrapy check
+            entry: poetry run scrapy check
             always_run: true
             pass_filenames: false
             language: system
