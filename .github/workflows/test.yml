@@ -7,7 +7,8 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                python-version: [3.9]
+                python-version: [3.9.1]
+                poetry-version: [1.1.7]
 
         steps:
             - uses: actions/checkout@v2
@@ -16,15 +17,14 @@ jobs:
               with:
                   python-version: ${{ matrix.python-version }}
 
-            - uses: dschep/install-pipenv-action@v1
-            - name: Install pipenv
-              run: |
-                  pip install pipenv
+            - uses: abatilo/actions-poetry@v2.0.0
+              with:
+                  poetry-version: ${{ matrix.poetry-version }}
             - name: Install dependencies
               run: |
-                  pipenv install --dev
+                  poetry install
             - name: Run checks
               run: |
-                  pipenv run flake8 --statistics --show-source
-                  pipenv run scrapy check
-                  pipenv run python3 -m unittest
+                  poetry run flake8 --statistics --show-source
+                  poetry run scrapy check
+                  poetry run python3 -m unittest
