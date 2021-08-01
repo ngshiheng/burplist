@@ -89,5 +89,9 @@ finally:
 
 ## Adding Delay to Requests
 
-- https://stackoverflow.com/questions/19135875/add-a-delay-to-a-specific-scrapy-request/64903556#64903556
-- https://stackoverflow.com/questions/41404281/how-to-retry-the-request-n-times-when-an-item-gets-an-empty-field/41404391#41404391
+-   https://stackoverflow.com/questions/19135875/add-a-delay-to-a-specific-scrapy-request/64903556#64903556
+-   https://stackoverflow.com/questions/41404281/how-to-retry-the-request-n-times-when-an-item-gets-an-empty-field/41404391#41404391
+
+## Spider Contracts
+
+-   https://stackoverflow.com/questions/25764201/how-to-work-with-the-scrapy-contracts
