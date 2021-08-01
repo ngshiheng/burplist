@@ -12,7 +12,7 @@
 Make sure you have [poetry](https://python-poetry.org/docs/#installation) installed on your machine.
 
 ```sh
-poetry install
+poetry install --no-root
 ```
 
 ## Setup Pre-commit Hooks
