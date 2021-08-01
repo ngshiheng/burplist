@@ -55,7 +55,7 @@ class TroubleBrewingSpider(scrapy.Spider):
         @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer/products/road-hog
         @returns items 1 3
         @returns requests 0 0
-        @scrapes platform name url brand origin style volume quantity price
+        @scrapes platform name url brand origin volume quantity price
         """
         script_tag = response.xpath('//script[contains(.,"var meta")]/text()').get()
 
