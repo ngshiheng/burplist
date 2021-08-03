@@ -1,0 +1,1 @@
+release: alembic upgrade head
