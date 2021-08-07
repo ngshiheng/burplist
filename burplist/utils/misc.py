@@ -4,6 +4,7 @@ from functools import lru_cache
 
 from burplist.database.models import Price, Product
 from burplist.database.utils import db_connect
+from sqlalchemy.exc import ProgrammingError
 from sqlalchemy.orm import sessionmaker
 
 logger = logging.getLogger(__name__)
@@ -46,7 +47,7 @@ def get_popular_styles() -> set[str]:
     try:
         return {style[0] for style in session.query(Product.style).distinct() if style[0]}
 
-    except Exception as exception:
+    except ProgrammingError as exception:
         logger.exception(f'An unexpected error has occurred while running {__name__}.', extra=dict(exception=exception))
         return {''}
 
@@ -64,7 +65,7 @@ def get_popular_brands() -> set[str]:
     try:
         return {brand[0] for brand in session.query(Product.brand).distinct() if brand[0]}
 
-    except Exception as exception:
+    except ProgrammingError as exception:
         logger.exception(f'An unexpected error has occurred while running {__name__}.', extra=dict(exception=exception))
         return {''}
 

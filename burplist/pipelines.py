@@ -4,6 +4,7 @@ from typing import Any, Dict, List
 from itemadapter import ItemAdapter
 from scrapy import Spider
 from scrapy.exceptions import DropItem
+from sqlalchemy.exc import ProgrammingError
 from sqlalchemy.orm import sessionmaker
 
 from burplist.database.models import Price, Product
@@ -50,7 +51,7 @@ class ExistingProductPricePipeline:
         try:
             existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
 
-        except Exception as exception:
+        except ProgrammingError as exception:
             logger.exception('An unexpected error has occurred.', extra=dict(exception=exception, url=url, quantity=quantity))
             raise DropItem(f'Dropping item because item <{url}> because of an unexpected error.') from exception
 

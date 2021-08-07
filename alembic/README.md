@@ -15,3 +15,11 @@ Alembic is a lightweight database migration tool for usage with the SQLAlchemy D
 
 -   https://stackoverflow.com/a/56651578/10067850
 -   Remember to run `alembic stamp head` to tell `sqlalchemy` that the current migration represents the state of the database
+
+---
+
+# SQLAlchemy
+
+## List of awesome SQLAlchemy library
+
+-   https://github.com/dahlia/awesome-sqlalchemy
