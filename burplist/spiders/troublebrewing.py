@@ -8,25 +8,6 @@ from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
 
 
-def _get_product_quantity(sku: Optional[str], public_title: Optional[str] = None) -> int:
-    if sku is None:
-        return 24
-
-    # Special case for "Trouble Brewing x @FEEDBENG Chinese New Year Gift Set"
-    if public_title and 'Gift Set' in public_title:
-        return 2
-
-    if sku.endswith('24B'):
-        return 24
-    if sku.endswith('12B'):
-        return 12
-    if sku.endswith('6B'):
-        return 6
-    if sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
-        return 24
-    return 1
-
-
 class TroubleBrewingSpider(scrapy.Spider):
     """
     Extract data from raw HTML
@@ -79,7 +60,26 @@ class TroubleBrewingSpider(scrapy.Spider):
 
             loader.add_value('abv', None)
             loader.add_value('volume', '330ml')
-            loader.add_value('quantity', _get_product_quantity(product['sku'], product['public_title']))
+            loader.add_value('quantity', self.get_product_quantity(product['sku'], product['public_title']))
 
             loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
             yield loader.load_item()
+
+    @staticmethod
+    def get_product_quantity(sku: Optional[str], public_title: Optional[str] = None) -> int:
+        if sku is None:
+            return 24
+
+        # Special case for "Trouble Brewing x @FEEDBENG Chinese New Year Gift Set"
+        if public_title and 'Gift Set' in public_title:
+            return 2
+
+        if sku.endswith('24B'):
+            return 24
+        if sku.endswith('12B'):
+            return 12
+        if sku.endswith('6B'):
+            return 6
+        if sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
+            return 24
+        return 1

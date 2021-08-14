@@ -9,11 +9,6 @@ from scrapy.loader import ItemLoader
 logger = logging.getLogger(__name__)
 
 
-def _get_product_quantity(display_unit: str) -> int:
-    quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
-    return int(quantity[0]) if len(quantity) != 1 else 1
-
-
 class ThirstySpider(scrapy.Spider):
     """
     Extract data from raw HTML
@@ -74,7 +69,7 @@ class ThirstySpider(scrapy.Spider):
 
                     loader.add_xpath('abv', './/span[@class="alcohol color-text body-xs mr-5"]/text()')
                     loader.add_xpath('volume', './/span[@class="volume color-text body-xs tablet-mr-5"]/text()')
-                    loader.add_value('quantity', _get_product_quantity(display_unit))
+                    loader.add_value('quantity', self.get_product_quantity(display_unit))
 
                     loader.add_value('price', price)
 
@@ -83,3 +78,8 @@ class ThirstySpider(scrapy.Spider):
             page += 1
             next_page = f'{current_url}?view=json&sort_by=manual&page={page}'
             yield response.follow(next_page, callback=self.parse_collection, meta={'current_url': current_url, 'page': page, 'style': response.meta['style']})
+
+    @staticmethod
+    def get_product_quantity(display_unit: str) -> int:
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+        return int(quantity[0]) if len(quantity) != 1 else 1

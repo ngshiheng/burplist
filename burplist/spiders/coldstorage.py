@@ -6,14 +6,6 @@ from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
 
 
-def _get_product_quantity(raw_name: str) -> int:
-    raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)
-    if raw_quantity_with_name:
-        raw_quantity = raw_quantity_with_name.group().split(' ')
-        return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
-    return 1
-
-
 class ColdStorageSpider(scrapy.Spider):
     """
     Extract data from raw HTML
@@ -47,7 +39,7 @@ class ColdStorageSpider(scrapy.Spider):
 
             loader.add_value('abv', None)
             loader.add_value('volume', name)
-            loader.add_value('quantity', _get_product_quantity(name))
+            loader.add_value('quantity', self.get_product_quantity(name))
 
             loader.add_xpath('price', './/div[@data-price]/text()')
             yield loader.load_item()
@@ -56,3 +48,11 @@ class ColdStorageSpider(scrapy.Spider):
         if next_page is not None:
             next_page = response.urljoin(next_page)
             yield response.follow(next_page, callback=self.parse)
+
+    @staticmethod
+    def get_product_quantity(raw_name: str) -> int:
+        raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)
+        if raw_quantity_with_name:
+            raw_quantity = raw_quantity_with_name.group().split(' ')
+            return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
+        return 1

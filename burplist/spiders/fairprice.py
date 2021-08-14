@@ -8,23 +8,6 @@ from burplist.utils.parsers import parse_style
 from scrapy.loader import ItemLoader
 
 
-def _get_product_price(product: dict[str, Any]) -> str:
-    offer = product.get('offers')
-
-    if offer and offer[0]['price'] is not None:
-        return str(offer[0]['price'])
-
-    return product['storeSpecificData'][0]['mrp']
-
-
-def _get_product_quantity(product: dict[str, Any]) -> int:
-    metadata = product['metaData']
-    display_unit = metadata['DisplayUnit']
-    quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
-
-    return int(quantity[0]) if len(quantity) != 1 else 1
-
-
 class FairPriceSpider(scrapy.Spider):
     """
     Parse data from site's API
@@ -91,9 +74,9 @@ class FairPriceSpider(scrapy.Spider):
 
             loader.add_value('abv', product['name'])
             loader.add_value('volume', product['metaData']['DisplayUnit'])
-            loader.add_value('quantity', _get_product_quantity(product))
+            loader.add_value('quantity', self.get_product_quantity(product))
 
-            loader.add_value('price', _get_product_price(product))
+            loader.add_value('price', self.get_product_price(product))
 
             yield loader.load_item()
 
@@ -102,3 +85,19 @@ class FairPriceSpider(scrapy.Spider):
             self.params['page'] += 1
             next_page = self.BASE_URL + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)
+
+    @staticmethod
+    def get_product_price(product: dict[str, Any]) -> str:
+        offer = product.get('offers')
+        if offer and offer[0]['price'] is not None:
+            return str(offer[0]['price'])
+
+        return product['storeSpecificData'][0]['mrp']
+
+    @staticmethod
+    def get_product_quantity(product: dict[str, Any]) -> int:
+        metadata = product['metaData']
+        display_unit = metadata['DisplayUnit']
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+
+        return int(quantity[0]) if len(quantity) != 1 else 1

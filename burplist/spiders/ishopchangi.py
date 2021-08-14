@@ -10,37 +10,6 @@ from scrapy.loader import ItemLoader
 logger = logging.getLogger(__name__)
 
 
-def _get_product_quantity(raw_name: str) -> int:
-    logger.info(f'raw_name = "{raw_name}"')
-
-    # Ba Xian Tea Lager 3 Bottles Pack
-    if 'Bottles Pack' in raw_name:
-        is_bottles_pack = re.search(r'(\d+) ', raw_name)
-        return int(is_bottles_pack.group(1)) if is_bottles_pack is not None else 1
-
-    # 6 Bottles Pack
-    is_pack = re.search(r'(\d+) Pack', raw_name)
-    if is_pack:
-        return int(is_pack.group(1))
-
-    # La Chouffe Belgian Strong Golden Ale, 4x330ml
-    is_ml = re.search(r'(\d+)x\d{3}ml', raw_name, flags=re.IGNORECASE)
-    if is_ml:
-        return int(is_ml.group(1))
-
-    # LA TRAPPE TRIPEL BOTTLE 330ML*3
-    is_multiply = re.search(r'\d{3}ml[*](\d+)', raw_name, flags=re.IGNORECASE)
-    if is_multiply:
-        return int(is_multiply.group(1))
-
-    # Lion City Meadery Hibiscus Blueberry Mead 330ml x 6
-    is_ml_reverse = re.search(r'\d{3}ml x (\d+)', raw_name, flags=re.IGNORECASE)
-    if is_ml_reverse:
-        return int(is_ml_reverse.group(1))
-
-    return 1
-
-
 class IShopChangiSpider(scrapy.Spider):
     """
     Parse data from site's API
@@ -81,7 +50,7 @@ class IShopChangiSpider(scrapy.Spider):
         for product in products:
             loader = ItemLoader(item=ProductItem())
 
-            quantity = _get_product_quantity(product['name'])
+            quantity = self.get_product_quantity(product['name'])
 
             loader.add_value('platform', self.name)
 
@@ -104,3 +73,35 @@ class IShopChangiSpider(scrapy.Spider):
             self.params['currentPage'] += 1
             next_page = self.BASE_URL + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse, headers=self.headers)
+
+    @staticmethod
+    def get_product_quantity(raw_name: str) -> int:
+        assert isinstance(raw_name, str)
+        logger.info(f'raw_name = "{raw_name}"')
+
+        # Ba Xian Tea Lager 3 Bottles Pack
+        if 'Bottles Pack' in raw_name:
+            is_bottles_pack = re.search(r'(\d+) ', raw_name)
+            return int(is_bottles_pack.group(1)) if is_bottles_pack is not None else 1
+
+        # 6 Bottles Pack
+        is_pack = re.search(r'(\d+) Pack', raw_name)
+        if is_pack:
+            return int(is_pack.group(1))
+
+        # La Chouffe Belgian Strong Golden Ale, 4x330ml
+        is_ml = re.search(r'(\d+)x\d{3}ml', raw_name, flags=re.IGNORECASE)
+        if is_ml:
+            return int(is_ml.group(1))
+
+        # LA TRAPPE TRIPEL BOTTLE 330ML*3
+        is_multiply = re.search(r'\d{3}ml[*](\d+)', raw_name, flags=re.IGNORECASE)
+        if is_multiply:
+            return int(is_multiply.group(1))
+
+        # Lion City Meadery Hibiscus Blueberry Mead 330ml x 6
+        is_ml_reverse = re.search(r'\d{3}ml x (\d+)', raw_name, flags=re.IGNORECASE)
+        if is_ml_reverse:
+            return int(is_ml_reverse.group(1))
+
+        return 1
