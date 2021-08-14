@@ -12,7 +12,13 @@
 Make sure you have [poetry](https://python-poetry.org/docs/#installation) installed on your machine.
 
 ```sh
+poetry install
+
+# Installing dependencies only
 poetry install --no-root
+
+# Updating dependencies to their latest versions
+poetry update
 ```
 
 ## Setup Pre-commit Hooks
@@ -22,7 +28,19 @@ Before you begin your development work, make sure you have installed [pre-commit
 Some example useful invocations:
 
 -   `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
--   `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments
+-   `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
+
+## Database
+
+-   Make sure you have a running instance of the latest PostgreSQL in your local machine.
+
+```sh
+# Example to spin up a PostgreSQL Docker instance locally
+docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
+```
+
+-   By default, the database for this project should be named as `burplist`.
+-   For database migration steps, please read [this](alembic/README.md).
 
 ---
 
@@ -53,64 +71,16 @@ heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
 ### Run all spiders, in parallel
 
 ```sh
+poetry shell
 scrapy list | xargs -n 1 -P 0 scrapy crawl
-```
-
-## Using Proxy (For Production)
-
-```sh
-export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
 ```
 
 ---
 
-## Database Schema
+## Using Proxy
 
-https://dbdiagram.io/d/605d3ad2ecb54e10c33d5165
+We use [ScraperAPI](https://www.scraperapi.com/) as our proxy server provider.
 
-## Useful Scrapy Tools and Libraries
-
-https://github.com/croqaz/awesome-scrapy
-
-## Useful SQL Queries
-
-To get the price list of all available products
-
-```sql
-SELECT
-	product_id,
-	platform AS "Platform",
-	name AS "Product Name",
-	brand AS "Brand",
-	style AS "Style",
-	abv AS "ABV",
-	volume AS "Volume (mL)",
-	round(price::numeric, 2) AS "Price ($SGD)",
-	quantity AS "Quantity (Unit)",
-	round((price / quantity)::numeric, 2) AS "Price/Quantity ($SGD)",
-	url AS "Product Link",
-	TO_CHAR(price.updated_on::TIMESTAMP AT TIME ZONE 'SGT', 'dd/mm/yyyy') AS "Updated On (SGT)"
-FROM
-	product
-	INNER JOIN price ON price.product_id = product.id
-ORDER BY
-	price / quantity ASC
-```
-
-To get the number of prices of all available products
-
-```sql
-SELECT
-	product.id,
-	platform AS "Platform",
-	brand AS "Brand",
-	name AS "Product Name",
-	quantity AS "Quantity (Unit)",
-	url AS "Product Link",
-	count(price.product_id) AS "Number of Prices"
-FROM
-	product
-	LEFT JOIN price ON (product.id = price.product_id)
-GROUP BY
-	product.id
+```sh
+export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
 ```
