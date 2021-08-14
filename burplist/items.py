@@ -12,7 +12,7 @@ class ProductItem(scrapy.Item):
     )
 
     name = scrapy.Field(
-        input_processor=MapCompose(parse_name),
+        input_processor=MapCompose(str.strip, parse_name),
         output_processor=TakeFirst(),
     )
     url = scrapy.Field(
@@ -34,11 +34,11 @@ class ProductItem(scrapy.Item):
     )
 
     abv = scrapy.Field(
-        input_processor=MapCompose(parse_abv),
+        input_processor=MapCompose(str.strip, parse_abv),
         output_processor=TakeFirst(),
     )
     volume = scrapy.Field(
-        input_processor=MapCompose(parse_volume),
+        input_processor=MapCompose(str.strip, parse_volume),
         output_processor=TakeFirst(),
     )
     quantity = scrapy.Field(
@@ -46,6 +46,6 @@ class ProductItem(scrapy.Item):
     )
 
     price = scrapy.Field(
-        input_processor=MapCompose(parse_price),
+        input_processor=MapCompose(str.strip, parse_price),
         output_processor=TakeFirst(),
     )
