@@ -15,9 +15,9 @@ def parse_name(raw_name: str) -> str:
 
     remove_brackets = re.sub(r'[\(\[].*?[\]\)]', '', raw_name)  # E.g.: "Somersby Blackberry Cider [CANS] 330ml"
     remove_non_word_characters = re.sub(r'[^a-zA-Z0-9%.\']', ' ', remove_brackets)
-    remove_spaces = re.sub(' +', ' ', remove_non_word_characters)
+    remove_spaces = re.sub(' +', ' ', remove_non_word_characters).strip()
 
-    return raw_name if not remove_spaces else remove_spaces.strip()
+    return raw_name if not remove_spaces else remove_spaces
 
 
 def parse_style(raw_style: str) -> Optional[str]:
