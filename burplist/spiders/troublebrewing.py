@@ -50,7 +50,7 @@ class TroubleBrewingSpider(scrapy.Spider):
             loader = ItemLoader(item=ProductItem())
             loader.add_value('platform', self.name)
 
-            name = product['name'].split('-', maxsplit=2)[0]
+            name = product['name']
             loader.add_value('name', name)
             loader.add_value('url', response.request.url)
 
@@ -74,6 +74,13 @@ class TroubleBrewingSpider(scrapy.Spider):
         if public_title and 'Gift Set' in public_title:
             return 2
 
+        # Special case for "Limited - Golden Pig Session IPA"
+        if public_title and '24 pack' in public_title:
+            return 24
+        if public_title and '6 pack' in public_title:
+            return 6
+
+        # Normal case
         if sku.endswith('24B'):
             return 24
         if sku.endswith('12B'):
