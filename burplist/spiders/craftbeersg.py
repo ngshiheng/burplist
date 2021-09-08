@@ -17,19 +17,6 @@ class CraftBeerSGSpider(scrapy.Spider):
     name = 'craftbeersg'
     start_urls = ['https://craftbeersg.com/product-category/beer/by-brewery/']
 
-    def _get_product_name_quantity(self, raw_name: str) -> Tuple[str, int]:
-        name = raw_name.split('~', maxsplit=2)  # E.g.: "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
-        name = re.sub('[()]', '', name[0])  # Remove all parenthesis
-
-        if 'Pack of' in name:
-            name, quantity = name.split('Pack of', maxsplit=2)
-        elif 'Case of' in name:
-            name, quantity = name.split('Case of', maxsplit=2)
-        else:
-            quantity = 1
-
-        return name, int(quantity)
-
     def parse(self, response):
         """
         @url https://craftbeersg.com/product-category/beer/by-brewery/
@@ -49,29 +36,43 @@ class CraftBeerSGSpider(scrapy.Spider):
             loader = ItemLoader(item=ProductItem(), selector=product)
             loader.add_value('platform', self.name)
 
-            raw_name = product.xpath('./a[@class="product-loop-title"]/h3/text()').get()
-            name, quantity = self._get_product_name_quantity(raw_name)
+            raw_name = product.xpath('.//a[@class="product-loop-title"]/h3/text()').get()
+            name, quantity = self.get_product_name_quantity(raw_name)
 
             loader.add_value('name', name)
-            loader.add_xpath('url', './a[@class="product-loop-title"]/@href')
+            loader.add_xpath('url', './/a[@class="product-loop-title"]/@href')
 
-            description = product.xpath('.//div[@class="description"]/descendant-or-self::*//text()').getall()
-            details = ''.join(description)  # E.g. Type Medium\n DIPA| 473ml | ABV 7.1%
+            # description = product.xpath('.//div[@class="description"]/descendant-or-self::*//text()').getall() # FIXME: Perform nested crawl to obtain these information
+            # details = ''.join(description)  # E.g. Type Medium\n DIPA| 473ml | ABV 7.1% # FIXME: Perform nested crawl to obtain these information
 
-            style, volume, abv = details.split('|', maxsplit=2)
+            # style, volume, abv = details.split('|', maxsplit=2) # FIXME: Perform nested crawl to obtain these information
 
             loader.add_value('brand', brand)
             loader.add_value('origin', None)
-            loader.add_value('style', style.split('\n')[-1])
+            loader.add_value('style', None)  # FIXME: Perform nested crawl to obtain these information
 
-            loader.add_value('abv', abv)
-            loader.add_value('volume', volume)
+            loader.add_value('abv', None)  # FIXME: Perform nested crawl to obtain these information
+            loader.add_value('volume', None)  # FIXME: Perform nested crawl to obtain these information
             loader.add_value('quantity', quantity)
 
-            loader.add_xpath('price', './/span[@class="woocommerce-Price-amount amount"]/text()')
+            loader.add_xpath('price', '//span[@class="woocommerce-Price-amount amount"]//bdi/text()')
             yield loader.load_item()
 
         # Recursively follow the link to the next page, extracting data from it
         next_page = response.css('a.next.page-numbers').attrib.get('href')
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse)
+
+    @staticmethod
+    def get_product_name_quantity(raw_name: str) -> Tuple[str, int]:
+        name = raw_name.split('~', maxsplit=2)  # E.g.: "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
+        name = re.sub('[()]', '', name[0])  # Remove all parenthesis
+
+        if 'Pack of' in name:
+            name, quantity = name.split('Pack of', maxsplit=2)
+        elif 'Case of' in name:
+            name, quantity = name.split('Case of', maxsplit=2)
+        else:
+            quantity = 1
+
+        return name, int(quantity)
