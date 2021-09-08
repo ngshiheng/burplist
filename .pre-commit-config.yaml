@@ -19,7 +19,6 @@ repos:
           - id: check-symlinks
           - id: destroyed-symlinks
           - id: mixed-line-ending
-          - id: check-json
           - id: check-yaml
 
     - repo: https://github.com/pycqa/flake8
