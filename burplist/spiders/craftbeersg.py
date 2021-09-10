@@ -55,7 +55,7 @@ class CraftBeerSGSpider(scrapy.Spider):
             loader.add_value('volume', None)  # FIXME: Perform nested crawl to obtain these information
             loader.add_value('quantity', quantity)
 
-            loader.add_xpath('price', '//span[@class="woocommerce-Price-amount amount"]//bdi/text()')
+            loader.add_xpath('price', './/span[@class="woocommerce-Price-amount amount"]//bdi/text()')
             yield loader.load_item()
 
         # Recursively follow the link to the next page, extracting data from it
