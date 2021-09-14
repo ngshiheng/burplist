@@ -1,5 +1,5 @@
 import logging
-from typing import Any, Dict, List
+from typing import Any
 
 from itemadapter import ItemAdapter
 from scrapy import Spider
@@ -34,8 +34,8 @@ class ExistingProductPricePipeline:
         create_table(self.engine)
         self.session = sessionmaker(bind=self.engine)
 
-        self.prices = []
-        self.products_update = []
+        self.prices: list[dict[str, Any]] = []
+        self.products_update: list[dict[str, Any]] = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         assert spider
@@ -113,7 +113,7 @@ class NewProductPricePipeline:
         """
         self.engine = db_connect()
         create_table(self.engine)
-        self.products: List[Dict[str, Any]] = []
+        self.products: list[dict[str, Any]] = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
         """

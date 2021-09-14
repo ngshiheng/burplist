@@ -1,5 +1,4 @@
 import re
-from typing import Tuple
 
 import scrapy
 from burplist.items import ProductItem
@@ -78,15 +77,16 @@ class CraftBeerSGSpider(scrapy.Spider):
         yield loadernext.load_item()
 
     @staticmethod
-    def get_product_name_quantity(raw_name: str) -> Tuple[str, int]:
-        name = raw_name.split('~', maxsplit=2)  # E.g.: "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
-        name = re.sub('[()]', '', name[0])  # Remove all parenthesis
+    def get_product_name_quantity(raw_name: str) -> tuple[str, int]:
+        parsed_name = raw_name.split('~', maxsplit=2)  # E.g.: "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
+        name = re.sub('[()]', '', parsed_name[0])  # Remove all parenthesis
 
         if 'Pack of' in name:
             name, quantity = name.split('Pack of', maxsplit=2)
+            return name, int(quantity)
+
         elif 'Case of' in name:
             name, quantity = name.split('Case of', maxsplit=2)
-        else:
-            quantity = 1
+            return name, int(quantity)
 
-        return name, int(quantity)
+        return name, 1

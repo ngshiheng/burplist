@@ -19,7 +19,7 @@ color_formatter = ColoredFormatter(
         'WARNING': 'red',
         'ERROR': 'bg_bold_red',
         'CRITICAL': 'red,bg_white',
-    }
+    },
 )
 
 _get_handler = copy.copy(scrapy.utils.log._get_handler)
@@ -80,10 +80,10 @@ DOWNLOAD_DELAY = 0 if SCRAPER_API_KEY is not None else 2
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    # 'burplist.middlewares.BurplistSpiderMiddleware': 543,
-    # 'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
+# SPIDER_MIDDLEWARES = {
+#     'burplist.middlewares.BurplistSpiderMiddleware': 543,
+#     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html

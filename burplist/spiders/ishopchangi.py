@@ -1,5 +1,6 @@
 import logging
 import re
+from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
@@ -22,7 +23,7 @@ class IShopChangiSpider(scrapy.Spider):
 
     BASE_URL = 'https://www.ishopchangi.com/bin/cagcommerce/webservices/v2/cag/products/search.json?'
 
-    params = {
+    params: dict[str, Any] = {
         'currentPage': 1,
         'query': '::cagCategory:/wine-and-spirits/beers:cagCategory:/wine-and-spirits/beers/stout:cagCategory:/wine-and-spirits/beers/cider:cagCategory:/wine-and-spirits/beers/craft-beer:cagCategory:/wine-and-spirits/beers/non-craft-beer:cagCollectionPoint:HOMEDELIVERYNONTRAVELLER:cagCollectionPoint:LANDSIDE',
         'categoryCodes': 'travel-electronics-chargers,beauty,food,Womens-fashion',

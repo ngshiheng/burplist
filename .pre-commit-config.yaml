@@ -39,3 +39,12 @@ repos:
             always_run: true
             pass_filenames: false
             language: system
+
+    - repo: local
+      hooks:
+          - id: mypy-check
+            name: Mypy check
+            entry: poetry run mypy burplist
+            always_run: true
+            pass_filenames: false
+            language: system

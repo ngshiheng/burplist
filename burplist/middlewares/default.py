@@ -3,9 +3,10 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-from typing import Generator
+from typing import Iterator, Union
 
 from scrapy import signals
+from scrapy.http import Request, Response
 
 # useful for handling different item types with a single interface
 # from itemadapter import is_item, ItemAdapter
@@ -31,7 +32,7 @@ class BurplistSpiderMiddleware:
         # Should return None or raise an exception.
         # return None
 
-    def process_spider_output(self, response, result, spider) -> Generator:
+    def process_spider_output(self, response, result, spider) -> Iterator[Request]:
         del response, spider  # Unused
         # Called with the results returned from the Spider, after
         # it has processed the response.
@@ -48,7 +49,7 @@ class BurplistSpiderMiddleware:
         # Should return either None or an iterable of Request or item objects.
         # return None
 
-    def process_start_requests(self, start_requests, spider) -> Generator:
+    def process_start_requests(self, start_requests, spider) -> Iterator[Request]:
         del spider  # Unused
         # Called with the start requests of the spider, and works
         # similarly to the process_spider_output() method, except
@@ -86,7 +87,7 @@ class BurplistDownloaderMiddleware:
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
 
-    def process_response(self, request, response, spider) -> None:
+    def process_response(self, request, response, spider) -> Union[Request, Response]:
         del request, spider  # Unused
         # Called with the response returned from the downloader.
 

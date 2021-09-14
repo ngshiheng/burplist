@@ -1,5 +1,5 @@
 import re
-from typing import Optional, Tuple
+from typing import Optional
 
 import scrapy
 from burplist.items import ProductItem
@@ -65,7 +65,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             yield response.follow(next_page, callback=self.parse, meta={'brand': brand, 'origin': origin})
 
     @staticmethod
-    def get_product_brand_and_origin(collection_name: str) -> Tuple[Optional[str], Optional[str]]:
+    def get_product_brand_and_origin(collection_name: str) -> tuple[Optional[str], Optional[str]]:
         brand_origin_regex = re.search(r'(.*?) [\(](.*?)[\)]', collection_name)
         if brand_origin_regex:
             return brand_origin_regex.group(1), brand_origin_regex.group(2)
