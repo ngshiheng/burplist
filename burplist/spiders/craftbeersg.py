@@ -40,28 +40,42 @@ class CraftBeerSGSpider(scrapy.Spider):
             name, quantity = self.get_product_name_quantity(raw_name)
 
             loader.add_value('name', name)
-            loader.add_xpath('url', './/a[@class="product-loop-title"]/@href')
 
-            # description = product.xpath('.//div[@class="description"]/descendant-or-self::*//text()').getall() # FIXME: Perform nested crawl to obtain these information
-            # details = ''.join(description)  # E.g. Type Medium\n DIPA| 473ml | ABV 7.1% # FIXME: Perform nested crawl to obtain these information
-
-            # style, volume, abv = details.split('|', maxsplit=2) # FIXME: Perform nested crawl to obtain these information
+            url = response.urljoin(product.xpath('.//a[@class="product-loop-title"]/@href').get())
+            loader.add_value('url', url)
 
             loader.add_value('brand', brand)
             loader.add_value('origin', None)
-            loader.add_value('style', None)  # FIXME: Perform nested crawl to obtain these information
-
-            loader.add_value('abv', None)  # FIXME: Perform nested crawl to obtain these information
-            loader.add_value('volume', None)  # FIXME: Perform nested crawl to obtain these information
             loader.add_value('quantity', quantity)
 
             loader.add_xpath('price', './/span[@class="woocommerce-Price-amount amount"]//bdi/text()')
-            yield loader.load_item()
+
+            yield scrapy.Request(
+                url,
+                callback=self.parse_product_detail,
+                meta={'item': loader.load_item()},
+                dont_filter=False,
+            )
 
         # Recursively follow the link to the next page, extracting data from it
         next_page = response.css('a.next.page-numbers').attrib.get('href')
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse)
+
+    def parse_product_detail(self, response):
+        loadernext = ItemLoader(item=response.meta['item'], response=response)
+
+        descriptions = response.xpath('.//div[@class="description woocommerce-product-details__short-description"]//text()').getall()
+        descriptions = ''.join(descriptions).split('\n')  # NOTE: To workaround case where the style, volume, and abv are separate element in an array
+
+        description = next((string for string in descriptions if '|' in string))
+
+        style, volume, abv = description.split('|', maxsplit=2)
+        loadernext.add_value('style', style)
+        loadernext.add_value('volume', volume)
+        loadernext.add_value('abv', abv)
+
+        yield loadernext.load_item()
 
     @staticmethod
     def get_product_name_quantity(raw_name: str) -> Tuple[str, int]:
