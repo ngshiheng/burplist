@@ -26,7 +26,7 @@ def remove_stale_products_prices(stale_days: int = 7) -> None:
 
         if stale_products_count < 1:
             logger.info('No stale products to delete.')
-            return
+            return None
 
         product_ids = [product.id for product in stale_products.all()]
         stale_prices = session.query(Price).filter(Price.product_id.in_(product_ids))
