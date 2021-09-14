@@ -1,4 +1,5 @@
 import logging
+from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
@@ -18,7 +19,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
     name = 'alcoholdelivery'
     BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
 
-    params = {
+    params: dict[str, Any] = {
         'filter': 'all',
         'keyword': '',
         'limit': 10,

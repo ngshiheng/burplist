@@ -41,29 +41,27 @@ class TroubleBrewingSpider(scrapy.Spider):
         script_tag = response.xpath('//script[contains(.,"var meta")]/text()').get()
 
         data_regex = re.search(r'\[\{(.*?)\]', script_tag)
-        if not data_regex:
-            yield
+        if data_regex:
+            products = json.loads(data_regex.group())
 
-        products = json.loads(data_regex.group())
+            for product in products:
+                loader = ItemLoader(item=ProductItem())
+                loader.add_value('platform', self.name)
 
-        for product in products:
-            loader = ItemLoader(item=ProductItem())
-            loader.add_value('platform', self.name)
+                name = product['name']
+                loader.add_value('name', name)
+                loader.add_value('url', response.request.url)
 
-            name = product['name']
-            loader.add_value('name', name)
-            loader.add_value('url', response.request.url)
+                loader.add_value('brand', 'Trouble Brewing')
+                loader.add_value('origin', 'Singapore')
+                loader.add_value('style', parse_style(name))
 
-            loader.add_value('brand', 'Trouble Brewing')
-            loader.add_value('origin', 'Singapore')
-            loader.add_value('style', parse_style(name))
+                loader.add_value('abv', None)
+                loader.add_value('volume', '330ml')
+                loader.add_value('quantity', self.get_product_quantity(product['sku'], product['public_title']))
 
-            loader.add_value('abv', None)
-            loader.add_value('volume', '330ml')
-            loader.add_value('quantity', self.get_product_quantity(product['sku'], product['public_title']))
-
-            loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
-            yield loader.load_item()
+                loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
+                yield loader.load_item()
 
     @staticmethod
     def get_product_quantity(sku: Optional[str], public_title: Optional[str] = None) -> int:

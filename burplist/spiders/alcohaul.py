@@ -1,3 +1,4 @@
+from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
@@ -13,7 +14,7 @@ class AlcohaulSpider(scrapy.Spider):
     name = 'alcohaul'
     BASE_URL = 'https://alcohaul.sg/api/productlist?'
 
-    params = {
+    params: dict[str, Any] = {
         'skip': 0,
         'limit': 50,
         'parent': '5f7edae59ae56e6d7b8b456d',

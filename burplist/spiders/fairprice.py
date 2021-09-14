@@ -17,7 +17,7 @@ class FairPriceSpider(scrapy.Spider):
     name = 'fairprice'
     BASE_URL = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
 
-    params = {
+    params: dict[str, Any] = {
         'category': 'premium',
         'experiments': 'recHome-A,pastPurchaseCategory-A,searchVariant-B,UnappliedPromoVariant-B,substitutionVariant-B,substitutionVariant-B',
         'includeTagDetails': 'true',
@@ -92,7 +92,7 @@ class FairPriceSpider(scrapy.Spider):
         if offer and offer[0]['price'] is not None:
             return str(offer[0]['price'])
 
-        return product['storeSpecificData'][0]['mrp']
+        return str(product['storeSpecificData'][0]['mrp'])
 
     @staticmethod
     def get_product_quantity(product: dict[str, Any]) -> int:

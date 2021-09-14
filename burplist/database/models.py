@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Any
 
 from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -6,7 +7,7 @@ from sqlalchemy.orm import column_property, relationship
 from sqlalchemy.sql.expression import select
 from sqlalchemy.sql.schema import UniqueConstraint
 
-Base = declarative_base()
+Base: Any = declarative_base()
 
 
 class Price(Base):
@@ -49,7 +50,7 @@ class Product(Base):
         where(Price.product_id == id).
         order_by(Price.id.desc()).
         limit(1).  # NOTE: We have to always limit this as 1 to prevent `CardinalityViolation: more than one row returned by a subquery used as an expression`
-        as_scalar()
+        as_scalar(),
     )
 
     def __repr__(self) -> str:
