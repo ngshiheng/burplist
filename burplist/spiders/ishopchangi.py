@@ -66,6 +66,9 @@ class IShopChangiSpider(scrapy.Spider):
             loader.add_value('volume', product['name'])
             loader.add_value('quantity', quantity)
 
+            image_url = product.get('imageUrl')
+            loader.add_value('image_url', image_url)
+
             loader.add_value('price', product['price']['value'])
             yield loader.load_item()
 
