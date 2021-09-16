@@ -76,6 +76,9 @@ class FairPriceSpider(scrapy.Spider):
             loader.add_value('volume', product['metaData']['DisplayUnit'])
             loader.add_value('quantity', self.get_product_quantity(product))
 
+            image_url = product['images'][0]
+            loader.add_value('image_url', image_url)
+
             loader.add_value('price', self.get_product_price(product))
 
             yield loader.load_item()
