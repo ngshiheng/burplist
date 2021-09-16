@@ -90,8 +90,10 @@ class RedMartSpider(scrapy.Spider):
 
                 loader.add_value('abv', None)
                 loader.add_value('volume', product['name'])
-
                 loader.add_value('quantity', parse_quantity(product['name']))
+
+                image_url = product.get('image')
+                loader.add_value('image_url', image_url)
 
                 loader.add_value('price', product['price'])
                 yield loader.load_item()
