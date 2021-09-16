@@ -55,6 +55,9 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
+            image_url = response.xpath('//span[@class="grid-link__image-centered"]//img/@src').get()  # NOTE: You need to disable JS to see this on inspect
+            loader.add_value('image_url', f'https:{image_url}')
+
             price = product.xpath('.//p[@class="grid-link__meta"]/text()').getall()[-1]
             loader.add_value('price', price)
             yield loader.load_item()
