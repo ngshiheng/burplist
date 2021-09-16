@@ -35,7 +35,7 @@ class ThirstySpider(scrapy.Spider):
         page = response.meta.get('page', 1)
         current_url = response.request.url if page == 1 else response.meta['current_url']  # So that query parameters wont be appended whenever this method runs recursively
 
-        products = response.xpath('//div[@class="text-left pr-0 col-8 col-tablet-12 tablet-pl-0 tablet-pr-0 col-desktop-12 desktop-pl-0 desktop-pr-0 cf"]')
+        products = response.xpath('//div[@class="product-each-top cf"]')
 
         # NOTE: Because we don't have a way to determine if this request has next page, we would just stop following when `products` is not found
         if products:
@@ -70,6 +70,9 @@ class ThirstySpider(scrapy.Spider):
                     loader.add_xpath('abv', './/span[@class="alcohol color-text body-xs mr-5"]/text()')
                     loader.add_xpath('volume', './/span[@class="volume color-text body-xs tablet-mr-5"]/text()')
                     loader.add_value('quantity', self.get_product_quantity(display_unit))
+
+                    image_url = product.xpath('.//img[@class="image image-option primary lazy"]/@data-lazy').get()
+                    loader.add_value('image_url', f'https:{image_url}')
 
                     loader.add_value('price', price)
 
