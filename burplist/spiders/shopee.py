@@ -66,5 +66,8 @@ class ShopeeSpider(scrapy.Spider):
                 loader.add_value('volume', product.get('name'))
                 loader.add_value('quantity', parse_quantity(product.get('name')))
 
+                image_id = product.get('image')
+                loader.add_value('image_url', f'https://cf.shopee.sg/file/{image_id}')
+
                 loader.add_value('price', str(product['price'] / 100000))  # E.g.: '4349000' = '$43.49'
                 yield loader.load_item()
