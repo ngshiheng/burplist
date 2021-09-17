@@ -74,6 +74,9 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 loader.add_value('volume', name)
                 loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
 
+                image_url = product.get('imageFiles')[0]['source']
+                loader.add_value('image_url', f'https://www.alcoholdelivery.com.sg/products/i/{image_url}')
+
                 loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
                 yield loader.load_item()
 

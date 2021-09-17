@@ -42,6 +42,8 @@ class Product(Base):
     volume = Column(Integer(), nullable=True, default=None)
     quantity = Column(Integer(), nullable=False)
 
+    image_url = Column(String(), nullable=True, default=None)
+
     created_on = Column(DateTime, default=datetime.utcnow)
     updated_on = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 

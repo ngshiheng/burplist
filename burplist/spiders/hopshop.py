@@ -42,6 +42,9 @@ class HopShopSpider(scrapy.Spider):
             loader.add_xpath('volume', './/article/@data-name')
             loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
 
+            image_url = response.xpath('//div[@class="card-img-container"]//img/@data-src').get()
+            loader.add_value('image_url', image_url)
+
             loader.add_xpath('price', './/article/@data-product-price')
             yield loader.load_item()
 

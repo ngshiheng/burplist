@@ -60,6 +60,9 @@ class TroubleBrewingSpider(scrapy.Spider):
                 loader.add_value('volume', '330ml')
                 loader.add_value('quantity', self.get_product_quantity(product['sku'], product['public_title']))
 
+                image_url = response.xpath('//img[@class="product-single__photo__img"]//@src').get()
+                loader.add_value('image_url', f'https:{image_url}')
+
                 loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
                 yield loader.load_item()
 

@@ -70,6 +70,8 @@ class ExistingProductPricePipeline:
 
                 abv=adapter.get('abv'),
                 volume=adapter.get('volume'),
+
+                image_url=adapter.get('image_url'),
             )
             self.products_update.append(product_to_update)
 
@@ -136,6 +138,8 @@ class NewProductPricePipeline:
             abv=adapter.get('abv'),
             volume=adapter.get('volume'),
             quantity=adapter.get('quantity'),
+
+            image_url=adapter.get('image_url'),
 
             price=adapter['price'].amount,
         )

@@ -58,6 +58,9 @@ class AlcohaulSpider(scrapy.Spider):
                 loader.add_value('volume', product['name'])
                 loader.add_value('quantity', parse_quantity(product['name']))
 
+                image_url = product.get('imageFiles')[0]['source']
+                loader.add_value('image_url', f'https://alcohaul.sg/products/i/{image_url}')
+
                 loader.add_value('price', str(product['smartPrice']))
 
                 yield loader.load_item()

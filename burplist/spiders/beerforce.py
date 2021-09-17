@@ -80,4 +80,7 @@ class BeerForceSpider(scrapy.Spider):
         loadernext.add_value('abv', abv)
         loadernext.add_value('volume', volume)
 
+        image_url = response.xpath('//div[@class="product-single__photo__item"]/img/@src').get()
+        loadernext.add_value('image_url', f'https:{image_url}')
+
         yield loadernext.load_item()

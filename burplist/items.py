@@ -45,6 +45,10 @@ class ProductItem(scrapy.Item):
         output_processor=TakeFirst(),
     )
 
+    image_url = scrapy.Field(
+        output_processor=TakeFirst(),
+    )
+
     price = scrapy.Field(
         input_processor=MapCompose(str.strip, parse_price),
         output_processor=TakeFirst(),

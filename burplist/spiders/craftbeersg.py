@@ -74,6 +74,9 @@ class CraftBeerSGSpider(scrapy.Spider):
         loadernext.add_value('volume', volume)
         loadernext.add_value('abv', abv)
 
+        image_url = response.xpath('//div[@class="img-thumbnail"]//img/@src').get()
+        loadernext.add_value('image_url', image_url)
+
         yield loadernext.load_item()
 
     @staticmethod
