@@ -3,9 +3,8 @@ from datetime import datetime, timedelta
 from functools import lru_cache
 
 from burplist.database.models import Price, Product
-from burplist.database.utils import db_connect
+from burplist.database.utils import Session
 from sqlalchemy.exc import ProgrammingError
-from sqlalchemy.orm import sessionmaker
 
 logger = logging.getLogger(__name__)
 
@@ -14,12 +13,9 @@ def remove_stale_products_prices(stale_days: int = 7) -> None:
     """
     Remove stale products and prices which are not updated for N number of days
     """
-    assert stale_days > 0, 'You are prohibited to delete everything using this script.'
+    assert isinstance(stale_days, int) and stale_days > 0, 'Invalid `stale_days` input.'
 
-    engine = db_connect()
-    db_session = sessionmaker(bind=engine)
-
-    with db_session.begin() as session:
+    with Session() as session:
         stale_products = session.query(Product).filter(Product.updated_on <= datetime.utcnow() - timedelta(days=stale_days))
         stale_products_count = stale_products.count()
         logger.info(f'Found {stale_products_count} stale products.')
@@ -34,6 +30,8 @@ def remove_stale_products_prices(stale_days: int = 7) -> None:
 
         stale_prices.delete()
         stale_products.delete()
+        session.commit()
+
         logger.info(f'{stale_products_count} stale products deleted successfully.')
 
 
@@ -41,8 +39,7 @@ def remove_stale_products_prices(stale_days: int = 7) -> None:
 def get_popular_styles() -> set[str]:
     logger.info('Getting distinct beer styles from DB.')
 
-    engine = db_connect()
-    session = sessionmaker(bind=engine)()
+    session = Session()
 
     try:
         return {style[0] for style in session.query(Product.style).distinct() if style[0]}
@@ -59,8 +56,7 @@ def get_popular_styles() -> set[str]:
 def get_popular_brands() -> set[str]:
     logger.info('Getting distinct beer brands from DB.')
 
-    engine = db_connect()
-    session = sessionmaker(bind=engine)()
+    session = Session()
 
     try:
         return {brand[0] for brand in session.query(Product.brand).distinct() if brand[0]}

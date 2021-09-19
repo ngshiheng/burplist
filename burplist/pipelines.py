@@ -5,10 +5,9 @@ from itemadapter import ItemAdapter
 from scrapy import Spider
 from scrapy.exceptions import DropItem
 from sqlalchemy.exc import ProgrammingError
-from sqlalchemy.orm import sessionmaker
 
 from burplist.database.models import Price, Product
-from burplist.database.utils import create_table, db_connect
+from burplist.database.utils import Session, create_table, db_connect
 from burplist.items import ProductItem
 
 logger = logging.getLogger(__name__)
@@ -30,10 +29,6 @@ class ExistingProductPricePipeline:
         """
         Initializes database connection and sessionmaker
         """
-        self.engine = db_connect()
-        create_table(self.engine)
-        self.session = sessionmaker(bind=self.engine)
-
         self.prices: list[dict[str, Any]] = []
         self.products_update: list[dict[str, Any]] = []
 
@@ -47,7 +42,7 @@ class ExistingProductPricePipeline:
 
         new_price = float(price.amount)  # `.amount` is type of `<class 'decimal.Decimal'>`
 
-        session = self.session()
+        session = Session()
         try:
             existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
 
@@ -94,14 +89,14 @@ class ExistingProductPricePipeline:
         """
         assert spider
 
-        db_session = sessionmaker(bind=self.engine)
-        with db_session.begin() as session:
+        with Session() as session:
             session.bulk_update_mappings(Product, self.products_update)
             logger.info(f'Updated {len(self.products_update)} existing products information in bulk.')
 
             prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Only works if all values in dict are hashable. Reference: https://www.geeksforgeeks.org/python-removing-duplicate-dicts-in-list/
             session.bulk_insert_mappings(Price, prices)
             logger.info(f'Created {len(self.prices)} new prices in bulk for existing products to the database.')
+            session.commit()
 
 
 class NewProductPricePipeline:
@@ -113,8 +108,8 @@ class NewProductPricePipeline:
         """
         Initializes database connection and sessionmaker
         """
-        self.engine = db_connect()
-        create_table(self.engine)
+        engine = db_connect()
+        create_table(engine)
         self.products: list[dict[str, Any]] = []
 
     def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
@@ -159,9 +154,8 @@ class NewProductPricePipeline:
         """
         assert spider
 
-        db_session = sessionmaker(bind=self.engine)
-        with db_session.begin() as session:
-            products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list.
+        with Session() as session:
+            products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
 
             prices = [dict(price=product['price'], product_id=product['id']) for product in products]
@@ -169,3 +163,4 @@ class NewProductPricePipeline:
 
             logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
             logger.info(f'Saved {len(prices)} new prices in bulk operation to the database.')
+            session.commit()
