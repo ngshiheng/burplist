@@ -3,10 +3,11 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-from typing import Iterator, Union
+from typing import Iterable, Iterator, Union
 
 from scrapy import signals
 from scrapy.http import Request, Response
+from scrapy.spiders import Spider
 
 # useful for handling different item types with a single interface
 # from itemadapter import is_item, ItemAdapter
@@ -24,7 +25,7 @@ class BurplistSpiderMiddleware:
         crawler.signals.connect(middleware.spider_opened, signal=signals.spider_opened)
         return middleware
 
-    def process_spider_input(self, response, spider) -> None:
+    def process_spider_input(self, response: Response, spider: Spider) -> None:
         del response, spider  # Unused
         # Called for each response that goes through the spider
         # middleware and into the spider.
@@ -32,7 +33,7 @@ class BurplistSpiderMiddleware:
         # Should return None or raise an exception.
         # return None
 
-    def process_spider_output(self, response, result, spider) -> Iterator[Request]:
+    def process_spider_output(self, response: Response, result: Iterable[Request], spider: Spider) -> Iterator[Request]:
         del response, spider  # Unused
         # Called with the results returned from the Spider, after
         # it has processed the response.
@@ -41,7 +42,7 @@ class BurplistSpiderMiddleware:
         for i in result:
             yield i
 
-    def process_spider_exception(self, response, exception, spider) -> None:
+    def process_spider_exception(self, response: Response, exception: Exception, spider: Spider) -> None:
         del response, exception, spider  # Unused
         # Called when a spider or process_spider_input() method
         # (from other spider middleware) raises an exception.
@@ -49,7 +50,7 @@ class BurplistSpiderMiddleware:
         # Should return either None or an iterable of Request or item objects.
         # return None
 
-    def process_start_requests(self, start_requests, spider) -> Iterator[Request]:
+    def process_start_requests(self, start_requests: Iterable[Request], spider: Spider) -> Iterator[Request]:
         del spider  # Unused
         # Called with the start requests of the spider, and works
         # similarly to the process_spider_output() method, except
@@ -59,7 +60,7 @@ class BurplistSpiderMiddleware:
         for request in start_requests:
             yield request
 
-    def spider_opened(self, spider) -> None:
+    def spider_opened(self, spider: Spider) -> None:
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
@@ -75,7 +76,7 @@ class BurplistDownloaderMiddleware:
         crawler.signals.connect(middleware.spider_opened, signal=signals.spider_opened)
         return middleware
 
-    def process_request(self, request, spider) -> None:
+    def process_request(self, request: Request, spider: Spider) -> None:
         del request, spider  # Unused
         # Called for each request that goes through the downloader
         # middleware.
@@ -87,7 +88,7 @@ class BurplistDownloaderMiddleware:
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
 
-    def process_response(self, request, response, spider) -> Union[Request, Response]:
+    def process_response(self, request: Request, response: Response, spider: Spider) -> Union[Request, Response]:
         del request, spider  # Unused
         # Called with the response returned from the downloader.
 
@@ -97,7 +98,7 @@ class BurplistDownloaderMiddleware:
         # - or raise IgnoreRequest
         return response
 
-    def process_exception(self, request, exception, spider) -> None:
+    def process_exception(self, request: Request, exception: Exception, spider: Spider) -> None:
         del request, exception, spider  # Unused
         # Called when a download handler or a process_request()
         # (from other downloader middleware) raises an exception.
@@ -107,5 +108,5 @@ class BurplistDownloaderMiddleware:
         # - return a Response object: stops process_exception() chain
         # - return a Request object: stops process_exception() chain
 
-    def spider_opened(self, spider) -> None:
+    def spider_opened(self, spider: Spider) -> None:
         spider.logger.info('Spider opened: %s' % spider.name)
