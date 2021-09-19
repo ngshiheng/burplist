@@ -1,8 +1,7 @@
 import logging
 
 import scrapy
-from burplist.items import ProductItem
-from scrapy.loader import ItemLoader
+from burplist.items import ProductLoader
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +43,7 @@ class BeerForceSpider(scrapy.Spider):
                 logger.info('Skipping item because it is sold out.')
                 continue
 
-            loader = ItemLoader(item=ProductItem(), selector=product)
+            loader = ProductLoader(selector=product)
             loader.add_value('platform', self.name)
 
             loader.add_xpath('name', './/h3[@class="product__title h4"]/text()')
@@ -70,7 +69,7 @@ class BeerForceSpider(scrapy.Spider):
             yield response.follow(next_page, callback=self.parse_collection)
 
     def parse_product_detail(self, response):
-        loadernext = ItemLoader(item=response.meta['item'], response=response)
+        loadernext = ProductLoader(item=response.meta['item'], response=response)
 
         product_info = ''.join(response.xpath('//div[@class="product-single__content-text rte"]/p/*/text()').getall())
         style, volume, abv = product_info.split('|', maxsplit=2)

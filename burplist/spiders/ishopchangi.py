@@ -4,9 +4,8 @@ from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
-from scrapy.loader import ItemLoader
 
 logger = logging.getLogger(__name__)
 
@@ -49,7 +48,7 @@ class IShopChangiSpider(scrapy.Spider):
         products = data['products']
 
         for product in products:
-            loader = ItemLoader(item=ProductItem())
+            loader = ProductLoader()
 
             quantity = self.get_product_quantity(product['name'])
 

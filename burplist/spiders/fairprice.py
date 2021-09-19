@@ -3,9 +3,8 @@ from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
-from scrapy.loader import ItemLoader
 
 
 class FairPriceSpider(scrapy.Spider):
@@ -60,7 +59,7 @@ class FairPriceSpider(scrapy.Spider):
         products = data['product']
 
         for product in products:
-            loader = ItemLoader(item=ProductItem())
+            loader = ProductLoader()
             slug = product['slug']
 
             loader.add_value('platform', self.name)

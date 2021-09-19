@@ -3,8 +3,7 @@ import re
 
 import scrapy
 import sentry_sdk
-from burplist.items import ProductItem
-from scrapy.loader import ItemLoader
+from burplist.items import ProductLoader
 
 logger = logging.getLogger(__name__)
 
@@ -56,7 +55,7 @@ class ThirstySpider(scrapy.Spider):
                     continue
 
                 for price, display_unit in zip(raw_prices, display_units):
-                    loader = ItemLoader(item=ProductItem(), selector=product)
+                    loader = ProductLoader(selector=product)
 
                     loader.add_value('platform', self.name)
 

@@ -1,8 +1,7 @@
 import re
 
 import scrapy
-from burplist.items import ProductItem
-from scrapy.loader import ItemLoader
+from burplist.items import ProductLoader
 
 
 class CraftBeerSGSpider(scrapy.Spider):
@@ -32,7 +31,7 @@ class CraftBeerSGSpider(scrapy.Spider):
         brand = response.meta['brand']
 
         for product in products:
-            loader = ItemLoader(item=ProductItem(), selector=product)
+            loader = ProductLoader(selector=product)
             loader.add_value('platform', self.name)
 
             raw_name = product.xpath('.//a[@class="product-loop-title"]/h3/text()').get()
@@ -62,7 +61,7 @@ class CraftBeerSGSpider(scrapy.Spider):
             yield response.follow(next_page, callback=self.parse)
 
     def parse_product_detail(self, response):
-        loadernext = ItemLoader(item=response.meta['item'], response=response)
+        loadernext = ProductLoader(item=response.meta['item'], response=response)
 
         descriptions = response.xpath('.//div[@class="description woocommerce-product-details__short-description"]//text()').getall()
         descriptions = ''.join(descriptions).split('\n')  # NOTE: To workaround case where the style, volume, and abv are separate element in an array

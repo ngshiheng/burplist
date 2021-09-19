@@ -3,9 +3,8 @@ import re
 from typing import Optional
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
-from scrapy.loader import ItemLoader
 
 
 class TroubleBrewingSpider(scrapy.Spider):
@@ -45,7 +44,7 @@ class TroubleBrewingSpider(scrapy.Spider):
             products = json.loads(data_regex.group())
 
             for product in products:
-                loader = ItemLoader(item=ProductItem())
+                loader = ProductLoader()
                 loader.add_value('platform', self.name)
 
                 name = product['name']

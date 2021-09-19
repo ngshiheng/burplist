@@ -2,9 +2,8 @@ import re
 from typing import Optional
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
-from scrapy.loader import ItemLoader
 
 
 class TheGreatBeerExperimentSpider(scrapy.Spider):
@@ -35,7 +34,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
         origin = response.meta['origin']
 
         for product in products:
-            loader = ItemLoader(item=ProductItem(), selector=product)
+            loader = ProductLoader(selector=product)
             loader.add_value('platform', self.name)
 
             name = product.xpath('.//p[@class="grid-link__title"]/text()').get()

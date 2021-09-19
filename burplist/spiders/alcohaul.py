@@ -2,9 +2,8 @@ from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_brand, parse_quantity
-from scrapy.loader import ItemLoader
 
 
 class AlcohaulSpider(scrapy.Spider):
@@ -42,7 +41,7 @@ class AlcohaulSpider(scrapy.Spider):
                     # Skipping products which are out of stock
                     continue
 
-                loader = ItemLoader(item=ProductItem())
+                loader = ProductLoader()
                 slug = product['slug']
 
                 loader.add_value('platform', self.name)

@@ -2,9 +2,8 @@ import logging
 import os
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_brand, parse_quantity, parse_style
-from scrapy.loader import ItemLoader
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +39,7 @@ class ShopeeSpider(scrapy.Spider):
             for item in items:
                 product = item['item_basic']
 
-                loader = ItemLoader(item=ProductItem())
+                loader = ProductLoader()
 
                 review_count = product['item_rating']['rating_count'][0]
                 if review_count < 10:

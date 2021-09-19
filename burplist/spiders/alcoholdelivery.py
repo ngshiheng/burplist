@@ -3,9 +3,8 @@ from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_brand
-from scrapy.loader import ItemLoader
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +53,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 if any(word in product['name'].lower() for word in ['keg', 'litre']):
                     continue
 
-                loader = ItemLoader(item=ProductItem())
+                loader = ProductLoader()
 
                 loader.add_value('platform', self.name)
 

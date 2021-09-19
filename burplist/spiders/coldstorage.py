@@ -1,9 +1,8 @@
 import re
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
-from scrapy.loader import ItemLoader
 
 
 class ColdStorageSpider(scrapy.Spider):
@@ -24,7 +23,7 @@ class ColdStorageSpider(scrapy.Spider):
         products = response.xpath('//div[@class="product_box"]')
 
         for product in products:
-            loader = ItemLoader(item=ProductItem(), selector=product)
+            loader = ProductLoader(selector=product)
 
             name = product.xpath('.//div[@class="product_name "]/text()').get().strip()
             vendor = product.xpath('.//div[@class="category-name"]/b/text()').get().strip().title()

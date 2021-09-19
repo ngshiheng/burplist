@@ -1,7 +1,6 @@
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
-from scrapy.loader import ItemLoader
 
 
 class HopShopSpider(scrapy.Spider):
@@ -24,7 +23,7 @@ class HopShopSpider(scrapy.Spider):
         products = response.xpath('//li[@class="product"]')
 
         for product in products:
-            loader = ItemLoader(item=ProductItem(), selector=product)
+            loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
 

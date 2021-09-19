@@ -2,10 +2,9 @@ import logging
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductItem
+from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_quantity
 from scrapy.downloadermiddlewares.retry import get_retry_request
-from scrapy.loader import ItemLoader
 from scrapy.utils.project import get_project_settings
 
 logger = logging.getLogger(__name__)
@@ -77,7 +76,7 @@ class RedMartSpider(scrapy.Spider):
                 item_id = product['itemId']
                 shop_id = product['sellerId']
 
-                loader = ItemLoader(item=ProductItem())
+                loader = ProductLoader()
 
                 loader.add_value('platform', self.name)
 
