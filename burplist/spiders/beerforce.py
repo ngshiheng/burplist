@@ -71,7 +71,7 @@ class BeerForceSpider(scrapy.Spider):
     def parse_product_detail(self, response):
         loadernext = ProductLoader(item=response.meta['item'], response=response)
 
-        product_info = ''.join(response.xpath('//div[@class="product-single__content-text rte"]/p/*/text()').getall())
+        product_info = ''.join(response.xpath('//div[@class="product-single__content-text rte"]//*[b or strong]//text()').getall())
         style, volume, abv = product_info.split('|', maxsplit=2)
         loadernext.add_value('origin', None)
         loadernext.add_value('style', style)
