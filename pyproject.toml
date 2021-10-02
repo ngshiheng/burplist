@@ -5,7 +5,7 @@ description = "A collection spiders to get beer data from the web."
 authors = ["Jerry Ng <ngshiheng@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.9.6"
+python = "^3.9"
 Scrapy = "^2.5.0"
 price-parser = "^0.3.4"
 SQLAlchemy = "^1.4.22"
