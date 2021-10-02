@@ -5,7 +5,7 @@ description = "A collection spiders to get beer data from the web."
 authors = ["Jerry Ng <ngshiheng@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.9.6"
+python = "^3.9"
 Scrapy = "^2.5.0"
 price-parser = "^0.3.4"
 SQLAlchemy = "^1.4.22"
@@ -40,3 +40,13 @@ warn_return_any = true
 warn_unreachable = true
 warn_unused_configs = true
 no_implicit_reexport = true
+
+[tool.semantic_release]
+version_variable = [
+    "burplist/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "production"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
