@@ -40,3 +40,13 @@ warn_return_any = true
 warn_unreachable = true
 warn_unused_configs = true
 no_implicit_reexport = true
+
+[tool.semantic_release]
+version_variable = [
+    "burplist/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "production"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
