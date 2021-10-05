@@ -3,7 +3,10 @@ from itemloaders.processors import Identity, MapCompose, TakeFirst
 from price_parser.parser import parse_price
 from scrapy.loader import ItemLoader
 
-from burplist.utils.parsers import parse_abv, parse_name, parse_volume
+from burplist.utils.parsers import (
+    parse_abv, parse_name, parse_volume,
+    quantize_price,
+)
 
 
 class ProductItem(scrapy.Item):
@@ -22,7 +25,7 @@ class ProductItem(scrapy.Item):
 
     image_url = scrapy.Field()
 
-    price = scrapy.Field(input_processor=MapCompose(parse_price))
+    price = scrapy.Field(input_processor=MapCompose(str, parse_price, quantize_price))
 
 
 class ProductLoader(ItemLoader):

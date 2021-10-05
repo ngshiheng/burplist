@@ -1,8 +1,10 @@
 import logging
 import re
+from decimal import Decimal
 from typing import Optional, Union
 
 from burplist.utils.misc import get_popular_brands, get_popular_styles
+from price_parser.parser import Price
 
 logger = logging.getLogger(__name__)
 
@@ -82,3 +84,10 @@ def parse_quantity(raw_name: Union[str, int]) -> int:
         return int(is_ml_reverse.group(1))
 
     return 1
+
+
+def quantize_price(price: Price) -> Price:
+    if price.amount:
+        price.amount = price.amount.quantize(Decimal("1.00"))
+
+    return price
