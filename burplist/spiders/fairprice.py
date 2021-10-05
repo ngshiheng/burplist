@@ -89,12 +89,12 @@ class FairPriceSpider(scrapy.Spider):
             yield response.follow(next_page, callback=self.parse)
 
     @staticmethod
-    def get_product_price(product: dict[str, Any]) -> str:
+    def get_product_price(product: dict[str, Any]) -> Any:
         offer = product.get('offers')
         if offer and offer[0]['price'] is not None:
-            return str(offer[0]['price'])
+            return offer[0]['price']
 
-        return str(product['storeSpecificData'][0]['mrp'])
+        return product['storeSpecificData'][0]['mrp']
 
     @staticmethod
     def get_product_quantity(product: dict[str, Any]) -> int:

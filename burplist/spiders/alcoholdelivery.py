@@ -76,7 +76,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 image_url = product.get('imageFiles')[0]['source']
                 loader.add_value('image_url', f'https://www.alcoholdelivery.com.sg/products/i/{image_url}')
 
-                loader.add_value('price', str(product['price'] + product['regular_express_delivery']['value']))
+                loader.add_value('price', product['price'] + product['regular_express_delivery']['value'])
                 yield loader.load_item()
 
             self.params['skip'] += 10

@@ -38,9 +38,7 @@ class ExistingProductPricePipeline:
 
         url = adapter['url']
         quantity = adapter['quantity']
-        price = adapter['price']
-
-        new_price = float(price.amount)  # `.amount` is type of `<class 'decimal.Decimal'>`
+        current_price = adapter['price']
 
         session = Session()
         try:
@@ -71,10 +69,10 @@ class ExistingProductPricePipeline:
             self.products_update.append(product_to_update)
 
             # Create new price object for the product
-            if existing_product.last_price != new_price:
+            if existing_product.last_price != current_price.amount:
                 price = dict(
                     product_id=existing_product.id,
-                    price=new_price,
+                    price=current_price.amount,
                 )
                 self.prices.append(price)
 

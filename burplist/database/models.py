@@ -6,6 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import column_property, relationship
 from sqlalchemy.sql.expression import select
 from sqlalchemy.sql.schema import UniqueConstraint
+from sqlalchemy.sql.sqltypes import Numeric
 
 Base: Any = declarative_base()
 
@@ -17,7 +18,7 @@ class Price(Base):
     product_id = Column(Integer, ForeignKey('product.id'), nullable=False, index=True)
     product = relationship('Product', backref='prices', cascade='delete')
 
-    price = Column('price', Float)
+    price = Column('price', Numeric(12, 2))  # NOTE: https://stackoverflow.com/questions/15726535/postgresql-which-datatype-should-be-used-for-currency
     updated_on = Column(DateTime, default=datetime.utcnow)
 
     def __repr__(self) -> str:

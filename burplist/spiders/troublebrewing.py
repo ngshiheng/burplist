@@ -62,7 +62,7 @@ class TroubleBrewingSpider(scrapy.Spider):
                 image_url = response.xpath('//img[@class="product-single__photo__img"]//@src').get()
                 loader.add_value('image_url', f'https:{image_url}')
 
-                loader.add_value('price', str(product['price'] / 100))  # E.g.: 7700 == $77.00
+                loader.add_value('price', product['price'] / 100)  # E.g.: 7700 == $77.00
                 yield loader.load_item()
 
     @staticmethod
