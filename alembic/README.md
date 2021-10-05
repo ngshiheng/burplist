@@ -9,7 +9,8 @@ Alembic is a lightweight database migration tool for usage with the SQLAlchemy D
 1. `alembic revision --autogenerate -m "A concise commit message."`
 2. Check the auto-generated migration file to see if it makes any sense
 3. Once confirm, run `alembic upgrade head` to apply the database migration (Otherwise simply just delete the generated migration file)
-4. You can always use `alembic downgrade -1` to revert any database migrations
+
+_NOTE: You can always use `alembic downgrade -1` to revert any database migrations_
 
 ## How to generate migration for an existing database
 
