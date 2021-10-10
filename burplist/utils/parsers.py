@@ -87,6 +87,9 @@ def parse_quantity(raw_name: Union[str, int]) -> int:
 
 
 def quantize_price(price: Price) -> Price:
+    """
+    Quantize ProductItem price (type `Decimal`) so that it can be used for comparison in the pipeline
+    """
     if price.amount:
         price.amount = price.amount.quantize(Decimal("1.00"))
 
