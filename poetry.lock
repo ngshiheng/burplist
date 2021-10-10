@@ -1,6 +1,6 @@
 [[package]]
 name = "alembic"
-version = "1.7.3"
+version = "1.7.4"
 description = "A database migration tool for SQLAlchemy."
 category = "main"
 optional = false
@@ -23,7 +23,7 @@ python-versions = "*"
 
 [[package]]
 name = "astroid"
-version = "2.8.0"
+version = "2.8.2"
 description = "An abstract syntax tree for Python with inference support."
 category = "dev"
 optional = false
@@ -97,7 +97,7 @@ testing = ["pytest (>=4.6)", "pytest-flake8", "pytest-cov", "pytest-black (>=0.3
 
 [[package]]
 name = "certifi"
-version = "2021.5.30"
+version = "2021.10.8"
 description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
 optional = false
@@ -202,7 +202,7 @@ python-versions = "*"
 
 [[package]]
 name = "faker"
-version = "8.16.0"
+version = "9.2.0"
 description = "Faker is a Python package that generates fake data for you."
 category = "main"
 optional = false
@@ -764,7 +764,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "scrapy"
-version = "2.5.0"
+version = "2.5.1"
 description = "A high-level Web Crawling and Web Scraping framework"
 category = "main"
 optional = false
@@ -1050,16 +1050,16 @@ content-hash = "943b67bffd639471c6c661bd822a93ea2c5c62ce628a13cc82826b44fa9623b6
 
 [metadata.files]
 alembic = [
-    {file = "alembic-1.7.3-py3-none-any.whl", hash = "sha256:d0c580041f9f6487d5444df672a83da9be57398f39d6c1802bbedec6fefbeef6"},
-    {file = "alembic-1.7.3.tar.gz", hash = "sha256:bc5bdf03d1b9814ee4d72adc0b19df2123f6c50a60c1ea761733f3640feedb8d"},
+    {file = "alembic-1.7.4-py3-none-any.whl", hash = "sha256:e3cab9e59778b3b6726bb2da9ced451c6622d558199fd3ef914f3b1e8f4ef704"},
+    {file = "alembic-1.7.4.tar.gz", hash = "sha256:9d33f3ff1488c4bfab1e1a6dfebbf085e8a8e1a3e047a43ad29ad1f67f012a1d"},
 ]
 appnope = [
     {file = "appnope-0.1.2-py2.py3-none-any.whl", hash = "sha256:93aa393e9d6c54c5cd570ccadd8edad61ea0c4b9ea7a01409020c9aa019eb442"},
     {file = "appnope-0.1.2.tar.gz", hash = "sha256:dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a"},
 ]
 astroid = [
-    {file = "astroid-2.8.0-py3-none-any.whl", hash = "sha256:dcc06f6165f415220013801642bd6c9808a02967070919c4b746c6864c205471"},
-    {file = "astroid-2.8.0.tar.gz", hash = "sha256:fe81f80c0b35264acb5653302ffbd935d394f1775c5e4487df745bf9c2442708"},
+    {file = "astroid-2.8.2-py3-none-any.whl", hash = "sha256:9eaeaf92b3e21b70bec1a262e7eb118d2e96294892a5de595c92a12adc80dfc2"},
+    {file = "astroid-2.8.2.tar.gz", hash = "sha256:304e99c129794f2cfda584a12b71fde85205da950e2f330f4be09150525ae949"},
 ]
 attrs = [
     {file = "attrs-21.2.0-py2.py3-none-any.whl", hash = "sha256:149e90d6d8ac20db7a955ad60cf0e6881a3f20d37096140088356da6c716b0b1"},
@@ -1082,8 +1082,8 @@ backcall = [
     {file = "backports.entry_points_selectable-1.1.0.tar.gz", hash = "sha256:988468260ec1c196dab6ae1149260e2f5472c9110334e5d51adcb77867361f6a"},
 ]
 certifi = [
-    {file = "certifi-2021.5.30-py2.py3-none-any.whl", hash = "sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8"},
-    {file = "certifi-2021.5.30.tar.gz", hash = "sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee"},
+    {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"},
+    {file = "certifi-2021.10.8.tar.gz", hash = "sha256:78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"},
 ]
 cffi = [
     {file = "cffi-1.14.6-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:22b9c3c320171c108e903d61a3723b51e37aaa8c81255b5e7ce102775bd01e2c"},
@@ -1186,8 +1186,8 @@ fake-useragent = [
     {file = "fake-useragent-0.1.11.tar.gz", hash = "sha256:c104998b750eb097eefc28ae28e92d66397598d2cf41a31aa45d5559ef1adf35"},
 ]
 faker = [
-    {file = "Faker-8.16.0-py3-none-any.whl", hash = "sha256:bb10913b9d3ac2aa37180f816c82040e81f9e0c32cb08445533f293cec8930bf"},
-    {file = "Faker-8.16.0.tar.gz", hash = "sha256:d70b375d0af0e4c3abd594003691a1055a96281a414884e623d27bccc7d781da"},
+    {file = "Faker-9.2.0-py3-none-any.whl", hash = "sha256:526da15fd36801427b8af91af854bbe7d6b979d696d3ecef91bf4d81e9b004f2"},
+    {file = "Faker-9.2.0.tar.gz", hash = "sha256:ae9bf986d75caa9c9011eed400bb2ed6e94f2208e987ee2aa013f8a0ae495772"},
 ]
 filelock = [
     {file = "filelock-3.3.0-py3-none-any.whl", hash = "sha256:bbc6a0382fe8ec4744ecdf6683a2e07f65eb10ff1aff53fc02a202565446cde0"},
@@ -1651,8 +1651,8 @@ queuelib = [
     {file = "queuelib-1.6.2.tar.gz", hash = "sha256:4b207267f2642a8699a1f806045c56eb7ad1a85a10c0e249884580d139c2fcd2"},
 ]
 scrapy = [
-    {file = "Scrapy-2.5.0-py2.py3-none-any.whl", hash = "sha256:5f590fdc84b496e5a4bb5ef99836b0aa688a07cfcb4bc3bb7290f66486f27424"},
-    {file = "Scrapy-2.5.0.tar.gz", hash = "sha256:0a68ed41f7173679f160c4cef2db05288548c21e7164170552adae8b13cefaab"},
+    {file = "Scrapy-2.5.1-py2.py3-none-any.whl", hash = "sha256:1a9a36970004950ee3c519a14c4db945f9d9a63fecb3d593dddcda477331dde9"},
+    {file = "Scrapy-2.5.1.tar.gz", hash = "sha256:13af6032476ab4256158220e530411290b3b934dd602bb6dacacbf6d16141f49"},
 ]
 scrapy-fake-useragent = [
     {file = "scrapy-fake-useragent-1.4.4.macosx-10.9-x86_64.tar.gz", hash = "sha256:3b17e982e646918dc25080da0672812d07bfb7a92a58377c014c74e0182c665e"},
