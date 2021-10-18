@@ -155,7 +155,7 @@ HTTPCACHE_EXPIRATION_SECS = os.environ.get('HTTPCACHE_EXPIRATION_SECS', 0)
 
 # Sentry
 # https://stackoverflow.com/questions/25262765/handle-all-exception-in-scrapy-with-sentry
-SENTRY_DSN = 'https://fa2a66ed7b8e4702b9c405f29a8b5df8@o545253.ingest.sentry.io/5704972'
+SENTRY_DSN = os.environ.get('SENTRY_DSN')
 
 # PostgreSQL
 DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}'.format(
