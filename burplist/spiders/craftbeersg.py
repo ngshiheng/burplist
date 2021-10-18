@@ -63,10 +63,10 @@ class CraftBeerSGSpider(scrapy.Spider):
     def parse_product_detail(self, response):
         loadernext = ProductLoader(item=response.meta['item'], response=response)
 
-        descriptions = response.xpath('.//div[@class="description woocommerce-product-details__short-description"]//text()').getall()
-        descriptions = ''.join(descriptions).split('\n')  # NOTE: To workaround case where the style, volume, and abv are separate element in an array
+        raw_description = response.xpath('.//div[@class="description woocommerce-product-details__short-description"]//text()').getall()
+        raw_description_list = ''.join(raw_description).split('\n')  # NOTE: To workaround case where the style, volume, and abv are separate element in an array
 
-        description = next((string for string in descriptions if '|' in string))
+        description = next((string for string in raw_description_list if '|' in string), '||')
 
         style, volume, abv = description.split('|', maxsplit=2)
         loadernext.add_value('style', style)
@@ -87,7 +87,7 @@ class CraftBeerSGSpider(scrapy.Spider):
             name, quantity = name.split('Pack of', maxsplit=2)
             return name, int(quantity)
 
-        elif 'Case of' in name:
+        if 'Case of' in name:
             name, quantity = name.split('Case of', maxsplit=2)
             return name, int(quantity)
 

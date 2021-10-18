@@ -52,7 +52,7 @@ class Product(Base):
         select([Price.price]).
         where(Price.product_id == id).
         order_by(Price.id.desc()).
-        limit(1).  # NOTE: We have to always limit this as 1 to prevent `CardinalityViolation: more than one row returned by a subquery used as an expression`
+        limit(1).  # NOTE: Limit this as 1 to prevent `CardinalityViolation: more than one row returned by a subquery used as an expression`
         as_scalar(),
     )
 
