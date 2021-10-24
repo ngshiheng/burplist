@@ -7,11 +7,10 @@ from burplist.utils.parsers import parse_brand, parse_quantity
 
 
 class AlcohaulSpider(scrapy.Spider):
-    """
-    Parse data from site's API
-    """
+    """Parse data from REST API"""
+
     name = 'alcohaul'
-    BASE_URL = 'https://alcohaul.sg/api/productlist?'
+    base_url = 'https://alcohaul.sg/api/productlist?'
 
     params: dict[str, Any] = {
         'skip': 0,
@@ -22,7 +21,7 @@ class AlcohaulSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        url = self.BASE_URL + urlencode(self.params)
+        url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
@@ -35,10 +34,10 @@ class AlcohaulSpider(scrapy.Spider):
         data = response.json()
         products = data['items']
 
+        # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
-                if int(product['quantity']) < 1:  # NOTE: `quantity` could be returned as `int` or `str` by the API
-                    # Skipping products which are out of stock
+                if int(product['quantity']) < 1:  # NOTE: `quantity` could be `int` or `str` from API
                     continue
 
                 loader = ProductLoader()
@@ -65,5 +64,5 @@ class AlcohaulSpider(scrapy.Spider):
                 yield loader.load_item()
 
             self.params['skip'] += 50
-            next_page = self.BASE_URL + urlencode(self.params)
+            next_page = self.base_url + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)

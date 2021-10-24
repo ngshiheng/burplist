@@ -6,10 +6,8 @@ from burplist.utils.parsers import parse_style
 
 
 class ColdStorageSpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
-    API returns HTML
-    """
+    """Parse data from raw HTML"""
+
     name = 'coldstorage'
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
 

@@ -10,13 +10,15 @@ logger = logging.getLogger(__name__)
 
 
 class AlcoholDeliverySpider(scrapy.Spider):
-    """
-    Parse data from site's API
+    """Parse data from REST API
+
     Site has 'Age Verification' modal
     Expect all of the product listed here are either in 'Single' or 'Keg'
+    All scrapped item from this site are of quantity of 1
     """
+
     name = 'alcoholdelivery'
-    BASE_URL = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
+    base_url = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
 
     params: dict[str, Any] = {
         'filter': 'all',
@@ -30,7 +32,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        url = self.BASE_URL + urlencode(self.params)
+        url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
@@ -46,7 +48,6 @@ class AlcoholDeliverySpider(scrapy.Spider):
         if products:
             for product in products:
                 if product['quantity'] < 1:
-                    # Skipping products which are out of stock
                     continue
 
                 # Filter out product with 'Keg' inside the name
@@ -71,7 +72,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
 
                 loader.add_value('abv', abv)
                 loader.add_value('volume', name)
-                loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
+                loader.add_value('quantity', 1)
 
                 image_url = product.get('imageFiles')[0]['source']
                 loader.add_value('image_url', f'https://www.alcoholdelivery.com.sg/products/i/{image_url}')
@@ -80,5 +81,5 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 yield loader.load_item()
 
             self.params['skip'] += 10
-            next_page = self.BASE_URL + urlencode(self.params)
+            next_page = self.base_url + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)

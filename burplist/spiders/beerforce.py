@@ -7,12 +7,11 @@ logger = logging.getLogger(__name__)
 
 
 class BeerForceSpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
+    """Parse data from raw HTML
+
     Starting URL is from a base URL which contains different styles of beer
     Expect all of the product listed here are of 'Single' quantity
-
-    # NOTE: This spider passes ProductItem into nested request, which is kind of cool!
+    This spider passes ProductItem into nested request
 
     # TODO: Extract `origin` information
     # TODO: Add contracts to `parse_product_detail`. Need to handle passing of `meta`
@@ -51,7 +50,7 @@ class BeerForceSpider(scrapy.Spider):
 
             loader.add_xpath('brand', './/h4[@class="product__vendor h6"]/text()')
 
-            loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
+            loader.add_value('quantity', 1)
 
             loader.add_xpath('price', './/span[@class="money"]/text()')
 
