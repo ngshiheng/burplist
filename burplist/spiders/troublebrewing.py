@@ -8,8 +8,8 @@ from burplist.utils.parsers import parse_style
 
 
 class TroubleBrewingSpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
+    """Parse data from raw HTML
+
     Starting URL is from a base URL which contains collections of beers, we then need to dive into each individual collection URL to obtain the product information
 
     We get the beer information via a html script tag as shown in the example below:
@@ -19,6 +19,7 @@ class TroubleBrewingSpider(scrapy.Spider):
     ...
     </script>
     """
+
     name = 'troublebrewing'
     start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']
 

@@ -8,13 +8,13 @@ from burplist.utils.parsers import parse_style
 
 
 class FairPriceSpider(scrapy.Spider):
-    """
-    Parse data from site's API
+    """Parse data from REST API
 
     # TODO: Extract partially missing `style` information
     """
+
     name = 'fairprice'
-    BASE_URL = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
+    base_url = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
 
     params: dict[str, Any] = {
         'category': 'premium',
@@ -45,7 +45,7 @@ class FairPriceSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        url = self.BASE_URL + urlencode(self.params)
+        url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse, headers=self.headers)
 
     def parse(self, response):
@@ -85,7 +85,7 @@ class FairPriceSpider(scrapy.Spider):
         has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
         if has_next_page is True:
             self.params['page'] += 1
-            next_page = self.BASE_URL + urlencode(self.params)
+            next_page = self.base_url + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)
 
     @staticmethod
@@ -100,6 +100,6 @@ class FairPriceSpider(scrapy.Spider):
     def get_product_quantity(product: dict[str, Any]) -> int:
         metadata = product['metaData']
         display_unit = metadata['DisplayUnit']
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # "24 x 330ml". "x" could be upper case
 
         return int(quantity[0]) if len(quantity) != 1 else 1

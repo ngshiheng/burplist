@@ -4,12 +4,14 @@ from burplist.utils.parsers import parse_style
 
 
 class HopShopSpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
+    """Parse data from raw HTML
+
     Page number based pagination
+    All scrapped item from this site are of quantity of 1
 
     # TODO: Extract `origin` and partially missing `style` information
     """
+
     name = 'hopshop'
     start_urls = ['https://www.hopshop.com.sg/beer/']
 
@@ -39,7 +41,7 @@ class HopShopSpider(scrapy.Spider):
 
             loader.add_xpath('abv', './/article/@data-name')
             loader.add_xpath('volume', './/article/@data-name')
-            loader.add_value('quantity', 1)  # NOTE: All scrapped item from this site are of quantity of 1
+            loader.add_value('quantity', 1)
 
             image_url = response.xpath('//div[@class="card-img-container"]//img/@data-src').get()
             loader.add_value('image_url', image_url)

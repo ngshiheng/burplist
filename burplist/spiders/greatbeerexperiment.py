@@ -7,11 +7,11 @@ from burplist.utils.parsers import parse_style
 
 
 class TheGreatBeerExperimentSpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
+    """Parse data from raw HTML
 
     # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
     """
+
     name = 'greatbeerexperiment'
     start_urls = ['https://greatbeerexperiment.com/collections']
 
@@ -39,7 +39,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
 
             name = product.xpath('.//p[@class="grid-link__title"]/text()').get()
 
-            # Filter out merchandise
+            # Filter out merchandises
             if any(word in name.lower() for word in ['cap', 'tee', 'glass']):
                 continue
 

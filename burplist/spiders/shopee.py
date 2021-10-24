@@ -9,11 +9,11 @@ logger = logging.getLogger(__name__)
 
 
 class ShopeeSpider(scrapy.Spider):
-    """
-    Extract data from API
+    """Parse data from REST API
 
     # TODO: Extract `origin` and `abv` information
     """
+
     name = 'shopee'
     custom_settings = {
         'DOWNLOAD_DELAY': os.environ.get('SHOPEE_DOWNLOAD_DELAY', 5),

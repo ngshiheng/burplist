@@ -9,12 +9,13 @@ logger = logging.getLogger(__name__)
 
 
 class ThirstySpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
+    """Parse data from raw HTML
+
     Do note that this site uses infinite scrolling
 
     # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
     """
+
     name = 'thirsty'
     custom_settings = {'ROBOTSTXT_OBEY': False}
     start_urls = ['https://www.thirsty.com.sg/pages/shop-by-style']
@@ -36,7 +37,7 @@ class ThirstySpider(scrapy.Spider):
 
         products = response.xpath('//div[@class="product-each-top cf"]')
 
-        # NOTE: Because we don't have a way to determine if this request has next page, we would just stop following when `products` is not found
+        # Because we don't have a way to determine if this request has next page, we would just stop following when `products` is not found
         if products:
             for product in products:
                 url = response.urljoin(product.xpath('.//a[@class="link-3 color-header"]/@href').get())
@@ -83,5 +84,5 @@ class ThirstySpider(scrapy.Spider):
 
     @staticmethod
     def get_product_quantity(display_unit: str) -> int:
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # E.g.: "DisplayUnit": "24 x 330ml". Note that 'x' can be capital letter
+        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # "24 x 330ml". "x" could be upper case
         return int(quantity[0]) if len(quantity) != 1 else 1

@@ -5,13 +5,15 @@ from burplist.items import ProductLoader
 
 
 class CraftBeerSGSpider(scrapy.Spider):
-    """
-    Extract data from raw HTML
-    Product quantity might come in a Pack of 6, Pack of 16, Pack of 24 and etc. https://craftbeersg.com/product-category/beer/page/36/
+    """Parse data from raw HTML
+
+    Product quantity may be "Pack of 6", "Pack of 16", "Pack of 24", and etc.
+    This spider passes ProductItem into nested request
 
     # TODO: Extract `origin` information
     # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
     """
+
     name = 'craftbeersg'
     start_urls = ['https://craftbeersg.com/product-category/beer/by-brewery/']
 
@@ -88,7 +90,7 @@ class CraftBeerSGSpider(scrapy.Spider):
     @staticmethod
     def get_product_name_quantity(raw_name: str) -> tuple[str, int]:
         parsed_name = raw_name.split('~', maxsplit=2)  # "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
-        name = re.sub('[()]', '', parsed_name[0])  # Remove all parenthesis
+        name = re.sub('[()]', '', parsed_name[0])
 
         if 'Pack of' in name:
             name, quantity = name.split('Pack of', maxsplit=2)
