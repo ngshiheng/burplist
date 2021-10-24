@@ -66,9 +66,16 @@ class CraftBeerSGSpider(scrapy.Spider):
         raw_description = response.xpath('.//div[@class="description woocommerce-product-details__short-description"]//text()').getall()
         raw_description_list = ''.join(raw_description).split('\n')  # NOTE: To workaround case where the style, volume, and abv are separate element in an array
 
-        description = next((string for string in raw_description_list if '|' in string), '||')
+        descriptions = next((string for string in raw_description_list if '|' in string), '|')
 
-        style, volume, abv = description.split('|', maxsplit=2)
+        attributes = descriptions.split('|')
+        if len(attributes) == 2:  # "330ml | 4.8% ABV"
+            style = None
+            volume, abv = attributes
+
+        else:  # "Cider | 330ml | ABV 4%"
+            style, volume, abv = attributes
+
         loadernext.add_value('style', style)
         loadernext.add_value('volume', volume)
         loadernext.add_value('abv', abv)
@@ -80,7 +87,7 @@ class CraftBeerSGSpider(scrapy.Spider):
 
     @staticmethod
     def get_product_name_quantity(raw_name: str) -> tuple[str, int]:
-        parsed_name = raw_name.split('~', maxsplit=2)  # E.g.: "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
+        parsed_name = raw_name.split('~', maxsplit=2)  # "Magic Rock Brewing. Fantasma Gluten Free IPA ~ P198"
         name = re.sub('[()]', '', parsed_name[0])  # Remove all parenthesis
 
         if 'Pack of' in name:

@@ -3,10 +3,7 @@ from itemloaders.processors import Identity, MapCompose, TakeFirst
 from price_parser.parser import parse_price
 from scrapy.loader import ItemLoader
 
-from burplist.utils.parsers import (
-    parse_abv, parse_name, parse_volume,
-    quantize_price,
-)
+from burplist.utils.parsers import parse_abv, parse_name, parse_volume, quantize_price
 
 
 class ProductItem(scrapy.Item):
