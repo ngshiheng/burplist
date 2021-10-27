@@ -31,10 +31,6 @@ _NOTE: You can always use `alembic downgrade -1` to revert any database migratio
 
 -   https://dbdiagram.io/d/605d3ad2ecb54e10c33d5165
 
-### List of awesome Scrapy libraries
-
--   https://github.com/croqaz/awesome-scrapy
-
 ### Useful SQL Queries
 
 To get the price list of all available products:

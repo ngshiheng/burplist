@@ -11,6 +11,8 @@ This is the web crawlers repository of https://burplist.me built using Scrapy.
 
 The site serves as a search engine for craft beers in Singapore, providing craft beer lovers pricing information for their favorite beer.
 
+---
+
 ## Development
 
 ### Installation
@@ -83,11 +85,12 @@ scrapy list | xargs -n 1 -P 0 scrapy crawl
 
 ---
 
-## Using Proxy
+## Proxy
 
 We use [ScraperAPI](https://www.scraperapi.com/) as our proxy server provider.
 
 ```sh
+# Optional:
 export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
 ```
 
@@ -105,3 +108,12 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 4. Commit your changes (git commit -am 'Add some fooBar')
 5. Push to the branch (git push origin feature/fooBar)
 6. Create a new Pull Request
+
+---
+
+## References
+
+List of awesome Scrapy libraries
+
+-   https://github.com/croqaz/awesome-scrapy
+-   https://github.com/groupbwt/scrapy-boilerplate
