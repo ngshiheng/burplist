@@ -94,6 +94,7 @@ class ExistingProductPricePipeline:
             prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Only works if all values in dict are hashable. Reference: https://www.geeksforgeeks.org/python-removing-duplicate-dicts-in-list/
             session.bulk_insert_mappings(Price, prices)
             logger.info(f'Created {len(self.prices)} new prices in bulk for existing products to the database.')
+
             session.commit()
 
 
@@ -155,10 +156,10 @@ class NewProductPricePipeline:
         with Session() as session:
             products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
+            logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
 
             prices = [dict(price=product['price'], product_id=product['id']) for product in products]
             session.bulk_insert_mappings(Price, prices)
-
-            logger.info(f'Saved {len(products)} new products in bulk operation to the database.')
             logger.info(f'Saved {len(prices)} new prices in bulk operation to the database.')
+
             session.commit()
