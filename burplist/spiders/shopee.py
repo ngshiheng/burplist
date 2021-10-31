@@ -20,13 +20,13 @@ class ShopeeSpider(scrapy.Spider):
     }
 
     start_urls = [
-        f'https://shopee.sg/api/v4/search/search_items?by=sales&categoryids=100860&keyword=craft%20beer&limit=50&match_id=14255&newest={n}&official_mall=1&order=desc&page_type=search&rating_filter=4&scenario=PAGE_SUB_CATEGORY_SEARCH&skip_autocorrect=1&version=2'
+        f'https://shopee.sg/api/v4/search/search_items?by=sales&categoryids=100860&keyword=craft%20beer&limit=50&newest={n}&order=desc&page_type=search&rating_filter=4&scenario=PAGE_GLOBAL_SEARCH&version=2'
         for n in range(0, 200, 50)  # Page 1 to 5
     ]
 
     def parse(self, response):
         """
-        @url https://shopee.sg/api/v4/search/search_items?by=sales&categoryids=100860&keyword=craft%20beer&limit=50&match_id=14255&newest=0&official_mall=1&order=desc&page_type=search&rating_filter=4&scenario=PAGE_SUB_CATEGORY_SEARCH&skip_autocorrect=1&version=2
+        @url https://shopee.sg/api/v4/search/search_items?by=sales&categoryids=100860&keyword=craft%20beer&limit=50&newest=50&order=desc&page_type=search&rating_filter=4&scenario=PAGE_GLOBAL_SEARCH&version=2
         @returns items 1
         @returns requests 0 0
         @scrapes platform name url quantity price

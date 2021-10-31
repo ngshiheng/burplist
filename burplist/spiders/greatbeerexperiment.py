@@ -20,7 +20,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
         @url https://greatbeerexperiment.com/collections
         @returns requests 1
         """
-        collections = response.xpath('//li[@class="site-nav--has-dropdown site-nav--active"]//li/a')
+        collections = response.xpath('//li[@class="mobile-nav__sublist-link"]//a')
         for collection in collections:
             collection_name = collection.xpath('.//text()').get().strip()
             brand, origin = self.get_product_brand_and_origin(collection_name)
