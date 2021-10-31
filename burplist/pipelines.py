@@ -97,6 +97,9 @@ class ExistingProductPricePipeline:
 
             session.commit()
 
+        if len(self.products_update) == 0:
+            raise ValueError(f"No existing product information was updated for {spider.name}.")
+
 
 class NewProductPricePipeline:
     """
