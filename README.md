@@ -5,11 +5,13 @@
 </p>
 <br />
 
-## What is this?
+## Introduction
 
 This is the web crawlers repository of https://burplist.me built using Scrapy.
 
 The site serves as a search engine for craft beers in Singapore, providing craft beer lovers pricing information for their favorite beer.
+
+I have also documented some of my thought process while creating Burplist [here](https://jerrynsh.com/how-i-built-burplist-for-free/). Enjoy!
 
 ---
 
@@ -40,7 +42,17 @@ Some example useful invocations:
 
 ### Database
 
+**Optional: DB Migration**
+
 For database migration steps, please read [this](alembic/README.md). You would only need this if you update any database models. Not needed for fresh installation.
+
+**With `docker-compose`**
+
+```sh
+docker-compose up
+```
+
+**OR Without `docker-compose`**
 
 -   To spin up a PostgreSQL Docker instance locally
 
@@ -51,14 +63,12 @@ For database migration steps, please read [this](alembic/README.md). You would o
 -   To start the PostgreSQL Docker container, simply use `docker start dpostgres`.
 -   To run `psql`, do `docker exec -it dpostgres psql -U postgres`
 -   Create a database name as `burplist` using `CREATE DATABASE burplist;`
-
-### Build a Burplist docker image
-
-_NOTE: Set `PG_HOST=172.17.0.1` because that is the IP address gateway of container_
-
-```sh
-docker build -t burplist .
-```
+-   To build a `burplist` Docker image:
+    ```sh
+    # NOTE: Dockerfile `PG_HOST=172.17.0.1` because that is the IP address gateway of container_
+    docker build -t burplist .
+    ```
+-   To run from the newly built image, do `docker run --name burplist burplist`
 
 ---
 
@@ -93,11 +103,6 @@ poetry shell
 scrapy list | xargs -n 1 -P 0 scrapy crawl
 ```
 
-### Run all spiders with Docker
-
-1. Make sure you have a running instance of the latest PostgreSQL in your local machine (refer to the steps above)
-2. Run `docker run --name burplist burplist`
-
 ---
 
 ## Proxy
@@ -107,6 +112,7 @@ We use [ScraperAPI](https://www.scraperapi.com/) as our proxy server provider.
 ```sh
 # Optional:
 export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
+export SENTRY_DSN="YOUR_SENTRY_DSN"
 ```
 
 ---
@@ -128,7 +134,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## References
 
-List of awesome Scrapy libraries
+### List of awesome Scrapy libraries
 
 -   https://github.com/croqaz/awesome-scrapy
 -   https://github.com/groupbwt/scrapy-boilerplate
+
+### Docker
+
+-   https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
+-   https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
+-   https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
