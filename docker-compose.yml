@@ -1,0 +1,32 @@
+version: "3"
+services:
+    app:
+        container_name: burplist_scrapy
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        depends_on:
+            db:
+                condition: service_healthy
+        environment:
+            ENVIRONMENT: ${ENVIRONMENT:-development}
+            SENTRY_DSN: ${SENTRY_DSN}
+            SCRAPER_API_KEY: ${SCRAPER_API_KEY}
+
+        command: "bash -c 'poetry run scrapy list|xargs -n 1 poetry run scrapy crawl'"
+
+    db:
+        container_name: burplist_postgres
+        image: postgres:latest
+        environment:
+            POSTGRES_USER: ${PG_USERNAME:-postgres}
+            POSTGRES_PASSWORD: ${PG_PASSWORD:-developmentpassword}
+            POSTGRES_DB: ${PG_DATABASE:-burplist}
+        ports:
+            - 5432:5432
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U postgres"]
+            interval: 5s
+            timeout: 5s
+            retries: 5
+        restart: always
