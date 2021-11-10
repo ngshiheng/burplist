@@ -15,21 +15,21 @@ The site serves as a search engine for craft beers in Singapore, providing craft
 
 ## Development
 
-### Installation
+Make sure you have [poetry](https://python-poetry.org/docs/#installation) and [docker](https://www.docker.com/) installed on your machine.
 
-Make sure you have [poetry](https://python-poetry.org/docs/#installation) installed on your machine.
+### Installation
 
 ```sh
 poetry install
 
-# Installing dependencies only
+# Optional: Installing dependencies only
 poetry install --no-root
 
-# Updating dependencies to their latest versions
+# Optional: Updating dependencies to their latest versions
 poetry update
 ```
 
-### Setup Pre-commit Hooks
+### Setup pre-commit Hooks
 
 Before you begin your development work, make sure you have installed [pre-commit hooks](https://pre-commit.com/index.html#installation).
 
@@ -40,15 +40,25 @@ Some example useful invocations:
 
 ### Database
 
--   Make sure you have a running instance of the latest PostgreSQL in your local machine.
+For database migration steps, please read [this](alembic/README.md). You would only need this if you update any database models. Not needed for fresh installation.
+
+-   To spin up a PostgreSQL Docker instance locally
 
     ```sh
-    # Example to spin up a PostgreSQL Docker instance locally
     docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
     ```
 
--   By default, the database for this project should be named as `burplist`.
--   For database migration steps, please read [this](alembic/README.md).
+-   To start the PostgreSQL Docker container, simply use `docker start dpostgres`.
+-   To run `psql`, do `docker exec -it dpostgres psql -U postgres`
+-   Create a database name as `burplist` using `CREATE DATABASE burplist;`
+
+### Build a Burplist docker image
+
+_NOTE: Set `PG_HOST=172.17.0.1` because that is the IP address gateway of container_
+
+```sh
+docker build -t burplist .
+```
 
 ---
 
@@ -82,6 +92,11 @@ heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
 poetry shell
 scrapy list | xargs -n 1 -P 0 scrapy crawl
 ```
+
+### Run all spiders with Docker
+
+1. Make sure you have a running instance of the latest PostgreSQL in your local machine (refer to the steps above)
+2. Run `docker run --name burplist burplist`
 
 ---
 
