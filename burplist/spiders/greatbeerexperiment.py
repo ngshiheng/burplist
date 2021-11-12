@@ -20,7 +20,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
         @url https://greatbeerexperiment.com/collections
         @returns requests 1
         """
-        collections = response.xpath('//li[@class="mobile-nav__sublist-link"]//a')
+        collections = response.xpath("//li[contains(@class,'brewery') and contains(./details, ' ')]//li/a")
         for collection in collections:
             collection_name = collection.xpath('.//text()').get().strip()
             brand, origin = self.get_product_brand_and_origin(collection_name)
@@ -28,7 +28,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             yield response.follow(collection, callback=self.parse_collection, meta={'brand': brand, 'origin': origin})
 
     def parse_collection(self, response):
-        products = response.xpath('//div[@class="grid__item wide--one-fifth large--one-quarter medium-down--one-half"]')
+        products = response.xpath('//div[@class="productitem"]')
 
         brand = response.meta['brand']
         origin = response.meta['origin']
@@ -37,14 +37,14 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             loader = ProductLoader(selector=product)
             loader.add_value('platform', self.name)
 
-            name = product.xpath('.//p[@class="grid-link__title"]/text()').get()
+            name = product.xpath('.//h2[@class="productitem--title"]/a/text()').get()
 
             # Filter out merchandises
             if any(word in name.lower() for word in ['cap', 'tee', 'glass']):
                 continue
 
             loader.add_value('name', name)
-            loader.add_value('url', response.urljoin(product.xpath('.//a[@class="grid-link text-center"]/@href').get()))
+            loader.add_value('url', response.urljoin(product.xpath('.//h2[@class="productitem--title"]/a/@href').get()))
 
             loader.add_value('brand', brand)
             loader.add_value('origin', origin)
@@ -54,10 +54,10 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
-            image_url = response.xpath('//span[@class="grid-link__image-centered"]//img/@src').get()  # NOTE: You need to disable JS to see this on inspect
+            image_url = response.xpath('//img[@class="productitem--image-primary" and @data-rimg-scale]/@src').get()  # NOTE: You need to disable JS to see this on inspect
             loader.add_value('image_url', f'https:{image_url}')
 
-            price = product.xpath('.//p[@class="grid-link__meta"]/text()').getall()[-1]
+            price = product.xpath('//div[@class="productitem--actions"]//div[@class="price__current--hidden"]/span[@class="money"]/text()').get()
             loader.add_value('price', price)
             yield loader.load_item()
 
