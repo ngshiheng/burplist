@@ -54,15 +54,15 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
-            image_url = response.xpath('//img[@class="productitem--image-primary" and @data-rimg-scale]/@src').get()  # NOTE: You need to disable JS to see this on inspect
+            image_url = response.xpath('.//img[@class="productitem--image-primary" and @data-rimg-scale]/@src').get()  # NOTE: You need to disable JS to see this on inspect
             loader.add_value('image_url', f'https:{image_url}')
 
-            price = product.xpath('//div[@class="productitem--actions"]//div[@class="price__current--hidden"]/span[@class="money"]/text()').get()
+            price = product.xpath('.//div[@class="productitem--actions"]//div[@class="price__current--hidden"]/span[@class="money"]/text()').get()
             loader.add_value('price', price)
             yield loader.load_item()
 
         # Recursively follow the link to the next page, extracting data from it
-        next_page = response.xpath('//li/a[@title="Next »"]/@href').get()
+        next_page = response.xpath('//li[@class="pagination--next"]/a/@href').get()
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse, meta={'brand': brand, 'origin': origin})
 
