@@ -45,6 +45,10 @@ class TroubleBrewingSpider(scrapy.Spider):
             products = json.loads(data_regex.group())
 
             for product in products:
+                # Filter out product with 'Gift' inside the name
+                if any(word in product['name'].lower() for word in ['gift']):
+                    continue
+
                 loader = ProductLoader()
                 loader.add_value('platform', self.name)
 
