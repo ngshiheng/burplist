@@ -38,7 +38,7 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
-            image_url = response.xpath('.//div[@class="product_images"]//img/@src').get()
+            image_url = product.xpath('.//div[@class="product_images"]//img//@src').get()
             loader.add_value('image_url', image_url)
 
             loader.add_xpath('price', './/div[@data-price]/text()')
