@@ -47,7 +47,7 @@ class AlcoholDeliverySpider(scrapy.Spider):
         # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
-                if product['quantity'] < 1:
+                if int(product['quantity']) < 1:
                     continue
 
                 # Filter out product with 'Keg' inside the name
