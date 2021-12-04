@@ -1,7 +1,8 @@
 import unittest
 from decimal import Decimal
 
-from burplist.utils.parsers import quantize_price
+from attr import dataclass
+from burplist.utils.parsers import parse_quantity, quantize_price
 from price_parser.parser import Price
 
 
@@ -18,3 +19,19 @@ class TestParsers(unittest.TestCase):
 
         self.assertIsInstance(quantize_price(price2), Price)
         self.assertEqual(quantize_price(price2).amount, Decimal("26.46"))
+
+    def test_parse_quantity_from_product_name(self) -> None:
+        @dataclass
+        class TestCase:
+            name: str
+            expected: int
+
+        test_cases = [
+            TestCase(name="Carlsberg 490ml x 24 Cans (BBD: Oct 2021)", expected=24),
+            TestCase(name="Carlsberg Danish Pilsner Beer Can 490ml (Pack of 48) Green", expected=48),
+            TestCase(name="Carlsberg Smooth Draught Beer Can, 320ml [Bundle of 12]", expected=12),
+            TestCase(name="Heineken Beer 330ml x 24 can", expected=24),
+        ]
+
+        for test in test_cases:
+            self.assertEqual(parse_quantity(test.name), test.expected)
