@@ -1,7 +1,7 @@
 import unittest
+from dataclasses import dataclass
 from decimal import Decimal
 
-from attr import dataclass
 from burplist.utils.parsers import parse_quantity, quantize_price
 from price_parser.parser import Price
 
