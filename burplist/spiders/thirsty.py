@@ -4,6 +4,7 @@ import re
 import scrapy
 import sentry_sdk
 from burplist.items import ProductLoader
+from burplist.locators.thirsty import ThirstyLocator
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +26,7 @@ class ThirstySpider(scrapy.Spider):
         @url https://www.thirsty.com.sg/pages/shop-by-style
         @returns requests 1
         """
-        collections = response.xpath('//a[@class="link-3 color-header"]')
+        collections = response.xpath(ThirstyLocator.beer_collection)
 
         for collection in collections:
             style = collection.xpath('text()').get()
@@ -35,15 +36,15 @@ class ThirstySpider(scrapy.Spider):
         page = response.meta.get('page', 1)
         current_url = response.request.url if page == 1 else response.meta['current_url']  # So that query parameters wont be appended whenever this method runs recursively
 
-        products = response.xpath('//div[@class="product-each-top cf"]')
+        products = response.xpath(ThirstyLocator.products)
 
         # Because we don't have a way to determine if this request has next page, we would just stop following when `products` is not found
         if products:
             for product in products:
-                url = response.urljoin(product.xpath('.//a[@class="link-3 color-header"]/@href').get())
+                url = response.urljoin(product.xpath(ThirstyLocator.product_title).get())
 
-                raw_prices = product.xpath('.//span[@class="color-header body-s"]/text()').getall()
-                display_units = product.xpath('.//p[@class="product-option-title body-xxs ml-5"]/text()').getall()
+                raw_prices = product.xpath(ThirstyLocator.product_prices).getall()
+                display_units = product.xpath(ThirstyLocator.product_display_units).getall()
 
                 if len(raw_prices) != len(display_units):
                     logger.warning('Mismatch length of `raw_prices` and `display_units`.')
@@ -60,18 +61,18 @@ class ThirstySpider(scrapy.Spider):
 
                     loader.add_value('platform', self.name)
 
-                    loader.add_xpath('name', './/a[@class="link-3 color-header"]/text()')
+                    loader.add_xpath('name', ThirstyLocator.product_name)
                     loader.add_value('url', url)
 
-                    loader.add_xpath('brand', './/a[@class="body-xs color-text"]/text()')
+                    loader.add_xpath('brand', ThirstyLocator.product_brand)
                     loader.add_xpath('origin', None)
                     loader.add_value('style', response.meta['style'])
 
-                    loader.add_xpath('abv', './/span[@class="alcohol color-text body-xs mr-5"]/text()')
-                    loader.add_xpath('volume', './/span[@class="volume color-text body-xs tablet-mr-5"]/text()')
+                    loader.add_xpath('abv', ThirstyLocator.product_abv)
+                    loader.add_xpath('volume', ThirstyLocator.product_volume)
                     loader.add_value('quantity', self.get_product_quantity(display_unit))
 
-                    image_url = product.xpath('.//img[@class="image image-option primary lazy"]/@data-lazy').get()
+                    image_url = product.xpath(ThirstyLocator.product_image_url).get()
                     loader.add_value('image_url', f'https:{image_url}')
 
                     loader.add_value('price', price)
