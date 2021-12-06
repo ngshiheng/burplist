@@ -20,7 +20,7 @@ class ExistingProductPricePipeline:
 
     `url` and `quantity` is used to define the uniqueness of a product
     Using `url` alone isn't enough because the same URL (product) can have type of different `quantity`
-    E.g.: "Pabst Blue Ribbon American Lager" can be of 'Single', '6 Packs' or 'Case of 24'
+    e.g. "Pabst Blue Ribbon American Lager" can be of 'Single', '6 Packs' or 'Case of 24'
 
     Do not use `name` because name can change on a website
     """
