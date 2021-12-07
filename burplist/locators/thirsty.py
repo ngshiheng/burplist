@@ -8,7 +8,7 @@ class ThirstyLocator:
     products = '//div[@class="product-each-top cf"]'
     product_title = './/a[@class="link-3 color-header"]/@href'
     product_prices = './/span[@class="color-header body-s"]/text()'
-    product_display_units = './/p[contains(@class,"product-option-title body-xxs ml-5")]'
+    product_display_units = './/p[contains(@class,"product-option-title body-xxs ml-5")]/text()'
 
     product_name = './/a[@class="link-3 color-header"]/text()'
     product_brand = './/a[@class="body-xs color-text"]/text()'
