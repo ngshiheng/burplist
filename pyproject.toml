@@ -17,7 +17,7 @@ scrapy-fake-useragent = "1.4.4"
 alembic = "1.7.5"
 
 [tool.poetry.dev-dependencies]
-autopep8 = "1.5.7"
+autopep8 = "==1.6.0"
 flake8 = "==4.0.1"
 pylint = "2.12.2"
 pre-commit = "2.16.0"
