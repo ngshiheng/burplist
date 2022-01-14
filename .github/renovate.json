@@ -1,10 +1,17 @@
-// NOTE: use JSON5 to be able to use comments
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:base"
     ],
     "rangeStrategy": "pin",
+    "rebaseWhen": "behind-base-branch",
+    "dependencyDashboard": true,
+    "dependencyDashboardAutoclose": true,
+    "schedule": [
+        "after 10pm every weekday",
+        "before 5am every weekday",
+        "every weekend"
+    ],
     "packageRules": [
         {
             "description": "Automatically merge minor and patch-level updates",
@@ -14,7 +21,6 @@
                 "digest"
             ],
             "automerge": true,
-            // Force Renovate to not create a PR (but merge its branches directly)
             "automergeType": "branch"
         },
         {
