@@ -1,4 +1,11 @@
 {
     "extends": ["config:base"],
-    "rangeStrategy": "pin"
+    "rangeStrategy": "pin",
+    "baseBranches": ["production"],
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true
+        }
+    ]
 }
