@@ -1,20 +1,19 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "dependencyDashboard": true,
+    "dependencyDashboardAutoclose": true,
+    "docker": {
+        "enabled": false
+    },
+    "docker-compose": {
+        "enabled": false
+    },
     "extends": [
         "config:base"
     ],
-    "rangeStrategy": "pin",
-    "rebaseWhen": "behind-base-branch",
-    "dependencyDashboard": true,
-    "dependencyDashboardAutoclose": true,
-    "schedule": [
-        "after 10pm every weekday",
-        "before 5am every weekday",
-        "every weekend"
-    ],
     "packageRules": [
         {
-            "description": "Automatically merge minor and patch-level updates",
+            "description": "Automatically merges minor and patch-level updates",
             "matchUpdateTypes": [
                 "minor",
                 "patch",
@@ -24,12 +23,19 @@
             "automergeType": "branch"
         },
         {
-            "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
+            "description": "Automatically creates a PR whenever there is a new major Renovate version",
             "matchUpdateTypes": [
                 "major"
             ],
             "automerge": false,
             "prCreation": "immediate"
         }
-    ]
+    ],
+    "rangeStrategy": "pin",
+    "rebaseWhen": "behind-base-branch",
+    "schedule": [
+        "after 8pm every weekday",
+        "every weekend"
+    ],
+    "timezone": "Asia/Singapore"
 }
