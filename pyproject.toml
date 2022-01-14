@@ -18,7 +18,7 @@ alembic = "1.7.5"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "1.5.7"
-flake8 = "3.9.2"
+flake8 = "==4.0.1"
 pylint = "2.12.2"
 pre-commit = "2.16.0"
 mypy = "^0.910"
