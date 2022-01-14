@@ -24,7 +24,7 @@ class BeerForceSpider(scrapy.Spider):
         @url https://beerforce.sg/pages/all-styles
         @returns requests 1
         """
-        collections = response.xpath('//div[@class="o-layout__item u-1/2@tab u-1/4@desk"]//@href')
+        collections = response.xpath('//a[@class="collection-list__link"]/@href')
         yield from response.follow_all(collections, callback=self.parse_collection)
 
     def parse_collection(self, response):
@@ -32,8 +32,8 @@ class BeerForceSpider(scrapy.Spider):
         @url https://beerforce.sg/collections/ipa
         @returns requests 1
         """
-        product_details = response.xpath('//div[@class="product__details"]')
-        product_media = response.xpath('//div[@class="product-top"]')
+        product_details = response.xpath('//div[@class="product-card__details"]')
+        product_media = response.xpath('//div[@class="product-card-top"]')
 
         for product, media in zip(product_details, product_media):
             raw_price = product.xpath('.//span[@class="money"]/text()').get()
@@ -45,10 +45,10 @@ class BeerForceSpider(scrapy.Spider):
             loader = ProductLoader(selector=product)
             loader.add_value('platform', self.name)
 
-            loader.add_xpath('name', './/h3[@class="product__title h4"]/text()')
+            loader.add_xpath('name', './/h2[@class="product-card__title h4"]/text()')
             loader.add_value('url', response.urljoin(media.xpath('./a/@href').get()))
 
-            loader.add_xpath('brand', './/h4[@class="product__vendor h6"]/text()')
+            loader.add_xpath('brand', './/h3[@class="product-card__vendor h6"]/text()')
 
             loader.add_value('quantity', 1)
 
@@ -78,7 +78,7 @@ class BeerForceSpider(scrapy.Spider):
         loadernext.add_value('abv', abv)
         loadernext.add_value('volume', volume)
 
-        image_url = response.xpath('//div[@class="product-single__photo__item"]/img/@src').get()
+        image_url = response.xpath('//img[@class="product-single__photo__img js-pswp-img"]/@src').get()
         loadernext.add_value('image_url', f'https:{image_url}')
 
         yield loadernext.load_item()
