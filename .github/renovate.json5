@@ -5,9 +5,6 @@
         "config:base"
     ],
     "rangeStrategy": "pin",
-    "baseBranches": [
-        "dependency-updates"
-    ],
     "packageRules": [
         {
             "description": "Automatically merge minor and patch-level updates",
