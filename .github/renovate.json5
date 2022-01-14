@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "rangeStrategy": "pin",
+    "baseBranches": [
+        "production"
+    ],
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ],
+            "automerge": true
+        }
+    ]
+}
