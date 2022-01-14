@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.4 (2022-01-14)
+### Fix
+* Remove baseBranches ([`0ff705e`](https://github.com/ngshiheng/burplist/commit/0ff705eca314a9c2a7faf76d50f3146a76eb3fc9))
+
 ## v1.0.3 (2021-12-07)
 ### Fix
 * Missing text() ([`205fb28`](https://github.com/ngshiheng/burplist/commit/205fb281036fbc498a94f9fd579605b52af38978))
