@@ -10,6 +10,8 @@ from burplist.utils.parsers import parse_style
 class FairPriceSpider(scrapy.Spider):
     """Parse data from REST API
 
+    https://www.fairprice.com.sg/category/craft-beer
+
     # TODO: Extract partially missing `style` information
     """
 
@@ -17,31 +19,24 @@ class FairPriceSpider(scrapy.Spider):
     base_url = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
 
     params: dict[str, Any] = {
-        'category': 'premium',
-        'experiments': 'recHome-A,pastPurchaseCategory-A,searchVariant-B,UnappliedPromoVariant-B,substitutionVariant-B,substitutionVariant-B',
+        'category': 'craft-beer',
+        'experiments': 'recHome-B%2CbsHome-B%2CpastPurchaseCategory-B%2CsearchVariant-B%2CtrendH-B%2CtimerVariant-Z%2CinlineBanner-A%2Csp-B%2CsubstitutionBSVariant-A%2Cgv-A%2CSPI-Z%2CSNLI-A%2CSC-A%2CSellerCrtVariant-B%2Cdc-expB%2CadLabel-A%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B',
         'includeTagDetails': 'true',
         'page': 1,  # Starting page
         'pageType': 'category',
-        'slug': 'premium',
+        'slug': 'craft-beer',
         'storeId': '165',
-        'url': 'premium',
+        'url': 'craft-beer',
     }
 
-    # NOTE: This spider would work without these headers anyway. Adding these in as a safety measure
     headers = {
         'Accept': 'application/json',
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'en',
-        'Connection': 'keep-alive',
         'Content-Type': 'application/json',
         'Host': 'website-api.omni.fairprice.com.sg',
         'Origin': 'https///www.fairprice.com.sg',
         'Referer': 'https//www.fairprice.com.sg/',
-        'sec-ch-ua': 'Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99',
-        'sec-ch-ua-mobile': '?0',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-site',
     }
 
     def start_requests(self):
@@ -50,7 +45,7 @@ class FairPriceSpider(scrapy.Spider):
 
     def parse(self, response):
         """
-        @url https://website-api.omni.fairprice.com.sg/api/product/v2?category=premium&experiments=recHome-A%2CpastPurchaseCategory-A%2CsearchVariant-B%2CUnappliedPromoVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B&includeTagDetails=true&page=1&pageType=category&slug=premium&storeId=165&url=premium
+        @url https://website-api.omni.fairprice.com.sg/api/product/v2?category=craft-beer&experiments=recHome-B%252CbsHome-B%252CpastPurchaseCategory-B%252CsearchVariant-B%252CtrendH-B%252CtimerVariant-Z%252CinlineBanner-A%252Csp-B%252CsubstitutionBSVariant-A%252Cgv-A%252CSPI-Z%252CSNLI-A%252CSC-A%252CSellerCrtVariant-B%252Cdc-expB%252CadLabel-A%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B&includeTagDetails=true&page=1&pageType=category&slug=craft-beer&storeId=165&url=craft-beer
         @returns items 1
         @returns requests 1
         @scrapes platform name url brand origin quantity price
