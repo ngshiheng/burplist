@@ -1,16 +1,15 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "config:base"
-    ],
-    "rangeStrategy": "pin",
-    "rebaseWhen": "behind-base-branch",
     "dependencyDashboard": true,
     "dependencyDashboardAutoclose": true,
-    "schedule": [
-        "after 10pm every weekday",
-        "before 5am every weekday",
-        "every weekend"
+    "docker": {
+        "enabled": false
+    },
+    "docker-compose": {
+        "enabled": false
+    },
+    "extends": [
+        "config:base"
     ],
     "packageRules": [
         {
@@ -31,5 +30,12 @@
             "automerge": false,
             "prCreation": "immediate"
         }
-    ]
+    ],
+    "rangeStrategy": "pin",
+    "rebaseWhen": "behind-base-branch",
+    "schedule": [
+        "after 8pm every weekday",
+        "every weekend"
+    ],
+    "timezone": "Asia/Singapore"
 }
