@@ -4,7 +4,8 @@ class ThirstyLocator:
     # Locators for https://www.thirsty.com.sg/pages/shop-by-style
     beer_collection = '//a[@class="link-3 color-header"]'
 
-    # Locators for products page, e.g. https://www.thirsty.com.sg/collections/lager
+    # Locators for products page
+    # e.g. https://www.thirsty.com.sg/collections/lager
     products = '//div[@class="product-each-top cf"]'
     product_title = './/a[@class="link-3 color-header"]/@href'
     product_prices = './/span[@class="color-header body-s"]/text()'
