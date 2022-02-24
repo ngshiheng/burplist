@@ -15,12 +15,12 @@ if [[ "$1" == "weekly" ]]; then
     echo "Frequency: <Weekly> | Day of the week: <$2>"
     if [ "$(date +%u)" = "$2" ]; then
         echo "Pruning stale data."
-        scrapy prune --days 14
+        scrapy prune --days 60
         echo "Finished pruning all."
     fi
 else
     echo "Frequency: <Now>"
     echo "Pruning stale data."
-    scrapy prune --days 14
+    scrapy prune --days 60
     echo "Finished pruning all."
 fi
