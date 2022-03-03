@@ -8,34 +8,23 @@
     "docker-compose": {
         "enabled": false
     },
-    "extends": [
-        "config:base"
-    ],
+    "extends": ["config:base", ":semanticCommits"],
     "packageRules": [
         {
             "description": "Automatically merges minor and patch-level updates",
-            "matchUpdateTypes": [
-                "minor",
-                "patch",
-                "digest"
-            ],
+            "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
             "automergeType": "branch"
         },
         {
             "description": "Automatically creates a PR whenever there is a new major Renovate version",
-            "matchUpdateTypes": [
-                "major"
-            ],
+            "matchUpdateTypes": ["major"],
             "automerge": false,
             "prCreation": "immediate"
         }
     ],
     "rangeStrategy": "pin",
     "rebaseWhen": "behind-base-branch",
-    "schedule": [
-        "after 8pm every weekday",
-        "every weekend"
-    ],
+    "schedule": ["after 8pm every weekday", "every weekend"],
     "timezone": "Asia/Singapore"
 }
