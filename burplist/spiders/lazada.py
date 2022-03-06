@@ -5,6 +5,7 @@ from urllib.parse import urlencode
 import scrapy
 from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_quantity
+from burplist.utils.proxy import get_proxy_url
 from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.utils.project import get_project_settings
 
@@ -25,7 +26,6 @@ class LazadaSpider(scrapy.Spider):
 
     name = 'lazada'
     custom_settings = {
-        'ROBOTSTXT_OBEY': False,
         'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 20),
         'DOWNLOADER_MIDDLEWARES': {
             **settings.get('DOWNLOADER_MIDDLEWARES'),
@@ -33,7 +33,7 @@ class LazadaSpider(scrapy.Spider):
         },
     }
 
-    start_urls = ['https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4']
+    start_urls = [get_proxy_url('https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4')]
 
     mainstream_beer_brands = [
         'abc',
@@ -75,7 +75,7 @@ class LazadaSpider(scrapy.Spider):
             }
 
             url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?' + urlencode(params)
-            yield response.follow(url, callback=self.parse_collection, meta={'style': style['title']})
+            yield response.follow(get_proxy_url(url), callback=self.parse_collection, meta={'style': style['title']})
 
     def parse_collection(self, response):
         data = response.json()
