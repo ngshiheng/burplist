@@ -81,7 +81,7 @@ class IShopChangiSpider(scrapy.Spider):
     @staticmethod
     def get_product_quantity(raw_name: str) -> int:
         assert isinstance(raw_name, str)
-        logger.info(f'raw_name = "{raw_name}"')
+        logger.info(f'raw_name = "{raw_name}".')
 
         # "Ba Xian Tea Lager 3 Bottles Pack"
         if 'Bottles Pack' in raw_name:
