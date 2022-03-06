@@ -1,4 +1,5 @@
 import logging
+import os
 from urllib.parse import urlencode
 
 import scrapy
@@ -25,6 +26,7 @@ class LazadaSpider(scrapy.Spider):
     name = 'lazada'
     custom_settings = {
         'ROBOTSTXT_OBEY': False,
+        'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 20),
         'DOWNLOADER_MIDDLEWARES': {
             **settings.get('DOWNLOADER_MIDDLEWARES'),
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
