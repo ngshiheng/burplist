@@ -24,11 +24,11 @@ class LazadaSpider(scrapy.Spider):
 
     name = 'lazada'
     custom_settings = {
+        'ROBOTSTXT_OBEY': False,
         'DOWNLOADER_MIDDLEWARES': {
             **settings.get('DOWNLOADER_MIDDLEWARES'),
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
         },
-        'HTTPCACHE_ENABLED': False,
     }
 
     start_urls = ['https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4']
