@@ -49,6 +49,13 @@ class LazadaSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
+        """
+        @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4
+        @returns requests 1
+        """
+        logger.info(response.request.headers)
+        logger.info(response.ip_address)
+
         data = response.json()
         if 'rgv587_flag' in data:
             error = f'Rate limited by Lazada. URL <{response.request.url}>.'
