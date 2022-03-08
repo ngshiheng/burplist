@@ -1,26 +1,21 @@
 ---
-name: Release
+name: Semantic Release
 
 on:
     push:
         branches:
             - production
-
 jobs:
     release:
         runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                python-version: [3.9]
-        if: github.event_name == 'push' && github.ref == 'refs/heads/production' && !contains(github.event.head_commit.message, 'chore(release):')
+        concurrency: release
         steps:
-            - uses: actions/setup-python@v3
+            - uses: actions/checkout@v2
               with:
-                  python-version: ${{ matrix.python-version }}
-            - uses: actions/checkout@v3
+                  fetch-depth: 0
+            - uses: relekang/python-semantic-release@master
             - name: Semantic Release
-              run: |
-                  pip install python-semantic-release
-                  git config user.name "Jerry Ng"
-                  git config user.email ngshiheng@gmail.com
-                  semantic-release publish
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  repository_username: __token__
+                  repository_password: ${{ secrets.PYPI_TOKEN }}
