@@ -8,7 +8,7 @@
     "docker-compose": {
         "enabled": false
     },
-    "extends": ["config:base", ":semanticCommits"],
+    "extends": ["config:base", ":semanticCommits", "schedule:daily"],
     "packageRules": [
         {
             "description": "Automatically merges minor and patch-level updates",
@@ -24,7 +24,5 @@
         }
     ],
     "rangeStrategy": "pin",
-    "rebaseWhen": "behind-base-branch",
-    "schedule": ["after 8pm every weekday", "every weekend"],
     "timezone": "Asia/Singapore"
 }
