@@ -17,10 +17,10 @@ I have documented some of my thought process and engineering decisions while cre
 
 ## Requirements
 
-- [python](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- [poetry](https://python-poetry.org/docs/#installation)
-- Optional: [docker](https://docs.docker.com/get-docker/)
+-   [python](https://www.python.org/downloads/)
+-   [pip](https://pip.pypa.io/en/stable/installation/)
+-   [poetry](https://python-poetry.org/docs/#installation)
+-   Optional: [docker](https://docs.docker.com/get-docker/)
 
 ## Development
 
@@ -48,8 +48,8 @@ poetry update
 
 Some example useful invocations:
 
-- `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
-- `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
+-   `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
+-   `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
 
 ### Database migration
 
@@ -65,9 +65,9 @@ However, if you intend to work on development work, setting this up would be wor
 
 1. To spin up a `postgres` Docker container:
 
-   ```sh
-   docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
-   ```
+    ```sh
+    docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
+    ```
 
 2. To start the PostgreSQL Docker container, simply use `docker start dpostgres`
 
@@ -154,10 +154,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ### Steps
 
 1. Fork this
-2. Create your feature branch (`git checkout -b feature/fooBar`)
+2. Create your feature branch (`git checkout -b feature/bar`)
 3. Please make sure you have installed the `pre-commit` hook and make sure it passes all the lint and format check
-4. Commit your changes (`git commit -am 'feat: Add some fooBar'`, make sure that your commits are [semantic](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716))
-5. Push to the branch (`git push origin feature/fooBar`)
+4. Commit your changes (`git commit -am 'feat: add some bar'`, make sure that your commits are [semantic](https://www.conventionalcommits.org/en/v1.0.0/#summary))
+5. Push to the branch (`git push origin feature/bar`)
 6. Create a new Pull Request
 
 ---
@@ -166,11 +166,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ### List of awesome Scrapy libraries
 
-- https://github.com/croqaz/awesome-scrapy
-- https://github.com/groupbwt/scrapy-boilerplate
+-   https://github.com/croqaz/awesome-scrapy
+-   https://github.com/groupbwt/scrapy-boilerplate
 
 ### Docker
 
-- https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
-- https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
-- https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
+-   https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
+-   https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
+-   https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
