@@ -1,52 +1,52 @@
 [tool.poetry]
+authors = ["Jerry Ng <ngshiheng@gmail.com>"]
+description = "Web crawler for Burplist, a search engine or craft beers in Singapore"
 name = "burplist"
 version = "1.1.0"
-description = "A collection spiders to get beer data from the web."
-authors = ["Jerry Ng <ngshiheng@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-Scrapy = "2.5.1"
-price-parser = "0.3.4"
 SQLAlchemy = "==1.4.31"
-psycopg2-binary = "2.9.3"
-colorlog = "==6.6.0"
-sentry-sdk = "==1.5.4"
-ipython = "==8.0.1"
-scrapy-fake-useragent = "1.4.4"
+Scrapy = "2.5.1"
 alembic = "1.7.5"
+colorlog = "==6.6.0"
+ipython = "==8.0.1"
+price-parser = "0.3.4"
+psycopg2-binary = "2.9.3"
+python = "^3.9"
+scrapy-fake-useragent = "1.4.4"
+sentry-sdk = "==1.5.4"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "==1.6.0"
 flake8 = "==4.0.1"
-pylint = "2.12.2"
-pre-commit = "==2.17.0"
 mypy = "^0.910"
+pre-commit = "==2.17.0"
+pylint = "2.12.2"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
 
 [tool.mypy]
-mypy_path = "burplist"
 check_untyped_defs = true
 disallow_any_generics = true
 ignore_missing_imports = true
+mypy_path = "burplist"
 no_implicit_optional = true
+no_implicit_reexport = true
 show_error_codes = true
 strict_equality = true
 warn_redundant_casts = true
 warn_return_any = true
 warn_unreachable = true
 warn_unused_configs = true
-no_implicit_reexport = true
 
 [tool.semantic_release]
-version_variable = [
-    "burplist/__init__.py:__version__",
-    "pyproject.toml:version"
-]
 branch = "production"
+build_command = "pip install poetry && poetry build"
 upload_to_pypi = false
 upload_to_release = true
-build_command = "pip install poetry && poetry build"
+version_variable = [
+  "burplist/__init__.py:__version__",
+  "pyproject.toml:version",
+]
