@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.1 (2022-03-19)
+### Fix
+* **deps:** Update dependency alembic to v1.7.7 ([`85f326c`](https://github.com/ngshiheng/burplist/commit/85f326c55b5ac0d6fdb35d0904a3a16c66a96098))
+
+### Documentation
+* Update semantic commit url ([`6f2976e`](https://github.com/ngshiheng/burplist/commit/6f2976e94efe6e8d53d8ab839204f15943612720))
+
 ## v1.1.0 (2022-03-17)
 ### Feature
 * Use semanticCommits ([`17abcdb`](https://github.com/ngshiheng/burplist/commit/17abcdbc8e4b4875adb25b988d55bfad04c75480))
