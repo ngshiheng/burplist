@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.2 (2022-03-22)
+### Fix
+* **deps:** Update dependency sentry-sdk to v1.5.8 ([`fe7237e`](https://github.com/ngshiheng/burplist/commit/fe7237e58a17f8b31a05411a66752c49d72bf805))
+
 ## v1.1.1 (2022-03-19)
 ### Fix
 * **deps:** Update dependency alembic to v1.7.7 ([`85f326c`](https://github.com/ngshiheng/burplist/commit/85f326c55b5ac0d6fdb35d0904a3a16c66a96098))
