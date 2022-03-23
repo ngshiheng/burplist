@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.3 (2022-03-23)
+### Fix
+* **deps:** Update dependency sqlalchemy to v1.4.32 ([`6265f7b`](https://github.com/ngshiheng/burplist/commit/6265f7bb3cd88ce7a6b001bbb923b1d0a43bb92f))
+
 ## v1.1.2 (2022-03-22)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.5.8 ([`fe7237e`](https://github.com/ngshiheng/burplist/commit/fe7237e58a17f8b31a05411a66752c49d72bf805))
