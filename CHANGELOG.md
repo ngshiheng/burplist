@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.4 (2022-03-26)
+### Fix
+* **deps:** Update dependency ipython to v8.1.1 ([`14ff8b6`](https://github.com/ngshiheng/burplist/commit/14ff8b62ca528641fcc0dc60344bdecbd347db55))
+
 ## v1.1.3 (2022-03-23)
 ### Fix
 * **deps:** Update dependency sqlalchemy to v1.4.32 ([`6265f7b`](https://github.com/ngshiheng/burplist/commit/6265f7bb3cd88ce7a6b001bbb923b1d0a43bb92f))
