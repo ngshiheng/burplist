@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.5 (2022-03-29)
+### Fix
+* **deps:** Update dependency ipython to v8.2.0 ([`1214d35`](https://github.com/ngshiheng/burplist/commit/1214d35aaa51a371af7ab5708243c765a135dadf))
+
 ## v1.1.4 (2022-03-26)
 ### Fix
 * **deps:** Update dependency ipython to v8.1.1 ([`14ff8b6`](https://github.com/ngshiheng/burplist/commit/14ff8b62ca528641fcc0dc60344bdecbd347db55))
