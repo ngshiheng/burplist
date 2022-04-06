@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.6 (2022-04-06)
+### Fix
+* **deps:** Update dependency scrapy to v2.6.1 ([`7c4c677`](https://github.com/ngshiheng/burplist/commit/7c4c6774fe2b0d1a15ca77fb428960fa1b5fe83c))
+
 ## v1.1.5 (2022-03-29)
 ### Fix
 * **deps:** Update dependency ipython to v8.2.0 ([`1214d35`](https://github.com/ngshiheng/burplist/commit/1214d35aaa51a371af7ab5708243c765a135dadf))
