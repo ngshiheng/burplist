@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.7 (2022-04-10)
+### Fix
+* **deps:** Update dependency sqlalchemy to v1.4.35 ([`8ec5708`](https://github.com/ngshiheng/burplist/commit/8ec5708f707b39f19d244b9f940f437f705aacac))
+
 ## v1.1.6 (2022-04-06)
 ### Fix
 * **deps:** Update dependency scrapy to v2.6.1 ([`7c4c677`](https://github.com/ngshiheng/burplist/commit/7c4c6774fe2b0d1a15ca77fb428960fa1b5fe83c))
