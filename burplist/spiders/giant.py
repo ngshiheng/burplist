@@ -2,36 +2,37 @@ import re
 
 import scrapy
 from burplist.items import ProductLoader
-from burplist.locators.coldstorage import ColdStorageLocator
+from burplist.locators.giant import GiantLocator
 from burplist.utils.parsers import parse_style
 
 
-class ColdStorageSpider(scrapy.Spider):
+class GiantSpider(scrapy.Spider):
     """Parse data from raw HTML"""
 
-    name = 'coldstorage'
-    start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
+    name = 'giant'
+    start_urls = ['https://giant.sg/beers-wines-spirits/beers-ciders']
 
     def parse(self, response):
         """
-        @url https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers
+        @url https://giant.sg/beers-wines-spirits/beers-ciders
         @returns items 1
         @returns requests 1 1
-        @scrapes platform name url brand volume quantity price
+        @scrapes platform name url brand quantity image_url price
         """
-        products = response.xpath(ColdStorageLocator.products)
+        products = response.xpath(GiantLocator.products)
 
         for product in products:
             loader = ProductLoader(selector=product)
 
-            name = product.xpath(ColdStorageLocator.product_name).get()
-            brand = product.xpath(ColdStorageLocator.product_brand).get().strip().title()
+            name = product.xpath(GiantLocator.product_name).get()
+            url = product.xpath(GiantLocator.product_url).get()
+            brand = product.xpath(GiantLocator.product_brand).get()
 
             loader.add_value('platform', self.name)
             loader.add_value('name', name)
-            loader.add_value('url', response.urljoin(product.xpath('./a/@href').get()))
+            loader.add_value('url', f"https://giant.sg{url}")
 
-            loader.add_value('brand', brand)
+            loader.add_value('brand', brand.title())
             loader.add_value('style', parse_style(name))
             loader.add_value('origin', None)
 
@@ -39,12 +40,12 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
-            loader.add_xpath('image_url', ColdStorageLocator.product_image_url)
+            loader.add_xpath('image_url', GiantLocator.product_image_url)
 
-            loader.add_xpath('price', ColdStorageLocator.product_price)
+            loader.add_xpath('price', GiantLocator.product_price)
             yield loader.load_item()
 
-        has_next_page = response.xpath(ColdStorageLocator.next_page).get()
+        has_next_page = response.xpath(GiantLocator.next_page).get()
         if has_next_page is not None:
             next_page = response.urljoin(has_next_page)
             yield response.follow(next_page, callback=self.parse)
