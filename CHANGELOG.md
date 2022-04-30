@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.1 (2022-04-30)
+### Fix
+* **deps:** Update dependency sqlalchemy to v1.4.36 ([`3cfb9c6`](https://github.com/ngshiheng/burplist/commit/3cfb9c67910cc83f6cd353c8680ae55a95d7917d))
+
 ## v1.2.0 (2022-04-30)
 ### Feature
 * Collect volume and quantity for giant.sg spider ([`60146b7`](https://github.com/ngshiheng/burplist/commit/60146b7eb00a368f84b10c51889898e7ec680125))
