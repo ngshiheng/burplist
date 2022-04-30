@@ -1,8 +1,9 @@
-import scrapy
+import re
 
+import scrapy
 from burplist.items import ProductLoader
 from burplist.locators.giant import GiantLocator
-from burplist.utils.parsers import parse_style, parse_volume
+from burplist.utils.parsers import parse_style
 
 
 class GiantSpider(scrapy.Spider):
@@ -36,8 +37,8 @@ class GiantSpider(scrapy.Spider):
             loader.add_value('origin', None)
 
             loader.add_value('abv', None)
-            loader.add_value('volume', None)
-            loader.add_value('quantity', 1)
+            loader.add_value('volume', name)
+            loader.add_value('quantity', self.get_product_quantity(name))
 
             loader.add_xpath('image_url', GiantLocator.product_image_url)
 
@@ -48,3 +49,11 @@ class GiantSpider(scrapy.Spider):
         if has_next_page is not None:
             next_page = response.urljoin(has_next_page)
             yield response.follow(next_page, callback=self.parse)
+
+    @staticmethod
+    def get_product_quantity(raw_name: str) -> int:
+        raw_quantity_with_name = re.search(r'(\d+s[x\s]+?\d+ml)', raw_name, flags=re.IGNORECASE)
+        if raw_quantity_with_name:
+            raw_quantity = raw_quantity_with_name.group().split(' ')
+            return int(re.split(r's', raw_quantity[0], flags=re.IGNORECASE)[0])
+        return 1
