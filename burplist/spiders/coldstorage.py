@@ -31,8 +31,8 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_value('url', response.urljoin(product.xpath('./a/@href').get()))
 
             loader.add_value('brand', vendor)
-            loader.add_value('origin', None)
             loader.add_value('style', parse_style(name))
+            loader.add_value('origin', None)
 
             loader.add_value('abv', None)
             loader.add_value('volume', name)
