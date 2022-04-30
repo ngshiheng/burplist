@@ -115,7 +115,7 @@ EXTENSIONS = {
     'burplist.extensions.SentryLogging': -1,
     # 'scrapy.extensions.telnet.TelnetConsole': None,
 }
-# if ENVIRONMENT == 'production':
+# if ENVIRONMENT == 'main':
 #     EXTENSIONS['scrapy.extensions.statsmailer.StatsMailer'] = 500
 
 

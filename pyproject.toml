@@ -42,7 +42,7 @@ warn_unreachable = true
 warn_unused_configs = true
 
 [tool.semantic_release]
-branch = "production"
+branch = "main"
 build_command = "pip install poetry && poetry build"
 upload_to_pypi = false
 upload_to_release = true
