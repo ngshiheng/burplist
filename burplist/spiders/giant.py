@@ -30,7 +30,7 @@ class GiantSpider(scrapy.Spider):
 
             loader.add_value('platform', self.name)
             loader.add_value('name', name)
-            loader.add_value('url', f"https://giant.sg/{url}")
+            loader.add_value('url', f"https://giant.sg{url}")
 
             loader.add_value('brand', brand.title())
             loader.add_value('style', parse_style(name))

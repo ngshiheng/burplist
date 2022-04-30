@@ -2,6 +2,7 @@ import re
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.locators.coldstorage import ColdStorageLocator
 from burplist.utils.parsers import parse_style
 
 
@@ -18,19 +19,19 @@ class ColdStorageSpider(scrapy.Spider):
         @returns requests 1 1
         @scrapes platform name url brand volume quantity price
         """
-        products = response.xpath('//div[@class="product_box"]')
+        products = response.xpath(ColdStorageLocator.products)
 
         for product in products:
             loader = ProductLoader(selector=product)
 
-            name = product.xpath('.//div[@class="product_name "]/text()').get().strip()
-            vendor = product.xpath('.//div[@class="category-name"]/b/text()').get().strip().title()
+            name = product.xpath(ColdStorageLocator.product_name).get()
+            brand = product.xpath(ColdStorageLocator.product_brand).get().strip().title()
 
             loader.add_value('platform', self.name)
             loader.add_value('name', name)
             loader.add_value('url', response.urljoin(product.xpath('./a/@href').get()))
 
-            loader.add_value('brand', vendor)
+            loader.add_value('brand', brand)
             loader.add_value('style', parse_style(name))
             loader.add_value('origin', None)
 
@@ -38,15 +39,14 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
-            image_url = product.xpath('.//div[@class="product_images"]//img//@src').get()
-            loader.add_value('image_url', image_url)
+            loader.add_xpath('image_url', ColdStorageLocator.product_image_url)
 
-            loader.add_xpath('price', './/div[@data-price]/text()')
+            loader.add_xpath('price', ColdStorageLocator.product_price)
             yield loader.load_item()
 
-        next_page = response.xpath('//li[@class="next"]/a/@href').get()
-        if next_page is not None:
-            next_page = response.urljoin(next_page)
+        has_next_page = response.xpath(ColdStorageLocator.next_page).get()
+        if has_next_page is not None:
+            next_page = response.urljoin(has_next_page)
             yield response.follow(next_page, callback=self.parse)
 
     @staticmethod
