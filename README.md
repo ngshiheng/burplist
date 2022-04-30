@@ -5,28 +5,34 @@
 </p>
 <br />
 
-## Introduction
+## Context
 
-The official web crawlers repository for [Burplist](https://burplist.me) built using [Scrapy](https://scrapy.org/).
+Welcome to the official web crawlers repository for [Burplist](https://burplist.me) built using [Scrapy](https://scrapy.org/).
 
-> Growing up in a frugal family, I would spend hours browsing online, looking for the best bang for my bucks. Needless to say, the process was super exhausting and slowly turns into frustration. So then I thought, why not just create a search engine for craft beers?
+Growing up in a frugal family, I would spend hours browsing online, looking for the best bang for my bucks. Needless to say, the process was super exhausting and slowly turns into frustration.
 
-I have documented some of my thought process and engineering decisions while creating Burplist [here](https://jerrynsh.com/how-i-built-burplist-for-free/). Enjoy!
+So then I thought, why not just create a search engine for craft beers?
+
+[Read more...](https://jerrynsh.com/how-i-built-burplist-for-free/).
+
+## Disclaimer
+
+This software is only used for research purposes, users must abide by the relevant laws and regulations of their location, please do not use it for illegal purposes. The user shall bear all the consequences caused by illegal use.
 
 ---
 
 ## Requirements
 
--   [python](https://www.python.org/downloads/)
--   [pip](https://pip.pypa.io/en/stable/installation/)
--   [poetry](https://python-poetry.org/docs/#installation)
--   Optional: [docker](https://docs.docker.com/get-docker/)
+- [python](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [poetry](https://python-poetry.org/docs/#installation)
+- [docker](https://docs.docker.com/get-docker/)
 
 ## Development
 
 Skip to the [Usage](#usage) `docker-compose` section if you only want to try it out locally.
 
-### Installation
+### Installing dependencies
 
 ```sh
 poetry install
@@ -48,10 +54,10 @@ poetry update
 
 Some example useful invocations:
 
--   `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
--   `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
+- `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
+- `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
 
-### Database migration
+### Database migration (optional)
 
 This is not needed for fresh installation. You would only need this if you update any database models.
 
@@ -65,15 +71,15 @@ However, if you intend to work on development work, setting this up would be wor
 
 1. To spin up a `postgres` Docker container:
 
-    ```sh
-    docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
-    ```
+   ```sh
+   docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
+   ```
 
 2. To start the PostgreSQL Docker container, simply use `docker start dpostgres`
 
 3. To run `psql`, do `docker exec -it dpostgres psql -U postgres`
 
-4. Create a database name as `burplist` using `CREATE DATABASE burplist;`
+4. Create a database using `CREATE DATABASE burplist;`
 
 ---
 
@@ -124,7 +130,7 @@ poetry shell
 scrapy list | xargs -n 1 -P 0 scrapy crawl
 ```
 
-### To run on Heroku
+### To run on Heroku (optional)
 
 ```sh
 # Optional
@@ -133,9 +139,7 @@ heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
 
 ---
 
-## Proxy and Sentry
-
-This section is optional.
+## Proxy and Sentry (optional)
 
 We use [ScraperAPI](https://www.scraperapi.com/) as our proxy server provider.
 
@@ -166,11 +170,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ### List of awesome Scrapy libraries
 
--   https://github.com/croqaz/awesome-scrapy
--   https://github.com/groupbwt/scrapy-boilerplate
+- https://github.com/croqaz/awesome-scrapy
+- https://github.com/groupbwt/scrapy-boilerplate
 
 ### Docker
 
--   https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
--   https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
--   https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
+- https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
+- https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
+- https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
