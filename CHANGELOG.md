@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.0 (2022-04-30)
+### Feature
+* Collect volume and quantity for giant.sg spider ([`60146b7`](https://github.com/ngshiheng/burplist/commit/60146b7eb00a368f84b10c51889898e7ec680125))
+* Add giant.sg spider ([`e76b4e2`](https://github.com/ngshiheng/burplist/commit/e76b4e206720fb81c202b3a3dd998775c4358584))
+
 ## v1.1.10 (2022-04-30)
 ### Fix
 * Api query param currentPage to be 0-indexed ([`b127e13`](https://github.com/ngshiheng/burplist/commit/b127e1360172ab896d4a3ce487bd8eb3bdf6feb5))
