@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.10 (2022-04-30)
+### Fix
+* Api query param currentPage to be 0-indexed ([`b127e13`](https://github.com/ngshiheng/burplist/commit/b127e1360172ab896d4a3ce487bd8eb3bdf6feb5))
+
+### Documentation
+* Add disclaimer ([`db7aede`](https://github.com/ngshiheng/burplist/commit/db7aede4907ab5d88b5ef4aee7c0a820dd087147))
+
 ## v1.1.9 (2022-04-17)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.5.10 ([`2c55e7b`](https://github.com/ngshiheng/burplist/commit/2c55e7b466312a57985c75831873dee8e2304cc4))
