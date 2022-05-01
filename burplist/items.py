@@ -8,7 +8,6 @@ from burplist.utils.parsers import parse_abv, parse_name, parse_volume, quantize
 
 class ProductItem(scrapy.Item):
     platform = scrapy.Field()
-
     name = scrapy.Field(input_processor=MapCompose(str.strip, parse_name))
     url = scrapy.Field()
 

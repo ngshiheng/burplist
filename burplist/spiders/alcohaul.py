@@ -44,7 +44,6 @@ class AlcohaulSpider(scrapy.Spider):
                 slug = product['slug']
 
                 loader.add_value('platform', self.name)
-
                 loader.add_value('name', product['name'])
                 loader.add_value('url', f'https://alcohaul.sg/products/{slug}')
 
