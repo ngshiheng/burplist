@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.1 (2022-05-01)
+### Fix
+* **command:** Move optparse to argparse ([`b0175bb`](https://github.com/ngshiheng/burplist/commit/b0175bbf7abf6e7c94e194085c7f828a2aa88692))
+
 ## v1.3.0 (2022-05-01)
 ### Feature
 * Skip mainstream beer brands ([`5d90e2b`](https://github.com/ngshiheng/burplist/commit/5d90e2bcc19cc16e868bec9d440eed70dc7415a4))
