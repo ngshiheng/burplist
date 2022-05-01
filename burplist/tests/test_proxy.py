@@ -7,9 +7,6 @@ settings = get_project_settings()
 
 
 class TestProxy(unittest.TestCase):
-    def setUp(self) -> None:
-        return super().setUp()
-
     def test_get_proxy_url_returns_original_url_when_scraper_api_key_is_not_set(self) -> None:
         assert settings.get('SCRAPER_API_KEY') is None
 
