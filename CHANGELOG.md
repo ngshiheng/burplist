@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.0 (2022-05-01)
+### Feature
+* Skip mainstream beer brands ([`5d90e2b`](https://github.com/ngshiheng/burplist/commit/5d90e2bcc19cc16e868bec9d440eed70dc7415a4))
+* Log skipped items ([`3ecf173`](https://github.com/ngshiheng/burplist/commit/3ecf1732ee83f97fff297599611ffa17f525f28e))
+
+### Documentation
+* Add sentry details ([`c66f5b0`](https://github.com/ngshiheng/burplist/commit/c66f5b0dd77668dc1697bf689bfb1f4125272131))
+
 ## v1.2.1 (2022-04-30)
 ### Fix
 * **deps:** Update dependency sqlalchemy to v1.4.36 ([`3cfb9c6`](https://github.com/ngshiheng/burplist/commit/3cfb9c67910cc83f6cd353c8680ae55a95d7917d))
