@@ -1,9 +1,13 @@
+import logging
 import re
 from typing import Optional
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_style
+
+logger = logging.getLogger(__name__)
 
 
 class TheGreatBeerExperimentSpider(scrapy.Spider):
@@ -34,15 +38,15 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
         origin = response.meta['origin']
 
         for product in products:
-            loader = ProductLoader(selector=product)
-            loader.add_value('platform', self.name)
-
             name = product.xpath('.//h2[@class="productitem--title"]/a/text()').get()
 
-            # Filter out merchandises
-            if any(word in name.lower() for word in ['cap', 'tee', 'glass']):
+            if any(word in name.lower() for word in SKIPPED_ITEMS):
+                logger.info("Skipping non-beer item.")  # e.g. 'cap', 'tee'
                 continue
 
+            loader = ProductLoader(selector=product)
+
+            loader.add_value('platform', self.name)
             loader.add_value('name', name)
             loader.add_value('url', response.urljoin(product.xpath('.//h2[@class="productitem--title"]/a/@href').get()))
 
