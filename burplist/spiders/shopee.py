@@ -3,6 +3,7 @@ import os
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_brand, parse_quantity, parse_style
 
 logger = logging.getLogger(__name__)
@@ -38,32 +39,33 @@ class ShopeeSpider(scrapy.Spider):
         if items:
             for item in items:
                 product = item['item_basic']
-
-                loader = ProductLoader()
-
+                name = product.get('name')
+                brand = product.get('brand')
                 review_count = product['item_rating']['rating_count'][0]
-                if review_count < 10:
-                    continue
 
-                loader.add_value('platform', self.name)
+                if brand is None or brand == 'None' or brand == '' or brand == '0':
+                    brand = parse_brand(name)
+
+                if review_count < 10 or (brand and brand.lower() in MAINSTREAM_BEER_BRANDS):
+                    logger.info('Skipping item because of low rating or brand.')
+                    continue
 
                 item_id = str(product['itemid'])
                 shop_id = str(product['shopid'])
 
-                loader.add_value('name', product.get('name'))
-                loader.add_value('url', f'https://shopee.sg/--i.{shop_id}.{item_id}')
+                loader = ProductLoader()
 
-                brand = product.get('brand')
-                if brand is None or brand == 'None' or brand == '' or brand == '0':
-                    brand = parse_brand(product.get('name'))
+                loader.add_value('platform', self.name)
+                loader.add_value('name', name)
+                loader.add_value('url', f'https://shopee.sg/--i.{shop_id}.{item_id}')
 
                 loader.add_value('brand', brand)  # NOTE: Shopee's API product['brand'] does not guarantee that brand is always correct. They could be None, "None" at times
                 loader.add_value('origin', None)
-                loader.add_value('style', parse_style(product.get('name')))
+                loader.add_value('style', parse_style(name))
 
                 loader.add_value('abv', None)
-                loader.add_value('volume', product.get('name'))
-                loader.add_value('quantity', parse_quantity(product.get('name')))
+                loader.add_value('volume', name)
+                loader.add_value('quantity', parse_quantity(name))
 
                 image_id = product.get('image')
                 loader.add_value('image_url', f'https://cf.shopee.sg/file/{image_id}')
