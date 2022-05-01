@@ -5,22 +5,26 @@
 # Currently Heroku Scheduler only supports scheduling at every 10min/hour/day interval
 # Reference: https://dashboard.heroku.com/apps/burplist/scheduler
 
-# To run every Friday
-# ./prune.sh weekly 5
+# To prune 365 days old stale data every Friday:
+# ./prune.sh weekly 5 365
 
-# To run now
+# To prune 90 days old stale data now:
 # ./prune.sh
 
-if [[ "$1" == "weekly" ]]; then
-    echo "Frequency: <Weekly> | Day of the week: <$2>"
-    if [ "$(date +%u)" = "$2" ]; then
+frequency="$1"
+day_of_week="$2"
+stale_days="${3:-90}"
+
+if [[ "$frequency" == "weekly" ]]; then
+    echo "Frequency: <Weekly> | Day of the week: <$day_of_week>"
+    if [ "$(date +%u)" = "$day_of_week" ]; then
         echo "Pruning stale data."
-        scrapy prune --days 60
-        echo "Finished pruning all."
+        scrapy prune --days "$stale_days"
+        echo "Finished pruning."
     fi
 else
     echo "Frequency: <Now>"
-    echo "Pruning stale data."
-    scrapy prune --days 60
-    echo "Finished pruning all."
+    echo "Pruning 90 days old stale data."
+    scrapy prune --days "$stale_days"
+    echo "Finished pruning."
 fi
