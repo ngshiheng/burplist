@@ -44,7 +44,6 @@ poetry install --no-root
 ### Updating dependencies
 
 ```sh
-# Optional
 poetry update
 ```
 
@@ -63,7 +62,7 @@ This is not needed for fresh installation. You would only need this if you updat
 
 For database migration steps, please read [this](alembic/README.md).
 
-### Setting up a database
+### Setting up local database
 
 Instructions to set up a database with Docker. Feel free to skip this step if you intend to use `docker-compose`.
 
@@ -130,10 +129,11 @@ poetry shell
 scrapy list | xargs -n 1 -P 0 scrapy crawl
 ```
 
-### To run on Heroku (optional)
+### Run on Heroku (optional)
+
+This project is deployed on Heroku. To run on Heroku, you'll need to install [the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 
 ```sh
-# Optional
 heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
 ```
 
@@ -141,12 +141,12 @@ heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
 
 ## Proxy and Sentry (optional)
 
-We use [ScraperAPI](https://www.scraperapi.com/) as our proxy server provider.
+[ScraperAPI](https://www.scraperapi.com/?fp_ref=jerryng) is used as our proxy server provider.
+[Sentry](https://sentry.io/) is used for error monitoring.
 
 ```sh
-# Optional
-export SCRAPER_API_KEY="YOUR_SCRAPER_API_KEY"
-export SENTRY_DSN="YOUR_SENTRY_DSN"
+export SCRAPER_API_KEY="<YOUR_SCRAPER_API_KEY>"
+export SENTRY_DSN="<YOUR_SENTRY_DSN>"
 ```
 
 ---
