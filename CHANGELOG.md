@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.0 (2022-05-01)
+### Feature
+* **command:** Allow prune.sh to specify stale_days ([`8a0b4bb`](https://github.com/ngshiheng/burplist/commit/8a0b4bb1cfbdb3da43653a7c3acee353625daf6b))
+
 ## v1.3.1 (2022-05-01)
 ### Fix
 * **command:** Move optparse to argparse ([`b0175bb`](https://github.com/ngshiheng/burplist/commit/b0175bbf7abf6e7c94e194085c7f828a2aa88692))
