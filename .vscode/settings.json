@@ -1,18 +1,10 @@
 {
-    "python.pythonPath": "/home/jerryng/.cache/pypoetry/virtualenvs/burplist-NqAXin5F-py3.9",
-    "python.languageServer": "Pylance",
-    "python.formatting.autopep8Args": [
-        "--ignore",
-        "E501",
-    ],
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Args": [
-        "--ignore",
-        "E501",
-        "--verbose"
-    ],
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "python.analysis.typeCheckingMode": "basic"
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "python.languageServer": "Pylance",
+  "python.formatting.autopep8Args": ["--ignore", "E501"],
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Args": ["--ignore", "E501", "--verbose"],
+  "python.analysis.typeCheckingMode": "basic"
 }
