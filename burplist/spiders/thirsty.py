@@ -60,7 +60,6 @@ class ThirstySpider(scrapy.Spider):
                     loader = ProductLoader(selector=product)
 
                     loader.add_value('platform', self.name)
-
                     loader.add_xpath('name', ThirstyLocator.product_name)
                     loader.add_value('url', url)
 

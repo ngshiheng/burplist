@@ -4,6 +4,7 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_quantity
 from burplist.utils.proxy import get_proxy_url
 from scrapy.downloadermiddlewares.retry import get_retry_request
@@ -34,19 +35,6 @@ class LazadaSpider(scrapy.Spider):
     }
 
     start_urls = [get_proxy_url('https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4')]
-
-    mainstream_beer_brands = [
-        'abc',
-        'asahi',
-        'carlsberg',
-        'guinness',
-        'heineken',
-        'hoegaarden',
-        'krausebourg '
-        'kronenbourg',
-        'somersby',
-        'tiger',
-    ]
 
     def parse(self, response):
         """
@@ -92,7 +80,11 @@ class LazadaSpider(scrapy.Spider):
         # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
-                if int(product.get('review', 0)) < 5 or product['brandName'].lower() in self.mainstream_beer_brands:
+                name = product['name']
+                brand = product['brandName']
+                review = int(product.get('review', '0'))
+
+                if review < 5 or (brand.lower() in MAINSTREAM_BEER_BRANDS):
                     logger.info('Skipping item because of low rating or brand.')
                     continue
 
@@ -102,20 +94,18 @@ class LazadaSpider(scrapy.Spider):
                 loader = ProductLoader()
 
                 loader.add_value('platform', self.name)
-
-                loader.add_value('name', product['name'])
+                loader.add_value('name', name)
                 loader.add_value('url', f'https://www.lazada.sg/products/-i{item_id}-s{shop_id}.html')  # We could also use `productUrl` here
 
-                loader.add_value('brand', product['brandName'])
+                loader.add_value('brand', brand)
                 loader.add_value('origin', None)
                 loader.add_value('style', response.meta['style'])
 
                 loader.add_value('abv', None)
-                loader.add_value('volume', product['name'])
-                loader.add_value('quantity', parse_quantity(product['name']))
+                loader.add_value('volume', name)
+                loader.add_value('quantity', parse_quantity(name))
 
-                image_url = product.get('image')
-                loader.add_value('image_url', image_url)
+                loader.add_value('image_url', product.get('image'))
 
                 loader.add_value('price', product['price'])
                 yield loader.load_item()

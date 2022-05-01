@@ -40,12 +40,12 @@ class BeerForceSpider(scrapy.Spider):
             raw_price = product.xpath(BeerForceLocator.raw_price).get()
 
             if raw_price is None:
-                logger.info('Skipping item because it is sold out.')
+                logger.info("Skipping item because it is out of stock.")
                 continue
 
             loader = ProductLoader(selector=product)
-            loader.add_value('platform', self.name)
 
+            loader.add_value('platform', self.name)
             loader.add_xpath('name', BeerForceLocator.product_name)
             loader.add_value('url', response.urljoin(media.xpath(BeerForceLocator.product_url).get()))
 

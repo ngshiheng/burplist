@@ -1,10 +1,14 @@
 import json
+import logging
 import re
 from typing import Optional
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_style
+
+logger = logging.getLogger(__name__)
 
 
 class TroubleBrewingSpider(scrapy.Spider):
@@ -45,14 +49,15 @@ class TroubleBrewingSpider(scrapy.Spider):
             products = json.loads(data_regex.group())
 
             for product in products:
-                # Filter out product with 'Gift' inside the name
-                if any(word in product['name'].lower() for word in ['gift']):
+                name = product['name']
+
+                if any(word in name.lower() for word in SKIPPED_ITEMS):
+                    logger.info("Skipping non-beer item.")  # e.g. 'gift'
                     continue
 
                 loader = ProductLoader()
-                loader.add_value('platform', self.name)
 
-                name = product['name']
+                loader.add_value('platform', self.name)
                 loader.add_value('name', name)
                 loader.add_value('url', response.request.url)
 

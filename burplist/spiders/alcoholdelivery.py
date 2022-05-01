@@ -4,6 +4,7 @@ from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_brand
 
 logger = logging.getLogger(__name__)
@@ -47,26 +48,26 @@ class AlcoholDeliverySpider(scrapy.Spider):
         # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
+                name = product['name']
+                slug = product['slug']
+                short_description = product['shortDescription']
+                origin, style, abv = short_description.split(',')
+
                 if int(product['quantity']) < 1:
+                    logger.info("Skipping item because it is out of stock.")
                     continue
 
-                # Filter out product with 'Keg' inside the name
-                if any(word in product['name'].lower() for word in ['keg', 'litre']):
+                if any(word in name.lower() for word in SKIPPED_ITEMS):
+                    logger.info("Skipping non-beer item.")  # e.g. 'keg'
                     continue
 
                 loader = ProductLoader()
 
                 loader.add_value('platform', self.name)
-
-                name = product['name']
-                slug = product['slug']
                 loader.add_value('name', name)
                 loader.add_value('url', f'https://www.alcoholdelivery.com.sg/product/{slug}')
 
-                short_description = product['shortDescription']
-                origin, style, abv = short_description.split(',')
-
-                loader.add_value('brand', parse_brand(product['name']))
+                loader.add_value('brand', parse_brand(name))
                 loader.add_value('origin', origin)
                 loader.add_value('style', style)
 

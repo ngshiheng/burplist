@@ -1,10 +1,14 @@
+import logging
 import re
 from typing import Any
 from urllib.parse import urlencode
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_style
+
+logger = logging.getLogger(__name__)
 
 
 class FairPriceSpider(scrapy.Spider):
@@ -54,20 +58,27 @@ class FairPriceSpider(scrapy.Spider):
         products = data['product']
 
         for product in products:
-            loader = ProductLoader()
+            name = product['name']
+            brand = product['brand']['name']
+            metadata = product['metaData']
             slug = product['slug']
 
-            loader.add_value('platform', self.name)
+            if brand and brand.lower() in MAINSTREAM_BEER_BRANDS:
+                logger.info('Skipping item because of brand.')
+                continue
 
-            loader.add_value('name', product['name'])
+            loader = ProductLoader()
+
+            loader.add_value('platform', self.name)
+            loader.add_value('name', name)
             loader.add_value('url', f'https://www.fairprice.com.sg/product/{slug}')
 
-            loader.add_value('brand', product['brand']['name'])
-            loader.add_value('origin', product['metaData']['Country of Origin'])
-            loader.add_value('style', parse_style(product['metaData'].get('Key Information', '')))
+            loader.add_value('brand', brand)
+            loader.add_value('origin', metadata['Country of Origin'])
+            loader.add_value('style', parse_style(metadata.get('Key Information', '')))
 
-            loader.add_value('abv', product['name'])
-            loader.add_value('volume', product['metaData']['DisplayUnit'])
+            loader.add_value('abv', name)
+            loader.add_value('volume', metadata['DisplayUnit'])
             loader.add_value('quantity', self.get_product_quantity(product))
 
             image_url = product['images'][0]
@@ -83,7 +94,7 @@ class FairPriceSpider(scrapy.Spider):
             next_page = self.base_url + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)
 
-    @staticmethod
+    @ staticmethod
     def get_product_price(product: dict[str, Any]) -> Any:
         offer = product.get('offers')
         if offer and offer[0]['price'] is not None:
@@ -91,7 +102,7 @@ class FairPriceSpider(scrapy.Spider):
 
         return product['storeSpecificData'][0]['mrp']
 
-    @staticmethod
+    @ staticmethod
     def get_product_quantity(product: dict[str, Any]) -> int:
         metadata = product['metaData']
         display_unit = metadata['DisplayUnit']

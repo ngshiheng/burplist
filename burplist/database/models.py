@@ -31,7 +31,6 @@ class Product(Base):
 
     id = Column(Integer, primary_key=True)
     platform = Column(String(), nullable=False)
-
     name = Column(String(), index=True, nullable=False)
     url = Column(String(), nullable=False)
 

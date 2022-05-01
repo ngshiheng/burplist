@@ -1,9 +1,13 @@
+import logging
 import re
 
 import scrapy
 from burplist.items import ProductLoader
 from burplist.locators.giant import GiantLocator
+from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_style
+
+logger = logging.getLogger(__name__)
 
 
 class GiantSpider(scrapy.Spider):
@@ -22,11 +26,16 @@ class GiantSpider(scrapy.Spider):
         products = response.xpath(GiantLocator.products)
 
         for product in products:
-            loader = ProductLoader(selector=product)
 
             name = product.xpath(GiantLocator.product_name).get()
             url = product.xpath(GiantLocator.product_url).get()
-            brand = product.xpath(GiantLocator.product_brand).get()
+            brand = product.xpath(GiantLocator.product_brand).get().strip()
+
+            if brand.lower() in MAINSTREAM_BEER_BRANDS:
+                logger.info('Skipping item because of brand.')
+                continue
+
+            loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
             loader.add_value('name', name)

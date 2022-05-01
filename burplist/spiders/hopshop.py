@@ -25,26 +25,24 @@ class HopShopSpider(scrapy.Spider):
         products = response.xpath('//li[@class="product"]')
 
         for product in products:
+            name = product.xpath('.//article/@data-name').get()
+            style = parse_style(product.xpath('.//article/@data-product-category').get()) or parse_style(name)
+
             loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
-
-            loader.add_xpath('name', './/article/@data-name')
+            loader.add_xpath('name', name)
             loader.add_value('url', response.urljoin(product.xpath('.//a/@href').get()))
 
             loader.add_xpath('brand', './/article/@data-product-brand')
             loader.add_xpath('origin', None)
-
-            style = parse_style(product.xpath('.//article/@data-product-category').get()) or parse_style(product.xpath('.//article/@data-name').get())
-
             loader.add_value('style', style)
 
-            loader.add_xpath('abv', './/article/@data-name')
-            loader.add_xpath('volume', './/article/@data-name')
+            loader.add_xpath('abv', name)
+            loader.add_xpath('volume', name)
             loader.add_value('quantity', 1)
 
-            image_url = response.xpath('//div[@class="card-img-container"]//img/@data-src').get()
-            loader.add_value('image_url', image_url)
+            loader.add_xpath('image_url', '//div[@class="card-img-container"]//img/@data-src')
 
             loader.add_xpath('price', './/article/@data-product-price')
             yield loader.load_item()

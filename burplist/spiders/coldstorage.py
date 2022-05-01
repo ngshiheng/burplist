@@ -22,10 +22,10 @@ class ColdStorageSpider(scrapy.Spider):
         products = response.xpath(ColdStorageLocator.products)
 
         for product in products:
-            loader = ProductLoader(selector=product)
-
             name = product.xpath(ColdStorageLocator.product_name).get()
             brand = product.xpath(ColdStorageLocator.product_brand).get().strip().title()
+
+            loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
             loader.add_value('name', name)

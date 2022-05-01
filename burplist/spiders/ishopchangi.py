@@ -49,13 +49,13 @@ class IShopChangiSpider(scrapy.Spider):
         products = data['products']
 
         for product in products:
+            name = product['name']
+            quantity = self.get_product_quantity(name)
+
             loader = ProductLoader()
 
-            quantity = self.get_product_quantity(product['name'])
-
             loader.add_value('platform', self.name)
-
-            loader.add_value('name', product['name'])
+            loader.add_value('name', name)
             loader.add_value('url', response.urljoin(product['url']))
 
             loader.add_value('brand', product['manufacturer'])
@@ -63,7 +63,7 @@ class IShopChangiSpider(scrapy.Spider):
             loader.add_value('style', parse_style(product['productDisplayName']))
 
             loader.add_value('abv', None)
-            loader.add_value('volume', product['name'])
+            loader.add_value('volume', name)
             loader.add_value('quantity', quantity)
 
             image_url = product.get('imageUrl')
