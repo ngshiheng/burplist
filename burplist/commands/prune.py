@@ -1,4 +1,4 @@
-from optparse import OptionParser
+from argparse import ArgumentParser
 
 from burplist.utils.misc import remove_stale_products_prices
 from scrapy.commands import ScrapyCommand
@@ -14,10 +14,10 @@ class Command(ScrapyCommand):
     def short_desc(self) -> str:
         return 'Remove stale products and prices which are not updated for N number of days'
 
-    def add_options(self, parser: OptionParser) -> None:
+    def add_options(self, parser: ArgumentParser) -> None:
         ScrapyCommand.add_options(self, parser)
 
-        parser.add_option(
+        parser.add_argument(
             '-d', '--days', dest='days', type=int, default=7,
             help='N number of days in integer where the products are not updated',
         )
