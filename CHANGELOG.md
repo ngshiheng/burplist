@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.1 (2022-05-02)
+### Fix
+* **spider:** Invalid xpath expression error ([`b3676b4`](https://github.com/ngshiheng/burplist/commit/b3676b4b2ccfb8bde0ec7bbc36653009468d404d))
+
 ## v1.4.0 (2022-05-01)
 ### Feature
 * **command:** Allow prune.sh to specify stale_days ([`8a0b4bb`](https://github.com/ngshiheng/burplist/commit/8a0b4bb1cfbdb3da43653a7c3acee353625daf6b))
