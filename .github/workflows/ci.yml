@@ -5,7 +5,7 @@ on:
             - "**"
     workflow_call: null
 jobs:
-    code-quality:
+    test:
         runs-on: ubuntu-latest
         strategy:
             matrix:
@@ -16,7 +16,7 @@ jobs:
                     - 1.1.13
         steps:
             - uses: actions/checkout@v3
-            - name: "Set up Python ${{ matrix.python-version }}"
+            - name: "Set Up Python ${{ matrix.python-version }}"
               uses: actions/setup-python@v3
               with:
                   python-version: "${{ matrix.python-version }}"
@@ -24,15 +24,15 @@ jobs:
               uses: abatilo/actions-poetry@v2.1.4
               with:
                   poetry-version: "${{ matrix.poetry-version }}"
-            - name: Install dependencies
+            - name: Install Dependencies
               run: |
                   poetry install --no-root
-            - name: Lint check with flake8
+            - name: Flake8
               run: |
                   poetry run flake8 --statistics --show-source
-            - name: Type check with mypy
+            - name: MyPy
               run: |
                   poetry run mypy burplist
-            - name: Test with unittest
+            - name: Unit Testing
               run: |
                   poetry run python3 -m unittest
