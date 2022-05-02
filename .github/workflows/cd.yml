@@ -1,6 +1,4 @@
----
 name: CD
-
 on:
     push:
         branches:
@@ -16,14 +14,13 @@ jobs:
             - name: Semantic Release
               uses: relekang/python-semantic-release@master
               with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-
+                  github_token: "${{ secrets.GITHUB_TOKEN }}"
     deploy:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - uses: akhileshns/heroku-deploy@v3.12.12
               with:
-                  heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-                  heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-                  heroku_email: ${{secrets.HEROKU_EMAIL}}
+                  heroku_api_key: "${{secrets.HEROKU_API_KEY}}"
+                  heroku_app_name: "${{secrets.HEROKU_APP_NAME}}"
+                  heroku_email: "${{secrets.HEROKU_EMAIL}}"
