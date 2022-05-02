@@ -16,7 +16,6 @@ class BeerForceLocator:
     product_brand = './/h3[@class="product-card__vendor h6"]/text()'
     product_price = './/span[@class="money"]/text()'
 
-    has_next_page = '//span[@class="next"]/a/@href'
     next_page = '//span[@class="next"]/a/@href'
 
     # Locators for product detail page,

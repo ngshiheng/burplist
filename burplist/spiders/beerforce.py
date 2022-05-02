@@ -63,9 +63,9 @@ class BeerForceSpider(scrapy.Spider):
             )
 
         # Recursively follow the link to the next page, extracting data from it
-        has_next_page = response.xpath(BeerForceLocator.has_next_page).get()
+        has_next_page = response.xpath(BeerForceLocator.next_page).get()
         if has_next_page is not None:
-            next_page = response.urljoin(response.xpath(BeerForceLocator.next_page).get())
+            next_page = response.urljoin(has_next_page)
             yield response.follow(next_page, callback=self.parse_collection)
 
     def parse_product_detail(self, response):
