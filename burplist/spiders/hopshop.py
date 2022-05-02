@@ -31,15 +31,15 @@ class HopShopSpider(scrapy.Spider):
             loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
-            loader.add_xpath('name', name)
+            loader.add_value('name', name)
             loader.add_value('url', response.urljoin(product.xpath('.//a/@href').get()))
 
             loader.add_xpath('brand', './/article/@data-product-brand')
             loader.add_xpath('origin', None)
             loader.add_value('style', style)
 
-            loader.add_xpath('abv', name)
-            loader.add_xpath('volume', name)
+            loader.add_value('abv', name)
+            loader.add_value('volume', name)
             loader.add_value('quantity', 1)
 
             loader.add_xpath('image_url', '//div[@class="card-img-container"]//img/@data-src')
