@@ -7,8 +7,7 @@ class GiantLocator:
     product_name = './/a[@class="product-link"]/text()'
     product_url = './/a[@class="product-link"]/@href'
     product_brand = './/a[@class="to-brand-page"]/text()'
-    product_price = './/div[@class="content_price"]//@data-price'
-
     product_image_url = './/div[@class="product_images"]//@src'
+    product_price = './/div[@class="content_price"]//@data-price'
 
     next_page = '//li[@class="next"]/a/@href'
