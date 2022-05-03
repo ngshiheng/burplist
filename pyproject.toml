@@ -21,7 +21,7 @@ autopep8 = "==1.6.0"
 flake8 = "==4.0.1"
 mypy = "^0.910"
 pre-commit = "==2.18.1"
-pylint = "==2.13.7"
+pylint = "==2.13.8"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"

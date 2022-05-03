@@ -709,7 +709,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "pylint"
-version = "2.13.7"
+version = "2.13.8"
 description = "python code static checker"
 category = "dev"
 optional = false
@@ -1120,7 +1120,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "26302acf660f0152ffd1dc6ab3568fff86c29361f775ed2b30aa71e5c919019a"
+content-hash = "6511df39a1ba51cdb384f0b2563431d9885913de0515b839ce88a88c4e3c1cab"
 
 [metadata.files]
 alembic = [
@@ -1727,8 +1727,8 @@ pygments = [
     {file = "Pygments-2.11.2.tar.gz", hash = "sha256:4e426f72023d88d03b2fa258de560726ce890ff3b630f88c21cbb8b2503b8c6a"},
 ]
 pylint = [
-    {file = "pylint-2.13.7-py3-none-any.whl", hash = "sha256:13ddbbd8872c804574149e81197c28877eba75224ba6b76cd8652fc31df55c1c"},
-    {file = "pylint-2.13.7.tar.gz", hash = "sha256:911d3a97c808f7554643bcc5416028cfdc42eae34ed129b150741888c688d5d5"},
+    {file = "pylint-2.13.8-py3-none-any.whl", hash = "sha256:f87e863a0b08f64b5230e7e779bcb75276346995737b2c0dc2793070487b1ff6"},
+    {file = "pylint-2.13.8.tar.gz", hash = "sha256:ced8968c3b699df0615e2a709554dec3ddac2f5cd06efadb69554a69eeca364a"},
 ]
 pyopenssl = [
     {file = "pyOpenSSL-22.0.0-py2.py3-none-any.whl", hash = "sha256:ea252b38c87425b64116f808355e8da644ef9b07e429398bfece610f893ee2e0"},
