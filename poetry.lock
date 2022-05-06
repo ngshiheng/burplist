@@ -325,7 +325,7 @@ scripts = ["click (>=6.0)", "twisted (>=16.4.0)"]
 
 [[package]]
 name = "ipython"
-version = "8.2.0"
+version = "8.3.0"
 description = "IPython: Productive Interactive Computing"
 category = "main"
 optional = false
@@ -1120,7 +1120,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "487598407be5c753eea462c9b5fc4a198949f6a00da88c6ecd7a40c4792064bf"
+content-hash = "84da9a37a8a10c32347e1ad29fd73ca9db029fdbe8b63b757ccfb126bbfc799d"
 
 [metadata.files]
 alembic = [
@@ -1362,8 +1362,8 @@ incremental = [
     {file = "incremental-21.3.0.tar.gz", hash = "sha256:02f5de5aff48f6b9f665d99d48bfc7ec03b6e3943210de7cfc88856d755d6f57"},
 ]
 ipython = [
-    {file = "ipython-8.2.0-py3-none-any.whl", hash = "sha256:1b672bfd7a48d87ab203d9af8727a3b0174a4566b4091e9447c22fb63ea32857"},
-    {file = "ipython-8.2.0.tar.gz", hash = "sha256:70e5eb132cac594a34b5f799bd252589009905f05104728aea6a403ec2519dc1"},
+    {file = "ipython-8.3.0-py3-none-any.whl", hash = "sha256:341456643a764c28f670409bbd5d2518f9b82c013441084ff2c2fc999698f83b"},
+    {file = "ipython-8.3.0.tar.gz", hash = "sha256:807ae3cf43b84693c9272f70368440a9a7eaa2e7e6882dad943c32fbf7e51402"},
 ]
 isort = [
     {file = "isort-5.10.1-py3-none-any.whl", hash = "sha256:6f62d78e2f89b4500b080fe3a81690850cd254227f27f75c3a0c491a1f351ba7"},
