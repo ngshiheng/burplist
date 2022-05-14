@@ -1,5 +1,5 @@
 import logging
-from typing import Any
+from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
@@ -32,11 +32,11 @@ class AlcoholDeliverySpider(scrapy.Spider):
         'type': 0,
     }
 
-    def start_requests(self):
+    def start_requests(self) -> Generator[scrapy.Request, None, None]:
         url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse)
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.alcoholdelivery.com.sg/api/fetchProducts?filter=all&keyword=&limit=10&parent=beer-cider&productList=1&skip=0&subParent=craft-beer&type=0
         @returns items 1 10

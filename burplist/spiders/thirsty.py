@@ -1,5 +1,6 @@
 import logging
 import re
+from typing import Generator
 
 import scrapy
 import sentry_sdk
@@ -21,7 +22,7 @@ class ThirstySpider(scrapy.Spider):
     custom_settings = {'ROBOTSTXT_OBEY': False}
     start_urls = ['https://www.thirsty.com.sg/pages/shop-by-style']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.thirsty.com.sg/pages/shop-by-style
         @returns requests 1
@@ -32,7 +33,7 @@ class ThirstySpider(scrapy.Spider):
             style = collection.xpath('text()').get()
             yield response.follow(collection, callback=self.parse_collection, meta={'style': style})
 
-    def parse_collection(self, response):
+    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         page = response.meta.get('page', 1)
         current_url = response.request.url if page == 1 else response.meta['current_url']  # So that query parameters wont be appended whenever this method runs recursively
 

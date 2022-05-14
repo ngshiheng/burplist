@@ -1,4 +1,5 @@
 import re
+from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
@@ -12,7 +13,7 @@ class ColdStorageSpider(scrapy.Spider):
     name = 'coldstorage'
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers
         @returns items 1

@@ -1,7 +1,7 @@
 import json
 import logging
 import re
-from typing import Optional
+from typing import Generator, Optional
 
 import scrapy
 from burplist.items import ProductLoader
@@ -27,7 +27,7 @@ class TroubleBrewingSpider(scrapy.Spider):
     name = 'troublebrewing'
     start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer
         @returns requests 1
@@ -35,7 +35,7 @@ class TroubleBrewingSpider(scrapy.Spider):
         collections = response.xpath('//a[@class="product-link js-product-link"]')
         yield from response.follow_all(collections, callback=self.parse_collection)
 
-    def parse_collection(self, response):
+    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer/products/road-hog
         @returns items 1 3

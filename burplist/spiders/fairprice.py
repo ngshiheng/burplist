@@ -1,6 +1,6 @@
 import logging
 import re
-from typing import Any
+from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
@@ -43,11 +43,11 @@ class FairPriceSpider(scrapy.Spider):
         'Referer': 'https//www.fairprice.com.sg/',
     }
 
-    def start_requests(self):
+    def start_requests(self) -> Generator[scrapy.Request, None, None]:
         url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse, headers=self.headers)
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://website-api.omni.fairprice.com.sg/api/product/v2?category=craft-beer&experiments=recHome-B%252CbsHome-B%252CpastPurchaseCategory-B%252CsearchVariant-B%252CtrendH-B%252CtimerVariant-Z%252CinlineBanner-A%252Csp-B%252CsubstitutionBSVariant-A%252Cgv-A%252CSPI-Z%252CSNLI-A%252CSC-A%252CSellerCrtVariant-B%252Cdc-expB%252CadLabel-A%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B%252CsubstitutionVariant-B&includeTagDetails=true&page=1&pageType=category&slug=craft-beer&storeId=165&url=craft-beer
         @returns items 1

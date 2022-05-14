@@ -1,6 +1,6 @@
 import logging
 import re
-from typing import Any
+from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
@@ -34,11 +34,11 @@ class IShopChangiSpider(scrapy.Spider):
         'referer': 'https://www.ishopchangi.com/en/category/wine-and-spirits/beers?' + urlencode({'cagCategory': {'/wine-and-spirits/beers/craft-beer': []}}),
     }
 
-    def start_requests(self):
+    def start_requests(self) -> Generator[scrapy.Request, None, None]:
         url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse, headers=self.headers)
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.ishopchangi.com/bin/cagcommerce/webservices/v2/cag/products/search.json?currentPage=0&query=%3A%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fstout%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fcider%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fcraft-beer%3AcagCategory%3A%2Fwine-and-spirits%2Fbeers%2Fnon-craft-beer%3AcagCollectionPoint%3AHOMEDELIVERYNONTRAVELLER%3AcagCollectionPoint%3ALANDSIDE&categoryCodes=travel-electronics-chargers%2Cbeauty%2Cfood%2CWomens-fashion&lang=en
         @returns items 1

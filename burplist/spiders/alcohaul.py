@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
@@ -20,11 +20,11 @@ class AlcohaulSpider(scrapy.Spider):
         'child': '5f7edb459ae56e6d7b8b45df',
     }
 
-    def start_requests(self):
+    def start_requests(self) -> Generator[scrapy.Request, None, None]:
         url = self.base_url + urlencode(self.params)
         yield scrapy.Request(url=url, callback=self.parse)
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://alcohaul.sg/api/productlist?skip=0&limit=50&parent=5f7edae59ae56e6d7b8b456d&filter=a-z&child=5f7edb459ae56e6d7b8b45df
         @returns items 1 50

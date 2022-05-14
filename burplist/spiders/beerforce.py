@@ -1,4 +1,5 @@
 import logging
+from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
@@ -20,7 +21,7 @@ class BeerForceSpider(scrapy.Spider):
     name = 'beerforce'
     start_urls = ['https://beerforce.sg/pages/all-styles']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://beerforce.sg/pages/all-styles
         @returns requests 1
@@ -28,7 +29,7 @@ class BeerForceSpider(scrapy.Spider):
         collections = response.xpath(BeerForceLocator.beer_collection)
         yield from response.follow_all(collections, callback=self.parse_collection)
 
-    def parse_collection(self, response):
+    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://beerforce.sg/collections/ipa
         @returns requests 1
@@ -68,7 +69,7 @@ class BeerForceSpider(scrapy.Spider):
             next_page = response.urljoin(has_next_page)
             yield response.follow(next_page, callback=self.parse_collection)
 
-    def parse_product_detail(self, response):
+    def parse_product_detail(self, response) -> Generator[scrapy.Request, None, None]:
         loadernext = ProductLoader(item=response.meta['item'], response=response)
 
         product_info = ''.join(response.xpath(BeerForceLocator.product_info).getall())

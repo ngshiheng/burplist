@@ -1,3 +1,5 @@
+from typing import Generator
+
 import scrapy
 from burplist.items import ProductLoader
 from burplist.locators.hopshop import HopShopLocator
@@ -16,7 +18,7 @@ class HopShopSpider(scrapy.Spider):
     name = 'hopshop'
     start_urls = ['https://www.hopshop.com.sg/beer/']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.hopshop.com.sg/beer/
         @returns items 1

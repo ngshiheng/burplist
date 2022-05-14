@@ -1,6 +1,6 @@
 import logging
 import re
-from typing import Optional
+from typing import Generator, Optional
 
 import scrapy
 from burplist.items import ProductLoader
@@ -19,7 +19,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
     name = 'greatbeerexperiment'
     start_urls = ['https://greatbeerexperiment.com/collections']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://greatbeerexperiment.com/collections
         @returns requests 1
@@ -31,7 +31,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
 
             yield response.follow(collection, callback=self.parse_collection, meta={'brand': brand, 'origin': origin})
 
-    def parse_collection(self, response):
+    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         products = response.xpath('//div[@class="productitem"]')
 
         brand = response.meta['brand']

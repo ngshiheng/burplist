@@ -1,5 +1,6 @@
 import logging
 import re
+from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
@@ -16,7 +17,7 @@ class GiantSpider(scrapy.Spider):
     name = 'giant'
     start_urls = ['https://giant.sg/beers-wines-spirits/beers-ciders']
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://giant.sg/beers-wines-spirits/beers-ciders
         @returns items 1

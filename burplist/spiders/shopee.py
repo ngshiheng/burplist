@@ -1,5 +1,6 @@
 import logging
 import os
+from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
@@ -25,7 +26,7 @@ class ShopeeSpider(scrapy.Spider):
         for n in range(0, 200, 50)  # Page 1 to 5
     ]
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://shopee.sg/api/v4/search/search_items?by=sales&categoryids=100860&keyword=craft%20beer&limit=50&newest=50&order=desc&page_type=search&rating_filter=4&scenario=PAGE_GLOBAL_SEARCH&version=2
         @returns items 1

@@ -1,5 +1,6 @@
 import logging
 import os
+from typing import Generator
 from urllib.parse import urlencode
 
 import scrapy
@@ -36,7 +37,7 @@ class LazadaSpider(scrapy.Spider):
 
     start_urls = [get_proxy_url('https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4')]
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4
         @returns requests 1
@@ -65,7 +66,7 @@ class LazadaSpider(scrapy.Spider):
             url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?' + urlencode(params)
             yield response.follow(get_proxy_url(url), callback=self.parse_collection, meta={'style': style['title']})
 
-    def parse_collection(self, response):
+    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         data = response.json()
         if 'rgv587_flag' in data:
             error = f'Rate limited by Lazada. URL <{response.request.url}>.'
