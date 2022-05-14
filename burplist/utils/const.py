@@ -10,8 +10,9 @@ MAINSTREAM_BEER_BRANDS = {
     'heineken',
     'hoegaarden',
     'kirin',
-    'krausebourg '
+    'krausebourg'
     'kronenbourg',
+    'royal stout',
     'sapporo',
     'skol',
     'somersby',
