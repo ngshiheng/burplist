@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.0 (2022-05-19)
+### Feature
+* Skip more mainstream beer brands ([`b9039c5`](https://github.com/ngshiheng/burplist/commit/b9039c52bb34d51a9dd45a8fc8bb52d662fb0ee6))
+
+### Fix
+* **deps:** Update dependency sentry-sdk to v1.5.12 ([`ccb340c`](https://github.com/ngshiheng/burplist/commit/ccb340cce3c41e720424a713d3dd1e2bc806d5d8))
+* **deps:** Update dependency ipython to v8.3.0 ([`a9dc049`](https://github.com/ngshiheng/burplist/commit/a9dc049b650b0490537535c199b67040050c84fb))
+* **deps:** Update dependency sentry-sdk to v1.5.11 ([`75c9ab6`](https://github.com/ngshiheng/burplist/commit/75c9ab6834f4f689f3825452bfab75e4fe3c4941))
+
 ## v1.4.1 (2022-05-02)
 ### Fix
 * **spider:** Invalid xpath expression error ([`b3676b4`](https://github.com/ngshiheng/burplist/commit/b3676b4b2ccfb8bde0ec7bbc36653009468d404d))
