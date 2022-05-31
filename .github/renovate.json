@@ -14,7 +14,7 @@
             "description": "Automatically merges minor and patch-level updates",
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
-            "automergeType": "branch"
+            "automergeType": "pr"
         },
         {
             "description": "Automatically creates a PR whenever there is a new major Renovate version",
