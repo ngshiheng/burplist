@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.1 (2022-05-31)
+### Fix
+* **deps:** Update dependency ipython to v8.4.0 ([`e62ffe8`](https://github.com/ngshiheng/burplist/commit/e62ffe8bd08df9753861268fceca31bcc542e218))
+
 ## v1.5.0 (2022-05-19)
 ### Feature
 * Skip more mainstream beer brands ([`b9039c5`](https://github.com/ngshiheng/burplist/commit/b9039c52bb34d51a9dd45a8fc8bb52d662fb0ee6))
