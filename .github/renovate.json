@@ -21,6 +21,10 @@
             "matchUpdateTypes": ["major"],
             "automerge": false,
             "prCreation": "immediate"
+        },
+        {
+            "matchPackageNames": ["relekang/python-semantic-release"],
+            "enabled": false
         }
     ],
     "rangeStrategy": "pin",
