@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.3 (2022-06-01)
+### Fix
+* **deps:** Update dependency alembic to v1.8.0 ([`a7d2bd2`](https://github.com/ngshiheng/burplist/commit/a7d2bd278ddd9971c171db5c3b90c3c9ab5dedf3))
+
 ## v1.5.2 (2022-06-01)
 ### Fix
 * **deps:** Update dependency sqlalchemy to v1.4.37 ([`5c6d125`](https://github.com/ngshiheng/burplist/commit/5c6d125027597c312aaf84d63360342a4f8a77fa))
