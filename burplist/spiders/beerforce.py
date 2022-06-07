@@ -4,6 +4,7 @@ from typing import Generator
 import scrapy
 from burplist.items import ProductLoader
 from burplist.locators.beerforce import BeerForceLocator
+from burplist.utils.const import SKIPPED_ITEMS
 
 logger = logging.getLogger(__name__)
 
@@ -13,7 +14,7 @@ class BeerForceSpider(scrapy.Spider):
 
     Starting URL is from a base URL which contains different styles of beer
     Expect all of the product listed here are of 'Single' quantity
-    This spider passes ProductItem into nested request
+    This spider passes ProductLoader item into nested request
 
     # TODO: Extract `origin` information
     # TODO: Add contracts to `parse_product_detail`. Need to handle passing of `meta`
@@ -39,15 +40,19 @@ class BeerForceSpider(scrapy.Spider):
 
         for product, media in zip(product_details, product_media):
             raw_price = product.xpath(BeerForceLocator.raw_price).get()
-
             if raw_price is None:
                 logger.info("Skipping item because it is out of stock.")
+                continue
+
+            name = product.xpath(BeerForceLocator.product_name).get()
+            if any(word in name.lower() for word in SKIPPED_ITEMS):
+                logger.info("Skipping non-beer item.")  # e.g. 't-shirt', 'glass'
                 continue
 
             loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
-            loader.add_xpath('name', BeerForceLocator.product_name)
+            loader.add_value('name', name)
             loader.add_value('url', response.urljoin(media.xpath(BeerForceLocator.product_url).get()))
 
             loader.add_xpath('brand', BeerForceLocator.product_brand)

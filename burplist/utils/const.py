@@ -27,5 +27,6 @@ SKIPPED_ITEMS = {
     'glass',
     'keg',
     'litre',
+    't-shirt'
     'tee',
 }
