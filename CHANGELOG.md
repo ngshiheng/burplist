@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.0 (2022-06-07)
+### Feature
+* Skip non-beer items ([`45bab87`](https://github.com/ngshiheng/burplist/commit/45bab87557b9ca93576aca148a20394640b5ecdc))
+
 ## v1.5.3 (2022-06-01)
 ### Fix
 * **deps:** Update dependency alembic to v1.8.0 ([`a7d2bd2`](https://github.com/ngshiheng/burplist/commit/a7d2bd278ddd9971c171db5c3b90c3c9ab5dedf3))
