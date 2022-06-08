@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.1 (2022-06-08)
+### Fix
+* Missing trailing comma which causes unintended concat ([`e89fead`](https://github.com/ngshiheng/burplist/commit/e89fead09f7715c67f599ec20ce9d10656b27870))
+
 ## v1.6.0 (2022-06-07)
 ### Feature
 * Skip non-beer items ([`45bab87`](https://github.com/ngshiheng/burplist/commit/45bab87557b9ca93576aca148a20394640b5ecdc))
