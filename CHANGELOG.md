@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.2 (2022-06-11)
+### Fix
+* **spider:** Skip personalised items for troublebrewing spider ([`38aea1f`](https://github.com/ngshiheng/burplist/commit/38aea1fe262327df78508e4f5eddca02b1da30a3))
+
 ## v1.6.1 (2022-06-08)
 ### Fix
 * Missing trailing comma which causes unintended concat ([`e89fead`](https://github.com/ngshiheng/burplist/commit/e89fead09f7715c67f599ec20ce9d10656b27870))
