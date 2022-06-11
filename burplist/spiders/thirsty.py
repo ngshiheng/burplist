@@ -5,7 +5,7 @@ from typing import Generator
 import scrapy
 import sentry_sdk
 from burplist.items import ProductLoader
-from burplist.locators.thirsty import ThirstyLocator
+from burplist.locators import ThirstyLocator
 
 logger = logging.getLogger(__name__)
 

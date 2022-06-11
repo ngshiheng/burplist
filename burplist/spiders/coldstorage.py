@@ -3,7 +3,7 @@ from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
-from burplist.locators.coldstorage import ColdStorageLocator
+from burplist.locators import ColdStorageLocator
 from burplist.utils.parsers import parse_style
 
 

@@ -5,6 +5,7 @@ from typing import Generator, Optional
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.locators import TroubleBrewingLocator
 from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_style
 
@@ -32,7 +33,7 @@ class TroubleBrewingSpider(scrapy.Spider):
         @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer
         @returns requests 1
         """
-        collections = response.xpath('//a[@class="product-link js-product-link"]')
+        collections = response.xpath(TroubleBrewingLocator.beer_collection)
         yield from response.follow_all(collections, callback=self.parse_collection)
 
     def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
@@ -42,7 +43,7 @@ class TroubleBrewingSpider(scrapy.Spider):
         @returns requests 0 0
         @scrapes platform name url brand origin volume quantity price
         """
-        script_tag = response.xpath('//script[contains(.,"var meta")]/text()').get()
+        script_tag = response.xpath(TroubleBrewingLocator.script_tag).get()
 
         data_regex = re.search(r'\[\{(.*?)\]', script_tag)
         if data_regex:
@@ -69,7 +70,7 @@ class TroubleBrewingSpider(scrapy.Spider):
                 loader.add_value('volume', '330ml')
                 loader.add_value('quantity', self.get_product_quantity(product['sku'], product['public_title']))
 
-                image_url = response.xpath('//img[@class="product-single__photo__img"]//@src').get()
+                image_url = response.xpath(TroubleBrewingLocator.product_image_url).get()
                 loader.add_value('image_url', f'https:{image_url}')
 
                 loader.add_value('price', product['price'] / 100)  # e.g. 7700 == $77.00

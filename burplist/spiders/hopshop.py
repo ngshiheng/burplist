@@ -2,7 +2,7 @@ from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
-from burplist.locators.hopshop import HopShopLocator
+from burplist.locators import HopShopLocator
 from burplist.utils.parsers import parse_style
 
 

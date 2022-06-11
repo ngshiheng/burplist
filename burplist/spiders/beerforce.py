@@ -3,7 +3,7 @@ from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
-from burplist.locators.beerforce import BeerForceLocator
+from burplist.locators import BeerForceLocator
 from burplist.utils.const import SKIPPED_ITEMS
 
 logger = logging.getLogger(__name__)

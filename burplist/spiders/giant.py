@@ -4,7 +4,7 @@ from typing import Generator
 
 import scrapy
 from burplist.items import ProductLoader
-from burplist.locators.giant import GiantLocator
+from burplist.locators import GiantLocator
 from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_style
 
