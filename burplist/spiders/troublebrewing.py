@@ -15,7 +15,8 @@ logger = logging.getLogger(__name__)
 class TroubleBrewingSpider(scrapy.Spider):
     """Parse data from raw HTML
 
-    Starting URL is from a base URL which contains collections of beers, we then need to dive into each individual collection URL to obtain the product information
+    Starting URL is from a base URL which contains collections of beers,
+    we then need to dive into each individual collection URL to obtain the product information
 
     We get the beer information via a html script tag as shown in the example below:
     <script>
@@ -41,7 +42,7 @@ class TroubleBrewingSpider(scrapy.Spider):
         @url https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer/products/road-hog
         @returns items 1 3
         @returns requests 0 0
-        @scrapes platform name url brand origin volume quantity price
+        @scrapes platform name url brand origin volume quantity image_url price
         """
         script_tag = response.xpath(TroubleBrewingLocator.script_tag).get()
 
