@@ -11,6 +11,8 @@ from burplist.utils.parsers import parse_style
 
 logger = logging.getLogger(__name__)
 
+TROUBLE_BREWING_SKIPPED_ITEM = {*SKIPPED_ITEMS, 'personalised'}
+
 
 class TroubleBrewingSpider(scrapy.Spider):
     """Parse data from raw HTML
@@ -53,7 +55,7 @@ class TroubleBrewingSpider(scrapy.Spider):
             for product in products:
                 name = product['name']
 
-                if any(word in name.lower() for word in SKIPPED_ITEMS):
+                if any(word in name.lower() for word in TROUBLE_BREWING_SKIPPED_ITEM):
                     logger.info("Skipping non-beer item.")  # e.g. 'gift'
                     continue
 
