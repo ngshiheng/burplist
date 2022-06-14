@@ -5,6 +5,9 @@
 </p>
 <br />
 
+[![CI](https://github.com/ngshiheng/burplist/actions/workflows/ci.yml/badge.svg)](https://github.com/ngshiheng/burplist/actions/workflows/ci.yml)
+[![CD](https://github.com/ngshiheng/burplist/actions/workflows/cd.yml/badge.svg)](https://github.com/ngshiheng/burplist/actions/workflows/cd.yml)
+
 ## Context
 
 Welcome to the official web crawlers repository for [Burplist](https://burplist.me) built using [Scrapy](https://scrapy.org/).
@@ -23,10 +26,10 @@ This software is only used for research purposes, users must abide by the releva
 
 ## Requirements
 
-- [python](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- [poetry](https://python-poetry.org/docs/#installation)
-- [docker](https://docs.docker.com/get-docker/)
+-   [python](https://www.python.org/downloads/)
+-   [pip](https://pip.pypa.io/en/stable/installation/)
+-   [poetry](https://python-poetry.org/docs/#installation)
+-   [docker](https://docs.docker.com/get-docker/)
 
 ## Development
 
@@ -53,8 +56,8 @@ poetry update
 
 Some example useful invocations:
 
-- `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
-- `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
+-   `pre-commit install`: Default invocation. Installs the pre-commit script alongside any existing git hooks.
+-   `pre-commit install --install-hooks --overwrite`: Idempotently replaces existing git hook scripts with pre-commit, and also installs hook environments.
 
 ### Database migration (optional)
 
@@ -70,9 +73,9 @@ However, if you intend to work on development work, setting this up would be wor
 
 1. To spin up a `postgres` Docker container:
 
-   ```sh
-   docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
-   ```
+    ```sh
+    docker run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
+    ```
 
 2. To start the PostgreSQL Docker container, simply use `docker start dpostgres`
 
@@ -170,11 +173,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ### List of awesome Scrapy libraries
 
-- https://github.com/croqaz/awesome-scrapy
-- https://github.com/groupbwt/scrapy-boilerplate
+-   https://github.com/croqaz/awesome-scrapy
+-   https://github.com/groupbwt/scrapy-boilerplate
 
 ### Docker
 
-- https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
-- https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
-- https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
+-   https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
+-   https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
+-   https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
