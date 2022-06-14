@@ -4,6 +4,9 @@ on:
         branches:
             - "**"
             - "!main"
+        paths:
+            - "**.py"
+            - "poetry.lock"
     workflow_call: null
 jobs:
     test:
