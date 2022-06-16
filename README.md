@@ -22,6 +22,20 @@ So then I thought, why not just create a search engine for craft beers?
 
 This software is only used for research purposes, users must abide by the relevant laws and regulations of their location, please do not use it for illegal purposes. The user shall bear all the consequences caused by illegal use.
 
+## Features
+
+-   [x] 10+ unique [spiders](./burplist/spiders/) for top craft beer sites in Singapore
+-   [x] Automated random user agent rotation
+-   [x] Colored logging
+-   [x] Data deduplication pipeline
+-   [x] Database migration with [Alembic](https://alembic.sqlalchemy.org/en/latest/)
+-   [x] Delayed requests middleware
+-   [x] Error monitoring and alerting with [Sentry](https://sentry.io/)
+-   [x] Proxied requests with [Scraper API](https://www.scraperapi.com/?fp_ref=jerryng)
+-   [x] Requests retry
+-   [x] Scraper cron job on Heroku
+-   [x] Uses [Railway](https://railway.app?referralCode=jerrynsh) PostgreSQL
+
 ---
 
 ## Requirements
