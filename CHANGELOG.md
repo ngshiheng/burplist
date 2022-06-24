@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.3 (2022-06-24)
+### Fix
+* **deps:** Update dependency sentry-sdk to v1.6.0 ([`973d0aa`](https://github.com/ngshiheng/burplist/commit/973d0aa81ed57fc45992a244f2163cd077c68e9e))
+
+### Documentation
+* Add features ([`3685743`](https://github.com/ngshiheng/burplist/commit/3685743eb69f7663a3f9c3b9f41ab3c95a518aed))
+* Add badges ([`dc5304e`](https://github.com/ngshiheng/burplist/commit/dc5304e571d13e7a59b6b97cf170ea2eadcd1531))
+* Move example sql queries to .sql files ([`7636768`](https://github.com/ngshiheng/burplist/commit/76367689920d3b8a9c8bb84a9d018d3db775f355))
+
 ## v1.6.2 (2022-06-11)
 ### Fix
 * **spider:** Skip personalised items for troublebrewing spider ([`38aea1f`](https://github.com/ngshiheng/burplist/commit/38aea1fe262327df78508e4f5eddca02b1da30a3))
