@@ -2,11 +2,27 @@ import unittest
 from dataclasses import dataclass
 from decimal import Decimal
 
-from burplist.utils.parsers import parse_quantity, quantize_price
+from burplist.utils.parsers import parse_name, parse_quantity, quantize_price
 from price_parser.parser import Price
 
 
 class TestParsers(unittest.TestCase):
+    def test_parse_name(self) -> None:
+        @dataclass
+        class TestCase:
+            name: str
+            expected: str
+
+        test_cases = [
+            TestCase(name="Somersby Blackberry Cider [CANS] 330ml", expected="Somersby Blackberry Cider 330ml"),
+            TestCase(name="Jing A Brewing Co. Worker's Pale Ale Craft Beer 330Ml Pint Bottle [Bundle of 4]", expected="Jing A Brewing Co. Worker's Pale Ale Craft Beer 330Ml Pint Bottle"),
+            TestCase(name="BIG SEXY FUNK", expected="BIG SEXY FUNK"),
+            TestCase(name="Lost Coast Sharkinator White IPA - 6 Pack", expected="Lost Coast Sharkinator White IPA 6 Pack"),
+        ]
+
+        for test in test_cases:
+            self.assertEqual(parse_name(test.name), test.expected)
+
     def test_quantizing_price_object_from_parse_price(self) -> None:
         amount_string1 = "2.2399999999999998"
         price1 = Price.fromstring(amount_string1)
