@@ -4,6 +4,7 @@ from typing import Generator, Optional
 
 import scrapy
 from burplist.items import ProductLoader
+from burplist.locators import TheGreatBeerExperimentLocator
 from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_style
 
@@ -24,7 +25,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
         @url https://greatbeerexperiment.com/collections
         @returns requests 1
         """
-        collections = response.xpath("//li[contains(@class,'brewery') and contains(./details, ' ')]//li/a")
+        collections = response.xpath(TheGreatBeerExperimentLocator.beer_collection)
         for collection in collections:
             collection_name = collection.xpath('.//text()').get().strip()
             brand, origin = self.get_product_brand_and_origin(collection_name)
@@ -32,13 +33,13 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             yield response.follow(collection, callback=self.parse_collection, meta={'brand': brand, 'origin': origin})
 
     def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
-        products = response.xpath('//div[@class="productitem"]')
+        products = response.xpath(TheGreatBeerExperimentLocator.products)
 
         brand = response.meta['brand']
         origin = response.meta['origin']
 
         for product in products:
-            name = product.xpath('.//h2[@class="productitem--title"]/a/text()').get()
+            name = product.xpath(TheGreatBeerExperimentLocator.product_name).get()
 
             if any(word in name.lower() for word in SKIPPED_ITEMS):
                 logger.info("Skipping non-beer item.")  # e.g. 'cap', 'tee'
@@ -48,7 +49,7 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
 
             loader.add_value('platform', self.name)
             loader.add_value('name', name)
-            loader.add_value('url', response.urljoin(product.xpath('.//h2[@class="productitem--title"]/a/@href').get()))
+            loader.add_value('url', response.urljoin(product.xpath(TheGreatBeerExperimentLocator.product_url).get()))
 
             loader.add_value('brand', brand)
             loader.add_value('origin', origin)
@@ -58,15 +59,15 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             loader.add_value('volume', name)
             loader.add_value('quantity', self.get_product_quantity(name))
 
-            image_url = response.xpath('.//img[@class="productitem--image-primary" and @data-rimg-scale]/@src').get()  # NOTE: You need to disable JS to see this on inspect
+            image_url = response.xpath(TheGreatBeerExperimentLocator.product_image_url).get()  # NOTE: You need to disable JS to see this on inspect
             loader.add_value('image_url', f'https:{image_url}')
 
-            price = product.xpath('.//div[@class="productitem--actions"]//div[@class="price__current--hidden"]/span[@class="money"]/text()').get()
+            price = product.xpath(TheGreatBeerExperimentLocator.product_price).get()
             loader.add_value('price', price)
             yield loader.load_item()
 
         # Recursively follow the link to the next page, extracting data from it
-        next_page = response.xpath('//li[@class="pagination--next"]/a/@href').get()
+        next_page = response.xpath(TheGreatBeerExperimentLocator.next_page).get()
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse, meta={'brand': brand, 'origin': origin})
 
