@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.8 (2022-07-16)
+### Fix
+* **deps:** Update dependency sentry-sdk to v1.7.2 ([`fed5a2f`](https://github.com/ngshiheng/burplist/commit/fed5a2fbdcf73070a2a6e68de573c3cfe4043f97))
+
 ## v1.6.7 (2022-07-13)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.7.1 ([`212864d`](https://github.com/ngshiheng/burplist/commit/212864d9dd78feb99c63d43963591e390b9d7151))
