@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.10 (2022-07-25)
+### Fix
+* **deps:** Update dependency scrapy to v2.6.2 ([`b3271e7`](https://github.com/ngshiheng/burplist/commit/b3271e78951faab0f8b09b83539019030134db53))
+
 ## v1.6.9 (2022-07-21)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.8.0 ([`dd3716c`](https://github.com/ngshiheng/burplist/commit/dd3716c71dfd78c07c3fff7c6af580802c85ff14))
