@@ -451,9 +451,9 @@ python-versions = ">=3.7"
 MarkupSafe = ">=0.9.2"
 
 [package.extras]
-babel = ["babel"]
-lingua = ["lingua"]
 testing = ["pytest"]
+lingua = ["lingua"]
+babel = ["babel"]
 
 [[package]]
 name = "markupsafe"
@@ -812,7 +812,7 @@ six = "*"
 
 [[package]]
 name = "scrapy"
-version = "2.6.1"
+version = "2.6.2"
 description = "A high-level Web Crawling and Web Scraping framework"
 category = "main"
 optional = false
@@ -958,7 +958,7 @@ executing = "*"
 pure-eval = "*"
 
 [package.extras]
-tests = ["pytest", "typeguard", "pygments", "littleutils", "cython"]
+tests = ["cython", "littleutils", "pygments", "typeguard", "pytest"]
 
 [[package]]
 name = "tldextract"
@@ -1133,7 +1133,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "57f9e069bcb492216ae89b3cb601746c745b92c13f1a95919b5fc47f72238ba2"
+content-hash = "93ebf87fd8f108fdc8be3f2c72166b5729bddafc991809ae2aaf30c02799d477"
 
 [metadata.files]
 alembic = [
@@ -1804,8 +1804,8 @@ requests-file = [
     {file = "requests_file-1.5.1-py2.py3-none-any.whl", hash = "sha256:dfe5dae75c12481f68ba353183c53a65e6044c923e64c24b2209f6c7570ca953"},
 ]
 scrapy = [
-    {file = "Scrapy-2.6.1-py2.py3-none-any.whl", hash = "sha256:e977f57d4e828f25d2702e8c2212e8abcd7d6ce45be560f1830a39432a494c09"},
-    {file = "Scrapy-2.6.1.tar.gz", hash = "sha256:56fd55a59d0f329ce752892358abee5a6b50b4fc55a40420ea317dc617553827"},
+    {file = "Scrapy-2.6.2-py2.py3-none-any.whl", hash = "sha256:53528bcaf8c2c77aca359af11f349dec5dad98845a13d4c0bb9abd07f302298d"},
+    {file = "Scrapy-2.6.2.tar.gz", hash = "sha256:55e21181165f25337105fff1efc8393296375cea7de699a7e703bbd265595f26"},
 ]
 scrapy-fake-useragent = [
     {file = "scrapy-fake-useragent-1.4.4.macosx-10.9-x86_64.tar.gz", hash = "sha256:3b17e982e646918dc25080da0672812d07bfb7a92a58377c014c74e0182c665e"},
