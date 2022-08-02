@@ -8,7 +8,7 @@
     "docker-compose": {
         "enabled": false
     },
-    "extends": ["config:base", ":semanticCommits", "schedule:daily"],
+    "extends": ["config:base", ":semanticCommits", "schedule:monthly"],
     "packageRules": [
         {
             "description": "Automatically merges minor and patch-level updates",
