@@ -30,9 +30,9 @@ class GiantSpider(scrapy.Spider):
 
             name = product.xpath(GiantLocator.product_name).get()
             url = product.xpath(GiantLocator.product_url).get()
-            brand = product.xpath(GiantLocator.product_brand).get().strip()
+            brand = product.xpath(GiantLocator.product_brand).get()
 
-            if brand.lower() in MAINSTREAM_BEER_BRANDS:
+            if brand is None or brand.lower() in MAINSTREAM_BEER_BRANDS:
                 logger.info('Skipping item because of brand.')
                 continue
 
