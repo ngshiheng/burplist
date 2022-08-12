@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.12 (2022-08-12)
+### Fix
+* **spider:** Skip items if brand is None for giant.sg spider ([`29d3368`](https://github.com/ngshiheng/burplist/commit/29d3368baac447c442837008001dad9c5c5031ca))
+
 ## v1.6.11 (2022-07-30)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.9.0 ([`daf2f21`](https://github.com/ngshiheng/burplist/commit/daf2f21ab6f4f640f116ff322f74447142131e13))
