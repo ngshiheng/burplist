@@ -35,11 +35,11 @@ class LazadaSpider(scrapy.Spider):
         },
     }
 
-    start_urls = [get_proxy_url('https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4')]
+    start_urls = [get_proxy_url('https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&from=input&q=craft%20beer')]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
-        @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&rating=4
+        @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&from=input&q=craft%20beer
         @returns requests 1
         """
         logger.info(response.request.headers)
@@ -54,7 +54,7 @@ class LazadaSpider(scrapy.Spider):
                 yield retry_request
             return
 
-        styles = data['mods']['filter']['filterItems'][7]['options']  # Contains beer styles
+        styles = data['mods']['filter']['filterItems'][6]['options']  # Contains beer styles
 
         for style in styles:
             params = {
