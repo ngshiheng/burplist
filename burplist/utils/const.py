@@ -1,6 +1,7 @@
 # Beer brands that are not craft beers
 MAINSTREAM_BEER_BRANDS = {
     'abc',
+    'abc extra stout',
     'anchor',
     'asahi',
     'budweiser',
@@ -12,6 +13,7 @@ MAINSTREAM_BEER_BRANDS = {
     'kirin',
     'krausebourg'
     'kronenbourg',
+    'kronenbourg 1664',
     'royal stout',
     'sapporo',
     'skol',

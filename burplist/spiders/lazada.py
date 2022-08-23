@@ -82,7 +82,7 @@ class LazadaSpider(scrapy.Spider):
         if products:
             for product in products:
                 name = product['name']
-                brand = product['brandName']
+                brand = product['brandName'].strip()
                 review = int(product.get('review', '0'))
 
                 if review < 5 or (brand.lower() in MAINSTREAM_BEER_BRANDS):
