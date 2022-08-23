@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.13 (2022-08-23)
+### Fix
+* **spider:** Update lazada spider endpoint ([`077cd48`](https://github.com/ngshiheng/burplist/commit/077cd48a392d48b18511370f3e904c7c40a8e4be))
+
 ## v1.6.12 (2022-08-12)
 ### Fix
 * **spider:** Skip items if brand is None for giant.sg spider ([`29d3368`](https://github.com/ngshiheng/burplist/commit/29d3368baac447c442837008001dad9c5c5031ca))
