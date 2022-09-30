@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.14 (2022-09-30)
+### Fix
+* **deps:** Update dependency scrapy to v2.6.3 ([`935ba9c`](https://github.com/ngshiheng/burplist/commit/935ba9c88443d7362592ace67fea2a2a4e22c17e))
+
 ## v1.6.13 (2022-08-23)
 ### Fix
 * **spider:** Update lazada spider endpoint ([`077cd48`](https://github.com/ngshiheng/burplist/commit/077cd48a392d48b18511370f3e904c7c40a8e4be))
