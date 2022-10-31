@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.16 (2022-10-31)
+### Fix
+* **deps:** Update dependency psycopg2-binary to v2.9.5 ([`d869198`](https://github.com/ngshiheng/burplist/commit/d86919846e158767f070d4a43321186ae81ca50a))
+
 ## v1.6.15 (2022-10-01)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.9.9 ([`677826f`](https://github.com/ngshiheng/burplist/commit/677826fe0f41e51ccebea22bc9d926aeeb9d2fa3))
