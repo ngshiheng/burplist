@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.17 (2022-10-31)
+### Fix
+* **deps:** Update dependency sqlalchemy to v1.4.42 ([`07cad9b`](https://github.com/ngshiheng/burplist/commit/07cad9b1348c5f3c47b59328bcf5cf8038ba144b))
+
 ## v1.6.16 (2022-10-31)
 ### Fix
 * **deps:** Update dependency psycopg2-binary to v2.9.5 ([`d869198`](https://github.com/ngshiheng/burplist/commit/d86919846e158767f070d4a43321186ae81ca50a))
