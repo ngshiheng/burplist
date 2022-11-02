@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.18 (2022-11-02)
+### Fix
+* Downgrade to python3.9 ([`e8949d1`](https://github.com/ngshiheng/burplist/commit/e8949d1350ea4853cd5307cbf54f414f6598801b))
+
 ## v1.6.17 (2022-10-31)
 ### Fix
 * **deps:** Update dependency sqlalchemy to v1.4.42 ([`07cad9b`](https://github.com/ngshiheng/burplist/commit/07cad9b1348c5f3c47b59328bcf5cf8038ba144b))
