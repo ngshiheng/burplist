@@ -4,12 +4,12 @@ from typing import Generator
 from urllib.parse import urlencode
 
 import scrapy
+from scrapy.utils.project import get_project_settings
+
 from burplist.items import ProductLoader
 from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_quantity
 from burplist.utils.proxy import get_proxy_url
-from scrapy.downloadermiddlewares.retry import get_retry_request
-from scrapy.utils.project import get_project_settings
 
 logger = logging.getLogger(__name__)
 
@@ -17,10 +17,7 @@ settings = get_project_settings()
 
 
 class LazadaSpider(scrapy.Spider):
-    """Parse data from REST API
-
-    Whenever HTTPCACHE_ENABLED is True, retry requests doesn't seem to work well
-    I have a feeling that is because referer is being set with cached which Lazada endpoints don't seem to like it
+    """Scrape data from Lazada REST API.
 
     # TODO: Extract `abv` and `origin` data
     # TODO: Add contracts to `parse`. Need to handle passing of `custom_settings`. Currently it keeps getting blocked by anti-scrape system
@@ -28,57 +25,40 @@ class LazadaSpider(scrapy.Spider):
 
     name = 'lazada'
     custom_settings = {
-        'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 20),
+        'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 5),
         'DOWNLOADER_MIDDLEWARES': {
             **settings.get('DOWNLOADER_MIDDLEWARES'),
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
         },
     }
-
-    start_urls = [get_proxy_url('https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&from=input&q=craft%20beer')]
+    base_url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/'
+    start_urls = [get_proxy_url(f'{base_url}/?ajax=true')]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
-        @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true&from=input&q=craft%20beer
+        @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true
         @returns requests 1
         """
-        logger.info(response.request.headers)
-        logger.info(response.ip_address)
-
         data = response.json()
-        if 'rgv587_flag' in data:
-            error = f'Rate limited by Lazada. URL <{response.request.url}>.'
+        filter_items = data['mods']['filter']['filterItems'][2]
+        if filter_items['title'] != 'Beer Type':
+            raise ValueError('Invalid ppath.')
 
-            retry_request = get_retry_request(response.request, reason=error, spider=self)
-            if retry_request:
-                yield retry_request
-            return
-
-        styles = data['mods']['filter']['filterItems'][6]['options']  # Contains beer styles
-
+        styles = filter_items['options']
         for style in styles:
             params = {
                 'rating': 4,
-                'ajax': 'true',  # NOTE: Do not use bool
+                'ajax': 'true',
                 'ppath': style['value'],
             }
 
-            url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?' + urlencode(params)
+            url = self.base_url + urlencode(params)
             yield response.follow(get_proxy_url(url), callback=self.parse_collection, meta={'style': style['title']})
 
     def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         data = response.json()
-        if 'rgv587_flag' in data:
-            error = f'Rate limited by Lazada. URL <{response.request.url}>.'
-
-            retry_request = get_retry_request(response.request, reason=error, spider=self)
-            if retry_request:
-                yield retry_request
-            return
-
         products = data['mods'].get('listItems')
 
-        # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
                 name = product['name']
@@ -96,7 +76,7 @@ class LazadaSpider(scrapy.Spider):
 
                 loader.add_value('platform', self.name)
                 loader.add_value('name', name)
-                loader.add_value('url', f'https://www.lazada.sg/products/-i{item_id}-s{shop_id}.html')  # We could also use `productUrl` here
+                loader.add_value('url', f'https://www.lazada.sg/products/-i{item_id}-s{shop_id}.html')
 
                 loader.add_value('brand', brand)
                 loader.add_value('origin', None)
