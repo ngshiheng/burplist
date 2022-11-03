@@ -11,7 +11,7 @@ MAINSTREAM_BEER_BRANDS = {
     'heineken',
     'hoegaarden',
     'kirin',
-    'krausebourg'
+    'krausebourg',
     'kronenbourg',
     'kronenbourg 1664',
     'royal stout',
