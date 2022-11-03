@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.19 (2022-11-03)
+### Fix
+* **spider:** Remove rate limiting flag & fetch beer style from filterItems ([`5831825`](https://github.com/ngshiheng/burplist/commit/5831825533ebe98435a8d2cd15227d4ffba98a82))
+* Missing trailing comma ([`a2e4f30`](https://github.com/ngshiheng/burplist/commit/a2e4f30182f11bfc019731fe4cbdd9da568f917b))
+
 ## v1.6.18 (2022-11-02)
 ### Fix
 * Downgrade to python3.9 ([`e8949d1`](https://github.com/ngshiheng/burplist/commit/e8949d1350ea4853cd5307cbf54f414f6598801b))
