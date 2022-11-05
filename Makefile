@@ -32,6 +32,10 @@ build:	## build docker image for burplist
 	@$(DOCKER) build -t $(NAME) . --build-arg ENVIRONMENT=$(ENVIRONMENT)
 
 .PHONY: run
-run:	## run burplist in docker locally
+run:	## run all spiders
+	@$(POETRY) run scrapy list | xargs -n 1 poetry run scrapy crawl
+
+.PHONY: run-docker
+run-docker:	## run all spiders using docker
 	@$(DOCKER) stop $(NAME) || true && $(DOCKER) rm $(NAME) || true
 	@$(DOCKER) run -d -e PG_HOST=$(PG_HOST) --name $(NAME) $(NAME)

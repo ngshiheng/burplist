@@ -90,6 +90,7 @@ DOWNLOADER_MIDDLEWARES = {
     # 'burplist.middlewares.BurplistDownloaderMiddleware': 543,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
+    'scrapeops_scrapy.middleware.retry.RetryMiddleware': 300,
     'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
     'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware': 401,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
@@ -111,6 +112,7 @@ USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 EXTENSIONS = {
     'burplist.extensions.SentryLogging': -1,
+    'scrapeops_scrapy.extension.ScrapeOpsMonitor': 500,
 }
 
 
@@ -146,6 +148,10 @@ HTTPCACHE_EXPIRATION_SECS = os.environ.get('HTTPCACHE_EXPIRATION_SECS', 0)
 # Sentry
 # https://stackoverflow.com/questions/25262765/handle-all-exception-in-scrapy-with-sentry
 SENTRY_DSN = os.environ.get('SENTRY_DSN')
+
+# ScrapeOps
+# https://scrapeops.io/
+SCRAPEOPS_API_KEY = os.environ.get('SCRAPEOPS_API_KEY')
 
 # PostgreSQL
 DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db_name}'.format(

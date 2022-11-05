@@ -25,16 +25,14 @@ This software is only used for research purposes, users must abide by the releva
 ## Features
 
 -   [x] 10+ unique [spiders](./burplist/spiders/) for top craft beer sites in Singapore
+-   [x] [Sentry](https://sentry.io/) integration
+-   [x] [ScrapeOps](https://scrapeops.io) integration
+-   [x] [Scraper API](https://www.scraperapi.com/?fp_ref=jerryng) for proxy requests
 -   [x] Automated random user agent rotation
 -   [x] Colored logging
 -   [x] Data deduplication pipeline
 -   [x] Database migration with [Alembic](https://alembic.sqlalchemy.org/en/latest/)
 -   [x] Delayed requests middleware
--   [x] Error monitoring and alerting with [Sentry](https://sentry.io/)
--   [x] Proxied requests with [Scraper API](https://www.scraperapi.com/?fp_ref=jerryng)
--   [x] Requests retry
--   [x] Scraper cron job on Heroku
--   [x] Uses [Railway](https://railway.app?referralCode=jerrynsh) PostgreSQL
 
 ---
 
@@ -154,14 +152,16 @@ heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
 
 ---
 
-## Proxy and Sentry (optional)
+## Integrations
 
 [ScraperAPI](https://www.scraperapi.com/?fp_ref=jerryng) is used as our proxy server provider.
 [Sentry](https://sentry.io/) is used for error monitoring.
+[ScrapeOps](https://scrapeops.io) is used for job monitoring.
 
 ```sh
-export SCRAPER_API_KEY="<YOUR_SCRAPER_API_KEY>"
 export SENTRY_DSN="<YOUR_SENTRY_DSN>"
+export SCRAPER_API_KEY="<YOUR_SCRAPER_API_KEY>"
+export SCRAPEOPS_API_KEY="<YOUR_ SCRAPEOPS_API_KEY>"
 ```
 
 ---
