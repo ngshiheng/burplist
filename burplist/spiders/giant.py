@@ -1,18 +1,18 @@
-import logging
 import re
 from typing import Generator
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.locators import GiantLocator
-from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_style
-
-logger = logging.getLogger(__name__)
 
 
 class GiantSpider(scrapy.Spider):
-    """Parse data from raw HTML"""
+    """Scrape data from raw HTML
+
+    https://giant.sg/beers-wines-spirits/beers-ciders
+    """
 
     name = 'giant'
     start_urls = ['https://giant.sg/beers-wines-spirits/beers-ciders']
@@ -22,7 +22,7 @@ class GiantSpider(scrapy.Spider):
         @url https://giant.sg/beers-wines-spirits/beers-ciders
         @returns items 1
         @returns requests 1 1
-        @scrapes platform name url brand quantity image_url price
+        @scrapes platform name url quantity image_url price
         """
         products = response.xpath(GiantLocator.products)
 
@@ -30,11 +30,6 @@ class GiantSpider(scrapy.Spider):
 
             name = product.xpath(GiantLocator.product_name).get()
             url = product.xpath(GiantLocator.product_url).get()
-            brand = product.xpath(GiantLocator.product_brand).get()
-
-            if brand is None or brand.lower() in MAINSTREAM_BEER_BRANDS:
-                logger.info('Skipping item because of brand.')
-                continue
 
             loader = ProductLoader(selector=product)
 
@@ -42,7 +37,7 @@ class GiantSpider(scrapy.Spider):
             loader.add_value('name', name)
             loader.add_value('url', f"https://giant.sg{url}")
 
-            loader.add_value('brand', brand.title())
+            loader.add_xpath('brand', GiantLocator.product_brand)
             loader.add_value('style', parse_style(name))
             loader.add_value('origin', None)
 

@@ -1,21 +1,20 @@
-import logging
 from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductLoader
-from burplist.utils.const import SKIPPED_ITEMS
-from burplist.utils.parsers import parse_brand
 
-logger = logging.getLogger(__name__)
+from burplist.items import ProductLoader
+from burplist.utils.parsers import parse_brand
 
 
 class AlcoholDeliverySpider(scrapy.Spider):
-    """Parse data from REST API
+    """Scrape data from Alcohol Delivery API
 
     Site has 'Age Verification' modal
     Expect all of the product listed here are either in 'Single' or 'Keg'
     All scrapped item from this site are of quantity of 1
+
+    https://www.alcoholdelivery.com.sg/
     """
 
     name = 'alcoholdelivery'
@@ -45,7 +44,6 @@ class AlcoholDeliverySpider(scrapy.Spider):
         """
         products = response.json()
 
-        # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
                 name = product['name']
@@ -54,11 +52,6 @@ class AlcoholDeliverySpider(scrapy.Spider):
                 origin, style, abv = short_description.split(',')
 
                 if int(product['quantity']) < 1:
-                    logger.info("Skipping item because it is out of stock.")
-                    continue
-
-                if any(word in name.lower() for word in SKIPPED_ITEMS):
-                    logger.info("Skipping non-beer item.")  # e.g. 'keg'
                     continue
 
                 loader = ProductLoader()

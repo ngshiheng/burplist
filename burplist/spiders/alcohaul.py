@@ -8,7 +8,10 @@ from burplist.utils.parsers import parse_brand, parse_quantity
 
 
 class AlcohaulSpider(scrapy.Spider):
-    """Scrape from Alcohaul API"""
+    """Scrape from Alcohaul API
+
+    https://alcohaul.sg/
+    """
 
     name = 'alcohaul'
     base_url = 'https://alcohaul.sg/api/productlist?'

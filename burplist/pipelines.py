@@ -9,12 +9,35 @@ from sqlalchemy.exc import ProgrammingError
 from burplist.database.models import Price, Product
 from burplist.database.utils import Session, create_table, db_connect
 from burplist.items import ProductItem
+from burplist.utils.const import MAINSTREAM_BEER_BRANDS, SKIPPED_ITEMS
 
 logger = logging.getLogger(__name__)
 
 
+class FiltersPipeline:
+    """Pipeline to filter unwanted products"""
+
+    def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
+        """Drop non-craft beers items"""
+        del spider  # Unused
+
+        adapter = ItemAdapter(item)
+
+        url = adapter['url']
+        name = adapter['name']
+        brand = adapter.get('brand')
+
+        is_skipped_items = any(word.lower() in SKIPPED_ITEMS for word in name.split(' '))
+        is_main_stream_beer = brand and brand.lower() in MAINSTREAM_BEER_BRANDS
+
+        if is_main_stream_beer or is_skipped_items:
+            raise DropItem(f'Dropping non-craft beer item <{url}>.')
+
+        return item
+
+
 class UpdatesPipeline:
-    """Pipeline to update existing products information and prices
+    """Pipeline to update existing products information and add new prices
 
     If the product is yet to exist, skip to the next pipeline
     """
@@ -88,11 +111,11 @@ class UpdatesPipeline:
         """
         with Session() as session:
             session.bulk_update_mappings(Product, self.products_update)
-            logger.info(f'Updated {len(self.products_update)} existing products information.')
+            logger.info(f'Updating {len(self.products_update)} existing products information')
 
             prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Only works if all values in dict are hashable. Reference: https://www.geeksforgeeks.org/python-removing-duplicate-dicts-in-list/
             session.bulk_insert_mappings(Price, prices)
-            logger.info(f'Created {len(self.prices)} new prices for existing products.')
+            logger.info(f'Creating {len(self.prices)} new prices for existing products')
 
             session.commit()
 
@@ -150,10 +173,10 @@ class CreationPipeline:
         with Session() as session:
             products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list
             session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
-            logger.info(f'Created {len(products)} new products.')
+            logger.info(f'Creating {len(products)} new products')
 
             prices = [dict(price=product['price'], product_id=product['id']) for product in products]
             session.bulk_insert_mappings(Price, prices)
-            logger.info(f'Created {len(prices)} new prices.')
+            logger.info(f'Creating {len(prices)} new prices')
 
             session.commit()

@@ -1,20 +1,17 @@
-import logging
 import re
 from typing import Generator, Optional
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.locators import TheGreatBeerExperimentLocator
-from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_style
-
-logger = logging.getLogger(__name__)
 
 
 class TheGreatBeerExperimentSpider(scrapy.Spider):
-    """Parse data from raw HTML
+    """Scrape data from raw HTML
 
-    # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
+    https://greatbeerexperiment.com/
     """
 
     name = 'greatbeerexperiment'
@@ -41,10 +38,6 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
         for product in products:
             name = product.xpath(TheGreatBeerExperimentLocator.product_name).get()
 
-            if any(word in name.lower() for word in SKIPPED_ITEMS):
-                logger.info("Skipping non-beer item.")  # e.g. 'cap', 'tee'
-                continue
-
             loader = ProductLoader(selector=product)
 
             loader.add_value('platform', self.name)
@@ -66,7 +59,6 @@ class TheGreatBeerExperimentSpider(scrapy.Spider):
             loader.add_value('price', price)
             yield loader.load_item()
 
-        # Recursively follow the link to the next page, extracting data from it
         next_page = response.xpath(TheGreatBeerExperimentLocator.next_page).get()
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse, meta={'brand': brand, 'origin': origin})

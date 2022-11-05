@@ -1,22 +1,17 @@
-import logging
 import re
 from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
-from burplist.items import ProductLoader
-from burplist.utils.const import MAINSTREAM_BEER_BRANDS
-from burplist.utils.parsers import parse_style
 
-logger = logging.getLogger(__name__)
+from burplist.items import ProductLoader
+from burplist.utils.parsers import parse_style
 
 
 class FairPriceSpider(scrapy.Spider):
-    """Parse data from REST API
+    """Scrape data from NTUC FairPrice API
 
     https://www.fairprice.com.sg/category/craft-beer
-
-    # TODO: Extract partially missing `style` information
     """
 
     name = 'fairprice'
@@ -62,10 +57,6 @@ class FairPriceSpider(scrapy.Spider):
             brand = product['brand']['name']
             metadata = product['metaData']
             slug = product['slug']
-
-            if brand and brand.lower() in MAINSTREAM_BEER_BRANDS:
-                logger.info('Skipping item because of brand.')
-                continue
 
             loader = ProductLoader()
 

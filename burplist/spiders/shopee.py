@@ -1,20 +1,16 @@
-import logging
 import os
 from typing import Generator
 
 import scrapy
 
 from burplist.items import ProductLoader
-from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_brand, parse_quantity, parse_style
-
-logger = logging.getLogger(__name__)
 
 
 class ShopeeSpider(scrapy.Spider):
-    """Parse data from Shopee REST API
+    """Scrape data from Shopee API
 
-    # TODO: Extract `origin` and `abv` information
+    https://shopee.sg/
     """
 
     name = 'shopee'
@@ -51,14 +47,9 @@ class ShopeeSpider(scrapy.Spider):
                 product = item['item_basic']
                 name = product.get('name')
                 brand = product.get('brand')
-                review_count = product['item_rating']['rating_count'][0]
 
                 if brand is None or brand == 'None' or brand == '' or brand == '0':
                     brand = parse_brand(name)
-
-                if review_count < 10 or (brand and brand.lower() in MAINSTREAM_BEER_BRANDS):
-                    logger.info('Skipping item because of low rating or brand.')
-                    continue
 
                 item_id = str(product['itemid'])
                 shop_id = str(product['shopid'])

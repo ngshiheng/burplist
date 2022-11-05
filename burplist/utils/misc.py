@@ -2,9 +2,10 @@ import logging
 from datetime import datetime, timedelta
 from functools import lru_cache
 
+from sqlalchemy.exc import ProgrammingError
+
 from burplist.database.models import Price, Product
 from burplist.database.utils import Session
-from sqlalchemy.exc import ProgrammingError
 
 logger = logging.getLogger(__name__)
 

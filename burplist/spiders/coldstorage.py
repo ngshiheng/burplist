@@ -2,13 +2,17 @@ import re
 from typing import Generator
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.locators import ColdStorageLocator
 from burplist.utils.parsers import parse_style
 
 
 class ColdStorageSpider(scrapy.Spider):
-    """Parse data from raw HTML"""
+    """Scrape data from raw HTML
+
+    https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers
+    """
 
     name = 'coldstorage'
     start_urls = ['https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers']

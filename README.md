@@ -10,7 +10,7 @@
 
 ## Context
 
-Welcome to the official web crawlers repository for [Burplist](https://burplist.me) built using [Scrapy](https://scrapy.org/).
+Welcome to the official web crawler repository for [Burplist](https://burplist.me) built using [Scrapy](https://scrapy.org/).
 
 Growing up in a frugal family, I would spend hours browsing online, looking for the best bang for my bucks. Needless to say, the process was super exhausting and slowly turns into frustration.
 
@@ -135,8 +135,6 @@ poetry run scrapy crawl coldstorage -o coldstorage.json
 
 ```sh
 poetry run scrapy list | xargs -n 1 poetry run scrapy crawl
-
-
 ```
 
 ### Run all spiders, in parallel

@@ -1,7 +1,7 @@
-# Beer brands that are not craft beers
+# Keywords for non-craft beer brands
 MAINSTREAM_BEER_BRANDS = {
-    'abc',
     'abc extra stout',
+    'abc',
     'anchor',
     'asahi',
     'budweiser',
@@ -12,8 +12,8 @@ MAINSTREAM_BEER_BRANDS = {
     'hoegaarden',
     'kirin',
     'krausebourg',
-    'kronenbourg',
     'kronenbourg 1664',
+    'kronenbourg',
     'royal stout',
     'sapporo',
     'skol',
@@ -22,13 +22,14 @@ MAINSTREAM_BEER_BRANDS = {
     'tiger',
 }
 
-# Keywords for non-beer items such as merchandizes or keg
+# Keywords for non-beer items. e.g. merchandizes
 SKIPPED_ITEMS = {
     'cap',
     'gift',
     'glass',
     'keg',
     'litre',
+    'mug',
     't-shirt',
     'tee',
 }

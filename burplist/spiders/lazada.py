@@ -1,4 +1,3 @@
-import logging
 import os
 from typing import Generator
 from urllib.parse import urlencode
@@ -7,17 +6,17 @@ import scrapy
 from scrapy.utils.project import get_project_settings
 
 from burplist.items import ProductLoader
-from burplist.utils.const import MAINSTREAM_BEER_BRANDS
 from burplist.utils.parsers import parse_quantity
 from burplist.utils.proxy import get_proxy_url
-
-logger = logging.getLogger(__name__)
 
 settings = get_project_settings()
 
 
 class LazadaSpider(scrapy.Spider):
-    """Scrape from Lazada API"""
+    """Scrape from Lazada API
+
+    https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/
+    """
 
     name = 'lazada'
     base_url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?'
@@ -60,11 +59,6 @@ class LazadaSpider(scrapy.Spider):
             for product in products:
                 name = product['name']
                 brand = product['brandName'].strip()
-                review = int(product.get('review', '0'))
-
-                if review < 5 or (brand.lower() in MAINSTREAM_BEER_BRANDS):
-                    logger.info('Skipping item because of low rating or brand.')
-                    continue
 
                 item_id = product['itemId']
                 shop_id = product['sellerId']

@@ -3,8 +3,9 @@ import re
 from decimal import Decimal
 from typing import Optional, Union
 
-from burplist.utils.misc import get_popular_brands, get_popular_styles
 from price_parser.parser import Price
+
+from burplist.utils.misc import get_popular_brands, get_popular_styles
 
 logger = logging.getLogger(__name__)
 
@@ -26,7 +27,7 @@ def parse_style(raw_style: str) -> Optional[str]:
 
 
 def parse_brand(raw_brand: str) -> Optional[str]:
-    """Parse product brand frome"""
+    """Parse product brand from name"""
     return next((brand for brand in get_popular_brands() if brand.lower() in raw_brand.lower()), None)
 
 

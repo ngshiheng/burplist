@@ -4,6 +4,7 @@ from typing import Generator
 
 import scrapy
 import sentry_sdk
+
 from burplist.items import ProductLoader
 from burplist.locators import ThirstyLocator
 
@@ -11,11 +12,11 @@ logger = logging.getLogger(__name__)
 
 
 class ThirstySpider(scrapy.Spider):
-    """Parse data from raw HTML
+    """Scrape data from raw HTML
 
     Do note that this site uses infinite scrolling
 
-    # TODO: Add contracts to `parse_collection`. Need to handle passing of `meta`
+    https://www.thirsty.com.sg/
     """
 
     name = 'thirsty'

@@ -1,18 +1,19 @@
 from typing import Generator
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.locators import HopShopLocator
 from burplist.utils.parsers import parse_style
 
 
 class HopShopSpider(scrapy.Spider):
-    """Parse data from raw HTML
+    """Scrape data from raw HTML
 
     Page number based pagination
     All scrapped item from this site are of quantity of 1
 
-    # TODO: Extract `origin` and partially missing `style` information
+    https://www.hopshop.com.sg/beer/
     """
 
     name = 'hopshop'
@@ -50,7 +51,6 @@ class HopShopSpider(scrapy.Spider):
             loader.add_xpath('price', HopShopLocator.product_price)
             yield loader.load_item()
 
-        # Recursively follow the link to the next page, extracting data from it
         has_next_page = response.xpath(HopShopLocator.next_page).get()
         if has_next_page is not None:
             next_page = response.urljoin(has_next_page)

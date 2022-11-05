@@ -1,21 +1,19 @@
-import logging
 import re
 from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_style
 
-logger = logging.getLogger(__name__)
-
 
 class IShopChangiSpider(scrapy.Spider):
-    """Parse data from REST API
+    """Scrape data from iShopChangi API
 
     Requires specific `referer` in the request header to work
 
-    # TODO: Extract `origin`, `abv` and partially missing `style` information
+    https://www.ishopchangi.com/en/home
     """
 
     name = 'ishopchangi'
@@ -81,7 +79,6 @@ class IShopChangiSpider(scrapy.Spider):
     @staticmethod
     def get_product_quantity(raw_name: str) -> int:
         assert isinstance(raw_name, str)
-        logger.info(f'raw_name = "{raw_name}".')
 
         # "Ba Xian Tea Lager 3 Bottles Pack"
         if 'Bottles Pack' in raw_name:

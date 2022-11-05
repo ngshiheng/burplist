@@ -1,21 +1,16 @@
 import json
-import logging
 import re
 from typing import Generator, Optional
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.locators import TroubleBrewingLocator
-from burplist.utils.const import SKIPPED_ITEMS
 from burplist.utils.parsers import parse_style
-
-logger = logging.getLogger(__name__)
-
-TROUBLE_BREWING_SKIPPED_ITEM = {*SKIPPED_ITEMS, 'personalised'}
 
 
 class TroubleBrewingSpider(scrapy.Spider):
-    """Parse data from raw HTML
+    """Scrape data from raw HTML
 
     Starting URL is from a base URL which contains collections of beers,
     we then need to dive into each individual collection URL to obtain the product information
@@ -26,6 +21,8 @@ class TroubleBrewingSpider(scrapy.Spider):
     var meta = {"product":{"id":4468579795059,"gid":"gid://shopify/Product/4468579795059","vendor":"Trouble Brewing Store","type":"Beer","variants":[{"id":31829208989811,"price":7700,"name":"Middle Child Wheat Beer - 24 pack","public_title":"24 pack","sku":"TCWB24B"},{"id":32061886857331,"price":4200,"name":"Middle Child Wheat Beer - 12 pack","public_title":"12 pack","sku":"TCWB12B"},{"id":31829224194163,"price":2200,"name":"Middle Child Wheat Beer - 6 pack","public_title":"6 pack","sku":"TCWB6B"}]},"page":{"pageType":"product","resourceType":"product","resourceId":4468579795059},"page_view_event_id":"9e681da76f7007fc67a3a5a2fee2501bba0089fc71f880ef6fe820cce2fce5ee","cart_event_id":"34099f8e9fac4792e8758a189e2bda70923c0d854dc4067398d5a7b104e4a719"};
     ...
     </script>
+
+    https://troublebrewing.com/
     """
 
     name = 'troublebrewing'
@@ -54,10 +51,6 @@ class TroubleBrewingSpider(scrapy.Spider):
 
             for product in products:
                 name = product['name']
-
-                if any(word in name.lower() for word in TROUBLE_BREWING_SKIPPED_ITEM):
-                    logger.info("Skipping non-beer item.")  # e.g. 'gift'
-                    continue
 
                 loader = ProductLoader()
 
