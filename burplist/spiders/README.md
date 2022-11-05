@@ -1,6 +1,18 @@
 # Development, Debug and Troubleshoot
 
-## Database Set Up
+- [Development, Debug and Troubleshoot](#development-debug-and-troubleshoot)
+  - [Database Setup](#database-setup)
+  - [XPath Quick Guide](#xpath-quick-guide)
+  - [Scrapy Shell](#scrapy-shell)
+  - [How-to's](#how-tos)
+    - [Add delay to requests](#add-delay-to-requests)
+    - [Work with Scrapy Contracts](#work-with-scrapy-contracts)
+    - [Use Item Loaders](#use-item-loaders)
+    - [Unit test Scrapy spiders](#unit-test-scrapy-spiders)
+    - [Bulk Insert in SQLAlchemy](#bulk-insert-in-sqlalchemy)
+    - [Deal with Javascript heavy websites](#deal-with-javascript-heavy-websites)
+
+## Database Setup
 
 For local development:
 
@@ -21,77 +33,82 @@ It is highly recommended to read these materials about XPath, it will save you a
 -   https://dev.to/masihurmaruf/locator-strategy-xpath-54p7
 -   https://docs.scrapy.org/en/xpath-tutorial/topics/xpath-tutorial.html
 
-## Selecting Dynamically-loaded Content
-
-References:
-
--   https://docs.scrapy.org/en/latest/topics/dynamic-content.html
--   https://www.zyte.com/blog/handling-javascript-in-scrapy-with-splash/
+## Scrapy Shell
 
 ```sh
+# Run splash in Docker
 docker run -d -p 8050:8050 scrapinghub/splash
+
+# Run scrapy shell on a specific webpage
+poetry run scrapy shell 'http://localhost:8050/render.html?url=https://www.alcoholdelivery.com.sg/beer-cider/craft-beer'
 ```
-
-### Using `scrapy-splash` with `scrapy shell`
-
-```sh
-pipenv run scrapy shell 'http://localhost:8050/render.html?url=https://www.alcoholdelivery.com.sg/beer-cider/craft-beer'
-```
-
-### Check if site loads content dynamically with JavaScript
-
-You can inspect your browser and `Cmd + Shift + P` to `> Disable JavaScript` to check if the page loads using JavaScript.
-
-```sh
-pipenv run scrapy view https://coldstorage.com.sg/beers-wines-spirits/beer-cidercraft-beers
-```
-
-## Item Loader
-
-https://towardsdatascience.com/demystifying-scrapy-item-loaders-ffbc119d592a
-
-## Unit Testing
-
-https://stackoverflow.com/questions/6456304/scrapy-unit-testing
-
-```sh
-pipenv run python3 -m unittest
-```
-
-## Bulk Insert in SQLAlchemy
-
-[I’m inserting 400,000 rows with the ORM and it’s really slow!](https://docs.sqlalchemy.org/en/13/faq/performance.html#i-m-inserting-400-000-rows-with-the-orm-and-it-s-really-slow)
-
-https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
-
-## Querying an item in Scrapy shell
 
 ```python
-from sqlalchemy import and_
-from sqlalchemy.orm import sessionmaker
-from burplist.models import Price, Product, create_table, db_connect
+## Deleting a product
 
+import logging
 
-engine = db_connect()
-Session = sessionmaker(bind=engine)
-session = Session()
+from sqlalchemy.exc import ProgrammingError
 
-url = 'https://coldstorage.com.sg/green-label-24s-5022003'
-quantity = 24
+from burplist.database.models import Price, Product
+from burplist.database.utils import Session
 
-try:
-    existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
-except Exception as e:
-    print(e)
-finally:
-    session.close()
+logger = logging.getLogger(__name__)
+
+def remove_products_prices(name: str) -> None:
+    """Remove products and their prices based on name matching using ILIKE"""
+    with Session() as session:
+        products = session.query(Product).filter(Product.name.ilike(f'%{name}%'))
+        products_count = products.count()
+        logger.info(f"Found {products_count} stale products.")
+
+        if products_count < 1:
+            logger.info("No products to delete.")
+            return
+
+        product_ids = [product.id for product in products.all()]
+        prices = session.query(Price).filter(Price.product_id.in_(product_ids))
+        logger.info(f"Found {prices.count()} prices.")
+
+        prices.delete(synchronize_session=False)
+        products.delete(synchronize_session=False)
+        session.commit()
+
+        logger.info(f"{products_count} products deleted successfully.")
 ```
 
-## Adding Delay to Requests
+## How-to's
+
+### Add delay to requests
 
 -   https://stackoverflow.com/questions/19135875/add-a-delay-to-a-specific-scrapy-request/64903556#64903556
 -   https://stackoverflow.com/questions/41404281/how-to-retry-the-request-n-times-when-an-item-gets-an-empty-field/41404391#41404391
 
-## Spider Contracts
+### Work with Scrapy Contracts
 
 -   https://stackoverflow.com/questions/25764201/how-to-work-with-the-scrapy-contracts
+
+### Use Item Loaders
+
+-   https://towardsdatascience.com/demystifying-scrapy-item-loaders-ffbc119d592a
+
+### Unit test Scrapy spiders
+
+-   https://stackoverflow.com/questions/6456304/scrapy-unit-testing
+
+### Bulk Insert in SQLAlchemy
+
+-   [I’m inserting 400,000 rows with the ORM and it’s really slow!](https://docs.sqlalchemy.org/en/13/faq/performance.html#i-m-inserting-400-000-rows-with-the-orm-and-it-s-really-slow)
+-   https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
+
+### Deal with Javascript heavy websites
+
+You can inspect your browser and `Cmd + Shift + P` to `> Disable JavaScript` to check if the page loads using JavaScript.
+
+```sh
+poetry run scrapy view https://coldstorage.com.sg/beers-wines-spirits/beer-cidercraft-beers
+```
+
+-   https://thepythonscrapyplaybook.com/
+-   https://docs.scrapy.org/en/latest/topics/dynamic-content.html
+-   https://www.zyte.com/blog/handling-javascript-in-scrapy-with-splash/
