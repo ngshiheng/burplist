@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.21 (2022-11-05)
+### Fix
+* **spider:** Lazada spider url param path ([`7f84e11`](https://github.com/ngshiheng/burplist/commit/7f84e113ef4d9b998fd50d31a7c577957bbeee40))
+
 ## v1.6.20 (2022-11-05)
 ### Fix
 * **spider:** Shopee spider regression due to api requirement change ([`7e0fa59`](https://github.com/ngshiheng/burplist/commit/7e0fa59a55d979ac9aaf08d92a0e913137274cbe))
