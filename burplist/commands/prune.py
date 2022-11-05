@@ -1,7 +1,8 @@
 from argparse import ArgumentParser
 
-from burplist.utils.misc import remove_stale_products_prices
 from scrapy.commands import ScrapyCommand
+
+from burplist.utils.misc import remove_stale_products_prices
 
 
 class Command(ScrapyCommand):
