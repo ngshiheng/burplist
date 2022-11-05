@@ -31,8 +31,8 @@ class LazadaSpider(scrapy.Spider):
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
         },
     }
-    base_url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer'
-    start_urls = [get_proxy_url(f'{base_url}/?ajax=true')]
+    base_url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?'
+    start_urls = [get_proxy_url(f'{base_url}ajax=true')]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
