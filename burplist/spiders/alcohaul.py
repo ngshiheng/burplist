@@ -2,12 +2,13 @@ from typing import Any, Generator
 from urllib.parse import urlencode
 
 import scrapy
+
 from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_brand, parse_quantity
 
 
 class AlcohaulSpider(scrapy.Spider):
-    """Parse data from REST API"""
+    """Scrape from Alcohaul API"""
 
     name = 'alcohaul'
     base_url = 'https://alcohaul.sg/api/productlist?'
@@ -34,7 +35,6 @@ class AlcohaulSpider(scrapy.Spider):
         data = response.json()
         products = data['items']
 
-        # Stop sending requests when the REST API returns an empty array
         if products:
             for product in products:
                 if int(product['quantity']) < 1:  # NOTE: `quantity` could be `int` or `str` from API

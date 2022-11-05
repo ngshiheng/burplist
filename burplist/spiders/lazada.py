@@ -17,13 +17,11 @@ settings = get_project_settings()
 
 
 class LazadaSpider(scrapy.Spider):
-    """Scrape data from Lazada REST API.
-
-    # TODO: Extract `abv` and `origin` data
-    # TODO: Add contracts to `parse`. Need to handle passing of `custom_settings`. Currently it keeps getting blocked by anti-scrape system
-    """
+    """Scrape from Lazada API"""
 
     name = 'lazada'
+    base_url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?'
+
     custom_settings = {
         'DOWNLOAD_DELAY': os.environ.get('LAZADA_DOWNLOAD_DELAY', 5),
         'DOWNLOADER_MIDDLEWARES': {
@@ -31,7 +29,6 @@ class LazadaSpider(scrapy.Spider):
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
         },
     }
-    base_url = 'https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?'
     start_urls = [get_proxy_url(f'{base_url}ajax=true')]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:

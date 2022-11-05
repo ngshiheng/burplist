@@ -46,7 +46,6 @@ SCRAPER_API_KEY = os.environ.get('SCRAPER_API_KEY')
 # Management Commands
 COMMANDS_MODULE = 'burplist.commands'
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'burplist (+http://www.yourdomain.com)'
 
@@ -70,7 +69,7 @@ DOWNLOAD_DELAY = 0 if SCRAPER_API_KEY is not None else 2
 # COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
-# TELNETCONSOLE_ENABLED = False
+TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
@@ -93,18 +92,17 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
     'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
     'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware': 401,
-    # 'scrapy_splash.SplashCookiesMiddleware': 723,
-    # 'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
 
 # scrapy-fake-useragent
 # https://github.com/alecxe/scrapy-fake-useragent
 FAKEUSERAGENT_PROVIDERS = [
-    'scrapy_fake_useragent.providers.FakeUserAgentProvider',  # This is the first provider we'll try
-    'scrapy_fake_useragent.providers.FakerProvider',  # If FakeUserAgentProvider fails, we'll use faker to generate a user-agent string for us
-    'scrapy_fake_useragent.providers.FixedUserAgentProvider',  # Fall back to USER_AGENT value
+    'scrapy_fake_useragent.providers.FakeUserAgentProvider',
+    'scrapy_fake_useragent.providers.FakerProvider',
+    'scrapy_fake_useragent.providers.FixedUserAgentProvider',
 ]
+
 
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
 
@@ -113,17 +111,14 @@ USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 EXTENSIONS = {
     'burplist.extensions.SentryLogging': -1,
-    # 'scrapy.extensions.telnet.TelnetConsole': None,
 }
-# if ENVIRONMENT == 'main':
-#     EXTENSIONS['scrapy.extensions.statsmailer.StatsMailer'] = 500
 
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'burplist.pipelines.ExistingProductPricePipeline': 300,
-    'burplist.pipelines.NewProductPricePipeline': 400,
+    'burplist.pipelines.UpdatesPipeline': 300,
+    'burplist.pipelines.CreationPipeline': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -147,12 +142,6 @@ HTTPCACHE_EXPIRATION_SECS = os.environ.get('HTTPCACHE_EXPIRATION_SECS', 0)
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-
-# Splash
-# SPLASH_URL = 'http://localhost:8050'
-# DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-# HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
-
 # Sentry
 # https://stackoverflow.com/questions/25262765/handle-all-exception-in-scrapy-with-sentry
 SENTRY_DSN = os.environ.get('SENTRY_DSN')
@@ -166,14 +155,3 @@ DATABASE_CONNECTION_STRING = '{drivername}://{user}:{password}@{host}:{port}/{db
     port=os.environ.get('PG_PORT', '5432'),
     db_name=os.environ.get('PG_DATABASE', 'burplist'),
 )
-
-# Email Settings
-MAIL_FROM = os.environ.get('MAIL_FROM')
-MAIL_HOST = os.environ.get('MAIL_HOST')
-MAIL_PORT = os.environ.get('MAIL_PORT')
-MAIL_USER = os.environ.get('MAIL_USER')
-MAIL_PASS = os.environ.get('MAIL_PASS')
-MAIL_TLS = os.environ.get('MAIL_TLS', True)
-MAIL_SSL = os.environ.get('MAIL_SSL', True)
-
-STATSMAILER_RCPTS = [os.environ.get('STATSMAILER_RCPTS')]  # TODO: Get a list from environment variable
