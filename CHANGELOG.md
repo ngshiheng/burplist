@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.7.0 (2022-11-05)
+### Feature
+* Add FiltersPipeline to filter unwanted products ([`5ffbdcc`](https://github.com/ngshiheng/burplist/commit/5ffbdccebdf74413ea53865b9b0efc6a0b254915))
+
+### Documentation
+* Add section to delete products via scrapy shell ([`9bd7750`](https://github.com/ngshiheng/burplist/commit/9bd77502ea624b3ace941fa11d002b563842ff1b))
+
 ## v1.6.21 (2022-11-05)
 ### Fix
 * **spider:** Lazada spider url param path ([`7f84e11`](https://github.com/ngshiheng/burplist/commit/7f84e113ef4d9b998fd50d31a7c577957bbeee40))
