@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.8.0 (2022-11-05)
+### Feature
+* Use scrapeops for job monitoring ([`113444e`](https://github.com/ngshiheng/burplist/commit/113444e5fe8f714a7a9cc904a1f90fd7787f70c6))
+
 ## v1.7.0 (2022-11-05)
 ### Feature
 * Add FiltersPipeline to filter unwanted products ([`5ffbdcc`](https://github.com/ngshiheng/burplist/commit/5ffbdccebdf74413ea53865b9b0efc6a0b254915))
