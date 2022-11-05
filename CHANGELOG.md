@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.20 (2022-11-05)
+### Fix
+* **spider:** Shopee spider regression due to api requirement change ([`7e0fa59`](https://github.com/ngshiheng/burplist/commit/7e0fa59a55d979ac9aaf08d92a0e913137274cbe))
+
 ## v1.6.19 (2022-11-03)
 ### Fix
 * **spider:** Remove rate limiting flag & fetch beer style from filterItems ([`5831825`](https://github.com/ngshiheng/burplist/commit/5831825533ebe98435a8d2cd15227d4ffba98a82))
