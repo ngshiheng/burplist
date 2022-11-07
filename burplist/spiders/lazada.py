@@ -7,7 +7,6 @@ from scrapy.utils.project import get_project_settings
 
 from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_quantity
-from burplist.utils.proxy import get_proxy_url
 
 settings = get_project_settings()
 
@@ -28,13 +27,14 @@ class LazadaSpider(scrapy.Spider):
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
         },
     }
-    start_urls = [get_proxy_url(f'{base_url}ajax=true')]
+    start_urls = [f'{base_url}ajax=true']
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true
         @returns requests 1
         """
+
         data = response.json()
         filter_items = data['mods']['filter']['filterItems'][2]
         if filter_items['title'] != 'Beer Type':
@@ -49,7 +49,7 @@ class LazadaSpider(scrapy.Spider):
             }
 
             url = self.base_url + urlencode(params)
-            yield response.follow(get_proxy_url(url), callback=self.parse_collection, meta={'style': style['title']})
+            yield response.follow(url, callback=self.parse_collection, meta={'style': style['title']})
 
     def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         data = response.json()

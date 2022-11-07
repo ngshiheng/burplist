@@ -87,14 +87,16 @@ TELNETCONSOLE_ENABLED = False
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    # 'burplist.middlewares.BurplistDownloaderMiddleware': 543,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
     'scrapeops_scrapy.middleware.retry.RetryMiddleware': 300,
     'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
     'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware': 401,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 500,
+    'burplist.middlewares.ProxyMiddleware': 501,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
+
 
 # scrapy-fake-useragent
 # https://github.com/alecxe/scrapy-fake-useragent

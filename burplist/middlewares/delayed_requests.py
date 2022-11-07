@@ -8,11 +8,13 @@ _DeferredResultT = TypeVar("_DeferredResultT", contravariant=True)
 
 
 class DelayedRequestsMiddleware:
-    """
-    Usage example:
-    yield scrapy.Request(url='http://example.com/page/1/', meta={ 'delay_request_by': 5 })
+    """Middleware to add delay in between requests
 
-    Reference: https://stackoverflow.com/questions/19135875/add-a-delay-to-a-specific-scrapy-request/64903556#64903556
+    Usage example:
+        yield scrapy.Request(url='http://example.com/page/1/', meta={ 'delay_request_by': 5 })
+
+    Reference:
+        https://stackoverflow.com/questions/19135875/add-a-delay-to-a-specific-scrapy-request/64903556#64903556
     """
 
     def process_request(self, request: Request, spider: Spider) -> Awaitable[_DeferredResultT]:
