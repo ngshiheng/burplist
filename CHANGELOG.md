@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.9.0 (2022-11-07)
+### Feature
+* Add proxy middleware ([`fa0b3ec`](https://github.com/ngshiheng/burplist/commit/fa0b3ecdbf421df5e44c9c7c8baed5c2a51f89af))
+
 ## v1.8.0 (2022-11-05)
 ### Feature
 * Use scrapeops for job monitoring ([`113444e`](https://github.com/ngshiheng/burplist/commit/113444e5fe8f714a7a9cc904a1f90fd7787f70c6))
