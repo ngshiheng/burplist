@@ -31,6 +31,9 @@ class BeerForceSpider(scrapy.Spider):
         @url https://beerforce.sg/collections/ipa
         @returns requests 1
         """
+        if "/collections/merchandise" in response.request.url:
+            return
+
         product_details = response.xpath(BeerForceLocator.product_details)
         product_media = response.xpath(BeerForceLocator.product_media)
 
