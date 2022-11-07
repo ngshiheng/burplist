@@ -121,6 +121,7 @@ EXTENSIONS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
+    'burplist.pipelines.DuplicatesPipeline': 100,
     'burplist.pipelines.FiltersPipeline': 200,
     'burplist.pipelines.UpdatesPipeline': 300,
     'burplist.pipelines.CreationPipeline': 400,

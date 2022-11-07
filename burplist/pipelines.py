@@ -1,4 +1,3 @@
-import logging
 from typing import Any
 
 from itemadapter import ItemAdapter
@@ -11,7 +10,31 @@ from burplist.database.utils import Session, create_table, db_connect
 from burplist.items import ProductItem
 from burplist.utils.const import MAINSTREAM_BEER_BRANDS, SKIPPED_ITEMS
 
-logger = logging.getLogger(__name__)
+
+class DuplicatesPipeline:
+    """Pipeline to de-duplicate products"""
+
+    def __init__(self):
+        self.seen = set()
+
+    def process_item(self, item: ProductItem, spider: Spider) -> ProductItem:
+        """`url` and `quantity` is used to define the uniqueness of a product
+
+        Using `url` alone isn't enough because the same URL (product) can have type of different `quantity`
+        e.g. "Pabst Blue Ribbon American Lager" can be of 'Single', '6 Packs' or 'Case of 24'
+        """
+        del spider  # Unused
+
+        adapter = ItemAdapter(item)
+
+        url = adapter['url']
+        quantity = adapter['quantity']
+
+        if (url, quantity) in self.seen:
+            raise DropItem(f"Dropping duplicated item <{url}>")
+
+        self.seen.add((url, quantity))
+        return item
 
 
 class FiltersPipeline:
@@ -50,15 +73,8 @@ class UpdatesPipeline:
         """Update existing product information
 
         Also create a new price for existing products if the new price differs from the existing price
-
-        `url` and `quantity` is used to define the uniqueness of a product
-        Using `url` alone isn't enough because the same URL (product) can have type of different `quantity`
-        e.g. "Pabst Blue Ribbon American Lager" can be of 'Single', '6 Packs' or 'Case of 24'
-
         We save each product as a dict in `self.products` list so that it later be used for bulk saving
         """
-        del spider  # Unused
-
         adapter = ItemAdapter(item)
 
         url = adapter['url']
@@ -70,7 +86,7 @@ class UpdatesPipeline:
             existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
 
         except ProgrammingError as exception:
-            logger.exception('An unexpected error has occurred.', extra=dict(exception=exception, url=url, quantity=quantity))
+            spider.logger.exception('An unexpected error has occurred.', extra=dict(exception=exception, url=url, quantity=quantity))
             raise DropItem(f'Dropping item <{url}> due to unexpected error.') from exception
 
         finally:
@@ -101,7 +117,7 @@ class UpdatesPipeline:
             )
             self.prices.append(price)
 
-        raise DropItem(f'Dropping item <{url}> after update to avoid creating duplicated products in the following pipeline.')
+        raise DropItem(f'Dropping existing item <{url}> with the same price after update.')
 
     def close_spider(self, spider: Spider) -> None:
         """Save all the scraped products and prices in bulk on spider close event
@@ -111,11 +127,10 @@ class UpdatesPipeline:
         """
         with Session() as session:
             session.bulk_update_mappings(Product, self.products_update)
-            logger.info(f'Updating {len(self.products_update)} existing products information')
+            spider.logger.info(f'Updating {len(self.products_update)} existing products information')
 
-            prices = {frozenset(price.items()): price for price in self.prices}.values()  # Remove duplicated dict in a list. Only works if all values in dict are hashable. Reference: https://www.geeksforgeeks.org/python-removing-duplicate-dicts-in-list/
-            session.bulk_insert_mappings(Price, prices)
-            logger.info(f'Creating {len(self.prices)} new prices for existing products')
+            session.bulk_insert_mappings(Price, self.prices)
+            spider.logger.info(f'Creating {len(self.prices)} new prices for existing products')
 
             session.commit()
 
@@ -166,17 +181,15 @@ class CreationPipeline:
         This greatly reduces the performance gains of the bulk operation
         Though, prices do get inserted to the DB in bulk
 
-        Reference: https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
+        Reference:
+            https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
         """
-        del spider  # Unused
-
         with Session() as session:
-            products = {frozenset(product.items()): product for product in self.products}.values()  # Remove duplicated dict in a list
-            session.bulk_insert_mappings(Product, products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
-            logger.info(f'Creating {len(products)} new products')
+            session.bulk_insert_mappings(Product, self.products, return_defaults=True)  # Set `return_defaults=True` so that PK (inserted one at a time) value is available for FK usage at another table
+            spider.logger.info(f'Creating {len(self.products)} new products')
 
-            prices = [dict(price=product['price'], product_id=product['id']) for product in products]
+            prices = [dict(price=product['price'], product_id=product['id']) for product in self.products]
             session.bulk_insert_mappings(Price, prices)
-            logger.info(f'Creating {len(prices)} new prices')
+            spider.logger.info(f'Creating {len(prices)} new prices')
 
             session.commit()

@@ -41,7 +41,6 @@ class ShopeeSpider(scrapy.Spider):
         data = response.json()
         items = data['items']
 
-        # Stop sending requests when the REST API returns an empty array
         if items:
             for item in items:
                 product = item['item_basic']

@@ -3,6 +3,7 @@ from typing import Generator
 from urllib.parse import urlencode
 
 import scrapy
+from scrapy.downloadermiddlewares.retry import get_retry_request
 from scrapy.utils.project import get_project_settings
 
 from burplist.items import ProductLoader
@@ -34,22 +35,27 @@ class LazadaSpider(scrapy.Spider):
         @url https://www.lazada.sg/shop-groceries-winesbeersspirits-beer-craftspecialtybeer/?ajax=true
         @returns requests 1
         """
+        try:
+            data = response.json()
+            filter_items = data['mods']['filter']['filterItems'][2]
+            if filter_items['title'] != 'Beer Type':
+                raise ValueError('Invalid ppath.')
 
-        data = response.json()
-        filter_items = data['mods']['filter']['filterItems'][2]
-        if filter_items['title'] != 'Beer Type':
-            raise ValueError('Invalid ppath.')
+            styles = filter_items['options']
+            for style in styles:
+                params = {
+                    'rating': 4,
+                    'ajax': 'true',
+                    'ppath': style['value'],
+                }
 
-        styles = filter_items['options']
-        for style in styles:
-            params = {
-                'rating': 4,
-                'ajax': 'true',
-                'ppath': style['value'],
-            }
+                url = self.base_url + urlencode(params)
+                yield response.follow(url, callback=self.parse_collection, meta={'style': style['title']})
 
-            url = self.base_url + urlencode(params)
-            yield response.follow(url, callback=self.parse_collection, meta={'style': style['title']})
+        except Exception as error:
+            retry_request = get_retry_request(response.request, reason=error, spider=self)
+            if retry_request:
+                yield retry_request
 
     def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         data = response.json()

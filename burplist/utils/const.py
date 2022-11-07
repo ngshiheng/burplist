@@ -30,7 +30,6 @@ SKIPPED_ITEMS = {
     'keg',
     'litre',
     'mug',
-    'personalized',
     't-shirt',
     'tee',
 }
