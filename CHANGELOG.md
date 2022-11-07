@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.0 (2022-11-07)
+### Feature
+* Add item deduplication pipeline ([`424a3ce`](https://github.com/ngshiheng/burplist/commit/424a3ce047831a2307d8a6f697b7253bf523477d))
+
+### Fix
+* **spider:** Skip merchandise page for beerforce ([`1036068`](https://github.com/ngshiheng/burplist/commit/10360683f7ffc1d8a7cd807862d440f090bc79d1))
+
 ## v1.9.0 (2022-11-07)
 ### Feature
 * Add proxy middleware ([`fa0b3ec`](https://github.com/ngshiheng/burplist/commit/fa0b3ecdbf421df5e44c9c7c8baed5c2a51f89af))
