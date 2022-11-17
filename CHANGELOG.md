@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.1 (2022-11-17)
+### Fix
+* **spider:** Handle case where product is returned as null from fairprice api ([`700980b`](https://github.com/ngshiheng/burplist/commit/700980b3d559736e36bbe98c1ee8806b0696451d))
+
 ## v1.10.0 (2022-11-07)
 ### Feature
 * Add item deduplication pipeline ([`424a3ce`](https://github.com/ngshiheng/burplist/commit/424a3ce047831a2307d8a6f697b7253bf523477d))
