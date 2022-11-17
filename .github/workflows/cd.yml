@@ -6,6 +6,7 @@ on:
         paths:
             - "**.py"
             - "poetry.lock"
+    workflow_dispatch: null
 jobs:
     test:
         uses: ./.github/workflows/ci.yml
