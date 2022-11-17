@@ -52,38 +52,39 @@ class FairPriceSpider(scrapy.Spider):
         data = response.json()['data']
         products = data['product']
 
-        for product in products:
-            name = product['name']
-            brand = product['brand']['name']
-            metadata = product['metaData']
-            slug = product['slug']
+        if products:
+            for product in products:
+                name = product['name']
+                brand = product['brand']['name']
+                metadata = product['metaData']
+                slug = product['slug']
 
-            loader = ProductLoader()
+                loader = ProductLoader()
 
-            loader.add_value('platform', self.name)
-            loader.add_value('name', name)
-            loader.add_value('url', f'https://www.fairprice.com.sg/product/{slug}')
+                loader.add_value('platform', self.name)
+                loader.add_value('name', name)
+                loader.add_value('url', f'https://www.fairprice.com.sg/product/{slug}')
 
-            loader.add_value('brand', brand)
-            loader.add_value('origin', metadata['Country of Origin'])
-            loader.add_value('style', parse_style(metadata.get('Key Information', '')))
+                loader.add_value('brand', brand)
+                loader.add_value('origin', metadata['Country of Origin'])
+                loader.add_value('style', parse_style(metadata.get('Key Information', '')))
 
-            loader.add_value('abv', name)
-            loader.add_value('volume', metadata['DisplayUnit'])
-            loader.add_value('quantity', self.get_product_quantity(product))
+                loader.add_value('abv', name)
+                loader.add_value('volume', metadata['DisplayUnit'])
+                loader.add_value('quantity', self.get_product_quantity(product))
 
-            image_url = product['images'][0]
-            loader.add_value('image_url', image_url)
+                image_url = product['images'][0]
+                loader.add_value('image_url', image_url)
 
-            loader.add_value('price', self.get_product_price(product))
+                loader.add_value('price', self.get_product_price(product))
 
-            yield loader.load_item()
+                yield loader.load_item()
 
-        has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
-        if has_next_page is True:
-            self.params['page'] += 1
-            next_page = self.base_url + urlencode(self.params)
-            yield response.follow(next_page, callback=self.parse)
+            has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
+            if has_next_page is True:
+                self.params['page'] += 1
+                next_page = self.base_url + urlencode(self.params)
+                yield response.follow(next_page, callback=self.parse)
 
     @ staticmethod
     def get_product_price(product: dict[str, Any]) -> Any:
