@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.4 (2022-11-23)
+### Fix
+* **deps:** Update dependency colorlog to v6.7.0 ([`a9fb005`](https://github.com/ngshiheng/burplist/commit/a9fb005a43bc4c6b41e7ac191628b6a06132c8e9))
+
 ## v1.10.3 (2022-11-23)
 ### Fix
 * **deps:** Regenerate poetry.lock file ([`313789f`](https://github.com/ngshiheng/burplist/commit/313789f7a01b8633695c46a1644b6e0dc7e995a0))
