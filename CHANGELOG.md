@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.2 (2022-11-23)
+### Fix
+* Install setuptool ([`9e94e5d`](https://github.com/ngshiheng/burplist/commit/9e94e5de2532366f440d4d609ac234274d508210))
+
 ## v1.10.1 (2022-11-17)
 ### Fix
 * **spider:** Handle case where product is returned as null from fairprice api ([`700980b`](https://github.com/ngshiheng/burplist/commit/700980b3d559736e36bbe98c1ee8806b0696451d))
