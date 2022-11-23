@@ -15,6 +15,7 @@ FROM base AS builder
 ARG ENVIRONMENT
 ENV ENVIRONMENT=${ENVIRONMENT}
 RUN pip install "poetry==$POETRY_VERSION"
+RUN pip install setuptools --upgrade
 COPY pyproject.toml /app
 COPY poetry.lock /app
 RUN poetry install --no-root \
