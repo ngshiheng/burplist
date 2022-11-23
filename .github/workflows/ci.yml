@@ -30,7 +30,6 @@ jobs:
                   poetry-version: "${{ matrix.poetry-version }}"
             - name: Install Dependencies
               run: |
-                  pip3 install setuptools --upgrade
                   poetry install --no-root
             - name: Flake8
               run: |
