@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.3 (2022-11-23)
+### Fix
+* **deps:** Regenerate poetry.lock file ([`313789f`](https://github.com/ngshiheng/burplist/commit/313789f7a01b8633695c46a1644b6e0dc7e995a0))
+* **deps:** Pin dependencies ([`94ef414`](https://github.com/ngshiheng/burplist/commit/94ef414656552ca4ab4c68351c6b5cf6c772110d))
+
 ## v1.10.2 (2022-11-23)
 ### Fix
 * Install setuptool ([`9e94e5d`](https://github.com/ngshiheng/burplist/commit/9e94e5de2532366f440d4d609ac234274d508210))
