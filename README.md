@@ -142,14 +142,6 @@ poetry shell
 scrapy list | xargs -n 1 -P 0 scrapy crawl
 ```
 
-### Run on Heroku (optional)
-
-This project is deployed on Heroku. To run on Heroku, you'll need to install [the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
-
-```sh
-heroku run scrapy list | xargs -n 1 heroku run scrapy crawl
-```
-
 ---
 
 ## Integrations
