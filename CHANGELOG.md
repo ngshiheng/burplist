@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.5 (2022-12-02)
+### Fix
+* **locators:** Beerforce spider theme change ([`cafeba6`](https://github.com/ngshiheng/burplist/commit/cafeba6a5559c4f4fd1f2e024812ad04b7bb164b))
+
 ## v1.10.4 (2022-11-23)
 ### Fix
 * **deps:** Update dependency colorlog to v6.7.0 ([`a9fb005`](https://github.com/ngshiheng/burplist/commit/a9fb005a43bc4c6b41e7ac191628b6a06132c8e9))
