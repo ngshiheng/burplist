@@ -38,8 +38,8 @@ class BeerForceSpider(scrapy.Spider):
         product_media = response.xpath(BeerForceLocator.product_media)
 
         for product, media in zip(product_details, product_media):
-            raw_price = product.xpath(BeerForceLocator.raw_price).get()
-            if raw_price is None:
+            price = product.xpath(BeerForceLocator.product_price).get()
+            if price is None:
                 continue
 
             loader = ProductLoader(selector=product)
@@ -52,7 +52,7 @@ class BeerForceSpider(scrapy.Spider):
 
             loader.add_value('quantity', 1)
 
-            loader.add_xpath('price', BeerForceLocator.product_price)
+            loader.add_value('price', price)
 
             yield scrapy.Request(
                 response.urljoin(media.xpath(BeerForceLocator.product_url).get()),
