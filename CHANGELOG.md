@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.7 (2022-12-05)
+### Fix
+* **deps:** Update dependency ipython to v8.7.0 ([`4ee24b4`](https://github.com/ngshiheng/burplist/commit/4ee24b4c79d993adb2eaba3ed7e4925064c21b5b))
+
 ## v1.10.6 (2022-12-05)
 ### Fix
 * Poetry tries to remove setuptools and then complains it can't find it ([`88b2a81`](https://github.com/ngshiheng/burplist/commit/88b2a816c7d31081014da97d8b417a35f7a15ed1))
