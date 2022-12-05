@@ -893,21 +893,19 @@ urllib3 = ">=1.25.10"
 
 [[package]]
 name = "scrapy"
-version = "2.6.3"
+version = "2.7.1"
 description = "A high-level Web Crawling and Web Scraping framework"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 cryptography = ">=3.3"
 cssselect = ">=0.9.1"
 itemadapter = ">=0.1.0"
 itemloaders = ">=1.0.1"
-lxml = [
-    {version = ">=3.5.0", markers = "platform_python_implementation == \"CPython\""},
-    {version = ">=4.0.0", markers = "platform_python_implementation == \"PyPy\""},
-]
+lxml = ">=4.3.0"
+packaging = "*"
 parsel = ">=1.5.0"
 protego = ">=0.1.15"
 PyDispatcher = {version = ">=2.0.5", markers = "platform_python_implementation == \"CPython\""}
@@ -919,7 +917,7 @@ setuptools = "*"
 tldextract = "*"
 Twisted = ">=18.9.0"
 w3lib = ">=1.17.0"
-"zope.interface" = ">=5.0.0"
+"zope.interface" = ">=5.1.0"
 
 [[package]]
 name = "scrapy-fake-useragent"
@@ -1249,7 +1247,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d392626e771db43a8ad19dab5861b19233e96e8086aa6416518629badb974205"
+content-hash = "46b1046fc17b6a2866db20c077fd69aead4b48c085f1789962080f37be030d7a"
 
 [metadata.files]
 alembic = [
@@ -1953,8 +1951,8 @@ scrapeops-scrapy = [
     {file = "scrapeops_scrapy-0.5.2.tar.gz", hash = "sha256:e4ab26d29a578883f1f47fc895e69800a4806ce93aa7e2df1aae511e6dc91528"},
 ]
 scrapy = [
-    {file = "Scrapy-2.6.3-py2.py3-none-any.whl", hash = "sha256:24b7641cb115853b4b81f0bda1b042e745b7a6209072a189a751729520f1e42d"},
-    {file = "Scrapy-2.6.3.tar.gz", hash = "sha256:bdff1aaf3547c2e540436d3ab8680b21039327bd5d3a2ef89c34165992d3e5f3"},
+    {file = "Scrapy-2.7.1-py2.py3-none-any.whl", hash = "sha256:ba5c99a0a6bc5d51708fb1919843cad650711d2baef3124e4ac3f2e1759f4ca6"},
+    {file = "Scrapy-2.7.1.tar.gz", hash = "sha256:30fa408353d24b1df979df2ea4afbd19b4ae02fb2207f218d246332f1e1cf14e"},
 ]
 scrapy-fake-useragent = [
     {file = "scrapy-fake-useragent-1.4.4.macosx-10.9-x86_64.tar.gz", hash = "sha256:3b17e982e646918dc25080da0672812d07bfb7a92a58377c014c74e0182c665e"},
