@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.6 (2022-12-05)
+### Fix
+* Poetry tries to remove setuptools and then complains it can't find it ([`88b2a81`](https://github.com/ngshiheng/burplist/commit/88b2a816c7d31081014da97d8b417a35f7a15ed1))
+
 ## v1.10.5 (2022-12-02)
 ### Fix
 * **locators:** Beerforce spider theme change ([`cafeba6`](https://github.com/ngshiheng/burplist/commit/cafeba6a5559c4f4fd1f2e024812ad04b7bb164b))
