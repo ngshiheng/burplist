@@ -36,7 +36,7 @@ class LazadaSpider(scrapy.Spider):
         @returns requests 1
         """
         data = response.json()
-        filter_items = data['mods']['filter']['filterItems'][2]
+        filter_items = data['mods']['filter']['filterItems'][7]
         if filter_items['title'] != 'Beer Type':
             raise ValueError('Invalid ppath.')
 
