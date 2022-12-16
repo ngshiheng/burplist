@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.10 (2022-12-16)
+### Fix
+* **spider:** Api change ([`ca66838`](https://github.com/ngshiheng/burplist/commit/ca668380e7969fa6339f13ba1edc27d1a6a15454))
+
 ## v1.10.9 (2022-12-06)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.11.1 ([`237bc08`](https://github.com/ngshiheng/burplist/commit/237bc08b70df6424162ce51af4011b4a75f56f56))
