@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.11 (2022-12-18)
+### Fix
+* **spider:** Handle captcha challenge ([`2bc54e7`](https://github.com/ngshiheng/burplist/commit/2bc54e791a9e17c4334210a973f22694dae3b278))
+
 ## v1.10.10 (2022-12-16)
 ### Fix
 * **spider:** Api change ([`ca66838`](https://github.com/ngshiheng/burplist/commit/ca668380e7969fa6339f13ba1edc27d1a6a15454))
