@@ -2,9 +2,14 @@ import os
 from typing import Generator
 
 import scrapy
+from scrapy.utils.project import get_project_settings
+from scrapy.downloadermiddlewares.retry import get_retry_request
 
 from burplist.items import ProductLoader
 from burplist.utils.parsers import parse_brand, parse_quantity, parse_style
+
+
+settings = get_project_settings()
 
 
 class ShopeeSpider(scrapy.Spider):
@@ -16,6 +21,10 @@ class ShopeeSpider(scrapy.Spider):
     name = 'shopee'
     custom_settings = {
         'DOWNLOAD_DELAY': os.environ.get('SHOPEE_DOWNLOAD_DELAY', 5),
+        'DOWNLOADER_MIDDLEWARES': {
+            **settings.get('DOWNLOADER_MIDDLEWARES'),
+            'burplist.middlewares.DelayedRequestsMiddleware': 100,
+        },
     }
 
     start_urls = [
@@ -39,6 +48,14 @@ class ShopeeSpider(scrapy.Spider):
         @scrapes platform name url quantity price
         """
         data = response.json()
+        if 'challenge_type' in data:
+            error = f'Challenged by Shopee. URL <{response.request.url}>. IP <{response.ip_address}>.'
+
+            retry_request = get_retry_request(response.request, reason=error, spider=self)
+            if retry_request:
+                yield retry_request
+            return
+
         items = data['items']
 
         if items:
