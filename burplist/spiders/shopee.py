@@ -20,7 +20,7 @@ class ShopeeSpider(scrapy.Spider):
 
     name = 'shopee'
     custom_settings = {
-        'DOWNLOAD_DELAY': os.environ.get('SHOPEE_DOWNLOAD_DELAY', 5),
+        'DOWNLOAD_DELAY': os.environ.get('SHOPEE_DOWNLOAD_DELAY', 60),
         'DOWNLOADER_MIDDLEWARES': {
             **settings.get('DOWNLOADER_MIDDLEWARES'),
             'burplist.middlewares.DelayedRequestsMiddleware': 100,
@@ -48,7 +48,7 @@ class ShopeeSpider(scrapy.Spider):
         @scrapes platform name url quantity price
         """
         data = response.json()
-        if 'challenge_type' in data:
+        if 'items' not in data:
             error = f'Challenged by Shopee. URL <{response.request.url}>. IP <{response.ip_address}>.'
 
             retry_request = get_retry_request(response.request, reason=error, spider=self)
