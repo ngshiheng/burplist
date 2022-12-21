@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.12 (2022-12-21)
+### Fix
+* **spider:** Increase download delay for shopee ([`46d154a`](https://github.com/ngshiheng/burplist/commit/46d154a6c635febfb5fd8a41e6a8b5e6c6bf02be))
+
 ## v1.10.11 (2022-12-18)
 ### Fix
 * **spider:** Handle captcha challenge ([`2bc54e7`](https://github.com/ngshiheng/burplist/commit/2bc54e791a9e17c4334210a973f22694dae3b278))
