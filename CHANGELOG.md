@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.1 (2023-01-28)
+### Fix
+* **deps:** Update dependency alembic to v1.9.2 ([`7fad6b4`](https://github.com/ngshiheng/burplist/commit/7fad6b482fcf1cc3bfd5ca38aaa6f1091804f1af))
+
 ## v1.11.0 (2023-01-28)
 ### Feature
 * Add craftbeersg spider ([`f9badd0`](https://github.com/ngshiheng/burplist/commit/f9badd0f49dfff9ae9f13aac50e2fb47202cab38))
