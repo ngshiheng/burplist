@@ -20,7 +20,7 @@ scrapeops-scrapy = "0.5.2"
 [tool.poetry.dev-dependencies]
 autopep8 = "==2.0.1"
 flake8 = "==6.0.0"
-mypy = "^0.910"
+mypy = "0.910"
 pre-commit = "==2.20.0"
 pylint = "==2.15.8"
 
