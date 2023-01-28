@@ -1,5 +1,13 @@
 # Usage
 
+- [Usage](#usage)
+  - [List all available spiders](#list-all-available-spiders)
+  - [Using `docker-compose`](#using-docker-compose)
+  - [Run single spider](#run-single-spider)
+  - [Run all spiders](#run-all-spiders)
+  - [Run all spiders, in parallel](#run-all-spiders-in-parallel)
+  - [Optional: Integrations](#optional-integrations)
+
 ## List all available spiders
 
 ```sh

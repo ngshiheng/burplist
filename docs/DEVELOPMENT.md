@@ -1,20 +1,28 @@
-# Development, Debug and Troubleshoot
+# Development, Debug & Troubleshoot
 
-- [Development, Debug and Troubleshoot](#development-debug-and-troubleshoot)
+- [Development, Debug \& Troubleshoot](#development-debug--troubleshoot)
+  - [Poetry Setup](#poetry-setup)
   - [Database Setup](#database-setup)
   - [XPath Quick Guide](#xpath-quick-guide)
   - [Scrapy Shell](#scrapy-shell)
   - [How-to's](#how-tos)
     - [Add delay to requests](#add-delay-to-requests)
-    - [Work with Scrapy Contracts](#work-with-scrapy-contracts)
-    - [Use Item Loaders](#use-item-loaders)
+    - [Work with Scrapy contracts](#work-with-scrapy-contracts)
+    - [Use item loaders](#use-item-loaders)
     - [Unit test Scrapy spiders](#unit-test-scrapy-spiders)
-    - [Bulk Insert in SQLAlchemy](#bulk-insert-in-sqlalchemy)
-    - [Deal with Javascript heavy websites](#deal-with-javascript-heavy-websites)
+    - [Bulk insert in SQLAlchemy](#bulk-insert-in-sqlalchemy)
+    - [Deal with JavaScript heavy websites](#deal-with-javascript-heavy-websites)
+  - [References](#references)
+    - [List of awesome Scrapy libraries](#list-of-awesome-scrapy-libraries)
+    - [Docker](#docker)
+
+## Poetry Setup
+
+_TL;DR run `make dev`_
 
 ## Database Setup
 
-For local development:
+_TL;DR run `make setupdb`_
 
 ```sh
 # To spin up a PostgreSQL Docker container
@@ -84,11 +92,11 @@ def remove_products_prices(name: str) -> None:
 -   https://stackoverflow.com/questions/19135875/add-a-delay-to-a-specific-scrapy-request/64903556#64903556
 -   https://stackoverflow.com/questions/41404281/how-to-retry-the-request-n-times-when-an-item-gets-an-empty-field/41404391#41404391
 
-### Work with Scrapy Contracts
+### Work with Scrapy contracts
 
 -   https://stackoverflow.com/questions/25764201/how-to-work-with-the-scrapy-contracts
 
-### Use Item Loaders
+### Use item loaders
 
 -   https://towardsdatascience.com/demystifying-scrapy-item-loaders-ffbc119d592a
 
@@ -96,12 +104,12 @@ def remove_products_prices(name: str) -> None:
 
 -   https://stackoverflow.com/questions/6456304/scrapy-unit-testing
 
-### Bulk Insert in SQLAlchemy
+### Bulk insert in SQLAlchemy
 
 -   [I’m inserting 400,000 rows with the ORM and it’s really slow!](https://docs.sqlalchemy.org/en/13/faq/performance.html#i-m-inserting-400-000-rows-with-the-orm-and-it-s-really-slow)
 -   https://stackoverflow.com/questions/36386359/sqlalchemy-bulk-insert-with-one-to-one-relation
 
-### Deal with Javascript heavy websites
+### Deal with JavaScript heavy websites
 
 You can inspect your browser and `Cmd + Shift + P` to `> Disable JavaScript` to check if the page loads using JavaScript.
 
@@ -112,3 +120,16 @@ poetry run scrapy view https://coldstorage.com.sg/beers-wines-spirits/beer-cider
 -   https://thepythonscrapyplaybook.com/
 -   https://docs.scrapy.org/en/latest/topics/dynamic-content.html
 -   https://www.zyte.com/blog/handling-javascript-in-scrapy-with-splash/
+
+## References
+
+### List of awesome Scrapy libraries
+
+-   https://github.com/croqaz/awesome-scrapy
+-   https://github.com/groupbwt/scrapy-boilerplate
+
+### Docker
+
+-   https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
+-   https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
+-   https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands

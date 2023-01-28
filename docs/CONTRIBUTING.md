@@ -8,6 +8,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 2. Install all dependencies using `make dev`
 3. Set up a local Postgres with Docker using `make setupdb`.
 
+You may find other development guide [here](DEVELOPMENT.md).
+
 > **Note**
 > Check out the [Makefile](../Makefile) to find out what each command is doing.
 

@@ -43,21 +43,8 @@ This software is only used for research purposes, users must abide by the releva
 
 ## Usage
 
-Check out [this documentation](docs/USAGE.md) on how to use.
+See [this documentation](docs/USAGE.md) on how to use Burplist.
 
 ## Contributing
 
-For guidance on setting up a development environment and how to make a contribution, see the [contributing guidelines](docs/CONTRIBUTING.md).
-
-## References
-
-### List of awesome Scrapy libraries
-
--   https://github.com/croqaz/awesome-scrapy
--   https://github.com/groupbwt/scrapy-boilerplate
-
-### Docker
-
--   https://stackoverflow.com/questions/60340228/how-to-connect-to-postgres-created-with-docker-compose-from-outside-host
--   https://stackoverflow.com/questions/50983177/how-to-connect-to-postgresql-using-docker-compose/52543774
--   https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands
+For guidance on setting up a development environment and how to make a contribution, read the [contributing guidelines](docs/CONTRIBUTING.md).
