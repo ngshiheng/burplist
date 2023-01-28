@@ -13,9 +13,9 @@ ipython = "==8.7.0"
 price-parser = "0.3.4"
 psycopg2-binary = "==2.9.5"
 python = "^3.9"
+scrapeops-scrapy = "0.5.2"
 scrapy-fake-useragent = "1.4.4"
 sentry-sdk = "==1.11.1"
-scrapeops-scrapy = "0.5.2"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "==2.0.1"
@@ -41,6 +41,14 @@ warn_redundant_casts = true
 warn_return_any = true
 warn_unreachable = true
 warn_unused_configs = true
+
+[tool.black]
+line-length = 150
+
+[tool.isort]
+extra_standard_library = ["toml"]
+line_length = 150
+profile = "black"
 
 [tool.semantic_release]
 branch = "main"

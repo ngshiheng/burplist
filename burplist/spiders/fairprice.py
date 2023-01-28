@@ -14,28 +14,28 @@ class FairPriceSpider(scrapy.Spider):
     https://www.fairprice.com.sg/category/craft-beer
     """
 
-    name = 'fairprice'
-    base_url = 'https://website-api.omni.fairprice.com.sg/api/product/v2?'
+    name = "fairprice"
+    base_url: str = "https://website-api.omni.fairprice.com.sg/api/product/v2?"
 
     params: dict[str, Any] = {
-        'category': 'craft-beer',
-        'experiments': 'recHome-B%2CbsHome-B%2CpastPurchaseCategory-B%2CsearchVariant-B%2CtrendH-B%2CtimerVariant-Z%2CinlineBanner-A%2Csp-B%2CsubstitutionBSVariant-A%2Cgv-A%2CSPI-Z%2CSNLI-A%2CSC-A%2CSellerCrtVariant-B%2Cdc-expB%2CadLabel-A%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B',
-        'includeTagDetails': 'true',
-        'page': 1,  # Starting page
-        'pageType': 'category',
-        'slug': 'craft-beer',
-        'storeId': '165',
-        'url': 'craft-beer',
+        "category": "craft-beer",
+        "experiments": "recHome-B%2CbsHome-B%2CpastPurchaseCategory-B%2CsearchVariant-B%2CtrendH-B%2CtimerVariant-Z%2CinlineBanner-A%2Csp-B%2CsubstitutionBSVariant-A%2Cgv-A%2CSPI-Z%2CSNLI-A%2CSC-A%2CSellerCrtVariant-B%2Cdc-expB%2CadLabel-A%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B%2CsubstitutionVariant-B",
+        "includeTagDetails": "true",
+        "page": 1,  # Starting page
+        "pageType": "category",
+        "slug": "craft-beer",
+        "storeId": "165",
+        "url": "craft-beer",
     }
 
     headers = {
-        'Accept': 'application/json',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'en',
-        'Content-Type': 'application/json',
-        'Host': 'website-api.omni.fairprice.com.sg',
-        'Origin': 'https///www.fairprice.com.sg',
-        'Referer': 'https//www.fairprice.com.sg/',
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en",
+        "Content-Type": "application/json",
+        "Host": "website-api.omni.fairprice.com.sg",
+        "Origin": "https///www.fairprice.com.sg",
+        "Referer": "https//www.fairprice.com.sg/",
     }
 
     def start_requests(self) -> Generator[scrapy.Request, None, None]:
@@ -49,55 +49,55 @@ class FairPriceSpider(scrapy.Spider):
         @returns requests 1
         @scrapes platform name url brand origin quantity price
         """
-        data = response.json()['data']
-        products = data['product']
+        data = response.json()["data"]
+        products = data["product"]
 
         if products:
             for product in products:
-                name = product['name']
-                brand = product['brand']['name']
-                metadata = product['metaData']
-                slug = product['slug']
+                name = product["name"]
+                brand = product["brand"]["name"]
+                metadata = product["metaData"]
+                slug = product["slug"]
 
                 loader = ProductLoader()
 
-                loader.add_value('platform', self.name)
-                loader.add_value('name', name)
-                loader.add_value('url', f'https://www.fairprice.com.sg/product/{slug}')
+                loader.add_value("platform", self.name)
+                loader.add_value("name", name)
+                loader.add_value("url", f"https://www.fairprice.com.sg/product/{slug}")
 
-                loader.add_value('brand', brand)
-                loader.add_value('origin', metadata['Country of Origin'])
-                loader.add_value('style', parse_style(metadata.get('Key Information', '')))
+                loader.add_value("brand", brand)
+                loader.add_value("origin", metadata["Country of Origin"])
+                loader.add_value("style", parse_style(metadata.get("Key Information", "")))
 
-                loader.add_value('abv', name)
-                loader.add_value('volume', metadata['DisplayUnit'])
-                loader.add_value('quantity', self.get_product_quantity(product))
+                loader.add_value("abv", name)
+                loader.add_value("volume", metadata["DisplayUnit"])
+                loader.add_value("quantity", self.get_product_quantity(product))
 
-                image_url = product['images'][0]
-                loader.add_value('image_url', image_url)
+                image_url = product["images"][0]
+                loader.add_value("image_url", image_url)
 
-                loader.add_value('price', self.get_product_price(product))
+                loader.add_value("price", self.get_product_price(product))
 
                 yield loader.load_item()
 
-            has_next_page = data['pagination']['page'] < data['pagination']['total_pages']
+            has_next_page = data["pagination"]["page"] < data["pagination"]["total_pages"]
             if has_next_page is True:
-                self.params['page'] += 1
+                self.params["page"] += 1
                 next_page = self.base_url + urlencode(self.params)
                 yield response.follow(next_page, callback=self.parse)
 
-    @ staticmethod
+    @staticmethod
     def get_product_price(product: dict[str, Any]) -> Any:
-        offer = product.get('offers')
-        if offer and offer[0]['price'] is not None:
-            return offer[0]['price']
+        offer = product.get("offers")
+        if offer and offer[0]["price"] is not None:
+            return offer[0]["price"]
 
-        return product['storeSpecificData'][0]['mrp']
+        return product["storeSpecificData"][0]["mrp"]
 
-    @ staticmethod
+    @staticmethod
     def get_product_quantity(product: dict[str, Any]) -> int:
-        metadata = product['metaData']
-        display_unit = metadata['DisplayUnit']
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # "24 x 330ml". "x" could be upper case
+        metadata = product["metaData"]
+        display_unit = metadata["DisplayUnit"]
+        quantity = re.split("x", display_unit, flags=re.IGNORECASE)  # "24 x 330ml". "x" could be upper case
 
         return int(quantity[0]) if len(quantity) != 1 else 1

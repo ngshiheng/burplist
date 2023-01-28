@@ -1,5 +1,5 @@
 import re
-from typing import Optional
+from typing import Generator, Optional
 
 import scrapy
 from scrapy import Selector
@@ -18,12 +18,9 @@ class CraftBeerSGSpider(scrapy.Spider):
 
     name = "craftbeersg"
     custom_settings = {"ROBOTSTXT_OBEY": False}
-    start_urls = [
-        f"https://www.craftbeersg.com/product-category/beer/page/{page_num}/"
-        for page_num in range(1, 25)
-    ]
+    start_urls = [f"https://www.craftbeersg.com/product-category/beer/page/{page_num}/" for page_num in range(1, 25)]
 
-    def parse(self, response):
+    def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
         @url https://www.craftbeersg.com/product-category/beer/
         @returns items 0
@@ -35,7 +32,7 @@ class CraftBeerSGSpider(scrapy.Spider):
         collections = Selector(text=html).xpath(CraftBeerSGLocator.beer_collection)
         yield from response.follow_all(collections, callback=self.parse_product_detail)
 
-    def parse_product_detail(self, response):
+    def parse_product_detail(self, response) -> Generator[scrapy.Request, None, None]:
         name = response.xpath(CraftBeerSGLocator.product_name).get()
         url = response.request.url
 
