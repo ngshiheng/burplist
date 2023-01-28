@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.10.13 (2023-01-28)
+### Fix
+* **deps:** Update dependency sqlalchemy to v1.4.46 ([`c31a78f`](https://github.com/ngshiheng/burplist/commit/c31a78fcd3ae5dad5585e3ca2b92091e2b653762))
+
+### Documentation
+* Move some content to DEVELOPMENT.md ([`e1bd085`](https://github.com/ngshiheng/burplist/commit/e1bd0853a416ebc256363e3d578d6d6fe0c304e6))
+* Move sections into different files ([`e267f1d`](https://github.com/ngshiheng/burplist/commit/e267f1d4017836cc6b5f38bb070f0e6f842282e1))
+
 ## v1.10.12 (2022-12-21)
 ### Fix
 * **spider:** Increase download delay for shopee ([`46d154a`](https://github.com/ngshiheng/burplist/commit/46d154a6c635febfb5fd8a41e6a8b5e6c6bf02be))
