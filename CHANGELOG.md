@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.0 (2023-01-28)
+### Feature
+* Add craftbeersg spider ([`f9badd0`](https://github.com/ngshiheng/burplist/commit/f9badd0f49dfff9ae9f13aac50e2fb47202cab38))
+
 ## v1.10.13 (2023-01-28)
 ### Fix
 * **deps:** Update dependency sqlalchemy to v1.4.46 ([`c31a78f`](https://github.com/ngshiheng/burplist/commit/c31a78fcd3ae5dad5585e3ca2b92091e2b653762))
