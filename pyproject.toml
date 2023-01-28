@@ -7,7 +7,7 @@ version = "1.11.0"
 [tool.poetry.dependencies]
 SQLAlchemy = "==1.4.46"
 Scrapy = "==2.7.1"
-alembic = "==1.8.1"
+alembic = "==1.9.2"
 colorlog = "==6.7.0"
 ipython = "==8.7.0"
 price-parser = "0.3.4"
