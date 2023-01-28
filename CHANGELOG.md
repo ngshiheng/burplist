@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.3 (2023-01-28)
+### Fix
+* **deps:** Update dependency sentry-sdk to v1.14.0 ([`07bc1a5`](https://github.com/ngshiheng/burplist/commit/07bc1a5c1da2738814017a1844ad4757e0efb9a5))
+
 ## v1.11.2 (2023-01-28)
 ### Fix
 * **deps:** Update dependency ipython to v8.9.0 ([`a4efa4e`](https://github.com/ngshiheng/burplist/commit/a4efa4eeb480845eafc6298cdfb474c310a471a7))
