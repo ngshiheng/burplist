@@ -1,18 +1,23 @@
 class ThirstyLocator:
     """Locators for www.thirsty.com.sg"""
 
-    # Locators for https://www.thirsty.com.sg/pages/shop-by-style
-    beer_collection = '//a[@class="link-3 color-header"]'
+    # Locators for https://www.thirsty.com.sg/collections/beer
+    beer_collection = '//div[@class="boost-pfs-filter-product-bottom"]//a'
+    next_page = '//a[@aria-label="Page Next"]'
 
     # Locators for products page
-    # e.g. https://www.thirsty.com.sg/collections/lager
-    products = '//div[@class="product-each-top cf"]'
-    product_title = './/a[@class="link-3 color-header"]/@href'
-    product_prices = './/span[@class="color-header body-s"]/text()'
-    product_display_units = './/p[contains(@class,"product-option-title body-xxs ml-5")]/text()'
+    # e.g. https://www.thirsty.com.sg/collections/beer/products/4-pines-australian-pacific-ale-can
+    product_name = '//h1[@class="h3 tl c-white"]/text()'
 
-    product_name = './/a[@class="link-3 color-header"]/text()'
-    product_brand = './/a[@class="body-xs color-text"]/text()'
-    product_abv = './/span[@class="alcohol color-text body-xs mr-5"]/text()'
-    product_volume = './/span[@class="volume color-text body-xs tablet-mr-5"]/text()'
-    product_image_url = './/img[@class="image image-option primary lazy"]/@data-lazy'
+    product_brand = '//h2[@class="h3 mb-10 d-mb-15"]/text()'
+    product_origin = '//div[text()="Birthplace"]/following-sibling::div/text()'
+    product_style = '//div[text()="Style"]/following-sibling::div/text()'
+
+    product_abv = '//div[text()="Alcohol Percentage"]/following-sibling::div/text()'
+
+    product_variants = "//div[@data-value]"
+    product_display_unit = './/div[@class="mb-5 opacity-5 p3 d-mb-0"]/text()'
+
+    product_price = './/div[@class="var-price h6 d-ml-25"]/text()'
+
+    product_image_url = '//img[@class="image loaded"]/@src'

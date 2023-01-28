@@ -1,90 +1,81 @@
-import logging
 import re
 from typing import Generator
 
 import scrapy
-import sentry_sdk
 
 from burplist.items import ProductLoader
 from burplist.locators import ThirstyLocator
-
-logger = logging.getLogger(__name__)
 
 
 class ThirstySpider(scrapy.Spider):
     """Scrape data from raw HTML
 
-    Do note that this site uses infinite scrolling
-
     https://www.thirsty.com.sg/
     """
 
-    name = 'thirsty'
-    custom_settings = {'ROBOTSTXT_OBEY': False}
-    start_urls = ['https://www.thirsty.com.sg/pages/shop-by-style']
+    name = "thirsty"
+    custom_settings = {"ROBOTSTXT_OBEY": False}
+    start_urls = [
+        f"https://www.thirsty.com.sg/collections/beer?page={page_num}"
+        for page_num in range(1, 10)
+    ]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
-        @url https://www.thirsty.com.sg/pages/shop-by-style
-        @returns requests 1
+        @url https://www.thirsty.com.sg/collections/beer
+        @returns items 0
+        @returns requests 1 24
         """
         collections = response.xpath(ThirstyLocator.beer_collection)
+        yield from response.follow_all(collections, callback=self.parse_product_detail)
 
-        for collection in collections:
-            style = collection.xpath('text()').get()
-            yield response.follow(collection, callback=self.parse_collection, meta={'style': style})
+    def parse_product_detail(self, response) -> Generator[scrapy.Request, None, None]:
+        name = response.xpath(ThirstyLocator.product_name).get()
+        url = response.request.url
 
-    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
-        page = response.meta.get('page', 1)
-        current_url = response.request.url if page == 1 else response.meta['current_url']  # So that query parameters wont be appended whenever this method runs recursively
+        brand = response.xpath(ThirstyLocator.product_brand).get()
+        origin = response.xpath(ThirstyLocator.product_origin).get()
+        style = response.xpath(ThirstyLocator.product_style).get()
 
-        products = response.xpath(ThirstyLocator.products)
+        abv = response.xpath(ThirstyLocator.product_abv).get()
 
-        # Because we don't have a way to determine if this request has next page, we would just stop following when `products` is not found
-        if products:
-            for product in products:
-                url = response.urljoin(product.xpath(ThirstyLocator.product_title).get())
+        image_url = response.xpath(ThirstyLocator.product_image_url).get()
 
-                raw_prices = product.xpath(ThirstyLocator.product_prices).getall()
-                display_units = product.xpath(ThirstyLocator.product_display_units).getall()
+        variants = response.xpath(ThirstyLocator.product_variants)
+        for product in variants:
+            display_unit = product.xpath(ThirstyLocator.product_display_unit).get()
+            if not display_unit:
+                continue
 
-                if len(raw_prices) != len(display_units):
-                    logger.warning('Mismatch length of `raw_prices` and `display_units`.')
+            loader = ProductLoader(selector=product)
 
-                    with sentry_sdk.push_scope() as scope:
-                        scope.set_extra('url', url)
-                        scope.set_extra('raw_prices', raw_prices)
-                        scope.set_extra('display_units', display_units)
-                        sentry_sdk.capture_message('Mismatch length of `raw_prices` and `display_units`.', 'warning')
-                    continue
+            loader.add_value("platform", self.name)
+            loader.add_value("name", name)
+            loader.add_value("url", url)
 
-                for price, display_unit in zip(raw_prices, display_units):
-                    loader = ProductLoader(selector=product)
+            loader.add_value("brand", brand)
+            loader.add_value("origin", origin)
+            loader.add_value("style", style)
 
-                    loader.add_value('platform', self.name)
-                    loader.add_xpath('name', ThirstyLocator.product_name)
-                    loader.add_value('url', url)
+            quantity, volume = self.get_product_quantity_volume(display_unit)
+            loader.add_value("abv", abv)
+            loader.add_value("volume", volume)
+            loader.add_value("quantity", quantity)
 
-                    loader.add_xpath('brand', ThirstyLocator.product_brand)
-                    loader.add_xpath('origin', None)
-                    loader.add_value('style', response.meta['style'])
+            loader.add_value("image_url", f"https:{image_url}")
 
-                    loader.add_xpath('abv', ThirstyLocator.product_abv)
-                    loader.add_xpath('volume', ThirstyLocator.product_volume)
-                    loader.add_value('quantity', self.get_product_quantity(display_unit))
+            price = product.xpath(ThirstyLocator.product_price).get()
+            loader.add_value("price", price)
 
-                    image_url = product.xpath(ThirstyLocator.product_image_url).get()
-                    loader.add_value('image_url', f'https:{image_url}')
-
-                    loader.add_value('price', price)
-
-                    yield loader.load_item()
-
-            page += 1
-            next_page = f'{current_url}?view=json&sort_by=manual&page={page}'
-            yield response.follow(next_page, callback=self.parse_collection, meta={'current_url': current_url, 'page': page, 'style': response.meta['style']})
+            yield loader.load_item()
 
     @staticmethod
-    def get_product_quantity(display_unit: str) -> int:
-        quantity = re.split('x', display_unit, flags=re.IGNORECASE)  # "24 x 330ml". "x" could be upper case
-        return int(quantity[0]) if len(quantity) != 1 else 1
+    def get_product_quantity_volume(display_unit: str) -> tuple[int, str]:
+        quantity_volume = re.split(
+            "x", display_unit, maxsplit=2, flags=re.IGNORECASE
+        )  # "24 x 375ML". "x" could be upper case
+        if len(quantity_volume) == 1:  # "375ML"
+            assert isinstance(quantity_volume[0], str), type(quantity_volume)
+            return 1, quantity_volume[0]
+
+        return int(quantity_volume[0]), quantity_volume[1]
