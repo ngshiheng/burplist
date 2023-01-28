@@ -16,7 +16,6 @@ python = "^3.9"
 scrapy-fake-useragent = "1.4.4"
 sentry-sdk = "==1.11.1"
 scrapeops-scrapy = "0.5.2"
-setuptools = "^65.6.3"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "==2.0.1"
