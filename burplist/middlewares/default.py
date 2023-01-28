@@ -1,25 +1,20 @@
-# Define here the models for your spider middleware  # Unused
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
 from typing import Iterable, Iterator, Union
 
 from scrapy import signals
 from scrapy.http import Request, Response
 from scrapy.spiders import Spider
 
-# useful for handling different item types with a single interface
-# from itemadapter import is_item, ItemAdapter
-
 
 class BurplistSpiderMiddleware:
-    # Not all methods need to be defined. If a method is not defined,
-    # scrapy acts as if the spider middleware does not modify the
-    # passed objects.
+    """Unused default middleware
+
+    Not all methods need to be defined. If a method is not defined,
+    scrapy acts as if the spider middleware does not modify the
+    passed objects.
+    """
 
     @classmethod
-    def from_crawler(cls, crawler) -> 'BurplistSpiderMiddleware':
+    def from_crawler(cls, crawler) -> "BurplistSpiderMiddleware":
         # This method is used by Scrapy to create your spiders.
         middleware = cls()
         crawler.signals.connect(middleware.spider_opened, signal=signals.spider_opened)
@@ -61,7 +56,7 @@ class BurplistSpiderMiddleware:
             yield request
 
     def spider_opened(self, spider: Spider) -> None:
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)
 
 
 class BurplistDownloaderMiddleware:
@@ -70,7 +65,7 @@ class BurplistDownloaderMiddleware:
     # passed objects.
 
     @classmethod
-    def from_crawler(cls, crawler) -> 'BurplistDownloaderMiddleware':
+    def from_crawler(cls, crawler) -> "BurplistDownloaderMiddleware":
         # This method is used by Scrapy to create your spiders.
         middleware = cls()
         crawler.signals.connect(middleware.spider_opened, signal=signals.spider_opened)
@@ -109,4 +104,4 @@ class BurplistDownloaderMiddleware:
         # - return a Request object: stops process_exception() chain
 
     def spider_opened(self, spider: Spider) -> None:
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)
