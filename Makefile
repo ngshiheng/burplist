@@ -27,7 +27,6 @@ setupdb: ## setup postgres in docker.
 	@if [ -z $(DOCKER) ]; then echo "Docker could not be found. See https://docs.docker.com/get-docker/"; exit 2; fi
 	@docker stop dpostgres || true && docker rm dpostgres || true
 	@$(DOCKER) start dpostgres 2>/dev/null || $(DOCKER) run -d --name dpostgres -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:latest
-	@while [ "$(shell docker inspect -f '{{.State.Running}}' dpostgres)" != "true" ]; do sleep 0.5; done
 	@timeout 30s bash -c "until docker exec dpostgres pg_isready; do sleep 5; done"
 	@$(DOCKER) exec -i dpostgres psql -U postgres  <<< "CREATE DATABASE burplist;"
 	@echo "Done."
