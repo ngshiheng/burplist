@@ -2,7 +2,7 @@
 authors = ["Jerry Ng <ngshiheng@gmail.com>"]
 description = "Web crawler for Burplist, a search engine or craft beers in Singapore"
 name = "burplist"
-version = "1.11.4"
+version = "1.11.5"
 
 [tool.poetry.dependencies]
 SQLAlchemy = "==1.4.46"

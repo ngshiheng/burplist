@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.5 (2023-01-29)
+### Fix
+* **spider:** Handle page not found error and invalid price ([`f40ca3b`](https://github.com/ngshiheng/burplist/commit/f40ca3b21731f31e584ea940c75c4ed3a5fe8978))
+
 ## v1.11.4 (2023-01-29)
 ### Fix
 * **spider:** Handle cass where product_info does not have abv ([`7b4b722`](https://github.com/ngshiheng/burplist/commit/7b4b722cedf7e455e4d2a76dbfdbbf338d91a9db))
