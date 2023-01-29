@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.4 (2023-01-29)
+### Fix
+* **spider:** Handle cass where product_info does not have abv ([`7b4b722`](https://github.com/ngshiheng/burplist/commit/7b4b722cedf7e455e4d2a76dbfdbbf338d91a9db))
+* **spider:** Skip craftbeersg item without quantity ([`6d1161c`](https://github.com/ngshiheng/burplist/commit/6d1161cc7213f821b1687ed734bf9b82fcf961b6))
+
 ## v1.11.3 (2023-01-28)
 ### Fix
 * **deps:** Update dependency sentry-sdk to v1.14.0 ([`07bc1a5`](https://github.com/ngshiheng/burplist/commit/07bc1a5c1da2738814017a1844ad4757e0efb9a5))
