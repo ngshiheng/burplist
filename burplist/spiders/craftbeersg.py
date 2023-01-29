@@ -43,6 +43,7 @@ class CraftBeerSGSpider(scrapy.Spider):
         for product in variants:
             display_unit = product.xpath(CraftBeerSGLocator.product_display_unit).get()
             if not display_unit:
+                self.logger.debug("Skip item without display_unit.", extra=dict(url=url))
                 continue
 
             loader = ProductLoader(selector=product)
@@ -56,6 +57,10 @@ class CraftBeerSGSpider(scrapy.Spider):
             loader.add_value("style", None)
 
             quantity, volume = self.get_product_quantity_volume(display_unit)
+            if not quantity:
+                self.logger.debug("Skip item with invalid quantity.", extra=dict(display_unit=display_unit))
+                continue
+
             loader.add_value("abv", None)
             loader.add_value("volume", volume)
             loader.add_value("quantity", quantity)
@@ -68,6 +73,9 @@ class CraftBeerSGSpider(scrapy.Spider):
 
     @staticmethod
     def get_product_quantity_volume(display_unit: str) -> tuple[int, Optional[str]]:
+        """Parse product quantity from display_unit
+
+        E.g. "6 Pack (6x 330ml)"""
         match = re.search(r"(\d+) Pack \((\d+)x (\d+)ml\)", display_unit)
         if not match:
             return 1, None
