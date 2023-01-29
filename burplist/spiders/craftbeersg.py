@@ -3,6 +3,7 @@ from typing import Generator, Optional
 
 import scrapy
 from scrapy import Selector
+from scrapy.exceptions import DropItem, IgnoreRequest
 
 from burplist.items import ProductLoader
 from burplist.locators import CraftBeerSGLocator
@@ -27,6 +28,8 @@ class CraftBeerSGSpider(scrapy.Spider):
         @returns requests 1 20
         """
         raw_html = response.xpath(CraftBeerSGLocator.raw_html).get()
+        if not raw_html:
+            raise IgnoreRequest("Page not found.")
         html = raw_html.replace("\n", "").replace("\t", "").replace("\\", "")
 
         collections = Selector(text=html).xpath(CraftBeerSGLocator.beer_collection)
@@ -41,10 +44,9 @@ class CraftBeerSGSpider(scrapy.Spider):
 
         variants = response.xpath(CraftBeerSGLocator.product_variants)
         for product in variants:
-            display_unit = product.xpath(CraftBeerSGLocator.product_display_unit).get()
-            if not display_unit:
-                self.logger.debug("Skip item without display_unit.", extra=dict(url=url))
-                continue
+            price = product.xpath(CraftBeerSGLocator.product_price).get()
+            if not price:
+                raise DropItem("Skip item with invalid price.")
 
             loader = ProductLoader(selector=product)
 
@@ -56,10 +58,8 @@ class CraftBeerSGSpider(scrapy.Spider):
             loader.add_value("origin", origin)
             loader.add_value("style", None)
 
+            display_unit = product.xpath(CraftBeerSGLocator.product_display_unit).get()
             quantity, volume = self.get_product_quantity_volume(display_unit)
-            if not quantity:
-                self.logger.debug("Skip item with invalid quantity.", extra=dict(display_unit=display_unit))
-                continue
 
             loader.add_value("abv", None)
             loader.add_value("volume", volume)
@@ -67,7 +67,7 @@ class CraftBeerSGSpider(scrapy.Spider):
 
             loader.add_xpath("image_url", CraftBeerSGLocator.product_image_url)
 
-            loader.add_xpath("price", CraftBeerSGLocator.product_price)
+            loader.add_value("price", price)
 
             yield loader.load_item()
 
