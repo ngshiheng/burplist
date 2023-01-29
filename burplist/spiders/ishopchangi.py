@@ -65,16 +65,15 @@ class IShopChangiSpider(scrapy.Spider):
             loader.add_value("price", product["price"]["value"])
             yield loader.load_item()
 
-        has_next_page = (
-            data["pagination"]["currentPage"] < data["pagination"]["totalPages"]
-        )
-        if has_next_page is True:
+        has_next_page = data["pagination"]["currentPage"] < data["pagination"]["totalPages"]
+        if has_next_page:
             self.params["currentPage"] += 1
             next_page = self.base_url + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse, headers=self.headers)
 
     @staticmethod
     def get_product_quantity(raw_name: str) -> int:
+        """Parse product quantity from item raw_name"""
         assert isinstance(raw_name, str)
 
         # "Ba Xian Tea Lager 3 Bottles Pack"

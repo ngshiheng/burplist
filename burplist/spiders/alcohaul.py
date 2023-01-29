@@ -41,6 +41,7 @@ class AlcohaulSpider(scrapy.Spider):
         if products:
             for product in products:
                 if int(product["quantity"]) < 1:  # NOTE: `quantity` could be `int` or `str` from API
+                    self.logger.debug("Skip item with invalid quantity.", extra=dict(product=product))
                     continue
 
                 loader = ProductLoader()

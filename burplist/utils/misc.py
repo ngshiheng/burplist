@@ -11,9 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 def remove_stale_products_prices(stale_days: int = 7) -> None:
-    """
-    Remove stale products and prices which are not updated for N number of days
-    """
+    """Remove stale products and prices which are not updated for N number of days"""
     assert isinstance(stale_days, int) and stale_days >= 7, "Invalid `stale_days` input."
     logger.info(f"Removing stale products and prices which are not updated for the past {stale_days} days.")
 
@@ -47,7 +45,7 @@ def get_popular_styles() -> set[str]:
         return {style[0] for style in session.query(Product.style).distinct() if style[0]}
 
     except ProgrammingError as exception:
-        logger.exception(f"An unexpected error has occurred while running {__name__}.", extra=dict(exception=exception))
+        logger.exception("An unexpected error has occurred.", extra=dict(exception=exception))
         return {""}
 
     finally:
@@ -64,7 +62,7 @@ def get_popular_brands() -> set[str]:
         return {brand[0] for brand in session.query(Product.brand).distinct() if brand[0]}
 
     except ProgrammingError as exception:
-        logger.exception(f"An unexpected error has occurred while running {__name__}.", extra=dict(exception=exception))
+        logger.exception("An unexpected error has occurred.", extra=dict(exception=exception))
         return {""}
 
     finally:

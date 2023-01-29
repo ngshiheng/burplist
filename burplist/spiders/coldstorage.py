@@ -15,9 +15,7 @@ class ColdStorageSpider(scrapy.Spider):
     """
 
     name = "coldstorage"
-    start_urls = [
-        "https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers"
-    ]
+    start_urls = ["https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers"]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
@@ -30,9 +28,7 @@ class ColdStorageSpider(scrapy.Spider):
 
         for product in products:
             name = product.xpath(ColdStorageLocator.product_name).get()
-            brand = (
-                product.xpath(ColdStorageLocator.product_brand).get().strip().title()
-            )
+            brand = product.xpath(ColdStorageLocator.product_brand).get().strip().title()
 
             loader = ProductLoader(selector=product)
 
@@ -54,15 +50,17 @@ class ColdStorageSpider(scrapy.Spider):
             yield loader.load_item()
 
         has_next_page = response.xpath(ColdStorageLocator.next_page).get()
-        if has_next_page is not None:
+        if has_next_page:
             next_page = response.urljoin(has_next_page)
             yield response.follow(next_page, callback=self.parse)
 
     @staticmethod
     def get_product_quantity(raw_name: str) -> int:
-        raw_quantity_with_name = re.search(
-            r"(\d+s[x\s]+?\d+ml)", raw_name, flags=re.IGNORECASE
-        )
+        """Parse product quantity from item name
+
+        E.g. "Session Ale Can 6sX375ml"
+        """
+        raw_quantity_with_name = re.search(r"(\d+s[x\s]+?\d+ml)", raw_name, flags=re.IGNORECASE)
         if raw_quantity_with_name:
             raw_quantity = raw_quantity_with_name.group().split(" ")
             return int(re.split(r"s", raw_quantity[0], flags=re.IGNORECASE)[0])

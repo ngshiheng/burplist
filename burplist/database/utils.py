@@ -11,10 +11,16 @@ settings = get_project_settings()
 
 def db_connect() -> Engine:
     """Performs database connection using database settings from settings.py"""
-    return create_engine(settings.get("DATABASE_CONNECTION_STRING"))
+    db_connection_string = settings.get("DATABASE_CONNECTION_STRING")
+    assert db_connection_string, "DATABASE_CONNECTION_STRING is invalid."
+    return create_engine(db_connection_string)
 
 
 def create_table(engine: Engine) -> None:
+    """Creates the database table for the classes defined in the ORM.
+
+    It takes an SQLAlchemy Engine object as an argument and creates the table for all classes that inherit from the Base class.
+    """
     Base.metadata.create_all(engine)
 
 

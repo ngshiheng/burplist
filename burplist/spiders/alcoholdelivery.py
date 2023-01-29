@@ -17,18 +17,18 @@ class AlcoholDeliverySpider(scrapy.Spider):
     https://www.alcoholdelivery.com.sg/
     """
 
-    name = 'alcoholdelivery'
-    base_url = 'https://www.alcoholdelivery.com.sg/api/fetchProducts?'
+    name = "alcoholdelivery"
+    base_url = "https://www.alcoholdelivery.com.sg/api/fetchProducts?"
 
     params: dict[str, Any] = {
-        'filter': 'all',
-        'keyword': '',
-        'limit': 10,
-        'parent': 'beer-cider',
-        'productList': 1,
-        'skip': 0,  # Starting page
-        'subParent': 'craft-beer',  # set as 'craft-beer' to only get craft beer data
-        'type': 0,
+        "filter": "all",
+        "keyword": "",
+        "limit": 10,
+        "parent": "beer-cider",
+        "productList": 1,
+        "skip": 0,  # Starting page
+        "subParent": "craft-beer",  # set as 'craft-beer' to only get craft beer data
+        "type": 0,
     }
 
     def start_requests(self) -> Generator[scrapy.Request, None, None]:
@@ -46,34 +46,35 @@ class AlcoholDeliverySpider(scrapy.Spider):
 
         if products:
             for product in products:
-                name = product['name']
-                slug = product['slug']
-                short_description = product['shortDescription']
-                origin, style, abv = short_description.split(',')
+                name = product["name"]
+                slug = product["slug"]
+                short_description = product["shortDescription"]
+                origin, style, abv = short_description.split(",")
 
-                if int(product['quantity']) < 1:
+                if int(product["quantity"]) < 1:
+                    self.logger.debug("Skip item with invalid quantity.", extra=dict(product=product))
                     continue
 
                 loader = ProductLoader()
 
-                loader.add_value('platform', self.name)
-                loader.add_value('name', name)
-                loader.add_value('url', f'https://www.alcoholdelivery.com.sg/product/{slug}')
+                loader.add_value("platform", self.name)
+                loader.add_value("name", name)
+                loader.add_value("url", f"https://www.alcoholdelivery.com.sg/product/{slug}")
 
-                loader.add_value('brand', parse_brand(name))
-                loader.add_value('origin', origin)
-                loader.add_value('style', style)
+                loader.add_value("brand", parse_brand(name))
+                loader.add_value("origin", origin)
+                loader.add_value("style", style)
 
-                loader.add_value('abv', abv)
-                loader.add_value('volume', name)
-                loader.add_value('quantity', 1)
+                loader.add_value("abv", abv)
+                loader.add_value("volume", name)
+                loader.add_value("quantity", 1)
 
-                image_url = product.get('imageFiles')[0]['source']
-                loader.add_value('image_url', f'https://www.alcoholdelivery.com.sg/products/i/{image_url}')
+                image_url = product.get("imageFiles")[0]["source"]
+                loader.add_value("image_url", f"https://www.alcoholdelivery.com.sg/products/i/{image_url}")
 
-                loader.add_value('price', product['price'] + product['regular_express_delivery']['value'])
+                loader.add_value("price", product["price"] + product["regular_express_delivery"]["value"])
                 yield loader.load_item()
 
-            self.params['skip'] += 10
+            self.params["skip"] += 10
             next_page = self.base_url + urlencode(self.params)
             yield response.follow(next_page, callback=self.parse)

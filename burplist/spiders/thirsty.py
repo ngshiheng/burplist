@@ -15,10 +15,7 @@ class ThirstySpider(scrapy.Spider):
 
     name = "thirsty"
     custom_settings = {"ROBOTSTXT_OBEY": False}
-    start_urls = [
-        f"https://www.thirsty.com.sg/collections/beer?page={page_num}"
-        for page_num in range(1, 10)
-    ]
+    start_urls = [f"https://www.thirsty.com.sg/collections/beer?page={page_num}" for page_num in range(1, 10)]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
@@ -45,6 +42,7 @@ class ThirstySpider(scrapy.Spider):
         for product in variants:
             display_unit = product.xpath(ThirstyLocator.product_display_unit).get()
             if not display_unit:
+                self.logger.debug("Skip item without display_unit.", extra=dict(url=url))
                 continue
 
             loader = ProductLoader(selector=product)
@@ -58,6 +56,10 @@ class ThirstySpider(scrapy.Spider):
             loader.add_value("style", style)
 
             quantity, volume = self.get_product_quantity_volume(display_unit)
+            if not quantity:
+                self.logger.debug("Skip item with invalid quantity.", extra=dict(display_unit=display_unit))
+                continue
+
             loader.add_value("abv", abv)
             loader.add_value("volume", volume)
             loader.add_value("quantity", quantity)
@@ -71,9 +73,11 @@ class ThirstySpider(scrapy.Spider):
 
     @staticmethod
     def get_product_quantity_volume(display_unit: str) -> tuple[int, str]:
-        quantity_volume = re.split(
-            "x", display_unit, maxsplit=2, flags=re.IGNORECASE
-        )  # "24 x 375ML". "x" could be upper case
+        """Parse product quantity and volume from display_unit
+
+        E.g. "24 x 375ML" where "x" could be upper case
+        """
+        quantity_volume = re.split("x", display_unit, maxsplit=2, flags=re.IGNORECASE)
         if len(quantity_volume) == 1:  # "375ML"
             assert isinstance(quantity_volume[0], str), type(quantity_volume)
             return 1, quantity_volume[0]
