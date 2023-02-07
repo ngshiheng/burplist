@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.6 (2023-02-07)
+### Fix
+* **ci:** Typo in cd steps ([`5c19562`](https://github.com/ngshiheng/burplist/commit/5c19562fe208ea6064572fbee5af5c7302ebf3ea))
+* **deps:** Update all non-major dependencies ([`2fa23c4`](https://github.com/ngshiheng/burplist/commit/2fa23c4e25472bca3a0b3323639531087b606e1d))
+
 ## v1.11.5 (2023-01-29)
 ### Fix
 * **spider:** Handle page not found error and invalid price ([`f40ca3b`](https://github.com/ngshiheng/burplist/commit/f40ca3b21731f31e584ea940c75c4ed3a5fe8978))
