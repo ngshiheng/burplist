@@ -21,7 +21,7 @@ sentry-sdk = "==1.14.0"
 autopep8 = "==2.0.1"
 flake8 = "==6.0.0"
 mypy = "0.991"
-pre-commit = "==2.21.0"
+pre-commit = "==3.0.4"
 pylint = "==2.16.1"
 
 [build-system]
