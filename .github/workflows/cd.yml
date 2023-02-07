@@ -3,9 +3,6 @@ on:
     push:
         branches:
             - main
-        paths:
-            - "**.py"
-            - "poetry.lock"
     workflow_dispatch: null
 jobs:
     test:
