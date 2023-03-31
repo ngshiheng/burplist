@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.7 (2023-03-31)
+### Fix
+* **deps:** Update all non-major dependencies ([`9cb0f35`](https://github.com/ngshiheng/burplist/commit/9cb0f35ffe9a9aa744040b041deb524fb2a42d31))
+
 ## v1.11.6 (2023-02-07)
 ### Fix
 * **ci:** Typo in cd steps ([`5c19562`](https://github.com/ngshiheng/burplist/commit/5c19562fe208ea6064572fbee5af5c7302ebf3ea))
