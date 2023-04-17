@@ -10,7 +10,7 @@
 
 ## Context
 
-Welcome to the official web crawler repository for [Burplist](https://burplist.me) built using [Scrapy](https://scrapy.org/).
+Welcome to the official web crawler repository for [Burplist](https://burplist.com) built using [Scrapy](https://scrapy.org/).
 
 Growing up in a frugal family, I would spend hours browsing online, looking for the best bang for my bucks. Needless to say, the process was super exhausting and slowly turns into frustration.
 
