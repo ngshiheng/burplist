@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.8 (2023-04-17)
+### Fix
+* Update domain name ([`633cc70`](https://github.com/ngshiheng/burplist/commit/633cc703420e2e589bcd8e99178c6d52219a67cf))
+
 ## v1.11.7 (2023-03-31)
 ### Fix
 * **deps:** Update all non-major dependencies ([`9cb0f35`](https://github.com/ngshiheng/burplist/commit/9cb0f35ffe9a9aa744040b041deb524fb2a42d31))
