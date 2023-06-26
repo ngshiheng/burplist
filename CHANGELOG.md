@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.11.11 (2023-06-26)
+
+### Fix
+
+* **deps:** Update all non-major dependencies ([`9d2c966`](https://github.com/ngshiheng/burplist/commit/9d2c966d1189bf8f3e3960619554110bbabb8846))
+
 ## v1.11.10 (2023-05-31)
 ### Fix
 
