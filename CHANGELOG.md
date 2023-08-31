@@ -2,6 +2,13 @@
 
 
 
+## v1.11.13 (2023-08-31)
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`b9d8fa5`](https://github.com/ngshiheng/burplist/commit/b9d8fa593548552d122f714849e4610a3c26a959))
+
+
 ## v1.11.12 (2023-07-31)
 
 ### Fix
