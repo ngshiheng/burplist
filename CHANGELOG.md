@@ -2,7 +2,24 @@
 
 
 
+## v1.11.15 (2023-10-31)
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`063d96c`](https://github.com/ngshiheng/burplist/commit/063d96c6ba4137ca7cb242b9cb18ef903c151e30))
+
+### Unknown
+
+* Merge pull request #154 from ngshiheng/renovate/actions-checkout-4.x
+
+chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.com/ngshiheng/burplist/commit/169a7ee6be99e98356ba4274638eb346a36b4958))
+
+
 ## v1.11.14 (2023-09-30)
+
+### Chore
+
+* chore(deps): update actions/checkout action to v4 ([`47c3127`](https://github.com/ngshiheng/burplist/commit/47c312723660756a7d34b92a45cb3166d280039f))
 
 ### Fix
 
