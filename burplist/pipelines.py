@@ -1,6 +1,6 @@
 from typing import Any
 
-from itemadapter import ItemAdapter
+from itemadapter.adapter import ItemAdapter
 from scrapy import Spider
 from scrapy.exceptions import DropItem
 from sqlalchemy.exc import ProgrammingError
@@ -86,7 +86,10 @@ class UpdatesPipeline:
             existing_product = session.query(Product).filter_by(url=url, quantity=quantity).one_or_none()
 
         except ProgrammingError as exception:
-            spider.logger.exception("An unexpected error has occurred.", extra=dict(exception=exception, url=url, quantity=quantity))
+            spider.logger.exception(
+                "An unexpected error has occurred.",
+                extra=dict(exception=exception, url=url, quantity=quantity),
+            )
             raise DropItem(f"Dropping item <{url}> due to unexpected error.") from exception
 
         finally:
