@@ -2,7 +2,30 @@
 
 
 
+## v1.11.16 (2023-12-21)
+
+### Fix
+
+* fix: attr-defined error ([`e554b31`](https://github.com/ngshiheng/burplist/commit/e554b31a9b03819d00f12561edd12ce7089be7bb))
+
+* fix(deps): update all non-major dependencies ([`abdde6c`](https://github.com/ngshiheng/burplist/commit/abdde6cbbc72905966b7356affe8deed44b302f3))
+
+### Unknown
+
+* Merge pull request #157 from ngshiheng/renovate/all-minor-patch
+
+fix(deps): update all non-major dependencies ([`ad03b2f`](https://github.com/ngshiheng/burplist/commit/ad03b2fd2efbd200a3b145c0437b1a8f4c4dd6ef))
+
+* Merge pull request #156 from ngshiheng/renovate/pylint-3.x
+
+chore(deps): update dependency pylint to v3 ([`6cea93f`](https://github.com/ngshiheng/burplist/commit/6cea93ff19d28327c26cb0c5d1d50d7e3b846efc))
+
+
 ## v1.11.15 (2023-10-31)
+
+### Chore
+
+* chore(deps): update dependency pylint to v3 ([`071cbd3`](https://github.com/ngshiheng/burplist/commit/071cbd39a579235d644d731d258cd9a2dc63fdb2))
 
 ### Fix
 
