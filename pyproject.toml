@@ -5,17 +5,17 @@ name = "burplist"
 version = "1.11.11"
 
 [tool.poetry.dependencies]
-SQLAlchemy = "==1.4.50"
+SQLAlchemy = "==1.4.51"
 Scrapy = "==2.11.0"
 alembic = "==1.13.1"
-colorlog = "==6.8.0"
-ipython = "==8.18.1"
+colorlog = "==6.8.2"
+ipython = "==8.20.0"
 price-parser = "0.3.4"
 psycopg2-binary = "==2.9.9"
 python = "^3.9"
 scrapeops-scrapy = "0.5.4"
 scrapy-fake-useragent = "1.4.4"
-sentry-sdk = "==1.39.1"
+sentry-sdk = "==1.39.2"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "==2.0.4"
