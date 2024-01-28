@@ -2,9 +2,24 @@
 
 
 
+## v1.11.19 (2024-01-28)
+
+### Fix
+
+* fix(dockerfile): revert ARG changes ([`0764e61`](https://github.com/ngshiheng/burplist/commit/0764e61bec073a1a952a6143af60704069b87771))
+
+### Unknown
+
+* Merge pull request #162 from ngshiheng/renovate/flake8-7.x
+
+chore(deps): update dependency flake8 to v7 ([`aa872d2`](https://github.com/ngshiheng/burplist/commit/aa872d22c77c39bbe5b9f3ce07bd427740ca1464))
+
+
 ## v1.11.18 (2024-01-28)
 
 ### Chore
+
+* chore(deps): update dependency flake8 to v7 ([`1ccc5de`](https://github.com/ngshiheng/burplist/commit/1ccc5de6de9e3749363ae153967aa0bcb4dfa568))
 
 * chore: bump python version to ^3.10 ([`775a62f`](https://github.com/ngshiheng/burplist/commit/775a62f4f5112153de571a38396a39e7c90dd907))
 
