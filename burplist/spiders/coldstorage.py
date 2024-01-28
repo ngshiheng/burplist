@@ -21,7 +21,7 @@ class ColdStorageSpider(scrapy.Spider):
         """
         @url https://coldstorage.com.sg/beers-wines-spirits/beer-cider/craft-beers
         @returns items 1
-        @returns requests 1 1
+        @returns requests 0
         @scrapes platform name url brand quantity price
         """
         products = response.xpath(ColdStorageLocator.products)

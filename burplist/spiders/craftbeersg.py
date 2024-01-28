@@ -1,9 +1,6 @@
-import re
-from typing import Generator, Optional
+from typing import Generator
 
 import scrapy
-from scrapy import Selector
-from scrapy.exceptions import DropItem, IgnoreRequest
 
 from burplist.items import ProductLoader
 from burplist.locators import CraftBeerSGLocator
@@ -19,67 +16,60 @@ class CraftBeerSGSpider(scrapy.Spider):
 
     name = "craftbeersg"
     custom_settings = {"ROBOTSTXT_OBEY": False}
-    start_urls = [f"https://www.craftbeersg.com/product-category/beer/page/{page_num}/" for page_num in range(1, 25)]
+    start_urls = ["https://www.craftbeersg.com/collections"]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
-        @url https://www.craftbeersg.com/product-category/beer/
+        @url https://www.craftbeersg.com/collections
         @returns items 0
-        @returns requests 1 20
+        @returns requests 1 8
         """
-        raw_html = response.xpath(CraftBeerSGLocator.raw_html).get()
-        if not raw_html:
-            raise IgnoreRequest("Page not found.")
-        html = raw_html.replace("\n", "").replace("\t", "").replace("\\", "")
+        collections = response.xpath(CraftBeerSGLocator.beer_collection)
+        for collection in collections:
+            style = collection.xpath(".//text()").get().strip()
+            if style == "Everything Else":
+                continue
 
-        collections = Selector(text=html).xpath(CraftBeerSGLocator.beer_collection)
-        yield from response.follow_all(collections, callback=self.parse_product_detail)
+            yield response.follow(collection, callback=self.parse_collection, meta={"style": style})
 
-    def parse_product_detail(self, response) -> Generator[scrapy.Request, None, None]:
-        name = response.xpath(CraftBeerSGLocator.product_name).get()
-        url = response.request.url
+    def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
+        products = response.xpath(CraftBeerSGLocator.products)
+        style = response.meta["style"]
 
-        brand = response.xpath(CraftBeerSGLocator.product_brand).get()
-        origin = response.xpath(CraftBeerSGLocator.product_origin).get()
-
-        variants = response.xpath(CraftBeerSGLocator.product_variants)
-        for product in variants:
-            price = product.xpath(CraftBeerSGLocator.product_price).get()
-            if not price:
-                raise DropItem("Skip item with invalid price.")
+        for product in products:
+            name, brand = self.get_product_name_and_brand(product.xpath(CraftBeerSGLocator.product_name_brand).get())
 
             loader = ProductLoader(selector=product)
 
             loader.add_value("platform", self.name)
             loader.add_value("name", name)
-            loader.add_value("url", url)
+            loader.add_value(
+                "url",
+                response.urljoin(product.xpath(CraftBeerSGLocator.product_url).get()),
+            )
 
             loader.add_value("brand", brand)
-            loader.add_value("origin", origin)
-            loader.add_value("style", None)
-
-            display_unit = product.xpath(CraftBeerSGLocator.product_display_unit).get()
-            quantity, volume = self.get_product_quantity_volume(display_unit)
+            loader.add_value("origin", None)
+            loader.add_value("style", style)
 
             loader.add_value("abv", None)
-            loader.add_value("volume", volume)
-            loader.add_value("quantity", quantity)
+            loader.add_value("volume", None)
+            loader.add_value("quantity", 1)
 
-            loader.add_xpath("image_url", CraftBeerSGLocator.product_image_url)
+            image_url = response.xpath(CraftBeerSGLocator.product_image_url).get()
+            loader.add_value("image_url", f"https:{image_url}")
 
+            print(name, brand, image_url)
+
+            price = product.xpath(CraftBeerSGLocator.product_price).get()
             loader.add_value("price", price)
-
             yield loader.load_item()
 
+        next_page = response.xpath(CraftBeerSGLocator.next_page).get()
+        if next_page:
+            yield response.follow(next_page, callback=self.parse, meta={"style": style})
+
     @staticmethod
-    def get_product_quantity_volume(display_unit: str) -> tuple[int, Optional[str]]:
-        """Parse product quantity from display_unit
-
-        E.g. "6 Pack (6x 330ml)"""
-        match = re.search(r"(\d+) Pack \((\d+)x (\d+)ml\)", display_unit)
-        if not match:
-            return 1, None
-
-        quantity = int(match.group(2))
-        volume = match.group(3)
-        return quantity, volume
+    def get_product_name_and_brand(input_string: str) -> tuple[str, str]:
+        brand, name = input_string.split("|", maxsplit=1)
+        return name.strip(), brand.strip()

@@ -1,19 +1,15 @@
 class CraftBeerSGLocator:
     """Locators for craftbeersg.com"""
 
-    # Locators for https://www.craftbeersg.com/product-category/beer/
-    raw_html = '//div[@id="primary"]//script[@type="text/template"]/text()'
-    beer_collection = '//div[@class="product-image"]/a/@href'
+    # Locators for https://www.craftbeersg.com/collections
+    beer_collection = "//details[@id='Details-HeaderMenu-5']//a[@class='header__menu-item list-menu__item link link--text focus-inset caption-large']"
 
-    # Locators for products page
-    # e.g. https://www.craftbeersg.com/product/mango-into-a-hop-field/
-    product_name = '//h2[@class="product_title entry-title show-product-nav"]/text()'
-    product_brand = '//span[text()="Brand: "]/a/text()'
-    product_origin = '//span[text()="Country: "]/a/text()'
-    product_image_url = '//img[@class="woocommerce-main-image img-responsive"]/@src'
+    # Locators for collection page
+    # e.g. https://www.craftbeersg.com/collections/lager
+    products = "//li[@class='grid__item']"
+    product_name_brand = ".//h3[@class='card__heading h5']/a//text()"
+    product_url = ".//h3[@class='card__heading h5']//@href"
+    product_image_url = ".//*[@class='media media--transparent media--hover-effect']//img//@src"
+    product_price = ".//*[@class='price-item price-item--sale price-item--last']"
 
-    product_variants = '//div[@class="row"]//div[@class="variable-item-contents"]'
-    product_price = './/span[@class="woocommerce-Price-amount amount"]//bdi/text()'
-    product_display_unit = (
-        './/span[@class="variable-item-span variable-item-span-button"]/text()'
-    )
+    next_page = "//*[@aria-label='Next page']/@href"
