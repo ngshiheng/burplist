@@ -2,6 +2,35 @@
 
 
 
+## v1.11.18 (2024-01-28)
+
+### Chore
+
+* chore: bump python version to ^3.10 ([`775a62f`](https://github.com/ngshiheng/burplist/commit/775a62f4f5112153de571a38396a39e7c90dd907))
+
+* chore(deps): update dependency mypy to v1 ([`79c3ee4`](https://github.com/ngshiheng/burplist/commit/79c3ee44e93aa13ee82c85a50f98d5cd8c052497))
+
+* chore(deps): update abatilo/actions-poetry action to v3 ([`7b1d851`](https://github.com/ngshiheng/burplist/commit/7b1d8510d020cc4e9a9bf8956991473d1ac74fe8))
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`093e5a4`](https://github.com/ngshiheng/burplist/commit/093e5a4e17d234bc0f0d2b20fb142226af38845a))
+
+### Unknown
+
+* Merge pull request #158 from ngshiheng/renovate/all-minor-patch
+
+fix(deps): update all non-major dependencies ([`f61a214`](https://github.com/ngshiheng/burplist/commit/f61a21436b29ca4ac830ceebc2469ea39c51150c))
+
+* Merge pull request #145 from ngshiheng/renovate/mypy-1.x
+
+chore(deps): update dependency mypy to v1 ([`479f864`](https://github.com/ngshiheng/burplist/commit/479f86404b1e9711ee3b6e146690ae6deca30ed4))
+
+* Merge pull request #161 from ngshiheng/renovate/abatilo-actions-poetry-3.x
+
+chore(deps): update abatilo/actions-poetry action to v3 ([`ed8f6bb`](https://github.com/ngshiheng/burplist/commit/ed8f6bb2538ada803cbcd2bb45d582a15e2b4e46))
+
+
 ## v1.11.17 (2024-01-28)
 
 ### Chore
