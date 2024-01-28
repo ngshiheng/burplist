@@ -19,7 +19,7 @@ sentry-sdk = "==1.39.2"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "==2.0.4"
-flake8 = "==6.1.0"
+flake8 = "==7.0.0"
 mypy = "1.8.0"
 pre-commit = "==3.6.0"
 pylint = "==3.0.3"
