@@ -2,6 +2,27 @@
 
 
 
+## v1.11.17 (2024-01-28)
+
+### Chore
+
+* chore(deps): update actions/setup-python action to v5 ([`12bde47`](https://github.com/ngshiheng/burplist/commit/12bde475e7278355b9a7cdf844a30f2a3264d685))
+
+### Fix
+
+* fix(spider): update craftbeersg due to site html layout change ([`b9eaf08`](https://github.com/ngshiheng/burplist/commit/b9eaf08d8abdf0c2345fa35ee88a9a152ce50441))
+
+### Unknown
+
+* Merge pull request #160 from ngshiheng/fix-craftbeersg-spider
+
+fix(spider): update craftbeersg due to site html layout change ([`8328121`](https://github.com/ngshiheng/burplist/commit/8328121177f6faa79807dd7fea77a49fb918f55d))
+
+* Merge pull request #159 from ngshiheng/renovate/actions-setup-python-5.x
+
+chore(deps): update actions/setup-python action to v5 ([`9634979`](https://github.com/ngshiheng/burplist/commit/96349797f632d44c537b9831aac70ab82f5d86f6))
+
+
 ## v1.11.16 (2023-12-21)
 
 ### Fix
