@@ -25,8 +25,8 @@ class TroubleBrewingSpider(scrapy.Spider):
     https://troublebrewing.com/
     """
 
-    name = 'troublebrewing'
-    start_urls = ['https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer']
+    name = "troublebrewing"
+    start_urls = ["https://troublebrewing.com/collections/trouble-beer-cider-hard-seltzer"]
 
     def parse(self, response) -> Generator[scrapy.Request, None, None]:
         """
@@ -34,7 +34,11 @@ class TroubleBrewingSpider(scrapy.Spider):
         @returns requests 1
         """
         collections = response.xpath(TroubleBrewingLocator.beer_collection)
-        yield from response.follow_all(collections, callback=self.parse_collection)
+        yield from response.follow_all(
+            collections,
+            callback=self.parse_collection,
+            cookies={"cart_currency": "SGD", "localization": "SG"},
+        )
 
     def parse_collection(self, response) -> Generator[scrapy.Request, None, None]:
         """
@@ -45,31 +49,34 @@ class TroubleBrewingSpider(scrapy.Spider):
         """
         script_tag = response.xpath(TroubleBrewingLocator.script_tag).get()
 
-        data_regex = re.search(r'\[\{(.*?)\]', script_tag)
+        data_regex = re.search(r"\[\{(.*?)\]", script_tag)
         if data_regex:
             products = json.loads(data_regex.group())
 
             for product in products:
-                name = product['name']
+                name = product["name"]
 
                 loader = ProductLoader()
 
-                loader.add_value('platform', self.name)
-                loader.add_value('name', name)
-                loader.add_value('url', response.request.url)
+                loader.add_value("platform", self.name)
+                loader.add_value("name", name)
+                loader.add_value("url", response.request.url)
 
-                loader.add_value('brand', 'Trouble Brewing')
-                loader.add_value('origin', 'Singapore')
-                loader.add_value('style', parse_style(name))
+                loader.add_value("brand", "Trouble Brewing")
+                loader.add_value("origin", "Singapore")
+                loader.add_value("style", parse_style(name))
 
-                loader.add_value('abv', None)
-                loader.add_value('volume', '330ml')
-                loader.add_value('quantity', self.get_product_quantity(product['sku'], product['public_title']))
+                loader.add_value("abv", None)
+                loader.add_value("volume", "330ml")
+                loader.add_value(
+                    "quantity",
+                    self.get_product_quantity(product["sku"], product["public_title"]),
+                )
 
                 image_url = response.xpath(TroubleBrewingLocator.product_image_url).get()
-                loader.add_value('image_url', f'https:{image_url}')
+                loader.add_value("image_url", f"https:{image_url}")
 
-                loader.add_value('price', product['price'] / 100)  # e.g. 7700 == $77.00
+                loader.add_value("price", product["price"] / 100)  # e.g. 7700 == $77.00
                 yield loader.load_item()
 
     @staticmethod
@@ -78,22 +85,22 @@ class TroubleBrewingSpider(scrapy.Spider):
             return 24
 
         # Special case for "Trouble Brewing x @FEEDBENG Chinese New Year Gift Set"
-        if public_title and 'Gift Set' in public_title:
+        if public_title and "Gift Set" in public_title:
             return 2
 
         # Special case for "Limited - Golden Pig Session IPA"
-        if public_title and '24 pack' in public_title:
+        if public_title and "24 pack" in public_title:
             return 24
-        if public_title and '6 pack' in public_title:
+        if public_title and "6 pack" in public_title:
             return 6
 
         # Normal case
-        if sku.endswith('24B'):
+        if sku.endswith("24B"):
             return 24
-        if sku.endswith('12B'):
+        if sku.endswith("12B"):
             return 12
-        if sku.endswith('6B'):
+        if sku.endswith("6B"):
             return 6
-        if sku.startswith('SGBN') or sku.startswith('TCMX') or sku == '':
+        if sku.startswith("SGBN") or sku.startswith("TCMX") or sku == "":
             return 24
         return 1
