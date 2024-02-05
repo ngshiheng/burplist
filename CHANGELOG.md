@@ -2,6 +2,17 @@
 
 
 
+## v1.11.21 (2024-02-05)
+
+### Chore
+
+* chore: update pre-commit hooks versions ([`d7b5b12`](https://github.com/ngshiheng/burplist/commit/d7b5b1227ba03b6682a67b168a9034647bcbe826))
+
+### Fix
+
+* fix(spider): use localized cookies when sending requests ([`a1c50cb`](https://github.com/ngshiheng/burplist/commit/a1c50cb615474e5afc9c41ecd46630f19027260b))
+
+
 ## v1.11.20 (2024-01-31)
 
 ### Fix
