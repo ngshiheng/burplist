@@ -2,6 +2,13 @@
 
 
 
+## v1.11.22 (2024-02-29)
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`f6085c6`](https://github.com/ngshiheng/burplist/commit/f6085c669f09fcf1047673a013a106a9b4de1601))
+
+
 ## v1.11.21 (2024-02-05)
 
 ### Chore
