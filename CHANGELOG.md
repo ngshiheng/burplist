@@ -2,6 +2,13 @@
 
 
 
+## v1.11.23 (2024-03-31)
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`4612a86`](https://github.com/ngshiheng/burplist/commit/4612a860bf5540e02413e04c6b5ddf1dd15b36e5))
+
+
 ## v1.11.22 (2024-02-29)
 
 ### Fix
