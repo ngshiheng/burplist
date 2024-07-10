@@ -1,6 +1,14 @@
 # CHANGELOG
 
+## v1.11.26 (2024-07-10)
 
+### Fix
+
+* fix(spider): update pattern for get_product_quantity ([`34660e0`](https://github.com/ngshiheng/burplist/commit/34660e0add01a7b5322a773f73dfe7ecc3cd12d2))
+
+* fix(spider): update coldstorage spider due to change in site html structure ([`6509cac`](https://github.com/ngshiheng/burplist/commit/6509cac993be57a9dce390fa29adbf46ff7ee393))
+
+* fix(spider): update hopshop spider due to change in site html structure ([`42f1c30`](https://github.com/ngshiheng/burplist/commit/42f1c30e7ff834d33e93dc07e5612d03e2340c8a))
 
 ## v1.11.25 (2024-05-31)
 
@@ -8,13 +16,11 @@
 
 * fix(deps): update all non-major dependencies ([`350bf81`](https://github.com/ngshiheng/burplist/commit/350bf81ff7270efb49bbbc2aaeb0c26bd36f68ef))
 
-
 ## v1.11.24 (2024-04-30)
 
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`a7e1318`](https://github.com/ngshiheng/burplist/commit/a7e13184e4aed76a29fc949e6e328920cbf6fb3b))
-
 
 ## v1.11.23 (2024-03-31)
 
@@ -22,13 +28,11 @@
 
 * fix(deps): update all non-major dependencies ([`4612a86`](https://github.com/ngshiheng/burplist/commit/4612a860bf5540e02413e04c6b5ddf1dd15b36e5))
 
-
 ## v1.11.22 (2024-02-29)
 
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`f6085c6`](https://github.com/ngshiheng/burplist/commit/f6085c669f09fcf1047673a013a106a9b4de1601))
-
 
 ## v1.11.21 (2024-02-05)
 
@@ -40,15 +44,17 @@
 
 * fix(spider): use localized cookies when sending requests ([`a1c50cb`](https://github.com/ngshiheng/burplist/commit/a1c50cb615474e5afc9c41ecd46630f19027260b))
 
-
 ## v1.11.20 (2024-01-31)
 
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`ea35f0b`](https://github.com/ngshiheng/burplist/commit/ea35f0ba06d39113f885961b17363ea564e0de54))
 
-
 ## v1.11.19 (2024-01-28)
+
+### Chore
+
+* chore(deps): update dependency flake8 to v7 ([`1ccc5de`](https://github.com/ngshiheng/burplist/commit/1ccc5de6de9e3749363ae153967aa0bcb4dfa568))
 
 ### Fix
 
@@ -60,12 +66,9 @@
 
 chore(deps): update dependency flake8 to v7 ([`aa872d2`](https://github.com/ngshiheng/burplist/commit/aa872d22c77c39bbe5b9f3ce07bd427740ca1464))
 
-
 ## v1.11.18 (2024-01-28)
 
 ### Chore
-
-* chore(deps): update dependency flake8 to v7 ([`1ccc5de`](https://github.com/ngshiheng/burplist/commit/1ccc5de6de9e3749363ae153967aa0bcb4dfa568))
 
 * chore: bump python version to ^3.10 ([`775a62f`](https://github.com/ngshiheng/burplist/commit/775a62f4f5112153de571a38396a39e7c90dd907))
 
@@ -91,7 +94,6 @@ chore(deps): update dependency mypy to v1 ([`479f864`](https://github.com/ngshih
 
 chore(deps): update abatilo/actions-poetry action to v3 ([`ed8f6bb`](https://github.com/ngshiheng/burplist/commit/ed8f6bb2538ada803cbcd2bb45d582a15e2b4e46))
 
-
 ## v1.11.17 (2024-01-28)
 
 ### Chore
@@ -112,8 +114,11 @@ fix(spider): update craftbeersg due to site html layout change ([`8328121`](http
 
 chore(deps): update actions/setup-python action to v5 ([`9634979`](https://github.com/ngshiheng/burplist/commit/96349797f632d44c537b9831aac70ab82f5d86f6))
 
-
 ## v1.11.16 (2023-12-21)
+
+### Chore
+
+* chore(deps): update dependency pylint to v3 ([`071cbd3`](https://github.com/ngshiheng/burplist/commit/071cbd39a579235d644d731d258cd9a2dc63fdb2))
 
 ### Fix
 
@@ -131,12 +136,11 @@ fix(deps): update all non-major dependencies ([`ad03b2f`](https://github.com/ngs
 
 chore(deps): update dependency pylint to v3 ([`6cea93f`](https://github.com/ngshiheng/burplist/commit/6cea93ff19d28327c26cb0c5d1d50d7e3b846efc))
 
-
 ## v1.11.15 (2023-10-31)
 
 ### Chore
 
-* chore(deps): update dependency pylint to v3 ([`071cbd3`](https://github.com/ngshiheng/burplist/commit/071cbd39a579235d644d731d258cd9a2dc63fdb2))
+* chore(deps): update actions/checkout action to v4 ([`47c3127`](https://github.com/ngshiheng/burplist/commit/47c312723660756a7d34b92a45cb3166d280039f))
 
 ### Fix
 
@@ -148,17 +152,11 @@ chore(deps): update dependency pylint to v3 ([`6cea93f`](https://github.com/ngsh
 
 chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.com/ngshiheng/burplist/commit/169a7ee6be99e98356ba4274638eb346a36b4958))
 
-
 ## v1.11.14 (2023-09-30)
-
-### Chore
-
-* chore(deps): update actions/checkout action to v4 ([`47c3127`](https://github.com/ngshiheng/burplist/commit/47c312723660756a7d34b92a45cb3166d280039f))
 
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`7c26430`](https://github.com/ngshiheng/burplist/commit/7c26430d2612473e536ae99d0365086345ecb6ce))
-
 
 ## v1.11.13 (2023-08-31)
 
@@ -166,13 +164,11 @@ chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.co
 
 * fix(deps): update all non-major dependencies ([`b9d8fa5`](https://github.com/ngshiheng/burplist/commit/b9d8fa593548552d122f714849e4610a3c26a959))
 
-
 ## v1.11.12 (2023-07-31)
 
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`f031116`](https://github.com/ngshiheng/burplist/commit/f0311164f3698f8f3f0b4e4f8e4d17579488d5bd))
-
 
 ## v1.11.11 (2023-06-26)
 
@@ -180,13 +176,11 @@ chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.co
 
 * fix(deps): update all non-major dependencies ([`9d2c966`](https://github.com/ngshiheng/burplist/commit/9d2c966d1189bf8f3e3960619554110bbabb8846))
 
-
 ## v1.11.10 (2023-05-31)
 
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`a7115e1`](https://github.com/ngshiheng/burplist/commit/a7115e14c4cb31fdafd9ecd721b706c95aa7e752))
-
 
 ## v1.11.9 (2023-04-30)
 
@@ -194,13 +188,11 @@ chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.co
 
 * fix(deps): update all non-major dependencies ([`30bbed8`](https://github.com/ngshiheng/burplist/commit/30bbed8d5b4ea4cb57c65f003813747efb6a3483))
 
-
 ## v1.11.8 (2023-04-17)
 
 ### Fix
 
 * fix: update domain name ([`633cc70`](https://github.com/ngshiheng/burplist/commit/633cc703420e2e589bcd8e99178c6d52219a67cf))
-
 
 ## v1.11.7 (2023-03-31)
 
@@ -211,7 +203,6 @@ chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.co
 ### Fix
 
 * fix(deps): update all non-major dependencies ([`9cb0f35`](https://github.com/ngshiheng/burplist/commit/9cb0f35ffe9a9aa744040b041deb524fb2a42d31))
-
 
 ## v1.11.6 (2023-02-07)
 
@@ -241,7 +232,6 @@ chore(deps): update actions/checkout action to v4 ([`169a7ee`](https://github.co
 
 chore(deps): update dependency pre-commit to v3 ([`4a3ebf9`](https://github.com/ngshiheng/burplist/commit/4a3ebf926733f37f41033f89c043eae42ed97972))
 
-
 ## v1.11.5 (2023-01-29)
 
 ### Chore
@@ -251,7 +241,6 @@ chore(deps): update dependency pre-commit to v3 ([`4a3ebf9`](https://github.com/
 ### Fix
 
 * fix(spider): handle page not found error and invalid price ([`f40ca3b`](https://github.com/ngshiheng/burplist/commit/f40ca3b21731f31e584ea940c75c4ed3a5fe8978))
-
 
 ## v1.11.4 (2023-01-29)
 
@@ -273,13 +262,11 @@ chore(deps): update dependency pre-commit to v3 ([`4a3ebf9`](https://github.com/
 
 * refactor: update docstrings, logs, and other misc. things ([`a3c24c3`](https://github.com/ngshiheng/burplist/commit/a3c24c3942a5278d8c5a055a15ec6f56693d1a1e))
 
-
 ## v1.11.3 (2023-01-28)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.14.0 ([`07bc1a5`](https://github.com/ngshiheng/burplist/commit/07bc1a5c1da2738814017a1844ad4757e0efb9a5))
-
 
 ## v1.11.2 (2023-01-28)
 
@@ -295,7 +282,6 @@ chore(deps): update dependency pre-commit to v3 ([`4a3ebf9`](https://github.com/
 
 * fix(deps): update dependency ipython to v8.9.0 ([`a4efa4e`](https://github.com/ngshiheng/burplist/commit/a4efa4eeb480845eafc6298cdfb474c310a471a7))
 
-
 ## v1.11.1 (2023-01-28)
 
 ### Fix
@@ -307,7 +293,6 @@ chore(deps): update dependency pre-commit to v3 ([`4a3ebf9`](https://github.com/
 * Merge pull request #137 from ngshiheng/renovate/alembic-1.x
 
 fix(deps): update dependency alembic to v1.9.2 ([`08c60a5`](https://github.com/ngshiheng/burplist/commit/08c60a59a9bc172f4e7ce9eda40fd7185bb84327))
-
 
 ## v1.11.0 (2023-01-28)
 
@@ -324,7 +309,6 @@ fix(deps): update dependency alembic to v1.9.2 ([`08c60a5`](https://github.com/n
 * Merge pull request #142 from ngshiheng/add-craftbeersg-spider
 
 feat: add craftbeersg spider ([`7f7d0ed`](https://github.com/ngshiheng/burplist/commit/7f7d0edc998bc5ee133cb229090494574b10869f))
-
 
 ## v1.10.13 (2023-01-28)
 
@@ -362,20 +346,17 @@ chore(deps): pin dependency mypy to 0.910 ([`4ecc2ef`](https://github.com/ngshih
 
 * BREAKING CHANGE: removed giant and shopee spiders ([`2b687b7`](https://github.com/ngshiheng/burplist/commit/2b687b784de6d16248a9c57435c6672da184e01c))
 
-
 ## v1.10.12 (2022-12-21)
 
 ### Fix
 
 * fix(spider): increase download delay for shopee ([`46d154a`](https://github.com/ngshiheng/burplist/commit/46d154a6c635febfb5fd8a41e6a8b5e6c6bf02be))
 
-
 ## v1.10.11 (2022-12-18)
 
 ### Fix
 
 * fix(spider): handle captcha challenge ([`2bc54e7`](https://github.com/ngshiheng/burplist/commit/2bc54e791a9e17c4334210a973f22694dae3b278))
-
 
 ## v1.10.10 (2022-12-16)
 
@@ -399,20 +380,17 @@ chore(deps): update dependency flake8 to v6 ([`b375e9d`](https://github.com/ngsh
 
 chore(deps): update dependency autopep8 to v2 ([`9b03570`](https://github.com/ngshiheng/burplist/commit/9b0357098b9b4421106c980cf3fddcc40488fd62))
 
-
 ## v1.10.9 (2022-12-06)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.11.1 ([`237bc08`](https://github.com/ngshiheng/burplist/commit/237bc08b70df6424162ce51af4011b4a75f56f56))
 
-
 ## v1.10.8 (2022-12-05)
 
 ### Fix
 
 * fix(deps): update dependency scrapy to v2.7.1 ([`5f708e6`](https://github.com/ngshiheng/burplist/commit/5f708e6ee9eec9c990cf340ee96639521dc0bdd8))
-
 
 ## v1.10.7 (2022-12-05)
 
@@ -426,13 +404,11 @@ chore(deps): update dependency autopep8 to v2 ([`9b03570`](https://github.com/ng
 
 * fix(deps): update dependency ipython to v8.7.0 ([`4ee24b4`](https://github.com/ngshiheng/burplist/commit/4ee24b4c79d993adb2eaba3ed7e4925064c21b5b))
 
-
 ## v1.10.6 (2022-12-05)
 
 ### Fix
 
 * fix: poetry tries to remove setuptools and then complains it can&#39;t find it ([`88b2a81`](https://github.com/ngshiheng/burplist/commit/88b2a816c7d31081014da97d8b417a35f7a15ed1))
-
 
 ## v1.10.5 (2022-12-02)
 
@@ -454,7 +430,6 @@ chore(deps): update dependency autopep8 to v2 ([`9b03570`](https://github.com/ng
 
 ci: remove heroku deploy ([`eb05522`](https://github.com/ngshiheng/burplist/commit/eb055229f1c77b74aa41a5f51f14205e8189d40d))
 
-
 ## v1.10.4 (2022-11-23)
 
 ### Fix
@@ -466,7 +441,6 @@ ci: remove heroku deploy ([`eb05522`](https://github.com/ngshiheng/burplist/comm
 * Merge pull request #120 from ngshiheng/renovate/colorlog-6.x
 
 fix(deps): update dependency colorlog to v6.7.0 ([`0e5757a`](https://github.com/ngshiheng/burplist/commit/0e5757aa93fd3c90e22523c9447c4af70981ff67))
-
 
 ## v1.10.3 (2022-11-23)
 
@@ -481,7 +455,6 @@ fix(deps): update dependency colorlog to v6.7.0 ([`0e5757a`](https://github.com/
 * Merge pull request #116 from ngshiheng/renovate/pin-dependencies
 
 fix(deps): pin dependencies ([`62773e1`](https://github.com/ngshiheng/burplist/commit/62773e13613f58c684f346fe9b725dc5254ee46b))
-
 
 ## v1.10.2 (2022-11-23)
 
@@ -509,7 +482,6 @@ chore: add setuptools ([`169ab08`](https://github.com/ngshiheng/burplist/commit/
 
 fix: install setuptool ([`9e5b4de`](https://github.com/ngshiheng/burplist/commit/9e5b4dedae3299777432e401e7c5734e36277970))
 
-
 ## v1.10.1 (2022-11-17)
 
 ### Ci
@@ -526,7 +498,6 @@ fix: install setuptool ([`9e5b4de`](https://github.com/ngshiheng/burplist/commit
 
 * fix(spider): handle case where product is returned as null from fairprice api ([`700980b`](https://github.com/ngshiheng/burplist/commit/700980b3d559736e36bbe98c1ee8806b0696451d))
 
-
 ## v1.10.0 (2022-11-07)
 
 ### Feature
@@ -541,13 +512,11 @@ fix: install setuptool ([`9e5b4de`](https://github.com/ngshiheng/burplist/commit
 
 * refactor(spider): lazada spider to always use proxy ([`a20f815`](https://github.com/ngshiheng/burplist/commit/a20f8152bd71207849e71d6332c3271256d160af))
 
-
 ## v1.9.0 (2022-11-07)
 
 ### Feature
 
 * feat: add proxy middleware ([`fa0b3ec`](https://github.com/ngshiheng/burplist/commit/fa0b3ecdbf421df5e44c9c7c8baed5c2a51f89af))
-
 
 ## v1.8.0 (2022-11-05)
 
@@ -565,7 +534,6 @@ fix: install setuptool ([`9e5b4de`](https://github.com/ngshiheng/burplist/commit
 
 feat: scrapeops scrapy integration ([`96ff70c`](https://github.com/ngshiheng/burplist/commit/96ff70cd8c85d42bc8f74457450a964809274bd2))
 
-
 ## v1.7.0 (2022-11-05)
 
 ### Documentation
@@ -582,20 +550,17 @@ feat: scrapeops scrapy integration ([`96ff70c`](https://github.com/ngshiheng/bur
 
 * refactor: item pipelines ([`4e8343d`](https://github.com/ngshiheng/burplist/commit/4e8343d19331aaf8813887a013e9321b7a2e10fe))
 
-
 ## v1.6.21 (2022-11-05)
 
 ### Fix
 
 * fix(spider): lazada spider url param path ([`7f84e11`](https://github.com/ngshiheng/burplist/commit/7f84e113ef4d9b998fd50d31a7c577957bbeee40))
 
-
 ## v1.6.20 (2022-11-05)
 
 ### Fix
 
 * fix(spider): shopee spider regression due to api requirement change ([`7e0fa59`](https://github.com/ngshiheng/burplist/commit/7e0fa59a55d979ac9aaf08d92a0e913137274cbe))
-
 
 ## v1.6.19 (2022-11-03)
 
@@ -605,20 +570,17 @@ feat: scrapeops scrapy integration ([`96ff70c`](https://github.com/ngshiheng/bur
 
 * fix: missing trailing comma ([`a2e4f30`](https://github.com/ngshiheng/burplist/commit/a2e4f30182f11bfc019731fe4cbdd9da568f917b))
 
-
 ## v1.6.18 (2022-11-02)
 
 ### Fix
 
 * fix: downgrade to python3.9 ([`e8949d1`](https://github.com/ngshiheng/burplist/commit/e8949d1350ea4853cd5307cbf54f414f6598801b))
 
-
 ## v1.6.17 (2022-10-31)
 
 ### Fix
 
 * fix(deps): update dependency sqlalchemy to v1.4.42 ([`07cad9b`](https://github.com/ngshiheng/burplist/commit/07cad9b1348c5f3c47b59328bcf5cf8038ba144b))
-
 
 ## v1.6.16 (2022-10-31)
 
@@ -630,13 +592,11 @@ feat: scrapeops scrapy integration ([`96ff70c`](https://github.com/ngshiheng/bur
 
 * fix(deps): update dependency psycopg2-binary to v2.9.5 ([`d869198`](https://github.com/ngshiheng/burplist/commit/d86919846e158767f070d4a43321186ae81ca50a))
 
-
 ## v1.6.15 (2022-10-01)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.9.9 ([`677826f`](https://github.com/ngshiheng/burplist/commit/677826fe0f41e51ccebea22bc9d926aeeb9d2fa3))
-
 
 ## v1.6.14 (2022-09-30)
 
@@ -658,7 +618,6 @@ feat: scrapeops scrapy integration ([`96ff70c`](https://github.com/ngshiheng/bur
 
 * refactor: improve Makefile ([`f8a3556`](https://github.com/ngshiheng/burplist/commit/f8a3556911c957fdf4439e11d3f2e1a15b664d1e))
 
-
 ## v1.6.13 (2022-08-23)
 
 ### Chore
@@ -674,7 +633,6 @@ feat: scrapeops scrapy integration ([`96ff70c`](https://github.com/ngshiheng/bur
 * Merge pull request #108 from ngshiheng/update-lazada-spider
 
 fix(spider): update lazada spider endpoint ([`47bd287`](https://github.com/ngshiheng/burplist/commit/47bd2874b24b6dc8caada775e04e259326ac957f))
-
 
 ## v1.6.12 (2022-08-12)
 
@@ -694,13 +652,11 @@ fix(spider): update lazada spider endpoint ([`47bd287`](https://github.com/ngshi
 
 chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngshiheng/burplist/commit/fb76fc9a9046c72f37bd7d1bbae71e37f96ee9a2))
 
-
 ## v1.6.11 (2022-07-30)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.9.0 ([`daf2f21`](https://github.com/ngshiheng/burplist/commit/daf2f21ab6f4f640f116ff322f74447142131e13))
-
 
 ## v1.6.10 (2022-07-25)
 
@@ -712,7 +668,6 @@ chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngsh
 
 * fix(deps): update dependency scrapy to v2.6.2 ([`b3271e7`](https://github.com/ngshiheng/burplist/commit/b3271e78951faab0f8b09b83539019030134db53))
 
-
 ## v1.6.9 (2022-07-21)
 
 ### Chore
@@ -723,13 +678,11 @@ chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngsh
 
 * fix(deps): update dependency sentry-sdk to v1.8.0 ([`dd3716c`](https://github.com/ngshiheng/burplist/commit/dd3716c71dfd78c07c3fff7c6af580802c85ff14))
 
-
 ## v1.6.8 (2022-07-16)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.7.2 ([`fed5a2f`](https://github.com/ngshiheng/burplist/commit/fed5a2fbdcf73070a2a6e68de573c3cfe4043f97))
-
 
 ## v1.6.7 (2022-07-13)
 
@@ -737,13 +690,11 @@ chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngsh
 
 * fix(deps): update dependency sentry-sdk to v1.7.1 ([`212864d`](https://github.com/ngshiheng/burplist/commit/212864d9dd78feb99c63d43963591e390b9d7151))
 
-
 ## v1.6.6 (2022-07-13)
 
 ### Fix
 
 * fix(deps): update dependency alembic to v1.8.1 ([`bfe5b90`](https://github.com/ngshiheng/burplist/commit/bfe5b90e02e664d5177305b1f021df8606255564))
-
 
 ## v1.6.5 (2022-07-11)
 
@@ -771,13 +722,11 @@ chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngsh
 
 * test(parser): add test_parse_name ([`c875fa2`](https://github.com/ngshiheng/burplist/commit/c875fa2fab770d1b02d4a10113871c3faa4cbcdf))
 
-
 ## v1.6.4 (2022-06-24)
 
 ### Fix
 
 * fix(deps): update dependency sqlalchemy to v1.4.39 ([`4abd32c`](https://github.com/ngshiheng/burplist/commit/4abd32ce323c6d2573260b2e8ab859cfb74bff7a))
-
 
 ## v1.6.3 (2022-06-24)
 
@@ -789,9 +738,9 @@ chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngsh
 
 * chore: update pre-commit versions ([`0c443a5`](https://github.com/ngshiheng/burplist/commit/0c443a511f5747ca916b50c2c3944bbb53f59a49))
 
-* chore(deps): update dependency pylint to v2.14.1 ([`eb1a40e`](https://github.com/ngshiheng/burplist/commit/eb1a40e5194793cc8bd728684c19f218e4b8bfad))
-
 * chore(deps): update actions/setup-python action to v4 ([`3247f60`](https://github.com/ngshiheng/burplist/commit/3247f60ddba0d1a51632d49e5effc9fe1b59d52d))
+
+* chore(deps): update dependency pylint to v2.14.1 ([`eb1a40e`](https://github.com/ngshiheng/burplist/commit/eb1a40e5194793cc8bd728684c19f218e4b8bfad))
 
 * chore: update style &amp; flake8 exclude list ([`606db23`](https://github.com/ngshiheng/burplist/commit/606db2338382c60e5a1de5904d9c2c513ac028c5))
 
@@ -817,7 +766,6 @@ chore(deps): update dependency flake8 to v5 ([`fb76fc9`](https://github.com/ngsh
 
 chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://github.com/ngshiheng/burplist/commit/148eb8c35eddc2f2161e6bc80d9c469d79e1f021))
 
-
 ## v1.6.2 (2022-06-11)
 
 ### Chore
@@ -832,13 +780,11 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 
 * refactor(locator): update imports ([`e1bf084`](https://github.com/ngshiheng/burplist/commit/e1bf08449290337f61dce7432151bc03788d19c0))
 
-
 ## v1.6.1 (2022-06-08)
 
 ### Fix
 
 * fix: missing trailing comma which causes unintended concat ([`e89fead`](https://github.com/ngshiheng/burplist/commit/e89fead09f7715c67f599ec20ce9d10656b27870))
-
 
 ## v1.6.0 (2022-06-07)
 
@@ -854,13 +800,11 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 
 * feat: skip non-beer items ([`45bab87`](https://github.com/ngshiheng/burplist/commit/45bab87557b9ca93576aca148a20394640b5ecdc))
 
-
 ## v1.5.3 (2022-06-01)
 
 ### Fix
 
 * fix(deps): update dependency alembic to v1.8.0 ([`a7d2bd2`](https://github.com/ngshiheng/burplist/commit/a7d2bd278ddd9971c171db5c3b90c3c9ab5dedf3))
-
 
 ## v1.5.2 (2022-06-01)
 
@@ -871,7 +815,6 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 ### Fix
 
 * fix(deps): update dependency sqlalchemy to v1.4.37 ([`5c6d125`](https://github.com/ngshiheng/burplist/commit/5c6d125027597c312aaf84d63360342a4f8a77fa))
-
 
 ## v1.5.1 (2022-05-31)
 
@@ -890,7 +833,6 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 ### Fix
 
 * fix(deps): update dependency ipython to v8.4.0 ([`e62ffe8`](https://github.com/ngshiheng/burplist/commit/e62ffe8bd08df9753861268fceca31bcc542e218))
-
 
 ## v1.5.0 (2022-05-19)
 
@@ -942,13 +884,11 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 
 * style(spider): group locators according to items.py ([`c4c3869`](https://github.com/ngshiheng/burplist/commit/c4c3869f083b38da13e46f8c7fd0a6cd546f396d))
 
-
 ## v1.4.1 (2022-05-02)
 
 ### Fix
 
 * fix(spider): invalid xpath expression error ([`b3676b4`](https://github.com/ngshiheng/burplist/commit/b3676b4b2ccfb8bde0ec7bbc36653009468d404d))
-
 
 ## v1.4.0 (2022-05-01)
 
@@ -956,13 +896,11 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 
 * feat(command): allow prune.sh to specify stale_days ([`8a0b4bb`](https://github.com/ngshiheng/burplist/commit/8a0b4bb1cfbdb3da43653a7c3acee353625daf6b))
 
-
 ## v1.3.1 (2022-05-01)
 
 ### Fix
 
 * fix(command): move optparse to argparse ([`b0175bb`](https://github.com/ngshiheng/burplist/commit/b0175bbf7abf6e7c94e194085c7f828a2aa88692))
-
 
 ## v1.3.0 (2022-05-01)
 
@@ -996,7 +934,6 @@ chore(deps): update actions/setup-python action to v4 ([`148eb8c`](https://githu
 
 feat: improve filter and log ([`3ef1269`](https://github.com/ngshiheng/burplist/commit/3ef12696173230dcbb1a7ead6fc7a8bbb28d4c53))
 
-
 ## v1.2.1 (2022-04-30)
 
 ### Chore
@@ -1006,7 +943,6 @@ feat: improve filter and log ([`3ef1269`](https://github.com/ngshiheng/burplist/
 ### Fix
 
 * fix(deps): update dependency sqlalchemy to v1.4.36 ([`3cfb9c6`](https://github.com/ngshiheng/burplist/commit/3cfb9c67910cc83f6cd353c8680ae55a95d7917d))
-
 
 ## v1.2.0 (2022-04-30)
 
@@ -1036,7 +972,6 @@ feat: improve filter and log ([`3ef1269`](https://github.com/ngshiheng/burplist/
 
 feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/commit/17364d7bad201f812884911cc9e37c0b5fee53eb))
 
-
 ## v1.1.10 (2022-04-30)
 
 ### Chore
@@ -1051,7 +986,6 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 
 * fix: api query param currentPage to be 0-indexed ([`b127e13`](https://github.com/ngshiheng/burplist/commit/b127e1360172ab896d4a3ce487bd8eb3bdf6feb5))
 
-
 ## v1.1.9 (2022-04-17)
 
 ### Chore
@@ -1062,13 +996,11 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 
 * fix(deps): update dependency sentry-sdk to v1.5.10 ([`2c55e7b`](https://github.com/ngshiheng/burplist/commit/2c55e7b466312a57985c75831873dee8e2304cc4))
 
-
 ## v1.1.8 (2022-04-12)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.5.9 ([`0d2c520`](https://github.com/ngshiheng/burplist/commit/0d2c520d0ae4a8a68cc6d07171560105b9a10bf8))
-
 
 ## v1.1.7 (2022-04-10)
 
@@ -1080,7 +1012,6 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 
 * fix(deps): update dependency sqlalchemy to v1.4.35 ([`8ec5708`](https://github.com/ngshiheng/burplist/commit/8ec5708f707b39f19d244b9f940f437f705aacac))
 
-
 ## v1.1.6 (2022-04-06)
 
 ### Chore
@@ -1091,13 +1022,11 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 
 * fix(deps): update dependency scrapy to v2.6.1 ([`7c4c677`](https://github.com/ngshiheng/burplist/commit/7c4c6774fe2b0d1a15ca77fb428960fa1b5fe83c))
 
-
 ## v1.1.5 (2022-03-29)
 
 ### Fix
 
 * fix(deps): update dependency ipython to v8.2.0 ([`1214d35`](https://github.com/ngshiheng/burplist/commit/1214d35aaa51a371af7ab5708243c765a135dadf))
-
 
 ## v1.1.4 (2022-03-26)
 
@@ -1105,20 +1034,17 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 
 * fix(deps): update dependency ipython to v8.1.1 ([`14ff8b6`](https://github.com/ngshiheng/burplist/commit/14ff8b62ca528641fcc0dc60344bdecbd347db55))
 
-
 ## v1.1.3 (2022-03-23)
 
 ### Fix
 
 * fix(deps): update dependency sqlalchemy to v1.4.32 ([`6265f7b`](https://github.com/ngshiheng/burplist/commit/6265f7bb3cd88ce7a6b001bbb923b1d0a43bb92f))
 
-
 ## v1.1.2 (2022-03-22)
 
 ### Fix
 
 * fix(deps): update dependency sentry-sdk to v1.5.8 ([`fe7237e`](https://github.com/ngshiheng/burplist/commit/fe7237e58a17f8b31a05411a66752c49d72bf805))
-
 
 ## v1.1.1 (2022-03-19)
 
@@ -1137,7 +1063,6 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 ### Style
 
 * style: update order and formatting ([`cdf6f45`](https://github.com/ngshiheng/burplist/commit/cdf6f45df9c8cd1dea2e151f2328f6afa05f449c))
-
 
 ## v1.1.0 (2022-03-17)
 
@@ -1165,9 +1090,9 @@ feat: add giant.sg spider ([`17364d7`](https://github.com/ngshiheng/burplist/com
 
 * chore: update script to prune last 14 days of data ([`446babb`](https://github.com/ngshiheng/burplist/commit/446babb6762fa68c5b8d8b57b2d0774b387c9f17))
 
-* chore: update timezone and schedule ([`8657393`](https://github.com/ngshiheng/burplist/commit/86573930869173d00870dc6c9784e8b7c80e6230))
-
 * chore: update timezone and schedule ([`4d5295d`](https://github.com/ngshiheng/burplist/commit/4d5295dfe690ef29469cd87910d8e4dbaf054566))
+
+* chore: update timezone and schedule ([`8657393`](https://github.com/ngshiheng/burplist/commit/86573930869173d00870dc6c9784e8b7c80e6230))
 
 * chore(deps): update dependency autopep8 to v1.6.0 ([`e2795c8`](https://github.com/ngshiheng/burplist/commit/e2795c864b29aad7c0233e59e916592eb96b6774))
 
@@ -1269,7 +1194,6 @@ chore(deps): update dependency flake8 to v4 ([`dab1fb5`](https://github.com/ngsh
 
 fix(deps): update dependency ipython to v8 ([`0926ff4`](https://github.com/ngshiheng/burplist/commit/0926ff440c167d5747728828a4f1c177e01c4ed9))
 
-
 ## v1.0.4 (2022-01-14)
 
 ### Chore
@@ -1328,7 +1252,6 @@ Configure Renovate ([`9dec6ca`](https://github.com/ngshiheng/burplist/commit/9de
 
 fix: spider API requires new query param ([`142f5c5`](https://github.com/ngshiheng/burplist/commit/142f5c5520c11dd050977425fd5aa2737e9ff927))
 
-
 ## v1.0.3 (2021-12-07)
 
 ### Chore
@@ -1381,7 +1304,6 @@ fix: inconsistent API response where sometimes it returns quantity as a ([`1ae64
 
 Refactor docker ([`20278b9`](https://github.com/ngshiheng/burplist/commit/20278b912e71c2b9657be8b22c2860fdd4a55892))
 
-
 ## v1.0.2 (2021-12-03)
 
 ### Documentation
@@ -1411,7 +1333,6 @@ Refactor docker ([`20278b9`](https://github.com/ngshiheng/burplist/commit/20278b
 * Merge pull request #56 from ngshiheng/ignore-gift-cards
 
 Filter products with the name containing &#39;gift&#39; ([`11c5b5e`](https://github.com/ngshiheng/burplist/commit/11c5b5e09217618a2efa9c9c464b8af22c3d51ca))
-
 
 ## v1.0.1 (2021-11-13)
 
@@ -1476,7 +1397,6 @@ Dockerize app ([`605722e`](https://github.com/ngshiheng/burplist/commit/605722e6
 * Packages update ([`b1181d5`](https://github.com/ngshiheng/burplist/commit/b1181d53258162dee333cfcf71f601962fb43afe))
 
 * Add doc description for quantize_price ([`5563352`](https://github.com/ngshiheng/burplist/commit/55633524d8941f3ee8c9c525c9a78ac896ae1c44))
-
 
 ## v1.0.0 (2021-10-05)
 
