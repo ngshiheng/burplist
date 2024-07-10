@@ -26,8 +26,11 @@ class ColdStorageSpider(scrapy.Spider):
         """
         products = response.xpath(ColdStorageLocator.products)
 
+        names = []
+
         for product in products:
             name = product.xpath(ColdStorageLocator.product_name).get()
+            names.append(name)
 
             loader = ProductLoader(selector=product)
 
@@ -48,6 +51,7 @@ class ColdStorageSpider(scrapy.Spider):
             loader.add_xpath("price", ColdStorageLocator.product_price)
             yield loader.load_item()
 
+        print(names)
         next_page = response.xpath(ColdStorageLocator.next_page).get()
         if next_page:
             yield response.follow(next_page, callback=self.parse)
@@ -58,10 +62,11 @@ class ColdStorageSpider(scrapy.Spider):
 
         E.g. "Session Ale Can 6sX375ml"
         """
-        raw_quantity_with_name = re.search(
-            r"(\d+s[x\s]+?\d+ml)", raw_name, flags=re.IGNORECASE
-        )
-        if raw_quantity_with_name:
-            raw_quantity = raw_quantity_with_name.group().split(" ")
-            return int(re.split(r"s", raw_quantity[0], flags=re.IGNORECASE)[0])
+        pattern = r"(\d+)\s*(?:s|x)\s*(?:x\s*)?(?:\d+\s*ml)"
+
+        match = re.search(pattern, raw_name, re.IGNORECASE)
+
+        if match:
+            return int(match.group(1))
+
         return 1
