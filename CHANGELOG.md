@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.11.27 (2024-07-31)
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`c6c347d`](https://github.com/ngshiheng/burplist/commit/c6c347d7f6d5d3c3b3e9e04f938c5092b7b05f5f))
+
 ## v1.11.26 (2024-07-10)
 
 ### Fix
