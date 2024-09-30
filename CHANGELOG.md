@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.11.28 (2024-09-30)
+
+### Chore
+
+* chore(deps): update all non-major dependencies ([`1a1af87`](https://github.com/ngshiheng/burplist/commit/1a1af87448bac9e1df11525ceca0dc5c49966953))
+
+### Fix
+
+* fix(deps): update all non-major dependencies ([`cd0d706`](https://github.com/ngshiheng/burplist/commit/cd0d7064e7913ebf0078052efd6c1571749240e7))
+
 ## v1.11.27 (2024-07-31)
 
 ### Fix
