@@ -6,11 +6,11 @@ version = "1.11.11"
 
 [tool.poetry.dependencies]
 SQLAlchemy = "==1.4.54"
-Scrapy = "==2.11.2"
-alembic = "==1.13.3"
+Scrapy = "==2.13.0"
+alembic = "==1.16.0"
 colorlog = "==6.9.0"
-ipython = "==8.29.0"
-price-parser = "0.3.4"
+ipython = "==8.36.0"
+price-parser = "0.4.0"
 psycopg2-binary = "==2.9.10"
 python = "^3.10"
 scrapeops-scrapy = "0.5.6"
@@ -18,11 +18,11 @@ scrapy-fake-useragent = "1.4.4"
 sentry-sdk = "==1.45.1"
 
 [tool.poetry.dev-dependencies]
-autopep8 = "==2.3.1"
-flake8 = "==7.1.1"
-mypy = "1.13.0"
+autopep8 = "==2.3.2"
+flake8 = "==7.2.0"
+mypy = "1.15.0"
 pre-commit = "==3.8.0"
-pylint = "==3.3.1"
+pylint = "==3.3.7"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
