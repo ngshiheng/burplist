@@ -5,7 +5,7 @@ name = "burplist"
 version = "1.11.11"
 
 [tool.poetry.dependencies]
-SQLAlchemy = "==1.4.54"
+SQLAlchemy = "==2.0.45"
 Scrapy = "==2.13.4"
 alembic = "==1.17.2"
 colorlog = "==6.10.1"
